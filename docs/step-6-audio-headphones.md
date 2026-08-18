@@ -1,3 +1,3 @@
 ---
-title: "🎧 6 - Headphone jacks & audio"
+title: "🎧 6 - Headphones & audio"
 ---

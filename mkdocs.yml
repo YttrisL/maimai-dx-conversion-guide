@@ -7,6 +7,9 @@ copyright: Copyright &copy; 2026 - CC BY-NC - Creative Commons Non-Commercial
 repo_url: https://gitea.farewell.dev/Yttris/maimai-dx-guide/
 repo_name: Gitea
 
+hooks:
+  - hooks/copy_sitemap.py
+
 theme:
   name: material
   language: en
