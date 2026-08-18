@@ -11,7 +11,7 @@ Avant de commencer, voici la liste des composants à acquérir pour réaliser ce
 * Un PC ALLS HX2 (ou un MX2 modifié).
 * Une carte I/O Sega IO4.
 * Deux dalles tactiles ADX.
-* Un lecteur Aime de 3ème génération (référence de la pièce : 610-0955).
+* Un lecteur Aime de 3ᵉ génération (référence de la pièce : 610-0955).
 * Un câble DisplayPort (ou DisplayPort vers DVI) et un câble DVI-D pour les écrans.
 * Deux petits amplificateurs audio pour gérer les prises casques.
 

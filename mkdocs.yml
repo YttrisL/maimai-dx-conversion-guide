@@ -56,9 +56,6 @@ plugins:
             Preparation: Préparatifs
             Conversion steps: Étapes de conversion
             Appendices: Annexes
-      # Individual page titles need no entry here: they come from each
-      # translated file's own `title:` front-matter (see docs/*.md and
-      # docs/*.fr.md).
   - git-revision-date-localized:
       enable_creation_date: false
 

@@ -10,7 +10,7 @@ Pour faire tourner *DX*, il est nécessaire de remplacer l'ancienne carte I/O pa
 
 ## 1. Le Bloqueur de Pièces (Coin Locker)
 
-La broche (pin) correspondant au bloqueur de pièces a été déplacée au passage à l'IO4. Sur une borne *Finale*, il était câblé sur la broche 51.
+La broche (pin) correspondant au bloqueur de pièces a été déplacée au passage à l'IO4. Sur une borne *FiNALE*, il était câblé sur la broche 51.
 
 1. Sur le gros faisceau de câbles anciennement raccordé à l'IO3, repérez la broche **51**.
 2. Déplacez ce fil vers la broche **53**.

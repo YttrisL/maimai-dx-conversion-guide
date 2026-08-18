@@ -12,21 +12,21 @@ Sur *DX*, il y a trois contrôleurs différents qui gèrent l'éclairage de la b
   * Une gère les LEDs des huit boutons du P1, l'éclairage du côté gauche, l'éclairage de l'anneau central de gauche et l'éclairage du fond de gauche.
   * L'autre gère les LEDs des huit boutons du P2, l'éclairage du côté droit, l'éclairage de l'anneau central de droite et l'éclairage du fond de droite.
 
-Les deux cartes de contrôle s'interfacent en norme série RS-232 à une unique PCB convertissant les deux signaux RS-232 en USB. Cette PCB est elle-même raccordée au même multiprise USB (Hub) que les caméras lecteurs de QR-Code (voir [Étape 8](step-8-cameras.md)).
+Les deux cartes de contrôle s'interfacent en norme série RS-232 à une unique PCB convertissant les deux signaux RS-232 en USB. Cette PCB est elle-même raccordée à la même multiprise USB (Hub) que les caméras lecteurs de QR-Code (voir [Étape 8](step-8-cameras.md)).
 Les ports COM logiciels sur lesquels les contrôleurs de LEDs sont interfacés sont le **COM21** pour les LEDs du P1 et le **COM23** pour les LEDs du P2.
 
 Dans le cas d'une borne convertie, toutefois, les choses sont un peu plus compliquées.
 
-Il est théoriquement possible de réutiliser les contrôleurs de LEDs d'une borne *Finale*, toutefois ceci s'accompagne de plusieurs inconvénients.
+Il est théoriquement possible de réutiliser les contrôleurs de LEDs d'une borne *FiNALE*, toutefois ceci s'accompagne de plusieurs inconvénients.
 
 - Le numéro de série de la PCB ne correspond pas à ce que *DX* s'attend à trouver, cela provoquera ainsi un avertissement ("warning") au démarrage de la borne. Cela dit, le contrôleur fonctionnera tout de même.
 - En cas de "warning", le jeu n'envoie simplement pas les données permettant d'éclairer l'anneau central (à ne pas confondre avec les boutons) et le corps de la borne (les données FET).
 
-Les contrôleurs de LEDs de *Finale* s'interfacent de la même manière que ceux de *DX*, en passant par une carte de traduction intermédiaire convertissant le RS-232 des deux cartes en une unique connexion USB.
+Les contrôleurs de LEDs de *FiNALE* s'interfacent de la même manière que ceux de *DX*, en passant par une carte de traduction intermédiaire convertissant le RS-232 des deux cartes en une unique connexion USB.
 Les références sont les suivantes :
 
-- *Finale* - Contrôleur LED : `837-15070-02-91 IC BD LED DRV32CH RS232` (Identique pour les deux joueurs)
-- *Finale* - Convertisseur Serial-USB intermédiaire : `837-15067-02 IC BD USB TO 4SERIAL 232 IF`
+- *FiNALE* - Contrôleur LED : `837-15070-02-91 IC BD LED DRV32CH RS232` (Identique pour les deux joueurs)
+- *FiNALE* - Convertisseur Serial-USB intermédiaire : `837-15067-02 IC BD USB TO 4SERIAL 232 IF`
 
 Dans [le manuel de maimai *PiNK*](pdfs/maimai-pink-manual-full.pdf), on peut retrouver le contrôleur de LED à la page 192, et le convertisseur Serial-USB à la page 191 aux alentours de la zone FG-2.
 

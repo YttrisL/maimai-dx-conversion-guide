@@ -15,11 +15,11 @@ Le jeu est programmé pour envoyer la vidéo d'une manière bien précise aux de
 
 *(Le port HDMI restant sur la carte graphique peut être utilisé pour brancher du matériel de capture vidéo, toutefois celui-ci ne propose que la sortie du joueur 1)*.
 
-Il existe toutefois une légère différence native entre les écrans d'une *Finale* et d'une *DX*. Dans les deux cas, il s'agit d'écrans 1920x1080 cadencés à 60hz, mais les écrans de *Finale* mesurent 42" de diagonale, alors que les écrans de *DX* mesurent 43". La différence est pratiquement imperceptible en jeu.
+Il existe toutefois une légère différence native entre les écrans d'une *FiNALE* et d'une *DX*. Dans les deux cas, il s'agit d'écrans 1920x1080 cadencés à 60 Hz, mais les écrans de *FiNALE* mesurent 42" de diagonale, alors que les écrans de *DX* mesurent 43". La différence est pratiquement imperceptible en jeu.
 
 ## Les dalles tactiles ADX
 
-Retirez les anciennes dalles tactiles de la borne *Finale* (maintenue par 8 vis) et installez les nouvelles dalles ADX.
+Retirez les anciennes dalles tactiles de la borne *FiNALE* (maintenues par 8 vis) et installez les nouvelles dalles ADX.
 Il faut ensuite raccorder les dalles aux bonnes "adresses" (Ports COM) sur le ALLS, sinon le jeu confondra les deux joueurs : *([Manuel](pdfs/maimai-dx-manual-full.pdf), page 128)*
 
 * **Joueur 1 :** Doit être branché au Port **COM3**.

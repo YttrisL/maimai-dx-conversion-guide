@@ -4,7 +4,7 @@ title: "💳 4 - Lecteur de cartes Aime"
 
 # 💳 Étape 4 : Le Lecteur de Cartes Aime
 
-Les anciens lecteurs de cartes de la *Finale* sont obsolètes et ne fonctionneront pas avec *DX*.
+Les anciens lecteurs de cartes de la *FiNALE* sont obsolètes et ne fonctionneront pas avec *DX*.
 
 1. Vous devez vous procurer un lecteur Aime moderne (Génération 3, numéro de pièce : **610-0955**).
 2. Installez-le sur le panneau central de la borne, de préférence via une impression 3D pour réaliser une installation non-destructrice.

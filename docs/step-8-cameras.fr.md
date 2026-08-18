@@ -21,7 +21,7 @@ Dans *DX*, les joueurs peuvent scanner des cartes avec des QR codes.
 * Pour que cela fonctionne, vous devez obligatoirement utiliser des webcams capables de filmer en **format UVC 640x480**.
 * **L'éclairage :** Le jeu exige d'éclairer ces cartes avec des LEDs blanches (alimentées en 12V). Ces LEDs sont contrôlées par l'IO4, via les broches 55 et 56. *(Voir [manuel](pdfs/maimai-dx-manual-full.pdf), page 194)*.
   *Astuce : Ne braquez pas les LEDs directement sur la lentille de la caméra. Éclairez plutôt la paroi en plastique pour que la lumière rebondisse de façon diffuse sur la carte.*
-* **Branchement :** Sur une véritable borne *DX*, ces caméras sont reliées au même multiprise USB (Hub) que les lumières de la borne. Vous pouvez faire la même chose en utilisant un simple Hub USB branché sur le PC. Sur l'ordinateur *ALLS* posé à plat, le Hub doit être branché sur le port USB situé en **haut à droite** *([Manuel](pdfs/maimai-dx-manual-full.pdf), page 128)*.
+* **Branchement :** Sur une véritable borne *DX*, ces caméras sont reliées à la même multiprise USB (Hub) que les lumières de la borne. Vous pouvez faire la même chose en utilisant un simple Hub USB branché sur le PC. Sur l'ordinateur *ALLS* posé à plat, le Hub doit être branché sur le port USB situé en **haut à droite** *([Manuel](pdfs/maimai-dx-manual-full.pdf), page 128)*.
 
 **Faut-il vraiment installer les caméras QR Code ?**
 C'est tout à fait optionnel. À moins que vous n'ayez accès à une autre borne très spécifique (le *Sega CardMaker*) pour imprimer vos cartes, elles ne vous serviront à rien. De plus, la plupart des réseaux privés offrent virtuellement un "DX Pass" à tous les joueurs, débloquant les fonctionnalités sans avoir besoin de scanner de cartes.
