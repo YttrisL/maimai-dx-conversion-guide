@@ -1,0 +1,43 @@
+name: Build and Deploy Docs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Gitea mirrors the common GitHub Actions under gitea.com/actions/*
+      # so the runner doesn't have to reach github.com. If your runner
+      # DOES have internet access to github.com, actions/checkout@v4
+      # works too - either is fine.
+      - name: Checkout
+        uses: https://gitea.com/actions/checkout@v4
+        with:
+          fetch-depth: 0 # full history, needed for git-revision-date-localized
+
+      - name: Install build tools
+        run: |
+          apt-get update -y
+          apt-get install -y --no-install-recommends python3 python3-pip lftp
+          pip3 install --break-system-packages -r requirements.txt
+
+      - name: Build site
+        run: mkdocs build --strict
+
+      - name: Deploy over FTP
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_PORT: ${{ secrets.FTP_PORT }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_REMOTE_DIR: ${{ secrets.FTP_REMOTE_DIR }}
+        run: |
+          lftp -c "
+            set ftp:ssl-allow true;
+            set ssl:verify-certificate no;
+            open -p \${FTP_PORT} -u \${FTP_USER},\${FTP_PASSWORD} \${FTP_HOST};
+            mirror -R --delete --verbose site/ \${FTP_REMOTE_DIR}
+          "

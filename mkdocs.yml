@@ -1,0 +1,89 @@
+site_name: "maimai FiNALE → DX Upgrade Guide"
+site_description: "A step-by-step tutorial for upgrading a Sega maimai FiNALE arcade cabinet to maimai DX"
+site_author: "Yttris and the Atom City team"
+site_url: "" # fill in once you know the public URL the FTP host serves from
+copyright: Copyright &copy; 2026 - CC BY-NC - Creative Commons Non-Commercial
+
+# EDIT ME: point this at your actual Gitea repo, e.g. https://git.example.internal/yourname/maimai-dx-guide/
+repo_url: https://gitea.farewell.dev/Yttris/maimai-dx-guide/
+repo_name: Gitea
+
+theme:
+  name: material
+  language: en
+  icon:
+    repo: fontawesome/brands/git-alt
+  palette:
+    # Toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: false
+  - mkdocs-pdf
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
+extra:
+  social:
+    # EDIT ME: same URL as repo_url above
+    - icon: simple/gitea
+      link: https://gitea.farewell.dev/Yttris/maimai-dx-guide/
+      name: Gitea
+  generator: true
+
+nav:
+  - Home: index.md
+  # Add your chapters here as you send me the .md files, e.g.:
+  # - Prerequisites: prerequisites.md
+  # - Teardown: teardown.md
+  # - Wiring: wiring.md
+  # - Software Install: software.md
