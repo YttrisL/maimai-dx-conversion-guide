@@ -2,7 +2,7 @@
 
 ## Convertir une borne maimai Finale en maimai DX
 
-Bienvenue dans le guide détaillé de conversion matérielle d'une borne d'arcade **maimai Finale** vers le système **maimai DX**. Ce document est basé sur [les notes de conversion de la communauté](pdfs\dxnale-original-guide.pdf) et a été enrichi pour être accessible même si vous n'êtes pas un ingénieur en électronique.
+Bienvenue dans le guide détaillé de conversion matérielle d'une borne d'arcade **maimai Finale** vers le système **maimai DX**. Ce document est basé sur [les notes de conversion de la communauté](pdfs/dxnale-original-guide.pdf) et a été enrichi pour être accessible même si vous n'êtes pas un ingénieur en électronique.
 
 ---
 
@@ -12,7 +12,7 @@ DxNALE est le nom donné par la communautés aux bornes maimai FiNALE converties
 Il existe une rumeur persistante au sein de la communauté selon laquelle convertir une borne en DxNALE serait un travail colossal, titanesque, presque irréalisable. **Il n'en est rien.** Certaines étapes sont effectivement complexes, mais ce guide a pour but de vous assister tout au long de l'opération.
 
 !!! tip ""
-    ### L'objectif final : Une fidélité logicielle parfaite
+    **L'objectif final : Une fidélité logicielle parfaite**
 
     Il est possible de modifier les données du jeu afin de pouvoir rendre compatible n'importe quelle dalle tactile produite par la communauté, toutefois nous visons ici une fidélité logicielle totale. 
     

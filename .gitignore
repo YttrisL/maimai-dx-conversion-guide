@@ -3,3 +3,5 @@ site/
 __pycache__/
 *.pyc
 .cache/
+.claude/launch.json
+.vscode/settings.json
