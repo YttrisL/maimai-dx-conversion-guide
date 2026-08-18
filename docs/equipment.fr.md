@@ -1,3 +1,7 @@
+---
+title: "🛒 Liste de courses"
+---
+
 # 🛒 Liste de courses : Le matériel nécessaire
 
 Avant de commencer, voici la liste des composants à acquérir pour réaliser cette conversion :
@@ -25,4 +29,4 @@ Avant de commencer, voici la liste des composants à acquérir pour réaliser ce
 
 ---
 
-Consultez ensuite les [avertissements](avertissements.md) avant de vous lancer.
+Consultez ensuite les [avertissements](warnings.md) avant de vous lancer.

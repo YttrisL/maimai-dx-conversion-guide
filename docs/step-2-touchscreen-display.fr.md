@@ -1,3 +1,7 @@
+---
+title: "📺 2 - Écrans et dalles tactiles"
+---
+
 # 📺 Étape 2 : L'Affichage et les Dalles Tactiles ADX
 
 Toute la complexité réside au niveau de la connexion des dalles tactiles ADX, mais dans un premier temps, commençons par les installer.
@@ -21,8 +25,8 @@ Il faut ensuite raccorder les dalles aux bonnes "adresses" (Ports COM) sur le AL
 * **Joueur 1 :** Doit être branché au Port **COM3**.
 * **Joueur 2 :** Doit être branché au Port **COM4**.
 
-En l'état, la connexion fournie par les dalles ADX se fait via USB-CDC, ce qui ne correspond pas aux raccordements souhaités sur le ALLS. Laissez les câbles USB des deux ADX débranchés pour le moment. Nous les connecterons au Raspberry Pi à l'[Étape 5](etape-5-proxy-compatibilite.md) pour assurer la compatibilité totale avec le système d'origine.
+En l'état, la connexion fournie par les dalles ADX se fait via USB-CDC, ce qui ne correspond pas aux raccordements souhaités sur le ALLS. Laissez les câbles USB des deux ADX débranchés pour le moment. Nous les connecterons au Raspberry Pi à l'[Étape 5](step-5-proxy-compatibility.md) pour assurer la compatibilité totale avec le système d'origine.
 
 ---
 
-Passons à l'[Étape 3 : La Carte I/O et les Boutons](etape-3-carte-io.md).
+Passons à l'[Étape 3 : La Carte I/O et les Boutons](step-3-io-board.md).

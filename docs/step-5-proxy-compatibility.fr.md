@@ -1,9 +1,13 @@
+---
+title: "🧠 5 - Compatibilité via Proxy"
+---
+
 # 🧠 Étape 5 : Compatibilité avec le système d'origine via le Proxy
 
 C'est l'étape la plus complexe et la plus importante de ce guide. Comme expliqué plus tôt, nous souhaitons une fidélité logicielle totale. Toutefois, comme l'interface de communication des dalles tactiles ADX diffère des dalles officielles d'une borne *DX*, nous ne pouvons pas simplement les connecter via un port USB. Nous devons les adapter.
 
 **Le problème matériel :** Le logiciel du jeu exige que les dalles tactiles communiquent via un port "série". Précisément, via la norme RS-232, en 9600 bauds. Cependant, les dalles tactiles ADX envoient leurs données via USB, dans un format et avec des timings totalement différents.
-Même si on utilise des adaptateurs USB, brancher les ADX directement sur le PC fera planter le jeu, car celui-ci ne comprend pas les informations encodées de cette façon. *(Pour plus de détails techniques, consultez l'annexe [Comprendre maitouch_rs](comprendre-maitouch_RS.md))*.
+Même si on utilise des adaptateurs USB, brancher les ADX directement sur le PC fera planter le jeu, car celui-ci ne comprend pas les informations encodées de cette façon. *(Pour plus de détails techniques, consultez l'annexe [Comprendre maitouch_rs](understanding-maitouch_RS.md))*.
 
 ## La Solution : Le Raspberry Pi et le programme `maitouch_rs`
 
@@ -24,4 +28,4 @@ Pour tromper le jeu, nous allons placer un mini-ordinateur (un **Raspberry Pi 5*
 
 ---
 
-Passons à l'[Étape 6 : Prises casques et Système Son](etape-6-son-casques.md).
+Passons à l'[Étape 6 : Prises casques et Système Son](step-6-audio-headphones.md).

@@ -1,3 +1,7 @@
+---
+title: "📷 8 - Caméras (optionnelle)"
+---
+
 # 📷 Étape 8 : Caméras (Optionnelle)
 
 Si vous souhaitez finaliser votre borne pour qu'elle soit parfaite, vous pouvez ajouter les caméras. Cependant, le jeu est tout à fait fonctionnel sans elles.

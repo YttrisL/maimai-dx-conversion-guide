@@ -1,3 +1,7 @@
+---
+title: "🛠️ 1 - PC Central (ALLS)"
+---
+
 # 🛠️ Étape 1 : Le Remplacement du PC Central (ALLS)
 
 L'ancien PC *Ringedge 2* n'est pas assez puissant pour faire tourner *DX*. Vous avez besoin d'un PC **ALLS HX2**.
@@ -8,4 +12,4 @@ Alternativement, il est souvent plus simple (et moins cher) de trouver des PC **
 
 ---
 
-Passons à l'[Étape 2 : Affichage et dalles tactiles ADX](etape-2-affichage-tactile.md).
+Passons à l'[Étape 2 : Affichage et dalles tactiles ADX](step-2-touchscreen-display.md).

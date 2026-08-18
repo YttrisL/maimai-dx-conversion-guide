@@ -1,3 +1,7 @@
+---
+title: "Comprendre maitouch_rs"
+---
+
 # Comprendre `maitouch_rs` : Un pont entre l'ancien et le nouveau
 
 Ce document explique simplement le projet GitHub [`maitouch_rs`](https://github.com/4ndr3w/maitouch_rs). Si vous n'êtes pas un expert en protocoles de communication comme le port série RS-232 ou l'USB, ce guide est fait pour vous !
@@ -52,4 +56,4 @@ CDC signifie *Communication Device Class*. C'est une petite ruse technique inté
 
 ---
 
-Retour à l'[Étape 5 : Compatibilité avec le système d'origine via le Proxy](etape-5-proxy-compatibilite.md).
+Retour à l'[Étape 5 : Compatibilité avec le système d'origine via le Proxy](step-5-proxy-compatibility.md).

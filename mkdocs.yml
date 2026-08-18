@@ -30,7 +30,6 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
   features:
-    - navigation.instant
     - navigation.tracking
     - navigation.top
     - navigation.footer
@@ -43,6 +42,23 @@ theme:
 
 plugins:
   - search
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: en
+          name: English
+          default: true
+          build: true
+        - locale: fr
+          name: Français
+          build: true
+          nav_translations:
+            Preparation: Préparatifs
+            Conversion steps: Étapes de conversion
+            Appendices: Annexes
+      # Individual page titles need no entry here: they come from each
+      # translated file's own `title:` front-matter (see docs/*.md and
+      # docs/*.fr.md).
   - git-revision-date-localized:
       enable_creation_date: false
 
@@ -82,20 +98,20 @@ extra:
   generator: true
 
 nav:
-  - 🏠 Accueil: index.md
-  - Préparatifs:
-      - "⚠️ Avertissements": avertissements.md
-      - "📖 Lexique": lexique.md
-      - "🛒 Liste de courses": materiel.md
-  - Étapes de conversion:
-      - "🛠️ 1 - PC Central (ALLS)": etape-1-pc-alls.md
-      - "📺 2 - Écrans et dalles tactiles": etape-2-affichage-tactile.md
-      - "🔌 3 - Carte I/O et boutons": etape-3-carte-io.md
-      - "💳 4 - Lecteur de cartes Aime": etape-4-lecteur-aime.md
-      - "🧠 5 - Compatibilité via Proxy": etape-5-proxy-compatibilite.md
-      - "🎧 6 - Prises casques et son": etape-6-son-casques.md
-      - "💡 7 - Lumières (optionnelle)": etape-7-lumieres.md
-      - "📷 8 - Caméras (optionnelle)": etape-8-cameras.md
-  - "🎉 Conclusion": conclusion.md
-  - Annexes:
-      - Comprendre maitouch_rs: comprendre-maitouch_RS.md
+  - index.md
+  - Preparation:
+      - warnings.md
+      - glossary.md
+      - equipment.md
+  - Conversion steps:
+      - step-1-pc-alls.md
+      - step-2-touchscreen-display.md
+      - step-3-io-board.md
+      - step-4-aime-reader.md
+      - step-5-proxy-compatibility.md
+      - step-6-audio-headphones.md
+      - step-7-lighting.md
+      - step-8-cameras.md
+  - conclusion.md
+  - Appendices:
+      - understanding-maitouch_RS.md

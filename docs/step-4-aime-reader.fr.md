@@ -1,3 +1,7 @@
+---
+title: "💳 4 - Lecteur de cartes Aime"
+---
+
 # 💳 Étape 4 : Le Lecteur de Cartes Aime
 
 Les anciens lecteurs de cartes de la *Finale* sont obsolètes et ne fonctionneront pas avec *DX*.
@@ -14,4 +18,4 @@ Les anciens lecteurs de cartes de la *Finale* sont obsolètes et ne fonctionnero
 
 ---
 
-Passons à l'[Étape 5 : Compatibilité avec le système d'origine via le Proxy](etape-5-proxy-compatibilite.md).
+Passons à l'[Étape 5 : Compatibilité avec le système d'origine via le Proxy](step-5-proxy-compatibility.md).

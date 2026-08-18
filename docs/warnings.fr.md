@@ -1,3 +1,7 @@
+---
+title: "⚠️ Avertissements"
+---
+
 # ⚠️ Avertissements et Considérations
 
 Avant de vous lancer, voici la réalité du projet :
@@ -9,4 +13,4 @@ Avant de vous lancer, voici la réalité du projet :
 
 ---
 
-Un peu perdu dans les termes techniques ? Direction le [lexique](lexique.md).
+Un peu perdu dans les termes techniques ? Direction le [lexique](glossary.md).

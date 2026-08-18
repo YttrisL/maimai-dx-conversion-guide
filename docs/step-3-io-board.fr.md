@@ -1,3 +1,7 @@
+---
+title: "🔌 3 - Carte I/O et boutons"
+---
+
 # 🔌 Étape 3 : La Carte I/O et les Boutons
 
 Pour faire tourner *DX*, il est nécessaire de remplacer l'ancienne carte I/O par le nouveau modèle **IO4**. Heureusement, le câblage reste globalement le même, à quelques exceptions près.
@@ -23,7 +27,7 @@ Sur *DX*, de nouveaux boutons physiques sont apparus pour permettre aux joueurs 
 
 ## 3. Le contrôle des LEDs du Billboard (Toit de la borne)
 
-Sur *DX*, l'IO4 est responsable de la gestion des lumières du sommet de la borne. Ce point sera également abordé à l'[Étape 7](etape-7-lumieres.md), mais voici déjà le schéma (pinout) des LEDs à raccorder :
+Sur *DX*, l'IO4 est responsable de la gestion des lumières du sommet de la borne. Ce point sera également abordé à l'[Étape 7](step-7-lighting.md), mais voici déjà le schéma (pinout) des LEDs à raccorder :
 
 * "BILLBOARD LED L RED" : Connecteur **CN3** - Broche **51** (Le gros faisceau de câbles)
 * "BILLBOARD LED R RED" : Connecteur **CN3** - Broche **52** (Le gros faisceau de câbles)
@@ -40,4 +44,4 @@ La nouvelle carte IO4 communique avec le PC *ALLS* via un simple câble USB. Cep
 
 ---
 
-Passons à l'[Étape 4 : Le Lecteur de Cartes Aime](etape-4-lecteur-aime.md).
+Passons à l'[Étape 4 : Le Lecteur de Cartes Aime](step-4-aime-reader.md).

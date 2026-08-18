@@ -1,3 +1,7 @@
+---
+title: "📖 Lexique"
+---
+
 # 📖 Petit Lexique pour les Débutants
 
 Pour ne pas être perdu dans les termes techniques :
@@ -9,4 +13,4 @@ Pour ne pas être perdu dans les termes techniques :
 
 ---
 
-Le vocabulaire est clair ? Passons à la [Liste de courses](materiel.md).
+Le vocabulaire est clair ? Passons à la [Liste de courses](equipment.md).
