@@ -49,3 +49,7 @@ CDC signifie *Communication Device Class*. C'est une petite ruse technique inté
 *   Quand on branche un appareil USB-CDC sur un ordinateur, l'appareil ment à l'ordinateur et lui dit : *"Hé, fais comme si j'étais un vieux port série RS-232"*. 
 *   Cela permet aux vieux logiciels (comme notre jeu d'arcade qui ne connaît que le RS-232) de fonctionner avec du matériel moderne USB sans que les développeurs aient besoin de modifier le code du jeu.
 *   **Le piège :** Même s'il *fait semblant* d'être un vieux port série réglé à 9600 bauds, le matériel en lui-même s'en moque éperdument. Il utilise les vrais fils et la vraie puce USB (qui peut transmettre des millions de bits par seconde) et ignore totalement cette limite virtuelle. C'est exactement cette contradiction qui crée le goulot d'étranglement que `maitouch_rs` vient corriger !
+
+---
+
+Retour à l'[Étape 5 : Compatibilité avec le système d'origine via le Proxy](etape-5-proxy-compatibilite.md).

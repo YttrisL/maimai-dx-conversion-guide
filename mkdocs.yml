@@ -4,7 +4,6 @@ site_author: "Yttris and the Atom City team"
 site_url: "" # fill in once you know the public URL the FTP host serves from
 copyright: Copyright &copy; 2026 - CC BY-NC - Creative Commons Non-Commercial
 
-# EDIT ME: point this at your actual Gitea repo, e.g. https://git.example.internal/yourname/maimai-dx-guide/
 repo_url: https://gitea.farewell.dev/Yttris/maimai-dx-guide/
 repo_name: Gitea
 
@@ -35,6 +34,7 @@ theme:
     - navigation.tracking
     - navigation.top
     - navigation.footer
+    - navigation.expand
     - search.suggest
     - search.highlight
     - content.code.annotate
@@ -45,7 +45,6 @@ plugins:
   - search
   - git-revision-date-localized:
       enable_creation_date: false
-  - mkdocs-pdf
 
 markdown_extensions:
   - admonition
@@ -72,18 +71,31 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
 
+extra_css:
+  - style.css
+
 extra:
   social:
-    # EDIT ME: same URL as repo_url above
     - icon: simple/gitea
       link: https://gitea.farewell.dev/Yttris/maimai-dx-guide/
       name: Gitea
   generator: true
 
 nav:
-  - Home: index.md
-  # Add your chapters here as you send me the .md files, e.g.:
-  # - Prerequisites: prerequisites.md
-  # - Teardown: teardown.md
-  # - Wiring: wiring.md
-  # - Software Install: software.md
+  - 🏠 Accueil: index.md
+  - Préparatifs:
+      - "⚠️ Avertissements": avertissements.md
+      - "📖 Lexique": lexique.md
+      - "🛒 Liste de courses": materiel.md
+  - Étapes de conversion:
+      - "🛠️ 1 - PC Central (ALLS)": etape-1-pc-alls.md
+      - "📺 2 - Écrans et dalles tactiles": etape-2-affichage-tactile.md
+      - "🔌 3 - Carte I/O et boutons": etape-3-carte-io.md
+      - "💳 4 - Lecteur de cartes Aime": etape-4-lecteur-aime.md
+      - "🧠 5 - Compatibilité via Proxy": etape-5-proxy-compatibilite.md
+      - "🎧 6 - Prises casques et son": etape-6-son-casques.md
+      - "💡 7 - Lumières (optionnelle)": etape-7-lumieres.md
+      - "📷 8 - Caméras (optionnelle)": etape-8-cameras.md
+  - "🎉 Conclusion": conclusion.md
+  - Annexes:
+      - Comprendre maitouch_rs: comprendre-maitouch_RS.md
