@@ -94,5 +94,3 @@ C'est pratique pour la compatibilité logicielle : un programme qui ne sait parl
 | USB-CDC | Protocole (au-dessus de l'USB) | Point à point | Négocié à la connexion (USB), puis déguisé en port série |
 
 ---
-
-Muni de ce vocabulaire, la lecture de l'[Étape 5](step-5-proxy-compatibility.md) devrait être bien plus limpide.

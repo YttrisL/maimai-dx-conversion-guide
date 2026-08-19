@@ -13,4 +13,4 @@ Avant de vous lancer, voici la réalité du projet :
 
 ---
 
-Un peu perdu dans les termes techniques ? Direction le [lexique](glossary.md).
+Un peu perdu dans les termes techniques ? N'hésitez pas à consulter le [lexique](glossary.md) avant de vous diriger vers la [liste de courses](equipment.md).

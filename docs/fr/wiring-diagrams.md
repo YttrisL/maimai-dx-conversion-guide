@@ -143,3 +143,5 @@ Chapitre *25 WIRING DIAGRAM*, pages 189 à 193 du [manuel maimai PiNK](../resour
 * `MAI-4100` **ASSY ROUTER** (`601-12336-34` **ROUTER RT107E BD MAI**)
 
 [![Schéma de câblage maimai PiNK, kit caméra en option](../resources/images/wiring-diagrams/maimai-pink-wiring-diagram-camera-kit.jpg)](../resources/images/wiring-diagrams/maimai-pink-wiring-diagram-camera-kit.jpg)
+
+---

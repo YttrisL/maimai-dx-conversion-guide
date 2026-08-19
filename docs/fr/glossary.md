@@ -1,5 +1,5 @@
 ---
-title: "📖 Lexique"
+title: "Lexique"
 ---
 
 # 📖 Petit Lexique pour les Débutants
@@ -42,5 +42,3 @@ Pour ne pas être perdu dans les termes techniques :
 * **Service systemd :** Sous Linux, un programme qui se lance automatiquement et en arrière-plan dès le démarrage de la machine, sans intervention manuelle. C'est ce qui permet à un programme de démarrer tout seul à chaque allumage de la borne, sans avoir à le lancer à la main.
 
 ---
-
-Le vocabulaire est clair ? Passons à la [Liste de courses](equipment.md).

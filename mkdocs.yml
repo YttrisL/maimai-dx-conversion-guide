@@ -122,7 +122,6 @@ nav:
   - index.md
   - Preparation:
       - warnings.md
-      - glossary.md
       - equipment.md
   - Conversion steps:
       - step-1-pc-alls.md
@@ -138,3 +137,4 @@ nav:
       - official-manuals.md
       - wiring-diagrams.md
       - understanding-serial-protocols.md
+      - glossary.md
