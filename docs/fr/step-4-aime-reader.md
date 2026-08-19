@@ -14,7 +14,7 @@ Les anciens lecteurs de cartes de la *FiNALE* sont obsolètes et ne fonctionnero
    * Le petit écran texte (VFD) doit être raccordé au port **COM2**.
    * Vous pouvez récupérer du courant 5V sur les anciens câbles pour alimenter ces deux éléments.
 
-**Sur le PC *ALLS HX* :** Le port matériel correspondant au COM1 est la prise série située à gauche des ports USB et de la prise réseau. *([Manuel](/resources/pdfs/maimai-dx-manual-full.pdf), page 128)*.
+**Sur le PC *ALLS HX* :** Le port matériel correspondant au COM1 est la prise série située à gauche des ports USB et de la prise réseau. *([Manuel](../resources/pdfs/maimai-dx-manual-full.pdf), page 128)*.
 
 ---
 

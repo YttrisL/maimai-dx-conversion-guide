@@ -16,25 +16,41 @@ configured languages the same file physically exists N times in the built
 site, which is wasteful for the multi-megabyte diagrams/manuals this project
 hosts under resources/.
 
-Since these assets are intentionally not localized, we instead:
-  1. (on_files, default priority - runs before mkdocs-static-i18n's own
-     on_files at priority -100, same as check_translations.py) drop every
-     docs/resources/... file from the Files collection entirely, so
-     mkdocs-static-i18n never sees it and never duplicates it.
-  2. (on_post_build, after mkdocs-static-i18n's on_post_build at -100, same
-     spot as copy_sitemap.py) copy docs/resources/ into the site root
-     exactly once, directly, bypassing mkdocs entirely.
+First attempt at this was to strip these files out of the Files collection
+entirely and reference them with root-absolute "/resources/..." links.
+That worked for the built site, but had two costs it turns out matter:
+  a) mkdocs no longer knew about the files at all, so its own link
+     validation (unrecognized_links / strict mode) stopped covering them -
+     a typo'd path would build clean and 404 silently.
+  b) a root-absolute link resolves differently when the .md file is viewed
+     as plain markdown in Gitea's own repo browser: Gitea treats a leading
+     "/" as relative to the REPO root, so "/resources/foo.jpg" resolves to
+     "<repo>/resources/foo.jpg" - but the file actually lives one directory
+     down, at "<repo>/docs/resources/foo.jpg" (docs/ is mkdocs's docs_dir,
+     not the repo root) - so the image looked broken in Gitea even though
+     it rendered fine on the built site.
 
-Because step 1 removes these files from mkdocs's own bookkeeping, pages must
-reference them with a root-absolute link (e.g. "/resources/images/foo.jpg",
-NOT "resources/images/foo.jpg") - mkdocs can no longer resolve/rewrite a
-relative link to a file it doesn't know about. Root-absolute links are
-validated under the separate `validation.links.absolute_links` setting
-(left at its default 'info' in mkdocs.yml) rather than `unrecognized_links`,
-so they don't trip `strict: true`.
+Instead, we let the file stay in the Files collection (so mkdocs keeps
+doing its normal link resolution/rewriting AND its normal validation for
+it) and simply force its computed destination back to the same un-prefixed
+path on every locale pass, undoing mkdocs-static-i18n's per-locale
+namespacing. Runs as on_files, AFTER mkdocs-static-i18n's own on_files
+(priority -100) has already (re)computed each file's per-locale
+destination, so there's something to override.
+
+Because the file is a normal, tracked doc-dir asset again, pages should
+reference it with an ordinary relative link written the way it actually
+sits on disk - e.g. "../resources/images/foo.jpg" from
+docs/fr/some-page.md - NOT a root-absolute "/resources/..." link. That
+resolves correctly both in the built site (mkdocs rewrites it relative to
+the page's real, de-duplicated output location) and in Gitea's raw file
+view (plain relative links resolve against the file's real repo location
+the same way everywhere), and a typo'd path is caught by mkdocs's own
+`unrecognized_links` validation - escalated to a hard build failure by
+`strict: true` in mkdocs.yml - same as any other doc link.
 """
 
-import shutil
+import os
 from pathlib import Path
 
 from mkdocs.plugins import event_priority
@@ -42,20 +58,26 @@ from mkdocs.plugins import event_priority
 RESOURCES_DIR_NAME = "resources"
 
 
+@event_priority(-150)  # after mkdocs-static-i18n's on_files (-100)
 def on_files(files, config, **kwargs):
-    resources_root = (Path(config["docs_dir"]) / RESOURCES_DIR_NAME).resolve()
+    docs_dir = Path(config["docs_dir"]).resolve()
+    resources_root = docs_dir / RESOURCES_DIR_NAME
+    site_dir = config["site_dir"]
+    use_directory_urls = config["use_directory_urls"]
 
-    for file in list(files):
+    for file in files:
         src_path = Path(file.abs_src_path).resolve()
-        if src_path == resources_root or resources_root in src_path.parents:
-            files.remove(file)
+        if src_path != resources_root and resources_root not in src_path.parents:
+            continue
+
+        # canonical, locale-less destination: same path relative to docs_dir
+        # as the source file itself, regardless of which locale pass this is
+        canonical_dest = src_path.relative_to(docs_dir).as_posix()
+        if file.dest_path == canonical_dest:
+            continue  # already canonical (the default-language pass)
+
+        file.dest_path = canonical_dest
+        file.abs_dest_path = os.path.normpath(os.path.join(site_dir, file.dest_path))
+        file.url = file._get_url(use_directory_urls)
 
     return files
-
-
-@event_priority(-200)  # after mkdocs-static-i18n's on_post_build (-100)
-def on_post_build(config, **kwargs):
-    src = Path(config["docs_dir"]) / RESOURCES_DIR_NAME
-    if not src.is_dir():
-        return
-    shutil.copytree(src, Path(config["site_dir"]) / RESOURCES_DIR_NAME, dirs_exist_ok=True)
