@@ -6,7 +6,7 @@ title: "🏠 Accueil"
 
 ## Convertir une borne maimai FiNALE en maimai DX
 
-Bienvenue dans le guide détaillé de conversion matérielle d'une borne d'arcade **maimai FiNALE** vers le système **maimai DX**. Ce document est basé sur [les notes de conversion de la communauté](pdfs/dxnale-original-guide.pdf) et a été enrichi pour être accessible même si vous n'êtes pas un ingénieur en électronique.
+Bienvenue dans le guide détaillé de conversion matérielle d'une borne d'arcade **maimai FiNALE** vers le système **maimai DX**. Ce document est basé sur [les notes de conversion de la communauté](resources/pdfs/dxnale-original-guide.pdf) et a été enrichi pour être accessible même si vous n'êtes pas un ingénieur en électronique.
 
 ---
 

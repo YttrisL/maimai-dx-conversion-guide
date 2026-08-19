@@ -28,7 +28,7 @@ Les références sont les suivantes :
 - *FiNALE* - Contrôleur LED : `837-15070-02-91 IC BD LED DRV32CH RS232` (Identique pour les deux joueurs)
 - *FiNALE* - Convertisseur Serial-USB intermédiaire : `837-15067-02 IC BD USB TO 4SERIAL 232 IF`
 
-Dans [le manuel de maimai *PiNK*](pdfs/maimai-pink-manual-full.pdf), on peut retrouver le contrôleur de LED à la page 192, et le convertisseur Serial-USB à la page 191 aux alentours de la zone FG-2.
+Dans [le manuel de maimai *PiNK*](resources/pdfs/maimai-pink-manual-full.pdf), on peut retrouver le contrôleur de LED à la page 192, et le convertisseur Serial-USB à la page 191 aux alentours de la zone FG-2.
 
 Pour contourner le problème des avertissements sans avoir besoin de changer le contrôleur des LEDs, nous pouvons utiliser la même astuce de Proxy que nous avons utilisée à l'[Étape 5](step-5-proxy-compatibility.md). À l'aide d'un second Raspberry Pi 5 [et du logiciel `mailight_rs` (écrit en langage Rust)](https://gitea.farewell.dev/Yttris/mailight_rs), nous pouvons interfacer le contrôleur des LEDs avant la carte de traduction USB-Serial pour l'envoyer à notre proxy. Ce dernier s'occupera d'adapter le signal en modifiant les en-têtes pour fournir au jeu un signal lui faisant croire qu'il s'agit des bonnes PCB, il retournera ainsi un signal "GOOD" à la place du "warning". Le Raspberry Pi se placera alors entre les PCBs de contrôle des LEDs et le convertisseur serial USB, qui pourra lui être directement branché au ALLS sur le port dédié au Hub USB, ou au Hub USB lui-même si des lecteurs de QR-Code sont également installés.
 

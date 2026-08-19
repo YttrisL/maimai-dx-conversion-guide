@@ -7,7 +7,27 @@ copyright: Copyright &copy; 2026 - CC BY-NC - Creative Commons Non-Commercial
 repo_url: https://gitea.farewell.dev/Yttris/maimai-dx-guide/
 repo_name: Gitea
 
+# By default MkDocs only *warns* about internal links (nav entries, page
+# links, images, PDFs, ...) that don't resolve to an existing file - the
+# build still succeeds even with dead links, and only `mkdocs build
+# --strict` turns that into a failure. Bake strict mode into the config
+# itself so ANY invocation of `mkdocs build` (or `mkdocs serve`) - CLI flag
+# or not - aborts on an unresolved internal link.
+strict: true
+
+# A couple of internal-link checks default to a silent 'info' level, which
+# `strict` does NOT escalate (only warn/error is escalated). Bump those to
+# 'warn' so they're covered by strict mode too - readers should never hit a
+# dead in-page anchor (e.g. page.md#missing-section) or a malformed-looking
+# relative link either. `absolute_links` is deliberately left at its default:
+# docs/en/index.md intentionally links to the site-root-relative "/fr/".
+validation:
+  links:
+    anchors: warn
+    unrecognized_links: warn
+
 hooks:
+  - hooks/check_translations.py
   - hooks/copy_sitemap.py
 
 theme:
@@ -46,7 +66,7 @@ theme:
 plugins:
   - search
   - i18n:
-      docs_structure: suffix
+      docs_structure: folder
       languages:
         - locale: en
           name: English
