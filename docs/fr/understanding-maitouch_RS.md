@@ -4,7 +4,7 @@ title: "Comprendre maitouch_rs"
 
 # Comprendre `maitouch_rs` : Un pont entre l'ancien et le nouveau
 
-Ce document explique simplement le projet GitHub [`maitouch_rs`](https://github.com/4ndr3w/maitouch_rs). Si vous n'êtes pas un expert en protocoles de communication comme le port série RS-232 ou l'USB, ce guide est fait pour vous !
+Ce document explique simplement le projet GitHub [`maitouch_rs`](https://github.com/4ndr3w/maitouch_rs). Si vous n'êtes pas un expert en protocoles de communication comme le port série RS-232 ou l'USB, ce guide est fait pour vous ! *(Pour un petit cours plus complet sur ces protocoles, voir l'annexe [Comprendre les protocoles série](understanding-serial-protocols.md).)*
 
 ## L'Analogie Globale
 

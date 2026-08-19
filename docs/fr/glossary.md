@@ -8,7 +8,7 @@ Pour ne pas être perdu dans les termes techniques :
 
 ## Le PC et les cartes de la borne
 
-* **ALLS (MX2 / HX2) :** C'est le nom de l'ordinateur standard utilisé par Sega pour faire tourner les jeux récents. Il remplace l'ancien PC de FiNALE (nommé Ringedge 2).
+* **ALLS (MX2 / HX2) :** C'est le nom de l'ordinateur standard utilisé par Sega pour faire tourner les jeux récents. Il remplace l'ancien PC de FiNALE (nommé Ringedge 2). Il se présente [en plusieurs déclinaisons (UX, HX, UX2, HX2, etc)](https://gitea.farewell.dev/Cool_Tools/arcade-docs/src/branch/main/sega/boards.md#alls), chacun avec des spécifications matérielles qui lui sont propres. Le modèle correspondant à maimai DX est le ALLS HX2.
 * **Carte I/O (IO board) :** C'est la carte électronique (un [PCB](#cablage-et-electronique)) qui fait le lien entre le PC et la borne. Elle capte l'appui sur les boutons. Dans le cas de *maimai FiNALE*, il s'agit d'une **Sega IO3**. Pour *DX*, elle doit être remplacée par une **Sega IO4**. La plupart des IO boards communiquent avec le système via le protocole [JVS](#communication-et-protocoles).
 * **Aime / VFD :** Le lecteur de cartes sans contact (NFC) utilisé par les joueurs pour sauvegarder leur profil. Le *VFD* (Vacuum Fluorescent Display) est le petit écran à affichage rétro (souvent vert ou bleu) qui affiche le solde d'argent ou d'autres informations textuelles.
 
