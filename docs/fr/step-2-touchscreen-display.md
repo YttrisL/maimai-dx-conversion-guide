@@ -8,9 +8,9 @@ Toute la complexité réside au niveau de la connexion des dalles tactiles ADX, 
 
 ## Les connexions vidéo
 
-Le jeu est programmé pour envoyer la vidéo d'une manière bien précise aux deux écrans. L'ordre doit être respecté. *(Référence : [Manuel](resources/pdfs/maimai-dx-manual-full.pdf) officiel de la borne DX, page 128)*
+Le jeu est programmé pour envoyer la vidéo d'une manière bien précise aux deux écrans. L'ordre doit être respecté. *(Référence : [Manuel](/resources/pdfs/maimai-dx-manual-full.pdf) officiel de la borne DX, page 128)*
 
-* **Joueur 1 (P1) :** Doit être branché sur le port **DisplayPort** (Attention : le [manuel](resources/pdfs/maimai-dx-manual-full.pdf) officiel comporte une erreur et indique HDMI à tort).
+* **Joueur 1 (P1) :** Doit être branché sur le port **DisplayPort** (Attention : le [manuel](/resources/pdfs/maimai-dx-manual-full.pdf) officiel comporte une erreur et indique HDMI à tort).
 * **Joueur 2 (P2) :** Doit être branché sur le port **DVI**.
 
 *(Le port HDMI restant sur la carte graphique peut être utilisé pour brancher du matériel de capture vidéo, toutefois celui-ci ne propose que la sortie du joueur 1)*.
@@ -20,7 +20,7 @@ Il existe toutefois une légère différence native entre les écrans d'une *FiN
 ## Les dalles tactiles ADX
 
 Retirez les anciennes dalles tactiles de la borne *FiNALE* (maintenues par 8 vis) et installez les nouvelles dalles ADX.
-Il faut ensuite raccorder les dalles aux bonnes "adresses" (Ports COM) sur le ALLS, sinon le jeu confondra les deux joueurs : *([Manuel](resources/pdfs/maimai-dx-manual-full.pdf), page 128)*
+Il faut ensuite raccorder les dalles aux bonnes "adresses" (Ports COM) sur le ALLS, sinon le jeu confondra les deux joueurs : *([Manuel](/resources/pdfs/maimai-dx-manual-full.pdf), page 128)*
 
 * **Joueur 1 :** Doit être branché au Port **COM3**.
 * **Joueur 2 :** Doit être branché au Port **COM4**.

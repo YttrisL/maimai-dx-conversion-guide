@@ -10,7 +10,7 @@ Les [manuels officiels](official-manuals.md) contiennent, dans leurs toutes dern
 
 ## Manuel maimai DX
 
-Chapitre *22 総合配線図* (« schéma de câblage général »), pages 193 à 196 du [manuel maimai DX](resources/pdfs/maimai-dx-manual-full.pdf).
+Chapitre *22 総合配線図* (« schéma de câblage général »), pages 193 à 196 du [manuel maimai DX](/resources/pdfs/maimai-dx-manual-full.pdf).
 
 **Planche 1/4 — Alimentation, PC *ALLS*, ampli et écrans joueurs :**
 
@@ -26,7 +26,7 @@ Chapitre *22 総合配線図* (« schéma de câblage général »), pages 193 �
 * `MMT-1000` / `MMT-1500` **ASSY CABINET 1P / 2P** — écrans joueurs (`200-6280` **LCD DSPL 43 LED**)
 * `MMT-1200` / `MMT-1700` **ASSY SW BASE 1P / 2P** — embases des boutons
 
-[![Schéma de câblage maimai DX, planche 1 sur 4](resources/images/wiring-diagrams/maimai-dx-wiring-diagram-1-of-4.jpg)](resources/images/wiring-diagrams/maimai-dx-wiring-diagram-1-of-4.jpg)
+[![Schéma de câblage maimai DX, planche 1 sur 4](/resources/images/wiring-diagrams/maimai-dx-wiring-diagram-1-of-4.jpg)](/resources/images/wiring-diagrams/maimai-dx-wiring-diagram-1-of-4.jpg)
 
 **Planche 2/4 — Boutons, LEDs de boutons, hub USB et carte I/O :**
 
@@ -37,7 +37,7 @@ Chapitre *22 総合配線図* (« schéma de câblage général »), pages 193 �
 * `837-15257-01` **I/O CONTROL BD 4 FOR USB** — la carte **IO4** (JVS), voir l'[étape 3](step-3-io-board.md)
 * `MMT-1000` / `MMT-1500` / `MMT-1900` **ASSY CABINET 1P / 2P / SIDE COVER BASE 1P**
 
-[![Schéma de câblage maimai DX, planche 2 sur 4](resources/images/wiring-diagrams/maimai-dx-wiring-diagram-2-of-4.jpg)](resources/images/wiring-diagrams/maimai-dx-wiring-diagram-2-of-4.jpg)
+[![Schéma de câblage maimai DX, planche 2 sur 4](/resources/images/wiring-diagrams/maimai-dx-wiring-diagram-2-of-4.jpg)](/resources/images/wiring-diagrams/maimai-dx-wiring-diagram-2-of-4.jpg)
 
 **Planche 3/4 — Boutons tactiles, capteur de l'anneau tactile, panneau publicitaire :**
 
@@ -50,7 +50,7 @@ Chapitre *22 総合配線図* (« schéma de câblage général »), pages 193 �
 * `390-7244` **LED TAPE WHITE M3528W-A** — rubans LED blancs de l'anneau
 * `130-5280-01` **WOOFER 4OHM 80W**
 
-[![Schéma de câblage maimai DX, planche 3 sur 4](resources/images/wiring-diagrams/maimai-dx-wiring-diagram-3-of-4.jpg)](resources/images/wiring-diagrams/maimai-dx-wiring-diagram-3-of-4.jpg)
+[![Schéma de câblage maimai DX, planche 3 sur 4](/resources/images/wiring-diagrams/maimai-dx-wiring-diagram-3-of-4.jpg)](/resources/images/wiring-diagrams/maimai-dx-wiring-diagram-3-of-4.jpg)
 
 **Planche 4/4 — Caméras, lecteur Aime, tirelire et panneau d'entrée :**
 
@@ -63,11 +63,11 @@ Chapitre *22 総合配線図* (« schéma de câblage général »), pages 193 �
 * `MMT-1460` **SW UNIT** — boutons test/service (`838-14548-10` **SW & VOL BD**)
 * `MMT-1900` / `MMT-1950` **ASSY SIDE COVER BASE 1P / 2P**
 
-[![Schéma de câblage maimai DX, planche 4 sur 4](resources/images/wiring-diagrams/maimai-dx-wiring-diagram-4-of-4.jpg)](resources/images/wiring-diagrams/maimai-dx-wiring-diagram-4-of-4.jpg)
+[![Schéma de câblage maimai DX, planche 4 sur 4](/resources/images/wiring-diagrams/maimai-dx-wiring-diagram-4-of-4.jpg)](/resources/images/wiring-diagrams/maimai-dx-wiring-diagram-4-of-4.jpg)
 
 ## Manuel maimai PiNK
 
-Chapitre *25 WIRING DIAGRAM*, pages 189 à 193 du [manuel maimai PiNK](resources/pdfs/maimai-pink-manual-full.pdf).
+Chapitre *25 WIRING DIAGRAM*, pages 189 à 193 du [manuel maimai PiNK](/resources/pdfs/maimai-pink-manual-full.pdf).
 
 **Planche 1/4 — Alimentation, écran et sélecteur de pièces :**
 
@@ -76,7 +76,7 @@ Chapitre *25 WIRING DIAGRAM*, pages 189 à 193 du [manuel maimai PiNK](resources
 * `MAI-1420` **ASSY SELECTOR DOOR** (version Japon, `220-5846-01` **PFB-730 QL203 12VBK 100**) / `MAI-1420-01` **ASSY SELECTOR DOOR EXP** (version export, `220-5842` **ELEC CC REJR SG-828**) — mécanisme accepteur de pièces
 * **XFMR WIRING** — transformateurs multi-tension (`560-5515-V-91`, `560-5599`)
 
-[![Schéma de câblage maimai PiNK, planche 1 sur 4](resources/images/wiring-diagrams/maimai-pink-wiring-diagram-1-of-4.jpg)](resources/images/wiring-diagrams/maimai-pink-wiring-diagram-1-of-4.jpg)
+[![Schéma de câblage maimai PiNK, planche 1 sur 4](/resources/images/wiring-diagrams/maimai-pink-wiring-diagram-1-of-4.jpg)](/resources/images/wiring-diagrams/maimai-pink-wiring-diagram-1-of-4.jpg)
 
 **Planche 2/4 — Lecteur Aime, haut-parleurs, LEDs et alimentations :**
 
@@ -88,7 +88,7 @@ Chapitre *25 WIRING DIAGRAM*, pages 189 à 193 du [manuel maimai PiNK](resources
 * `MAI-4000` **ASSY SW RGLTR** — alimentations à découpage (`400-5489-15024`/`15012`)
 * `MAI-1080` **CENTER LED / ROOF LED (L) / ROOF LED (R)** ×3 et `MAI-1070` **WOOFER LED** — LEDs décoratives (`838-15235-01` **LED BD RGB**)
 
-[![Schéma de câblage maimai PiNK, planche 2 sur 4](resources/images/wiring-diagrams/maimai-pink-wiring-diagram-2-of-4.jpg)](resources/images/wiring-diagrams/maimai-pink-wiring-diagram-2-of-4.jpg)
+[![Schéma de câblage maimai PiNK, planche 2 sur 4](/resources/images/wiring-diagrams/maimai-pink-wiring-diagram-2-of-4.jpg)](/resources/images/wiring-diagrams/maimai-pink-wiring-diagram-2-of-4.jpg)
 
 **Planche 3/4 — Carte I/O (JVS), convertisseur Serial-USB, contrôleur tactile et PC de jeu :**
 
@@ -99,7 +99,7 @@ Chapitre *25 WIRING DIAGRAM*, pages 189 à 193 du [manuel maimai PiNK](resources
 * `846-5003D` **ASSY CASE RGE2 W M2G S64G** (version Japon) / `846-5003D-02` (version export) — boîtier du PC de jeu
 * `MAI-4100` **ASSY ROUTER** (`601-12336-34` **ROUTER RT107E BD MAI**)
 
-[![Schéma de câblage maimai PiNK, planche 3 sur 4](resources/images/wiring-diagrams/maimai-pink-wiring-diagram-3-of-4.jpg)](resources/images/wiring-diagrams/maimai-pink-wiring-diagram-3-of-4.jpg)
+[![Schéma de câblage maimai PiNK, planche 3 sur 4](/resources/images/wiring-diagrams/maimai-pink-wiring-diagram-3-of-4.jpg)](/resources/images/wiring-diagrams/maimai-pink-wiring-diagram-3-of-4.jpg)
 
 **Planche 4/4 — Boutons, contrôleur de LEDs et anneau tactile :**
 
@@ -107,7 +107,7 @@ Chapitre *25 WIRING DIAGRAM*, pages 189 à 193 du [manuel maimai PiNK](resources
 * `837-15070-02-91` **IC BD LED DRV32CH RS232** — le contrôleur de LEDs mentionné à l'[étape 7](step-7-lighting.md) (page 192)
 * `509-6384` **TOUCH SENSOR PANEL UNIT** — carte du capteur de l'anneau tactile
 
-[![Schéma de câblage maimai PiNK, planche 4 sur 4](resources/images/wiring-diagrams/maimai-pink-wiring-diagram-4-of-4.jpg)](resources/images/wiring-diagrams/maimai-pink-wiring-diagram-4-of-4.jpg)
+[![Schéma de câblage maimai PiNK, planche 4 sur 4](/resources/images/wiring-diagrams/maimai-pink-wiring-diagram-4-of-4.jpg)](/resources/images/wiring-diagrams/maimai-pink-wiring-diagram-4-of-4.jpg)
 
 **Kit caméra en option — Caméra joueur et boîtier de contrôle :**
 
@@ -117,4 +117,4 @@ Chapitre *25 WIRING DIAGRAM*, pages 189 à 193 du [manuel maimai PiNK](resources
 * `846-5003D` / `846-5003D-02` **ASSY CASE RGE2 W M2G S64G** — boîtier du PC de jeu (JP/export)
 * `MAI-4100` **ASSY ROUTER** (`601-12336-34` **ROUTER RT107E BD MAI**)
 
-[![Schéma de câblage maimai PiNK, kit caméra en option](resources/images/wiring-diagrams/maimai-pink-wiring-diagram-camera-kit.jpg)](resources/images/wiring-diagrams/maimai-pink-wiring-diagram-camera-kit.jpg)
+[![Schéma de câblage maimai PiNK, kit caméra en option](/resources/images/wiring-diagrams/maimai-pink-wiring-diagram-camera-kit.jpg)](/resources/images/wiring-diagrams/maimai-pink-wiring-diagram-camera-kit.jpg)

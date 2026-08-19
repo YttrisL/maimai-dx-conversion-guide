@@ -28,6 +28,7 @@ validation:
 
 hooks:
   - hooks/check_translations.py
+  - hooks/dedupe_static_resources.py
   - hooks/copy_sitemap.py
 
 theme:

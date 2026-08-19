@@ -6,10 +6,10 @@ title: "🎧 6 - Prises casques et son"
 
 La borne *DX* propose des prises casques pour les joueurs, ce qui n'existait pas sur *FiNALE*.
 
-L'ordinateur *ALLS HX* possède 4 sorties audio classiques (type Jack). Trois sont situées sur la carte mère principale, et une sur une carte d'extension *([Manuel](resources/pdfs/maimai-dx-manual-full.pdf), page 128)*.
+L'ordinateur *ALLS HX* possède 4 sorties audio classiques (type Jack). Trois sont situées sur la carte mère principale, et une sur une carte d'extension *([Manuel](/resources/pdfs/maimai-dx-manual-full.pdf), page 128)*.
 **Attention :** L'ordinateur ne sort qu'un son "pré-amplifié" (très faible). Dans une vraie borne *DX*, ce son passe par un gros amplificateur dédié. Vous pouvez réutiliser l'amplificateur de la *FiNALE* pour les haut-parleurs principaux, mais il ne gérera pas les nouvelles prises casques.
 
-Voici à quoi correspondent les ports audio de l'ordinateur : *(Voir [manuel](resources/pdfs/maimai-dx-manual-full.pdf), page 193)*
+Voici à quoi correspondent les ports audio de l'ordinateur : *(Voir [manuel](/resources/pdfs/maimai-dx-manual-full.pdf), page 193)*
 
 * **FRONT :** Sortie pour les haut-parleurs du Joueur 1
 * **REAR :** Sortie pour les haut-parleurs du Joueur 2
