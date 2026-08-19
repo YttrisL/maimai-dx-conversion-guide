@@ -134,4 +134,6 @@ nav:
       - step-8-cameras.md
   - conclusion.md
   - Appendices:
+      - official-manuals.md
+      - wiring-diagrams.md
       - understanding-maitouch_RS.md
