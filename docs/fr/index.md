@@ -32,7 +32,6 @@ Il existe une rumeur persistante au sein de la communauté selon laquelle conver
 2. Familiarisez-vous avec le [Lexique](glossary.md) afin de vous assurer de comprendre les termes employés par la suite.
 3. Consultez la [Liste de courses](equipment.md), vous devez vous procurer chacun des éléments mentionnés.
 4. Suivez les étapes de conversion dans l'ordre, en commençant par l'[Étape 1 : PC Central (ALLS)](step-1-pc-alls.md).
-5. Pour les détails techniques du pont tactile, référez-vous à l'annexe [Comprendre maitouch_rs](understanding-maitouch_RS.md).
 
 **Félicitations d'avance !** Si vous suivez toutes ces étapes, vous obtiendrez une borne *maimai DxNALE* fonctionnelle, sublimée et prête pour le jeu en ligne.
 

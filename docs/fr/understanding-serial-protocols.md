@@ -81,7 +81,7 @@ Dalle tactile ADX ──▶ [paquets USB, "je suis un port série"] ──▶ Po
      (rapide, sans bauds)                             (le logiciel croit lire du 9600 bauds)
 ```
 
-C'est pratique pour la compatibilité logicielle : un programme qui ne sait parler qu'au RS-232 fonctionne sans modification. Mais attention, le déguisement ne *crée* pas de goulot d'étranglement : c'est plutôt le contraire qui pose problème. Le débit de "9600 bauds" affiché par le port COM virtuel n'est qu'une façade, le matériel USB derrière continue d'aller à pleine vitesse — c'est quand ces données rapides doivent ensuite être renvoyées vers un appareil qui, lui, est *réellement* limité à 9600 bauds (comme le jeu, plus loin sur la chaîne) que le goulot d'étranglement apparaît. C'est l'un des problèmes que détaille l'annexe [Comprendre maitouch_rs](understanding-maitouch_RS.md) pour les dalles tactiles ADX (voir [Étape 5](step-5-proxy-compatibility.md)).
+C'est pratique pour la compatibilité logicielle : un programme qui ne sait parler qu'au RS-232 fonctionne sans modification. Mais attention, le déguisement ne *crée* pas de goulot d'étranglement : c'est plutôt le contraire qui pose problème. Le débit de "9600 bauds" affiché par le port COM virtuel n'est qu'une façade, le matériel USB derrière continue d'aller à pleine vitesse — c'est quand ces données rapides doivent ensuite être renvoyées vers un appareil qui, lui, est *réellement* limité à 9600 bauds (comme le jeu, plus loin sur la chaîne) que le goulot d'étranglement apparaît. C'est l'un des problèmes rencontrés avec les dalles tactiles ADX (voir [Étape 5](step-5-proxy-compatibility.md)).
 
 ## Résumé express
 
@@ -95,4 +95,4 @@ C'est pratique pour la compatibilité logicielle : un programme qui ne sait parl
 
 ---
 
-Muni de ce vocabulaire, la lecture de l'annexe [Comprendre maitouch_rs](understanding-maitouch_RS.md) devrait être bien plus limpide.
+Muni de ce vocabulaire, la lecture de l'[Étape 5](step-5-proxy-compatibility.md) devrait être bien plus limpide.
