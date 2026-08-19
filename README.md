@@ -199,3 +199,12 @@ history gives more accurate dates.
 Check the terminal output — MkDocs errors are usually specific about which
 file and line caused the problem. Feel free to paste the error into an issue
 or ask whoever maintains this repo.
+
+---
+
+## A note on AI involvement
+
+Claude (Anthropic) was used to help set up the MkDocs infrastructure for this
+repo, and to assist with translating pages and spell-checking the Markdown
+files. Claude was **not** involved in writing or drafting any of the guide's
+actual content — every `.md` file's substance is 100% human-written.
