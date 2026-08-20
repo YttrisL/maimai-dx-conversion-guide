@@ -1,0 +1,26 @@
+<svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <!-- Card background so the diagram reads on both light and dark themes -->
+  <rect x="1" y="1" width="638" height="258" rx="12" fill="#f4f4f6" stroke="#c9c9cf" stroke-width="2"/>
+
+  <title>JVS : une pile de couches par-dessus RS-485</title>
+
+  <text x="320" y="34" text-anchor="middle" font-size="18" font-weight="bold" fill="#222">JVS : une pile de couches par-dessus RS-485</text>
+
+  <!-- JVS layer (protocol) -->
+  <rect x="80" y="66" width="340" height="50" fill="#dbe8f5" stroke="#3b82c4" stroke-width="2.5"/>
+  <text x="250" y="96" text-anchor="middle" font-size="14" font-weight="bold" fill="#1f4e73">JVS — adressage, commandes</text>
+  <text x="430" y="90" font-size="12.5" font-style="italic" fill="#555">← protocole</text>
+  <text x="430" y="106" font-size="12.5" font-style="italic" fill="#555">(contenu des octets)</text>
+
+  <!-- UART layer (framing) -->
+  <rect x="80" y="122" width="340" height="50" fill="#f7e6d9" stroke="#e07b39" stroke-width="2.5"/>
+  <text x="250" y="152" text-anchor="middle" font-size="14" font-weight="bold" fill="#8a4a1e">UART — Start / 8 bits / Stop</text>
+  <text x="430" y="146" font-size="12.5" font-style="italic" fill="#555">← framing</text>
+  <text x="430" y="162" font-size="12.5" font-style="italic" fill="#555">(forme des octets)</text>
+
+  <!-- RS-485 layer (electrical) -->
+  <rect x="80" y="178" width="340" height="50" fill="#dff2e6" stroke="#4caf7d" stroke-width="2.5"/>
+  <text x="250" y="208" text-anchor="middle" font-size="14" font-weight="bold" fill="#276b48">RS-485</text>
+  <text x="430" y="202" font-size="12.5" font-style="italic" fill="#555">← électrique</text>
+  <text x="430" y="218" font-size="12.5" font-style="italic" fill="#555">(transport)</text>
+</svg>

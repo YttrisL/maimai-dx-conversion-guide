@@ -29,9 +29,12 @@ Il existe une rumeur persistante au sein de la communauté selon laquelle conver
 ## Par où commencer ?
 
 1. Lisez les [Avertissements](warnings.md) pour comprendre les enjeux du projet et les conséquences de la modification.
-2. Familiarisez-vous avec le [Lexique](glossary.md) afin de vous assurer de comprendre les termes employés par la suite.
-3. Consultez la [Liste de courses](equipment.md), vous devez vous procurer chacun des éléments mentionnés.
-4. Suivez les étapes de conversion dans l'ordre, en commençant par l'[Étape 1 : PC Central (ALLS)](step-1-pc-alls.md).
+2. Consultez la [Liste de courses](equipment.md), vous devez vous procurer chacun des éléments mentionnés.
+3. Suivez les étapes de conversion dans l'ordre, en commençant par l'[Étape 1 : PC Central (ALLS)](step-1-pc-alls.md).
+
+Si certains termes ne vous semblent pas clairs, n'hésitez pas à consulter le [Lexique](glossary.md). Celui-ci reprends toutes les définitions qui pourraient être obscures pour un débutant. 
+
+De plus, si vous n'êtes pas familiers avec les protocoles série, une page explicative partant de zéro se situe dans les annexes, "[Comprendre les protocoles série](understanding-serial-protocols.md)". Ceux-ci sont un point central de cette conversion.
 
 **Félicitations d'avance !** Si vous suivez toutes ces étapes, vous obtiendrez une borne *maimai DxNALE* fonctionnelle, sublimée et prête pour le jeu en ligne.
 
