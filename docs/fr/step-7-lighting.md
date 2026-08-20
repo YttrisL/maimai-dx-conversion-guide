@@ -1,8 +1,8 @@
 ---
-title: "💡 7 - Lumières (optionnelle)"
+title: "💡 7 - Lumières (Optionnel)"
 ---
 
-# 💡 Étape 7 : Lumières (Optionnelle)
+# 💡 Étape 7 : Lumières (Optionnel)
 
 À ce stade, le jeu devrait être totalement jouable, mais l'éclairage esthétique de la borne n'est pas encore fonctionnel.
 Sur *DX*, il y a trois contrôleurs différents qui gèrent l'éclairage de la borne :
