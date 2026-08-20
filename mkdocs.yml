@@ -124,7 +124,7 @@ nav:
       - warnings.md
       - equipment.md
   - Conversion steps:
-      - step-1-pc-alls.md
+      - step-1-alls-and-psu.md
       - step-2-touchscreen-display.md
       - step-3-io-board.md
       - step-4-aime-reader.md

@@ -11,6 +11,7 @@ Pour ne pas être perdu dans les termes techniques :
 * **ALLS (MX2 / HX2) :** C'est le nom de l'ordinateur standard utilisé par Sega pour faire tourner les jeux récents. Il remplace l'ancien PC de FiNALE (nommé RingEdge 2). Il se présente [en plusieurs déclinaisons (UX, HX, UX2, HX2, etc)](https://gitea.farewell.dev/Cool_Tools/arcade-docs/src/branch/main/sega/boards.md#alls), chacun avec des spécifications matérielles qui lui sont propres. Le modèle correspondant à maimai DX est le ALLS HX2.
 * **Carte I/O (IO board) :** C'est la carte électronique (un [PCB](#cablage-et-electronique)) qui fait le lien entre le PC et la borne. Elle capte l'appui sur les boutons. Dans le cas de *maimai FiNALE*, il s'agit d'une **Sega IO3**. Pour *DX*, elle doit être remplacée par une **Sega IO4**. La plupart des IO boards communiquent avec le système via le protocole [JVS](#communication-et-protocoles).
 * **Aime / VFD :** Le lecteur de cartes sans contact (NFC) utilisé par les joueurs pour sauvegarder leur profil. Le *VFD* (Vacuum Fluorescent Display) est le petit écran à affichage rétro (souvent vert ou bleu) qui affiche le solde d'argent ou d'autres informations textuelles.
+* **Dip switches :** Une rangée de petits interrupteurs miniatures montés directement sur une carte électronique (comme l'IO4), qui permettent de configurer certains réglages matériels sans logiciel, simplement en les basculant sur "ON" ou "OFF" à la main. C'est aussi un bon moyen visuel pour reconnaitre une IO4 : elle en possède sur le dessus de sa PCB, contrairement à l'IO3 qui lui ressemble beaucoup.
 
 ## Câblage et électronique
 
@@ -40,5 +41,9 @@ Pour ne pas être perdu dans les termes techniques :
 * **Buffer (mémoire tampon) :** Une petite zone de stockage temporaire où l'on accumule des données avant de les traiter ou de les envoyer d'un seul coup, plutôt qu'au fil de l'eau. C'est une technique courante dans ce type de pont de communication, par exemple pour regrouper des commandes avant de les transmettre.
 * **Règle udev / Symlink :** Sous Linux, un port USB peut changer de nom à chaque redémarrage (par exemple passer de `/dev/ttyUSB0` à `/dev/ttyUSB1`). Une règle *udev* permet de figer un nom stable et prévisible (un "raccourci", ou *symlink*) pour un appareil précis, par exemple pour être certain qu'un câble donné garde toujours le même nom.
 * **Service systemd :** Sous Linux, un programme qui se lance automatiquement et en arrière-plan dès le démarrage de la machine, sans intervention manuelle. C'est ce qui permet à un programme de démarrer tout seul à chaque allumage de la borne, sans avoir à le lancer à la main.
+
+## Jouer en dehors d'une borne
+
+* **Pad :** Un contrôleur customisé, généralement compact, qui reproduit les boutons et l'anneau tactile de *maimai DX* pour permettre de jouer chez soi à un simulateur reproduisant les sensations de maimai DX, sans borne d'arcade. C'est une approche différente de celle de ce guide, qui vise à faire fonctionner du vrai matériel de borne. 
 
 ---

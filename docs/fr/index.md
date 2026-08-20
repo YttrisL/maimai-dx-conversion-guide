@@ -30,7 +30,7 @@ Il existe une rumeur persistante au sein de la communauté selon laquelle conver
 
 1. Lisez les [Avertissements](warnings.md) pour comprendre les enjeux du projet et les conséquences de la modification.
 2. Consultez la [Liste de courses](equipment.md), vous devez vous procurer chacun des éléments mentionnés.
-3. Suivez les étapes de conversion dans l'ordre, en commençant par l'[Étape 1 : PC Central (ALLS)](step-1-pc-alls.md).
+3. Suivez les étapes de conversion dans l'ordre, en commençant par l'[Étape 1 : PC Central (ALLS)](step-1-alls-and-psu.md).
 
 Si certains termes ne vous semblent pas clairs, n'hésitez pas à consulter le [Lexique](glossary.md). Celui-ci reprend toutes les définitions qui pourraient être obscures pour un débutant. 
 
