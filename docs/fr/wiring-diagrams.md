@@ -107,13 +107,13 @@ Chapitre *25 WIRING DIAGRAM*, pages 189 à 193 du [manuel maimai PiNK](../resour
 
 [![Schéma de câblage maimai PiNK, planche 2 sur 4](../resources/images/wiring-diagrams/maimai-pink-wiring-diagram-2-of-4.jpg)](../resources/images/wiring-diagrams/maimai-pink-wiring-diagram-2-of-4.jpg)
 
-**Planche 3/4 — Carte I/O (JVS), convertisseur Serial-USB, contrôleur tactile et PC *RingEdge2* :**
+**Planche 3/4 — Carte I/O (JVS), convertisseur Serial-USB, contrôleur tactile et PC *RingEdge 2* :**
 
 * **ASSY LCD** — Joueur 2, écran (`200-6226-91` **ASSY LCD DSPL 42 TYPE LED Y**)
 * `837-14505` **I/O CONTROL BD FOR JVS** — la carte IO3, remplacée par l'IO4 à l'[étape 3](step-3-io-board.md)
 * `837-15067-02` **IC BD USB TO 4SERIAL 232 IF** — le convertisseur Serial-USB mentionné à l'[étape 7](step-7-lighting.md)
 * `838-15221` **SERIAL I/F BD TOUCHPANEL GUNZE** — carte contrôleur de la dalle tactile
-* **ASSY CASE RGE2 W M2G S64G** — PC *RingEdge2* 
+* **ASSY CASE RGE2 W M2G S64G** — PC *RingEdge 2* 
     * `846-5003D` (version Japon)
     * `846-5003D-02` (version export)
 * `MAI-4100` **ASSY ROUTER** (`601-12336-34` **ROUTER RT107E BD MAI**)
@@ -137,7 +137,7 @@ Chapitre *25 WIRING DIAGRAM*, pages 189 à 193 du [manuel maimai PiNK](../resour
     * `838-15222` **MOVIE CAMERA CTRL BD**
     * `601-12827-01` **BD CAMERA KBCR-S01MG-HPB1022**
 * `MAI-3050` **ASSY LCD W/CUSHION** — écran de retour (`200-6211` **LCD MODULE NL6448BC18-01 NLT**)
-* **ASSY CASE RGE2 W M2G S64G** — PC *RingEdge2* 
+* **ASSY CASE RGE2 W M2G S64G** — PC *RingEdge 2* 
     * `846-5003D` (version Japon)
     * `846-5003D-02` (version export)
 * `MAI-4100` **ASSY ROUTER** (`601-12336-34` **ROUTER RT107E BD MAI**)
