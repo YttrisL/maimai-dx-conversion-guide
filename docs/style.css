@@ -11,6 +11,19 @@
     font-size: 0.7rem;
 }
 
+/* Images
+   ========================================================================== */
+
+/* Center images (and their captions) instead of leaving them left-aligned. */
+.md-typeset img {
+    display: block;
+    margin-inline: auto;
+}
+
+.md-typeset p:has(> img) {
+    text-align: center;
+}
+
 /* Headings
    ========================================================================== */
 
