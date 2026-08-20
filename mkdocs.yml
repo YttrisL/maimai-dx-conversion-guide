@@ -4,7 +4,7 @@ site_author: "Yttris and the Atom City team"
 site_url: "" # fill in once you know the public URL the FTP host serves from
 copyright: Copyright &copy; 2026 - CC BY-NC - Creative Commons Non-Commercial
 
-repo_url: https://gitea.farewell.dev/Yttris/maimai-dx-guide/
+repo_url: https://gitea.farewell.dev/AtomCity/maimai-dx-guide
 repo_name: Gitea
 
 # By default MkDocs only *warns* about internal links (nav entries, page
@@ -114,7 +114,7 @@ extra_css:
 extra:
   social:
     - icon: simple/gitea
-      link: https://gitea.farewell.dev/Yttris/maimai-dx-guide/
+      link: https://gitea.farewell.dev/AtomCity/maimai-dx-guide
       name: Gitea
   generator: true
 

@@ -1,5 +1,5 @@
 ---
-title: "🛠️ 1 - PC Central (ALLS)"
+title: "🛠️ 1 - ALLS et alimentations"
 ---
 
 # 🛠️ Étape 1 : Le Remplacement du PC Central (ALLS)
