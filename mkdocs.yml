@@ -1,7 +1,7 @@
 site_name: "maimai FiNALE → DX Upgrade Guide"
 site_description: "A step-by-step tutorial for upgrading a Sega maimai FiNALE arcade cabinet to maimai DX"
 site_author: "Yttris and the Atom City team"
-site_url: "" # fill in once you know the public URL the FTP host serves from
+site_url: "https://dxnale.farewell.dev/"
 copyright: Copyright &copy; 2026 - CC BY-NC - Creative Commons Non-Commercial
 
 repo_url: https://gitea.farewell.dev/AtomCity/maimai-dx-guide
@@ -76,6 +76,9 @@ plugins:
         - locale: fr
           name: Français
           build: true
+          site_name: "Guide de conversion maimai FiNALE → DX"
+          site_description: "Un tutoriel pas à pas pour convertir une borne d'arcade Sega maimai FiNALE en maimai DX"
+          site_author: "Yttris et l'équipe Atom City"
           nav_translations:
             Preparation: Préparatifs
             Conversion steps: Étapes de conversion
