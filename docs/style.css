@@ -155,3 +155,24 @@ hr {
         margin-inline: auto;
     }
 }
+
+/* Wiring diagrams page
+   ========================================================================== */
+
+/* Grid reference (e.g. "C-3") pointing at a spot on a wiring diagram. Uses a
+   warm accent deliberately different from the site's indigo theme so it
+   stands out in dense bullet lists, and a smaller size to help long lines
+   keep fitting on one display line. */
+:root {
+    --wiring-coord-fg: #b35900;
+}
+
+[data-md-color-scheme="slate"] {
+    --wiring-coord-fg: #ffb74d;
+}
+
+.wiring-coord {
+    font-family: var(--md-code-font-family);
+    font-size: 0.85em;
+    color: var(--wiring-coord-fg);
+}
