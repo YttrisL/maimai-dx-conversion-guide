@@ -4,7 +4,7 @@
 
   <title>Connecteur DB9 mâle, vue de face</title>
 
-  <text x="280" y="34" text-anchor="middle" font-size="18" font-weight="bold" fill="#222">Connecteur DB9 mâle — vue de face (côté broches)</text>
+  <text x="280" y="34" text-anchor="middle" font-size="18" font-weight="bold" fill="#222">Connecteur DB9 mâle - vue de face (côté broches)</text>
 
   <!-- Jack screws (the two metal mounting posts on either side of a DB connector) -->
   <rect x="110" y="123" width="24" height="44" rx="4" fill="#b7bcc7" stroke="#333" stroke-width="2"/>

@@ -8,13 +8,13 @@
 
   <!-- JVS layer (protocol) -->
   <rect x="80" y="66" width="340" height="50" fill="#dbe8f5" stroke="#3b82c4" stroke-width="2.5"/>
-  <text x="250" y="96" text-anchor="middle" font-size="14" font-weight="bold" fill="#1f4e73">JVS — adressage, commandes</text>
+  <text x="250" y="96" text-anchor="middle" font-size="14" font-weight="bold" fill="#1f4e73">JVS - adressage, commandes</text>
   <text x="430" y="90" font-size="12.5" font-style="italic" fill="#555">← protocole</text>
   <text x="430" y="106" font-size="12.5" font-style="italic" fill="#555">(contenu des octets)</text>
 
   <!-- UART layer (framing) -->
   <rect x="80" y="122" width="340" height="50" fill="#f7e6d9" stroke="#e07b39" stroke-width="2.5"/>
-  <text x="250" y="152" text-anchor="middle" font-size="14" font-weight="bold" fill="#8a4a1e">UART — Start / 8 bits / Stop</text>
+  <text x="250" y="152" text-anchor="middle" font-size="14" font-weight="bold" fill="#8a4a1e">UART - Start / 8 bits / Stop</text>
   <text x="430" y="146" font-size="12.5" font-style="italic" fill="#555">← framing</text>
   <text x="430" y="162" font-size="12.5" font-style="italic" fill="#555">(forme des octets)</text>
 

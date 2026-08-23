@@ -25,7 +25,7 @@ Il faut ensuite raccorder les dalles aux bonnes "adresses" (Ports COM) sur le AL
 * **Joueur 1 :** Doit être branché au Port **COM3**.
 * **Joueur 2 :** Doit être branché au Port **COM4**.
 
-Contrairement à d'autres kits de conversion, la carte I/O HanDevice fournie avec les dalles HDX expose directement un port série UART. Vous pouvez donc la raccorder directement au ALLS, sans transformation de signal ni Raspberry Pi intermédiaire — voir la [Liste de courses](equipment.md) pour le détail de cette carte I/O.
+Contrairement à d'autres kits de conversion, la carte I/O HanDevice fournie avec les dalles HDX expose directement un port série UART. Vous pouvez donc la raccorder directement au ALLS, sans transformation de signal ni Raspberry Pi intermédiaire - voir la [Liste de courses](equipment.md) pour le détail de cette carte I/O.
 
 ---
 

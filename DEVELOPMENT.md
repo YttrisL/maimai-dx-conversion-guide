@@ -1,7 +1,7 @@
 # Development guide
 
 This document walks you through getting the documentation site running on
-your own machine from a completely clean install — no prior MkDocs
+your own machine from a completely clean install - no prior MkDocs
 experience assumed. If you're just here to read the guide, you don't need
 any of this: head back to the [README](README.md).
 
@@ -43,7 +43,7 @@ MkDocs needs **Python 3.9 or newer**.
 - **Windows:** download the latest installer from
   [python.org/downloads](https://www.python.org/downloads/). On the first
   install screen, **make sure you tick "Add python.exe to PATH"** before
-  clicking Install — this is the single most common thing people forget, and
+  clicking Install - this is the single most common thing people forget, and
   without it none of the commands below will work.
 - **macOS:** `brew install python` (Homebrew), or the installer from
   python.org.
@@ -56,7 +56,7 @@ Verify it worked:
 python --version
 ```
 
-(On macOS/Linux this command is sometimes `python3` instead of `python` —
+(On macOS/Linux this command is sometimes `python3` instead of `python` -
 if `python --version` says "command not found", try `python3 --version`.)
 
 ---
@@ -71,7 +71,7 @@ cd maimai-dx-guide
 ```
 
 If you already downloaded this as a zip instead of cloning, just open a
-terminal inside the unzipped folder and skip the `git clone` step — though
+terminal inside the unzipped folder and skip the `git clone` step - though
 note you'll want a real `git clone` eventually if you intend to push changes
 back.
 
@@ -99,11 +99,11 @@ source .venv/bin/activate
 
 You'll know it worked because your terminal prompt now starts with
 `(.venv)`. You'll need to run the `activate` line again every time you open
-a *new* terminal window to work on this project — it doesn't persist
+a *new* terminal window to work on this project - it doesn't persist
 automatically.
 
 > **Note:** the `.venv` folder is intentionally excluded from git (see
-> `.gitignore`) — every contributor creates their own locally, it never gets
+> `.gitignore`) - every contributor creates their own locally, it never gets
 > committed.
 
 ---
@@ -133,7 +133,7 @@ You'll see log output ending in something like:
 INFO    -  Serving on http://127.0.0.1:8000/
 ```
 
-Open that address in your browser — you now have the site running locally.
+Open that address in your browser - you now have the site running locally.
 
 The best part: **leave this command running** and edit any `.md` file in
 `docs/`. The moment you save, the browser tab auto-refreshes with your
@@ -145,11 +145,11 @@ Stop the server anytime with `Ctrl+C` in the terminal.
 
 ## 6. Making changes
 
-- **Page content** lives in `docs/*.md` — plain Markdown files. Add a new
+- **Page content** lives in `docs/*.md` - plain Markdown files. Add a new
   file for a new page.
 - **Navigation / page order** is controlled by the `nav:` section in
   `mkdocs.yml` at the repo root. If you add a new `.md` file and it isn't
-  showing up in the sidebar, this is why — add it to the list there.
+  showing up in the sidebar, this is why - add it to the list there.
 - **Site-wide settings** (title, theme colors, plugins, repo links, etc.)
   are also in `mkdocs.yml`.
 
@@ -157,8 +157,8 @@ Stop the server anytime with `Ctrl+C` in the terminal.
 
 ## 7. Building the static site (no live server)
 
-When you want the actual static HTML/CSS/JS files — e.g. to upload
-somewhere yourself, inspect the output, or just confirm it builds cleanly —
+When you want the actual static HTML/CSS/JS files - e.g. to upload
+somewhere yourself, inspect the output, or just confirm it builds cleanly -
 run:
 
 ```bash
@@ -169,14 +169,14 @@ This generates a full static copy of the site in a new `site/` folder. You
 could open `site/index.html` directly in a browser, or upload the entire
 `site/` folder's contents to any static web host or FTP server. This folder
 is also excluded from git (it's a build artifact, regenerated fresh every
-time) — never edit files inside it directly, your changes would be
+time) - never edit files inside it directly, your changes would be
 overwritten on the next build.
 
 > In this repo, this exact `mkdocs build` step already happens
 > automatically via a CI pipeline (`.gitea/workflows/deploy.yml`) every time
 > a change is pushed to `main`, followed by an automatic upload to the live
 > site. You generally won't need to run `mkdocs build` by hand unless you're
-> troubleshooting something locally first — `mkdocs serve` covers everyday
+> troubleshooting something locally first - `mkdocs serve` covers everyday
 > editing.
 
 ---
@@ -185,19 +185,19 @@ overwritten on the next build.
 
 **`mkdocs: command not found` / `'mkdocs' is not recognized`**\
 Your virtual environment isn't active. Re-run the `activate` command from
-[section 3](#3-set-up-a-virtual-environment) — you need to do this in every
+[section 3](#3-set-up-a-virtual-environment) - you need to do this in every
 new terminal window.
 
 **A `git-revision-date-localized` / `InvalidGitRepositoryError` error on
 build**\
 This plugin shows each page's real "last updated" date, which it reads from
 git history. It needs you to have actually run `git clone` (or at least
-`git init` + one commit) — if you're working from a loose folder that was
+`git init` + one commit) - if you're working from a loose folder that was
 never a git repo, this is why. It's configured to fall back gracefully to
 the build date otherwise, so this shouldn't hard-crash, but a real git
 history gives more accurate dates.
 
 **Still stuck?**\
-Check the terminal output — MkDocs errors are usually specific about which
+Check the terminal output - MkDocs errors are usually specific about which
 file and line caused the problem. Feel free to paste the error into an issue
 or ask whoever maintains this repo.

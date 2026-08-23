@@ -7,7 +7,7 @@
   <text x="320" y="34" text-anchor="middle" font-size="18" font-weight="bold" fill="#222">RS-485 : bus partagé (paire différentielle A/B)</text>
 
   <!-- Differential pair bus -->
-  <text x="320" y="50" text-anchor="middle" font-size="12.5" font-style="italic" fill="#555">Paire différentielle A/B — plusieurs appareils sur les deux mêmes fils</text>
+  <text x="320" y="50" text-anchor="middle" font-size="12.5" font-style="italic" fill="#555">Paire différentielle A/B - plusieurs appareils sur les deux mêmes fils</text>
   <line x1="60" y1="64" x2="580" y2="64" stroke="#3b82c4" stroke-width="3"/>
   <line x1="60" y1="76" x2="580" y2="76" stroke="#e07b39" stroke-width="3"/>
   <text x="42" y="68" text-anchor="end" font-size="12" fill="#3b82c4">A</text>

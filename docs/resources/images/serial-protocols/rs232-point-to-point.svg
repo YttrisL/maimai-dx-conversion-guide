@@ -45,6 +45,6 @@
   <text x="435" y="224" text-anchor="start" font-size="13" fill="#222">GND</text>
 
   <text x="320" y="258" text-anchor="middle" font-size="12.5" fill="#555" font-style="italic">
-    Le TX d'un appareil rejoint le RX de l'autre — le GND relie simplement les deux masses
+    Le TX d'un appareil rejoint le RX de l'autre - le GND relie simplement les deux masses
   </text>
 </svg>
