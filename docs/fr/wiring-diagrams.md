@@ -63,7 +63,7 @@ Chapitre *22 総合配線図* (« schéma de câblage général »), pages 193 �
 ### Planche 4/4 — Caméras, lecteur Aime, monnayeur et panneau d'entrée
 
 * `MMT-1350` / `MMT-1370` **ASSY PLAYER CAMERA / PLAYER CAMERA UNIT** **[D-1]**{: .wiring-coord } — caméras joueurs
-    * `601-13249` **CAMERA KBCR-S03MU-HPB2033-C300** **[D-1]**{: .wiring-coord }, voir l'[étape 8](step-8-cameras.md)
+    * `601-13249` **CAMERA KBCR-S03MU-HPB2033-C300** **[D-1]**{: .wiring-coord }, voir l'[étape 7](step-7-cameras.md)
 * `MMT-1440` **ASSY AIME AND VFD** **[B-3]**{: .wiring-coord } — module lecteur Aime (AIME RW UNIT) et afficheur 
     * `200-6275` **VFD GP1232A02A FUTABA** **[A-4]**{: .wiring-coord }, voir l'[étape 4](step-4-aime-reader.md)
 * `MMT-1470` **ASSY CODE READER** **[B-5]**{: .wiring-coord } — lecteur de QR code
@@ -127,7 +127,7 @@ Chapitre *25 WIRING DIAGRAM*, pages 189 à 193 du [manuel maimai PiNK](../resour
 
 * **ASSY LCD** **[G-1]**{: .wiring-coord } — Joueur 2, écran (`200-6226-91` **ASSY LCD DSPL 42 TYPE LED Y**)
 * `837-14505` **I/O CONTROL BD FOR JVS** **[D-1]**{: .wiring-coord } — la carte IO3, remplacée par l'IO4 à l'[étape 3](step-3-io-board.md)
-* `837-15067-02` **IC BD USB TO 4SERIAL 232 IF** **[F-2]**{: .wiring-coord } — le convertisseur Serial-USB mentionné à l'[étape 7](step-7-lighting.md)
+* `837-15067-02` **IC BD USB TO 4SERIAL 232 IF** **[F-2]**{: .wiring-coord } — le convertisseur Serial-USB mentionné à l'[étape 6](step-6-lighting.md)
 * `838-15221` **SERIAL I/F BD TOUCHPANEL GUNZE** **[D-4]**{: .wiring-coord } — carte contrôleur de la dalle tactile
 * **ASSY CASE RGE2 W M2G S64G** **[E-3/E-4]**{: .wiring-coord } — PC *RingEdge 2* 
     * `846-5003D` **[E-3]**{: .wiring-coord } (version Japon)
@@ -143,7 +143,7 @@ Chapitre *25 WIRING DIAGRAM*, pages 189 à 193 du [manuel maimai PiNK](../resour
 * `MAI-1200` / `MAI-1201` **ASSY SW BASE** **[D-1/D-5]**{: .wiring-coord } — embase et disposition des 8 boutons
     * `838-15235-01` **LED BD RGB** **[D-1→D-3]**{: .wiring-coord }
     * `370-5359` **PHOTO INTERRUPTER OJ-535S-A5** **[E-1→E-3]**{: .wiring-coord }
-* `837-15070-02-91` **IC BD LED DRV32CH RS232** **[C-4]**{: .wiring-coord } — le contrôleur de LEDs mentionné à l'[étape 7](step-7-lighting.md)
+* `837-15070-02-91` **IC BD LED DRV32CH RS232** **[C-4]**{: .wiring-coord } — le contrôleur de LEDs mentionné à l'[étape 6](step-6-lighting.md)
 * `509-6384` **TOUCH SENSOR PANEL UNIT** **[E-5]**{: .wiring-coord } — carte du capteur de l'anneau tactile
 
 [![Schéma de câblage maimai PiNK, planche 4 sur 4](../resources/images/wiring-diagrams/maimai-pink-wiring-diagram-4-of-4.jpg)](../resources/images/wiring-diagrams/maimai-pink-wiring-diagram-4-of-4.jpg)
@@ -154,7 +154,7 @@ Chapitre *25 WIRING DIAGRAM*, pages 189 à 193 du [manuel maimai PiNK](../resour
 
 * `MAI-3100` **ASSY CAMERA SW RGLTR** **[C-1]**{: .wiring-coord } — PSU de la caméra
     * `400-5489-05012` **SW REGU VS50E-12** **[C-3]**{: .wiring-coord }
-* `MAI-3000` **ASSY CAMERA BOX** **[D-1]**{: .wiring-coord } — boîtier caméra, voir l'[étape 8](step-8-cameras.md)
+* `MAI-3000` **ASSY CAMERA BOX** **[D-1]**{: .wiring-coord } — boîtier caméra, voir l'[étape 7](step-7-cameras.md)
     * `838-15222` **MOVIE CAMERA CTRL BD** **[D-3]**{: .wiring-coord }
     * `601-12827-01` **BD CAMERA KBCR-S01MG-HPB1022** **[F-2]**{: .wiring-coord }
 * `MAI-3050` **ASSY LCD W/CUSHION** **[F-3]**{: .wiring-coord } — écran de retour

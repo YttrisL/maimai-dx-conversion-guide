@@ -12,4 +12,4 @@ Alternativement, il est souvent plus simple (et moins cher) de trouver des PC **
 
 ---
 
-Passons à l'[Étape 2 : Affichage et dalles tactiles ADX](step-2-touchscreen-display.md).
+Passons à l'[Étape 2 : Affichage et dalles tactiles HDX](step-2-touchscreen-display.md).

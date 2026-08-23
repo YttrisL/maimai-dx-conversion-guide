@@ -1,8 +1,8 @@
 ---
-title: "🎧 6 - Prises casques et son"
+title: "🎧 5 - Prises casques et son"
 ---
 
-# 🎧 Étape 6 : Prises casques et Système Son
+# 🎧 Étape 5 : Prises casques et Système Son
 
 La borne *DX* propose des prises casques pour les joueurs, ce qui n'existait pas sur *FiNALE*.
 
@@ -29,4 +29,4 @@ Pour l'installation physique des prises (qui sont de simples connecteurs Jack 3.
 
 ---
 
-Étape suivante (optionnelle) : les [Lumières](step-7-lighting.md).
+Étape suivante (optionnelle) : les [Lumières](step-6-lighting.md).

@@ -131,13 +131,13 @@ nav:
       - step-2-touchscreen-display.md
       - step-3-io-board.md
       - step-4-aime-reader.md
-      - step-5-proxy-compatibility.md
-      - step-6-audio-headphones.md
-      - step-7-lighting.md
-      - step-8-cameras.md
+      - step-5-audio-headphones.md
+      - step-6-lighting.md
+      - step-7-cameras.md
   - conclusion.md
   - Appendices:
+      - glossary.md
       - official-manuals.md
       - wiring-diagrams.md
       - understanding-serial-protocols.md
-      - glossary.md
+      - secondhand-market.md

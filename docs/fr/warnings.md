@@ -13,9 +13,7 @@ Avant de vous lancer, voici la réalité du projet :
 
 La tâche est complexe, mais ce guide présente chaque point de façon simple et détaillée en expliquant à chaque étape les concepts requis pour la mener à bien. Gardez également en tête que bien que la finalité soit d'avoir une expérience de jeu maimai DX la plus fidèle possible, cette borne ne sera jamais autre chose qu'une conversion. Bien que l'expérience de jeu n'en souffre pas, certains détails propres à une véritable DX ne pourront jamais être reproduits sur une base de borne FiNALE.
 
-!!! tip ""
-    **Avant de vous lancer**
-
+!!! tip "Avant de vous lancer"
     Assurez vous de bien comprendre ces avertissements avant de vous lancer. De plus, la plupart des composants dont vous aurez besoin proviendront d'Asie et auront réalistement un délai de livraison important. Si vous voulez éviter de vous retrouver avec une borne hors service pendant plusieurs mois il est **très** fortement suggéré de vous assurer d'avoir obtenu tous les composants requis **avant** de commencer la conversion. De plus, **assurez vous d'avoir confirmé le bon fonctionnement de ces différents composants avant de commencer**. L'étape suivante vous guidera pour les achats à réaliser par avance.
 
 Si en ayant connaissance de ces avertissements vous restez persuadé de votre volonté de procéder, alors nous pouvons continuer vers la suite du guide.

@@ -27,7 +27,7 @@ Sur *DX*, de nouveaux boutons physiques sont apparus pour permettre aux joueurs 
 
 ## 3. Le contrôle des LEDs du Billboard (Toit de la borne)
 
-Sur *DX*, l'IO4 est responsable de la gestion des lumières du sommet de la borne. Ce point sera également abordé à l'[Étape 7](step-7-lighting.md), mais voici déjà le schéma (pinout) des LEDs à raccorder :
+Sur *DX*, l'IO4 est responsable de la gestion des lumières du sommet de la borne. Ce point sera également abordé à l'[Étape 6](step-6-lighting.md), mais voici déjà le schéma (pinout) des LEDs à raccorder :
 
 * "BILLBOARD LED L RED" : Connecteur **CN3** - Broche **51** (Le gros faisceau de câbles)
 * "BILLBOARD LED R RED" : Connecteur **CN3** - Broche **52** (Le gros faisceau de câbles)

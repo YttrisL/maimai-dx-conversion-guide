@@ -5,18 +5,10 @@ title: "🛒 Liste de courses"
 # 🛒 Liste de courses : Le matériel nécessaire
 
 ## Préambule
+Pour chacune des pièces listées dans la liste de courses, le tableau priorise l'option la plus optimisée. Cela peut être pour plusieurs raisons : simplicité d'installation, prix, disponibilité. *Lorsqu'il en existe, le tableau mentionnera les alternatives disponibles.* Toutefois, ce guide part du principe que vous avez choisi l'option principale et ne s'attardera pas sur les alternatives.
 
-La plupart des composants requis ne se trouveront pas dans un supermarché. Il s'agit de matériel d'arcade précis et pointu, que seuls vendent les fabricants officiels. Il sera bien sûr totalement impossible pour nous de passer par le service après-vente de Sega pour récupérer le matériel dont nous avons besoin, nous ne pouvons donc que nous tourner vers le marché de l'occasion.
-
-De ce fait, __nous sommes tributaires de la disponibilité des articles sur ces marchés de l'occasion__. S'il n'est, par exemple, pas très compliqué de trouver une carte I/O IO4 ou un lecteur Aime, il est beaucoup plus compliqué de trouver un ALLS HX2 et pour ainsi dire impossible de trouver une dalle tactile officielle provenant d'une borne maimai DX. Pour certaines de ces pièces, des alternatives existent, pour d'autres il n'y aura pas d'autre choix que de prendre son mal en patience et de rester à l’affût d'une offre sur le marché de l'occasion japonais.
-
-!!! tip ""
-    La plupart des pièces détachées sur le marché de l'occasion japonais proviennent de bornes qui ont été démantelées pour être liquidées plus facilement. Le plus souvent suite à une fin d'activité du game-center l'ayant possédée, ou parce que la borne en question n'attire plus le public. Dans le cas de maimai DX, le jeu étant très populaire il est rare qu'une borne soit vendue à l'exportation, et encore plus qu'une d'entre elles soit démontée pour être vendue en pièces détachées. 
-    
-    Heureusement, la plupart des composants des bornes Sega sont interchangeables et réutilisés d'une borne à l'autre, y compris dans des machines beaucoup moins populaires que maimai DX pour lesquelles il est infiniment plus probable de trouver des pièces détachées.
-
-Pour chacune de ces pièces, le tableau priorise l'option la plus optimisée. Cela peut être pour plusieurs raisons : simplicité d'installation, prix, disponibilité. Lorsqu'il en existe, le tableau mentionnera les alternatives disponibles. Toutefois, ce guide part du principe que vous avez choisi l'option principale et ne s'attardera pas sur les alternatives.
-
+!!! tip "Le marché de l'occasion japonais"
+    Si vous n'êtes pas familier avec le marché de seconde main japonais et les  options disponibles pour vous y procurer du matériel, n'hésitez par à consulter l'annexe [Le marché de l'occasion](secondhand-market.md).
 ## Matériel obligatoire
 
 ### ALLS HX2

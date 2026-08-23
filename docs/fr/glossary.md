@@ -36,7 +36,7 @@ Pour ne pas être perdu dans les termes techniques :
 
 ## Informatique et Linux
 
-* **Proxy :** Dans ce guide, il ne s'agit pas d'un serveur web, mais d'un petit ordinateur (ou programme) placé entre deux appareils incompatibles pour "traduire" leurs échanges à la volée, sans que ni l'un ni l'autre ne s'en aperçoive. On parle parfois aussi de **MITM** pour désigner ce même rôle d'intermédiaire. C'est ce rôle que joue le Raspberry Pi à l'[Étape 5](step-5-proxy-compatibility.md) et à l'[Étape 7](step-7-lighting.md).
+* **Proxy :** Dans ce guide, il ne s'agit pas d'un serveur web, mais d'un petit ordinateur (ou programme) placé entre deux appareils incompatibles pour "traduire" leurs échanges à la volée, sans que ni l'un ni l'autre ne s'en aperçoive. On parle parfois aussi de **MITM** pour désigner ce même rôle d'intermédiaire. C'est ce rôle que joue le Raspberry Pi à l'[Étape 6](step-6-lighting.md).
 * **MITM (Man in the Middle) :** Littéralement "homme du milieu". Terme issu du monde de la sécurité informatique désignant un appareil ou un programme placé entre deux parties qui communiquent, capable de lire, modifier ou traduire leurs échanges. Le terme est souvent associé à une attaque malveillante, mais désigne ici un usage parfaitement légitime : un intermédiaire de confiance qui adapte la communication entre deux appareils pour les rendre compatibles.
 * **Buffer (mémoire tampon) :** Une petite zone de stockage temporaire où l'on accumule des données avant de les traiter ou de les envoyer d'un seul coup, plutôt qu'au fil de l'eau. C'est une technique courante dans ce type de pont de communication, par exemple pour regrouper des commandes avant de les transmettre.
 * **Règle udev / Symlink :** Sous Linux, un port USB peut changer de nom à chaque redémarrage (par exemple passer de `/dev/ttyUSB0` à `/dev/ttyUSB1`). Une règle *udev* permet de figer un nom stable et prévisible (un "raccourci", ou *symlink*) pour un appareil précis, par exemple pour être certain qu'un câble donné garde toujours le même nom.
@@ -45,5 +45,9 @@ Pour ne pas être perdu dans les termes techniques :
 ## Jouer en dehors d'une borne
 
 * **Pad :** Un contrôleur customisé, généralement compact, qui reproduit les boutons et l'anneau tactile de *maimai DX* pour permettre de jouer chez soi à un simulateur reproduisant les sensations de maimai DX, sans borne d'arcade. C'est une approche différente de celle de ce guide, qui vise à faire fonctionner du vrai matériel de borne. 
+
+## Culture arcade japonaise
+
+* **Game center :** Le terme japonais pour désigner une salle d'arcade, c'est-à-dire un établissement où sont installées des bornes de jeux vidéo, dont *maimai DX*. Contrairement à la plupart des pays occidentaux où l'arcade a fortement décliné, les game centers restent au Japon un lieu de sortie populaire et un pilier de la culture du jeu vidéo, avec de grandes enseignes comme Round1, Taito Station ou GiGO (anciennement Club Sega, rebaptisé depuis le rachat de la branche arcade de Sega par GENDA en 2020).
 
 ---

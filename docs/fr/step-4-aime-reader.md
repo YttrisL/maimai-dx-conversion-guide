@@ -18,4 +18,4 @@ Les anciens lecteurs de cartes de la *FiNALE* sont obsolètes et ne fonctionnero
 
 ---
 
-Passons à l'[Étape 5 : Compatibilité avec le système d'origine via le Proxy](step-5-proxy-compatibility.md).
+Passons à l'[Étape 5 : Prises casques et Système Son](step-5-audio-headphones.md).

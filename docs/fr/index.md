@@ -1,5 +1,5 @@
 ---
-title: "🏠 Accueil"
+title: "Accueil"
 ---
 
 # Guide Complet : Projet "DxNALE"
@@ -15,9 +15,7 @@ DxNALE est le nom donné par la communauté aux bornes maimai FiNALE converties 
 
 Il existe une rumeur persistante au sein de la communauté selon laquelle convertir une borne en DxNALE serait un travail colossal, titanesque, presque irréalisable. **Il n'en est rien.** Certaines étapes sont effectivement complexes, mais ce guide a pour but de vous assister tout au long de l'opération.
 
-!!! tip ""
-    **L'objectif final : Une fidélité logicielle parfaite**
-
+!!! tip "L'objectif final : Une fidélité logicielle parfaite"
     Il est possible de modifier les données du jeu afin de pouvoir rendre compatible n'importe quelle dalle tactile produite par la communauté, toutefois nous visons ici une fidélité logicielle totale.
     
     **Aucune modification logicielle du jeu n'est tolérée.** Le jeu doit "penser" qu'il tourne sur une borne originale Sega. Par conséquent, toute notre adaptation matérielle doit être invisible pour le jeu.
