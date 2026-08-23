@@ -110,9 +110,15 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
 
 extra_css:
   - style.css
+
+extra_javascript:
+  - checklist-persist.js
 
 extra:
   social:

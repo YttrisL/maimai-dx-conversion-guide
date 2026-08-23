@@ -4,8 +4,11 @@ title: "🛒 Liste de courses"
 
 # 🛒 Liste de courses : Le matériel nécessaire
 
+!!! tip "Pas besoin du détail ?"
+    La [checklist d'achats](equipment-checklist.md) reprend tous les articles à acheter, sans les explications.
+
 ## Préambule
-Pour chacune des pièces listées dans la liste de courses, le tableau priorise l'option la plus optimisée. Cela peut être pour plusieurs raisons : simplicité d'installation, prix, disponibilité. *Lorsqu'il en existe, le tableau mentionnera les alternatives disponibles.* Toutefois, ce guide part du principe que vous avez choisi l'option principale et ne s'attardera pas sur les alternatives.
+Pour chacune des pièces listées dans la liste de courses, l'option la plus optimisée est priorisée. Cela peut être pour plusieurs raisons : simplicité d'installation, prix, disponibilité. *Lorsqu'il en existe, la liste mentionnera les alternatives disponibles.* Toutefois, ce guide part du principe que vous avez choisi l'option principale et ne s'attardera pas sur les alternatives.
 
 !!! info "Le marché de l'occasion japonais"
     Si vous n'êtes pas familier avec le marché de seconde main japonais et les options disponibles pour vous y procurer du matériel, n'hésitez pas à consulter l'annexe [Le marché de l'occasion japonais](secondhand-market.md).
@@ -46,11 +49,11 @@ Pour chacune des pièces listées dans la liste de courses, le tableau priorise 
 
 <div class="equipment-card" markdown>
 
-### Dalle tactile HDX (x2)
+### **2x**{: .quantity-emphasis } Dalle tactile HDX
 * Où : [Sur le discord HanDevice](https://discord.gg/xABCFMWmTK)
 * Info : Il s'agit d'une dalle tactile créée par un particulier, dans le but de fournir un « game-pad », une sorte de manette personnalisée permettant de jouer à un simulateur de maimai DX dans le confort de son domicile. Officiellement ils ne vendent pas de kit de conversion directement, mais il est possible de [contacter le fabricant via son discord](https://discord.com/channels/1336383976721616897/1393421596190048266/1393822351094841375) pour lui demander une offre portant uniquement sur la dalle tactile **et** la HanDevice IO (sa carte I/O dédiée) qui va avec. Cette carte I/O a l'avantage d'exposer un port série UART que nous pouvons exploiter pour la connecter directement au ALLS HX2 sans avoir besoin de transformer le signal.
 
-*Alternative* : **Kit de conversion Yuancon - à base d'une dalle ADX (x2)**
+*Alternative* : **2x**{: .quantity-emphasis } **Kit de conversion Yuancon - à base d'une dalle ADX**
 
 * Où : [Sur le site de yuancon](https://yuancon.store/controller/UPDATEKIT)
 * Info : Yuancon propose des kits de conversion incluant la dalle tactile et huit boutons, un kit permettant de convertir un côté de la borne. Ils sont équivalents aux HDX à ceci près que leur carte I/O n'inclut pas de port série. Elle communique uniquement en USB-CDC avec le PC, ce qui rend sa connexion à un ALLS HX2 difficile puisque ce signal ne peut pas être adapté directement via un simple convertisseur RS-232. C'est toutefois toujours possible [via un logiciel faisant office de proxy](https://gitea.farewell.dev/Yttris/maitouch_rs) en tournant sur un Raspberry Pi installé entre le ALLS et l'ADX, mais cela introduit une complexité que nous ne détaillerons pas dans ce guide. (Si vous décidez de partir sur cette option, vous n'avez pas besoin des boutons supplémentaires du point suivant.)
@@ -59,11 +62,11 @@ Pour chacune des pièces listées dans la liste de courses, le tableau priorise 
 
 <div class="equipment-card" markdown>
 
-### Boutons HDX (x16)
+### **16x**{: .quantity-emphasis } Boutons HDX
 * Où : [Sur le discord HanDevice](https://discord.gg/xABCFMWmTK)
 * Info : Les boutons de jeu pour l'anneau. Les boutons de FiNALE sont techniquement compatibles, mais le ressenti est totalement différent (et bien meilleur) sur DX. Il vaut donc largement la peine de mettre les boutons à jour. Il faut huit boutons par joueur, soit seize au total, mais il peut être utile d'en acheter quelques-uns en réserve à l'avance. C'est une pièce d'usure.
 
-*Alternative* : **Boutons "Rabbit" (x16)** 
+*Alternative* : **16x**{: .quantity-emphasis } **Boutons "Rabbit"**
 
 * Où : [Sur la boutique taobao officielle](https://item.taobao.com/item.htm?id=660013732031&skuId=5395223410039&spm=a1z10.1-c.w4004-24097871292.3.37221e09DSieDY)
 * Info : Assez similaires aux boutons officiels de maimai DX, ils représentent une excellente alternative.
@@ -75,7 +78,7 @@ Pour chacune des pièces listées dans la liste de courses, le tableau priorise 
 
 <div class="equipment-card" markdown>
 
-### Bouton OBSF-24TR (x2)
+### **2x**{: .quantity-emphasis } Bouton OBSF-24TR
 
 * Où : [SmallCab](https://www.smallcab.net/sanwa-obsf-24tr-p-2080.html) ou [Jammastar](https://jammastar.com/gb/353-sanwa-obsf-24tr)
 * Info : Les boutons "triangle" de tri pour le Joueur 1 et le Joueur 2, situés au centre de la borne au-dessus du lecteur Aime. Typiquement **bleu pour le Joueur 1 et rouge pour le Joueur 2**.
@@ -89,7 +92,7 @@ Pour chacune des pièces listées dans la liste de courses, le tableau priorise 
 
 <div class="equipment-card" markdown>
 
-### HUB USB 4 ports
+### **1x**{: .quantity-emphasis } HUB USB 4 ports
 
 !!! warning "Avertissement"
     Cette étape est théorique et n'a pas encore été testée.
@@ -107,7 +110,7 @@ L'installation de la caméra des joueurs et des lecteurs de QR-code est optionne
 
 <div class="equipment-card" markdown>
 
-### Caméra des joueurs
+### **1x**{: .quantity-emphasis } Caméra des joueurs
 
 * Où : Amazon, AliExpress, votre boutique favorite
 * Info : N'importe quelle webcam USB bon marché fera l'affaire, si tant est qu'elle supporte UVC (si votre caméra fonctionne dès son branchement initial sans avoir besoin de drivers spécifiques, alors elle est sans doute compatible). Sur une maimai DX originale, la caméra possède une résolution native de 1280x960 pixels, et celle-ci est peu utilisée en jeu. Inutile donc de dépenser des fortunes.
@@ -116,7 +119,7 @@ L'installation de la caméra des joueurs et des lecteurs de QR-code est optionne
 
 <div class="equipment-card" markdown>
 
-### Caméra pour QR-Code (x2)
+### **2x**{: .quantity-emphasis } Caméra pour QR-Code
 
 * Où : Amazon, AliExpress, votre boutique favorite ([exemple de caméra compatible](https://www.amazon.com.be/dp/B0DWLGCSJ6))
 * Info : Le jeu est très exigeant sur la caméra USB requise pour les lecteurs de QR-Code. Celle-ci doit être UVC et supporter une résolution de 640x480 en 30 fps au format YUY2, un angle de vue de 50°, et il est nécessaire d'avoir une lumière externe pour éclairer la zone.  
@@ -152,25 +155,25 @@ Vous trouverez ces articles dans votre boutique préférée (Amazon, AliExpress,
 
 ### Connecteurs
 
-* **1x**{: .quantity-emphasis } **Connecteur Molex 14 broches femelle** ([exemple](https://www.amazon.com/dp/B078H8F2YQ)) - Pour raccorder proprement le connecteur d'alimentation préalablement raccordé au RingEdge2.
+* **1x**{: .quantity-emphasis } **Connecteur Molex Mini-Fit Jr. 2x7 broches femelle** ([exemple](https://www.amazon.com/dp/B078H8F2YQ)) - Pour raccorder proprement le connecteur d'alimentation préalablement raccordé au RingEdge2.
 
 !!! abstract "En cours d'écriture"
     Cette liste est incomplète, elle sera enrichie en même temps que les points suivants.  
     Reste à ajouter une fois les détails connus :
     
-    - 2x Prises jack pour le casque et les câbles qui vont avec
-    - 2x amplis son pour les casques
-    - 2x Raspberry Pi Pico et leurs hats pour le proxy des LEDs
+    - **2x**{: .quantity-emphasis } Prises jack pour le casque et les câbles qui vont avec
+    - **2x**{: .quantity-emphasis } Amplis son pour les casques
+    - **2x**{: .quantity-emphasis } Raspberry Pi Pico et leurs hats pour le proxy des LEDs
     - Les connecteurs JST-XH 7 et 9 broches mâle/femelle pour connecter le proxy
     - Les connecteurs JST-XH 2 broches mâle/femelle pour l'alimentation à plusieurs endroits
-    - Le connecteur JST-XH 7 broches femelle pour le lecteur Aime
-    - Le connecteur JST-PH 8 broches femelle pour le VFD
-    - Le connecteur JST-PH 4 broches femelle pour l'adaptateur de HanDevice vers le convertisseur TTL
+    - **1x**{: .quantity-emphasis } Connecteur JST-XH 7 broches femelle pour le lecteur Aime
+    - **1x**{: .quantity-emphasis } Connecteur JST-PH 8 broches femelle pour le VFD
+    - **1x**{: .quantity-emphasis } Connecteur JST-PH 4 broches femelle pour l'adaptateur de HanDevice vers le convertisseur TTL
     - Les broches pour JST-RA pour les nouveaux câbles à mettre sur la nappe RA60P de l'IO4
-    - Le JST-RA femelle pour la nappe RA20P de l'IO4
-    - 2x LED blanches pour les lecteurs de QR-code
-    - 1x LED rouge pour indiquer que la caméra filme
-    - 1x LED blanche chaude pour éclairer la caméra
+    - **1x**{: .quantity-emphasis } JST-RA femelle pour la nappe RA20P de l'IO4
+    - **2x**{: .quantity-emphasis } LED blanches pour les lecteurs de QR-code
+    - **1x**{: .quantity-emphasis } LED rouge pour indiquer que la caméra filme
+    - **1x**{: .quantity-emphasis } LED blanche chaude pour éclairer la caméra
 
 
 ---
