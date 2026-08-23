@@ -4,6 +4,8 @@ title: "📺 2 - Écrans et dalles tactiles"
 
 # 📺 Étape 2 : L'Affichage et les Dalles Tactiles HDX
 
+--8<-- "includes/wip-fr.md"
+
 Commençons par installer l'affichage et les dalles tactiles.
 
 ## Les connexions vidéo

@@ -4,6 +4,8 @@ title: "🛠️ 1 - ALLS et PSU"
 
 # 🛠️ Étape 1 : Le Remplacement du PC Central (ALLS)
 
+--8<-- "includes/wip-fr.md"
+
 L'ancien PC *RingEdge 2* n'est pas assez puissant pour faire tourner *DX*. Vous avez besoin d'un PC **ALLS HX2**.
 Alternativement, il est souvent plus simple (et moins cher) de trouver des PC **ALLS MX2**, et ceux-ci peuvent être modifiés (downgrade) pour correspondre exactement aux spécifications d'un HX2.
 

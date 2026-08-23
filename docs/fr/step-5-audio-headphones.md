@@ -4,6 +4,8 @@ title: "🎧 5 - Prises casques et son"
 
 # 🎧 Étape 5 : Prises casques et Système Son
 
+--8<-- "includes/wip-fr.md"
+
 La borne *DX* propose des prises casques pour les joueurs, ce qui n'existait pas sur *FiNALE*.
 
 L'ordinateur *ALLS HX* possède 4 sorties audio classiques (type Jack). Trois sont situées sur la carte mère principale, et une sur une carte d'extension *([Manuel](../resources/pdfs/maimai-dx-manual-full.pdf), page 128)*.

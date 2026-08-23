@@ -4,6 +4,8 @@ title: "💳 4 - Lecteur de cartes Aime"
 
 # 💳 Étape 4 : Le Lecteur de Cartes Aime
 
+--8<-- "includes/wip-fr.md"
+
 Les anciens lecteurs de cartes de la *FiNALE* sont obsolètes et ne fonctionneront pas avec *DX*.
 
 1. Vous devez vous procurer un lecteur Aime moderne (Génération 3, numéro de pièce : **610-0955**).

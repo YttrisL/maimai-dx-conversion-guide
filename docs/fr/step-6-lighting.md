@@ -4,6 +4,8 @@ title: "💡 6 - Lumières (Optionnel)"
 
 # 💡 Étape 6 : Lumières (Optionnel)
 
+--8<-- "includes/wip-fr.md"
+
 À ce stade, le jeu devrait être totalement jouable, mais l'éclairage esthétique de la borne n'est pas encore fonctionnel.
 Sur *DX*, il y a trois contrôleurs différents qui gèrent l'éclairage de la borne :
 

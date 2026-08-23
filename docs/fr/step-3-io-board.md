@@ -4,6 +4,8 @@ title: "🔌 3 - Carte I/O et boutons"
 
 # 🔌 Étape 3 : La Carte I/O et les Boutons
 
+--8<-- "includes/wip-fr.md"
+
 Pour faire tourner *DX*, il est nécessaire de remplacer l'ancienne carte I/O par le nouveau modèle **IO4**. Heureusement, le câblage reste globalement le même, à quelques exceptions près.
 
 *(Note : Le détail complet du câblage de la carte IO4 se trouve à la page 194 du [manuel](../resources/pdfs/maimai-dx-manual-full.pdf), en bas à droite)*
