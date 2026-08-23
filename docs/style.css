@@ -179,16 +179,37 @@ hr {
 }
 
 /* Quantity badge (e.g. "1x", "4x") prefixing an item name in the shopping
-   lists, so the count needed jumps out of the dense wall of text. */
+   lists, so the count needed jumps out of the dense wall of text. A solid
+   fill (rather than a tinted background) so it stays punchy on the dark
+   theme too - `--md-primary-bg-color` is Material's own text-on-primary
+   color, so contrast against the fill is guaranteed in both palettes
+   instead of depending on how washed-out the primary color looks against
+   a light vs. dark page background. */
 .quantity-emphasis {
     display: inline-block;
     font-family: var(--md-code-font-family);
-    font-size: 0.85em;
-    color: var(--md-primary-fg-color);
-    background-color: color-mix(in srgb, var(--md-primary-fg-color) 12%, transparent);
-    border-radius: .2rem;
-    padding: .05rem .35rem;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: var(--md-primary-bg-color);
+    background-color: var(--md-primary-fg-color);
+    border-radius: .25rem;
+    padding: .1rem .45rem;
     margin-inline-end: .3rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+}
+
+/* The "Petites fournitures" itemized lists (Câbles, Électronique,
+   Connecteurs) nest a short explanatory bullet under each item's name.
+   Left unstyled, that sub-bullet renders at the same size/weight as the
+   item itself and ends up competing with it, even though it's just
+   supplementary context ("what this is for"), not another peer item. */
+.equipment-supplies ul ul {
+    margin-block-start: .2rem;
+}
+
+.equipment-supplies ul ul li {
+    font-size: 0.8em;
+    color: var(--md-default-fg-color--light);
 }
 
 /* Wiring diagrams page
