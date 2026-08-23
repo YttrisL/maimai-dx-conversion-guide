@@ -1,4 +1,4 @@
-# maimai FiNALE → DX Upgrade Guide
+# maimai FiNALE to DX Upgrade Guide
 
 This repo hosts a step-by-step hardware guide for converting a **maimai
 FiNALE** arcade cabinet into a working **maimai DX** cabinet - a project the
@@ -9,8 +9,8 @@ followed start to finish by someone who isn't an electronics engineer.
 
 The guide's guiding principle is **total software fidelity**: the goal is
 never to modify the game's own software, but to make the hardware
-adaptation invisible to it, so the resulting cabinet stays compatible with
-the way most private maimai DX servers expect a genuine cabinet to behave.
+adaptation invisible to it, so the resulting cabinet stays the way 
+a genuine cabinet would behave.
 
 ## Building, running, or publishing this site
 
