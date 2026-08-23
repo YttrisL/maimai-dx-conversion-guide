@@ -1,5 +1,5 @@
 ---
-title: "Comprendre les protocoles série"
+title: "Les protocoles série"
 ---
 
 # 🎓 Petit cours : comprendre les protocoles "série"

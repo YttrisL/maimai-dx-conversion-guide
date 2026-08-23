@@ -2,7 +2,7 @@
 title: "Le marché de l'occasion"
 ---
 
-# 📦 À propos du marché de l'occasion
+# 📦 À propos du marché de l'occasion Japonais
 
 ## Introduction
 

@@ -43,7 +43,7 @@ Chapitre *22 総合配線図* (« schéma de câblage général »), pages 193 �
 
 ---
 
-### Planche 3/4 - Boutons tactiles, capteur de l'anneau tactile, enseigne lumineuse
+### Planche 3/4 - Boutons, capteur de l'anneau tactile, enseigne lumineuse
 
 * `MMT-2000` **ASSY BUTTON SWITCH** ×8 **[B-1→B-4]**{: .wiring-coord } - boutons, avec pour chacun :
     * `838-15235-01` **LED BD RGB 3X1BLOCK 5050** **[B-1→B-4]**{: .wiring-coord } - LED RGB du bouton

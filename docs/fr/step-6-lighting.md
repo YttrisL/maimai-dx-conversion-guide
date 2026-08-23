@@ -19,8 +19,9 @@ Dans le cas d'une borne convertie, toutefois, les choses sont un peu plus compli
 
 Il est théoriquement possible de réutiliser les contrôleurs de LEDs d'une borne *FiNALE*, toutefois ceci s'accompagne de plusieurs inconvénients.
 
-- Le numéro de série de la PCB ne correspond pas à ce que *DX* s'attend à trouver, cela provoquera ainsi un avertissement ("warning") au démarrage de la borne. Cela dit, le contrôleur fonctionnera tout de même.
-- En cas de "warning", le jeu n'envoie simplement pas les données permettant d'éclairer l'anneau central (à ne pas confondre avec les boutons) et le corps de la borne (les données FET).
+!!! warning "Réutiliser les contrôleurs LED de FiNALE"
+    - Le numéro de série de la PCB ne correspond pas à ce que *DX* s'attend à trouver, cela provoquera ainsi un avertissement ("warning") au démarrage de la borne. Cela dit, le contrôleur fonctionnera tout de même.
+    - En cas de "warning", le jeu n'envoie simplement pas les données permettant d'éclairer l'anneau central (à ne pas confondre avec les boutons) et le corps de la borne (les données FET).
 
 Les contrôleurs de LEDs de *FiNALE* s'interfacent de la même manière que ceux de *DX*, en passant par une carte de traduction intermédiaire convertissant le RS-232 des deux cartes en une unique connexion USB.
 Les références sont les suivantes :

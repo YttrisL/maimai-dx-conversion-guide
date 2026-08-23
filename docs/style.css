@@ -156,6 +156,41 @@ hr {
     }
 }
 
+/* Equipment page
+   ========================================================================== */
+
+/* Neutral bordered card wrapping a single shopping-list item, purely to
+   delimit each point visually - deliberately un-styled compared to the
+   theme's admonitions (tip/warning) so a real alert nested inside a card
+   still stands out on its own. */
+.equipment-card {
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: .2rem;
+    padding: .1rem 1.2rem;
+    margin-block: 1rem;
+}
+
+.equipment-card>:first-child {
+    margin-block-start: .8rem;
+}
+
+.equipment-card>:last-child {
+    margin-block-end: .8rem;
+}
+
+/* Quantity badge (e.g. "1x", "4x") prefixing an item name in the shopping
+   lists, so the count needed jumps out of the dense wall of text. */
+.quantity-emphasis {
+    display: inline-block;
+    font-family: var(--md-code-font-family);
+    font-size: 0.85em;
+    color: var(--md-primary-fg-color);
+    background-color: color-mix(in srgb, var(--md-primary-fg-color) 12%, transparent);
+    border-radius: .2rem;
+    padding: .05rem .35rem;
+    margin-inline-end: .3rem;
+}
+
 /* Wiring diagrams page
    ========================================================================== */
 
