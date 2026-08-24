@@ -4,7 +4,7 @@ title: "💡 6 - Lumières"
 
 # 💡 Étape 6 : Lumières
 
-L'éclairage est techniquement une étape *optionnelle* de la conversion, dans le sens ou elle n'impacte pas la jouabilité de la borne. Toutefois l'opération n'est pas si complexe et l'éclairage apporte beaucoup au charme de maimai DX. Il est donc recommandé de ne pas ignorer cette étape.
+L'éclairage est techniquement une étape *optionnelle* de la conversion, dans le sens où elle n'impacte pas la jouabilité de la borne. Toutefois l'opération n'est pas si complexe et l'éclairage apporte beaucoup au charme de maimai DX. Il est donc recommandé de ne pas ignorer cette étape.
 
 ## Explications techniques
 
@@ -61,28 +61,28 @@ L'éclairage est techniquement une étape *optionnelle* de la conversion, dans l
 
 --8<-- "includes/untested-fr.md"
 
-Puisque le contrôleur de LEDs de DX ne gère plus l'allumage du haut de la borne, le jeu ne lui envoie tout simplement pas l'information. Dans DX, c'est l'IO4 qui s'occupe de gérer ces LEDs.
+Puisque le contrôleur de LEDs de DX ne gère plus l'allumage du haut de la borne, le jeu ne lui envoie tout simplement pas l'information. Sur DX, c'est l'IO4 qui s'occupe de gérer ces LEDs.
 
-Bonne nouvelle, la structure des LEDs n'a pas changé de FiNALE à DX, il s'agit toujours d'une simple bande de LEDs RGB non-adressables alimentée en 12v. Le connecteur est différent, mais dans notre cas ce n'est pas très important.
+Bonne nouvelle, la structure des LEDs n'a pas changé de FiNALE à DX, il s'agit toujours d'une simple bande de LEDs RGB non-adressables alimentée en 12V. Le connecteur est différent, mais dans notre cas ce n'est pas très important.
 
-Sur maimai FiNALE, il y a trois connecteur pour le sommet de la borne :
+Sur maimai FiNALE, il y a trois connecteurs pour le sommet de la borne :
 
 * Un pour le côté gauche, côté joueur 1.
-* Un pour le centre, celui-ci n'existe plus dans DX. Il peut être soit ignoré, soit connecté à un joueur ou l'autre.
+* Un pour le centre, celui-ci n'existe plus sur DX. Il peut être soit ignoré, soit connecté à un joueur ou à l'autre.
 * Un pour le côté droit, côté joueur 2.
 
 Dans les trois cas, le connecteur a toujours la même structure. Dans cet ordre :
 
-* Broche 1 : **12v** 
-* Broche 2 : **R** 
-* Broche 3 : **G** 
+* Broche 1 : **12V**
+* Broche 2 : **R**
+* Broche 3 : **G**
 * Broche 4 : **B**
 
-Une IO4 de DX dédie 3 broches pour les signaux R - G - B du côté gauche, et 3 broches aux signaux R - G - B du côté droit.
+L'IO4 de DX dédie 3 broches aux signaux R - G - B du côté gauche, et 3 broches aux signaux R - G - B du côté droit.
 
-Vous devez créer un adaptateur en utilisant un connecteur JST-RA 20 broches qui viendra se connecter sur le CN9 de l'IO4, et deux broches qui viennent se rajouter sur les position 51 et 52 du gros connecteur CN3.
+Vous devez créer un adaptateur en utilisant un connecteur JST-RA 20 broches qui viendra se connecter sur le CN9 de l'IO4, et deux broches qui viendront se rajouter sur les positions 51 et 52 du gros connecteur CN3.
 
-Consultez [le schéma de câblage (planche 2/4)](http://127.0.0.1:8000/fr/wiring-diagrams/#planche-24-boutons-leds-de-boutons-hub-usb-et-carte-io)**[E-2→E-3]**{: .wiring-coord } et **[F-5]**{: .wiring-coord } pour connaître l'ordre des broches à sertir.
+Consultez [le schéma de câblage (planche 2/4)](wiring-diagrams.md#planche-24-boutons-leds-de-boutons-hub-usb-et-carte-io) **[E-2→E-3]**{: .wiring-coord } et **[F-5]**{: .wiring-coord } pour connaître l'ordre des broches à sertir.
 
 --8<-- "includes/wip-fr.md"
 
@@ -94,9 +94,9 @@ Sur DX, les woofers au bas de la borne ne sont pas éclairés. Il n'y a donc auc
 
 Il n'existe pas de réelle solution pour inférer ce signal. On pourrait penser en observant les signaux fournis par le contrôleur de LEDs d'un maimai DX que l'entrée nommée "1/2P SIDE COVER LED" pourrait être un signal de substitution, cette zone n'existant pas sur une maimai FiNALE. Toutefois, ce signal sert à alimenter une simple bande de LEDs blanches statiques, **et ne serait pas compatible**.
 
-Les LEDs des woofers sont deux bandes de LEDs RGB non-adressables alimentées en 12v, **exactement comme l'éclairage du dessus de la borne**. Même le brochage du connecteur est identique. La meilleure option est donc de venir raccorder les deux connecteurs des woofers (J1 et J2) sur l'IO4 pour les éclairer de la même teinte que le sommet de la borne. Il s'agit d'une solution à la fois simple (*il suffit d'un simple connecteur en Y*) et élégante puisque cela permet de conserver cette spécificité de FiNALE sur la borne convertie. 
+Les LEDs des woofers sont deux bandes de LEDs RGB non-adressables alimentées en 12V, **exactement comme l'éclairage du dessus de la borne**. Même le brochage du connecteur est identique. La meilleure option est donc de venir raccorder les deux connecteurs des woofers (J1 et J2) sur l'IO4 pour les éclairer de la même teinte que le sommet de la borne. Il s'agit d'une solution à la fois simple (*il suffit d'un simple connecteur en Y*) et élégante puisque cela permet de conserver cette spécificité de FiNALE sur la borne convertie.
 
-De plus, l'éclairage du dessus d'une FiNALE étant bien moins visible que la panneau lumineux d'une DX, cela permet de renforcer la couleur du thème du jeu sur une autre partie de la borne bien plus visible.
+De plus, l'éclairage du dessus d'une FiNALE étant bien moins visible que le panneau lumineux d'une DX, cela permet de renforcer la couleur du thème du jeu sur une autre partie de la borne bien plus visible.
 
 --8<-- "includes/wip-fr.md"
 
