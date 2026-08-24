@@ -95,8 +95,7 @@ Pour chacune des pièces listées ci-dessous, l'option la plus adaptée est mise
 
 ### **1x**{: .quantity-emphasis } HUB USB 4 ports
 
-!!! warning "Avertissement"
-    Cette étape est théorique et n'a pas encore été testée.
+--8<-- "includes/untested-fr.md"
 
 * Où : Amazon, AliExpress, votre boutique favorite
 * Info : Dans une véritable maimai DX, un des 4 ports USB de la carte mère du ALLS est dédié à un hub USB de 4 ports. Ce hub accueille les deux caméras des lecteurs de QR-Code et l'adaptateur RS-232/USB sur lequel sont connectés les contrôleurs de LEDs du joueur 1 et du joueur 2. Même si vous ne souhaitez pas utiliser les caméras de QR code, vous devez quand même brancher le hub, afin que l'adaptateur RS-232/USB des contrôleurs de LEDs soit reconnu nativement par le système d'exploitation du ALLS. N'importe quel hub USB fera l'affaire. (Voir [Étape 1 : Le Remplacement du PC Central (ALLS)](step-1-alls-and-psu.md) pour le détail.)
