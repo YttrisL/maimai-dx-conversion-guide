@@ -36,7 +36,12 @@ Pour chacune des pièces listées ci-dessous, l'option la plus adaptée est mise
 
 ### Carte I/O Sega IO4
 * Où : JDirectItems Auction 
-* Info : Simple à trouver, elle est utilisée dans toutes les bornes Sega depuis plusieurs années. À ne pas confondre avec une IO3, elles se ressemblent beaucoup. Le meilleur moyen de reconnaître une IO4 est de vérifier qu'elle possède bien ses dip switches sur le dessus de la PCB.
+* Info : Simple à trouver, elle est utilisée dans toutes les bornes Sega depuis plusieurs années. À ne pas confondre avec une IO3, elles se ressemblent beaucoup. Le meilleur moyen de reconnaître une IO4 est de vérifier qu'elle possède bien ses dip switches sur le dessus de la PCB. 
+
+!!! info "Variantes d'IO4"
+    Il existe plusieurs variantes d'IO4. Certaines, compatibles JVS, sont équipées d'un port USB-B et d'un USB-A pour le chaînage. D'autres avec un simple port micro-USB destinées à être connectées sur un port USB classique. Dans notre cas, la connexion avec le ALLS se fait en USB classique, via le port micro-USB. Le support JVS est donc inutile pour maimai DX. 
+
+    Habituellement les IO4 sans support JVS sont un peu moins chères à la revente, mais en théorie toutes les variantes sont compatibles pour cette conversion.
 
 </div>
 

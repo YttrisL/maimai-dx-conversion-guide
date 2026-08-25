@@ -4,21 +4,21 @@ title: "💡 6 - Lumières"
 
 # 💡 Étape 6 : Lumières
 
-L'éclairage est techniquement une étape *optionnelle* de la conversion, dans le sens où elle n'impacte pas la jouabilité de la borne. Toutefois l'opération n'est pas si complexe et l'éclairage apporte beaucoup au charme de maimai DX. Il est donc recommandé de ne pas ignorer cette étape.
+L'éclairage est techniquement une étape *optionnelle* de la conversion, dans le sens où elle n'impacte pas la jouabilité de la borne. Toutefois, l'opération n'est pas si complexe et l'éclairage apporte beaucoup au charme de maimai DX. Il est donc recommandé de ne pas ignorer cette étape.
 
 ## Explications techniques
 
-??? note "Cliquez ici pour le détail technique"
+??? note "Cliquez ici pour l'explication technique"
     ### Fonctionnement des LEDs sur une maimai DX
 
     Sur une véritable borne *DX*, l'éclairage est piloté par trois contrôleurs différents :
 
     * L'**IO4** gère l'éclairage de l'enseigne lumineuse, le dessus de la borne. Voir l'[Étape 3](step-3-io-board.md).
     * Deux cartes de contrôle identiques (réf. `837-15070-04`) :
-        * Côté P1 : Les huit boutons, l'éclairage du fond, et l'éclairage du côté gauche.
-        * Côté P2 : Les huit boutons, l'éclairage du fond, et l'éclairage du côté droit.
+        * Côté P1 : Les huit boutons, l'éclairage du fond et l'éclairage du côté gauche.
+        * Côté P2 : Les huit boutons, l'éclairage du fond et l'éclairage du côté droit.
 
-    ![Chaîne de contrôle de l'éclairage : les cartes LED P1 et P2 (réf. `837-15070-04`) rejoignent en RS-232 le convertisseur RS-232 vers USB (réf. `837-15067-02`), lui-même branché au hub USB partagé avec les caméras QR-Code de P1 et P2](../resources/images/step-6-lighting/led-controllers-chain.svg){ width="720" }
+    ![Chaîne de contrôle de l'éclairage : les cartes LED P1 et P2 (réf. `837-15070-04`) rejoignent en RS-232 le convertisseur RS-232 vers USB (réf. `837-15067-02`), lui-même branché au hub USB partagé avec les caméras QR-Code de P1 et P2](../resources/images/step-6-lighting/led-controllers-chain.svg){ width="900" }
 
     Les deux cartes de contrôle s'interfacent en RS-232 à une unique PCB convertissant les deux signaux RS-232 en USB. Cette PCB est elle-même raccordée au même hub USB que les lecteurs de QR-Code (voir [Étape 7](step-7-cameras.md)).
 
@@ -34,71 +34,85 @@ L'éclairage est techniquement une étape *optionnelle* de la conversion, dans l
 
     * Contrairement à DX, aucune LED ne passe par l'IO3 de FiNALE.
     * Deux cartes de contrôle identiques gèrent les LEDs (réf. `837-15070-02-91`) :
-        * Côté P1 : Les huit boutons, l'éclairage du fond, les lumières du woofer, et le dessus de la borne côté P1.
-        * Côté P2 : Les huit boutons, l'éclairage du fond, les lumières du woofer, et le dessus de la borne côté P2.
+        * Côté P1 : Les huit boutons, l'éclairage du fond, les lumières du woofer et le dessus de la borne côté P1 et au centre.
+        * Côté P2 : Les huit boutons, l'éclairage du fond, les lumières du woofer et le dessus de la borne côté P2.
 
-    ![Chaîne de contrôle de l'éclairage sur FiNALE : les cartes LED P1 et P2 (réf. `837-15070-02-91`) rejoignent en RS-232 le même convertisseur RS-232 vers USB que sur DX (réf. `837-15067-02`), branché directement sur un port USB du RingEdge 2, sans hub USB](../resources/images/step-6-lighting/led-controllers-chain-finale.svg){ width="720" }
+    ![Chaîne de contrôle de l'éclairage sur FiNALE : les cartes LED P1 et P2 (réf. `837-15070-02-91`) rejoignent en RS-232 le même convertisseur RS-232 vers USB que sur DX (réf. `837-15067-02`), branché directement sur un port USB du RingEdge 2, sans hub USB](../resources/images/step-6-lighting/led-controllers-chain-finale.svg){ width="900" }
 
     Comme sur DX, ces deux cartes de contrôle s'interfacent en RS-232 à la même PCB convertissant les deux signaux RS-232 en USB. Par chance, **c'est exactement la même sur FiNALE et sur DX (réf. `837-15067-02`)**.
 
-    Sur FiNALE par contre, ce convertisseur se branche directement sur un port USB du RingEdge 2, sans passer par un hub USB.
+    Sur FiNALE, par contre, ce convertisseur se branche directement sur un port USB du RingEdge 2, sans passer par un hub USB.
 
     ### Ce que ça implique pour une conversion
 
     Trois observations :
 
     * Nous aurons besoin d'un hub USB 4 ports pour reproduire l'architecture de branchement sur le ALLS. maimai DX est très exigeant sur le port sur lequel les appareils USB sont connectés sur le ALLS.
-    * Sur DX, le woofer au bas de la borne n'est pas éclairé. Le jeu n'envoie donc pas l'information nécessaire pour piloter ces LEDs sur une borne maimai FiNALE. Il est toutefois possible de ruser, *voir plus bas*.
     * L'éclairage du dessus de la borne n'est plus connecté aux contrôleurs de LEDs sur DX, ceux-ci ne reçoivent donc plus l'information pour l'éclairer. Il faudra recâbler ce connecteur vers l'IO4.
-
-    Mais surtout, le point le plus important : les contrôleurs de LEDs de FiNALE et de DX **n'ont pas la même référence**. Si vous tentez de brancher un contrôleur de LEDs FiNALE sur un ALLS faisant tourner DX, **le jeu se mettra en erreur non-bloquante au démarrage** car la référence envoyée par le contrôleur, `837-15070-02-91`, n'est pas celle que le jeu s'attend à recevoir, `837-15070-04`. Fait amusant : dans cet état, le jeu enverra tout de même les informations pour l'éclairage des boutons de jeu, mais pas pour le fond.
+    * Mais surtout, **le point le plus important** : les contrôleurs de LEDs de FiNALE et de DX **n'ont pas la même référence**. Si vous tentez de brancher un contrôleur de LEDs FiNALE sur un ALLS faisant tourner DX, **le jeu se mettra en erreur non-bloquante au démarrage** car la référence envoyée par le contrôleur, `837-15070-02-91`, n'est pas celle que le jeu s'attend à recevoir, `837-15070-04`. Fait amusant : dans cet état, le jeu enverra tout de même les informations pour l'éclairage des boutons de jeu, mais pas pour le fond.
 
     Heureusement, il y a une solution pour ces trois problèmes.
 
 ## Pour les boutons de jeu et le fond des deux joueurs
 
-## Pour le dessus de la borne
+### Fabriquer un proxy
+
+`En attente de la procédure finale`
+
+### Installer le proxy
+
+`En attente de la procédure finale`
+
+Une fois le proxy installé pour les deux contrôleurs de LEDs, il ne vous reste plus qu'à connecter le convertisseur RS-232 vers USB sur le ALLS via le hub USB, et le tour est joué. Le jeu devrait nativement reconnaître les contrôleurs de LEDs sans aucune modification logicielle.
+
+!!! warning "Branchez le convertisseur correctement"
+    Comme mentionné à l'[étape 1](step-1-alls-and-psu.md), le hub USB doit impérativement être branché sur le port USB portant le numéro 2, et le `convertisseur RS-232 vers USB` sur lequel les contrôleurs de LEDs sont connecté doit être branché sur le hub USB. Comme dit précédemment, maimai DX est très exigeant sur le port USB sur lequel les appareils sont connectés, en cas de mauvais branchement les LEDs ne s'allumeront pas.
+
+    Même si vous ne comptez pas utiliser les caméras de QR-Code, le hub USB reste obligatoire.
+
+## Pour les woofers et le dessus de la borne
 
 --8<-- "includes/untested-fr.md"
 
-Puisque le contrôleur de LEDs de DX ne gère plus l'allumage du haut de la borne, le jeu ne lui envoie tout simplement pas l'information. Sur DX, c'est l'IO4 qui s'occupe de gérer ces LEDs.
+??? note "Cliquez ici pour l'explication technique"
+    Sur une maimai FiNALE, les woofers et le haut de la borne sont sur le même circuit d'éclairage. Les deux éléments ne sont pas dissociés électriquement, l'un allume toujours nécessairement l'autre. Ainsi, bien que sur maimai DX les woofers ne soient plus illuminés, cela ne posera pas de problème puisque le sommet de la borne, lui, l'est toujours. Par contre, comme expliqué plus tôt, sur DX ce n'est plus le contrôleur de LEDs qui gère la lumière de cette section de la borne.
 
-Bonne nouvelle, la structure des LEDs n'a pas changé de FiNALE à DX, il s'agit toujours d'une simple bande de LEDs RGB non-adressables alimentée en 12V. Le connecteur est différent, mais dans notre cas ce n'est pas très important.
+    Puisque le contrôleur de LEDs de DX ne gère plus l'allumage du haut de la borne, le jeu ne lui envoie tout simplement pas l'information. Sur DX, **c'est l'IO4 qui s'occupe de gérer ces LEDs**. La raison de ce changement reste mystérieuse, mais cela implique de devoir recâbler une partie des branchements des contrôleurs de LEDs.
 
-Sur maimai FiNALE, il y a trois connecteurs pour le sommet de la borne :
+    Par chance, les ingénieurs de Sega ont bien fait les choses, et le schéma de câblage de FiNALE référence un connecteur très pratique qui va nous permettre de diffuser notre signal côté joueur 1 et joueur 2 sans avoir à recâbler l'ensemble de la borne :
 
-* Un pour le côté gauche, côté joueur 1.
-* Un pour le centre, celui-ci n'existe plus sur DX. Il peut être soit ignoré, soit connecté à un joueur ou à l'autre.
-* Un pour le côté droit, côté joueur 2.
+    !!! lightbox
+        ![Schéma de câblage FiNALE, connecteur AB côté P1 : le harnais MAI-60109 alimente les cartes CENTER LED, ROOF LED (L), ROOF LED (R) et WOOFER LED](../resources/images/step-6-lighting/lighting-topper-p1-side.png)
+        ![Schéma de câblage FiNALE, connecteur BB côté P2 : le harnais MAI-60109 alimente les cartes WOOFER LED, ROOF LED (L) et ROOF LED (R), le connecteur SM5P n'étant pas utilisé](../resources/images/step-6-lighting/lighting-topper-p2-side.png)
 
-Dans les trois cas, le connecteur a toujours la même structure. Dans cet ordre :
+    Sur le schéma du P1, on constate un élément `CENTER LED` qui n'apparaît pas sur celui du P2. Il s'agit de l'éclairage du centre du sommet de la borne. Sur DX, cette distinction n'existe pas, et bien que les signaux soient séparés, le sommet de la borne est toujours éclairé de la même couleur des deux côtés. La solution la plus simple consiste donc à venir raccorder les broches `A2`, `A5` et `A8` du connecteur du P1 sur les broches `C3`, `C5` et `C8` afin que le centre soit éclairé de la même couleur que le côté joueur 1.
 
-* Broche 1 : **12V**
-* Broche 2 : **R**
-* Broche 3 : **G**
-* Broche 4 : **B**
+Nous devons simplement créer notre propre nappe de câbles s'intégrant avec l'IO4 via un connecteur JST-RA 20 broches pour le CN9, et se terminant sur deux connecteurs JST-SM 8 broches pour les côtés gauche et droit. Si vous avez suivi les suggestions de recâblage à l'[étape 3](step-3-io-board.md), vous devriez déjà avoir un connecteur JST-SM 2 broches de câblé sur le connecteur CN3 de l'IO4 pour les signaux `BILLBOARD LED L RED` et `BILLBOARD LED R RED`.
 
-L'IO4 de DX dédie 3 broches aux signaux R - G - B du côté gauche, et 3 broches aux signaux R - G - B du côté droit.
+!!! lightbox
+    ![Repérage visuel des broches LED sur l'IO4 : le connecteur CN9 (JST-RA 20 broches) porte BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED et BILLBOARD LED L/R BLUE, tandis que BILLBOARD LED L/R RED se trouve sur le connecteur CN3](../resources/images/step-6-lighting/io4-visual-reprensation-of-led-pins.png)
+    ![Schéma de câblage officiel de l'IO4 centré sur les broches LED : connecteur CN9 (RA20P) pour BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED et BILLBOARD LED L/R BLUE, et connecteur CN3 (RA60P) broches 51-52 pour BILLBOARD LED L/R RED](../resources/images/step-6-lighting/io4-wiring-schema-focused-on-leds.png)
 
-Vous devez créer un adaptateur en utilisant un connecteur JST-RA 20 broches qui viendra se connecter sur le CN9 de l'IO4, et deux broches qui viendront se rajouter sur les positions 51 et 52 du gros connecteur CN3.
+Réalisons alors notre propre nappe de câbles sur la base du schéma suivant. Idéalement, celui-ci doit avoir une longueur suffisante pour être installé proprement dans la borne : 3 mètres pour le côté joueur 1, 2 mètres pour le côté joueur 2. Pour le 12V, n'utilisez pas la broche 12V du CN9, mais préférez vous raccorder directement sur l'alimentation 12V interne de la borne. Vous éviterez ainsi de charger inutilement la carte I/O.
 
-Consultez [le schéma de câblage (planche 2/4)](wiring-diagrams.md#planche-24-boutons-leds-de-boutons-hub-usb-et-carte-io) **[E-2→E-3]**{: .wiring-coord } et **[F-5]**{: .wiring-coord } pour connaître l'ordre des broches à sertir.
+![Nappe de câbles pour l'éclairage du dessus de la borne : depuis l'IO4 (CN9 broches 5, 6, 9 et 10, et CN3 broches 51-52 déjà câblées à l'étape 3) et l'alimentation 12V interne, fabrication de deux connecteurs JST-SM 8 broches - côté P1 (3 mètres, avec pontage des broches 1-4 vers 5-8 pour alimenter aussi CENTER LED) et côté P2 (2 mètres, broches 5-8 non utilisées) - qui se branchent ensuite sur les connecteurs d'origine AB et BB](../resources/images/step-6-lighting/led-topper-harness.svg){ width="1400" }
 
---8<-- "includes/wip-fr.md"
+Une fois la nappe réalisée, vous n'avez plus qu'à la brancher à l'IO4, raccorder le 12V à l'alimentation interne, et venir raccorder les deux connecteurs JST-SM 8 broches d'origine sur votre nouveau câble. Assurez-vous de tester la continuité sur tous vos câbles avant l'installation afin d'écarter tout problème de broche mal sertie.
 
-## Pour les woofers des deux joueurs
+!!! tip "Les LEDs de la caméra"
+    Si vous souhaitez connecter une caméra pour les joueurs, sertissez dès maintenant un connecteur JST-SM 2 broches sur les broches 7 et 8 du CN9, vous pourrez ainsi simplement venir raccorder les câbles des LEDs de la caméra sur celui-ci lorsque vous arriverez à cette étape.
 
---8<-- "includes/untested-fr.md"
+## En résumé
+!!! tldr "Les grandes lignes"
+    Pour les LEDs des boutons et le fond de la borne :
+    
+    * Fabriquer deux proxys à base d'un Raspberry Pi Pico et d'un MAX3232 chacun.
+    * Installer le proxy entre le contrôleur de LEDs et le convertisseur RS-232 vers USB-B.
+    * Brancher le convertisseur sur le hub USB sur le port approprié, et connecter le hub sur le port dédié du ALLS.
 
-Sur DX, les woofers au bas de la borne ne sont pas éclairés. Il n'y a donc aucun signal provenant du jeu destiné à en allumer les LEDs.
+    Pour le sommet de la borne et les woofers :
 
-Il n'existe pas de réelle solution pour inférer ce signal. On pourrait penser en observant les signaux fournis par le contrôleur de LEDs d'un maimai DX que l'entrée nommée "1/2P SIDE COVER LED" pourrait être un signal de substitution, cette zone n'existant pas sur une maimai FiNALE. Toutefois, ce signal sert à alimenter une simple bande de LEDs blanches statiques, **et ne serait pas compatible**.
-
-Les LEDs des woofers sont deux bandes de LEDs RGB non-adressables alimentées en 12V, **exactement comme l'éclairage du dessus de la borne**. Même le brochage du connecteur est identique. La meilleure option est donc de venir raccorder les deux connecteurs des woofers (J1 et J2) sur l'IO4 pour les éclairer de la même teinte que le sommet de la borne. Il s'agit d'une solution à la fois simple (*il suffit d'un simple connecteur en Y*) et élégante puisque cela permet de conserver cette spécificité de FiNALE sur la borne convertie.
-
-De plus, l'éclairage du dessus d'une FiNALE étant bien moins visible que le panneau lumineux d'une DX, cela permet de renforcer la couleur du thème du jeu sur une autre partie de la borne bien plus visible.
-
---8<-- "includes/wip-fr.md"
+    * Confectionner et installer une nouvelle nappe de câbles partant de l'IO4 et venant se brancher sur les connecteurs existants de la borne.
 
 ---
 

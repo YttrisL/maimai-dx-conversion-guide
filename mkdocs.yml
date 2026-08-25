@@ -30,6 +30,7 @@ hooks:
   - hooks/check_translations.py
   - hooks/dedupe_static_resources.py
   - hooks/copy_sitemap.py
+  - hooks/lightbox.py
 
 theme:
   name: material
@@ -119,6 +120,7 @@ extra_css:
 
 extra_javascript:
   - checklist-persist.js
+  - lightbox.js
 
 extra:
   social:

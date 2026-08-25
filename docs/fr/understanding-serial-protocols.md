@@ -10,7 +10,7 @@ Ce guide mentionne plusieurs protocoles de communication : **UART**, **RS-232**,
 
 Un port "série" envoie les données un bit à la fois, à la queue leu-leu, sur un seul fil (par opposition à un port "parallèle", qui utilise plusieurs fils en même temps). Chaque paquet d'information ("un octet") est enveloppé dans une petite trame, un peu comme une lettre dans une enveloppe :
 
-![Trame UART : bit Start, 8 bits de donnée D0 à D7, bit Stop, encadrés par la ligne au repos](../resources/images/serial-protocols/uart-framing.svg){ width="720" }
+![Trame UART : bit Start, 8 bits de donnée D0 à D7, bit Stop, encadrés par la ligne au repos](../resources/images/serial-protocols/uart-framing.svg){ width="900" }
 
 Le bit *Start* prévient le récepteur qu'une lettre arrive, les 8 bits suivants sont le contenu, et le bit *Stop* referme l'enveloppe (il existe des variantes avec plus ou moins de bits, mais "8 bits de donnée + 1 bit Stop" est de très loin la plus courante). Ce découpage porte un nom : c'est une trame **UART** (*Universal Asynchronous Receiver-Transmitter*), du nom de la puce qui la fabrique - UART désigne donc à l'origine un composant électronique, mais par extension on l'utilise aussi pour désigner ce découpage lui-même. Il vit au niveau d'une puce électronique (un microcontrôleur, par exemple), avec de petites tensions "logiques" (souvent appelées *TTL* pour *Transistor-to-Transistor Logic* - 0V pour un "0", 3,3V ou 5V pour un "1"). RS-232 et RS-485, présentés juste après, ne sont que deux façons différentes de traduire *électriquement* ce même découpage en bits pour l'envoyer sur un câble plus long ou plus fiable - comme une même lettre que l'on peut confier à deux services postaux différents, sans changer ce qui est écrit dessus.
 
@@ -22,7 +22,7 @@ Le bit *Start* prévient le récepteur qu'une lettre arrive, les 8 bits suivants
 
 RS-232 traduit ce même découpage en bits UART en des tensions plus élevées *et inversées* (typiquement entre -15V et +15V, souvent ±5 à ±12V en pratique - un "1" logique devient une tension négative, un "0" une tension positive), pour supporter des câbles plus longs que les faibles 3,3V/5V d'un UART brut. Elle ne relie que **deux appareils**, chacun avec son propre fil d'émission :
 
-![RS-232 : liaison point à point entre deux appareils, TX croisé avec RX, GND relié à GND](../resources/images/serial-protocols/rs232-point-to-point.svg){ width="500" }
+![RS-232 : liaison point à point entre deux appareils, TX croisé avec RX, GND relié à GND](../resources/images/serial-protocols/rs232-point-to-point.svg){ width="600" }
 
 Le "TX" (émission) d'un côté se branche sur le "RX" (réception) de l'autre - c'est ce croisement que fait un [adaptateur Null Modem](glossary.md#communication-et-protocoles). RS-232 ne se limite d'ailleurs pas à ces tensions : elle normalise aussi le connecteur (le fameux port "DB9") et quelques fils de contrôle supplémentaires, ce qui rend justement ce genre de câble croisé possible.
 

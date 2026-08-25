@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="18 17 917 419" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif" xmlns:bx="https://boxy-svg.com">
+  <!--
+    Nappe de câbles pour l'éclairage du dessus de la borne (Étape 6).
+    Vue d'ensemble, de gauche à droite :
+      1) Sources sur l'IO4 : CN9 (2x10, en haut), alimentation 12V interne (au centre),
+         CN3 (2x30 pivoté à 90°, en bas) - seules les broches réellement câblées sont mises en couleur.
+      2) Gaine commune : les 8 fils (12V, ROUGE, VERT, BLEU x2 - un jeu par côté P1/P2) sont regroupés
+         sur ~3 mètres, tous solidaires jusqu'à la séparation en Y.
+      3) Séparation en Y : trait plein = fil "L" vers P1 (gauche) ; trait pointillé = fil "R" vers P2 (droit).
+      4) Connecteurs JST-SM 8 broches de sortie, horizontaux : P1 en haut (câbles raccordés par le bas,
+         broches 1-4 pontées vers 5-8 pour dupliquer le signal vers CENTER LED), P2 en bas (câbles
+         raccordés par le haut, broches 5-8 non utilisées).
+    Fichier recadré sur le contenu réel (viewBox décalé) pour éviter les marges mortes.
+  -->
+  <defs>
+    <bx:export>
+      <bx:file format="svg" href="#object-0" path="Sans titre.svg"/>
+    </bx:export>
+  </defs>
+  <title>Nappe de câbles reliant les 20 broches du CN9 (2x10), un extrait du CN3 (2x30, pivoté) et l'alimentation 12V interne de l'IO4 à deux connecteurs JST-SM 8 broches horizontaux, via une gaine commune séparée en Y</title>
+
+  <!-- Fond de carte (lisible en thème clair et sombre) -->
+  <rect x="19" y="18" width="915" height="417" rx="12" fill="#f4f4f6" stroke="#c9c9cf" stroke-width="2" id="object-0"/>
+
+  <!-- ===================== CN9 : IO4, connecteur JST-RA 20 broches, format 2x10 ===================== -->
+  <!-- Seules les broches 5, 6 (VERT L/R), 9, 10 (BLEU L/R) sont câblées ici ; les autres sont grisées. -->
+  <text x="55.114" y="49.527" font-size="13" font-weight="bold" fill="#222" style="white-space: pre; font-size: 13px;">IO4 - CN9 (JST-RA 20 broches, 2x10)</text>
+  <rect x="55" y="56" width="390" height="85" rx="10" fill="#ffffff" stroke="#333" stroke-width="2"/>
+  <circle cx="80" cy="81" r="8" fill="#ddd"/>
+  <text x="80" y="84.5" text-anchor="middle" font-size="8" fill="#888" style="white-space: pre;">2</text>
+  <circle cx="80" cy="116" r="8" fill="#ddd"/>
+  <text x="80" y="119.5" text-anchor="middle" font-size="8" fill="#888" style="white-space: pre;">1</text>
+  <circle cx="118" cy="81" r="8" fill="#ddd"/>
+  <text x="118" y="84.5" text-anchor="middle" font-size="8" fill="#888" style="white-space: pre;">4</text>
+  <circle cx="118" cy="116" r="8" fill="#ddd"/>
+  <text x="118" y="119.5" text-anchor="middle" font-size="8" fill="#888" style="white-space: pre;">3</text>
+  <circle cx="156" cy="81" r="8" fill="#2f9e5c"/>
+  <text style="white-space: pre;" x="156" y="84.5" text-anchor="middle" font-weight="bold" font-size="8.5" fill="#fff">6</text>
+  <text style="fill: rgb(47, 158, 92); font-size: 7.5px; font-weight: 700; white-space: pre;" x="168" y="79" dx="-0.262" dy="4.792">R</text>
+  <circle cx="156" cy="116" r="8" fill="#2f9e5c"/>
+  <text x="156" y="119.5" text-anchor="middle" font-size="8.5" font-weight="bold" fill="#fff" style="white-space: pre;">5</text>
+  <text style="fill: rgb(47, 158, 92); font-size: 7.5px; font-weight: 700; white-space: pre;" x="168" y="120" dx="-0.517" dy="-1.714">L</text>
+  <circle cx="194" cy="81" r="8" fill="#ddd"/>
+  <text x="194" y="84.5" text-anchor="middle" font-size="8" fill="#888" style="white-space: pre;">8</text>
+  <circle cx="194" cy="116" r="8" fill="#ddd"/>
+  <text x="194" y="119.5" text-anchor="middle" font-size="8" fill="#888" style="white-space: pre;">7</text>
+  <circle cx="232" cy="81" r="8" fill="#3b82c4"/>
+  <text x="232" y="84.5" text-anchor="middle" font-size="8.5" font-weight="bold" fill="#fff" style="white-space: pre;">10</text>
+  <text x="244" y="79" font-size="7.5" font-weight="bold" fill="#3b82c4" style="white-space: pre;">R</text>
+  <circle cx="232" cy="116" r="8" fill="#3b82c4"/>
+  <text x="232" y="119.5" text-anchor="middle" font-size="8.5" font-weight="bold" fill="#fff" style="white-space: pre;">9</text>
+  <text x="244" y="120" font-size="7.5" font-weight="bold" fill="#3b82c4" style="white-space: pre;">L</text>
+  <circle cx="270" cy="81" r="8" fill="#ddd"/>
+  <text x="270" y="84.5" text-anchor="middle" font-size="8" fill="#888" style="white-space: pre;">12</text>
+  <circle cx="270" cy="116" r="8" fill="#ddd"/>
+  <text x="270" y="119.5" text-anchor="middle" font-size="8" fill="#888" style="white-space: pre;">11</text>
+  <circle cx="308" cy="81" r="8" fill="#ddd"/>
+  <text x="308" y="84.5" text-anchor="middle" font-size="8" fill="#888" style="white-space: pre;">14</text>
+  <circle cx="308" cy="116" r="8" fill="#ddd"/>
+  <text x="308" y="119.5" text-anchor="middle" font-size="8" fill="#888" style="white-space: pre;">13</text>
+  <circle cx="346" cy="81" r="8" fill="#ddd"/>
+  <text x="346" y="84.5" text-anchor="middle" font-size="8" fill="#888" style="white-space: pre;">16</text>
+  <circle cx="346" cy="116" r="8" fill="#ddd"/>
+  <text x="346" y="119.5" text-anchor="middle" font-size="8" fill="#888" style="white-space: pre;">15</text>
+  <circle cx="384" cy="81" r="8" fill="#ddd"/>
+  <text x="384" y="84.5" text-anchor="middle" font-size="8" fill="#888" style="white-space: pre;">18</text>
+  <circle cx="384" cy="116" r="8" fill="#ddd"/>
+  <text x="384" y="119.5" text-anchor="middle" font-size="8" fill="#888" style="white-space: pre;">17</text>
+  <circle cx="422" cy="81" r="8" fill="#ddd"/>
+  <text x="422" y="84.5" text-anchor="middle" font-size="8" fill="#888" style="white-space: pre;">20</text>
+  <circle cx="422" cy="116" r="8" fill="#ddd"/>
+  <text x="422" y="119.5" text-anchor="middle" font-size="8" fill="#888" style="white-space: pre;">19</text>
+  <!-- Fils sortant du CN9 vers la gaine : contournement de la rangée du bas pour les broches du haut -->
+  <path d="M 150.193 84.152 C 142.615 91.158 138.265 98.864 139.94 140.979" fill="none" stroke="#2f9e5c" stroke-width="2.2" stroke-dasharray="6 4"/>
+  <path d="M 156 124 L 156 141" fill="none" stroke="#2f9e5c" stroke-width="2.2"/>
+  <path d="M 230.398 86.928 C 216.7 90.474 215.993 99.43 208.007 137.071" fill="none" stroke="#3b82c4" stroke-width="2.2" stroke-dasharray="6 4"/>
+  <path d="M 225.422 118.02 L 217.649 141" fill="none" stroke="#3b82c4" stroke-width="2.2"/>
+  <path d="M 140.531 142.191 C 138.274 223.092 193.263 207.003 230 206" fill="none" stroke="#2f9e5c" stroke-width="2.2" stroke-dasharray="6 4"/>
+  <path d="M 156 141 C 147.633 216.707 200 201 230 201" fill="none" stroke="#2f9e5c" stroke-width="2.2"/>
+  <path d="M 207.067 141.941 C 189.037 236.616 230.912 213.257 242.341 216" fill="none" stroke="#3b82c4" stroke-width="2.2" stroke-dasharray="6 4"/>
+  <path d="M 217.649 142.196 C 213.283 175.254 207.291 216 230 211" fill="none" stroke="#3b82c4" stroke-width="2.2"/>
+  <!-- ===================== Alimentation 12V interne (source commune, hors IO4) ===================== -->
+  <!-- 2 fils dédiés (plein -> P1, pointillé -> P2) : le 12V ne passe jamais par le CN9. -->
+  <rect x="42.067" y="183.967" width="64.055" height="46.86" rx="8" fill="#eceef2" stroke="#d98a1f" stroke-width="2" style=""/>
+  <text x="75" y="204" text-anchor="middle" font-size="9" fill="#222" style="white-space: pre;">Alimentation</text>
+  <text x="75" y="217" text-anchor="middle" font-size="9" fill="#222" style="white-space: pre;">12V interne</text>
+  <path d="M 106.123 197.38 C 158.536 192.844 210 191 230 191" fill="none" stroke="#d98a1f" stroke-width="2.2"/>
+  <path d="M 106.726 204.743 C 130.781 200.246 210 196 230 196" fill="none" stroke="#d98a1f" stroke-width="2.2" stroke-dasharray="6 4"/>
+
+  <!-- ===================== Gaine commune (sheath) : 8 fils sur ~3 mètres ===================== -->
+  <rect x="256.208" y="184.397" width="385.122" height="50" rx="20" fill="#e4e4e8" stroke="#888" stroke-width="1.5" style="" transform="matrix(1, 0.000357, 0, 1, -25.383949, -0.153216)"/>
+  <line x1="230" y1="191" x2="526" y2="191" stroke="#d98a1f" stroke-width="2.2"/>
+  <line x1="230" y1="196" x2="526" y2="196" stroke="#d98a1f" stroke-width="2.2" stroke-dasharray="6 4"/>
+  <line x1="230" y1="201" x2="526" y2="201" stroke="#2f9e5c" stroke-width="2.2"/>
+  <line x1="230" y1="206" x2="526" y2="206" stroke="#2f9e5c" stroke-width="2.2" stroke-dasharray="6 4"/>
+  <line x1="230" y1="211" x2="526" y2="211" stroke="#3b82c4" stroke-width="2.2"/>
+  <line x1="230" y1="216" x2="526" y2="216" stroke="#3b82c4" stroke-width="2.2" stroke-dasharray="6 4"/>
+  <line x1="230" y1="221" x2="526" y2="221" stroke="#d1453b" stroke-width="2.2"/>
+  <line x1="230" y1="226" x2="526" y2="226" stroke="#d1453b" stroke-width="2.2" stroke-dasharray="6 4"/>
+  <text x="430.029" y="179.657" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#444" style="white-space: pre; font-size: 11.5px;">≈ 3 mètres (gaine commune, 8 fils)</text>
+  <!-- ===================== CN3 : IO4, connecteur JST-RA 60 broches, format 2x30, pivoté 90° horaire ===================== -->
+  <!-- Seule la colonne des broches 49-54 est représentée (les 54 autres broches sont omises, cf. traits
+       pointillés en haut/bas). Après rotation : impaires (49/51/53) à gauche, paires (50/52/54) à droite.
+       Seules 51 (L) et 52 (R) sont câblées (BILLBOARD LED RED) - connecteur déjà en place depuis l'Étape 3. -->
+  <text x="234.084" y="375.998" text-anchor="middle" font-size="13" font-weight="bold" fill="#222" style="white-space: pre; font-size: 13px;">IO4 - CN3 (JST-RA 60 broches, 2x30)</text>
+  <text x="196.412" y="388.204" text-anchor="middle" font-size="9" fill="#999" font-style="italic" style="white-space: pre; font-size: 9px;">(seule la portion utile est représentée)</text>
+  <!-- bords réels (pleins) à gauche/droite, bords "coupés" (pointillés) en haut/bas -->
+  <line x1="38.221" y1="278.206" x2="38.221" y2="392.206" stroke="#333" stroke-width="2"/>
+  <line x1="114.221" y1="278.206" x2="114.221" y2="392.206" stroke="#333" stroke-width="2"/>
+  <line x1="38.221" y1="278.206" x2="114.221" y2="278.206" stroke="#333" stroke-width="2" stroke-dasharray="4 3"/>
+  <line x1="38.221" y1="392.206" x2="114.221" y2="392.206" stroke="#333" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="76.221" y="259.206" text-anchor="middle" font-size="8.5" fill="#999" font-style="italic" style="white-space: pre; font-size: 8.5px;" transform="matrix(1, 0, 0, 1, -0.597964, 13.155216)">(1 à 48 omises)<tspan x="76.22100067138672" dy="1em">​</tspan></text>
+  <text x="75.221" y="405.206" text-anchor="middle" font-size="8.5" fill="#999" font-style="italic" style="white-space: pre; font-size: 8.5px;" transform="matrix(1, 0, 0, 1, -0.597964, -1.195929)">(55 à 60 omises)<tspan x="75.22100067138672" dy="1em">​</tspan></text>
+  <circle cx="63.221" cy="297.206" r="8" fill="#ddd"/>
+  <text x="63.221" y="300.706" text-anchor="middle" font-size="8" fill="#888" style="white-space: pre; font-size: 8px;">49</text>
+  <circle cx="89.221" cy="297.206" r="8" fill="#ddd"/>
+  <text x="89.221" y="300.706" text-anchor="middle" font-size="8" fill="#888" style="white-space: pre; font-size: 8px;">50</text>
+  <circle cx="63.221" cy="335.206" r="8" fill="#d1453b"/>
+  <text x="63.221" y="338.706" text-anchor="middle" font-size="8" font-weight="bold" fill="#fff" style="white-space: pre; font-size: 8px;">51</text>
+  <text style="fill: rgb(209, 69, 59); font-size: 7.5px; font-weight: 700; text-anchor: middle; white-space: pre;" x="63.221" y="321.206" dy="31.692">L</text>
+  <circle cx="89.221" cy="335.206" r="8" fill="#d1453b"/>
+  <text x="89.221" y="338.706" text-anchor="middle" font-size="8" font-weight="bold" fill="#fff" style="white-space: pre; font-size: 8px;">52</text>
+  <text style="fill: rgb(209, 69, 59); font-size: 7.5px; font-weight: 700; text-anchor: middle; white-space: pre;" x="89.221" y="321.206" dx="-0.598" dy="31.692">R</text>
+  <circle cx="63.221" cy="373.206" r="8" fill="#ddd"/>
+  <text x="63.221" y="376.706" text-anchor="middle" font-size="8" fill="#888" style="white-space: pre; font-size: 8px;">53</text>
+  <circle cx="89.221" cy="373.206" r="8" fill="#ddd"/>
+  <text x="89.221" y="376.706" text-anchor="middle" font-size="8" fill="#888" style="white-space: pre; font-size: 8px;">54</text>
+  <!-- Fils sortant du CN3 (broches 51 et 52) vers la gaine -->
+  <path d="M 63.221 329.256 C 54.541 306.182 133.086 345.489 125.432 266.577 C 119.855 209.081 190 224 230 221" fill="none" stroke="#d1453b" stroke-width="2.2"/>
+  <path d="M 97.593 335.774 C 154.059 341.909 139.109 283.206 139.068 250.865 C 132.862 228.473 220 226 230 226" fill="none" stroke="#d1453b" stroke-width="2.2" stroke-dasharray="6 4"/>
+
+  <!-- Cadres des 2 connecteurs de sortie, dessinés AVANT les fils pour que ceux-ci restent visibles par-dessus -->
+  <rect x="625" y="92" width="290" height="36" rx="8" fill="#ffffff" stroke="#22456b" stroke-width="2.2"/>
+  <rect x="625" y="292" width="290" height="36" rx="8" fill="#ffffff" stroke="#7a2420" stroke-width="2.2"/>
+
+  <!-- ===================== Séparation en Y : gaine -> connecteurs P1 (haut, plein) / P2 (bas, pointillé) ===================== -->
+  <path d="M 526 191 C 602.267 191 661.117 206.895 650 110" fill="none" stroke="#d98a1f" stroke-width="2.2"/>
+  <path d="M 526 201 C 622 201 734.35 214.622 718 110" fill="none" stroke="#2f9e5c" stroke-width="2.2"/>
+  <path d="M 526 211 C 639 211 770.967 215.217 752 110" fill="none" stroke="#3b82c4" stroke-width="2.2"/>
+  <path d="M 526 221 C 653.745 216.244 703.678 238.995 684 110" fill="none" stroke="#d1453b" stroke-width="2.2"/>
+  <path d="M 526 196 C 647.445 196.594 649.822 178.628 650 310" fill="none" stroke="#d98a1f" stroke-width="2.2" stroke-dasharray="6 4"/>
+  <path d="M 526 206 C 703.501 207.332 717.075 191.694 718 310" fill="none" stroke="#2f9e5c" stroke-width="2.2" stroke-dasharray="6 4"/>
+  <path d="M 526 216 C 750.345 218.89 752.714 189.513 752 310" fill="none" stroke="#3b82c4" stroke-width="2.2" stroke-dasharray="6 4"/>
+  <path d="M 526 226 C 681.683 229.567 681.683 216.078 684 310" fill="none" stroke="#d1453b" stroke-width="2.2" stroke-dasharray="6 4"/>
+  <!-- ===================== Connecteur P1 (côté gauche) : horizontal, câbles raccordés par le bas ===================== -->
+  <text x="626.684" y="82.576" font-size="13" font-weight="bold" fill="#22456b" style="white-space: pre; font-size: 13px;">JST-SM 8 broches - côté P1</text>
+  <!-- ponts internes broches 1-4 -> 5-8 (par le haut) : duplique 12V/ROUGE/VERT/BLEU pour alimenter aussi CENTER LED -->
+  <path d="M 649.406 115.944 C 649.406 165.944 785.406 165.944 785.406 115.944" fill="none" stroke="#d98a1f" stroke-width="1.8"/>
+  <path d="M 684 110 C 683.175 170.285 819.241 168.5 820 110" fill="none" stroke="#d1453b" stroke-width="1.8"/>
+  <path d="M 718 110 C 715.852 158.914 851.402 163.716 854 110" fill="none" stroke="#2f9e5c" stroke-width="1.8"/>
+  <path d="M 752 110 C 747.617 147.788 881.384 151.639 888 110" fill="none" stroke="#3b82c4" stroke-width="1.8"/>
+  <circle cx="650" cy="110" r="9" fill="#d98a1f"/>
+  <text x="650" y="113.5" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#fff" style="white-space: pre;">1</text>
+  <circle cx="684" cy="110" r="9" fill="#d1453b"/>
+  <text x="684" y="113.5" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#fff" style="white-space: pre;">2</text>
+  <circle cx="718" cy="110" r="9" fill="#2f9e5c"/>
+  <text x="718" y="113.5" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#fff" style="white-space: pre;">3</text>
+  <circle cx="752" cy="110" r="9" fill="#3b82c4"/>
+  <text x="752" y="113.5" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#fff" style="white-space: pre;">4</text>
+  <circle cx="786" cy="110" r="9" fill="#d98a1f"/>
+  <text x="786" y="113.5" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#fff" style="white-space: pre;">5</text>
+  <circle cx="820" cy="110" r="9" fill="#d1453b"/>
+  <text x="820" y="113.5" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#fff" style="white-space: pre;">6</text>
+  <circle cx="854" cy="110" r="9" fill="#2f9e5c"/>
+  <text x="854" y="113.5" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#fff" style="white-space: pre;">7</text>
+  <circle cx="888" cy="110" r="9" fill="#3b82c4"/>
+  <text x="888" y="113.5" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#fff" style="white-space: pre;">8</text>
+  <circle cx="650" cy="310" r="9" fill="#d98a1f"/>
+  <text x="650" y="313.5" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#fff" style="white-space: pre;">1</text>
+  <circle cx="684" cy="310" r="9" fill="#d1453b"/>
+  <text x="684" y="313.5" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#fff" style="white-space: pre;">2</text>
+  <circle cx="718" cy="310" r="9" fill="#2f9e5c"/>
+  <text x="718" y="313.5" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#fff" style="white-space: pre;">3</text>
+  <circle cx="752" cy="310" r="9" fill="#3b82c4"/>
+  <text x="752" y="313.5" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#fff" style="white-space: pre;">4</text>
+  <!-- ===================== Connecteur P2 (côté droit) : horizontal, câbles raccordés par le haut ===================== -->
+  <!-- Broches 5-8 non utilisées : pas de pontage, pas de CENTER LED côté P2. -->
+  <circle cx="786" cy="310" r="9" fill="#ddd"/>
+  <text x="786" y="313.5" text-anchor="middle" font-size="9.5" fill="#888" style="white-space: pre;">5</text>
+  <circle cx="820" cy="310" r="9" fill="#ddd"/>
+  <text x="820" y="313.5" text-anchor="middle" font-size="9.5" fill="#888" style="white-space: pre;">6</text>
+  <circle cx="854" cy="310" r="9" fill="#ddd"/>
+  <text x="854" y="313.5" text-anchor="middle" font-size="9.5" fill="#888" style="white-space: pre;">7</text>
+  <circle cx="888" cy="310" r="9" fill="#ddd"/>
+  <text x="888" y="313.5" text-anchor="middle" font-size="9.5" fill="#888" style="white-space: pre;">8</text>
+  <text x="627.955" y="346.089" font-size="13" font-weight="bold" fill="#7a2420" style="white-space: pre; font-size: 13px;">JST-SM 8 broches - côté P2</text>
+</svg>

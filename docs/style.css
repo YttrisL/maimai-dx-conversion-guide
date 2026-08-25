@@ -112,6 +112,155 @@ hr {
     max-height: 500px;
 }
 
+/* Lightbox (click-to-zoom thumbnails)
+   ========================================================================== */
+
+/* Generic, reusable on any page: a bordered row of thumbnails that each open
+   a full-size view in an overlay <div>. Don't hand-write this markup in a
+   .md file - write a `!!! lightbox` block instead (see hooks/lightbox.py),
+   which expands into it:
+     !!! lightbox
+         ![Caption for the first image](../resources/images/foo/a.png)
+         ![Caption for the second image](../resources/images/foo/b.png)
+   Pair with lightbox.js, which intercepts the thumbnail click so
+   opening/closing never scrolls the page - the thumbnail's href="#id" /
+   :target rule below only kicks in as a no-JS fallback (see lightbox.js for
+   why the overlay must be a <div>, not an <a>, and for that fallback's
+   limits). lightbox.js also drives left/right arrow-key navigation between
+   an overlay's siblings (see the data-lightbox-group/-index contract at the
+   top of that file) and the on-screen .lightbox-nav prev/next buttons below
+   are just a visible, clickable affordance for the same thing - hidden
+   automatically (see hooks/lightbox.py) whenever there's nothing to
+   navigate to.
+*/
+.lightbox-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-block: 1em;
+    padding: 1rem;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: .2rem;
+}
+
+.lightbox-thumb {
+    display: block;
+    flex: 0 1 300px;
+}
+
+.lightbox-thumb figure,
+.lightbox-overlay figure {
+    margin: 0;
+}
+
+/* Fixed height (rather than auto, scaled from each image's own aspect
+   ratio) so thumbnails of differently-shaped images still all end at the
+   same y - which, combined with .lightbox-row's flex-start alignment, is
+   what keeps every caption starting at the same vertical position instead
+   of trailing wherever its own image happens to end. */
+.lightbox-thumb img {
+    inline-size: 100%;
+    block-size: 190px;
+    object-fit: contain;
+    cursor: zoom-in;
+    transition: opacity .15s ease;
+}
+
+.lightbox-thumb:hover img {
+    opacity: .85;
+}
+
+/* Small in the unzoomed thumbnail - just enough to identify the image. */
+.lightbox-thumb figcaption {
+    margin-block-start: .3rem;
+    font-size: .7em;
+    color: var(--md-default-fg-color--light);
+    text-align: center;
+}
+
+.lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, .85);
+    cursor: zoom-out;
+}
+
+.lightbox-overlay:target,
+.lightbox-overlay.lightbox-open {
+    display: flex;
+}
+
+.lightbox-overlay figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .75rem;
+    max-inline-size: 100%;
+    max-block-size: 100%;
+    min-block-size: 0;
+}
+
+.lightbox-overlay img {
+    flex: 1 1 auto;
+    min-block-size: 0;
+    max-inline-size: 100%;
+    max-block-size: 100%;
+    object-fit: contain;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .6);
+}
+
+/* Normal (page) text size once zoomed in - readable full caption. */
+.lightbox-overlay figcaption {
+    flex: 0 0 auto;
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+}
+
+/* Prev/next buttons pinned to the screen edges (not the image edges - a
+   narrow zoomed image shouldn't make these hard to find/reach), vertically
+   centered on the viewport. Only rendered at all when there's more than one
+   image to navigate to (see hooks/lightbox.py). */
+.lightbox-nav {
+    position: fixed;
+    inset-block-start: 50%;
+    transform: translateY(-50%);
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inline-size: 3rem;
+    block-size: 3rem;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .15);
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color .15s ease;
+}
+
+.lightbox-nav:hover {
+    background: rgba(255, 255, 255, .3);
+}
+
+.lightbox-nav-prev {
+    inset-inline-start: 1rem;
+}
+
+.lightbox-nav-next {
+    inset-inline-end: 1rem;
+}
+
 /* ==========================================================================
    MkDocs styles
    ========================================================================== */
@@ -119,6 +268,14 @@ hr {
 /* Hide the site title/logo shown at the top of the left navigation sidebar. */
 .md-nav--primary>.md-nav__title {
     display: none;
+}
+
+/* Material caps the whole grid (sidebars + content) at 61rem (~1220px) and
+   centers it, which leaves huge empty margins on wide (e.g. 1080p+)
+   screens. Widen it so the page actually uses the available width; still
+   capped so lines don't get absurdly long on ultra-wide/4K monitors. */
+.md-grid {
+    max-width: 70rem;
 }
 
 .md-typeset .tabbed-labels--linked>label>a {
