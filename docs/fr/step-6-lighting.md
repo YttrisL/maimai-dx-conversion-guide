@@ -55,18 +55,74 @@ L'éclairage est techniquement une étape *optionnelle* de la conversion, dans l
 
 ## Pour les boutons de jeu et le fond des deux joueurs
 
+Le problème est que pour les contrôleurs de LEDs, **maimai DX s'attend à recevoir l'identifiant `837-15070-04`**, mais ceux de FiNALE vont lui renvoyer `837-15070-02-91` et le jeu se mettra en erreur. C'est véritablement le seul problème : le contrôleur de FiNALE est autrement 100 % compatible avec les instructions envoyées par DX.
+
+Nous devons donc trouver un moyen de modifier l'identifiant envoyé par les deux contrôleurs de LEDs pour qu'ils renvoient la valeur que le jeu s'attend à recevoir. C'est assez simple à faire de façon logicielle, mais nous souhaitons une fidélité logicielle parfaite. **Nous devons donc trouver une solution hardware.**
+
+**La solution :** Un simple Raspberry Pi Pico, programmé avec un firmware maison, qui va venir s'installer entre le contrôleur de LEDs et son adaptateur RS-232 vers USB pour modifier uniquement le message où celui-ci envoie son identifiant. Tous les autres messages seront transférés à l'identique dans un sens comme dans l'autre.
+
+Le logiciel est déjà tout prêt, il s'agit de [mailight_pico](https://gitea.farewell.dev/Yttris/mailight_pico), un port de *mailight_rs* par 4ndr3w sur GitHub. Il nous reste à fabriquer le proxy.
+
 ### Fabriquer un proxy
 
-`En attente de la procédure finale`
+!!! info "En double exemplaire"
+    Il vous faudra deux proxys, un pour chaque contrôleur de LEDs. Réalisez donc cette opération en deux exemplaires.
+
+Commencez par installer le firmware mailight_pico sur le Raspberry Pi Pico. Si vous n'avez jamais installé de firmware sur un Pico, c'est extrêmement simple. [Toutes les instructions sont sur la page du projet](https://gitea.farewell.dev/Yttris/mailight_pico#3-installing-the-firmware).
+
+Pour réaliser le proxy, vous avez deux options :
+
+??? example "Sans soudure, plus facile, plus cher"
+    Commencez par assembler votre Raspberry Pi Pico avec le `Pico-2CH-RS232`. Attention au sens, le dessous du `Pico-2CH-RS232` indique le côté vers lequel le port USB du Pico est censé se trouver.
+
+    !!! lightbox
+        ![Le module `Pico-2CH-RS232`, image tirée de la [page wiki officielle de Waveshare](https://www.waveshare.com/wiki/Pico-2CH-RS232)](../resources/images/step-6-lighting/pico-2ch-rs232.png)
+
+    !!! warning "Attention au sens"
+        Assurez-vous que votre montage corresponde bien à l'image. Si votre Raspberry Pi Pico a, par exemple, son port USB entre les deux PCB plutôt qu'à l'extérieur comme sur l'image, cela veut dire que les broches de votre Pico sont soudées dans le mauvais sens. **N'essayez pas de l'allumer !** Vous ne parviendriez qu'à endommager le `Pico-2CH-RS232`. Vous devez soit ressouder les broches dans le bon sens vous-même, soit vous procurer un nouveau Pico correctement assemblé.
+
+    Une fois votre matériel assemblé, il vous reste à préparer la connectique pour pouvoir insérer le Pico entre le contrôleur de LEDs et son adaptateur RS-232 vers USB. En fonction de si vous réalisez un proxy pour le contrôleur de LEDs du côté P1 ou P2, vous aurez besoin d'un connecteur différent :
+
+    * Côté P1 : JST-XH **7** broches - Mâle **et** femelle
+    * Côté P2 : JST-XH **9** broches - Mâle **et** femelle
+
+    !!! lightbox
+        ![Connecteur JST-XH côté P1](../resources/images/step-6-lighting/led-driver-connector-p1.png)
+        ![Connecteur JST-XH côté P2](../resources/images/step-6-lighting/led-driver-connector-p2.png)
+
+    Par simplicité, veillez à utiliser du fil blanc et rouge et installez-les aux positions correspondantes à l'installation de la borne. Sertissez le fil blanc sur la broche 4, le fil rouge sur la broche 5.
+    Créez votre câble de telle sorte que si vous enfichez le connecteur mâle dans le connecteur femelle, les couleurs de fils soient alignées. Ces images proviennent du schéma de câblage, mais comme vous le constaterez, il n'y a pas de fil `SHIELD` sur les véritables connecteurs dans la borne, ce qui veut dire que nous devrons raccorder notre masse commune ailleurs sur le `Pico-2CH-RS232`.
+
+    !!! lightbox
+        ![Vue du dessus du module `Pico-2CH-RS232`](../resources/images/step-6-lighting/pico-2ch-rs232-photo.png)
+
+    Vous devez brancher le connecteur **JST-XH mâle sur le bornier à vis Channel0**, le connecteur **JST-XH femelle sur le bornier à vis Channel1**. Ainsi, le Channel0 devrait se retrouver du côté de l'adaptateur RS-232 vers USB, et le Channel1 du côté du contrôleur de LEDs. Connectez les fils de la façon suivante :
+
+    * Côté Channel0
+        * TX0: Rouge
+        * RX0: Blanc
+        * GND: Raccordez un fil noir à cette borne et venez attacher son extrémité dénudée sur la borne GND de l'alimentation installée à [l'étape 1](step-1-alls-and-psu.md).
+    * Côté Channel1
+        * TX1: Blanc
+        * RX1: Rouge
+
+    Votre proxy est désormais terminé. Pour l'alimenter, le plus simple est de connecter un cable micro-USB au port du Pico, et d'en couper l'autre extrémité afin de directement raccorder le fil rouge de celui-ci sur la borne 5V et le fil noir sur la borne GND de l'alimentation installée à [l'étape 1](step-1-alls-and-psu.md).
+
+??? example "Avec soudure, moins coûteux"
+    !!! note "Matériel"
+        La [liste de courses](equipment.md) part du principe que vous choisissez l'option simple. Si vous décidez de prendre cette option-ci à la place, vous pouvez ignorer les deux `Pico-2CH-RS232` et plutôt vous procurer ***[à définir]***.
+
+    --8<-- "includes/wip-fr.md"
+
+
+Maintenant que vous avez vos deux proxys, il ne reste plus qu'à les installer. Vous pouvez débrancher le connecteur du contrôleur de LEDs et venir le raccorder sur le connecteur femelle de votre proxy ; le connecteur mâle, lui, vient prendre sa place sur l'adaptateur RS-232 vers USB.
 
 ### Installer le proxy
-
-`En attente de la procédure finale`
 
 Une fois le proxy installé pour les deux contrôleurs de LEDs, il ne vous reste plus qu'à connecter le convertisseur RS-232 vers USB sur le ALLS via le hub USB, et le tour est joué. Le jeu devrait nativement reconnaître les contrôleurs de LEDs sans aucune modification logicielle.
 
 !!! warning "Branchez le convertisseur correctement"
-    Comme mentionné à l'[étape 1](step-1-alls-and-psu.md), le hub USB doit impérativement être branché sur le port USB portant le numéro 2, et le `convertisseur RS-232 vers USB` sur lequel les contrôleurs de LEDs sont connecté doit être branché sur le hub USB. Comme dit précédemment, maimai DX est très exigeant sur le port USB sur lequel les appareils sont connectés, en cas de mauvais branchement les LEDs ne s'allumeront pas.
+    Comme mentionné à l'[étape 1](step-1-alls-and-psu.md), le hub USB doit impérativement être branché sur le port USB portant le numéro 2, et le `convertisseur RS-232 vers USB` sur lequel les contrôleurs de LEDs sont connectés doit être branché sur le hub USB. Comme dit précédemment, maimai DX est très exigeant sur le port USB sur lequel les appareils sont connectés ; en cas de mauvais branchement, les LEDs ne s'allumeront pas.
 
     Même si vous ne comptez pas utiliser les caméras de QR-Code, le hub USB reste obligatoire.
 
@@ -105,9 +161,9 @@ Une fois la nappe réalisée, vous n'avez plus qu'à la brancher à l'IO4, racco
 ## En résumé
 !!! tldr "Les grandes lignes"
     Pour les LEDs des boutons et le fond de la borne :
-    
+
     * Fabriquer deux proxys à base d'un Raspberry Pi Pico et d'un MAX3232 chacun.
-    * Installer le proxy entre le contrôleur de LEDs et le convertisseur RS-232 vers USB-B.
+    * Installer le proxy entre le contrôleur de LEDs et le convertisseur RS-232 vers USB.
     * Brancher le convertisseur sur le hub USB sur le port approprié, et connecter le hub sur le port dédié du ALLS.
 
     Pour le sommet de la borne et les woofers :

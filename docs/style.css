@@ -145,12 +145,19 @@ hr {
     border-radius: .2rem;
 }
 
-.lightbox-thumb {
+/* The flex child (was .lightbox-thumb itself, back when the <a> wrapped
+   the whole figure - see hooks/lightbox.py for why the caption now sits
+   outside the <a>, as this figure's sibling instead). */
+.lightbox-thumb-figure {
     display: block;
     flex: 0 1 300px;
 }
 
-.lightbox-thumb figure,
+.lightbox-thumb {
+    display: block;
+}
+
+.lightbox-thumb-figure,
 .lightbox-overlay figure {
     margin: 0;
 }
@@ -173,11 +180,19 @@ hr {
 }
 
 /* Small in the unzoomed thumbnail - just enough to identify the image. */
-.lightbox-thumb figcaption {
+.lightbox-thumb-figure figcaption {
     margin-block-start: .3rem;
     font-size: .7em;
     color: var(--md-default-fg-color--light);
     text-align: center;
+}
+
+/* A caption can contain its own link (see hooks/lightbox.py) - keep it
+   legible at the thumbnail's small caption size instead of inheriting the
+   theme's default link color, which barely stands out there. */
+.lightbox-thumb-figure figcaption a {
+    color: inherit;
+    text-decoration: underline;
 }
 
 .lightbox-overlay {
@@ -222,6 +237,15 @@ hr {
     font-size: 1em;
     color: #fff;
     text-align: center;
+}
+
+/* A caption can contain its own link (see hooks/lightbox.py) - override
+   the overlay's "click anywhere to close" zoom-out cursor so it reads as
+   a normal, separately-clickable link. */
+.lightbox-overlay figcaption a {
+    color: inherit;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* Prev/next buttons pinned to the screen edges (not the image edges - a

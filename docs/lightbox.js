@@ -89,6 +89,14 @@
 
     var openedOverlay = event.target.closest(".lightbox-overlay");
     if (openedOverlay) {
+      // A caption can contain its own real link (e.g. an image source
+      // attribution - see hooks/lightbox.py) - let clicks on that link
+      // navigate normally instead of treating them as "click anywhere
+      // to close".
+      var captionLink = event.target.closest("a");
+      if (captionLink && openedOverlay.contains(captionLink)) {
+        return;
+      }
       event.preventDefault();
       openedOverlay.classList.remove("lightbox-open");
     }

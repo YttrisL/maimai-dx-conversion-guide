@@ -15,13 +15,17 @@ a tab, ...) - just indent the whole block, marker included, one level
 further in.
 
 Each indented line must be a single Markdown image. Its alt text becomes
-both the rendered <img>'s alt attribute and the visible caption under it
-(small in the thumbnail, normal-sized once zoomed - see style.css). Each
-image also gets a data-lightbox-group/-index pair (one group per `!!!
-lightbox` block, in source order) so lightbox.js can cycle left/right
-through just that block's images with the arrow keys while one is open -
-and, whenever a block has more than one image, a pair of on-screen
-prev/next arrow buttons that do the same thing on click.
+the visible caption under the image (small in the thumbnail, normal-sized
+once zoomed - see style.css). The alt text may itself contain inline
+Markdown - a `[link](url)`, `` `code` ``, **bold** - which is rendered to
+real HTML in the zoomed-in caption; the thumbnail caption and the <img>
+alt attribute, which can't hold markup, instead get a plain-text version
+with that formatting stripped back out. Each image also gets a
+data-lightbox-group/-index pair (one group per `!!! lightbox` block, in
+source order) so lightbox.js can cycle left/right through just that
+block's images with the arrow keys while one is open - and, whenever a
+block has more than one image, a pair of on-screen prev/next arrow
+buttons that do the same thing on click.
 
 Why this needs a hook instead of just writing the HTML inline: a hand-written
 raw <a>/<div class="lightbox-overlay"> block works, but two things about it
@@ -55,10 +59,45 @@ import html
 import posixpath
 import re
 
+import markdown
 from mkdocs.exceptions import PluginError
 
 _START_RE = re.compile(r"^(?P<indent>[ \t]*)!!!\s+lightbox\s*$")
-_IMAGE_RE = re.compile(r"^!\[(?P<alt>[^\]]*)\]\((?P<src>[^)\s]+)\)$")
+# `alt` is greedy on purpose: an alt text containing its own Markdown link
+# (e.g. `Foo ([source](https://...))`) has more than one literal `](` in
+# the line, and only the *last* one is the actual image marker - greedy
+# backtracking finds that rightmost split, same as it trivially would for
+# a caption with no nested link at all.
+_IMAGE_RE = re.compile(r"^!\[(?P<alt>.*)\]\((?P<src>[^)\s]+)\)$")
+_TAG_RE = re.compile(r"<[^>]+>")
+_EXTERNAL_LINK_RE = re.compile(r'<a href="(https?://[^"]+)">')
+
+# A standalone Markdown instance (default extensions only - no smarty, no
+# pymdownx) used purely to render a caption's *inline* Markdown (links,
+# `code`, **bold**, ...) to HTML. Reused across calls via reset(), per the
+# python-markdown docs, instead of building a fresh instance each time.
+_INLINE_MD = markdown.Markdown()
+
+
+def _render_inline_markdown(text: str) -> str:
+    _INLINE_MD.reset()
+    rendered = _INLINE_MD.convert(text)
+    # convert() wraps a plain line of text in a single block-level <p>;
+    # a caption only ever needs the inline content of that paragraph.
+    if rendered.startswith("<p>") and rendered.endswith("</p>"):
+        rendered = rendered[len("<p>"):-len("</p>")]
+    # Send caption links to a new tab: they're attribution/source links
+    # (e.g. "image from [manufacturer page]"), not further guide content,
+    # and the overlay itself would otherwise navigate away underneath them.
+    return _EXTERNAL_LINK_RE.sub(r'<a href="\1" target="_blank" rel="noopener">', rendered)
+
+
+def _plain_text(rendered_html: str) -> str:
+    # Strip the tags back out for contexts that can't hold markup: the
+    # <img alt="..."> attribute, and the thumbnail caption (which sits
+    # inside the thumbnail's own <a href="#...">- nesting a second <a>
+    # for a caption link in there would be invalid, unclickable HTML).
+    return html.unescape(_TAG_RE.sub("", rendered_html))
 
 
 def _nav_labels(page) -> tuple:
@@ -124,24 +163,30 @@ def _render(body_lines: list, page, files, group_id: str) -> str:
     overlays = []
     for index, (raw_src, alt) in enumerate(images):
         src = html.escape(_resolve_src(raw_src, page, files))
-        caption = html.escape(alt)
+        caption_html = _render_inline_markdown(alt)
+        plain_caption = html.escape(_plain_text(caption_html))
         uid = _slug(raw_src)
         # data-lightbox-group/-index let lightbox.js find this image's
         # siblings (and their order) to answer "what's next/previous" for
         # the left/right arrow-key navigation, without needing every image
         # on the page to share one single sequence.
+        # The <a> here wraps only the <img>, not the whole figure: a caption
+        # can itself contain a real link (see _render_inline_markdown), and
+        # nesting that <a> inside this one would be invalid, unclickable
+        # HTML. The figcaption sits outside instead, as this <a>'s sibling.
         thumbs.append(
+            f'<figure class="lightbox-thumb-figure">'
             f'<a href="#{uid}" class="lightbox-thumb" '
             f'data-lightbox-group="{group_id}" data-lightbox-index="{index}">'
-            f"<figure><img src=\"{src}\" alt=\"{caption}\">"
-            f"<figcaption>{caption}</figcaption></figure></a>"
+            f'<img src="{src}" alt="{plain_caption}"></a>'
+            f"<figcaption>{caption_html}</figcaption></figure>"
         )
         overlays.append(
             f'<div class="lightbox-overlay" markdown="0" id="{uid}" '
             f'data-lightbox-group="{group_id}" data-lightbox-index="{index}">'
             + nav_html
-            + f"<figure><img src=\"{src}\" alt=\"{caption}\">"
-            f"<figcaption>{caption}</figcaption></figure></div>"
+            + f"<figure><img src=\"{src}\" alt=\"{plain_caption}\">"
+            f"<figcaption>{caption_html}</figcaption></figure></div>"
         )
 
     return (

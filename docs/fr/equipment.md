@@ -160,7 +160,7 @@ Vous trouverez ces articles dans votre boutique préférée (Amazon, AliExpress,
     - Pour faire le lien entre l'IO de la dalle tactile du joueur 1 et la connexion DB-9 du ALLS.
     - Pour faire le lien entre l'IO de la dalle tactile du joueur 2 et la connexion DB-9 du ALLS.
 * **2x**{: .quantity-emphasis } **Raspberry Pi Pico** ([exemple](https://aliexpress.com/item/1005007393927221.html)) 
-    - Pour fabriquer les proxy des contrôleurs de LEDs
+    - Pour fabriquer les proxy des contrôleurs de LEDs. Préférez une version avec les broches pré-soudés sur le Pico si vous souhaitez une installation sans soudure. **Attention, les broches doivent être soudées vers les bas, pas vers le haut.**
 * **2x**{: .quantity-emphasis } **Pico-2CH-RS232** ([exemple](https://aliexpress.com/item/1005012732708840.html)) 
     - Pour fabriquer les proxy des contrôleurs de LEDs
 
