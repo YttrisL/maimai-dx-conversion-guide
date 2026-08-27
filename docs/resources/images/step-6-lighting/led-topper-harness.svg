@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg viewBox="18 17 917 419" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif" xmlns:bx="https://boxy-svg.com">
   <!--
-    Nappe de câbles pour l'éclairage du dessus de la borne (Étape 6).
+    Nappe de câbles pour l'éclairage de l'enseigne lumineuse (Étape 6).
     Vue d'ensemble, de gauche à droite :
       1) Sources sur l'IO4 : CN9 (2x10, en haut), alimentation 12V interne (au centre),
          CN3 (2x30 pivoté à 90°, en bas) - seules les broches réellement câblées sont mises en couleur.

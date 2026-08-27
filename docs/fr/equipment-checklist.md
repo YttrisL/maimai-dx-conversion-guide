@@ -30,6 +30,7 @@ title: "☑️ Checklist d'achat"
 - [ ] **1x**{: .quantity-emphasis } Câble DB-9 Femelle-Femelle
 - [ ] **4x**{: .quantity-emphasis } Câble DB-9 Mâle-Femelle (3 m)
 - [ ] **1x**{: .quantity-emphasis } Câble IEC C-13 (2 m)
+- [ ] **2x**{: .quantity-emphasis } Câble micro-USB
 
 ### Électronique
 
@@ -37,12 +38,18 @@ title: "☑️ Checklist d'achat"
 - [ ] **2x**{: .quantity-emphasis } Raspberry Pi Pico
 - [ ] **2x**{: .quantity-emphasis } Pico-2CH-RS232
 
+### Fils de câblage
+
+- [ ] Fil de câblage souple (AWG 22-24) en blanc, rouge et noir
+
 ### Connecteurs
 
 - [ ] **1x**{: .quantity-emphasis } Connecteur Molex Mini-Fit Jr. 2x7 broches femelle
 - [ ] **30x**{: .quantity-emphasis } Broche Molex Mini-Fit Jr. femelle à sertir
 - [ ] **1x**{: .quantity-emphasis } Connecteur JST-RA 2x10 broches femelle
 - [ ] **30x**{: .quantity-emphasis } Broche JST-RA femelle à sertir
+- [ ] **2x**{: .quantity-emphasis } Connecteur JST-SM 8 broches (paire mâle + femelle)
+- [ ] **2x**{: .quantity-emphasis } Connecteur JST-SM 2 broches (paire mâle + femelle)
 - [ ] Kit de connecteurs JST-XH
 - [ ] Kit de connecteurs JST-PH
 

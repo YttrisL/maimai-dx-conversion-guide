@@ -27,9 +27,9 @@ Sur *DX*, de nouveaux boutons physiques sont apparus pour permettre aux joueurs 
    * "1P SELECT BUTTON" : Broche **27**
    * "2P SELECT BUTTON" : Broche **26**
 
-## 3. Le contrôle des LEDs du Billboard (Toit de la borne)
+## 3. Le contrôle des LEDs de l'enseigne lumineuse
 
-Sur *DX*, l'IO4 est responsable de la gestion des lumières du sommet de la borne. Ce point sera également abordé à l'[Étape 6](step-6-lighting.md), mais voici déjà le schéma (pinout) des LEDs à raccorder :
+Sur *DX*, l'IO4 est responsable de la gestion de l'éclairage de l'enseigne lumineuse (désignée `BILLBOARD LED` / `ROOF LED` sur les schémas Sega). Ce point sera également abordé à l'[Étape 6](step-6-lighting.md), mais voici déjà le schéma (pinout) des LEDs à raccorder :
 
 * "BILLBOARD LED L RED" : Connecteur **CN3** - Broche **51** (Le gros faisceau de câbles)
 * "BILLBOARD LED R RED" : Connecteur **CN3** - Broche **52** (Le gros faisceau de câbles)
@@ -38,7 +38,7 @@ Sur *DX*, l'IO4 est responsable de la gestion des lumières du sommet de la born
 * "BILLBOARD LED L BLUE" : Connecteur **CN9** - Broche **9**
 * "BILLBOARD LED R BLUE" : Connecteur **CN9** - Broche **10**
 
-Si vous ne souhaitez pas installer les LEDs du dessus de la borne, vous pouvez ignorer cette étape.
+Si vous ne souhaitez pas installer les LEDs de l'enseigne lumineuse, vous pouvez ignorer cette étape.
 
 ## 4. Branchement USB de la carte IO4
 

@@ -153,6 +153,8 @@ Vous trouverez ces articles dans votre boutique préférée (Amazon, AliExpress,
     - Utilisé comme rallonge pour raccorder la dalle tactile du joueur 2 au ALLS.
 * **1x**{: .quantity-emphasis } **Câble IEC C-13 (2 m)** 
     - Branché au ALLS et coupé à hauteur de la prise pour être raccordé en direct à l'alimentation de la borne.
+* **2x**{: .quantity-emphasis } **Câble micro-USB** de charge
+    - Pour alimenter les deux proxys des contrôleurs de LEDs. L'extrémité opposée au Pico est coupée pour raccorder le fil rouge sur le 5V et le fil noir sur la masse de l'alimentation installée à l'[étape 1](step-1-alls-and-psu.md).
 
 ### Électronique
 
@@ -165,6 +167,12 @@ Vous trouverez ces articles dans votre boutique préférée (Amazon, AliExpress,
     - Pour fabriquer les proxy des contrôleurs de LEDs
 
 
+### Fils de câblage
+
+* **Fil de câblage souple (AWG 22-24)** 
+    - Il y aura plusieurs câbles à sertir tout au long de ce guide, prévoyez d'en avoir de réserve.
+
+
 ### Connecteurs
 
 * **1x**{: .quantity-emphasis } **Connecteur Molex Mini-Fit Jr. 2x7 broches femelle** ([exemple](https://www.amazon.com/dp/B078H8F2YQ)) 
@@ -175,6 +183,10 @@ Vous trouverez ces articles dans votre boutique préférée (Amazon, AliExpress,
     - Pour le CN9 de l'IO4.
 * **30x**{: .quantity-emphasis } **Broche JST-RA femelle à sertir** 
     - Pour peupler le CN9 et les câbles à rajouter sur le CN3 de l'IO4.
+* **2x**{: .quantity-emphasis } **Connecteur JST-SM 8 broches, paire mâle + femelle** 
+    - Extrémités de la nappe d'éclairage de l'enseigne lumineuse, côté joueur 1 et côté joueur 2, à raccorder aux connecteurs JST-SM d'origine.
+* **2x**{: .quantity-emphasis } **Connecteur JST-SM 2 broches, paire mâle + femelle**
+    - Idéal pour faire nos propres connecteurs pour nous faciliter la vie, mais si vous n'en avez pas de stock de simples JST-XH peuvent également convenir.
 
 Pour le reste des connecteurs, plutôt que d'acheter chaque référence à l'unité, procurez-vous directement un kit d'assortiment par type de connecteur : on en trouve facilement sur Amazon ou AliExpress, regroupant plusieurs tailles de boîtiers, les deux genres (mâle/femelle) et un lot de broches à sertir. Voici ce dont vous aurez besoin dans chacun :
 

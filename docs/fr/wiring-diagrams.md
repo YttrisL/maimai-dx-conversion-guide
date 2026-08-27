@@ -35,7 +35,7 @@ Chapitre *22 総合配線図* (« schéma de câblage général »), pages 193 �
 * `MMT-1200` / `MMT-1700` **ASSY SW BASE 1P / 2P** **[A-1]**{: .wiring-coord } - embases des boutons
 * `837-15070-04` **IC BD LED DRV32CH RS232** ×2 **[E-2/D-2]**{: .wiring-coord } - pilote de LEDs, un par côté
 * `837-20008` **4PORT USB HUB BD MINIB TO A** **[B-4]**{: .wiring-coord } - hub USB 4 ports
-* `837-15067-02` **IC BD USB TO 4SERIAL 232 IF** **[A-5]**{: .wiring-coord } - convertisseur USB vers 4 ports série
+* `837-15067-02` **IC BD USB TO 4SERIAL 232 IF** **[A-5]**{: .wiring-coord } - adaptateur USB vers 4 ports série
 * `837-15257-01` **I/O CONTROL BD 4 FOR USB** **[E-4]**{: .wiring-coord } - la carte **IO4** (JVS), voir l'[étape 3](step-3-io-board.md)
 * `MMT-1000` / `MMT-1500` / `MMT-1900` **ASSY CABINET 1P / 2P / SIDE COVER BASE 1P** **[G-3/G-6/G-1]**{: .wiring-coord }
 
@@ -50,8 +50,8 @@ Chapitre *22 総合配線図* (« schéma de câblage général »), pages 193 �
     * `370-5359` **PHOTO INTERRUPTER OJ-555S-A5** **[C-1→C-4]**{: .wiring-coord } - capteur optique d'appui du bouton
 * `837-20015` **HEADPHONE JACK BD** (`MMT-1070`) **[E-3]**{: .wiring-coord } - carte de la prise casque
 * `509-6483` **TOUCH SENSOR UNIT TPK** **[B-6]**{: .wiring-coord } - carte du capteur de l'anneau tactile
-* `MMT-1800-01` **ASSY BILLBOARD** **[F-5]**{: .wiring-coord } - enseigne lumineuse du haut de la borne
-    * `390-5768` **LED TAPE RGB** **[F-4/G-4]**{: .wiring-coord } - rubans LED RBG du haut de la borne
+* `MMT-1800-01` **ASSY BILLBOARD** **[F-5]**{: .wiring-coord } - enseigne lumineuse en haut de la borne
+    * `390-5768` **LED TAPE RGB** **[F-4/G-4]**{: .wiring-coord } - rubans LED RGB de l'enseigne lumineuse
     * `MMT-1080` haut-parleurs `130-5310` **[F-5/G-5]**{: .wiring-coord }
 * `390-7244` **LED TAPE WHITE M3528W-A** **[E-2]**{: .wiring-coord } - rubans LED blancs de l'anneau
 * `130-5280-01` **WOOFER 4OHM 80W** **[E-6]**{: .wiring-coord }
@@ -123,11 +123,11 @@ Chapitre *25 WIRING DIAGRAM*, pages 189 à 193 du [manuel maimai PiNK](../resour
 
 ---
 
-### Planche 3/4 - Carte I/O (JVS), convertisseur Serial-USB, contrôleur tactile et PC *RingEdge 2*
+### Planche 3/4 - Carte I/O (JVS), adaptateur Serial-USB, contrôleur tactile et PC *RingEdge 2*
 
 * **ASSY LCD** **[G-1]**{: .wiring-coord } - Joueur 2, écran (`200-6226-91` **ASSY LCD DSPL 42 TYPE LED Y**)
 * `837-14505` **I/O CONTROL BD FOR JVS** **[D-1]**{: .wiring-coord } - la carte IO3, remplacée par l'IO4 à l'[étape 3](step-3-io-board.md)
-* `837-15067-02` **IC BD USB TO 4SERIAL 232 IF** **[F-2]**{: .wiring-coord } - le convertisseur Serial-USB mentionné à l'[étape 6](step-6-lighting.md)
+* `837-15067-02` **IC BD USB TO 4SERIAL 232 IF** **[F-2]**{: .wiring-coord } - l'adaptateur RS-232 vers USB mentionné à l'[étape 6](step-6-lighting.md)
 * `838-15221` **SERIAL I/F BD TOUCHPANEL GUNZE** **[D-4]**{: .wiring-coord } - carte contrôleur de la dalle tactile
 * **ASSY CASE RGE2 W M2G S64G** **[E-3/E-4]**{: .wiring-coord } - PC *RingEdge 2* 
     * `846-5003D` **[E-3]**{: .wiring-coord } (version Japon)
