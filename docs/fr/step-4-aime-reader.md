@@ -68,6 +68,9 @@ L'opération est donc presque exactement la même que pour le JST-PH du lecteur 
 
 Une fois cette étape terminée, félicitations, vous avez confectionné vos propres câbles pour la connexion au ALLS.
 
+!!! lightbox
+    ![Les deux câbles DB9 femelle finalisés, avec leurs connecteurs JST pour le lecteur Aime et le VFD](../resources/images/step-4-aime-reader/finished-cables.jpg)
+
 !!! tip "Sertissez un connecteur pour les fils d'alimentation"
     Sur le connecteur du lecteur Aime et sur celui du VFD, nous avons installé deux fils supplémentaires pour l'alimentation 5V et le GND. Pour une installation plus simple, récupérez les deux paires de fils, sertissez les deux 5V ensemble et les deux GND ensemble en Y sur un seul connecteur JST-SM à côté de vos deux câbles DB9. Il sera ainsi plus simple d'installer le matériel sur la borne et de le débrancher au besoin en cas de maintenance.
     
@@ -76,8 +79,8 @@ Une fois cette étape terminée, félicitations, vous avez confectionné vos pro
 
 Branchez les deux câbles que vous venez de confectionner sur les ports correspondants. Sécurisez-les ensuite à l'arrière du combo lecteur Aime + VFD pour vous assurer qu'ils ne subiront aucune tension. En effet, même avec la meilleure technique de sertissage du monde, nos connecteurs resteront fragiles. Une fois les connecteurs branchés et sécurisés, il ne nous reste qu'à installer le combo sur la borne.
 
-!!! info "Placeholder"
-    PHOTOS des câbles branchés et sécurisés
+!!! lightbox
+    ![Les câbles branchés puis fixés à l'arrière du combo lecteur Aime + VFD pour éviter toute tension sur les connecteurs](../resources/images/step-4-aime-reader/cables-secured-behind-combo.jpg)
 
 ## Installation sur la borne
 
