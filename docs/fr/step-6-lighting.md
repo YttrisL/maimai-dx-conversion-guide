@@ -18,7 +18,7 @@ L'éclairage est techniquement une étape *optionnelle* de la conversion, dans l
         * Côté P1 : Les huit boutons, l'éclairage du fond et l'éclairage du côté gauche.
         * Côté P2 : Les huit boutons, l'éclairage du fond et l'éclairage du côté droit.
 
-    ![Chaîne de contrôle de l'éclairage : les cartes LED P1 et P2 (réf. `837-15070-04`) rejoignent en RS-232 l'adaptateur RS-232 vers USB (réf. `837-15067-02`), lui-même branché au hub USB partagé avec les caméras QR-Code de P1 et P2](../resources/images/step-6-lighting/led-controllers-chain.svg){ width="900" }
+    ![Chaîne de contrôle de l'éclairage : les cartes LED P1 et P2 (réf. `837-15070-04`) rejoignent en RS-232 l'adaptateur RS-232 vers USB (réf. `837-15067-02`), lui-même branché au hub USB partagé avec les caméras QR-Code de P1 et P2](../resources/images/step-6-lighting/led-controllers-chain.svg)
 
     Les deux cartes de contrôle s'interfacent en RS-232 à un unique adaptateur RS-232 vers USB. Celui-ci est lui-même raccordé au même hub USB que les lecteurs de QR-Code (voir [Étape 7](step-7-cameras.md)).
 
@@ -37,7 +37,7 @@ L'éclairage est techniquement une étape *optionnelle* de la conversion, dans l
         * Côté P1 : Les huit boutons, l'éclairage du fond, l'éclairage des woofers et l'enseigne lumineuse côté P1 et au centre.
         * Côté P2 : Les huit boutons, l'éclairage du fond, l'éclairage des woofers et l'enseigne lumineuse côté P2.
 
-    ![Chaîne de contrôle de l'éclairage sur FiNALE : les cartes LED P1 et P2 (réf. `837-15070-02-91`) rejoignent en RS-232 le même adaptateur RS-232 vers USB que sur DX (réf. `837-15067-02`), branché directement sur un port USB du RingEdge 2, sans hub USB](../resources/images/step-6-lighting/led-controllers-chain-finale.svg){ width="900" }
+    ![Chaîne de contrôle de l'éclairage sur FiNALE : les cartes LED P1 et P2 (réf. `837-15070-02-91`) rejoignent en RS-232 le même adaptateur RS-232 vers USB que sur DX (réf. `837-15067-02`), branché directement sur un port USB du RingEdge 2, sans hub USB](../resources/images/step-6-lighting/led-controllers-chain-finale.svg)
 
     Comme sur DX, ces deux cartes de contrôle s'interfacent en RS-232 au même adaptateur RS-232 vers USB. Par chance, **c'est exactement le même sur FiNALE et sur DX (réf. `837-15067-02`)**.
 
@@ -122,7 +122,7 @@ Maintenant que vous avez vos deux proxys, il ne reste plus qu'à les installer. 
 Une fois le proxy installé pour les deux contrôleurs de LEDs, il ne vous reste plus qu'à connecter l'adaptateur RS-232 vers USB sur le ALLS via le hub USB, et le tour est joué. Le jeu devrait nativement reconnaître les contrôleurs de LEDs sans aucune modification logicielle.
 
 !!! warning "Branchez l'adaptateur correctement"
-    Comme mentionné à l'[étape 1](step-1-alls-and-psu.md), le hub USB doit impérativement être branché sur le port USB portant le numéro 2, et l'`adaptateur RS-232 vers USB` sur lequel les contrôleurs de LEDs sont connectés doit être branché sur le hub USB. Comme dit précédemment, maimai DX est très exigeant sur le port USB sur lequel les appareils sont connectés ; en cas de mauvais branchement, les LEDs ne s'allumeront pas.
+    Comme mentionné à [l'étape 1](step-1-alls-and-psu.md), le hub USB doit impérativement être branché sur le port USB portant le numéro 2, et l'`adaptateur RS-232 vers USB` sur lequel les contrôleurs de LEDs sont connectés doit être branché sur le hub USB. Comme dit précédemment, maimai DX est très exigeant sur le port USB sur lequel les appareils sont connectés ; en cas de mauvais branchement, les LEDs ne s'allumeront pas.
 
     Même si vous ne comptez pas utiliser les caméras de QR-Code, le hub USB reste obligatoire.
 
@@ -149,7 +149,7 @@ Nous devons simplement créer notre propre nappe de câbles s'intégrant avec l'
 
 Réalisons alors notre propre nappe de câbles sur la base du schéma suivant. Idéalement, celui-ci doit avoir une longueur suffisante pour être installé proprement dans la borne : 3 mètres pour le côté joueur 1, 2 mètres pour le côté joueur 2. Pour le 12V, n'utilisez pas la broche 12V du CN9, mais préférez vous raccorder directement sur l'alimentation 12V interne de la borne. Vous éviterez ainsi de charger inutilement la carte I/O.
 
-![Nappe de câbles pour l'éclairage de l'enseigne lumineuse : depuis l'IO4 (CN9 broches 5, 6, 9 et 10, et CN3 broches 51-52 déjà câblées à l'étape 3) et l'alimentation 12V interne, fabrication de deux connecteurs JST-SM 8 broches - côté P1 (3 mètres, avec pontage des broches 1-4 vers 5-8 pour alimenter aussi CENTER LED) et côté P2 (2 mètres, broches 5-8 non utilisées) - qui se branchent ensuite sur les connecteurs d'origine AB et BB](../resources/images/step-6-lighting/led-topper-harness.svg){ width="1400" }
+![Nappe de câbles pour l'éclairage de l'enseigne lumineuse : depuis l'IO4 (CN9 broches 5, 6, 9 et 10, et CN3 broches 51-52 déjà câblées à l'étape 3) et l'alimentation 12V interne, fabrication de deux connecteurs JST-SM 8 broches - côté P1 (3 mètres, avec pontage des broches 1-4 vers 5-8 pour alimenter aussi CENTER LED) et côté P2 (2 mètres, broches 5-8 non utilisées) - qui se branchent ensuite sur les connecteurs d'origine AB et BB](../resources/images/step-6-lighting/led-topper-harness.svg)
 
 Une fois la nappe réalisée, vous n'avez plus qu'à la brancher à l'IO4, raccorder le 12V à l'alimentation interne, et venir raccorder les deux connecteurs JST-SM 8 broches d'origine sur votre nouveau câble. Assurez-vous de tester la continuité sur tous vos câbles avant l'installation afin d'écarter tout problème de broche mal sertie.
 
