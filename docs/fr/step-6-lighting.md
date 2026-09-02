@@ -70,54 +70,49 @@ Le logiciel est déjà tout prêt, il s'agit de [mailight_pico](https://gitea.fa
 
 Commencez par installer le firmware mailight_pico sur le Raspberry Pi Pico. Si vous n'avez jamais installé de firmware sur un Pico, c'est extrêmement simple. [Toutes les instructions sont sur la page du projet](https://gitea.farewell.dev/Yttris/mailight_pico#3-installing-the-firmware).
 
-Pour réaliser le proxy, vous avez deux options :
+Ensuite vous devez assembler votre Raspberry Pi Pico avec le `Pico-2CH-RS232`. Attention au sens, les inscriptions sur le dessous du `Pico-2CH-RS232` indique l'orientation dans laquelle le port USB du Pico est censé se trouver.
 
-??? example "Sans soudure, plus facile, plus cher"
-    Commencez par assembler votre Raspberry Pi Pico avec le `Pico-2CH-RS232`. Attention au sens, les inscriptions sur le dessous du `Pico-2CH-RS232` indique l'orientation dans laquelle le port USB du Pico est censé se trouver.
+!!! lightbox
+    ![Le module `Pico-2CH-RS232`, image tirée de la [page wiki officielle de Waveshare](https://www.waveshare.com/wiki/Pico-2CH-RS232)](../resources/images/step-6-lighting/pico-2ch-rs232.png)
 
-    !!! lightbox
-        ![Le module `Pico-2CH-RS232`, image tirée de la [page wiki officielle de Waveshare](https://www.waveshare.com/wiki/Pico-2CH-RS232)](../resources/images/step-6-lighting/pico-2ch-rs232.png)
+!!! warning "Attention au sens"
+    Assurez-vous que votre montage corresponde bien à l'image. Si votre Raspberry Pi Pico a, par exemple, son port USB entre les deux PCB plutôt qu'à l'extérieur comme sur l'image, cela veut dire que les broches de votre Pico sont soudées dans le mauvais sens. **N'essayez pas de l'allumer !** Vous ne parviendriez qu'à endommager le `Pico-2CH-RS232`. Vous devez soit ressouder les broches dans le bon sens vous-même, soit vous procurer un nouveau Pico correctement assemblé.
 
-    !!! warning "Attention au sens"
-        Assurez-vous que votre montage corresponde bien à l'image. Si votre Raspberry Pi Pico a, par exemple, son port USB entre les deux PCB plutôt qu'à l'extérieur comme sur l'image, cela veut dire que les broches de votre Pico sont soudées dans le mauvais sens. **N'essayez pas de l'allumer !** Vous ne parviendriez qu'à endommager le `Pico-2CH-RS232`. Vous devez soit ressouder les broches dans le bon sens vous-même, soit vous procurer un nouveau Pico correctement assemblé.
+Une fois votre matériel assemblé, il vous reste à préparer la connectique pour pouvoir insérer le Pico entre le contrôleur de LEDs et son adaptateur RS-232 vers USB. En fonction de si vous réalisez un proxy pour le contrôleur de LEDs du côté P1 ou P2, vous aurez besoin d'un connecteur différent :
 
-    Une fois votre matériel assemblé, il vous reste à préparer la connectique pour pouvoir insérer le Pico entre le contrôleur de LEDs et son adaptateur RS-232 vers USB. En fonction de si vous réalisez un proxy pour le contrôleur de LEDs du côté P1 ou P2, vous aurez besoin d'un connecteur différent :
+* Côté P1 : JST-XH **7** broches - Mâle **et** femelle
+* Côté P2 : JST-XH **9** broches - Mâle **et** femelle
 
-    * Côté P1 : JST-XH **7** broches - Mâle **et** femelle
-    * Côté P2 : JST-XH **9** broches - Mâle **et** femelle
+!!! lightbox
+    ![Connecteur JST-XH côté P1](../resources/images/step-6-lighting/led-driver-connector-p1.png)
+    ![Connecteur JST-XH côté P2](../resources/images/step-6-lighting/led-driver-connector-p2.png)
 
-    !!! lightbox
-        ![Connecteur JST-XH côté P1](../resources/images/step-6-lighting/led-driver-connector-p1.png)
-        ![Connecteur JST-XH côté P2](../resources/images/step-6-lighting/led-driver-connector-p2.png)
+Par simplicité, veillez à utiliser du fil blanc et rouge et installez-les aux positions correspondantes à l'installation de la borne. Sertissez le fil blanc sur la broche 4, le fil rouge sur la broche 5.
+Créez votre câble de telle sorte que si vous enfichez le connecteur mâle dans le connecteur femelle, les couleurs de fils soient alignées. Ces images proviennent du schéma de câblage, mais comme vous le constaterez, il n'y a pas de fil `SHIELD` sur les véritables connecteurs dans la borne, ce qui veut dire que nous devrons raccorder notre masse commune ailleurs sur le `Pico-2CH-RS232`.
 
-    Par simplicité, veillez à utiliser du fil blanc et rouge et installez-les aux positions correspondantes à l'installation de la borne. Sertissez le fil blanc sur la broche 4, le fil rouge sur la broche 5.
-    Créez votre câble de telle sorte que si vous enfichez le connecteur mâle dans le connecteur femelle, les couleurs de fils soient alignées. Ces images proviennent du schéma de câblage, mais comme vous le constaterez, il n'y a pas de fil `SHIELD` sur les véritables connecteurs dans la borne, ce qui veut dire que nous devrons raccorder notre masse commune ailleurs sur le `Pico-2CH-RS232`.
+!!! lightbox
+    ![Vue du dessus du module `Pico-2CH-RS232`](../resources/images/step-6-lighting/pico-2ch-rs232-photo.png)
+    ![Le connecteur d'origine du contrôleur de LEDs dans la borne enfiché dans le connecteur confectionné à la main](../resources/images/step-6-lighting/led-controller-rs232-connector.jpg)
 
-    !!! lightbox
-        ![Vue du dessus du module `Pico-2CH-RS232`](../resources/images/step-6-lighting/pico-2ch-rs232-photo.png)
+Vous devez brancher les cables avec le connecteur **JST-XH femelle sur le bornier à vis Channel0**, et les cables avec le connecteur **JST-XH mâle sur le bornier à vis Channel1**. Ainsi, le Channel0 devrait se retrouver du côté de l'adaptateur RS-232 vers USB, et le Channel1 du côté du contrôleur de LEDs. Connectez les fils de la façon suivante :
 
-    Vous devez brancher les cables avec le connecteur **JST-XH mâle sur le bornier à vis Channel0**, et les cables avec le connecteur **JST-XH femelle sur le bornier à vis Channel1**. Ainsi, le Channel0 devrait se retrouver du côté de l'adaptateur RS-232 vers USB, et le Channel1 du côté du contrôleur de LEDs. Connectez les fils de la façon suivante :
+* Côté Channel0
+    * TX0: Rouge
+    * RX0: Blanc
+    * GND: Raccordez un fil noir à cette borne et venez attacher son extrémité dénudée sur la borne GND de l'alimentation installée à [l'étape 1](step-1-alls-and-psu.md).
+* Côté Channel1
+    * TX1: Blanc
+    * RX1: Rouge
 
-    * Côté Channel0
-        * TX0: Rouge
-        * RX0: Blanc
-        * GND: Raccordez un fil noir à cette borne et venez attacher son extrémité dénudée sur la borne GND de l'alimentation installée à [l'étape 1](step-1-alls-and-psu.md).
-    * Côté Channel1
-        * TX1: Blanc
-        * RX1: Rouge
+Votre proxy est désormais terminé. Pour l'alimenter, le plus simple est de connecter un cable micro-USB au port du Pico, et d'en couper l'autre extrémité afin de directement raccorder le fil rouge de celui-ci sur la borne 5V et le fil noir sur la borne GND de l'alimentation installée à [l'étape 1](step-1-alls-and-psu.md).
 
-    Votre proxy est désormais terminé. Pour l'alimenter, le plus simple est de connecter un cable micro-USB au port du Pico, et d'en couper l'autre extrémité afin de directement raccorder le fil rouge de celui-ci sur la borne 5V et le fil noir sur la borne GND de l'alimentation installée à [l'étape 1](step-1-alls-and-psu.md).
-
-??? example "Avec soudure, moins coûteux"
-    !!! note "Matériel"
-        La [liste de courses](equipment.md) part du principe que vous choisissez l'option simple. Si vous décidez de prendre cette option-ci à la place, vous pouvez ignorer les deux `Pico-2CH-RS232` et plutôt vous procurer ***[à définir]***.
-
-    --8<-- "includes/wip-fr.md"
+!!! lightbox
+    ![Le proxy terminé : le Raspberry Pi Pico assemblé sur le `Pico-2CH-RS232`, avec le connecteur JST-XH femelle (Channel0, côté adaptateur RS-232 vers USB) et le connecteur JST-XH mâle (Channel1, côté contrôleur de LEDs) câblés en fil rouge et blanc, et le câble micro-USB d'alimentation](../resources/images/step-6-lighting/pico-2ch-rs232-proxy-wired.jpg)
 
 
 ### Installer le proxy
 
-Maintenant que vous avez vos deux proxys, il ne reste plus qu'à les installer. Vous pouvez débrancher le connecteur du contrôleur de LEDs et venir le raccorder sur le connecteur femelle de votre proxy ; le connecteur mâle du proxy, lui, vient prendre sa place sur l'adaptateur RS-232 vers USB.
+Maintenant que vous avez vos deux proxys, il ne reste plus qu'à les installer. Vous pouvez débrancher le connecteur du contrôleur de LEDs et venir le raccorder sur le connecteur mâle de votre proxy ; le connecteur femelle du proxy, lui, vient prendre sa place sur l'adaptateur RS-232 vers USB.
 
 Une fois le proxy installé pour les deux contrôleurs de LEDs, il ne vous reste plus qu'à connecter l'adaptateur RS-232 vers USB sur le ALLS via le hub USB, et le tour est joué. Le jeu devrait nativement reconnaître les contrôleurs de LEDs sans aucune modification logicielle.
 
@@ -138,6 +133,7 @@ Une fois le proxy installé pour les deux contrôleurs de LEDs, il ne vous reste
     !!! lightbox
         ![Schéma de câblage FiNALE, connecteur AB côté P1 : le harnais MAI-60109 alimente les cartes CENTER LED, ROOF LED (L), ROOF LED (R) et WOOFER LED](../resources/images/step-6-lighting/lighting-topper-p1-side.png)
         ![Schéma de câblage FiNALE, connecteur BB côté P2 : le harnais MAI-60109 alimente les cartes WOOFER LED, ROOF LED (L) et ROOF LED (R), le connecteur SM5P n'étant pas utilisé](../resources/images/step-6-lighting/lighting-topper-p2-side.png)
+        ![Connecteur JST-XH 8 broches qui connecte les woofers et l'enseigne lumineuse (en noir)](../resources/images/step-6-lighting/led-controller-rs232-disconnect.jpg)
 
     Sur le schéma du P1, on constate un élément `CENTER LED` qui n'apparaît pas sur celui du P2. Il s'agit de l'éclairage du centre de l'enseigne lumineuse. Sur DX, cette distinction n'existe pas, et bien que les signaux soient séparés, l'enseigne est toujours éclairée de la même couleur des deux côtés. La solution la plus simple consiste donc à venir raccorder les broches `A2`, `A5` et `A8` du connecteur du P1 sur les broches `C3`, `C5` et `C8` afin que le centre soit éclairé de la même couleur que le côté joueur 1.
 
@@ -147,9 +143,9 @@ Nous devons simplement créer notre propre nappe de câbles s'intégrant avec l'
     ![Repérage visuel des broches LED sur l'IO4 : le connecteur CN9 (JST-RA 20 broches) porte BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED et BILLBOARD LED L/R BLUE, tandis que BILLBOARD LED L/R RED se trouve sur le connecteur CN3](../resources/images/step-6-lighting/io4-visual-reprensation-of-led-pins.png)
     ![Schéma de câblage officiel de l'IO4 centré sur les broches LED : connecteur CN9 (RA20P) pour BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED et BILLBOARD LED L/R BLUE, et connecteur CN3 (RA60P) broches 51-52 pour BILLBOARD LED L/R RED](../resources/images/step-6-lighting/io4-wiring-schema-focused-on-leds.png)
 
-Réalisons alors notre propre nappe de câbles sur la base du schéma suivant. Idéalement, celui-ci doit avoir une longueur suffisante pour être installé proprement dans la borne : 3 mètres pour le côté joueur 1, 2 mètres pour le côté joueur 2. Pour le 12V, n'utilisez pas la broche 12V du CN9, mais préférez vous raccorder directement sur l'alimentation 12V interne de la borne. Vous éviterez ainsi de charger inutilement la carte I/O.
+Réalisons alors notre propre nappe de câbles sur la base du schéma suivant. Idéalement, celui-ci doit avoir une longueur suffisante pour être installé proprement dans la borne : 2 mètres pour le côté joueur 1, 1 mètre pour le côté joueur 2. Pour le 12V, n'utilisez pas la broche 12V du CN9, mais préférez vous raccorder directement sur l'alimentation 12V interne de la borne. Vous éviterez ainsi de charger inutilement la carte I/O.
 
-![Nappe de câbles pour l'éclairage de l'enseigne lumineuse : depuis l'IO4 (CN9 broches 5, 6, 9 et 10, et CN3 broches 51-52 déjà câblées à l'étape 3) et l'alimentation 12V interne, fabrication de deux connecteurs JST-SM 8 broches - côté P1 (3 mètres, avec pontage des broches 1-4 vers 5-8 pour alimenter aussi CENTER LED) et côté P2 (2 mètres, broches 5-8 non utilisées) - qui se branchent ensuite sur les connecteurs d'origine AB et BB](../resources/images/step-6-lighting/led-topper-harness.svg)
+![Nappe de câbles pour l'éclairage de l'enseigne lumineuse : depuis l'IO4 (CN9 broches 5, 6, 9 et 10, et CN3 broches 51-52 déjà câblées à l'étape 3) et l'alimentation 12V interne, fabrication de deux connecteurs JST-SM 8 broches - côté P1 (2 mètres, avec pontage des broches 1-4 vers 5-8 pour alimenter aussi CENTER LED) et côté P2 (1 mètre, broches 5-8 non utilisées) - qui se branchent ensuite sur les connecteurs d'origine AB et BB](../resources/images/step-6-lighting/led-topper-harness.svg)
 
 Une fois la nappe réalisée, vous n'avez plus qu'à la brancher à l'IO4, raccorder le 12V à l'alimentation interne, et venir raccorder les deux connecteurs JST-SM 8 broches d'origine sur votre nouveau câble. Assurez-vous de tester la continuité sur tous vos câbles avant l'installation afin d'écarter tout problème de broche mal sertie.
 

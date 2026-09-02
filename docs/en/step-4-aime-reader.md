@@ -12,7 +12,7 @@ The FiNALE Aime readers are not compatible with DX. You need to install a new ve
     FiNALE uses a system based on two previous-generation Aime readers, chained to each other. The top reader reads the card for the left player, and the bottom one for the right player. On DX, there is only a single reader, and when a card is scanned, the profile appears on both screens. The owner of the profile can then simply confirm the login on their screen; the second player is then free to scan their own card. The technology used is also completely different. It is impossible to reuse a FiNALE Aime reader.
 
     !!! info "aic_pico"
-        It is technically possible to use an [aic_pico](https://github.com/whowechina/aic_pico), an open-source project that reproduces the behaviour of a real Aime reader transparently for the game. These are much cheaper to produce than getting a real Aime reader, but would need a good deal of tinkering to be connected to the corresponding DB9 port on the ALLS.
+        It is technically possible to use an [aic_pico](https://github.com/whowechina/aic_pico), an open-source project that reproduces the behavior of a real Aime reader transparently for the game. These are much cheaper to produce than getting a real Aime reader, but would need a good deal of tinkering to be connected to the corresponding DB9 port on the ALLS.
 
     In any case, last-generation Aime readers are not that rare, and often come as a combo with the VFD that we also need. The particularity of this last generation is that it is technically compatible with electronic payment; however, even in Japan, that feature is almost never used. Operators typically prefer to install their own payment terminal on the cabinet, which is more flexible and offers more payment options.
 
@@ -31,8 +31,8 @@ Both COM ports are physical DB9 ports on the ALLS motherboard. However, your Aim
 
 Take your female-female DB9 cable, and **cut it in two at the middle of the cable** to expose the wires. You have two options:
 
-* Either you take a cable that, once cut in two, is long enough to run cleanly the whole distance from the ALLS to the centre of the cabinet, where the Aime reader + VFD will be installed.
-* Or you prefer to cut the cable at about twenty centimetres to expose a floating female DB9 connector that you can then connect to the ALLS via a simple male-female DB9 cable of an appropriate length.
+* Either you take a cable that, once cut in two, is long enough to run cleanly the whole distance from the ALLS to the center of the cabinet, where the Aime reader + VFD will be installed.
+* Or you prefer to cut the cable at about twenty centimeters to expose a floating female DB9 connector that you can then connect to the ALLS via a simple male-female DB9 cable of an appropriate length.
 
 The second option is more practical to handle, avoids having to manage an unreasonable length of cable while crimping the connector, and also makes installation easier. On top of that, it will make the combo easier to unplug if you ever need to take it apart for maintenance.
 
@@ -43,7 +43,7 @@ The second option is more practical to handle, avoids having to manage an unreas
 
 The Aime reader is the simpler of the two: it only needs 5 wires, even though the connector has 8 pins.
 
-Every DB9 cable is different; yours probably won't have the same wire colours as another. From there, the simplest way to be sure you don't make a mistake is to use a multimeter in continuity mode.
+Every DB9 cable is different; yours probably won't have the same wire colors as another. From there, the simplest way to be sure you don't make a mistake is to use a multimeter in continuity mode.
 
 * Put the tip of your multimeter into the hole of the female DB9 socket corresponding to the pin you want to wire. *(See diagram above)*
     * If the tip of your multimeter is too wide to fit, use a male Dupont wire connected to the probe tip.

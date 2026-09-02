@@ -6,7 +6,7 @@
       1) Sources sur l'IO4 : CN9 (2x10, en haut), alimentation 12V interne (au centre),
          CN3 (2x30 pivoté à 90°, en bas) - seules les broches réellement câblées sont mises en couleur.
       2) Gaine commune : les 8 fils (12V, ROUGE, VERT, BLEU x2 - un jeu par côté P1/P2) sont regroupés
-         sur ~3 mètres, tous solidaires jusqu'à la séparation en Y.
+         sur ~2 mètres, tous solidaires jusqu'à la séparation en Y.
       3) Séparation en Y : trait plein = fil "L" vers P1 (gauche) ; trait pointillé = fil "R" vers P2 (droit).
       4) Connecteurs JST-SM 8 broches de sortie, horizontaux : P1 en haut (câbles raccordés par le bas,
          broches 1-4 pontées vers 5-8 pour dupliquer le signal vers CENTER LED), P2 en bas (câbles
@@ -88,7 +88,7 @@
   <path d="M 106.123 197.38 C 158.536 192.844 210 191 230 191" fill="none" stroke="#d98a1f" stroke-width="2.2"/>
   <path d="M 106.726 204.743 C 130.781 200.246 210 196 230 196" fill="none" stroke="#d98a1f" stroke-width="2.2" stroke-dasharray="6 4"/>
 
-  <!-- ===================== Gaine commune (sheath) : 8 fils sur ~3 mètres ===================== -->
+  <!-- ===================== Gaine commune (sheath) : 8 fils sur ~2 mètres ===================== -->
   <rect x="256.208" y="184.397" width="385.122" height="50" rx="20" fill="#e4e4e8" stroke="#888" stroke-width="1.5" style="" transform="matrix(1, 0.000357, 0, 1, -25.383949, -0.153216)"/>
   <line x1="230" y1="191" x2="526" y2="191" stroke="#d98a1f" stroke-width="2.2"/>
   <line x1="230" y1="196" x2="526" y2="196" stroke="#d98a1f" stroke-width="2.2" stroke-dasharray="6 4"/>
@@ -98,7 +98,7 @@
   <line x1="230" y1="216" x2="526" y2="216" stroke="#3b82c4" stroke-width="2.2" stroke-dasharray="6 4"/>
   <line x1="230" y1="221" x2="526" y2="221" stroke="#d1453b" stroke-width="2.2"/>
   <line x1="230" y1="226" x2="526" y2="226" stroke="#d1453b" stroke-width="2.2" stroke-dasharray="6 4"/>
-  <text x="430.029" y="179.657" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#444" style="white-space: pre; font-size: 11.5px;">≈ 3 mètres (gaine commune, 8 fils)</text>
+  <text x="430.029" y="179.657" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#444" style="white-space: pre; font-size: 11.5px;">≈ 2 mètres (gaine commune, 8 fils)</text>
   <!-- ===================== CN3 : IO4, connecteur JST-RA 60 broches, format 2x30, pivoté 90° horaire ===================== -->
   <!-- Seule la colonne des broches 49-54 est représentée (les 54 autres broches sont omises, cf. traits
        pointillés en haut/bas). Après rotation : impaires (49/51/53) à gauche, paires (50/52/54) à droite.

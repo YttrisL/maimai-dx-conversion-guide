@@ -1,7 +1,7 @@
 """
 Enforce translation integrity across all configured languages.
 
-Two separate checks, both aborting the build with a hard PluginError:
+Two separate checks:
 
 1. COVERAGE. docs/ is organized as one subfolder per language code
    (docs/en/, docs/fr/, ...) per mkdocs-static-i18n's `docs_structure: folder`
@@ -17,16 +17,20 @@ Two separate checks, both aborting the build with a hard PluginError:
    can fall behind edits to its French source (French is the source of truth).
    translation-sync.json at the repo root records the hash of the French source
    each English page was last translated from; scripts/check_translation_sync.py
-   compares. A commit that changes docs/fr/*.md is blocked locally by
-   scripts/githooks/pre-commit, and this hook is the backstop for anything that
-   slips past it (--no-verify, a clone without the hook installed).
+   compares.
+
+Enforcement (see _report): a commit that changes docs/fr/ is blocked locally by
+scripts/githooks/pre-commit, so that hook is the primary gate. This build hook
+is the backstop for anything that slips past it (--no-verify, a clone without
+the hook installed): it raises a PluginError on `mkdocs build` / `gh-deploy`.
+Under `mkdocs serve` both checks are advisory-only (a one-line log notice), so a
+missing or stale translation never crashes the server or a hot reload while you
+are still writing.
 
 This hook runs early (default priority, before mkdocs-static-i18n's own
 on_files at priority -100) so it sees the raw, un-reconfigured file list
 straight out of docs_dir - each file's src_uri is still "en/info.md" /
-"fr/info.md" etc. It cross-checks every language's page set and raises a
-hard PluginError (which aborts the build unconditionally, independent of
-`mkdocs build --strict`) listing every gap found, if any.
+"fr/info.md" etc.
 """
 
 import sys
@@ -45,6 +49,16 @@ if str(_SCRIPTS_DIR) not in sys.path:
 from check_translation_sync import format_stale_report, stale_translations  # noqa: E402
 
 log = get_plugin_logger(__name__)
+
+# Set by on_startup: "build", "serve" or "gh-deploy". The freshness check is
+# advisory-only under "serve" so an untranslated edit never crashes the server
+# or a hot reload; the commit hook and `mkdocs build` still enforce it.
+_command = None
+
+
+def on_startup(command, dirty, **kwargs):
+    global _command
+    _command = command
 
 
 def on_files(files, config, **kwargs):
@@ -78,19 +92,40 @@ def on_files(files, config, **kwargs):
     }
 
     if missing:
-        raise PluginError(_format_missing_translations_message(missing, pages_by_language, languages))
-
-    log.info(f"Translation coverage check passed for languages: {', '.join(languages)}")
+        _report(
+            _format_missing_translations_message(missing, pages_by_language, languages),
+            f"{len(missing)} page(s) missing a translation",
+        )
+    else:
+        log.info(f"Translation coverage check passed for languages: {', '.join(languages)}")
 
     # Every page exists in every language; now check that the English copies
     # (pages and translated .svg assets) are current translations of their
     # French source.
     stale = stale_translations()
     if stale:
-        raise PluginError(format_stale_report(stale))
-
-    log.info("Translation freshness check passed (docs/en is in sync with docs/fr)")
+        _report(
+            format_stale_report(stale),
+            f"{len(stale)} file(s) out of sync with docs/fr "
+            f"({', '.join(u.key for u in stale)})",
+        )
+    else:
+        log.info("Translation freshness check passed (docs/en is in sync with docs/fr)")
     return files
+
+
+def _report(full_message: str, short_message: str) -> None:
+    """Abort the build with `full_message`, EXCEPT under `mkdocs serve`, where a
+    stale/missing translation must not crash the server or a hot reload - there
+    it is a one-line notice only. Commit time (scripts/githooks/pre-commit) and
+    `mkdocs build` / `gh-deploy` still enforce both checks."""
+    if _command == "serve":
+        log.info(
+            f"Translation check: {short_message} - not failing the dev server "
+            f"(`mkdocs build` and the commit hook still will)."
+        )
+    else:
+        raise PluginError(full_message)
 
 
 def _format_missing_translations_message(missing, pages_by_language, languages) -> str:

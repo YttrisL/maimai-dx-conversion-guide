@@ -3,10 +3,10 @@
   <!--
     Wiring harness for the billboard lighting (Step 6).
     Overview, left to right:
-      1) Sources on the IO4: CN9 (2x10, top), internal 12V power supply (centre),
-         CN3 (2x30 rotated 90 degrees, bottom) - only the pins that are actually wired are coloured in.
+      1) Sources on the IO4: CN9 (2x10, top), internal 12V power supply (center),
+         CN3 (2x30 rotated 90 degrees, bottom) - only the pins that are actually wired are colored in.
       2) Common sheath: the 8 wires (12V, RED, GREEN, BLUE x2 - one set per P1/P2 side) are bundled
-         over ~3 metres, all together up to the Y split.
+         over ~2 meters, all together up to the Y split.
       3) Y split: solid line = "L" wire to P1 (left); dashed line = "R" wire to P2 (right).
       4) Output 8-pin JST-SM connectors, horizontal: P1 on top (cables joined from below,
          pins 1-4 bridged to 5-8 to duplicate the signal to CENTER LED), P2 on the bottom (cables
@@ -88,7 +88,7 @@
   <path d="M 106.123 197.38 C 158.536 192.844 210 191 230 191" fill="none" stroke="#d98a1f" stroke-width="2.2"/>
   <path d="M 106.726 204.743 C 130.781 200.246 210 196 230 196" fill="none" stroke="#d98a1f" stroke-width="2.2" stroke-dasharray="6 4"/>
 
-  <!-- ===================== Common sheath: 8 wires over ~3 metres ===================== -->
+  <!-- ===================== Common sheath: 8 wires over ~2 meters ===================== -->
   <rect x="256.208" y="184.397" width="385.122" height="50" rx="20" fill="#e4e4e8" stroke="#888" stroke-width="1.5" style="" transform="matrix(1, 0.000357, 0, 1, -25.383949, -0.153216)"/>
   <line x1="230" y1="191" x2="526" y2="191" stroke="#d98a1f" stroke-width="2.2"/>
   <line x1="230" y1="196" x2="526" y2="196" stroke="#d98a1f" stroke-width="2.2" stroke-dasharray="6 4"/>
@@ -98,7 +98,7 @@
   <line x1="230" y1="216" x2="526" y2="216" stroke="#3b82c4" stroke-width="2.2" stroke-dasharray="6 4"/>
   <line x1="230" y1="221" x2="526" y2="221" stroke="#d1453b" stroke-width="2.2"/>
   <line x1="230" y1="226" x2="526" y2="226" stroke="#d1453b" stroke-width="2.2" stroke-dasharray="6 4"/>
-  <text x="430.029" y="179.657" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#444" style="white-space: pre; font-size: 11.5px;">&#8776; 3 metres (common sheath, 8 wires)</text>
+  <text x="430.029" y="179.657" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#444" style="white-space: pre; font-size: 11.5px;">&#8776; 2 meters (common sheath, 8 wires)</text>
   <!-- ===================== CN3: IO4, 60-pin JST-RA connector, 2x30 layout, rotated 90 degrees clockwise ===================== -->
   <!-- Only the column of pins 49-54 is shown (the other 54 pins are omitted, see the dashed
        lines top/bottom). After rotation: odd (49/51/53) on the left, even (50/52/54) on the right.

@@ -13,7 +13,7 @@ The lighting is technically an *optional* step of the conversion, in the sense t
 
     On a real *DX* cabinet, the lighting is driven by three different controllers:
 
-    * The **IO4** manages the **billboard** lighting (labelled `BILLBOARD LED` / `ROOF LED` on the Sega diagrams). See [Step 3](step-3-io-board.md).
+    * The **IO4** manages the **billboard** lighting (labeled `BILLBOARD LED` / `ROOF LED` on the Sega diagrams). See [Step 3](step-3-io-board.md).
     * Two identical control boards (part no. `837-15070-04`):
         * P1 side: the eight buttons, the background lighting and the left-side lighting.
         * P2 side: the eight buttons, the background lighting and the right-side lighting.
@@ -34,7 +34,7 @@ The lighting is technically an *optional* step of the conversion, in the sense t
 
     * Unlike DX, no LED goes through FiNALE's IO3.
     * Two identical control boards manage the LEDs (part no. `837-15070-02-91`):
-        * P1 side: the eight buttons, the background lighting, the woofer lighting and the billboard on the P1 side and in the centre.
+        * P1 side: the eight buttons, the background lighting, the woofer lighting and the billboard on the P1 side and in the center.
         * P2 side: the eight buttons, the background lighting, the woofer lighting and the billboard on the P2 side.
 
     ![Lighting control chain on FiNALE: the P1 and P2 LED boards (part no. `837-15070-02-91`) join the same RS-232 to USB adapter as on DX (part no. `837-15067-02`) over RS-232, plugged directly into a USB port of the RingEdge 2, with no USB hub](../resources/images/step-6-lighting/led-controllers-chain-finale-en.svg)
@@ -70,56 +70,51 @@ The software is already all set: it is [mailight_pico](https://gitea.farewell.de
 
 Start by installing the mailight_pico firmware on the Raspberry Pi Pico. If you have never installed firmware on a Pico, it is extremely simple. [All the instructions are on the project page](https://gitea.farewell.dev/Yttris/mailight_pico#3-installing-the-firmware).
 
-To build the proxy, you have two options:
+Next you need to assemble your Raspberry Pi Pico with the `Pico-2CH-RS232`. Watch the orientation; the markings on the underside of the `Pico-2CH-RS232` indicate the orientation the Pico's USB port is supposed to be in.
 
-??? example "Solder-free, easier, more expensive"
-    Start by assembling your Raspberry Pi Pico with the `Pico-2CH-RS232`. Watch the orientation; the markings on the underside of the `Pico-2CH-RS232` indicate the orientation the Pico's USB port is supposed to be in.
+!!! lightbox
+    ![The `Pico-2CH-RS232` module, image from the [official Waveshare wiki page](https://www.waveshare.com/wiki/Pico-2CH-RS232)](../resources/images/step-6-lighting/pico-2ch-rs232.png)
 
-    !!! lightbox
-        ![The `Pico-2CH-RS232` module, image from the [official Waveshare wiki page](https://www.waveshare.com/wiki/Pico-2CH-RS232)](../resources/images/step-6-lighting/pico-2ch-rs232.png)
+!!! warning "Watch the orientation"
+    Make sure your assembly matches the image. If your Raspberry Pi Pico has, for example, its USB port between the two PCBs rather than on the outside as in the image, it means the pins of your Pico are soldered the wrong way round. **Do not try to power it on!** You would only manage to damage the `Pico-2CH-RS232`. You must either re-solder the pins the right way round yourself, or get a new, correctly assembled Pico.
 
-    !!! warning "Watch the orientation"
-        Make sure your assembly matches the image. If your Raspberry Pi Pico has, for example, its USB port between the two PCBs rather than on the outside as in the image, it means the pins of your Pico are soldered the wrong way round. **Do not try to power it on!** You would only manage to damage the `Pico-2CH-RS232`. You must either re-solder the pins the right way round yourself, or get a new, correctly assembled Pico.
+Once your hardware is assembled, all that is left is to prepare the connectors so you can insert the Pico between the LED controller and its RS-232 to USB adapter. Depending on whether you are building a proxy for the P1 or P2 side LED controller, you will need a different connector:
 
-    Once your hardware is assembled, all that is left is to prepare the connectors so you can insert the Pico between the LED controller and its RS-232 to USB adapter. Depending on whether you are building a proxy for the P1 or P2 side LED controller, you will need a different connector:
+* P1 side: JST-XH **7** pins - male **and** female
+* P2 side: JST-XH **9** pins - male **and** female
 
-    * P1 side: JST-XH **7** pins - male **and** female
-    * P2 side: JST-XH **9** pins - male **and** female
+!!! lightbox
+    ![JST-XH connector, P1 side](../resources/images/step-6-lighting/led-driver-connector-p1.png)
+    ![JST-XH connector, P2 side](../resources/images/step-6-lighting/led-driver-connector-p2.png)
 
-    !!! lightbox
-        ![JST-XH connector, P1 side](../resources/images/step-6-lighting/led-driver-connector-p1.png)
-        ![JST-XH connector, P2 side](../resources/images/step-6-lighting/led-driver-connector-p2.png)
+For simplicity, be sure to use white and red wire and install them in the positions matching the cabinet installation. Crimp the white wire onto pin 4, the red wire onto pin 5.
+Make your cable so that if you plug the male connector into the female connector, the wire colors are aligned. These images come from the wiring diagram, but as you will see, there is no `SHIELD` wire on the real connectors in the cabinet, which means we will have to connect our common ground somewhere else on the `Pico-2CH-RS232`.
 
-    For simplicity, be sure to use white and red wire and install them in the positions matching the cabinet installation. Crimp the white wire onto pin 4, the red wire onto pin 5.
-    Make your cable so that if you plug the male connector into the female connector, the wire colours are aligned. These images come from the wiring diagram, but as you will see, there is no `SHIELD` wire on the real connectors in the cabinet, which means we will have to connect our common ground somewhere else on the `Pico-2CH-RS232`.
+!!! lightbox
+    ![Top view of the `Pico-2CH-RS232` module](../resources/images/step-6-lighting/pico-2ch-rs232-photo.png)
+    ![The cabinet's original LED controller connector plugged into the hand-made connector](../resources/images/step-6-lighting/led-controller-rs232-connector.jpg)
 
-    !!! lightbox
-        ![Top view of the `Pico-2CH-RS232` module](../resources/images/step-6-lighting/pico-2ch-rs232-photo.png)
+You must connect the cables with the **female JST-XH connector to the Channel0 screw terminal**, and the cables with the **male JST-XH connector to the Channel1 screw terminal**. That way, Channel0 should end up on the RS-232 to USB adapter side, and Channel1 on the LED controller side. Connect the wires as follows:
 
-    You must connect the cables with the **male JST-XH connector to the Channel0 screw terminal**, and the cables with the **female JST-XH connector to the Channel1 screw terminal**. That way, Channel0 should end up on the RS-232 to USB adapter side, and Channel1 on the LED controller side. Connect the wires as follows:
+* Channel0 side
+    * TX0: Red
+    * RX0: White
+    * GND: connect a black wire to this terminal and attach its stripped end to the GND terminal of the power supply installed in [step 1](step-1-alls-and-psu.md).
+* Channel1 side
+    * TX1: White
+    * RX1: Red
 
-    * Channel0 side
-        * TX0: Red
-        * RX0: White
-        * GND: connect a black wire to this terminal and attach its stripped end to the GND terminal of the power supply installed in [step 1](step-1-alls-and-psu.md).
-    * Channel1 side
-        * TX1: White
-        * RX1: Red
+Your proxy is now finished. To power it, the simplest way is to connect a micro-USB cable to the Pico's port, and cut off its other end so you can wire its red lead directly to the 5V terminal and its black lead to the GND terminal of the power supply installed in [step 1](step-1-alls-and-psu.md).
 
-    Your proxy is now finished. To power it, the simplest way is to connect a micro-USB cable to the Pico's port, and cut off its other end so you can wire its red lead directly to the 5V terminal and its black lead to the GND terminal of the power supply installed in [step 1](step-1-alls-and-psu.md).
-
-??? example "With soldering, cheaper"
-    !!! note "Hardware"
-        The [shopping list](equipment.md) assumes you choose the simple option. If you decide to take this option instead, you can skip the two `Pico-2CH-RS232` and instead get ***[to be defined]***.
-
-    --8<-- "includes/wip-en.md"
+!!! lightbox
+    ![The finished proxy: the Raspberry Pi Pico assembled onto the `Pico-2CH-RS232`, with the female JST-XH connector (Channel0, RS-232 to USB adapter side) and the male JST-XH connector (Channel1, LED controller side) wired in red and white, plus the micro-USB power cable](../resources/images/step-6-lighting/pico-2ch-rs232-proxy-wired.jpg)
 
 
 ### Installing the proxy
 
-Now that you have your two proxies, all that is left is to install them. You can unplug the LED controller's connector and connect it to the female connector of your proxy; the male connector of the proxy then takes its place on the RS-232 to USB adapter.
+Now that you have your two proxies, all that is left is to install them. You can unplug the LED controller's connector and connect it to the male connector of your proxy; the female connector of the proxy then takes its place on the RS-232 to USB adapter.
 
-Once the proxy is installed for both LED controllers, all that is left is to connect the RS-232 to USB adapter to the ALLS via the USB hub, and you are done. The game should recognise the LED controllers natively, with no software modification.
+Once the proxy is installed for both LED controllers, all that is left is to connect the RS-232 to USB adapter to the ALLS via the USB hub, and you are done. The game should recognize the LED controllers natively, with no software modification.
 
 !!! warning "Plug the adapter in correctly"
     As mentioned in [step 1](step-1-alls-and-psu.md), the USB hub must absolutely be plugged into the USB port numbered 2, and the `RS-232 to USB adapter` that the LED controllers are connected to must be plugged into the USB hub. As said before, maimai DX is very demanding about which USB port devices are connected to; if plugged in wrong, the LEDs will not light up.
@@ -138,18 +133,19 @@ Once the proxy is installed for both LED controllers, all that is left is to con
     !!! lightbox
         ![FiNALE wiring diagram, connector AB on the P1 side: the MAI-60109 harness powers the CENTER LED, ROOF LED (L), ROOF LED (R) and WOOFER LED boards](../resources/images/step-6-lighting/lighting-topper-p1-side.png)
         ![FiNALE wiring diagram, connector BB on the P2 side: the MAI-60109 harness powers the WOOFER LED, ROOF LED (L) and ROOF LED (R) boards, with the SM5P connector unused](../resources/images/step-6-lighting/lighting-topper-p2-side.png)
+        ![8-pin JST-XH connector that connects the woofers and the billboard lighting (in black)](../resources/images/step-6-lighting/led-controller-rs232-disconnect.jpg)
 
-    On the P1 diagram, there is a `CENTER LED` element that does not appear on the P2 one. It is the lighting for the centre of the billboard. On DX, this distinction does not exist, and although the signals are separate, the billboard is always lit the same colour on both sides. The simplest solution is therefore to connect pins `A2`, `A5` and `A8` of the P1 connector to pins `C3`, `C5` and `C8` so that the centre is lit the same colour as the Player 1 side.
+    On the P1 diagram, there is a `CENTER LED` element that does not appear on the P2 one. It is the lighting for the center of the billboard. On DX, this distinction does not exist, and although the signals are separate, the billboard is always lit the same color on both sides. The simplest solution is therefore to connect pins `A2`, `A5` and `A8` of the P1 connector to pins `C3`, `C5` and `C8` so that the center is lit the same color as the Player 1 side.
 
 We simply need to make our own wiring harness that integrates with the IO4 via a 20-pin JST-RA connector for CN9, and ends in two 8-pin JST-SM connectors for the left and right sides. If you followed the rewiring suggestions in [step 3](step-3-io-board.md), you should already have a 2-pin JST-SM connector wired to the IO4's CN3 connector for the `BILLBOARD LED L RED` and `BILLBOARD LED R RED` signals.
 
 !!! lightbox
     ![Visual identification of the LED pins on the IO4: the CN9 connector (20-pin JST-RA) carries BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED and BILLBOARD LED L/R BLUE, while BILLBOARD LED L/R RED is on the CN3 connector](../resources/images/step-6-lighting/io4-visual-reprensation-of-led-pins.png)
-    ![Official IO4 wiring diagram centred on the LED pins: CN9 connector (RA20P) for BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED and BILLBOARD LED L/R BLUE, and CN3 connector (RA60P) pins 51-52 for BILLBOARD LED L/R RED](../resources/images/step-6-lighting/io4-wiring-schema-focused-on-leds.png)
+    ![Official IO4 wiring diagram centered on the LED pins: CN9 connector (RA20P) for BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED and BILLBOARD LED L/R BLUE, and CN3 connector (RA60P) pins 51-52 for BILLBOARD LED L/R RED](../resources/images/step-6-lighting/io4-wiring-schema-focused-on-leds.png)
 
-So let's make our own wiring harness based on the following diagram. Ideally, it should be long enough to be installed cleanly in the cabinet: 3 metres for the Player 1 side, 2 metres for the Player 2 side. For the 12V, do not use the 12V pin of CN9; instead, wire directly to the cabinet's internal 12V power supply. That way you avoid loading the I/O board unnecessarily.
+So let's make our own wiring harness based on the following diagram. Ideally, it should be long enough to be installed cleanly in the cabinet: 2 meters for the Player 1 side, 1 meter for the Player 2 side. For the 12V, do not use the 12V pin of CN9; instead, wire directly to the cabinet's internal 12V power supply. That way you avoid loading the I/O board unnecessarily.
 
-![Wiring harness for the billboard lighting: from the IO4 (CN9 pins 5, 6, 9 and 10, and CN3 pins 51-52 already wired in step 3) and the internal 12V power supply, making two 8-pin JST-SM connectors - P1 side (3 metres, with a bridge from pins 1-4 to 5-8 to also power CENTER LED) and P2 side (2 metres, pins 5-8 unused) - which then plug into the original AB and BB connectors](../resources/images/step-6-lighting/led-topper-harness-en.svg)
+![Wiring harness for the billboard lighting: from the IO4 (CN9 pins 5, 6, 9 and 10, and CN3 pins 51-52 already wired in step 3) and the internal 12V power supply, making two 8-pin JST-SM connectors - P1 side (2 meters, with a bridge from pins 1-4 to 5-8 to also power CENTER LED) and P2 side (1 meter, pins 5-8 unused) - which then plug into the original AB and BB connectors](../resources/images/step-6-lighting/led-topper-harness-en.svg)
 
 Once the harness is made, all that is left is to plug it into the IO4, wire the 12V to the internal power supply, and connect the two original 8-pin JST-SM connectors to your new cable. Make sure to test continuity on all your cables before installation to rule out any badly crimped pin.
 

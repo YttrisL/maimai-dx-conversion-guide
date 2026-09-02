@@ -36,7 +36,7 @@ For each of the parts listed below, the most suitable option is highlighted. Thi
 
 ### Sega IO4 I/O board
 * Where: JDirectItems Auction
-* Info: easy to find, it has been used in every Sega cabinet for several years. Do not confuse it with an IO3, they look very similar. The best way to recognise an IO4 is to check that it has its dip switches on the top of the PCB.
+* Info: easy to find, it has been used in every Sega cabinet for several years. Do not confuse it with an IO3, they look very similar. The best way to recognize an IO4 is to check that it has its dip switches on the top of the PCB.
 
 !!! info "IO4 variants"
     There are several IO4 variants. Some, JVS-compatible, have a USB-B port and a USB-A port for daisy-chaining. Others have a simple micro-USB port meant to be connected to a regular USB port. In our case, the connection to the ALLS is done over regular USB, via the micro-USB port. JVS support is therefore useless for maimai DX.
@@ -49,7 +49,7 @@ For each of the parts listed below, the most suitable option is highlighted. Thi
 
 ### Aime reader (Gen. 3)
 * Where: JDirectItems Auction
-* Info: you absolutely need a generation 3 reader. It often comes with the VFD built in. You can recognise them by the Aime logo, which is different from the previous generation's. They are not very rare and you often find them coming from the Star Horse 4 cabinet.
+* Info: you absolutely need a generation 3 reader. It often comes with the VFD built in. You can recognize them by the Aime logo, which is different from the previous generation's. They are not very rare and you often find them coming from the Star Horse 4 cabinet.
 
 </div>
 
@@ -87,7 +87,7 @@ For each of the parts listed below, the most suitable option is highlighted. Thi
 ### **2x**{: .quantity-emphasis } OBSF-24TR button
 
 * Where: [SmallCab](https://www.smallcab.net/sanwa-obsf-24tr-p-2080.html) or [Jammastar](https://jammastar.com/gb/353-sanwa-obsf-24tr)
-* Info: the "triangle" sort buttons for Player 1 and Player 2, located in the centre of the cabinet above the Aime reader. Typically **blue for Player 1 and red for Player 2**.
+* Info: the "triangle" sort buttons for Player 1 and Player 2, located in the center of the cabinet above the Aime reader. Typically **blue for Player 1 and red for Player 2**.
 
 *Alternative*: ... literally any other buttons
 
@@ -102,8 +102,8 @@ For each of the parts listed below, the most suitable option is highlighted. Thi
 
 --8<-- "includes/untested-en.md"
 
-* Where: Amazon, AliExpress, your favourite shop
-* Info: in a real maimai DX, one of the 4 USB ports on the ALLS motherboard is dedicated to a 4-port USB hub. This hub hosts the two QR-code reader cameras and the RS-232/USB adapter that the Player 1 and Player 2 LED controllers are connected to. Even if you do not want to use the QR-code cameras, you still have to plug in the hub, so that the LED controllers' RS-232/USB adapter is recognised natively by the ALLS operating system. Any USB hub will do. (See [Step 1: Replacing the Central PC (ALLS)](step-1-alls-and-psu.md) for the details.)
+* Where: Amazon, AliExpress, your favorite shop
+* Info: in a real maimai DX, one of the 4 USB ports on the ALLS motherboard is dedicated to a 4-port USB hub. This hub hosts the two QR-code reader cameras and the RS-232/USB adapter that the Player 1 and Player 2 LED controllers are connected to. Even if you do not want to use the QR-code cameras, you still have to plug in the hub, so that the LED controllers' RS-232/USB adapter is recognized natively by the ALLS operating system. Any USB hub will do. (See [Step 1: Replacing the Central PC (ALLS)](step-1-alls-and-psu.md) for the details.)
 
 </div>
 
@@ -117,7 +117,7 @@ Installing the player camera and the QR-code readers is optional, but if you wan
 
 ### **1x**{: .quantity-emphasis } Player camera
 
-* Where: Amazon, AliExpress, your favourite shop
+* Where: Amazon, AliExpress, your favorite shop
 * Info: any cheap USB webcam will do, as long as it supports UVC (if your camera works as soon as you plug it in without needing specific drivers, then it is probably compatible). On an original maimai DX, the camera has a native resolution of 1280x960 pixels, and that resolution is barely used in-game. No need, then, to spend a fortune.
 
 </div>
@@ -126,7 +126,7 @@ Installing the player camera and the QR-code readers is optional, but if you wan
 
 ### **2x**{: .quantity-emphasis } QR-code camera
 
-* Where: Amazon, AliExpress, your favourite shop ([example of a compatible camera](https://www.amazon.com.be/dp/B0DWLGCSJ6))
+* Where: Amazon, AliExpress, your favorite shop ([example of a compatible camera](https://www.amazon.com.be/dp/B0DWLGCSJ6))
 * Info: the game is very demanding about the USB camera required for the QR-code readers. It must be UVC, support a resolution of 640x480 at 30 fps in YUY2 format and offer a 50 degree field of view. An external light is also needed to illuminate the area.
 (A suitable LED is listed under [Small supplies](#small-supplies))
 
@@ -134,7 +134,7 @@ Installing the player camera and the QR-code readers is optional, but if you wan
 
 ## Small supplies
 
-You will find these items in your favourite shop (Amazon, AliExpress, ...). These are small, cheap purchases you will need over the course of the various steps.
+You will find these items in your favorite shop (Amazon, AliExpress, ...). These are small, cheap purchases you will need over the course of the various steps.
 
 <div class="equipment-supplies" markdown>
 

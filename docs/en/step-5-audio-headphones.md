@@ -30,7 +30,7 @@ Since the signal for the headphones (C/W and SIDE outputs) is too weak, you need
 For the physical installation of the jacks (which are simple 3.5mm female jack connectors), you have two options:
 
 1. **The faithful method:** drill the plastic shell under the buttons (as on a real *DX*) to embed the jacks in it.
-2. **The non-destructive method:** install the two headphone jacks in the centre of the cabinet, between the two players, via a hand-made enclosure.
+2. **The non-destructive method:** install the two headphone jacks in the center of the cabinet, between the two players, via a hand-made enclosure.
 
 !!! tip "Durability of the jack sockets"
     In an arcade, jack sockets get damaged very quickly from plugging/unplugging headphones. Plan a system where the socket fixed to the shell is easily replaceable (for example, link it to the internal amplifier with a detachable cable, rather than soldering the connector directly to the amp).

@@ -12,7 +12,7 @@
     "step-3-io-board.md": "b2d36bc017a6c0414e86ef3b7e8065e911872605625f4a690b32fe3d3fdff630",
     "step-4-aime-reader.md": "1209ec020f2b1e6ae37f54511ccd4a06bb6bd8b6579737012965c392463631a5",
     "step-5-audio-headphones.md": "3dff5e88395d07a1ed208c11c68f88d7fc26311620d18c2063457a181ce852c5",
-    "step-6-lighting.md": "ec28af174b51415cf902da521b3a0c82232ff30726e337ca0511d85c8f34d0de",
+    "step-6-lighting.md": "0db6295cbb9227c09801fd908184a1fb7dcdf07c2a63519b584f274982d72988",
     "step-7-cameras.md": "8bdee90cfb28c5d836f95d17f6893a30f20514637b8c523e7f4b73e680b8caeb",
     "understanding-serial-protocols.md": "c5ef898c7ea9fe4ab5ceed90ea4c6e1a27feae63b8f20efafbf329d6bdbc904a",
     "useful-links.md": "70313b12b3d591cc85f88fdd2941beb2b27608d1c08f9682b7cb0c7ad6d1d9a8",
@@ -30,6 +30,6 @@
     "resources/images/step-4-aime-reader/vfd-db9-jst-mapping.svg": "0ac1cf341067bc80b32e2ecfc316894514886a3b65d4329515b6ca524f1e4421",
     "resources/images/step-6-lighting/led-controllers-chain-finale.svg": "2c3a6ccb7379fbbcea09862ed07a61084f681a37671b54249cb610a9be2c3fef",
     "resources/images/step-6-lighting/led-controllers-chain.svg": "8fde04190e7666af6f83b2325eeaafe4b839bde379ebaf5abedf60f93c01b585",
-    "resources/images/step-6-lighting/led-topper-harness.svg": "f3e8ca433ec4ac3ae4a2b0a89108945c07752fe7049aa2afa62735a2d3d04067"
+    "resources/images/step-6-lighting/led-topper-harness.svg": "74d13cd422d8d7f1ba5d830be65e49a82a88f02c704378189a6f1441d288b228"
   }
 }

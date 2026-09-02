@@ -29,7 +29,7 @@ On *DX*, new physical buttons appeared to let players sort songs. You have to wi
 
 ## 3. Controlling the billboard LEDs
 
-On *DX*, the IO4 is responsible for managing the billboard lighting (labelled `BILLBOARD LED` / `ROOF LED` on the Sega diagrams). This point is also covered in [Step 6](step-6-lighting.md), but here is the pinout of the LEDs to connect already:
+On *DX*, the IO4 is responsible for managing the billboard lighting (labeled `BILLBOARD LED` / `ROOF LED` on the Sega diagrams). This point is also covered in [Step 6](step-6-lighting.md), but here is the pinout of the LEDs to connect already:
 
 * "BILLBOARD LED L RED": connector **CN3** - pin **51** (the large wiring harness)
 * "BILLBOARD LED R RED": connector **CN3** - pin **52** (the large wiring harness)

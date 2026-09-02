@@ -1,7 +1,7 @@
 """
 Keep the shared, non-localized assets under docs/resources/ (wiring diagram
 images, official manual PDFs, ...) as a single copy in the built site,
-instead of mkdocs-static-i18n's default behaviour of also copying them into
+instead of mkdocs-static-i18n's default behavior of also copying them into
 every non-default locale's output subdirectory.
 
 Background: with `docs_structure: folder`, mkdocs-static-i18n builds each

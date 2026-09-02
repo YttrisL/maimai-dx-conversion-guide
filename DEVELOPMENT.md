@@ -193,6 +193,11 @@ If you skip step 2, the pre-commit hook refuses the commit, and - as a
 backstop for commits made with `--no-verify` or from a clone without the hook
 installed - `mkdocs build` fails too, which blocks the deploy pipeline.
 
+`mkdocs serve` is deliberately exempt: while the dev server is running, an
+untranslated edit only logs a one-line notice, it never crashes the server or
+a hot reload. Freshness is enforced at commit time and on `mkdocs build`, not
+while you are writing.
+
 Useful commands:
 
 - `python scripts/check_translation_sync.py --list` - sync status of every
