@@ -1,0 +1,50 @@
+<svg viewBox="0 0 640 270" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <!-- Card background so the diagram reads on both light and dark themes -->
+  <rect x="1" y="1" width="638" height="268" rx="12" fill="#f4f4f6" stroke="#c9c9cf" stroke-width="2"/>
+
+  <title>RS-232: point-to-point link (Null Modem crossover cable)</title>
+
+  <defs>
+    <marker id="arrowRight" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#555"/>
+    </marker>
+    <marker id="arrowLeft" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 10 0 L 0 5 L 10 10 z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <text x="320" y="34" text-anchor="middle" font-size="18" font-weight="bold" fill="#222">RS-232: point-to-point link (crossover cable)</text>
+
+  <!-- Device A -->
+  <rect x="40" y="60" width="180" height="180" rx="10" fill="#eceef2" stroke="#333" stroke-width="2.5"/>
+  <text x="130" y="88" text-anchor="middle" font-size="15" font-weight="bold" fill="#222">Device A</text>
+
+  <!-- Device B -->
+  <rect x="420" y="60" width="180" height="180" rx="10" fill="#eceef2" stroke="#333" stroke-width="2.5"/>
+  <text x="510" y="88" text-anchor="middle" font-size="15" font-weight="bold" fill="#222">Device B</text>
+
+  <!-- Row 1: A.TX -> B.RX -->
+  <line x1="220" y1="140" x2="420" y2="140" stroke="#555" stroke-width="2.5" marker-end="url(#arrowRight)"/>
+  <circle cx="220" cy="140" r="7" fill="#e07b39" stroke="#8a4a1e" stroke-width="1.5"/>
+  <text x="205" y="144" text-anchor="end" font-size="13" fill="#222">TX</text>
+  <circle cx="420" cy="140" r="7" fill="#3b82c4" stroke="#1f4e73" stroke-width="1.5"/>
+  <text x="435" y="144" text-anchor="start" font-size="13" fill="#222">RX</text>
+
+  <!-- Row 2: B.TX -> A.RX -->
+  <line x1="420" y1="180" x2="220" y2="180" stroke="#555" stroke-width="2.5" marker-end="url(#arrowLeft)"/>
+  <circle cx="220" cy="180" r="7" fill="#3b82c4" stroke="#1f4e73" stroke-width="1.5"/>
+  <text x="205" y="184" text-anchor="end" font-size="13" fill="#222">RX</text>
+  <circle cx="420" cy="180" r="7" fill="#e07b39" stroke="#8a4a1e" stroke-width="1.5"/>
+  <text x="435" y="184" text-anchor="start" font-size="13" fill="#222">TX</text>
+
+  <!-- Row 3: GND - GND -->
+  <line x1="220" y1="220" x2="420" y2="220" stroke="#4caf7d" stroke-width="2.5"/>
+  <circle cx="220" cy="220" r="7" fill="#4caf7d" stroke="#276b48" stroke-width="1.5"/>
+  <text x="205" y="224" text-anchor="end" font-size="13" fill="#222">GND</text>
+  <circle cx="420" cy="220" r="7" fill="#4caf7d" stroke="#276b48" stroke-width="1.5"/>
+  <text x="435" y="224" text-anchor="start" font-size="13" fill="#222">GND</text>
+
+  <text x="320" y="258" text-anchor="middle" font-size="12.5" fill="#555" font-style="italic">
+    One device's TX joins the other's RX - GND simply links the two grounds
+  </text>
+</svg>

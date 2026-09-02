@@ -1,0 +1,65 @@
+<svg viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <!-- Card background so the diagram reads on both light and dark themes -->
+  <rect x="1" y="1" width="558" height="398" rx="12" fill="#f4f4f6" stroke="#c9c9cf" stroke-width="2"/>
+
+  <title>Male DB9 connector, front view</title>
+
+  <text x="280" y="34" text-anchor="middle" font-size="18" font-weight="bold" fill="#222">Male DB9 connector - front view (pin side)</text>
+
+  <!-- Jack screws (the two metal mounting posts on either side of a DB connector) -->
+  <rect x="110" y="123" width="24" height="44" rx="4" fill="#b7bcc7" stroke="#333" stroke-width="2"/>
+  <rect x="426" y="123" width="24" height="44" rx="4" fill="#b7bcc7" stroke="#333" stroke-width="2"/>
+
+  <!-- D-shaped metal shell: wider edge holds the 5-pin row, narrower edge the 4-pin row.
+       Gentle taper + rounded corners, closer to the real D-sub shell profile. -->
+  <path d="M 156.00,70.00 L 404.00,70.00 Q 420.00,70.00 416.70,85.66 L 391.30,206.34 Q 388.00,222.00 372.00,222.00 L 188.00,222.00 Q 172.00,222.00 168.70,206.34 L 143.30,85.66 Q 140.00,70.00 156.00,70.00 Z"
+        fill="#d8dce3" stroke="#333" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Recessed inner face -->
+  <path d="M 168.00,88.00 L 392.00,88.00 Q 402.00,88.00 399.81,97.76 L 378.19,194.24 Q 376.00,204.00 366.00,204.00 L 194.00,204.00 Q 184.00,204.00 181.81,194.24 L 160.19,97.76 Q 158.00,88.00 168.00,88.00 Z"
+        fill="#eceef2" stroke="#8a8f9b" stroke-width="1.5" stroke-linejoin="round"/>
+
+  <!-- Top row: pins 1-5 -->
+  <circle cx="184" cy="112" r="15" fill="#ffffff" stroke="#333" stroke-width="2"/>
+  <text x="184" y="117" text-anchor="middle" font-size="14" fill="#222">1</text>
+
+  <!-- pin 2 = RX -->
+  <circle cx="232" cy="112" r="15" fill="#3b82c4" stroke="#1f4e73" stroke-width="2"/>
+  <text x="232" y="117" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">2</text>
+
+  <!-- pin 3 = TX -->
+  <circle cx="280" cy="112" r="15" fill="#e07b39" stroke="#8a4a1e" stroke-width="2"/>
+  <text x="280" y="117" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">3</text>
+
+  <circle cx="328" cy="112" r="15" fill="#ffffff" stroke="#333" stroke-width="2"/>
+  <text x="328" y="117" text-anchor="middle" font-size="14" fill="#222">4</text>
+
+  <!-- pin 5 = GND -->
+  <circle cx="376" cy="112" r="15" fill="#4caf7d" stroke="#276b48" stroke-width="2"/>
+  <text x="376" y="117" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">5</text>
+
+  <!-- Bottom row: pins 6-9 -->
+  <circle cx="208" cy="178" r="15" fill="#ffffff" stroke="#333" stroke-width="2"/>
+  <text x="208" y="183" text-anchor="middle" font-size="14" fill="#222">6</text>
+  <circle cx="256" cy="178" r="15" fill="#ffffff" stroke="#333" stroke-width="2"/>
+  <text x="256" y="183" text-anchor="middle" font-size="14" fill="#222">7</text>
+  <circle cx="304" cy="178" r="15" fill="#ffffff" stroke="#333" stroke-width="2"/>
+  <text x="304" y="183" text-anchor="middle" font-size="14" fill="#222">8</text>
+  <circle cx="352" cy="178" r="15" fill="#ffffff" stroke="#333" stroke-width="2"/>
+  <text x="352" y="183" text-anchor="middle" font-size="14" fill="#222">9</text>
+
+  <!-- Legend -->
+  <g font-size="15" fill="#222">
+    <circle cx="190" cy="262" r="9" fill="#3b82c4" stroke="#1f4e73" stroke-width="1.5"/>
+    <text x="208" y="267">Pin 2 = <tspan font-weight="bold">RX</tspan> (receive)</text>
+
+    <circle cx="190" cy="297" r="9" fill="#e07b39" stroke="#8a4a1e" stroke-width="1.5"/>
+    <text x="208" y="302">Pin 3 = <tspan font-weight="bold">TX</tspan> (transmit)</text>
+
+    <circle cx="190" cy="332" r="9" fill="#4caf7d" stroke="#276b48" stroke-width="1.5"/>
+    <text x="208" y="337">Pin 5 = <tspan font-weight="bold">GND</tspan> (ground)</text>
+  </g>
+
+  <text x="280" y="374" text-anchor="middle" font-size="12.5" fill="#555" font-style="italic">
+    Pins 1, 4, 6-9: optional control signals, not used in this guide
+  </text>
+</svg>

@@ -1,0 +1,35 @@
+{
+  "pages": {
+    "conclusion.md": "047f9a73cd1a71e11f4bf6192522de8b643d859964501484286823246b9501be",
+    "equipment-checklist.md": "875d135e2d443e21eab8ca5ffa792e49f742a73cdeb9e5ebf3347547771b82c1",
+    "equipment.md": "3cbec474be62f5e27a1907ace8b30836ffcf20f9c5382ade044edbbcdf1eea75",
+    "glossary.md": "e6bcc99318a36219da59aefa264f13e340ee303acda7f3561f6caf9781984b52",
+    "index.md": "807abd80e52e465edf48713fe3e2118ba7fbcb8ca311e3c9033cd872b56074d2",
+    "official-manuals.md": "545c757ff39e92342a3b186a042bcfd5fa90b90e27fbb99c01526d16196d04be",
+    "secondhand-market.md": "a34ebaced3ea12832313bdcec0c9a9c2f66a3d9093988b66d7adb46584df8a73",
+    "step-1-alls-and-psu.md": "deb42f9fce43a718aa91dfa205603b3f4ec045b9c19e5a45b9b48a8692ee48ff",
+    "step-2-touchscreen-display.md": "4a16f667cf4cecf2ad7bb4328f821e3cd2a0f670e7b14020846d4e0bf2512c92",
+    "step-3-io-board.md": "b2d36bc017a6c0414e86ef3b7e8065e911872605625f4a690b32fe3d3fdff630",
+    "step-4-aime-reader.md": "1209ec020f2b1e6ae37f54511ccd4a06bb6bd8b6579737012965c392463631a5",
+    "step-5-audio-headphones.md": "3dff5e88395d07a1ed208c11c68f88d7fc26311620d18c2063457a181ce852c5",
+    "step-6-lighting.md": "ec28af174b51415cf902da521b3a0c82232ff30726e337ca0511d85c8f34d0de",
+    "step-7-cameras.md": "8bdee90cfb28c5d836f95d17f6893a30f20514637b8c523e7f4b73e680b8caeb",
+    "understanding-serial-protocols.md": "c5ef898c7ea9fe4ab5ceed90ea4c6e1a27feae63b8f20efafbf329d6bdbc904a",
+    "useful-links.md": "70313b12b3d591cc85f88fdd2941beb2b27608d1c08f9682b7cb0c7ad6d1d9a8",
+    "warnings.md": "4541a0e7f66b9d864ed8bc91fb3ff88ad760f055c580a28355d6ebd70151e61c",
+    "wiring-diagrams.md": "7037754a355ad1e82d9465ed1a815b60b0f2fd84e97577f9721030024a55a4b2"
+  },
+  "assets": {
+    "resources/images/serial-protocols/db9-connector.svg": "2c6595be80dcc216065e8a2a7056569e79d8028911d9db5250d8e3c435412932",
+    "resources/images/serial-protocols/jvs-layers.svg": "2aa0617323067c3d0f2aeac931b8076a991d69bfcb04528b9f48bfd46f84d036",
+    "resources/images/serial-protocols/rs232-point-to-point.svg": "eae1dcc4699467c7793f12e0141c0e33609f48e5cf18da42e05834faf6cc44e5",
+    "resources/images/serial-protocols/rs485-bus.svg": "405d02eb4cf2d7ef21ad4dccb0c69bd4f5e0c86339c81c2b56ad75fe93c60782",
+    "resources/images/serial-protocols/uart-framing.svg": "b86c12fbc4c9a343429ab4260ef283d0f5d8a80f2671c3df1175a635a052b8a7",
+    "resources/images/serial-protocols/usb-cdc.svg": "81836ad4a5027dc9698aaf27c21e49181c851dfcef07fd2f3f1f2d52042ec76f",
+    "resources/images/step-4-aime-reader/aime-db9-jst-mapping.svg": "b4855626543b62332b27c892e7f739a4718b66b7b3ec494893844eb6eba5727f",
+    "resources/images/step-4-aime-reader/vfd-db9-jst-mapping.svg": "0ac1cf341067bc80b32e2ecfc316894514886a3b65d4329515b6ca524f1e4421",
+    "resources/images/step-6-lighting/led-controllers-chain-finale.svg": "2c3a6ccb7379fbbcea09862ed07a61084f681a37671b54249cb610a9be2c3fef",
+    "resources/images/step-6-lighting/led-controllers-chain.svg": "8fde04190e7666af6f83b2325eeaafe4b839bde379ebaf5abedf60f93c01b585",
+    "resources/images/step-6-lighting/led-topper-harness.svg": "f3e8ca433ec4ac3ae4a2b0a89108945c07752fe7049aa2afa62735a2d3d04067"
+  }
+}

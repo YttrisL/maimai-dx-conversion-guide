@@ -1,0 +1,29 @@
+#!/bin/sh
+# Pre-commit hook: block commits that let the English docs drift from French.
+#
+# ACTIVE ONLY IF you have run this once in your clone:
+#
+#     git config core.hooksPath scripts/githooks
+#
+# It runs scripts/check_translation_sync.py against the STAGED content. If you
+# are committing a change to a docs/fr/*.md page whose recorded translation hash
+# in translation-sync.json no longer matches, the commit is refused. To proceed:
+#
+#     1. update the matching docs/en/*.md page
+#     2. python scripts/check_translation_sync.py --accept-all
+#     3. git add -A  &&  re-run the commit
+#
+# Emergency bypass:  git commit --no-verify
+#   (the MkDocs build hook still enforces the same check, so drift cannot reach
+#    the deployed site regardless.)
+
+if command -v python3 >/dev/null 2>&1; then
+    PY=python3
+elif command -v python >/dev/null 2>&1; then
+    PY=python
+else
+    echo "pre-commit: no python interpreter on PATH - skipping translation-sync check" >&2
+    exit 0
+fi
+
+exec "$PY" "$(git rev-parse --show-toplevel)/scripts/check_translation_sync.py" --staged

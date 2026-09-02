@@ -152,10 +152,66 @@ Stop the server anytime with `Ctrl+C` in the terminal.
   showing up in the sidebar, this is why - add it to the list there.
 - **Site-wide settings** (title, theme colors, plugins, repo links, etc.)
   are also in `mkdocs.yml`.
+- **Every page must exist in both languages.** `docs/` has one folder per
+  language (`docs/en/`, `docs/fr/`). A page present in one folder but not the
+  other fails the build (`hooks/check_translations.py`). French is the source
+  of truth - see [section 7](#7-keeping-the-english-and-french-docs-in-sync).
 
 ---
 
-## 7. Building the static site (no live server)
+## 7. Keeping the English and French docs in sync
+
+French is the source of truth. Its English counterpart is expected to be a
+current translation. This covers two kinds of file:
+
+- **Pages** - `docs/fr/<name>.md` translated as `docs/en/<name>.md`.
+- **Diagram assets** - a `.svg` under `docs/resources/` that contains text is
+  translated as a `<name>-en.svg` sibling in the same folder. `docs/fr/` pages
+  reference the unsuffixed file; `docs/en/` pages reference the `-en` one.
+
+`translation-sync.json` at the repo root records, per source file, a hash of
+the French version its translation was last based on, and
+`scripts/check_translation_sync.py` compares.
+
+**One-time setup per clone** - enable the pre-commit hook:
+
+```bash
+git config core.hooksPath scripts/githooks
+```
+
+**After editing any `docs/fr/*.md` file (or a translated source `.svg`):**
+
+1. Update the matching English file so it reflects the new French content (or
+   satisfy yourself that no English change is needed).
+2. Record that the translation is caught up:
+   ```bash
+   python scripts/check_translation_sync.py --accept-all
+   ```
+3. `git add -A` (including `translation-sync.json`) and commit.
+
+If you skip step 2, the pre-commit hook refuses the commit, and - as a
+backstop for commits made with `--no-verify` or from a clone without the hook
+installed - `mkdocs build` fails too, which blocks the deploy pipeline.
+
+Useful commands:
+
+- `python scripts/check_translation_sync.py --list` - sync status of every
+  tracked file (pages and assets)
+- `python scripts/check_translation_sync.py --check` - exit non-zero if anything
+  is out of sync (what the build hook runs)
+- `python scripts/check_translation_sync.py --accept step-6-lighting.md` - accept
+  a single page instead of all of them
+
+New pages: add the file in **both** `docs/en/` and `docs/fr/` (a title-only
+stub is fine to start), then run `--accept-all` so the new page is tracked.
+
+New translated diagram: add `<name>-en.svg` next to the source `<name>.svg`,
+point the `docs/en/` page at it, then run `--accept-all`. A source `.svg` with
+no `-en` sibling is treated as language-neutral and not tracked.
+
+---
+
+## 8. Building the static site (no live server)
 
 When you want the actual static HTML/CSS/JS files - e.g. to upload
 somewhere yourself, inspect the output, or just confirm it builds cleanly -
@@ -181,7 +237,7 @@ overwritten on the next build.
 
 ---
 
-## 8. Troubleshooting
+## 9. Troubleshooting
 
 **`mkdocs: command not found` / `'mkdocs' is not recognized`**\
 Your virtual environment isn't active. Re-run the `activate` command from
@@ -196,6 +252,16 @@ git history. It needs you to have actually run `git clone` (or at least
 never a git repo, this is why. It's configured to fall back gracefully to
 the build date otherwise, so this shouldn't hard-crash, but a real git
 history gives more accurate dates.
+
+**`TRANSLATION CHECK FAILED` on build**\
+A page exists in one language folder but not the other. Create the missing
+`docs/<lang>/<page>.md` (a title-only stub is enough to unblock the build).
+
+**`TRANSLATION SYNC CHECK FAILED` on build or commit**\
+A `docs/fr/*.md` page changed without its English copy being confirmed in
+sync. Update `docs/en/<page>.md`, then run
+`python scripts/check_translation_sync.py --accept-all` and stage
+`translation-sync.json`. See [section 7](#7-keeping-the-english-and-french-docs-in-sync).
 
 **Still stuck?**\
 Check the terminal output - MkDocs errors are usually specific about which

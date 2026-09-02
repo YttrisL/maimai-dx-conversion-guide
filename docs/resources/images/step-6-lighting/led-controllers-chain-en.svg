@@ -1,0 +1,73 @@
+<svg viewBox="0 0 1150 300" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <!-- Card background so the diagram reads on both light and dark themes -->
+  <rect x="1" y="1" width="1148" height="298" rx="12" fill="#f4f4f6" stroke="#c9c9cf" stroke-width="2"/>
+
+  <title>Lighting control chain: P1/P2 LED boards, RS-232, USB adapter and USB hub</title>
+
+  <defs>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3b82c4"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#d1453b"/>
+    </marker>
+    <marker id="arrowYellow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8a7a55"/>
+    </marker>
+    <marker id="arrowGrey" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <!-- Board P1 (top-left) -->
+  <rect x="20" y="55" width="270" height="90" rx="10" fill="#eceef2" stroke="#3b82c4" stroke-width="2.5"/>
+  <text x="155" y="85" text-anchor="middle" font-size="15" font-weight="bold" fill="#222">LED control board - P1</text>
+  <text x="155" y="103" text-anchor="middle" font-size="12" fill="#555" font-style="italic">part no. 837-15070-04</text>
+  <text x="155" y="124" text-anchor="middle" font-size="11" fill="#555">P1 button LEDs + left-side lighting</text>
+
+  <!-- Board P2 (bottom-left) -->
+  <rect x="20" y="155" width="270" height="90" rx="10" fill="#eceef2" stroke="#d1453b" stroke-width="2.5"/>
+  <text x="155" y="185" text-anchor="middle" font-size="15" font-weight="bold" fill="#222">LED control board - P2</text>
+  <text x="155" y="203" text-anchor="middle" font-size="12" fill="#555" font-style="italic">part no. 837-15070-04 (same as P1)</text>
+  <text x="155" y="224" text-anchor="middle" font-size="11" fill="#555">P2 button LEDs + right-side lighting</text>
+
+  <!-- RS-232 links to adapter -->
+  <line x1="290" y1="100" x2="377" y2="115" stroke="#3b82c4" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
+  <line x1="290" y1="200" x2="377" y2="185" stroke="#d1453b" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+  <text x="333" y="98" text-anchor="middle" font-size="12" fill="#555" font-style="italic">RS-232</text>
+  <text x="333" y="210" text-anchor="middle" font-size="12" fill="#555" font-style="italic">RS-232</text>
+
+  <!-- Adapter (center) -->
+  <rect x="380" y="92.5" width="280" height="115" rx="10" fill="#eceef2" stroke="#333" stroke-width="2.5"/>
+  <text x="520" y="124.5" text-anchor="middle" font-size="15" font-weight="bold" fill="#222">RS-232 &#8594; USB adapter</text>
+  <text x="520" y="144.5" text-anchor="middle" font-size="12" fill="#555" font-style="italic">part no. 837-15067-02</text>
+  <text x="520" y="166.5" text-anchor="middle" font-size="11.5" fill="#555">Merges 4 RS-232 ports into 1 USB output</text>
+  <text x="520" y="186.5" text-anchor="middle" font-size="11.5" fill="#555">(only 2 are used: P1 LEDs + P2 LEDs)</text>
+
+  <!-- Adapter -> Hub -->
+  <line x1="660" y1="150" x2="728" y2="150" stroke="#555" stroke-width="2.5" marker-end="url(#arrowGrey)"/>
+  <text x="694" y="138" text-anchor="middle" font-size="12" fill="#555">USB</text>
+
+  <!-- Cameras P1 & P2 : discreet reference bubbles side by side, feed down into Hub -->
+  <rect x="702" y="22" width="138" height="36" rx="8" fill="#f0ede6" stroke="#8a7a55" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="771" y="44" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#666">P1 QR-code camera</text>
+  <line x1="771" y1="58" x2="771" y2="103" stroke="#8a7a55" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrowYellow)"/>
+  <text x="785" y="81" font-size="10" fill="#777" font-style="italic">USB</text>
+
+  <rect x="860" y="22" width="138" height="36" rx="8" fill="#f0ede6" stroke="#8a7a55" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="929" y="44" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#666">P2 QR-code camera</text>
+  <line x1="929" y1="58" x2="929" y2="103" stroke="#8a7a55" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrowYellow)"/>
+  <text x="943" y="81" font-size="10" fill="#777" font-style="italic">USB</text>
+
+  <!-- Hub USB (center-right) -->
+  <rect x="730" y="105" width="240" height="90" rx="10" fill="#eceef2" stroke="#333" stroke-width="2.5"/>
+  <text x="850" y="135" text-anchor="middle" font-size="15" font-weight="bold" fill="#222">USB hub</text>
+  <text x="850" y="153" text-anchor="middle" font-size="12" fill="#555" font-style="italic">part no. 837-20008</text>
+  <text x="850" y="174" text-anchor="middle" font-size="11.5" fill="#555">Plain 4-port USB hub</text>
+
+  <!-- Hub -> ALLS -->
+  <line x1="970" y1="150" x2="1038" y2="150" stroke="#555" stroke-width="2.5" marker-end="url(#arrowGrey)"/>
+  <text x="1004" y="138" text-anchor="middle" font-size="12" fill="#555">USB</text>
+  <rect x="1040" y="115" width="90" height="70" rx="10" fill="#eceef2" stroke="#333" stroke-width="2.5"/>
+  <text x="1085" y="157" text-anchor="middle" font-size="16" font-weight="bold" fill="#222">ALLS</text>
+</svg>

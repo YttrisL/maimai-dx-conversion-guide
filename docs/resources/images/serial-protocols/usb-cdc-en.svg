@@ -1,0 +1,30 @@
+<svg viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <!-- Card background so the diagram reads on both light and dark themes -->
+  <rect x="1" y="1" width="638" height="198" rx="12" fill="#f4f4f6" stroke="#c9c9cf" stroke-width="2"/>
+
+  <title>USB-CDC: an RS-232 port simulated on top of USB</title>
+
+  <defs>
+    <marker id="arrowRightUsb" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <text x="320" y="34" text-anchor="middle" font-size="18" font-weight="bold" fill="#222">USB-CDC: the disguise</text>
+
+  <!-- Device -->
+  <rect x="40" y="80" width="170" height="60" rx="10" fill="#eceef2" stroke="#333" stroke-width="2.5"/>
+  <text x="125" y="115" text-anchor="middle" font-size="14" font-weight="bold" fill="#222">ADX touchscreen</text>
+
+  <!-- Arrow -->
+  <line x1="210" y1="110" x2="430" y2="110" stroke="#555" stroke-width="2.5" marker-end="url(#arrowRightUsb)"/>
+  <text x="320" y="97" text-anchor="middle" font-size="12.5" font-style="italic" fill="#555">USB packets, "I am a serial port"</text>
+
+  <!-- Virtual COM port -->
+  <rect x="430" y="80" width="170" height="60" rx="10" fill="#f7e6d9" stroke="#e07b39" stroke-width="2.5"/>
+  <text x="515" y="115" text-anchor="middle" font-size="14" font-weight="bold" fill="#8a4a1e">Virtual COM port</text>
+
+  <!-- Captions -->
+  <text x="125" y="163" text-anchor="middle" font-size="12" fill="#555">(fast, no baud rate)</text>
+  <text x="515" y="163" text-anchor="middle" font-size="12" fill="#555">(the software thinks it reads 9600 baud)</text>
+</svg>

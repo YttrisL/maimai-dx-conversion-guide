@@ -1,0 +1,64 @@
+<svg viewBox="0 0 780 220" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <!-- Card background so the diagram reads on both light and dark themes -->
+  <rect x="1" y="1" width="778" height="218" rx="12" fill="#f4f4f6" stroke="#c9c9cf" stroke-width="2"/>
+
+  <title>UART frame: Start, 8 data bits, Stop</title>
+
+  <text x="390" y="34" text-anchor="middle" font-size="18" font-weight="bold" fill="#222">UART frame: Start &#183; 8 data bits &#183; Stop</text>
+
+  <!-- Idle line, left -->
+  <line x1="20" y1="100" x2="140" y2="100" stroke="#666" stroke-width="3"/>
+  <line x1="20" y1="92" x2="20" y2="108" stroke="#666" stroke-width="3"/>
+  <text x="80" y="85" text-anchor="middle" font-size="12.5" font-style="italic" fill="#555">Idle line</text>
+
+  <!-- Idle line, right -->
+  <line x1="640" y1="100" x2="760" y2="100" stroke="#666" stroke-width="3"/>
+  <line x1="760" y1="92" x2="760" y2="108" stroke="#666" stroke-width="3"/>
+  <text x="700" y="85" text-anchor="middle" font-size="12.5" font-style="italic" fill="#555">Idle line</text>
+
+  <!-- Start bit -->
+  <rect x="140" y="70" width="50" height="60" fill="#f7d9c4" stroke="#8a4a1e" stroke-width="2"/>
+  <text x="165" y="105" text-anchor="middle" font-size="13" fill="#222">Start</text>
+
+  <!-- Data bits D0-D7 -->
+  <rect x="190" y="70" width="50" height="60" fill="#ffffff" stroke="#333" stroke-width="2"/>
+  <text x="215" y="105" text-anchor="middle" font-size="13" fill="#222">D0</text>
+  <rect x="240" y="70" width="50" height="60" fill="#ffffff" stroke="#333" stroke-width="2"/>
+  <text x="265" y="105" text-anchor="middle" font-size="13" fill="#222">D1</text>
+  <rect x="290" y="70" width="50" height="60" fill="#ffffff" stroke="#333" stroke-width="2"/>
+  <text x="315" y="105" text-anchor="middle" font-size="13" fill="#222">D2</text>
+  <rect x="340" y="70" width="50" height="60" fill="#ffffff" stroke="#333" stroke-width="2"/>
+  <text x="365" y="105" text-anchor="middle" font-size="13" fill="#222">D3</text>
+  <rect x="390" y="70" width="50" height="60" fill="#ffffff" stroke="#333" stroke-width="2"/>
+  <text x="415" y="105" text-anchor="middle" font-size="13" fill="#222">D4</text>
+  <rect x="440" y="70" width="50" height="60" fill="#ffffff" stroke="#333" stroke-width="2"/>
+  <text x="465" y="105" text-anchor="middle" font-size="13" fill="#222">D5</text>
+  <rect x="490" y="70" width="50" height="60" fill="#ffffff" stroke="#333" stroke-width="2"/>
+  <text x="515" y="105" text-anchor="middle" font-size="13" fill="#222">D6</text>
+  <rect x="540" y="70" width="50" height="60" fill="#ffffff" stroke="#333" stroke-width="2"/>
+  <text x="565" y="105" text-anchor="middle" font-size="13" fill="#222">D7</text>
+
+  <!-- Stop bit -->
+  <rect x="590" y="70" width="50" height="60" fill="#cdeedd" stroke="#276b48" stroke-width="2"/>
+  <text x="615" y="105" text-anchor="middle" font-size="13" fill="#222">Stop</text>
+
+  <!-- Dimension brackets -->
+  <line x1="140" y1="146" x2="190" y2="146" stroke="#444" stroke-width="1.5"/>
+  <line x1="140" y1="140" x2="140" y2="146" stroke="#444" stroke-width="1.5"/>
+  <line x1="190" y1="140" x2="190" y2="146" stroke="#444" stroke-width="1.5"/>
+  <text x="165" y="165" text-anchor="middle" font-size="13" fill="#444">1 bit</text>
+
+  <line x1="190" y1="146" x2="590" y2="146" stroke="#444" stroke-width="1.5"/>
+  <line x1="190" y1="140" x2="190" y2="146" stroke="#444" stroke-width="1.5"/>
+  <line x1="590" y1="140" x2="590" y2="146" stroke="#444" stroke-width="1.5"/>
+  <text x="390" y="165" text-anchor="middle" font-size="13" fill="#444">8 data bits</text>
+
+  <line x1="590" y1="146" x2="640" y2="146" stroke="#444" stroke-width="1.5"/>
+  <line x1="590" y1="140" x2="590" y2="146" stroke="#444" stroke-width="1.5"/>
+  <line x1="640" y1="140" x2="640" y2="146" stroke="#444" stroke-width="1.5"/>
+  <text x="615" y="165" text-anchor="middle" font-size="13" fill="#444">1 bit</text>
+
+  <text x="390" y="200" text-anchor="middle" font-size="12.5" fill="#555" font-style="italic">
+    The Start bit warns the receiver, the Stop bit closes the frame
+  </text>
+</svg>

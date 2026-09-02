@@ -19,8 +19,7 @@ strict: true
 # `strict` does NOT escalate (only warn/error is escalated). Bump those to
 # 'warn' so they're covered by strict mode too - readers should never hit a
 # dead in-page anchor (e.g. page.md#missing-section) or a malformed-looking
-# relative link either. `absolute_links` is deliberately left at its default:
-# docs/en/index.md intentionally links to the site-root-relative "/fr/".
+# relative link either.
 validation:
   links:
     anchors: warn
