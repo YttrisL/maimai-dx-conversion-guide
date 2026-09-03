@@ -6,7 +6,7 @@ title: "🏠 Home"
 
 ## Converting a maimai FiNALE cabinet into a maimai DX
 
-Welcome to the detailed guide for the hardware conversion of a **maimai FiNALE** arcade cabinet to the **maimai DX** system. This document is based on [the community's conversion notes](../resources/pdfs/dxnale-original-guide.pdf) and has been expanded to be accessible even if you are not an electronics engineer.
+Welcome to the detailed guide for the hardware conversion of a **maimai FiNALE** arcade cabinet to the **maimai DX** system. This document is based on [SpiralGlide's resources](spiralglide-resources.md) and has been expanded to be accessible even if you are not an electronics engineer.
 
 ---
 
