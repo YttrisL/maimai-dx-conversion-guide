@@ -56,7 +56,7 @@ For each of the parts listed below, the most suitable option is highlighted. Thi
 <div class="equipment-card" markdown>
 
 ### **2x**{: .quantity-emphasis } HDX touchscreen
-* Where: [On the HanDevice Discord](https://discord.gg/xABCFMWmTK)
+* Where: [On the HanDevice Discord]({{DISCORD_HANDEVICE}})
 * Info: this is a touchscreen created by an individual to provide a "game-pad" for playing a maimai DX simulator from the comfort of home. Officially, they do not sell a conversion kit, but you can [contact the maker via their Discord](https://discord.com/channels/1336383976721616897/1393421596190048266/1393822351094841375) to ask for an offer covering only the touchscreen **and** the HanDevice IO (their dedicated I/O board) that goes with it. This I/O board has the advantage of exposing a UART serial port that we can use to connect it directly to the ALLS HX2 without needing to convert the signal.
 
 *Alternative*: **2x**{: .quantity-emphasis } **Yuancon conversion kit - based on an ADX touchscreen**
@@ -69,7 +69,7 @@ For each of the parts listed below, the most suitable option is highlighted. Thi
 <div class="equipment-card" markdown>
 
 ### **16x**{: .quantity-emphasis } HDX buttons
-* Where: [On the HanDevice Discord](https://discord.gg/xABCFMWmTK)
+* Where: [On the HanDevice Discord]({{DISCORD_HANDEVICE}})
 * Info: the gameplay buttons for the ring. The FiNALE buttons are technically compatible, but the feel is completely different (and much better) on DX. It is therefore well worth upgrading them. You need eight buttons per player, so sixteen in total, but it can be useful to buy a few spares. This is a wear part.
 
 *Alternative*: **16x**{: .quantity-emphasis } **"Rabbit" buttons**
@@ -181,7 +181,7 @@ You will find these items in your favorite shop (Amazon, AliExpress, ...). These
     - For the IO4's CN9.
 * **30x**{: .quantity-emphasis } **JST-RA female crimp pin**
     - To populate CN9 and the cables to be added on the IO4's CN3.
-* **2x**{: .quantity-emphasis } **JST-SM 8-pin connector, male + female pair**
+* **2x**{: .quantity-emphasis } **JST-SM 8-pin female connector**
     - The ends of the billboard lighting harness, Player 1 side and Player 2 side, to connect to the original JST-SM connectors.
 * **2x**{: .quantity-emphasis } **JST-SM 2-pin connector, male + female pair**
     - Ideal for making our own connectors to make life easier, but if you do not have any in stock, plain JST-XH will also do.
@@ -194,6 +194,7 @@ For the rest of the connectors, rather than buying each part number individually
 * **20x**{: .quantity-emphasis } 2-pin female connector
 * **2x**{: .quantity-emphasis } 7-pin female connector
 * **1x**{: .quantity-emphasis } 7-pin male connector
+* **2x**{: .quantity-emphasis } 8-pin female connector
 * **1x**{: .quantity-emphasis } 9-pin female connector
 * **1x**{: .quantity-emphasis } 9-pin male connector
 * **50x**{: .quantity-emphasis } male crimp pin

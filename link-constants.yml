@@ -1,0 +1,14 @@
+# Shared constants for docs/**/*.md - mostly external links that are
+# referenced from more than one page and would otherwise need to be kept in
+# sync by hand everywhere they're used.
+#
+# One flat YAML mapping of UPPER_SNAKE_CASE name -> value. Reference a
+# constant from a Markdown page as {{NAME}}, e.g.:
+#
+#   [Sur le discord HanDevice]({{DISCORD_HANDEVICE}})
+#
+# See hooks/link_constants.py for how the substitution works and what
+# happens if a page references a name that isn't defined here.
+
+DISCORD_HANDEVICE: https://discord.gg/xABCFMWmTK
+IO4_CONVERSION_PCB: https://gitea.farewell.dev/Yttris/maiconvert-io4-breakout-board

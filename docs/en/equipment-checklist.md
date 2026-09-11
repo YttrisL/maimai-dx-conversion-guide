@@ -48,7 +48,7 @@ title: "☑️ Purchase checklist"
 - [ ] **30x**{: .quantity-emphasis } Molex Mini-Fit Jr. female crimp pin
 - [ ] **1x**{: .quantity-emphasis } JST-RA 2x10-pin female connector
 - [ ] **30x**{: .quantity-emphasis } JST-RA female crimp pin
-- [ ] **2x**{: .quantity-emphasis } JST-SM 8-pin connector (male + female pair)
+- [ ] **2x**{: .quantity-emphasis } JST-SM 8-pin female connector
 - [ ] **2x**{: .quantity-emphasis } JST-SM 2-pin connector (male + female pair)
 - [ ] JST-XH connector kit
 - [ ] JST-PH connector kit

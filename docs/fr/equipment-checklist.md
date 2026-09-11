@@ -48,7 +48,7 @@ title: "☑️ Checklist d'achat"
 - [ ] **30x**{: .quantity-emphasis } Broche Molex Mini-Fit Jr. femelle à sertir
 - [ ] **1x**{: .quantity-emphasis } Connecteur JST-RA 2x10 broches femelle
 - [ ] **30x**{: .quantity-emphasis } Broche JST-RA femelle à sertir
-- [ ] **2x**{: .quantity-emphasis } Connecteur JST-SM 8 broches (paire mâle + femelle)
+- [ ] **2x**{: .quantity-emphasis } Connecteur JST-SM 8 broches femelle
 - [ ] **2x**{: .quantity-emphasis } Connecteur JST-SM 2 broches (paire mâle + femelle)
 - [ ] Kit de connecteurs JST-XH
 - [ ] Kit de connecteurs JST-PH

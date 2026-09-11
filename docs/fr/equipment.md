@@ -56,7 +56,7 @@ Pour chacune des pièces listées ci-dessous, l'option la plus adaptée est mise
 <div class="equipment-card" markdown>
 
 ### **2x**{: .quantity-emphasis } Dalle tactile HDX
-* Où : [Sur le discord HanDevice](https://discord.gg/xABCFMWmTK)
+* Où : [Sur le discord HanDevice]({{DISCORD_HANDEVICE}})
 * Info : Il s'agit d'une dalle tactile créée par un particulier pour fournir un « game-pad » permettant de jouer à un simulateur de maimai DX dans le confort de son domicile. Officiellement, ils ne vendent pas de kit de conversion, mais il est possible de [contacter le fabricant via son discord](https://discord.com/channels/1336383976721616897/1393421596190048266/1393822351094841375) pour leur demander une offre portant uniquement sur la dalle tactile **et** la HanDevice IO (leur carte I/O dédiée) qui va avec. Cette carte I/O a l'avantage d'exposer un port série UART que nous pouvons exploiter pour la connecter directement au ALLS HX2 sans avoir besoin de transformer le signal.
 
 *Alternative* : **2x**{: .quantity-emphasis } **Kit de conversion Yuancon - à base d'une dalle ADX**
@@ -69,7 +69,7 @@ Pour chacune des pièces listées ci-dessous, l'option la plus adaptée est mise
 <div class="equipment-card" markdown>
 
 ### **16x**{: .quantity-emphasis } Boutons HDX
-* Où : [Sur le discord HanDevice](https://discord.gg/xABCFMWmTK)
+* Où : [Sur le discord HanDevice]({{DISCORD_HANDEVICE}})
 * Info : Les boutons de jeu pour l'anneau. Les boutons de FiNALE sont techniquement compatibles, mais le ressenti est totalement différent (et bien meilleur) sur DX. Il vaut donc largement la peine de les mettre à jour. Il faut huit boutons par joueur, soit seize au total, mais il peut être utile d'en acheter quelques-uns en réserve. C'est une pièce d'usure.
 
 *Alternative* : **16x**{: .quantity-emphasis } **Boutons "Rabbit"**
@@ -183,7 +183,7 @@ Vous trouverez ces articles dans votre boutique préférée (Amazon, AliExpress,
     - Pour le CN9 de l'IO4.
 * **30x**{: .quantity-emphasis } **Broche JST-RA femelle à sertir** 
     - Pour peupler le CN9 et les câbles à rajouter sur le CN3 de l'IO4.
-* **2x**{: .quantity-emphasis } **Connecteur JST-SM 8 broches, paire mâle + femelle** 
+* **2x**{: .quantity-emphasis } **Connecteur JST-SM 8 broches femelle** 
     - Extrémités de la nappe d'éclairage de l'enseigne lumineuse, côté joueur 1 et côté joueur 2, à raccorder aux connecteurs JST-SM d'origine.
 * **2x**{: .quantity-emphasis } **Connecteur JST-SM 2 broches, paire mâle + femelle**
     - Idéal pour faire nos propres connecteurs pour nous faciliter la vie, mais si vous n'en avez pas de stock de simples JST-XH peuvent également convenir.
@@ -196,6 +196,7 @@ Pour le reste des connecteurs, plutôt que d'acheter chaque référence à l'uni
 * **20x**{: .quantity-emphasis } Connecteur 2 broches femelle
 * **2x**{: .quantity-emphasis } Connecteur 7 broches femelle
 * **1x**{: .quantity-emphasis } Connecteur 7 broches mâle
+* **2x**{: .quantity-emphasis } Connecteur 8 broches femelle
 * **1x**{: .quantity-emphasis } Connecteur 9 broches femelle
 * **1x**{: .quantity-emphasis } Connecteur 9 broches mâle
 * **50x**{: .quantity-emphasis } Broche mâle à sertir

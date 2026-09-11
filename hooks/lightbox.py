@@ -110,11 +110,18 @@ def _nav_labels(page) -> tuple:
     return "Image précédente", "Image suivante"
 
 
-def _slug(src: str) -> str:
+def _slug(src: str, occurrence: int) -> str:
     # A stable id derived from the source path, not a page-scoped counter -
     # so it stays the same across edits/reorders and is guaranteed unique
-    # per distinct image.
-    return "lightbox-" + hashlib.sha1(src.encode("utf-8")).hexdigest()[:10]
+    # per distinct image. The same image can legitimately appear in more
+    # than one `!!! lightbox` block on a page (e.g. once as a wide-shot
+    # overview, again later as a close-up reference) - `occurrence` (the
+    # 0-based count of prior uses of this exact src on the page, tracked
+    # by the caller) disambiguates those repeats so they don't collide on
+    # the same id, which would otherwise make getElementById resolve every
+    # repeat to the first one and leave the rest unopenable.
+    key = src if occurrence == 0 else f"{src}#{occurrence}"
+    return "lightbox-" + hashlib.sha1(key.encode("utf-8")).hexdigest()[:10]
 
 
 def _resolve_src(raw_src: str, page, files) -> str:
@@ -136,7 +143,7 @@ def _resolve_src(raw_src: str, page, files) -> str:
     return target_file.url_relative_to(page.file)
 
 
-def _render(body_lines: list, page, files, group_id: str) -> str:
+def _render(body_lines: list, page, files, group_id: str, seen: dict) -> str:
     images = []
     for line in body_lines:
         match = _IMAGE_RE.match(line)
@@ -165,7 +172,9 @@ def _render(body_lines: list, page, files, group_id: str) -> str:
         src = html.escape(_resolve_src(raw_src, page, files))
         caption_html = _render_inline_markdown(alt)
         plain_caption = html.escape(_plain_text(caption_html))
-        uid = _slug(raw_src)
+        occurrence = seen.get(raw_src, 0)
+        seen[raw_src] = occurrence + 1
+        uid = _slug(raw_src, occurrence)
         # data-lightbox-group/-index let lightbox.js find this image's
         # siblings (and their order) to answer "what's next/previous" for
         # the left/right arrow-key navigation, without needing every image
@@ -200,6 +209,10 @@ def on_page_markdown(markdown, page, config, files, **kwargs):
     out = []
     i = 0
     group_count = 0
+    # Shared across every `!!! lightbox` block on this page, so a repeated
+    # image (same src reused in a later block) still gets a distinct id -
+    # see _slug.
+    seen = {}
     while i < len(lines):
         line = lines[i]
         start_match = _START_RE.match(line)
@@ -229,7 +242,7 @@ def on_page_markdown(markdown, page, config, files, **kwargs):
                 f"!!! lightbox in {page.file.src_uri}: block has no "
                 f"indented images under it."
             )
-        rendered = _render(body, page, files, f"lightbox-group-{group_count}")
+        rendered = _render(body, page, files, f"lightbox-group-{group_count}", seen)
         # Re-apply the marker's own indentation to every output line, so the
         # substitution still reads as content of whatever it's nested under
         # (if anything) once Markdown re-parses it.

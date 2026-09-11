@@ -133,24 +133,44 @@ Once the proxy is installed for both LED controllers, all that is left is to con
     !!! lightbox
         ![FiNALE wiring diagram, connector AB on the P1 side: the MAI-60109 harness powers the CENTER LED, ROOF LED (L), ROOF LED (R) and WOOFER LED boards](../resources/images/step-6-lighting/lighting-topper-p1-side.png)
         ![FiNALE wiring diagram, connector BB on the P2 side: the MAI-60109 harness powers the WOOFER LED, ROOF LED (L) and ROOF LED (R) boards, with the SM5P connector unused](../resources/images/step-6-lighting/lighting-topper-p2-side.png)
-        ![8-pin JST-XH connector that connects the woofers and the billboard lighting (in black)](../resources/images/step-6-lighting/led-controller-rs232-disconnect.jpg)
+        ![8-pin JST-SM connector that connects the woofers and the billboard lighting (in black)](../resources/images/step-6-lighting/led-controller-rs232-disconnect.jpg)
 
     On the P1 diagram, there is a `CENTER LED` element that does not appear on the P2 one. It is the lighting for the center of the billboard. On DX, this distinction does not exist, and although the signals are separate, the billboard is always lit the same color on both sides. The simplest solution is therefore to connect pins `A2`, `A5` and `A8` of the P1 connector to pins `C3`, `C5` and `C8` so that the center is lit the same color as the Player 1 side.
 
-We simply need to make our own wiring harness that integrates with the IO4 via a 20-pin JST-RA connector for CN9, and ends in two 8-pin JST-SM connectors for the left and right sides. If you followed the rewiring suggestions in [step 3](step-3-io-board.md), you should already have a 2-pin JST-SM connector wired to the IO4's CN3 connector for the `BILLBOARD LED L RED` and `BILLBOARD LED R RED` signals.
+There are two ways to go about this: we can either create our own wiring harness compatible with the IO4's structure and then connect the LEDs to the IO4 through it, or, if you chose the [conversion PCB]({{IO4_CONVERSION_PCB}}) in [step 3](step-3-io-board.md), simply connect the various LEDs to the right ports on the PCB.
 
-!!! lightbox
-    ![Visual identification of the LED pins on the IO4: the CN9 connector (20-pin JST-RA) carries BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED and BILLBOARD LED L/R BLUE, while BILLBOARD LED L/R RED is on the CN3 connector](../resources/images/step-6-lighting/io4-visual-reprensation-of-led-pins.png)
-    ![Official IO4 wiring diagram centered on the LED pins: CN9 connector (RA20P) for BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED and BILLBOARD LED L/R BLUE, and CN3 connector (RA60P) pins 51-52 for BILLBOARD LED L/R RED](../resources/images/step-6-lighting/io4-wiring-schema-focused-on-leds.png)
+??? example "The easy method - The conversion PCB"
+    This is the simplest method: if you already installed it in [step 3](step-3-io-board.md), all you need to do is connect the connector coming out of the LED controller to the conversion PCB. Don't forget to connect the 12V - **watch the polarity** - and you're done.
 
-So let's make our own wiring harness based on the following diagram. Ideally, it should be long enough to be installed cleanly in the cabinet: 2 meters for the Player 1 side, 1 meter for the Player 2 side. For the 12V, do not use the 12V pin of CN9; instead, wire directly to the cabinet's internal 12V power supply. That way you avoid loading the I/O board unnecessarily.
+    !!! tip "Use the LED power supply"
+        The cabinet natively uses a dedicated 12V power supply for the LEDs; you can reuse it to power the board. **Do not use the 12V you use for the IO4.** Conversely, do not use the LED power supply to power the IO4 - these two circuits must share a common ground but stay separate.
 
-![Wiring harness for the billboard lighting: from the IO4 (CN9 pins 5, 6, 9 and 10, and CN3 pins 51-52 already wired in step 3) and the internal 12V power supply, making two 8-pin JST-SM connectors - P1 side (2 meters, with a bridge from pins 1-4 to 5-8 to also power CENTER LED) and P2 side (1 meter, pins 5-8 unused) - which then plug into the original AB and BB connectors](../resources/images/step-6-lighting/led-topper-harness-en.svg)
+    You will need an extension to connect the existing cable: 1 meter for the Player 2 side, and 2 meters for the Player 1 side. You can easily crimp this cable yourself; you need a `JST-XH 8-position female` pin on one end, and a `JST-SM 8-position female` one on the other.
 
-Once the harness is made, all that is left is to plug it into the IO4, wire the 12V to the internal power supply, and connect the two original 8-pin JST-SM connectors to your new cable. Make sure to test continuity on all your cables before installation to rule out any badly crimped pin.
+    !!! lightbox
+        ![Conversion PCB [maiConvert-IO4]({{IO4_CONVERSION_PCB}}): location of connector J22 (`12V input`, watch the polarity) and connectors J23/J24 (`BILLBOARD LED L`/`R`) where the billboard LED harness connects](../resources/images/step-6-lighting/led-inputs-and-12-on-convertion-pcb.jpg)
+        ![Male 8-position JST-SM wiring harnesses that handle the billboard and woofer LEDs, unplugged from the connector wired to the LED controller on a FiNALE cabinet](../resources/images/step-6-lighting/led-controller-rs232-disconnect.jpg)
 
-!!! tip "The camera LEDs"
-    If you want to connect a player camera, crimp a 2-pin JST-SM connector onto pins 7 and 8 of CN9 right now; you will then be able to simply connect the camera LED cables to it when you reach that step.
+    Note that if you plan to install the cameras in the next step, the conversion PCB will also make life easier for their LEDs, since it already has a ready-made connector for installing them.
+
+??? example "Hand-making a wiring harness"
+    We are going to create our own wiring harness that integrates with the IO4 via a 20-pin JST-RA connector for CN9, and ends in two 8-pin JST-SM connectors for the left and right sides. If you followed the rewiring suggestions in [step 3](step-3-io-board.md), you should already have a 2-pin JST-SM connector wired to the IO4's CN3 connector for the `BILLBOARD LED L RED` and `BILLBOARD LED R RED` signals.
+
+    !!! lightbox
+        ![Visual identification of the LED pins on the IO4: the CN9 connector (20-pin JST-RA) carries BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED and BILLBOARD LED L/R BLUE, while BILLBOARD LED L/R RED is on the CN3 connector](../resources/images/step-6-lighting/io4-visual-reprensation-of-led-pins.png)
+        ![Official IO4 wiring diagram centered on the LED pins: CN9 connector (RA20P) for BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED and BILLBOARD LED L/R BLUE, and CN3 connector (RA60P) pins 51-52 for BILLBOARD LED L/R RED](../resources/images/step-6-lighting/io4-wiring-schema-focused-on-leds.png)
+
+    So let's make our own wiring harness based on the following diagram. Ideally, it should be long enough to be installed cleanly in the cabinet: 2 meters for the Player 1 side, 1 meter for the Player 2 side. For the 12V, do not use the 12V pin of CN9; instead, wire directly to the cabinet's internal 12V power supply. That way you avoid loading the I/O board unnecessarily.
+
+    ![Wiring harness for the billboard lighting: from the IO4 (CN9 pins 5, 6, 9 and 10, and CN3 pins 51-52 already wired in step 3) and the internal 12V power supply, making two 8-pin JST-SM connectors - P1 side (2 meters, with a bridge from pins 1-4 to 5-8 to also power CENTER LED) and P2 side (1 meter, pins 5-8 unused) - which then plug into the original AB and BB connectors](../resources/images/step-6-lighting/led-topper-harness-en.svg)
+
+    Once the harness is made, all that is left is to plug it into the IO4, wire the 12V to the internal power supply, and connect the two original 8-pin JST-SM connectors to your new cable. Make sure to test continuity on all your cables before installation to rule out any badly crimped pin.
+
+    !!! lightbox
+        ![Male 8-position JST-SM wiring harnesses that handle the billboard and woofer LEDs, unplugged from the connector wired to the LED controller on a FiNALE cabinet](../resources/images/step-6-lighting/led-controller-rs232-disconnect.jpg)
+
+    !!! tip "The camera LEDs"
+        If you want to connect a player camera, crimp a 2-pin JST-SM connector onto pins 7 and 8 of CN9 right now; you will then be able to simply connect the camera LED cables to it when you reach that step.
 
 ## In summary
 !!! tldr "The gist"
@@ -162,7 +182,8 @@ Once the harness is made, all that is left is to plug it into the IO4, wire the 
 
     For the billboard and the woofers:
 
-    * Make and install a new wiring harness running from the IO4 and connecting to the cabinet's existing connectors.
+    * Either: connect the cabinet's existing connectors to the [conversion PCB]({{IO4_CONVERSION_PCB}}).
+    * Or: make and install a new wiring harness running from the IO4 and connecting to the cabinet's existing connectors.
 
 ---
 
