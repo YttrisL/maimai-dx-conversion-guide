@@ -21,7 +21,7 @@ A single printed block: the Star Horse 4 Aime reader mounts onto it, and it take
 * **[maimai-aime-reader.stl](../resources/models/spiralglide/maimai-aime-reader.stl)**: Aime reader mount.
 
 !!! lightbox
-    ![The Aime reader mount printed and fitted into the front of the center tower, with the Aime reader in place](../resources/images/spiralglide-resources/maimai-aime-reader-installed.jpg)
+    ![The Aime reader mount printed and fitted into the front of the center tower, with the Aime reader in place. Photo by SpiralGlide](../resources/images/spiralglide-resources/maimai-aime-reader-installed.jpg)
 
 ### QR-code reader mount (DX Pass Reader)
 

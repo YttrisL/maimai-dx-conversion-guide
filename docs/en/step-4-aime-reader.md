@@ -83,7 +83,10 @@ Plug the two cables you have just made into the corresponding ports. Then secure
 
 ## Installation on the cabinet
 
---8<-- "includes/wip-en.md"
+You can use [the 3D model designed by SpiralGlide](spiralglide-resources.md#aime-reader-mount), which mounts on the cabinet using the existing screws for the acrylic glass. It was designed specifically for the Star Horse 4 Aime reader, and fits onto the cabinet non-destructively by reusing the existing holes for Aime readers. It also includes a slot for the 1P SELECT and 2P SELECT buttons so they can be easily fitted.
+
+!!! lightbox
+    ![The Aime reader mount printed and fitted into the front of the center tower, with the Aime reader in place. Photo by SpiralGlide](../resources/images/spiralglide-resources/maimai-aime-reader-installed.jpg)
 
 ## Final step
 

@@ -170,7 +170,10 @@ There are two ways to go about this: we can either create our own wiring harness
         ![Male 8-position JST-SM wiring harnesses that handle the billboard and woofer LEDs, unplugged from the connector wired to the LED controller on a FiNALE cabinet](../resources/images/step-6-lighting/led-controller-rs232-disconnect.jpg)
 
     !!! tip "The camera LEDs"
-        If you want to connect a player camera, crimp a 2-pin JST-SM connector onto pins 7 and 8 of CN9 right now; you will then be able to simply connect the camera LED cables to it when you reach that step.
+        If you want to connect the optional cameras on your cabinet, crimp a few extra connectors right now:
+
+        - A 2-pin JST-SM connector onto pins 7 and 8 of CN9, for easy access to the CAMERA LED WARM and CAMERA LED RED signals respectively.
+        - A 2-pin JST-SM connector onto pins 55 and 56 of CN3, for the 1P CODE READER LED and 2P CODE READER LED signals in that order.
 
 ## In summary
 !!! tldr "The gist"

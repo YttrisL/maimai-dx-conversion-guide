@@ -170,7 +170,10 @@ Il y a deux façons de procéder, nous pouvons soit créer notre propre nappe de
         ![Nappes de câbles en JST-SM 8 positions mâle, gérant les LEDs de l'enseigne lumineuse et des woofers, débranché du connecteur raccordé au contrôleur de LED sur une borne FiNALE](../resources/images/step-6-lighting/led-controller-rs232-disconnect.jpg)
 
     !!! tip "Les LEDs de la caméra"
-        Si vous souhaitez connecter une caméra pour les joueurs, sertissez dès maintenant un connecteur JST-SM 2 broches sur les broches 7 et 8 du CN9, vous pourrez ainsi simplement venir raccorder les câbles des LEDs de la caméra sur celui-ci lorsque vous arriverez à cette étape.
+        Si vous souhaitez connecter les caméras optionnelles sur votre borne, sertissez dès maintenant quelques connecteurs supplémentaires:
+        
+        - JST-SM 2 broches sur les broches 7 et 8 du CN9, pour un accès facile aux signaux CAMERA LED WARM et CAMERA LED RED respectivement.
+        - JST-SM 2 broches sur les broches 55 et 56 du CN3, pour les signaux 1P CODE READER LED et 2P CODE READER LED dans cet ordre.
 
 ## En résumé
 !!! tldr "Les grandes lignes"

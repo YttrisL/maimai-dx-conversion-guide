@@ -21,7 +21,7 @@ Un seul bloc à imprimer, sur lequl s'installe le lecteur Aime de Star Horse 4 e
 * **[maimai-aime-reader.stl](../resources/models/spiralglide/maimai-aime-reader.stl)** : support du lecteur Aime.
 
 !!! lightbox
-    ![Le support du lecteur Aime imprimé et monté dans la façade de la tour centrale, lecteur Aime en place](../resources/images/spiralglide-resources/maimai-aime-reader-installed.jpg)
+    ![Le support du lecteur Aime imprimé et monté dans la façade de la tour centrale, lecteur Aime en place. Photo par SpiralGlide](../resources/images/spiralglide-resources/maimai-aime-reader-installed.jpg)
 
 ### Support du lecteur de QR code (DX Pass Reader)
 

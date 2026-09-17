@@ -84,7 +84,10 @@ Branchez les deux câbles que vous venez de confectionner sur les ports correspo
 
 ## Installation sur la borne
 
---8<-- "includes/wip-fr.md"
+Vous pouvez utiliser [le modèle 3D conçu par SpiralGlide](spiralglide-resources.md#support-du-lecteur-aime) qui s'installe sur la borne grâce aux vis existantes pour la vitre en acrylique. Celui-ci a été conçu spécifiquement pour le lecteur aime provenant de Star Horse 4, et s'intègre de façon non-destructive à la borne en profitant des trous existant pour les lecteurs aime. Celui-ci comprends également un emplacement pour les boutons 1P SELECT et 2P SELECT pour pouvoir les intégrer facilement.
+
+!!! lightbox
+    ![Le support du lecteur Aime imprimé et monté dans la façade de la tour centrale, lecteur Aime en place. Photo par SpiralGlide](../resources/images/spiralglide-resources/maimai-aime-reader-installed.jpg)
 
 ## Dernière étape
 
