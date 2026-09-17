@@ -53,6 +53,8 @@ For the QR-code readers, it's best to get two small modules around 30mm by 25mm;
     - **1P CODE READER LED: CN3 - Pin 55** Common cathode for the R, G, and B signals of the LED strip lighting player 1's reader camera.
     - **2P CODE READER LED: CN3 - Pin 56** Common cathode for the R, G, and B signals of the LED strip lighting player 2's reader camera.
 
+If you followed the suggestion in [step 3](step-3-io-board.md), you already have a connector available for these two signals. As with the previous point, these signals are also available on the conversion PCB.
+
 For the game to identify the QR-code cameras, they must point at a QR-code reading *SDEZ01* on the player 1 side, and *SDEZ02* on the player 2 side. SpiralGlide's 3D model has a cutout sized just right for these two codes. You can print [this PDF](../resources/images/step-7-cameras/codes-for-qr-code-readers.pdf) on A4 paper with a properly calibrated printer to get the QR-codes at the right size to stick in the correct spot.
 
 If you chose the cameras suggested in the shopping list, note that it's possible to adjust their lens to set the focus.
