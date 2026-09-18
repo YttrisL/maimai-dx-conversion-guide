@@ -57,12 +57,12 @@ For each of the parts listed below, the most suitable option is highlighted. Thi
 
 ### **2x**{: .quantity-emphasis } HDX touchscreen
 * Where: [On the HanDevice Discord]({{DISCORD_HANDEVICE}})
-* Info: this is a touchscreen created by an individual to provide a "game-pad" for playing a maimai DX simulator from the comfort of home. Officially, they do not sell a conversion kit, but you can [contact the maker via their Discord](https://discord.com/channels/1336383976721616897/1393421596190048266/1393822351094841375) to ask for an offer covering only the touchscreen **and** the HanDevice IO (their dedicated I/O board) that goes with it. This I/O board has the advantage of exposing a UART serial port that we can use to connect it directly to the ALLS HX2 without needing to convert the signal.
+* Info: this is a touchscreen created by an individual to provide a "game-pad" for playing a maimai DX simulator from the comfort of home. Officially, they do not sell a conversion kit, but you can [contact the maker via their Discord]({{HANDEVICE_DISCORD_CONTACT_MESSAGE}}) to ask for an offer covering only the touchscreen **and** the HanDevice IO (their dedicated I/O board) that goes with it. This I/O board has the advantage of exposing a UART serial port that we can use to connect it directly to the ALLS HX2 without needing to convert the signal.
 
 *Alternative*: **2x**{: .quantity-emphasis } **Yuancon conversion kit - based on an ADX touchscreen**
 
-* Where: [On the Yuancon website](https://yuancon.store/controller/UPDATEKIT)
-* Info: Yuancon offers conversion kits including the touchscreen and eight buttons, letting you convert one side of the cabinet. They are equivalent to the HDX except that their I/O board does not include a serial port: it only communicates over USB-CDC with the PC, which makes connecting it to an ALLS HX2 difficult, since that signal cannot be adapted directly with a simple RS-232 converter. It is nonetheless possible [via a piece of software acting as a proxy](https://gitea.farewell.dev/Yttris/maitouch_rs), running on a Raspberry Pi installed between the ALLS and the ADX, but that introduces a complexity we will not cover in this guide. (If you decide to go with this alternative, you do not need the extra buttons from the next item.)
+* Where: [On the Yuancon website]({{YUANCON_CONVERSION_KIT_PAGE}})
+* Info: Yuancon offers conversion kits including the touchscreen and eight buttons, letting you convert one side of the cabinet. They are equivalent to the HDX except that their I/O board does not include a serial port: it only communicates over USB-CDC with the PC, which makes connecting it to an ALLS HX2 difficult, since that signal cannot be adapted directly with a simple RS-232 converter. It is nonetheless possible [via a piece of software acting as a proxy]({{MAITOUCH_RS_REPO}}), running on a Raspberry Pi installed between the ALLS and the ADX, but that introduces a complexity we will not cover in this guide. (If you decide to go with this alternative, you do not need the extra buttons from the next item.)
 
 </div>
 
@@ -74,7 +74,7 @@ For each of the parts listed below, the most suitable option is highlighted. Thi
 
 *Alternative*: **16x**{: .quantity-emphasis } **"Rabbit" buttons**
 
-* Where: [On the official Taobao shop](https://item.taobao.com/item.htm?id=660013732031&skuId=5395223410039&spm=a1z10.1-c.w4004-24097871292.3.37221e09DSieDY)
+* Where: [On the official Taobao shop]({{TAOBAO_OFFICIAL_SHOP_LISTING}})
 * Info: fairly similar to the official maimai DX buttons, they are an excellent alternative.
 
 !!! failure "Don't buy the counterfeits!"
@@ -86,7 +86,7 @@ For each of the parts listed below, the most suitable option is highlighted. Thi
 
 ### **2x**{: .quantity-emphasis } OBSF-24TR button
 
-* Where: [SmallCab](https://www.smallcab.net/sanwa-obsf-24tr-p-2080.html) or [Jammastar](https://jammastar.com/gb/353-sanwa-obsf-24tr)
+* Where: [SmallCab]({{SMALLCAB_SANWA_OBSF_24TR}}) or [Jammastar]({{JAMMASTAR_SANWA_OBSF_24TR}})
 * Info: the "triangle" sort buttons for Player 1 and Player 2, located in the center of the cabinet above the Aime reader. Typically **blue for Player 1 and red for Player 2**.
 
 *Alternative*: ... literally any other buttons
@@ -126,7 +126,7 @@ Installing the player camera and the QR-code readers is optional, but if you wan
 
 ### **2x**{: .quantity-emphasis } QR-code camera
 
-* Where: Amazon, AliExpress, your favorite shop ([example of a compatible camera](https://www.amazon.com.be/dp/B0DWLGCSJ6))
+* Where: Amazon, AliExpress, your favorite shop ([example of a compatible camera]({{BUY_EXAMPLE_QR_CODE_CAMERA}}))
 * Info: the game is very demanding about the USB camera required for the QR-code readers. It must be UVC, support a resolution of 640x480 at 30 fps in YUY2 format and offer a 50 degree field of view. An external light is also needed to illuminate the area.
 (A suitable LED is listed under [Small supplies](#small-supplies))
 
@@ -158,12 +158,12 @@ You will find these items in your favorite shop (Amazon, AliExpress, ...). These
 
 ### Electronics
 
-* **2x**{: .quantity-emphasis } **TTL to RS-232 converter with female DB-9** ([example](https://www.amazon.com.be/dp/B09L1BB6F8))
+* **2x**{: .quantity-emphasis } **TTL to RS-232 converter with female DB-9** ([example]({{BUY_EXAMPLE_TTL_RS232_CONVERTER}}))
     - To bridge the Player 1 touchscreen I/O and the DB-9 connection on the ALLS.
     - To bridge the Player 2 touchscreen I/O and the DB-9 connection on the ALLS.
-* **2x**{: .quantity-emphasis } **Raspberry Pi Pico** ([example](https://aliexpress.com/item/1005007393927221.html))
+* **2x**{: .quantity-emphasis } **Raspberry Pi Pico** ([example]({{BUY_EXAMPLE_RASPBERRY_PI_PICO}}))
     - To build the LED controller proxies. Prefer a version with the pins pre-soldered onto the Pico if you want a solder-free installation. **Careful: the pins must be soldered facing down, not up.**
-* **2x**{: .quantity-emphasis } **Pico-2CH-RS232** ([example](https://aliexpress.com/item/1005012732708840.html))
+* **2x**{: .quantity-emphasis } **Pico-2CH-RS232** ([example]({{BUY_EXAMPLE_PICO_2CH_RS232}}))
     - To build the LED controller proxies
 
 ### Hookup wire
@@ -173,7 +173,7 @@ You will find these items in your favorite shop (Amazon, AliExpress, ...). These
 
 ### Connectors
 
-* **1x**{: .quantity-emphasis } **Molex Mini-Fit Jr. 2x7-pin female connector** ([example](https://www.amazon.com/dp/B078H8F2YQ))
+* **1x**{: .quantity-emphasis } **Molex Mini-Fit Jr. 2x7-pin female connector** ([example]({{BUY_EXAMPLE_MOLEX_MINI_FIT_JR_CONNECTOR}}))
     - To cleanly connect the power connector previously wired to the RingEdge 2.
 * **30x**{: .quantity-emphasis } **Molex Mini-Fit Jr. female crimp pin**
     - To go with the previous connector.

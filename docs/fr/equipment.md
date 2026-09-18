@@ -57,12 +57,12 @@ Pour chacune des pièces listées ci-dessous, l'option la plus adaptée est mise
 
 ### **2x**{: .quantity-emphasis } Dalle tactile HDX
 * Où : [Sur le discord HanDevice]({{DISCORD_HANDEVICE}})
-* Info : Il s'agit d'une dalle tactile créée par un particulier pour fournir un « game-pad » permettant de jouer à un simulateur de maimai DX dans le confort de son domicile. Officiellement, ils ne vendent pas de kit de conversion, mais il est possible de [contacter le fabricant via son discord](https://discord.com/channels/1336383976721616897/1393421596190048266/1393822351094841375) pour leur demander une offre portant uniquement sur la dalle tactile **et** la HanDevice IO (leur carte I/O dédiée) qui va avec. Cette carte I/O a l'avantage d'exposer un port série UART que nous pouvons exploiter pour la connecter directement au ALLS HX2 sans avoir besoin de transformer le signal.
+* Info : Il s'agit d'une dalle tactile créée par un particulier pour fournir un « game-pad » permettant de jouer à un simulateur de maimai DX dans le confort de son domicile. Officiellement, ils ne vendent pas de kit de conversion, mais il est possible de [contacter le fabricant via son discord]({{HANDEVICE_DISCORD_CONTACT_MESSAGE}}) pour leur demander une offre portant uniquement sur la dalle tactile **et** la HanDevice IO (leur carte I/O dédiée) qui va avec. Cette carte I/O a l'avantage d'exposer un port série UART que nous pouvons exploiter pour la connecter directement au ALLS HX2 sans avoir besoin de transformer le signal.
 
 *Alternative* : **2x**{: .quantity-emphasis } **Kit de conversion Yuancon - à base d'une dalle ADX**
 
-* Où : [Sur le site de yuancon](https://yuancon.store/controller/UPDATEKIT)
-* Info : Yuancon propose des kits de conversion incluant la dalle tactile et huit boutons, permettant de convertir un côté de la borne. Ils sont équivalents aux HDX à ceci près que leur carte I/O n'inclut pas de port série : elle communique uniquement en USB-CDC avec le PC, ce qui rend sa connexion à un ALLS HX2 difficile, puisque ce signal ne peut pas être adapté directement via un simple convertisseur RS-232. C'est toutefois possible [via un logiciel faisant office de proxy](https://gitea.farewell.dev/Yttris/maitouch_rs), qui tourne sur un Raspberry Pi installé entre le ALLS et l'ADX, mais cela introduit une complexité que nous ne détaillerons pas dans ce guide. (Si vous décidez de partir sur cette alternative, vous n'avez pas besoin des boutons supplémentaires du point suivant.)
+* Où : [Sur le site de yuancon]({{YUANCON_CONVERSION_KIT_PAGE}})
+* Info : Yuancon propose des kits de conversion incluant la dalle tactile et huit boutons, permettant de convertir un côté de la borne. Ils sont équivalents aux HDX à ceci près que leur carte I/O n'inclut pas de port série : elle communique uniquement en USB-CDC avec le PC, ce qui rend sa connexion à un ALLS HX2 difficile, puisque ce signal ne peut pas être adapté directement via un simple convertisseur RS-232. C'est toutefois possible [via un logiciel faisant office de proxy]({{MAITOUCH_RS_REPO}}), qui tourne sur un Raspberry Pi installé entre le ALLS et l'ADX, mais cela introduit une complexité que nous ne détaillerons pas dans ce guide. (Si vous décidez de partir sur cette alternative, vous n'avez pas besoin des boutons supplémentaires du point suivant.)
 
 </div>
 
@@ -74,7 +74,7 @@ Pour chacune des pièces listées ci-dessous, l'option la plus adaptée est mise
 
 *Alternative* : **16x**{: .quantity-emphasis } **Boutons "Rabbit"**
 
-* Où : [Sur la boutique Taobao officielle](https://item.taobao.com/item.htm?id=660013732031&skuId=5395223410039&spm=a1z10.1-c.w4004-24097871292.3.37221e09DSieDY)
+* Où : [Sur la boutique Taobao officielle]({{TAOBAO_OFFICIAL_SHOP_LISTING}})
 * Info : Assez similaires aux boutons officiels de maimai DX, ils représentent une excellente alternative.
 
 !!! failure "N'achetez pas les contrefaçons !"
@@ -86,7 +86,7 @@ Pour chacune des pièces listées ci-dessous, l'option la plus adaptée est mise
 
 ### **2x**{: .quantity-emphasis } Bouton OBSF-24TR
 
-* Où : [SmallCab](https://www.smallcab.net/sanwa-obsf-24tr-p-2080.html) ou [Jammastar](https://jammastar.com/gb/353-sanwa-obsf-24tr)
+* Où : [SmallCab]({{SMALLCAB_SANWA_OBSF_24TR}}) ou [Jammastar]({{JAMMASTAR_SANWA_OBSF_24TR}})
 * Info : Les boutons de tri "triangle" du Joueur 1 et du Joueur 2, situés au centre de la borne au-dessus du lecteur Aime. Typiquement **bleu pour le Joueur 1 et rouge pour le Joueur 2**.
 
 *Alternative* : ... Littéralement n'importe quels autres boutons
@@ -126,7 +126,7 @@ L'installation de la caméra des joueurs et des lecteurs de QR-code est optionne
 
 ### **2x**{: .quantity-emphasis } Caméra pour QR-Code
 
-* Où : Amazon, AliExpress, votre boutique favorite ([exemple de caméra compatible](https://www.amazon.com.be/dp/B0DWLGCSJ6))
+* Où : Amazon, AliExpress, votre boutique favorite ([exemple de caméra compatible]({{BUY_EXAMPLE_QR_CODE_CAMERA}}))
 * Info : Le jeu est très exigeant sur la caméra USB requise pour les lecteurs de QR-Code. Celle-ci doit être UVC, supporter une résolution de 640x480 en 30 fps au format YUY2 et offrir un angle de vue de 50°. Une lumière externe est par ailleurs nécessaire pour éclairer la zone.  
 (Une LED adaptée est proposée dans les [Petites fournitures](#petites-fournitures))
 
@@ -158,12 +158,12 @@ Vous trouverez ces articles dans votre boutique préférée (Amazon, AliExpress,
 
 ### Électronique
 
-* **2x**{: .quantity-emphasis } **Convertisseur TTL vers RS-232 avec DB-9 femelle** ([exemple](https://www.amazon.com.be/dp/B09L1BB6F8)) 
+* **2x**{: .quantity-emphasis } **Convertisseur TTL vers RS-232 avec DB-9 femelle** ([exemple]({{BUY_EXAMPLE_TTL_RS232_CONVERTER}})) 
     - Pour faire le lien entre l'IO de la dalle tactile du joueur 1 et la connexion DB-9 du ALLS.
     - Pour faire le lien entre l'IO de la dalle tactile du joueur 2 et la connexion DB-9 du ALLS.
-* **2x**{: .quantity-emphasis } **Raspberry Pi Pico** ([exemple](https://aliexpress.com/item/1005007393927221.html)) 
+* **2x**{: .quantity-emphasis } **Raspberry Pi Pico** ([exemple]({{BUY_EXAMPLE_RASPBERRY_PI_PICO}})) 
     - Pour fabriquer les proxy des contrôleurs de LEDs. Préférez une version avec les broches pré-soudés sur le Pico si vous souhaitez une installation sans soudure. **Attention, les broches doivent être soudées vers les bas, pas vers le haut.**
-* **2x**{: .quantity-emphasis } **Pico-2CH-RS232** ([exemple](https://aliexpress.com/item/1005012732708840.html)) 
+* **2x**{: .quantity-emphasis } **Pico-2CH-RS232** ([exemple]({{BUY_EXAMPLE_PICO_2CH_RS232}})) 
     - Pour fabriquer les proxy des contrôleurs de LEDs
 
 
@@ -175,7 +175,7 @@ Vous trouverez ces articles dans votre boutique préférée (Amazon, AliExpress,
 
 ### Connecteurs
 
-* **1x**{: .quantity-emphasis } **Connecteur Molex Mini-Fit Jr. 2x7 broches femelle** ([exemple](https://www.amazon.com/dp/B078H8F2YQ)) 
+* **1x**{: .quantity-emphasis } **Connecteur Molex Mini-Fit Jr. 2x7 broches femelle** ([exemple]({{BUY_EXAMPLE_MOLEX_MINI_FIT_JR_CONNECTOR}})) 
     - Pour raccorder proprement le connecteur d'alimentation préalablement raccordé au RingEdge2.
 * **30x**{: .quantity-emphasis } **Broche Molex Mini-Fit Jr. femelle à sertir** 
     - Pour aller avec le connecteur précédent.

@@ -12,7 +12,7 @@ The FiNALE Aime readers are not compatible with DX. You need to install a new ve
     FiNALE uses a system based on two previous-generation Aime readers, chained to each other. The top reader reads the card for the left player, and the bottom one for the right player. On DX, there is only a single reader, and when a card is scanned, the profile appears on both screens. The owner of the profile can then simply confirm the login on their screen; the second player is then free to scan their own card. The technology used is also completely different. It is impossible to reuse a FiNALE Aime reader.
 
     !!! info "aic_pico"
-        It is technically possible to use an [aic_pico](https://github.com/whowechina/aic_pico), an open-source project that reproduces the behavior of a real Aime reader transparently for the game. These are much cheaper to produce than getting a real Aime reader, but would need a good deal of tinkering to be connected to the corresponding DB9 port on the ALLS.
+        It is technically possible to use an [aic_pico]({{AIC_PICO_REPO}}), an open-source project that reproduces the behavior of a real Aime reader transparently for the game. These are much cheaper to produce than getting a real Aime reader, but would need a good deal of tinkering to be connected to the corresponding DB9 port on the ALLS.
 
     In any case, last-generation Aime readers are not that rare, and often come as a combo with the VFD that we also need. The particularity of this last generation is that it is technically compatible with electronic payment; however, even in Japan, that feature is almost never used. Operators typically prefer to install their own payment terminal on the cabinet, which is more flexible and offers more payment options.
 

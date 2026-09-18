@@ -23,10 +23,10 @@ This is where **proxy buying services** come in. These are companies that have a
 
 There are several services of this kind, among them:
 
-* **[Neokyo](https://neokyo.com/)**
-* **[Zenmarket](https://zenmarket.jp/)**
-* **[FROM JAPAN](https://www.fromjapan.co.jp/)**
-* **[Buyee](https://buyee.jp/)**: one of the best known and oldest, but see the warning below.
+* **[Neokyo]({{NEOKYO}})**
+* **[Zenmarket]({{ZENMARKET}})**
+* **[FROM JAPAN]({{FROM_JAPAN}})**
+* **[Buyee]({{BUYEE}})**: one of the best known and oldest, but see the warning below.
 
 !!! warning "Ban on shipping electronic parts on Buyee"
     Buyee refuses to ship internationally any item containing a lithium cell or battery, in application of air regulations on the transport of dangerous goods. However, some of the parts we are looking for (for example the ALLS HX2) carry a small lithium coin cell to power their internal clock (RTC) even when powered off. In practice, this therefore amounts to a shipping ban.

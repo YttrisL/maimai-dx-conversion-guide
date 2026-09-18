@@ -23,10 +23,10 @@ C'est là qu'interviennent les **services de proxy d'achat**. Il s'agit d'entrep
 
 Il existe plusieurs services de ce type, parmi lesquels :
 
-* **[Neokyo](https://neokyo.com/)**
-* **[Zenmarket](https://zenmarket.jp/)**
-* **[FROM JAPAN](https://www.fromjapan.co.jp/)**
-* **[Buyee](https://buyee.jp/)** : l'un des plus connus et des plus anciens, mais voyez l'avertissement ci-dessous.
+* **[Neokyo]({{NEOKYO}})**
+* **[Zenmarket]({{ZENMARKET}})**
+* **[FROM JAPAN]({{FROM_JAPAN}})**
+* **[Buyee]({{BUYEE}})** : l'un des plus connus et des plus anciens, mais voyez l'avertissement ci-dessous.
 
 !!! warning "Interdiction d'envoi des pièces électroniques sur Buyee"
     Buyee refuse d'expédier à l'international tout article contenant une pile ou une batterie au lithium, en application des réglementations aériennes sur le transport de matières dangereuses. Or, certaines des pièces que nous recherchons (par exemple le ALLS HX2) embarquent une petite pile bouton au lithium pour alimenter leur horloge interne (RTC) même hors tension. Dans les faits, cela revient donc à une interdiction d'envoi.

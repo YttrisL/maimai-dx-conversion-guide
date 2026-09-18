@@ -61,19 +61,19 @@ We therefore need to find a way to modify the identifier sent by the two LED con
 
 **The solution:** a simple Raspberry Pi Pico, programmed with a homemade firmware, that installs itself between the LED controller and its RS-232 to USB adapter to modify only the message where the controller sends its identifier. All other messages are passed through unchanged in both directions.
 
-The software is already all set: it is [mailight_pico](https://gitea.farewell.dev/Yttris/mailight_pico), a port of *mailight_rs* by 4ndr3w on GitHub. All that is left is to build the proxy.
+The software is already all set: it is [mailight_pico]({{MAILIGHT_PICO_REPO}}), a port of *mailight_rs* by 4ndr3w on GitHub. All that is left is to build the proxy.
 
 ### Building a proxy
 
 !!! info "Two of them"
     You will need two proxies, one for each LED controller. So do this operation twice.
 
-Start by installing the mailight_pico firmware on the Raspberry Pi Pico. If you have never installed firmware on a Pico, it is extremely simple. [All the instructions are on the project page](https://gitea.farewell.dev/Yttris/mailight_pico#3-installing-the-firmware).
+Start by installing the mailight_pico firmware on the Raspberry Pi Pico. If you have never installed firmware on a Pico, it is extremely simple. [All the instructions are on the project page]({{MAILIGHT_PICO_FIRMWARE_INSTRUCTIONS}}).
 
 Next you need to assemble your Raspberry Pi Pico with the `Pico-2CH-RS232`. Watch the orientation; the markings on the underside of the `Pico-2CH-RS232` indicate the orientation the Pico's USB port is supposed to be in.
 
 !!! lightbox
-    ![The `Pico-2CH-RS232` module, image from the [official Waveshare wiki page](https://www.waveshare.com/wiki/Pico-2CH-RS232)](../resources/images/step-6-lighting/pico-2ch-rs232.png)
+    ![The `Pico-2CH-RS232` module, image from the [official Waveshare wiki page]({{WAVESHARE_PICO_2CH_RS232_WIKI}})](../resources/images/step-6-lighting/pico-2ch-rs232.png)
 
 !!! warning "Watch the orientation"
     Make sure your assembly matches the image. If your Raspberry Pi Pico has, for example, its USB port between the two PCBs rather than on the outside as in the image, it means the pins of your Pico are soldered the wrong way round. **Do not try to power it on!** You would only manage to damage the `Pico-2CH-RS232`. You must either re-solder the pins the right way round yourself, or get a new, correctly assembled Pico.

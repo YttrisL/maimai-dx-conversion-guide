@@ -61,19 +61,19 @@ Nous devons donc trouver un moyen de modifier l'identifiant envoyé par les deux
 
 **La solution :** Un simple Raspberry Pi Pico, programmé avec un firmware maison, qui va venir s'installer entre le contrôleur de LEDs et son adaptateur RS-232 vers USB pour modifier uniquement le message où celui-ci envoie son identifiant. Tous les autres messages seront transférés à l'identique dans un sens comme dans l'autre.
 
-Le logiciel est déjà tout prêt, il s'agit de [mailight_pico](https://gitea.farewell.dev/Yttris/mailight_pico), un port de *mailight_rs* par 4ndr3w sur GitHub. Il nous reste à fabriquer le proxy.
+Le logiciel est déjà tout prêt, il s'agit de [mailight_pico]({{MAILIGHT_PICO_REPO}}), un port de *mailight_rs* par 4ndr3w sur GitHub. Il nous reste à fabriquer le proxy.
 
 ### Fabriquer un proxy
 
 !!! info "En double exemplaire"
     Il vous faudra deux proxys, un pour chaque contrôleur de LEDs. Réalisez donc cette opération en deux exemplaires.
 
-Commencez par installer le firmware mailight_pico sur le Raspberry Pi Pico. Si vous n'avez jamais installé de firmware sur un Pico, c'est extrêmement simple. [Toutes les instructions sont sur la page du projet](https://gitea.farewell.dev/Yttris/mailight_pico#3-installing-the-firmware).
+Commencez par installer le firmware mailight_pico sur le Raspberry Pi Pico. Si vous n'avez jamais installé de firmware sur un Pico, c'est extrêmement simple. [Toutes les instructions sont sur la page du projet]({{MAILIGHT_PICO_FIRMWARE_INSTRUCTIONS}}).
 
 Ensuite vous devez assembler votre Raspberry Pi Pico avec le `Pico-2CH-RS232`. Attention au sens, les inscriptions sur le dessous du `Pico-2CH-RS232` indiquent l'orientation dans laquelle le port USB du Pico est censé se trouver.
 
 !!! lightbox
-    ![Le module `Pico-2CH-RS232`, image tirée de la [page wiki officielle de Waveshare](https://www.waveshare.com/wiki/Pico-2CH-RS232)](../resources/images/step-6-lighting/pico-2ch-rs232.png)
+    ![Le module `Pico-2CH-RS232`, image tirée de la [page wiki officielle de Waveshare]({{WAVESHARE_PICO_2CH_RS232_WIKI}})](../resources/images/step-6-lighting/pico-2ch-rs232.png)
 
 !!! warning "Attention au sens"
     Assurez-vous que votre montage correspond bien à l'image. Si votre Raspberry Pi Pico a, par exemple, son port USB entre les deux PCB plutôt qu'à l'extérieur comme sur l'image, cela veut dire que les broches de votre Pico sont soudées dans le mauvais sens. **N'essayez pas de l'allumer !** Vous ne parviendriez qu'à endommager le `Pico-2CH-RS232`. Vous devez soit ressouder les broches dans le bon sens vous-même, soit vous procurer un nouveau Pico correctement assemblé.

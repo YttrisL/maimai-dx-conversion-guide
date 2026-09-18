@@ -5,10 +5,35 @@
 # One flat YAML mapping of UPPER_SNAKE_CASE name -> value. Reference a
 # constant from a Markdown page as {{NAME}}, e.g.:
 #
-#   [Sur le discord HanDevice]({{DISCORD_HANDEVICE}})
+#   [HanDevice's Discord]({{DISCORD_HANDEVICE}})
 #
 # See hooks/link_constants.py for how the substitution works and what
 # happens if a page references a name that isn't defined here.
 
+ADX_CONTROLLER_PURCHASING_GUIDE: https://github.com/maimai-dx/ADX-Controller-Guide/blob/master/document/Purchasing.md
+AIC_PICO_REPO: https://github.com/whowechina/aic_pico
+ARCADE_DOCS_ALLS_REFERENCES: https://gitea.farewell.dev/Cool_Tools/arcade-docs/src/branch/main/sega/boards.md
+ARCADE_DOCS_ALLS_VARIANTS: https://gitea.farewell.dev/Cool_Tools/arcade-docs/src/branch/main/sega/boards.md#alls
+BUYEE: https://buyee.jp/
+BUY_EXAMPLE_MOLEX_MINI_FIT_JR_CONNECTOR: https://www.amazon.com/dp/B078H8F2YQ
+BUY_EXAMPLE_PICO_2CH_RS232: https://aliexpress.com/item/1005012732708840.html
+BUY_EXAMPLE_QR_CODE_CAMERA: https://www.amazon.com.be/dp/B0DWLGCSJ6
+BUY_EXAMPLE_RASPBERRY_PI_PICO: https://aliexpress.com/item/1005007393927221.html
+BUY_EXAMPLE_TTL_RS232_CONVERTER: https://www.amazon.com.be/dp/B09L1BB6F8
 DISCORD_HANDEVICE: https://discord.gg/xABCFMWmTK
+FROM_JAPAN: https://www.fromjapan.co.jp/
+HANDEVICE_DISCORD_CONTACT_MESSAGE: https://discord.com/channels/1336383976721616897/1393421596190048266/1393822351094841375
+HANDEVICE_OFFICIAL_DOCUMENTATION: https://handevice.notion.site/
 IO4_CONVERSION_PCB: https://gitea.farewell.dev/Yttris/maiconvert-io4-breakout-board
+JAMMASTAR_SANWA_OBSF_24TR: https://jammastar.com/gb/353-sanwa-obsf-24tr
+MAILIGHT_PICO_FIRMWARE_INSTRUCTIONS: https://gitea.farewell.dev/Yttris/mailight_pico#3-installing-the-firmware
+MAILIGHT_PICO_REPO: https://gitea.farewell.dev/Yttris/mailight_pico
+MAITOUCH_RS_REPO: https://gitea.farewell.dev/Yttris/maitouch_rs
+NEOKYO: https://neokyo.com/
+REDIVE_WORLD_ALLS_IMAGING_GUIDE: https://redive.world/guide/alls-image.html
+SHIKINO_PLAYER_CAMERA_REFERENCE: https://www.shikino.co.jp/eng/products/product-kbcr-s03mu.php
+SMALLCAB_SANWA_OBSF_24TR: https://www.smallcab.net/sanwa-obsf-24tr-p-2080.html
+TAOBAO_OFFICIAL_SHOP_LISTING: https://item.taobao.com/item.htm?id=660013732031&skuId=5395223410039&spm=a1z10.1-c.w4004-24097871292.3.37221e09DSieDY
+WAVESHARE_PICO_2CH_RS232_WIKI: https://www.waveshare.com/wiki/Pico-2CH-RS232
+YUANCON_CONVERSION_KIT_PAGE: https://yuancon.store/controller/UPDATEKIT
+ZENMARKET: https://zenmarket.jp/

@@ -11,7 +11,7 @@ At this point, only one feature still sets our conversion apart from a real *DX*
 ??? note "Click here for the technical explanation"
     There are a total of 3 cameras in a real *DX*: one points at the players, and two act as QR-code readers for the *DX Pass*.
 
-    - The player camera: a simple USB UVC camera with a resolution of 1280x960 and a 95° HFOV. [[reference]](https://www.shikino.co.jp/eng/products/product-kbcr-s03mu.php)
+    - The player camera: a simple USB UVC camera with a resolution of 1280x960 and a 95° HFOV. [[reference]]({{SHIKINO_PLAYER_CAMERA_REFERENCE}})
     - The QR-code reader cameras: two USB UVC cameras, recording at 640x480 with a 50° FOV.
 
     !!! info "The DX Pass"

@@ -8,7 +8,7 @@ So you don't get lost in the technical terms:
 
 ## The PC and cabinet boards
 
-* **ALLS (MX2 / HX2):** the name of the standard computer Sega uses to run its recent games. It replaces FiNALE's old PC (called the RingEdge 2). It comes [in several variants (UX, HX, UX2, HX2, etc.)](https://gitea.farewell.dev/Cool_Tools/arcade-docs/src/branch/main/sega/boards.md#alls), each with its own hardware specifications. The model that goes with maimai DX is the ALLS HX2.
+* **ALLS (MX2 / HX2):** the name of the standard computer Sega uses to run its recent games. It replaces FiNALE's old PC (called the RingEdge 2). It comes [in several variants (UX, HX, UX2, HX2, etc.)]({{ARCADE_DOCS_ALLS_VARIANTS}}), each with its own hardware specifications. The model that goes with maimai DX is the ALLS HX2.
 * **I/O board:** the electronic board (a [PCB](#wiring-and-electronics)) that bridges the PC and the cabinet. It picks up button presses. On *maimai FiNALE*, it is a **Sega IO3**. For *DX*, it must be replaced with a **Sega IO4**. Most I/O boards communicate with the system using the [JVS](#communication-and-protocols) protocol.
 * **Aime / VFD:** the contactless (NFC) card reader players use to save their profile. The *VFD* (Vacuum Fluorescent Display) is the small retro-style display (often green or blue) that shows the credit balance or other text information.
 * **Dip switches:** a row of tiny miniature switches mounted directly on an electronic board (like the IO4), which let you configure certain hardware settings without software, simply by flipping them to "ON" or "OFF" by hand. It is also a good visual way to recognize an IO4: it has them on the top of its PCB, unlike the IO3, which looks very similar.

@@ -11,7 +11,7 @@ title: "📷 7 - Caméras (Optionnel)"
 ??? note "Cliquez ici pour l'explication technique"
     Il y a un total de 3 caméras dans une véritable *DX*, une est pointée vers les joueurs et deux servent de lecteur de QR-Code pour les *DX Pass*.
 
-    - La caméra des joueurs : Une simple caméra USB UVC d'une résolution de 1280x960 avec un HFOV de 95°. [[référence]](https://www.shikino.co.jp/eng/products/product-kbcr-s03mu.php)
+    - La caméra des joueurs : Une simple caméra USB UVC d'une résolution de 1280x960 avec un HFOV de 95°. [[référence]]({{SHIKINO_PLAYER_CAMERA_REFERENCE}})
     - Les caméras pour les lecteurs de QR-code : Deux caméras USB UVC, filmant en résolution 640x480 avec un FOV de 50°. 
 
     !!! info "Les DX Pass"
