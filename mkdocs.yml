@@ -25,6 +25,8 @@ hooks:
 theme:
   name: material
   language: en
+  favicon: resources/images/favicon.svg
+  logo: resources/images/favicon.svg
   icon:
     repo: fontawesome/brands/github
   palette:

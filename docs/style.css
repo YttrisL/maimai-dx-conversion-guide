@@ -99,6 +99,14 @@ hr {
 /* Header logo
    ========================================================================== */
 
+/* Site brand mark in the top nav bar (top-left, next to the title).
+   Material's default is a modest 1.2rem (~24px) - bump it up so the icon
+   actually reads at a glance instead of shrinking to a dot. */
+.md-header__button.md-logo img {
+    height: 2rem;
+    width: 2rem;
+}
+
 .header-logo {
     display: block;
     max-height: 150px;
