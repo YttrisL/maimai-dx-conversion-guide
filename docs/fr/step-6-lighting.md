@@ -61,7 +61,7 @@ Nous devons donc trouver un moyen de modifier l'identifiant envoyé par les deux
 
 **La solution :** Un simple Raspberry Pi Pico, programmé avec un firmware maison, qui va venir s'installer entre le contrôleur de LEDs et son adaptateur RS-232 vers USB pour modifier uniquement le message où celui-ci envoie son identifiant. Tous les autres messages seront transférés à l'identique dans un sens comme dans l'autre.
 
-Le logiciel est déjà tout prêt, il s'agit de [mailight_pico]({{MAILIGHT_PICO_REPO}}), un port de *mailight_rs* par 4ndr3w sur GitHub. Il nous reste à fabriquer le proxy.
+Le logiciel est déjà tout prêt, il s'agit de [mailight_pico]({{MAILIGHT_PICO_REPO}}), un port de *[mailight_rs]({{MAILIGHT_RS_REPO}})* par [4ndr3w]({{GITHUB_4NDR3W}}) sur GitHub. Il nous reste à fabriquer le proxy.
 
 ### Fabriquer un proxy
 

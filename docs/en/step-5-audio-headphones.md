@@ -8,12 +8,12 @@ title: "🎧 5 - Headphones & audio"
 
 The *DX* cabinet offers headphone jacks for players, which did not exist on *FiNALE*.
 
-The *ALLS HX* computer has 4 regular audio outputs (jack type). Three are on the main motherboard, and one on an expansion card *([manual](../resources/pdfs/maimai-dx-manual-full.pdf), page 128)*.
+The *ALLS HX* computer has 4 regular audio outputs (jack type). Three are on the main motherboard, and one on an expansion card *([manual](../resources/pdfs/maimai-dx-instruction-manual-full.pdf), page 128)*.
 
 !!! warning
     The computer only outputs a "pre-amplified" sound (very weak). In a real *DX* cabinet, this sound goes through a big dedicated amplifier. You can reuse the *FiNALE* amplifier for the main speakers, but it will not handle the new headphone jacks.
 
-Here is what the computer's audio ports correspond to: *(see [manual](../resources/pdfs/maimai-dx-manual-full.pdf), page 193)*
+Here is what the computer's audio ports correspond to: *(see [manual](../resources/pdfs/maimai-dx-instruction-manual-full.pdf), page 193)*
 
 * **FRONT:** output for the Player 1 speakers
 * **REAR:** output for the Player 2 speakers

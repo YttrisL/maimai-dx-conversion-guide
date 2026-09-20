@@ -10,7 +10,7 @@ _(Click a plate to open it at full resolution in a new tab. Each plate is preced
 
 ## maimai DX manual
 
-Chapter *22 総合配線図* ("general wiring diagram"), pages 193 to 196 of the [maimai DX manual](../resources/pdfs/maimai-dx-manual-full.pdf).
+Chapter *22 総合配線図* ("general wiring diagram"), pages 193 to 196 of the [maimai DX manual](../resources/pdfs/maimai-dx-instruction-manual-full.pdf).
 
 ### Plate 1/4 - Power, *ALLS* PC, amp and player screens
 

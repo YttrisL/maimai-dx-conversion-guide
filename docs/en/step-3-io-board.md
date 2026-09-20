@@ -8,7 +8,7 @@ title: "🔌 3 - I/O board & buttons"
 
 To run *DX*, you need to replace the old I/O board with the new **IO4** model. Fortunately, the wiring stays broadly the same, with a few exceptions.
 
-*(Note: the full wiring detail for the IO4 board is on page 194 of the [manual](../resources/pdfs/maimai-dx-manual-full.pdf), bottom right)*
+*(Note: the full wiring detail for the IO4 board is on page 194 of the [manual](../resources/pdfs/maimai-dx-instruction-manual-full.pdf), bottom right)*
 
 ## 1. The Coin Locker
 
@@ -42,7 +42,7 @@ If you do not want to install the billboard LEDs, you can skip this step.
 
 ## 4. USB connection of the IO4 board
 
-The new IO4 board communicates with the *ALLS* PC over a simple USB cable. However, **the choice of USB port on the computer is defined in the [manual](../resources/pdfs/maimai-dx-manual-full.pdf)** *(see page 128 of the manual)*. If you look at the *ALLS* PC lying flat (horizontal), you must plug the IO4 cable into the USB port located **at the bottom left**.
+The new IO4 board communicates with the *ALLS* PC over a simple USB cable. However, **the choice of USB port on the computer is defined in the [manual](../resources/pdfs/maimai-dx-instruction-manual-full.pdf)** *(see page 128 of the manual)*. If you look at the *ALLS* PC lying flat (horizontal), you must plug the IO4 cable into the USB port located **at the bottom left**.
 
 ---
 

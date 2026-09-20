@@ -8,7 +8,7 @@ title: "🔌 3 - Carte I/O et boutons"
 
 Pour faire tourner *DX*, il est nécessaire de remplacer l'ancienne carte I/O par le nouveau modèle **IO4**. Heureusement, le câblage reste globalement le même, à quelques exceptions près.
 
-*(Note : Le détail complet du câblage de la carte IO4 se trouve à la page 194 du [manuel](../resources/pdfs/maimai-dx-manual-full.pdf), en bas à droite)*
+*(Note : Le détail complet du câblage de la carte IO4 se trouve à la page 194 du [manuel](../resources/pdfs/maimai-dx-instruction-manual-full.pdf), en bas à droite)*
 
 ## 1. Le Bloqueur de Pièces (Coin Locker)
 
@@ -42,7 +42,7 @@ Si vous ne souhaitez pas installer les LEDs de l'enseigne lumineuse, vous pouvez
 
 ## 4. Branchement USB de la carte IO4
 
-La nouvelle carte IO4 communique avec le PC *ALLS* via un simple câble USB. Cependant, **le choix du port USB sur l'ordinateur est défini dans le [manuel](../resources/pdfs/maimai-dx-manual-full.pdf)** *(Voir page 128 du manuel)*. Si vous regardez le PC *ALLS* posé à plat (à l'horizontale), vous devez brancher le câble de l'IO4 sur le port USB situé **en bas à gauche**.
+La nouvelle carte IO4 communique avec le PC *ALLS* via un simple câble USB. Cependant, **le choix du port USB sur l'ordinateur est défini dans le [manuel](../resources/pdfs/maimai-dx-instruction-manual-full.pdf)** *(Voir page 128 du manuel)*. Si vous regardez le PC *ALLS* posé à plat (à l'horizontale), vous devez brancher le câble de l'IO4 sur le port USB situé **en bas à gauche**.
 
 ---
 

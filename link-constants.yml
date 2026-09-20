@@ -22,12 +22,14 @@ BUY_EXAMPLE_RASPBERRY_PI_PICO: https://aliexpress.com/item/1005007393927221.html
 BUY_EXAMPLE_TTL_RS232_CONVERTER: https://www.amazon.com.be/dp/B09L1BB6F8
 DISCORD_HANDEVICE: https://discord.gg/xABCFMWmTK
 FROM_JAPAN: https://www.fromjapan.co.jp/
+GITHUB_4NDR3W: https://github.com/4ndr3w
 HANDEVICE_DISCORD_CONTACT_MESSAGE: https://discord.com/channels/1336383976721616897/1393421596190048266/1393822351094841375
 HANDEVICE_OFFICIAL_DOCUMENTATION: https://handevice.notion.site/
 IO4_CONVERSION_PCB: https://gitea.farewell.dev/Yttris/maiconvert-io4-breakout-board
 JAMMASTAR_SANWA_OBSF_24TR: https://jammastar.com/gb/353-sanwa-obsf-24tr
 MAILIGHT_PICO_FIRMWARE_INSTRUCTIONS: https://gitea.farewell.dev/Yttris/mailight_pico#3-installing-the-firmware
 MAILIGHT_PICO_REPO: https://gitea.farewell.dev/Yttris/mailight_pico
+MAILIGHT_RS_REPO: https://github.com/4ndr3w/mailight_rs
 MAITOUCH_RS_REPO: https://gitea.farewell.dev/Yttris/maitouch_rs
 NEOKYO: https://neokyo.com/
 REDIVE_WORLD_ALLS_IMAGING_GUIDE: https://redive.world/guide/alls-image.html

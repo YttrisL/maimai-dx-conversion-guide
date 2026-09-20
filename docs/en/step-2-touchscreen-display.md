@@ -10,9 +10,9 @@ Let's start by installing the display and the touchscreens.
 
 ## The video connections
 
-The game is programmed to send video to the two screens in a very specific way. The order must be respected. *(Reference: official [manual](../resources/pdfs/maimai-dx-manual-full.pdf) for the DX cabinet, page 128)*
+The game is programmed to send video to the two screens in a very specific way. The order must be respected. *(Reference: official [manual](../resources/pdfs/maimai-dx-instruction-manual-full.pdf) for the DX cabinet, page 128)*
 
-* **Player 1 (P1):** can be connected to the **HDMI** or **DisplayPort** port (the [official manual](../resources/pdfs/maimai-dx-manual-full.pdf) recommends HDMI).
+* **Player 1 (P1):** can be connected to the **HDMI** or **DisplayPort** port (the [official manual](../resources/pdfs/maimai-dx-instruction-manual-full.pdf) recommends HDMI).
 * **Player 2 (P2):** must be connected to the **DVI** port.
 
 There is, however, a slight native difference between the screens of a *FiNALE* and a *DX*. In both cases they are 1920x1080 screens running at 60 Hz, but the *FiNALE* screens measure 42" diagonally, while the *DX* screens measure 43". The difference is practically imperceptible in-game.
@@ -20,7 +20,7 @@ There is, however, a slight native difference between the screens of a *FiNALE* 
 ## The HDX touchscreens
 
 Remove the old touchscreens from the *FiNALE* cabinet (held by 8 screws) and install the new HDX touchscreens.
-You then have to connect the touchscreens to the right "addresses" (COM ports) on the ALLS, otherwise the game will mix up the two players: *([manual](../resources/pdfs/maimai-dx-manual-full.pdf), page 128)*
+You then have to connect the touchscreens to the right "addresses" (COM ports) on the ALLS, otherwise the game will mix up the two players: *([manual](../resources/pdfs/maimai-dx-instruction-manual-full.pdf), page 128)*
 
 * **Player 1:** must be connected to port **COM3**.
 * **Player 2:** must be connected to port **COM4**.

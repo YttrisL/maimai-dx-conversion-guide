@@ -10,7 +10,7 @@ _(Cliquez sur une planche pour l'ouvrir en pleine résolution dans un nouvel ong
 
 ## Manuel maimai DX
 
-Chapitre *22 総合配線図* (« schéma de câblage général »), pages 193 à 196 du [manuel maimai DX](../resources/pdfs/maimai-dx-manual-full.pdf).
+Chapitre *22 総合配線図* (« schéma de câblage général »), pages 193 à 196 du [manuel maimai DX](../resources/pdfs/maimai-dx-instruction-manual-full.pdf).
 
 ### Planche 1/4 - Alimentation, PC *ALLS*, ampli et écrans joueurs
 

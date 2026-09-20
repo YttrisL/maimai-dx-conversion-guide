@@ -19,6 +19,7 @@ SpiralGlide a modélisé les supports permettant de monter le lecteur Aime et le
 Un seul bloc à imprimer, sur lequl s'installe le lecteur Aime de Star Horse 4 et qui vient prendre sa place dans la façade de la tour centrale dans les trous de vis prévus pour maintenir l'acrylique.
 
 * **[maimai-aime-reader.stl](../resources/models/spiralglide/maimai-aime-reader.stl)** : support du lecteur Aime.
+* **[maimai-aime-reader.ipt](../resources/models/spiralglide/maimai-aime-reader.ipt)** : fichier source Autodesk Inventor du support.
 
 !!! lightbox
     ![Le support du lecteur Aime imprimé et monté dans la façade de la tour centrale, lecteur Aime en place. Photo par SpiralGlide](../resources/images/spiralglide-resources/maimai-aime-reader-installed.jpg)

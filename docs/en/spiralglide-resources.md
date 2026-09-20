@@ -19,6 +19,7 @@ SpiralGlide modelled the mounts that let the Aime reader and the DX QR-code read
 A single printed block: the Star Horse 4 Aime reader mounts onto it, and it takes its place in the front of the center tower, using the screw holes meant to hold the acrylic.
 
 * **[maimai-aime-reader.stl](../resources/models/spiralglide/maimai-aime-reader.stl)**: Aime reader mount.
+* **[maimai-aime-reader.ipt](../resources/models/spiralglide/maimai-aime-reader.ipt)**: the mount's original Autodesk Inventor source file, provided by SpiralGlide, for anyone who wants to modify it.
 
 !!! lightbox
     ![The Aime reader mount printed and fitted into the front of the center tower, with the Aime reader in place. Photo by SpiralGlide](../resources/images/spiralglide-resources/maimai-aime-reader-installed.jpg)

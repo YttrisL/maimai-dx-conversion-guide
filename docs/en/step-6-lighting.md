@@ -61,7 +61,7 @@ We therefore need to find a way to modify the identifier sent by the two LED con
 
 **The solution:** a simple Raspberry Pi Pico, programmed with a homemade firmware, that installs itself between the LED controller and its RS-232 to USB adapter to modify only the message where the controller sends its identifier. All other messages are passed through unchanged in both directions.
 
-The software is already all set: it is [mailight_pico]({{MAILIGHT_PICO_REPO}}), a port of *mailight_rs* by 4ndr3w on GitHub. All that is left is to build the proxy.
+The software is already all set: it is [mailight_pico]({{MAILIGHT_PICO_REPO}}), a port of *[mailight_rs]({{MAILIGHT_RS_REPO}})* by [4ndr3w]({{GITHUB_4NDR3W}}) on GitHub. All that is left is to build the proxy.
 
 ### Building a proxy
 

@@ -4,8 +4,8 @@ site_author: "Yttris"
 site_url: "https://dxnale.farewell.dev/"
 copyright: Copyright &copy; 2026 - CC BY-NC - Creative Commons Non-Commercial
 
-repo_url: &gitea_repo_url https://gitea.farewell.dev/AtomCity/maimai-dx-guide
-repo_name: Gitea
+repo_url: &github_repo_url https://github.com/YttrisL/maimai-dx-conversion-guide
+repo_name: GitHub
 
 # By default MkDocs only *warns* about internal links (nav entries, page
 # links, images, PDFs, ...) that don't resolve to an existing file - the
@@ -36,7 +36,7 @@ theme:
   name: material
   language: en
   icon:
-    repo: fontawesome/brands/git-alt
+    repo: fontawesome/brands/github
   palette:
     # Toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -123,9 +123,9 @@ extra_javascript:
 
 extra:
   social:
-    - icon: simple/gitea
-      link: *gitea_repo_url
-      name: Gitea
+    - icon: fontawesome/brands/github
+      link: *github_repo_url
+      name: GitHub
   generator: true
 
 nav:

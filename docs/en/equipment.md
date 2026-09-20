@@ -62,7 +62,7 @@ For each of the parts listed below, the most suitable option is highlighted. Thi
 *Alternative*: **2x**{: .quantity-emphasis } **Yuancon conversion kit - based on an ADX touchscreen**
 
 * Where: [On the Yuancon website]({{YUANCON_CONVERSION_KIT_PAGE}})
-* Info: Yuancon offers conversion kits including the touchscreen and eight buttons, letting you convert one side of the cabinet. They are equivalent to the HDX except that their I/O board does not include a serial port: it only communicates over USB-CDC with the PC, which makes connecting it to an ALLS HX2 difficult, since that signal cannot be adapted directly with a simple RS-232 converter. It is nonetheless possible [via a piece of software acting as a proxy]({{MAITOUCH_RS_REPO}}), running on a Raspberry Pi installed between the ALLS and the ADX, but that introduces a complexity we will not cover in this guide. (If you decide to go with this alternative, you do not need the extra buttons from the next item.)
+* Info: Yuancon offers conversion kits including the touchscreen and eight buttons, letting you convert one side of the cabinet. They are equivalent to the HDX except that their I/O board does not include a serial port: it only communicates over USB-CDC with the PC, which makes connecting it to an ALLS HX2 difficult, since that signal cannot be adapted directly with a simple RS-232 converter. It is nonetheless possible via a piece of software acting as a proxy, [maitouch_rs]({{MAITOUCH_RS_REPO}}) by [4ndr3w]({{GITHUB_4NDR3W}}) on GitHub, running on a Raspberry Pi installed between the ALLS and the ADX, but that introduces a complexity we will not cover in this guide. (If you decide to go with this alternative, you do not need the extra buttons from the next item.)
 
 </div>
 
