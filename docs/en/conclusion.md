@@ -1,10 +1,10 @@
 ---
-title: "🎉 Conclusion"
+title: "Conclusion"
 ---
 
 # 🎉 Conclusion
 
-**Congratulations!** If you have followed all of these steps, you have pulled off a technical feat. You now own a working, enhanced *maimai DxNALE* cabinet, ready for online play!
+**Congratulations!** If you have followed all of these steps, you now own a working *maimai DxNALE* cabinet, ready for online play!
 
 ---
 

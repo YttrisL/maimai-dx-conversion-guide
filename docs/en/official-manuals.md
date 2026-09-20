@@ -2,7 +2,7 @@
 title: "Official manuals"
 ---
 
-# Official manuals
+# 📚 Official manuals
 
 This page lists the official manuals referenced throughout this guide.
 

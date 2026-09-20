@@ -2,7 +2,7 @@
 title: "SpiralGlide's resources"
 ---
 
-# SpiralGlide's resources
+# 🖨️ SpiralGlide's resources
 
 The original inspiration for this guide comes from the work of **SpiralGlide**, a community member who documented their own *FiNALE → DX* conversion and designed several 3D-printable parts for the job. This page gathers those original resources.
 

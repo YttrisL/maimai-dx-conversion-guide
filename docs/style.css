@@ -24,6 +24,25 @@
     text-align: center;
 }
 
+/* Title emoji (see hooks/title_emoji.py): a bundled Fluent Emoji SVG
+   standing in for a page title's Unicode emoji - in the page's own H1 and
+   everywhere else that title text is echoed (nav sidebar, footer
+   next/previous links, breadcrumbs, mobile header) - so it renders
+   identically for every reader, regardless of their OS's own emoji font (and
+   sidesteps how inconsistently that font sits relative to adjacent text:
+   the original ask behind this rule). Deliberately not scoped under
+   `.md-typeset`, unlike the block/centered image default above: the nav
+   sidebar and footer links this also appears in live outside that content
+   area. Sized in `em` so it scales with whatever text it sits next to,
+   instead of one fixed pixel size that would look right in only one spot. */
+img.emoji-icon {
+    display: inline-block;
+    margin: 0 0.15em 0 0;
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: -0.18em;
+}
+
 /* Headings
    ========================================================================== */
 

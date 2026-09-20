@@ -1,10 +1,10 @@
 ---
-title: "🎉 Conclusion"
+title: "Conclusion"
 ---
 
 # 🎉 Conclusion
 
-**Félicitations !** Si vous avez suivi toutes ces étapes, vous avez accompli une prouesse technique. Vous possédez désormais une borne *maimai DxNALE* fonctionnelle, sublimée et prête pour le jeu en ligne !
+**Félicitations !** Si vous avez suivi toutes ces étapes, vous possédez désormais une borne *maimai DxNALE* fonctionnelle et prête pour le jeu en ligne !
 
 ---
 

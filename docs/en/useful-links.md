@@ -2,7 +2,7 @@
 title: "Useful links"
 ---
 
-# Useful links
+# 🔗 Useful links
 
 This page lists external resources that do not directly concern the *FiNALE -> DX* conversion, but whose content may nonetheless prove useful.
 

@@ -1,25 +1,14 @@
 site_name: "maimai FiNALE → DX Upgrade Guide"
 site_description: "A step-by-step tutorial for upgrading a Sega maimai FiNALE arcade cabinet to maimai DX"
 site_author: "Yttris"
-site_url: "https://dxnale.farewell.dev/"
+site_url: "https://dxnale.guide/"
 copyright: Copyright &copy; 2026 - CC BY-NC - Creative Commons Non-Commercial
 
 repo_url: &github_repo_url https://github.com/YttrisL/maimai-dx-conversion-guide
 repo_name: GitHub
 
-# By default MkDocs only *warns* about internal links (nav entries, page
-# links, images, PDFs, ...) that don't resolve to an existing file - the
-# build still succeeds even with dead links, and only `mkdocs build
-# --strict` turns that into a failure. Bake strict mode into the config
-# itself so ANY invocation of `mkdocs build` (or `mkdocs serve`) - CLI flag
-# or not - aborts on an unresolved internal link.
 strict: true
 
-# A couple of internal-link checks default to a silent 'info' level, which
-# `strict` does NOT escalate (only warn/error is escalated). Bump those to
-# 'warn' so they're covered by strict mode too - readers should never hit a
-# dead in-page anchor (e.g. page.md#missing-section) or a malformed-looking
-# relative link either.
 validation:
   links:
     anchors: warn
@@ -31,6 +20,7 @@ hooks:
   - hooks/dedupe_static_resources.py
   - hooks/copy_sitemap.py
   - hooks/lightbox.py
+  - hooks/title_emoji.py
 
 theme:
   name: material

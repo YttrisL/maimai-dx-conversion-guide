@@ -1,8 +1,8 @@
 ---
-title: "🔌 3 - I/O board & buttons"
+title: "🕹️ 3 - I/O board & buttons"
 ---
 
-# 🔌 Step 3: The I/O Board and the Buttons
+# 🕹️ Step 3: The I/O Board and the Buttons
 
 --8<-- "includes/wip-en.md"
 

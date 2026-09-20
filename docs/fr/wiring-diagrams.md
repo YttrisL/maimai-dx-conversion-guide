@@ -2,7 +2,7 @@
 title: "Schémas de câblage"
 ---
 
-# Schémas de câblage
+# 🖨️ Schémas de câblage
 
 Les [manuels officiels](official-manuals.md) contiennent, dans leurs toutes dernières pages, le schéma de câblage complet de la borne (planches au format A3, une par manuel de plusieurs dizaines de Mo). Pour éviter d'avoir à télécharger l'intégralité d'un manuel et à zoomer dans un lecteur PDF juste pour retrouver un fil, voici ces planches extraites en haute résolution.
 

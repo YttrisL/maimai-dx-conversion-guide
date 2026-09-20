@@ -2,7 +2,7 @@
 title: "Les ressources de SpiralGlide"
 ---
 
-# Les ressources de SpiralGlide
+# 🖨️ Les ressources de SpiralGlide
 
 L'inspiration de base de ce guide est basé sur le travail de **SpiralGlide**, un membre de la communauté qui a documenté sa propre conversion *FiNALE → DX* et conçu plusieurs pièces imprimables en 3D pour l'opération. Cette page rassemble ces ressources d'origine.
 

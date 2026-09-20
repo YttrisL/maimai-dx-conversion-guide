@@ -2,7 +2,7 @@
 title: "Wiring diagrams"
 ---
 
-# Wiring diagrams
+# 🖨️ Wiring diagrams
 
 The [official manuals](official-manuals.md) contain, on their very last pages, the complete wiring diagram of the cabinet (A3-format plates, one per manual of several dozen MB). To avoid having to download an entire manual and zoom into a PDF reader just to find a wire, here are those plates extracted in high resolution.
 

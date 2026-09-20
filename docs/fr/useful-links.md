@@ -2,7 +2,7 @@
 title: "Liens utiles"
 ---
 
-# Liens utiles
+# 🔗 Liens utiles
 
 Cette page recense des ressources externes qui ne concernent pas directement la conversion *FiNALE → DX*, mais dont le contenu peut néanmoins s'avérer utile.
 

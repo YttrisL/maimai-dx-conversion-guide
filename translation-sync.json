@@ -1,24 +1,24 @@
 {
   "pages": {
-    "conclusion.md": "047f9a73cd1a71e11f4bf6192522de8b643d859964501484286823246b9501be",
+    "conclusion.md": "f0eefaaf4b0838f99f90fff961f144d84c82a5ae8b9fa4480e8cd11e2a570204",
     "equipment-checklist.md": "1f70613fb463abf0f981bbf6523e6ae5ebefc2f9b089568d2258df747d65af00",
     "equipment.md": "b843222e87e82789f657aea4a900c4bb6dfebd0f01f2451b07760bc79b0898ed",
     "glossary.md": "6581b47373b2851ac3a51353774488d13ff7f5d45b1110cfe67ff0aab8a974c9",
     "index.md": "a7a08651b57c1e8eb1dfa08d5203f90f2b6268365c4f27a577de7e8ccbb5b550",
-    "official-manuals.md": "b4134c458fc5ccf56a61a71deba7dedc64269cd946bd763291ecb1b85868b756",
+    "official-manuals.md": "894543918eb392b2a0a32a69192a60b687e0e7082fa39a189d3da189745eeb5d",
     "secondhand-market.md": "98cf441a1f1ebb780f64265e0215175cd8b0f2c8eea895ccf2aa439de379726f",
-    "spiralglide-resources.md": "426c75e3d37ef0b7483bd111cf7ae1233f5432608a377251ebdaff2f2703c583",
+    "spiralglide-resources.md": "60101d44201f6a920b2bf69799d87b955a7928045ae5493d5fd28af4f3fa2efd",
     "step-1-alls-and-psu.md": "c1a1b0a4fffb66b0423c1462d9e309db69f654a023fe5d0027c5416a6dc28ba8",
     "step-2-touchscreen-display.md": "ec202d5812e72c99fca3f9749554b8af98f042b71e865ef3090db903de539893",
-    "step-3-io-board.md": "ec2dfb244a03e25c22dcbd745792a36256e4016ca636041715dfb4994ea334cd",
+    "step-3-io-board.md": "59bdcd323bbf26aba4e736aba8646623879f9d05fee81a908b0258c7a77835e0",
     "step-4-aime-reader.md": "381b6144d0d8874df5d6531bdcce0dd3eb91c3bad206d20a6cc3cb390d241558",
     "step-5-audio-headphones.md": "594d9532dbba952ba293da62163ceb023665ecc37f7e991a883cf67592097474",
     "step-6-lighting.md": "7c0540f8079e939cd2b510249fd07768929f6f6fd396f0baa702e1bb2d94deb4",
     "step-7-cameras.md": "992599ae88fb60f5dcaf58cfdad6e809695223a8d31bbe322cf6fbd2762cef90",
     "understanding-serial-protocols.md": "c5ef898c7ea9fe4ab5ceed90ea4c6e1a27feae63b8f20efafbf329d6bdbc904a",
-    "useful-links.md": "b78e30ce3fa834cfb7073f512ddc4f2a4dc0cb2fae42cc0a5ffcddebb6f98acf",
+    "useful-links.md": "dae04636e657ea677f46bb44294702368f5d18351e67822cdd7ba52a0484dbd5",
     "warnings.md": "4541a0e7f66b9d864ed8bc91fb3ff88ad760f055c580a28355d6ebd70151e61c",
-    "wiring-diagrams.md": "63b8a1c35eb53508633f12cfde1038f91ae0d7db45bcfaa66482a52e97a2a3a4"
+    "wiring-diagrams.md": "5b51075811c13cf331a2fdbb71a1623062f6e0eac20a7d6a2d453c30cd5c37df"
   },
   "assets": {
     "resources/images/serial-protocols/db9-connector.svg": "2c6595be80dcc216065e8a2a7056569e79d8028911d9db5250d8e3c435412932",

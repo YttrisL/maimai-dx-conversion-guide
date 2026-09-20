@@ -1,8 +1,8 @@
 ---
-title: "🔌 3 - Carte I/O et boutons"
+title: "🕹️ 3 - Carte I/O et boutons"
 ---
 
-# 🔌 Étape 3 : La Carte I/O et les Boutons
+# 🕹️ Étape 3 : La Carte I/O et les Boutons
 
 --8<-- "includes/wip-fr.md"
 

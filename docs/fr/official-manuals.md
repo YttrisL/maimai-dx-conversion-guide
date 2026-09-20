@@ -2,7 +2,7 @@
 title: "Manuels officiels"
 ---
 
-# Manuels officiels
+# 📚 Manuels officiels
 
 Cette page recense les manuels officiels référencés tout au long de ce guide.
 
