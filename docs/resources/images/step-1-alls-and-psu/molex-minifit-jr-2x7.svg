@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 285" width="460" height="285" font-family="Segoe UI, Arial, sans-serif">
+  <title>Vue de face (côté contact) du connecteur Molex Mini-Fit Jr 2x7 femelle</title>
+  <rect width="460" height="285" fill="#ffffff"/>
+
+  <!-- Oreilles latérales -->
+  <path d="M60 60 L34 72 L26 170 L38 176 L60 150 Z" fill="#efe9d6" stroke="#8a8470" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M400 60 L426 72 L434 170 L422 176 L400 150 Z" fill="#efe9d6" stroke="#8a8470" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Loquet -->
+  <rect x="210" y="28" width="40" height="26" rx="3" fill="#efe9d6" stroke="#8a8470" stroke-width="2"/>
+
+  <!-- Boîtier -->
+  <rect x="60" y="50" width="340" height="150" rx="8" fill="#f6f2e4" stroke="#8a8470" stroke-width="2.5"/>
+
+  <!-- Alvéoles : rangée côté loquet 14 → 8, rangée opposée 7 → 1 -->
+  <g stroke="#6b6655" stroke-width="2">
+    <rect x="72"  y="68" width="40" height="46" rx="4" fill="#f28c28"/>
+    <rect x="118" y="68" width="40" height="46" rx="4" fill="#d62828"/>
+    <rect x="164" y="68" width="40" height="46" rx="4" fill="#d62828"/>
+    <rect x="210" y="68" width="40" height="46" rx="4" fill="#d62828"/>
+    <rect x="256" y="68" width="40" height="46" rx="4" fill="#f5d000"/>
+    <rect x="302" y="68" width="40" height="46" rx="4" fill="#f5d000"/>
+    <rect x="348" y="68" width="40" height="46" rx="4" fill="#f5d000"/>
+  </g>
+  <g fill="#4a4a4a" stroke="#2e2e2e" stroke-width="2">
+    <rect x="72"  y="136" width="40" height="46" rx="4"/>
+    <rect x="118" y="136" width="40" height="46" rx="4"/>
+    <rect x="164" y="136" width="40" height="46" rx="4"/>
+    <rect x="210" y="136" width="40" height="46" rx="4"/>
+    <rect x="256" y="136" width="40" height="46" rx="4"/>
+    <rect x="302" y="136" width="40" height="46" rx="4"/>
+    <rect x="348" y="136" width="40" height="46" rx="4"/>
+  </g>
+
+  <!-- Numéros : texte foncé sur orange/jaune, blanc sur rouge/gris -->
+  <g font-size="18" font-weight="600" text-anchor="middle" dominant-baseline="central">
+    <text x="92"  y="91" fill="#222222">14</text>
+    <text x="138" y="91" fill="#ffffff">13</text>
+    <text x="184" y="91" fill="#ffffff">12</text>
+    <text x="230" y="91" fill="#ffffff">11</text>
+    <text x="276" y="91" fill="#222222">10</text>
+    <text x="322" y="91" fill="#222222">9</text>
+    <text x="368" y="91" fill="#222222">8</text>
+  </g>
+  <g font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle" dominant-baseline="central">
+    <text x="92"  y="159">7</text>
+    <text x="138" y="159">6</text>
+    <text x="184" y="159">5</text>
+    <text x="230" y="159">4</text>
+    <text x="276" y="159">3</text>
+    <text x="322" y="159">2</text>
+    <text x="368" y="159">1</text>
+  </g>
+
+  <!-- Légende -->
+  <g font-size="13" fill="#333333" dominant-baseline="central">
+    <rect x="62"  y="224" width="16" height="16" rx="3" fill="#f28c28" stroke="#6b6655" stroke-width="1.5"/>
+    <text x="84"  y="232">+3,3 V</text>
+    <rect x="162" y="224" width="16" height="16" rx="3" fill="#d62828" stroke="#6b6655" stroke-width="1.5"/>
+    <text x="184" y="232">+5 V</text>
+    <rect x="252" y="224" width="16" height="16" rx="3" fill="#f5d000" stroke="#6b6655" stroke-width="1.5"/>
+    <text x="274" y="232">+12 V</text>
+    <rect x="346" y="224" width="16" height="16" rx="3" fill="#4a4a4a" stroke="#2e2e2e" stroke-width="1.5"/>
+    <text x="368" y="232">GND</text>
+  </g>
+
+  <text x="230" y="266" font-size="12" fill="#666666" text-anchor="middle">Vue de face (côté contact) du connecteur Molex Mini-Fit Jr 2x7 femelle</text>
+</svg>

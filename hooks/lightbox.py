@@ -9,6 +9,11 @@ Usage in a .md file, styled after the built-in `!!! admonition` blocks:
         ![Caption for the first image](../resources/images/foo/a.png)
         ![Caption for the second image](../resources/images/foo/b.png)
 
+An optional `wide` modifier (`!!! lightbox wide`) renders the thumbnail(s)
+at the full content width instead of the usual small fixed-size thumbnail -
+use it for a single reference diagram/schematic that needs to be legible
+without clicking through to the zoomed view (e.g. a connector pinout plate).
+
 Like any other admonition, `!!! lightbox` can itself be nested inside
 another indentation-based block (a `??? note` details block, a list item,
 a tab, ...) - just indent the whole block, marker included, one level
@@ -62,7 +67,7 @@ import re
 import markdown
 from mkdocs.exceptions import PluginError
 
-_START_RE = re.compile(r"^(?P<indent>[ \t]*)!!!\s+lightbox\s*$")
+_START_RE = re.compile(r"^(?P<indent>[ \t]*)!!!\s+lightbox(?:\s+(?P<modifier>wide))?\s*$")
 # `alt` is greedy on purpose: an alt text containing its own Markdown link
 # (e.g. `Foo ([source](https://...))`) has more than one literal `](` in
 # the line, and only the *last* one is the actual image marker - greedy
@@ -143,7 +148,7 @@ def _resolve_src(raw_src: str, page, files) -> str:
     return target_file.url_relative_to(page.file)
 
 
-def _render(body_lines: list, page, files, group_id: str, seen: dict) -> str:
+def _render(body_lines: list, page, files, group_id: str, seen: dict, wide: bool = False) -> str:
     images = []
     for line in body_lines:
         match = _IMAGE_RE.match(line)
@@ -198,8 +203,9 @@ def _render(body_lines: list, page, files, group_id: str, seen: dict) -> str:
             f"<figcaption>{caption_html}</figcaption></figure></div>"
         )
 
+    row_class = "lightbox-row lightbox-row--wide" if wide else "lightbox-row"
     return (
-        '<div class="lightbox-row" markdown="0">' + "".join(thumbs) + "</div>\n"
+        f'<div class="{row_class}" markdown="0">' + "".join(thumbs) + "</div>\n"
         + "\n".join(overlays)
     )
 
@@ -242,7 +248,8 @@ def on_page_markdown(markdown, page, config, files, **kwargs):
                 f"!!! lightbox in {page.file.src_uri}: block has no "
                 f"indented images under it."
             )
-        rendered = _render(body, page, files, f"lightbox-group-{group_count}", seen)
+        wide = start_match.group("modifier") == "wide"
+        rendered = _render(body, page, files, f"lightbox-group-{group_count}", seen, wide=wide)
         # Re-apply the marker's own indentation to every output line, so the
         # substitution still reads as content of whatever it's nested under
         # (if anything) once Markdown re-parses it.

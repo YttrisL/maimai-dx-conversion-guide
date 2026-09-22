@@ -206,6 +206,20 @@ hr {
     opacity: .85;
 }
 
+/* `!!! lightbox wide` variant (see hooks/lightbox.py): a single reference
+   image - typically a diagram/schematic - that needs to be legible on the
+   page itself instead of hiding behind a small fixed-size thumbnail. Grows
+   the thumbnail to the full row width and lets its height follow the
+   image's own aspect ratio instead of the usual fixed 190px crop. */
+.lightbox-row--wide .lightbox-thumb-figure {
+    flex-basis: 100%;
+}
+
+.lightbox-row--wide .lightbox-thumb img {
+    block-size: auto;
+    max-block-size: 70vh;
+}
+
 /* Small in the unzoomed thumbnail - just enough to identify the image. */
 .lightbox-thumb-figure figcaption {
     margin-block-start: .3rem;

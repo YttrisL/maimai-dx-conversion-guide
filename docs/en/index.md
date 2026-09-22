@@ -1,5 +1,5 @@
 ---
-title: "🏠 Home"
+title: "Home"
 ---
 
 # Complete Guide: The "DxNALE" Project
