@@ -4,26 +4,26 @@ title: "💡 6 - Lumières"
 
 # 💡 Étape 6 : Lumières
 
-L'éclairage est techniquement une étape *optionnelle* de la conversion, dans le sens où elle n'impacte pas la jouabilité de la borne. Toutefois, l'opération n'est pas si complexe et l'éclairage apporte beaucoup au charme de maimai DX. Il est donc recommandé de ne pas ignorer cette étape.
+L'éclairage est techniquement *optionnel* : il n'a aucun impact sur la jouabilité. Mais l'opération n'est pas si complexe et l'éclairage fait beaucoup pour le charme de DX. **Il est recommandé de ne pas faire l'impasse sur cette étape.**
 
 ## Explications techniques
 
 ??? note "Cliquez ici pour l'explication technique"
     ### Fonctionnement des LEDs sur une maimai DX
 
-    Sur une véritable borne *DX*, l'éclairage est piloté par trois contrôleurs différents :
+    Sur une véritable borne *DX*, l'éclairage est piloté par trois contrôleurs :
 
-    * L'**IO4** gère l'éclairage de l'**enseigne lumineuse** (désignée `BILLBOARD LED` / `ROOF LED` sur les schémas Sega). Voir l'[Étape 3](step-3-io-board.md).
+    * L'**IO4** gère l'**enseigne lumineuse** (désignée `BILLBOARD LED` / `ROOF LED` sur les schémas Sega). Voir l'[Étape 3](step-3-io-board.md).
     * Deux cartes de contrôle identiques (réf. `837-15070-04`) :
-        * Côté P1 : Les huit boutons, l'éclairage du fond et l'éclairage du côté gauche.
-        * Côté P2 : Les huit boutons, l'éclairage du fond et l'éclairage du côté droit.
+        * Côté P1 : les huit boutons, l'éclairage du fond et l'éclairage du côté gauche.
+        * Côté P2 : les huit boutons, l'éclairage du fond et l'éclairage du côté droit.
 
     ![Chaîne de contrôle de l'éclairage : les cartes LED P1 et P2 (réf. `837-15070-04`) rejoignent en RS-232 l'adaptateur RS-232 vers USB (réf. `837-15067-02`), lui-même branché au hub USB partagé avec les caméras QR-Code de P1 et P2](../resources/images/step-6-lighting/led-controllers-chain.svg)
 
-    Les deux cartes de contrôle s'interfacent en RS-232 à un unique adaptateur RS-232 vers USB. Celui-ci est lui-même raccordé au même hub USB que les lecteurs de QR-Code (voir [Étape 7](step-7-cameras.md)).
+    Les deux cartes de contrôle sont reliées en RS-232 à un unique adaptateur RS-232 vers USB, lui-même branché sur le même hub USB que les lecteurs de QR-Code (voir [Étape 7](step-7-cameras.md)).
 
     !!! info "Configuration logicielle des ports COM"
-        Les contrôleurs de LEDs sont interfacés sur les ports COM virtuels du ALLS de la façon suivante :
+        Les contrôleurs de LEDs apparaissent sur les ports COM virtuels suivants du ALLS :
 
         * **COM21** pour les LEDs du P1.
         * **COM23** pour les LEDs du P2.
@@ -32,161 +32,164 @@ L'éclairage est techniquement une étape *optionnelle* de la conversion, dans l
 
     Le fonctionnement est un peu plus simple sur FiNALE :
 
-    * Contrairement à DX, aucune LED ne passe par l'IO3 de FiNALE.
+    * Contrairement à DX, aucune LED ne passe par l'IO3.
     * Deux cartes de contrôle identiques gèrent les LEDs (réf. `837-15070-02-91`) :
-        * Côté P1 : Les huit boutons, l'éclairage du fond, l'éclairage des woofers et l'enseigne lumineuse côté P1 et au centre.
-        * Côté P2 : Les huit boutons, l'éclairage du fond, l'éclairage des woofers et l'enseigne lumineuse côté P2.
+        * Côté P1 : les huit boutons, l'éclairage du fond, les woofers, et l'enseigne lumineuse côté P1 et au centre.
+        * Côté P2 : les huit boutons, l'éclairage du fond, les woofers, et l'enseigne lumineuse côté P2.
 
     ![Chaîne de contrôle de l'éclairage sur FiNALE : les cartes LED P1 et P2 (réf. `837-15070-02-91`) rejoignent en RS-232 le même adaptateur RS-232 vers USB que sur DX (réf. `837-15067-02`), branché directement sur un port USB du RingEdge 2, sans hub USB](../resources/images/step-6-lighting/led-controllers-chain-finale.svg)
 
-    Comme sur DX, ces deux cartes de contrôle s'interfacent en RS-232 au même adaptateur RS-232 vers USB. Par chance, **c'est exactement le même sur FiNALE et sur DX (réf. `837-15067-02`)**.
-
-    Sur FiNALE, par contre, cet adaptateur se branche directement sur un port USB du RingEdge 2, sans passer par un hub USB.
+    Comme sur DX, ces deux cartes sont reliées en RS-232 à un adaptateur RS-232 vers USB. Par chance, **c'est exactement le même sur FiNALE et sur DX (réf. `837-15067-02`)**. Seule différence : sur FiNALE, il se branche directement sur un port USB du RingEdge 2, sans hub.
 
     ### Ce que ça implique pour une conversion
 
-    Trois observations :
+    * **Il faut un hub USB 4 ports** pour reproduire le branchement de *DX* sur le ALLS.
+    * **L'enseigne lumineuse doit être recâblée vers l'IO4** : sur DX, les contrôleurs de LEDs ne reçoivent plus d'information pour l'éclairer.
+    * Surtout, **les contrôleurs de LEDs de FiNALE et de DX n'ont pas la même référence**. Branché sur un ALLS avec DX, un contrôleur FiNALE provoque **une erreur non bloquante au démarrage** : il annonce `837-15070-02-91` alors que le jeu attend `837-15070-04`. Fait amusant : dans cet état, le jeu envoie tout de même l'éclairage des boutons, mais pas celui du fond.
 
-    * Nous aurons besoin d'un hub USB 4 ports pour reproduire l'architecture de branchement sur le ALLS. maimai DX est très exigeant sur le port sur lequel les appareils USB sont connectés sur le ALLS.
-    * L'éclairage de l'enseigne lumineuse n'est plus connecté aux contrôleurs de LEDs sur DX, ceux-ci ne reçoivent donc plus l'information pour l'éclairer. Il faudra recâbler ce connecteur vers l'IO4.
-    * Mais surtout, **le point le plus important** : les contrôleurs de LEDs de FiNALE et de DX **n'ont pas la même référence**. Si vous tentez de brancher un contrôleur de LEDs FiNALE sur un ALLS faisant tourner DX, **le jeu se mettra en erreur non-bloquante au démarrage** car la référence envoyée par le contrôleur, `837-15070-02-91`, n'est pas celle que le jeu s'attend à recevoir, `837-15070-04`. Fait amusant : dans cet état, le jeu enverra tout de même les informations pour l'éclairage des boutons de jeu, mais pas pour le fond.
-
-    Heureusement, il y a une solution pour ces trois problèmes.
+    Heureusement, ces trois problèmes ont une solution.
 
 ## Pour les boutons de jeu et le fond des deux joueurs
 
-Le problème est que pour les contrôleurs de LEDs, **maimai DX s'attend à recevoir l'identifiant `837-15070-04`**, mais ceux de FiNALE vont lui renvoyer `837-15070-02-91` et le jeu se mettra en erreur. C'est véritablement le seul problème : le contrôleur de FiNALE est autrement 100 % compatible avec les instructions envoyées par DX.
+Pour les contrôleurs de LEDs, **DX attend l'identifiant `837-15070-04`**, mais ceux de FiNALE renvoient `837-15070-02-91`, ce qui met le jeu en erreur. C'est le seul problème : pour le reste, le contrôleur de FiNALE est 100 % compatible avec les instructions envoyées par DX.
 
-Nous devons donc trouver un moyen de modifier l'identifiant envoyé par les deux contrôleurs de LEDs pour qu'ils renvoient la valeur que le jeu s'attend à recevoir. C'est assez simple à faire de façon logicielle, mais nous souhaitons une fidélité logicielle parfaite. **Nous devons donc trouver une solution hardware.**
+Il faut donc que les deux contrôleurs renvoient l'identifiant attendu. Un correctif logiciel serait simple, mais nous voulons laisser le logiciel du jeu intact : **la solution sera donc matérielle.**
 
-**La solution :** Un simple Raspberry Pi Pico, programmé avec un firmware maison, qui va venir s'installer entre le contrôleur de LEDs et son adaptateur RS-232 vers USB pour modifier uniquement le message où celui-ci envoie son identifiant. Tous les autres messages seront transférés à l'identique dans un sens comme dans l'autre.
+**La solution :** un simple Raspberry Pi Pico, avec un firmware dédié, placé entre le contrôleur de LEDs et l'adaptateur RS-232 vers USB. Il **modifie uniquement le message contenant l'identifiant**, et transmet tous les autres à l'identique, dans les deux sens.
 
-Le logiciel est déjà tout prêt, il s'agit de [mailight_pico]({{MAILIGHT_PICO_REPO}}), un port de *[mailight_rs]({{MAILIGHT_RS_REPO}})* par [4ndr3w]({{GITHUB_4NDR3W}}) sur GitHub. Il nous reste à fabriquer le proxy.
+Le firmware existe déjà : il s'agit de [mailight_pico]({{MAILIGHT_PICO_REPO}}), un portage de *[mailight_rs]({{MAILIGHT_RS_REPO}})* par [4ndr3w]({{GITHUB_4NDR3W}}) sur GitHub. Il ne reste plus qu'à fabriquer le proxy.
 
 ### Fabriquer un proxy
 
 !!! info "En double exemplaire"
-    Il vous faudra deux proxys, un pour chaque contrôleur de LEDs. Réalisez donc cette opération en deux exemplaires.
+    Il vous faut **deux proxys**, un par contrôleur de LEDs. Réalisez donc chaque opération en double.
 
-Commencez par installer le firmware mailight_pico sur le Raspberry Pi Pico. Si vous n'avez jamais installé de firmware sur un Pico, c'est extrêmement simple. [Toutes les instructions sont sur la page du projet]({{MAILIGHT_PICO_FIRMWARE_INSTRUCTIONS}}).
+**1. Installer le firmware.** Flashez mailight_pico sur le Raspberry Pi Pico. Si vous ne l'avez jamais fait, c'est extrêmement simple : [toutes les instructions sont sur la page du projet]({{MAILIGHT_PICO_FIRMWARE_INSTRUCTIONS}}).
 
-Ensuite vous devez assembler votre Raspberry Pi Pico avec le `Pico-2CH-RS232`. Attention au sens, les inscriptions sur le dessous du `Pico-2CH-RS232` indiquent l'orientation dans laquelle le port USB du Pico est censé se trouver.
+**2. Assembler le Pico sur le `Pico-2CH-RS232`.** Attention au sens : les inscriptions sous le `Pico-2CH-RS232` indiquent où doit se trouver le port USB du Pico.
 
 !!! lightbox
     ![Le module `Pico-2CH-RS232`, image tirée de la [page wiki officielle de Waveshare]({{WAVESHARE_PICO_2CH_RS232_WIKI}})](../resources/images/step-6-lighting/pico-2ch-rs232.png)
 
 !!! warning "Attention au sens"
-    Assurez-vous que votre montage correspond bien à l'image. Si votre Raspberry Pi Pico a, par exemple, son port USB entre les deux PCB plutôt qu'à l'extérieur comme sur l'image, cela veut dire que les broches de votre Pico sont soudées dans le mauvais sens. **N'essayez pas de l'allumer !** Vous ne parviendriez qu'à endommager le `Pico-2CH-RS232`. Vous devez soit ressouder les broches dans le bon sens vous-même, soit vous procurer un nouveau Pico correctement assemblé.
+    Vérifiez que votre montage correspond bien à l'image. Si le port USB de votre Pico se retrouve par exemple entre les deux PCB plutôt qu'à l'extérieur, ses broches sont soudées dans le mauvais sens. **N'essayez pas de l'allumer**, vous endommageriez le `Pico-2CH-RS232`. Ressoudez les broches dans le bon sens, ou procurez-vous un Pico correctement assemblé.
 
-Une fois votre matériel assemblé, il vous reste à préparer la connectique pour pouvoir insérer le Pico entre le contrôleur de LEDs et son adaptateur RS-232 vers USB. En fonction de si vous réalisez un proxy pour le contrôleur de LEDs du côté P1 ou P2, vous aurez besoin d'un connecteur différent :
+**3. Préparer la connectique.** Le proxy s'insère entre le contrôleur de LEDs et l'adaptateur RS-232 vers USB. Le connecteur n'est pas le même selon le côté :
 
-* Côté P1 : JST-XH **7** broches - Mâle **et** femelle
-* Côté P2 : JST-XH **9** broches - Mâle **et** femelle
+* Côté P1 : JST-XH **7** broches, mâle **et** femelle
+* Côté P2 : JST-XH **9** broches, mâle **et** femelle
 
 !!! lightbox
     ![Connecteur JST-XH côté P1](../resources/images/step-6-lighting/led-driver-connector-p1.png)
     ![Connecteur JST-XH côté P2](../resources/images/step-6-lighting/led-driver-connector-p2.png)
 
-Par simplicité, veillez à utiliser du fil blanc et rouge et installez-les aux positions correspondantes à l'installation de la borne. Sertissez le fil blanc sur la broche 4, le fil rouge sur la broche 5.
-Créez votre câble de telle sorte que si vous enfichez le connecteur mâle dans le connecteur femelle, les couleurs de fils soient alignées. Ces images proviennent du schéma de câblage, mais comme vous le constaterez, il n'y a pas de fil `SHIELD` sur les véritables connecteurs dans la borne, ce qui veut dire que nous devrons raccorder notre masse commune ailleurs sur le `Pico-2CH-RS232`.
+Pour vous simplifier la vie, reprenez les couleurs de la borne : **fil blanc sur la broche 4, fil rouge sur la broche 5**. Câblez les deux connecteurs de sorte que les couleurs soient alignées quand on enfiche le mâle dans le femelle.
+
+Ces images proviennent du schéma de câblage, mais les connecteurs réels de la borne n'ont pas de fil `SHIELD` : la masse commune devra donc être raccordée ailleurs sur le `Pico-2CH-RS232`.
 
 !!! lightbox
     ![Vue du dessus du module `Pico-2CH-RS232`](../resources/images/step-6-lighting/pico-2ch-rs232-photo.png)
     ![Le connecteur d'origine du contrôleur de LEDs dans la borne enfiché dans le connecteur confectionné à la main](../resources/images/step-6-lighting/led-controller-rs232-connector.jpg)
 
-Vous devez brancher les câbles avec le connecteur **JST-XH femelle sur le bornier à vis Channel0**, et les câbles avec le connecteur **JST-XH mâle sur le bornier à vis Channel1**. Ainsi, le Channel0 devrait se retrouver du côté de l'adaptateur RS-232 vers USB, et le Channel1 du côté du contrôleur de LEDs. Connectez les fils de la façon suivante :
+**4. Câbler les borniers.** Le connecteur **JST-XH femelle va sur le bornier Channel0** (côté adaptateur RS-232 vers USB), le connecteur **JST-XH mâle sur le bornier Channel1** (côté contrôleur de LEDs) :
 
-* Côté Channel0
-    * TX0: Rouge
-    * RX0: Blanc
-    * GND: Raccordez un fil noir à cette borne et venez attacher son extrémité dénudée sur la borne GND de l'alimentation installée à [l'étape 1](step-1-alls-and-psu.md).
-* Côté Channel1
-    * TX1: Blanc
-    * RX1: Rouge
+* Channel0
+    * TX0 : rouge
+    * RX0 : blanc
+    * GND : un fil noir, dont l'autre extrémité va sur le GND de l'alimentation installée à l'[étape 1](step-1-alls-and-psu.md).
+* Channel1
+    * TX1 : blanc
+    * RX1 : rouge
 
-Votre proxy est désormais terminé. Pour l'alimenter, le plus simple est de connecter un câble micro-USB au port du Pico, et d'en couper l'autre extrémité afin de directement raccorder le fil rouge de celui-ci sur la borne 5V et le fil noir sur la borne GND de l'alimentation installée à [l'étape 1](step-1-alls-and-psu.md).
+**5. Alimenter le proxy.** Le plus simple est de brancher un câble micro-USB sur le Pico et d'en couper l'autre extrémité : **fil rouge sur le 5V, fil noir sur le GND** de l'alimentation installée à l'[étape 1](step-1-alls-and-psu.md).
+
+Votre proxy est terminé !
 
 !!! lightbox
     ![Le proxy terminé : le Raspberry Pi Pico assemblé sur le `Pico-2CH-RS232`, avec le connecteur JST-XH femelle (Channel0, côté adaptateur RS-232 vers USB) et le connecteur JST-XH mâle (Channel1, côté contrôleur de LEDs) câblés en fil rouge et blanc, et le câble micro-USB d'alimentation](../resources/images/step-6-lighting/pico-2ch-rs232-proxy-wired.jpg)
 
-
 ### Installer le proxy
 
-Maintenant que vous avez vos deux proxys, il ne reste plus qu'à les installer. Vous pouvez débrancher le connecteur du contrôleur de LEDs et venir le raccorder sur le connecteur mâle de votre proxy ; le connecteur femelle du proxy, lui, vient prendre sa place sur l'adaptateur RS-232 vers USB.
+Pour chaque contrôleur de LEDs :
 
-Une fois le proxy installé pour les deux contrôleurs de LEDs, il ne vous reste plus qu'à connecter l'adaptateur RS-232 vers USB sur le ALLS via le hub USB, et le tour est joué. Le jeu devrait nativement reconnaître les contrôleurs de LEDs sans aucune modification logicielle.
+* Débranchez le connecteur du contrôleur de LEDs et branchez-le sur le **connecteur mâle** du proxy.
+* Branchez le **connecteur femelle** du proxy à sa place, sur l'adaptateur RS-232 vers USB.
+* Alimentez le proxy.
+
+Il ne reste plus qu'à brancher l'adaptateur RS-232 vers USB sur le ALLS via le hub USB. **Le jeu devrait reconnaître les contrôleurs de LEDs nativement**, sans aucune modification logicielle.
 
 !!! warning "Branchez l'adaptateur correctement"
-    Comme mentionné à [l'étape 1](step-1-alls-and-psu.md), le hub USB doit impérativement être branché sur le port USB portant le numéro 2, et l'`adaptateur RS-232 vers USB` sur lequel les contrôleurs de LEDs sont connectés doit être branché sur le hub USB. Comme dit précédemment, maimai DX est très exigeant sur le port USB sur lequel les appareils sont connectés ; en cas de mauvais branchement, les LEDs ne s'allumeront pas.
-
-    Même si vous ne comptez pas utiliser les caméras de QR-Code, le hub USB reste obligatoire.
+    Comme indiqué à l'[étape 1](step-1-alls-and-psu.md), **le hub USB doit être branché sur le port USB n°2** du ALLS, et l'adaptateur RS-232 vers USB sur ce hub. maimai DX est très exigeant sur les ports USB : en cas de mauvais branchement, les LEDs ne s'allumeront pas.
 
 ## Pour l'enseigne lumineuse et les woofers
 
 ??? note "Cliquez ici pour l'explication technique"
-    Sur une maimai FiNALE, les woofers et l'enseigne lumineuse sont sur le même circuit d'éclairage. Les deux éléments ne sont pas dissociés électriquement, l'un allume toujours nécessairement l'autre. Ainsi, bien que sur maimai DX les woofers ne soient plus illuminés, cela ne posera pas de problème puisque l'enseigne, elle, l'est toujours. Par contre, comme expliqué plus tôt, sur DX ce n'est plus le contrôleur de LEDs qui gère la lumière de cette section de la borne.
+    Sur FiNALE, les woofers et l'enseigne lumineuse partagent le même circuit : allumer l'un allume forcément l'autre. Les woofers ne sont plus éclairés sur DX, mais ce n'est pas un problème puisque l'enseigne, elle, l'est toujours.
 
-    Puisque le contrôleur de LEDs de DX ne gère plus l'allumage de l'enseigne lumineuse, le jeu ne lui envoie tout simplement pas l'information. Sur DX, **c'est l'IO4 qui s'occupe de gérer ces LEDs**. La raison de ce changement reste mystérieuse, mais cela implique de devoir recâbler une partie des branchements des contrôleurs de LEDs.
+    En revanche, sur DX, **c'est l'IO4 qui gère ces LEDs** : le jeu n'envoie tout simplement plus cette information au contrôleur de LEDs. La raison de ce changement reste mystérieuse, mais il faut donc recâbler une partie des branchements.
 
-    Par chance, les ingénieurs de Sega ont bien fait les choses, et le schéma de câblage de FiNALE référence un connecteur très pratique qui va nous permettre de diffuser notre signal côté joueur 1 et joueur 2 sans avoir à recâbler l'ensemble de la borne :
+    Par chance, le schéma de câblage de FiNALE référence un connecteur très pratique, qui permet de distribuer le signal côté joueur 1 et joueur 2 sans recâbler toute la borne :
 
     !!! lightbox
         ![Schéma de câblage FiNALE, connecteur AB côté P1 : le harnais MAI-60109 alimente les cartes CENTER LED, ROOF LED (L), ROOF LED (R) et WOOFER LED](../resources/images/step-6-lighting/lighting-topper-p1-side.png)
         ![Schéma de câblage FiNALE, connecteur BB côté P2 : le harnais MAI-60109 alimente les cartes WOOFER LED, ROOF LED (L) et ROOF LED (R), le connecteur SM5P n'étant pas utilisé](../resources/images/step-6-lighting/lighting-topper-p2-side.png)
         ![Connecteur JST-SM 8 broches qui connecte les woofers et l'enseigne lumineuse (en noir)](../resources/images/step-6-lighting/led-controller-rs232-disconnect.jpg)
 
-    Sur le schéma du P1, on constate un élément `CENTER LED` qui n'apparaît pas sur celui du P2. Il s'agit de l'éclairage du centre de l'enseigne lumineuse. Sur DX, cette distinction n'existe pas, et bien que les signaux soient séparés, l'enseigne est toujours éclairée de la même couleur des deux côtés. La solution la plus simple consiste donc à venir raccorder les broches `A2`, `A5` et `A8` du connecteur du P1 sur les broches `C3`, `C5` et `C8` afin que le centre soit éclairé de la même couleur que le côté joueur 1.
+    Le schéma du P1 comporte un élément `CENTER LED`, absent côté P2 : c'est l'éclairage du centre de l'enseigne. Sur DX, cette distinction n'existe pas : même si les signaux sont séparés, l'enseigne est toujours de la même couleur des deux côtés. Le plus simple est donc de **relier les broches `A2`, `A5` et `A8` du connecteur P1 aux broches `C3`, `C5` et `C8`**, pour que le centre prenne la même couleur que le côté joueur 1.
 
-Il y a deux façons de procéder, nous pouvons soit créer notre propre nappe de câbles compatible avec la structure de l'IO4 et venir ensuite raccorder les leds à l'IO4 via celle-ci, ou alors si vous avez opté à l'[étape 3](step-3-io-board.md) pour la [PCB de conversion]({{IO4_CONVERSION_PCB}}) il suffira de raccorder les différentes LED sur les bons ports de la PCB.
+Deux méthodes sont possibles :
+
+* **Avec la [PCB de conversion]({{IO4_CONVERSION_PCB}})**, si vous l'avez installée à l'[étape 3](step-3-io-board.md) : il suffit de brancher les LEDs sur les bons ports de la PCB.
+* **Sans elle** : fabriquez votre propre nappe de câbles, compatible avec l'IO4, pour y raccorder les LEDs.
 
 ??? example "La méthode facile - La PCB de conversion"
-    C'est la méthode la plus simple, si vous l'avez déjà installé à l'[étape 3](step-3-io-board.md) il vous suffit tout simplement de venir raccorder le connecteur présent en sortie du contrôleur de LEDs sur la PCB de conversion. N'oubliez pas de raccorder le 12V, **attention à la polarité**, et le tour est joué. 
-    
+    Branchez simplement le connecteur de sortie du contrôleur de LEDs sur la PCB de conversion, puis raccordez le 12V (**attention à la polarité**). C'est tout !
+
     !!! tip "Utilisez l'alimentation des LEDs"
-        La borne utilise de base une alimentation 12v dédiée pour les LEDs, vous pouvez ré-utiliser celle-ci pour alimenter la carte. **Ne prenez pas le 12V que vous utilisez pour l'IO4.** Réciproquement, n'utilisez pas l'alimentation des LEDs pour alimenter l'IO4, ces deux circuits doivent avoir une masse commune mais rester séparés.
-    
-    Vous aurez besoin d'une extension pour connecter le câble existant, 1 mètre côté joueur 2, et 2 mètres côté joueur 1. Vous pouvez facilement sertir ce câble vous-même, il vous faut une broche `JST-XH 8 positions femelle` d'un côté, et une `JST-SM 8 positions femelle` de l'autre.
+        La borne dispose d'origine d'une alimentation 12V dédiée aux LEDs : utilisez-la pour alimenter la PCB. **Ne prenez pas le 12V de l'IO4**, et inversement, n'alimentez pas l'IO4 avec l'alimentation des LEDs. Les deux circuits doivent partager une masse commune, mais rester séparés.
+
+    Il vous faudra une rallonge pour atteindre le câble existant : **2 mètres côté joueur 2, 3 mètres côté joueur 1**. Elle se sertit facilement : un connecteur `JST-XH 8 positions femelle` d'un côté, un `JST-SM 8 positions femelle` de l'autre.
 
     !!! lightbox
         ![PCB de conversion [maiConvert-IO4]({{IO4_CONVERSION_PCB}}) : repérage du connecteur J22 (`12V input`, attention à la polarité) et des connecteurs J23/J24 (`BILLBOARD LED L`/`R`) où raccorder la nappe de LEDs de l'enseigne lumineuse](../resources/images/step-6-lighting/led-inputs-and-12-on-convertion-pcb.jpg)
         ![Nappes de câbles en JST-SM 8 positions mâle, gérant les LEDs de l'enseigne lumineuse et des woofers, débranché du connecteur raccordé au contrôleur de LED sur une borne FiNALE](../resources/images/step-6-lighting/led-controller-rs232-disconnect.jpg)
 
-    Sachez que si vous comptez installer les caméras à l'étape suivante, la PCB de conversion vous simplifiera également la vie pour leurs LEDs puisque celle-ci propose déjà un connecteur tout prêt pour les installer. 
+    *Si vous comptez installer les caméras à l'étape suivante*, la PCB de conversion vous simplifiera aussi la vie : elle propose déjà des connecteurs prêts à l'emploi pour leurs LEDs.
 
 ??? example "La confection manuelle d'une nappe de câbles"
-    Nous allons créer notre propre nappe de câbles s'intégrant avec l'IO4 via un connecteur JST-RA 20 broches pour le CN9, et se terminant sur deux connecteurs JST-SM 8 broches pour les côtés gauche et droit. Si vous avez suivi les suggestions de recâblage à l'[étape 3](step-3-io-board.md), vous devriez déjà avoir un connecteur JST-SM 2 broches de câblé sur le connecteur CN3 de l'IO4 pour les signaux `BILLBOARD LED L RED` et `BILLBOARD LED R RED`.
+    La nappe se branche sur l'IO4 via un connecteur JST-RA 20 broches (CN9), et se termine par deux connecteurs JST-SM 8 broches, pour les côtés gauche et droit. Si vous avez suivi les suggestions de l'[étape 3](step-3-io-board.md), vous avez déjà un connecteur JST-SM 2 broches câblé sur le CN3 de l'IO4 pour les signaux `BILLBOARD LED L RED` et `BILLBOARD LED R RED`.
 
     !!! lightbox
         ![Repérage visuel des broches LED sur l'IO4 : le connecteur CN9 (JST-RA 20 broches) porte BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED et BILLBOARD LED L/R BLUE, tandis que BILLBOARD LED L/R RED se trouve sur le connecteur CN3](../resources/images/step-6-lighting/io4-visual-reprensation-of-led-pins.png)
         ![Schéma de câblage officiel de l'IO4 centré sur les broches LED : connecteur CN9 (RA20P) pour BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED et BILLBOARD LED L/R BLUE, et connecteur CN3 (RA60P) broches 51-52 pour BILLBOARD LED L/R RED](../resources/images/step-6-lighting/io4-wiring-schema-focused-on-leds.png)
 
-    Réalisons alors notre propre nappe de câbles sur la base du schéma suivant. Idéalement, celui-ci doit avoir une longueur suffisante pour être installé proprement dans la borne : 2 mètres pour le côté joueur 1, 1 mètre pour le côté joueur 2. Pour le 12V, n'utilisez pas la broche 12V du CN9, mais préférez vous raccorder directement sur l'alimentation 12V interne de la borne. Vous éviterez ainsi de charger inutilement la carte I/O.
+    Réalisez la nappe d'après le schéma ci-dessous, avec une longueur suffisante pour une installation propre : **3 mètres côté joueur 1, 2 mètres côté joueur 2**. Pour le 12V, **n'utilisez pas la broche 12V du CN9** : raccordez-vous directement à l'alimentation 12V des LEDs de la borne, pour ne pas charger inutilement la carte I/O.
 
-    ![Nappe de câbles pour l'éclairage de l'enseigne lumineuse : depuis l'IO4 (CN9 broches 5, 6, 9 et 10, et CN3 broches 51-52 déjà câblées à l'étape 3) et l'alimentation 12V interne, fabrication de deux connecteurs JST-SM 8 broches - côté P1 (2 mètres, avec pontage des broches 1-4 vers 5-8 pour alimenter aussi CENTER LED) et côté P2 (1 mètre, broches 5-8 non utilisées) - qui se branchent ensuite sur les connecteurs d'origine AB et BB](../resources/images/step-6-lighting/led-topper-harness.svg)
+    ![Nappe de câbles pour l'éclairage de l'enseigne lumineuse : depuis l'IO4 (CN9 broches 5, 6, 9 et 10, et CN3 broches 51-52 déjà câblées à l'étape 3) et l'alimentation 12V interne, fabrication de deux connecteurs JST-SM 8 broches - côté P1 (3 mètres, avec pontage des broches 1-4 vers 5-8 pour alimenter aussi CENTER LED) et côté P2 (2 mètres, broches 5-8 non utilisées) - qui se branchent ensuite sur les connecteurs d'origine AB et BB](../resources/images/step-6-lighting/led-topper-harness.svg)
 
-    Une fois la nappe réalisée, vous n'avez plus qu'à la brancher à l'IO4, raccorder le 12V à l'alimentation interne, et venir raccorder les deux connecteurs JST-SM 8 broches d'origine sur votre nouveau câble. Assurez-vous de tester la continuité sur tous vos câbles avant l'installation afin d'écarter tout problème de broche mal sertie.
+    Une fois la nappe terminée, branchez-la à l'IO4, raccordez le 12V, puis branchez les deux connecteurs JST-SM 8 broches d'origine sur votre nouveau câble. **Testez la continuité de tous vos câbles avant l'installation**, pour écarter toute broche mal sertie.
 
     !!! lightbox
         ![Nappes de câbles en JST-SM 8 positions mâle, gérant les LEDs de l'enseigne lumineuse et des woofers, débranché du connecteur raccordé au contrôleur de LED sur une borne FiNALE](../resources/images/step-6-lighting/led-controller-rs232-disconnect.jpg)
 
-    !!! tip "Les LEDs de la caméra"
-        Si vous souhaitez connecter les caméras optionnelles sur votre borne, sertissez dès maintenant quelques connecteurs supplémentaires:
-        
-        - JST-SM 2 broches sur les broches 7 et 8 du CN9, pour un accès facile aux signaux CAMERA LED WARM et CAMERA LED RED respectivement.
-        - JST-SM 2 broches sur les broches 55 et 56 du CN3, pour les signaux 1P CODE READER LED et 2P CODE READER LED dans cet ordre.
+    !!! tip "Les LEDs des caméras"
+        Si vous comptez installer les caméras optionnelles, sertissez dès maintenant quelques connecteurs supplémentaires :
+
+        - JST-SM 2 broches sur les broches 7 et 8 du CN9, pour les signaux `CAMERA LED WARM` et `CAMERA LED RED` respectivement.
+        - JST-SM 2 broches sur les broches 55 et 56 du CN3, pour les signaux `1P CODE READER LED` et `2P CODE READER LED` dans cet ordre.
 
 ## En résumé
 !!! tldr "Les grandes lignes"
     Pour les LEDs des boutons et le fond de la borne :
 
-    * Fabriquer deux proxys à base d'un Raspberry Pi Pico et d'un `Pico-2CH-RS232` chacun.
-    * Installer le proxy entre le contrôleur de LEDs et l'adaptateur RS-232 vers USB.
-    * Brancher l'adaptateur sur le hub USB sur le port approprié, et connecter le hub sur le port dédié du ALLS.
+    * Fabriquer deux proxys, chacun à base d'un Raspberry Pi Pico et d'un `Pico-2CH-RS232`.
+    * Installer chaque proxy entre son contrôleur de LEDs et l'adaptateur RS-232 vers USB.
+    * Brancher l'adaptateur sur le hub USB, et le hub sur le port USB n°2 du ALLS.
 
     Pour l'enseigne lumineuse et les woofers :
-    
-    * Soit : Raccorder les connecteurs existants de la borne à la [PCB de conversion]({{IO4_CONVERSION_PCB}}).
-    * Soit : Confectionner et installer une nouvelle nappe de câbles partant de l'IO4 et venant se brancher sur les connecteurs existants de la borne.
+
+    * Soit : raccorder les connecteurs existants de la borne à la [PCB de conversion]({{IO4_CONVERSION_PCB}}).
+    * Soit : confectionner et installer une nappe de câbles partant de l'IO4 et se branchant sur les connecteurs existants de la borne.
 
 ---
 

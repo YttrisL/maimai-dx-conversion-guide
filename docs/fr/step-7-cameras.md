@@ -4,40 +4,40 @@ title: "📷 7 - Caméras (Optionnel)"
 
 # 📷 Étape 7 : Caméras (Optionnel)
 
-À ce stade, il ne reste qu'une fonctionnalité qui différencie notre conversion d'une véritable *DX* : les caméras. Le jeu en fait un usage très modéré, et elles sont largement considérées comme optionnelles. Si vous souhaitez vous rapprocher au maximum du fonctionnement d'une véritable *DX*, elles sont heureusement plutôt simples à installer.
+À ce stade, une seule fonctionnalité sépare encore votre conversion d'une véritable *DX* : **les caméras**. Le jeu s'en sert très peu, et elles sont largement considérées comme optionnelles. Mais si vous voulez vous rapprocher au maximum d'une vraie *DX*, elles sont heureusement assez simples à installer.
 
 ## Explications techniques
 
 ??? note "Cliquez ici pour l'explication technique"
-    Il y a un total de 3 caméras dans une véritable *DX*, une est pointée vers les joueurs et deux servent de lecteur de QR-Code pour les *DX Pass*.
+    Une véritable *DX* compte **trois caméras** : une pointée vers les joueurs, et deux qui servent de lecteurs de QR-Code pour les *DX Pass*.
 
-    - La caméra des joueurs : Une simple caméra USB UVC d'une résolution de 1280x960 avec un HFOV de 95°. [[référence]]({{SHIKINO_PLAYER_CAMERA_REFERENCE}})
-    - Les caméras pour les lecteurs de QR-code : Deux caméras USB UVC, filmant en résolution 640x480 avec un FOV de 50°. 
+    - **La caméra des joueurs** : une simple caméra USB UVC, en 1280x960 avec un HFOV de 95°. [[référence]]({{SHIKINO_PLAYER_CAMERA_REFERENCE}})
+    - **Les caméras des lecteurs de QR-Code** : deux caméras USB UVC, en 640x480 avec un FOV de 50°.
 
     !!! info "Les DX Pass"
-        Les DX pass sont des cartes physiques, que les joueurs peuvent faire imprimer via la borne "Sega CardMaker". Il est assez rare de trouver cette borne hors-Japon, et encore plus fonctionnelle (entendez capable d'imprimer). Qui plus est, aujourd'hui les DX Pass sont automatiquement associés numériquement au compte de l'utilisateur, la carte physique n'est plus nécessaire dans la borne. De ce fait, la présence de ces caméras pour les lecteurs de QR-Code est largement optionnelle, voire inutile. 
-        
-        Certains événements en jeu ne se déclenchent qu'en scannant des cartes spécifiques via les lecteurs de QR-codes, mais la plupart des serveurs privés débloquent ces événements par défaut.
+        Les DX Pass sont des cartes physiques que les joueurs font imprimer sur la borne "Sega CardMaker". Cette borne est rare hors du Japon, et plus encore en état d'imprimer. De plus, les DX Pass sont aujourd'hui associés automatiquement au compte du joueur : la carte physique n'est plus nécessaire. **Les lecteurs de QR-Code sont donc largement optionnels**, voire inutiles.
 
-    Pour la caméra des joueurs, n'importe quelle caméra USB UVC fera l'affaire. Le jeu s'en sert uniquement pour afficher une photo des joueurs à la fin de chaque musique. La plupart des joueurs désactivent cette option par gain de temps. Une webcam bon marché est suffisante.
+        Certains événements en jeu ne se déclenchent qu'en scannant des cartes spécifiques, mais la plupart des serveurs privés les débloquent par défaut.
 
-    Pour les caméras des lecteurs de QR-code, le jeu est nettement plus exigeant. Il faut obligatoirement des caméras USB UVC capables de filmer en résolution 640x480. Le FOV est également précis, sans quoi les QR-codes ne sont pas reconnus par le jeu.
+    **Pour la caméra des joueurs, n'importe quelle caméra USB UVC fait l'affaire**, même une webcam bon marché. Le jeu s'en sert uniquement pour afficher une photo des joueurs à la fin de chaque musique, une option que la plupart des joueurs désactivent pour gagner du temps.
 
-    Dans les deux cas le jeu s'attend à avoir un éclairage dédié pour chacune des caméras, ces LEDs sont contrôlées par l'IO4. Bien qu'il ne soit pas indispensable de les raccorder, les lecteurs de QR-code par exemple risquent de très mal fonctionner s'ils ne sont pas éclairés de façon appropriée. En ce qui concerne la caméra des joueurs, si votre borne se situe dans une salle d'arcade sombre l'éclairage sera nécessaire. Le jeu envoie également un signal pour une unique LED rouge, destinée à prévenir les utilisateurs que la caméra des joueurs filme.
+    **Pour les lecteurs de QR-Code, le jeu est bien plus exigeant** : il faut obligatoirement des caméras USB UVC capables de filmer en 640x480, avec un FOV précis, sans quoi les QR-Codes ne sont pas reconnus.
 
-    Les caméras se raccordent au ALLS via USB. La caméra des joueurs se branche directement sur la carte mère, tandis que les deux caméras des lecteurs de QR-Code se branchent sur le même hub USB qui accueille l'adaptateur RS-232 vers USB des contrôleurs de LEDs de [l'étape 6](step-6-lighting.md).
+    Dans les deux cas, le jeu prévoit **un éclairage dédié pour chaque caméra**, piloté par l'IO4. Il n'est pas indispensable de le raccorder, mais sans éclairage adapté, les lecteurs de QR-Code risquent de très mal fonctionner. Pour la caméra des joueurs, l'éclairage devient nécessaire si votre borne est dans une salle sombre. Le jeu pilote aussi une LED rouge, qui prévient les joueurs que la caméra filme.
+
+    Les caméras se branchent en USB sur le ALLS : la caméra des joueurs directement sur la carte mère, les deux caméras des lecteurs de QR-Code sur le hub USB qui accueille déjà l'adaptateur RS-232 vers USB des contrôleurs de LEDs (voir l'[étape 6](step-6-lighting.md)).
 
 ## Caméra des joueurs (Photos in-game)
 
-En fonction du modèle de caméra que vous aurez choisi, il est difficile de concevoir un support universel. Votre meilleure option sera de concevoir un support imprimable en 3D que vous pourrez venir installer au sommet de la borne, en profitant des vis existantes pour la vitre en acrylique.
+Chaque modèle de caméra est différent, il est donc difficile de proposer un support universel. Le mieux est de **concevoir un support imprimable en 3D** à installer au sommet de la borne, en profitant des vis existantes de la vitre en acrylique.
 
 * **Installation sur la borne :** Impression 3D.
-* **Branchement au ALLS :** En USB, sur le port **n°3**. (Voir [l'étape 1](step-1-alls-and-psu.md))
-* **Branchement à l'IO4 :** 
-    - **CAMERA LED WARM : CN9 - Broche 7** Cathode de l'anneau de LEDs blanches servant à éclairer la zone filmée par la caméra.
-    - **CAMERA LED RED : CN9 - Broche 8** Cathode de l'unique LED rouge servant à indiquer aux joueurs que la caméra filme.
+* **Branchement au ALLS :** En USB, sur le port **n°3**.
+* **Branchement à l'IO4 :**
+    - **CAMERA LED WARM : CN9 - Broche 7** : cathode de l'anneau de LEDs blanches qui éclaire la zone filmée.
+    - **CAMERA LED RED : CN9 - Broche 8** : cathode de la LED rouge qui indique aux joueurs que la caméra filme.
 
-Si vous avez confectionné votre propre nappe de câbles et suivi la suggestion à [l'étape 6](step-6-lighting.md), vous devriez déjà avoir un connecteur à disposition pour le branchement sur l'IO4. Alternativement, si vous avez opté pour la PCB de conversion alors deux connecteurs dédiés sont à disposition pour ces LEDs.
+Si vous avez fabriqué votre propre nappe de câbles et suivi la suggestion de l'[étape 6](step-6-lighting.md), vous avez déjà un connecteur prêt pour l'IO4. Avec la PCB de conversion, deux connecteurs dédiés sont disponibles pour ces LEDs.
 
 !!! lightbox
     ![Schéma du ALLS : port USB n°3 utilisé pour la caméra des joueurs, mis en évidence par la flèche rouge](../resources/images/step-7-cameras/alls-hx2-rear-connectors-emphasis-on-usb-no3.jpg)
@@ -45,29 +45,29 @@ Si vous avez confectionné votre propre nappe de câbles et suivi la suggestion 
 
 ## Caméras des lecteurs de QR-Code
 
-Pour les lecteurs de QR-Codes, l'idéal est de se procurer deux petits modules de 30mm par 25mm, ceci vous permettra d'utiliser [le modèle 3D conçu par SpiralGlide](spiralglide-resources.md#support-du-lecteur-de-qr-code-dx-pass-reader) qui s'installe sur la borne grâce aux vis existantes pour la vitre en acrylique.
+L'idéal est de vous procurer **deux petits modules de 30mm x 25mm** : ils s'adaptent au [modèle 3D conçu par SpiralGlide](spiralglide-resources.md#support-du-lecteur-de-qr-code-dx-pass-reader), qui se fixe grâce aux vis existantes de la vitre en acrylique.
 
 * **Installation sur la borne :** [Impression 3D](spiralglide-resources.md#support-du-lecteur-de-qr-code-dx-pass-reader).
-* **Branchement au ALLS :** En USB, via un hub USB branché sur le port **n°2**. N'importe quel port USB du hub convient. (Voir [l'étape 1](step-1-alls-and-psu.md))
-* **Branchement à l'IO4 :** 
-    - **1P CODE READER LED : CN3 - Broche 55** Cathode commune des signaux R, G, et B de la bande de LEDs éclairant la caméra du lecteur du joueur 1.
-    - **2P CODE READER LED : CN3 - Broche 56** Cathode commune des signaux R, G, et B de la bande de LEDs éclairant la caméra du lecteur du joueur 2.
+* **Branchement au ALLS :** En USB, via le hub USB branché sur le port **n°2**. N'importe quel port du hub convient.
+* **Branchement à l'IO4 :**
+    - **1P CODE READER LED : CN3 - Broche 55** : cathode commune (R, G et B) de la bande de LEDs qui éclaire le lecteur du joueur 1.
+    - **2P CODE READER LED : CN3 - Broche 56** : cathode commune (R, G et B) de la bande de LEDs qui éclaire le lecteur du joueur 2.
 
-Si vous avez suivi la suggestion à [l'étape 3](step-3-io-board.md), vous avez déjà un connecteur disponible pour ces deux signaux. Comme pour le point précédent, ces signaux sont également à disposition sur la PCB de conversion.
+Si vous avez suivi la suggestion de l'[étape 6](step-6-lighting.md), vous avez déjà un connecteur prêt pour ces deux signaux. Ils sont aussi disponibles sur la PCB de conversion.
 
-Pour que le jeu parvienne à identifier les caméras des QR-Codes, celles-ci doivent pointer sur un QR-Code lisant *SDEZ01* côté joueur 1, et *SDEZ02* côté joueur 2. Le modèle 3D de SpiralGlide contient une encoche à la bonne taille pour ces deux codes. Vous pouvez imprimer [ce PDF](../resources/images/step-7-cameras/codes-for-qr-code-readers.pdf) en A4 sur une imprimante correctement calibrée pour obtenir les QR-Codes à la bonne taille pour les coller à l'emplacement approprié.
+**Pour que le jeu identifie les caméras, chacune doit filmer un QR-Code précis** : *SDEZ01* côté joueur 1, *SDEZ02* côté joueur 2. Le modèle 3D de SpiralGlide comporte une encoche à la bonne taille pour ces codes. Imprimez [ce PDF](../resources/images/step-7-cameras/codes-for-qr-code-readers.pdf) en A4, sur une imprimante correctement calibrée, pour obtenir des QR-Codes à la bonne taille, puis collez-les à leur emplacement.
 
-Si vous avez choisi les caméras proposées dans la [liste de courses](equipment.md), sachez qu'il est possible d'ajuster la lentille de celles-ci pour régler la mise au point de l'image.
+Si vous avez choisi les caméras de la [liste de courses](equipment.md), leur lentille est réglable : vous pouvez ajuster la mise au point.
 
 !!! tip "Les LEDs des lecteurs de QR-Code"
-    De base, *DX* utilise une bande de LEDs RGB pour éclairer la zone, mais les trois signaux R, G, et B ont une unique cathode en commun, pilotée par l'IO4. Dans les faits, cela signifie que les trois couleurs s'allument en même temps à (presque) la même intensité. Fonctionnellement, vous pouvez y substituer une bande de LEDs d'un blanc chaud, le résultat sera le même.
-    
-    Pour l'installation de la bande de LEDs, ne braquez pas les LEDs directement sur la lentille de la caméra. Éclairez plutôt la paroi en plastique pour que la lumière rebondisse de façon diffuse sur la carte. Sinon l'illumination frontale provoquera un reflet qui éblouira la caméra et empêchera le jeu de lire le QR-Code.
+    *DX* utilise d'origine une bande de LEDs RGB, mais ses trois couleurs partagent une seule cathode pilotée par l'IO4 : elles s'allument donc toujours ensemble, à (presque) la même intensité. **Une bande de LEDs blanc chaud donnera le même résultat.**
+
+    **Ne braquez pas les LEDs directement vers la lentille de la caméra.** Éclairez plutôt la paroi en plastique, pour que la lumière se diffuse sur la carte. Un éclairage de face crée un reflet qui éblouit la caméra et empêche la lecture du QR-Code.
 
 !!! tip "Installation des modules de caméra"
-    Le jeu est assez exigeant sur l'orientation du module de caméra, si l'angle n'est pas parfaitement identique à ce qu'il s'attend à recevoir il ne parviendra pas à lire le QR-Code de la carte. Méfiez-vous également, ce n'est pas parce que le QR-Code par défaut est bien lisible que les cartes le seront également, faites des essais. Bien que ce ne soit pas idéal, vous pouvez par exemple ajuster la hauteur et l'angle du module en rajoutant des écrous sur la vis pour modifier son inclinaison.
+    **Le jeu est très exigeant sur l'orientation des caméras** : si l'angle n'est pas le bon, il ne lira pas le QR-Code des cartes. Attention aussi : un QR-Code par défaut bien lu ne garantit pas que les cartes le seront, faites des essais. Pour ajuster la hauteur et l'inclinaison d'un module, vous pouvez par exemple ajouter des écrous sur ses vis. Ce n'est pas idéal, mais ça fonctionne.
 
-    Vous pouvez tester la détection des caméras dans le menu Test du jeu. Il n'y a malheureusement pas de meilleure méthode que l'essai-erreur pour cette étape.
+    Testez la détection dans le menu Test du jeu. Malheureusement, rien ne remplace les essais successifs pour cette étape.
 
 !!! lightbox
     ![Schéma du ALLS : port USB n°2 utilisé pour le hub des caméras des lecteurs de QR-Code, mis en évidence par la flèche rouge](../resources/images/step-7-cameras/alls-hx2-rear-connectors-emphasis-on-usb-no2.jpg)
@@ -76,9 +76,9 @@ Si vous avez choisi les caméras proposées dans la [liste de courses](equipment
 
 ## Validation de l'installation
 
-Dans le menu Test du jeu, vous avez accès à une page dédiée au contrôle des caméras. Le jeu s'attend à trouver un total de trois flux vidéo provenant des caméras que vous venez d'installer, et parmi ces trois flux il en cherche deux qui pointent vers les QR-Codes par défaut [SDEZ01](../resources/images/step-7-cameras/SDEZ01.svg) et [SDEZ02](../resources/images/step-7-cameras/SDEZ02.svg). Les caméras des QR-Codes seront automatiquement reconnues grâce à ceux-ci, et le jeu assigne la caméra restante à la caméra des joueurs.
+Le menu Test du jeu propose une page dédiée aux caméras. Le jeu y cherche **trois flux vidéo**, dont deux doivent filmer les QR-Codes par défaut [SDEZ01](../resources/images/step-7-cameras/SDEZ01.svg) et [SDEZ02](../resources/images/step-7-cameras/SDEZ02.svg). Ces deux caméras sont reconnues automatiquement grâce à leur QR-Code, et la caméra restante est attribuée aux joueurs.
 
-Si les trois caméras sont bien reconnues dans le bon ordre dans le menu, félicitations, l'installation est terminée.
+**Si les trois caméras sont reconnues dans le bon ordre, félicitations, l'installation est terminée !**
 
 ---
 
