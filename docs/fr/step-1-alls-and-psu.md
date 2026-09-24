@@ -139,7 +139,7 @@ Câblez le connecteur femelle en suivant le schéma ci-dessus. Il est représent
 - Broches 10-8 : **12V**
 - Broches 7-1 : **GND**
 
-Raccordez chaque fil au terminal correspondant de votre alimentation. Peu de courant traverse ce faisceau (moins de 3A au total, toutes tensions confondues), mais **assurez-vous d'utiliser une section adaptée** : du **20 AWG** (0,5mm²) est idéal. Le fil 22 AWG de la [liste du matériel](equipment.md) convient aussi, puisque chaque tension est répartie sur plusieurs broches. Vérifiez simplement que vos cosses Mini-Fit Jr acceptent la section choisie (les modèles 18-24 AWG sont les plus courants).
+Raccordez chaque fil au terminal correspondant de votre alimentation. Peu de courant traverse ce faisceau (moins de 3A au total, toutes tensions confondues), mais **assurez-vous d'utiliser une section adaptée** : le fil **20 AWG** (0,5mm²) de la [liste du matériel](equipment.md) est idéal. Du 22 AWG conviendrait aussi, puisque chaque tension est répartie sur plusieurs broches. Vérifiez simplement que vos cosses Mini-Fit Jr acceptent la section choisie (les modèles 18-24 AWG sont les plus courants).
 
 Il ne vous reste plus qu'à brancher votre connecteur maison sur le câble d'origine.
 

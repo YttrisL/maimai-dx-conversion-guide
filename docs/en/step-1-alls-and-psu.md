@@ -139,7 +139,7 @@ Wire the female connector following the diagram above. It is shown **from the fr
 - Pins 10-8: **12V**
 - Pins 7-1: **GND**
 
-Connect each wire to the matching terminal of your power supply. Little current flows through this harness (less than 3A in total, all voltages combined), but **make sure to use a suitable wire gauge**: **20 AWG** (0.5mm²) is ideal. The 22 AWG wire from the [equipment list](equipment.md) also works, since each voltage is spread over several pins. Just check that your Mini-Fit Jr crimp terminals accept the gauge you choose (18-24 AWG terminals are the most common).
+Connect each wire to the matching terminal of your power supply. Little current flows through this harness (less than 3A in total, all voltages combined), but **make sure to use a suitable wire gauge**: the **20 AWG** (0.5mm²) wire from the [equipment list](equipment.md) is ideal. 22 AWG would also work, since each voltage is spread over several pins. Just check that your Mini-Fit Jr crimp terminals accept the gauge you choose (18-24 AWG terminals are the most common).
 
 All that's left is to plug your homemade connector into the original cable.
 

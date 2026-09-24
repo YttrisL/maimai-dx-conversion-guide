@@ -41,7 +41,13 @@ title: "☑️ Checklist d'achat"
 
 ### Fils de câblage
 
-- [ ] Fil de câblage souple (AWG 22-24) en blanc, rouge et noir
+- [ ] Fil de câblage souple (AWG 20), idéalement de plusieurs couleurs
+
+### Éclairage (caméras optionnelles)
+
+- [ ] **1x**{: .quantity-emphasis } Bande de LEDs blanc chaud 12V
+- [ ] **1x**{: .quantity-emphasis } Bande de LEDs RGB 12V à anode commune (environ 20 cm)
+- [ ] **1x**{: .quantity-emphasis } LED rouge 12V (avec résistance intégrée)
 
 ### Connecteurs
 

@@ -8,10 +8,10 @@ title: "🛒 Liste de courses"
     La [checklist d'achats](equipment-checklist.md) reprend tous les articles à acheter, sans les explications.
 
 ## Préambule
-Pour chacune des pièces listées ci-dessous, l'option la plus adaptée est mise en avant. Cela peut être pour plusieurs raisons : simplicité d'installation, prix ou disponibilité. *Lorsqu'elles existent, les alternatives sont mentionnées.* Ce guide part toutefois du principe que vous avez choisi l'option principale et ne s'attardera pas sur ces alternatives.
+Pour chaque pièce, **l'option la plus adaptée est mise en avant**, que ce soit pour sa simplicité d'installation, son prix ou sa disponibilité. *Les alternatives sont mentionnées lorsqu'elles existent*, mais le guide part du principe que vous avez choisi l'option principale et ne les détaille pas.
 
 !!! info "Le marché de l'occasion japonais"
-    Si le marché de seconde main japonais et ses options d'achat ne vous sont pas familiers, n'hésitez pas à consulter l'annexe [Le marché de l'occasion japonais](secondhand-market.md).
+    Le marché de seconde main japonais ne vous est pas familier ? Consultez l'annexe [Le marché de l'occasion japonais](secondhand-market.md).
 
 ## Matériel obligatoire
 
@@ -19,16 +19,15 @@ Pour chacune des pièces listées ci-dessous, l'option la plus adaptée est mise
 
 ### ALLS HX2
 * Où : JDirectItems Auction 
-* Info : En fonction des périodes, il peut être assez difficile à trouver. C'est le système utilisé par maimai DX, et peu d'autres bornes l'utilisent.
+* Info : C'est le PC utilisé par DX, et peu d'autres bornes utilisent ce modèle spécifique : **selon les périodes, il peut être difficile à trouver**.
 
 *Alternative* : **ALLS MX2**
 
 * Où : JDirectItems Auction 
-* Info : Celui-ci se trouve plus facilement. Il nécessitera toutefois un downgrade pour être rendu compatible avec maimai DX. L'opération n'est pas documentée publiquement.
+* Info : Plus facile à trouver, et son logiciel interne est techniquement compatible avec DX.
 
 !!! info "Espace de stockage"
-    En fonction du jeu que faisait tourner nativement votre ALLS, il est possible que celui-ci ne contienne qu'un SSD de 64 Go.
-    Si c'est le cas, ce ne sera pas suffisant pour installer le jeu. Vous devrez alors vous procurer un SSD d'au moins 128 Go, idéalement 256 Go. N'importe quel modèle SATA fera l'affaire.
+    Selon le jeu qu'il faisait tourner à l'origine, votre ALLS ne contient peut-être qu'un SSD de 64 ou 128 Go, **insuffisant pour installer le jeu**. Il faut obligatoirement un disque secondaire (nommé "SUB STORAGE"), généralement de 500 Go. Si votre ALLS n'en a pas, vous devrez vous en procurer un.
 
 </div>
 
@@ -36,12 +35,15 @@ Pour chacune des pièces listées ci-dessous, l'option la plus adaptée est mise
 
 ### Carte I/O Sega IO4
 * Où : JDirectItems Auction 
-* Info : Simple à trouver, elle est utilisée dans toutes les bornes Sega depuis plusieurs années. À ne pas confondre avec une IO3, elles se ressemblent beaucoup. Le meilleur moyen de reconnaître une IO4 est de vérifier qu'elle possède bien ses dip switches sur le dessus de la PCB. 
+* Info : Facile à trouver, elle équipe toutes les bornes Sega depuis plusieurs années. **Attention à ne pas la confondre avec une IO3**, très ressemblante : le plus sûr est de vérifier la présence de **dip switches sur le dessus de la PCB**, que seule l'IO4 possède.
 
 !!! info "Variantes d'IO4"
-    Il existe plusieurs variantes d'IO4. Certaines, compatibles JVS, sont équipées d'un port USB-B et d'un USB-A pour le chaînage. D'autres avec un simple port micro-USB destinées à être connectées sur un port USB classique. Dans notre cas, la connexion avec le ALLS se fait en USB classique, via le port micro-USB. Le support JVS est donc inutile pour maimai DX. 
+    Il existe plusieurs variantes d'IO4 :
 
-    Habituellement les IO4 sans support JVS sont un peu moins chères à la revente, mais en théorie toutes les variantes sont compatibles pour cette conversion.
+    - **compatibles JVS**, avec un port USB-B et un port USB-A pour le chaînage ;
+    - **sans JVS**, avec un simple port micro-USB à brancher sur un port USB classique.
+
+    Sur maimai DX, l'IO4 se branche au ALLS en USB classique, via le port micro-USB : **le support JVS est inutile**. Les IO4 sans JVS sont généralement un peu moins chères, mais en théorie toutes les variantes conviennent.
 
 </div>
 
@@ -49,7 +51,7 @@ Pour chacune des pièces listées ci-dessous, l'option la plus adaptée est mise
 
 ### Lecteur Aime (Gen. 3)
 * Où : JDirectItems Auction
-* Info : Il faut impérativement un lecteur de génération 3. Il vient souvent avec le VFD intégré. On peut les reconnaître au logo Aime, différent de celui de la génération précédente. Ils ne sont pas très rares et on en trouve souvent provenant de la borne Star Horse 4.
+* Info : **Il faut impérativement un lecteur de génération 3**, souvent vendu avec le VFD intégré. On le reconnaît à son logo Aime, différent de celui de la génération précédente. Il n'est pas très rare : on en trouve souvent issus de bornes Star Horse 4.
 
 </div>
 
@@ -57,12 +59,12 @@ Pour chacune des pièces listées ci-dessous, l'option la plus adaptée est mise
 
 ### **2x**{: .quantity-emphasis } Dalle tactile HDX
 * Où : [Sur le discord HanDevice]({{DISCORD_HANDEVICE}})
-* Info : Il s'agit d'une dalle tactile créée par un particulier pour fournir un « game-pad » permettant de jouer à un simulateur de maimai DX dans le confort de son domicile. Officiellement, ils ne vendent pas de kit de conversion, mais il est possible de [contacter le fabricant via son discord]({{HANDEVICE_DISCORD_CONTACT_MESSAGE}}) pour leur demander une offre portant uniquement sur la dalle tactile **et** la HanDevice IO (leur carte I/O dédiée) qui va avec. Cette carte I/O a l'avantage d'exposer un port série UART que nous pouvons exploiter pour la connecter directement au ALLS HX2 sans avoir besoin de transformer le signal.
+* Info : Une dalle tactile conçue par un particulier, à l'origine comme « game-pad » pour jouer à un simulateur de DX chez soi. HanDevice ne vend pas officiellement de kit de conversion, mais vous pouvez [contacter le fabricant sur son discord]({{HANDEVICE_DISCORD_CONTACT_MESSAGE}}) pour demander une offre portant sur **la dalle tactile et la HanDevice IO** (sa carte I/O dédiée). Avantage de cette carte : elle expose un **port série UART**, qui permet de la relier au ALLS HX2 sans transformer le signal.
 
 *Alternative* : **2x**{: .quantity-emphasis } **Kit de conversion Yuancon - à base d'une dalle ADX**
 
 * Où : [Sur le site de yuancon]({{YUANCON_CONVERSION_KIT_PAGE}})
-* Info : Yuancon propose des kits de conversion incluant la dalle tactile et huit boutons, permettant de convertir un côté de la borne. Ils sont équivalents aux HDX à ceci près que leur carte I/O n'inclut pas de port série : elle communique uniquement en USB-CDC avec le PC, ce qui rend sa connexion à un ALLS HX2 difficile, puisque ce signal ne peut pas être adapté directement via un simple convertisseur RS-232. C'est toutefois possible via un logiciel faisant office de proxy, [maitouch_rs]({{MAITOUCH_RS_REPO}}) par [4ndr3w]({{GITHUB_4NDR3W}}) sur GitHub, qui tourne sur un Raspberry Pi installé entre le ALLS et l'ADX, mais cela introduit une complexité que nous ne détaillerons pas dans ce guide. (Si vous décidez de partir sur cette alternative, vous n'avez pas besoin des boutons supplémentaires du point suivant.)
+* Info : Chaque kit Yuancon comprend une dalle tactile et huit boutons, de quoi convertir un côté de la borne. Ils équivalent aux HDX, à un détail près : **leur carte I/O n'a pas de port série**. Elle communique uniquement en USB-CDC, un signal qu'un simple convertisseur RS-232 ne peut pas adapter pour le ALLS HX2. C'est possible via un proxy logiciel, [maitouch_rs]({{MAITOUCH_RS_REPO}}) par [4ndr3w]({{GITHUB_4NDR3W}}) sur GitHub, qui tourne sur un Raspberry Pi placé entre le ALLS et l'ADX, mais cette complexité n'est pas détaillée dans ce guide. *Avec cette alternative, les boutons du point suivant sont inutiles.*
 
 </div>
 
@@ -70,15 +72,15 @@ Pour chacune des pièces listées ci-dessous, l'option la plus adaptée est mise
 
 ### **16x**{: .quantity-emphasis } Boutons HDX
 * Où : [Sur le discord HanDevice]({{DISCORD_HANDEVICE}})
-* Info : Les boutons de jeu pour l'anneau. Les boutons de FiNALE sont techniquement compatibles, mais le ressenti est totalement différent (et bien meilleur) sur DX. Il vaut donc largement la peine de les mettre à jour. Il faut huit boutons par joueur, soit seize au total, mais il peut être utile d'en acheter quelques-uns en réserve. C'est une pièce d'usure.
+* Info : Les boutons de jeu de l'anneau. Ceux de FiNALE sont techniquement compatibles, mais le ressenti sur DX est totalement différent, et bien meilleur : **le remplacement vaut largement la peine**. Il en faut huit par joueur, soit seize au total. *C'est une pièce d'usure* : quelques boutons de réserve peuvent être utiles.
 
 *Alternative* : **16x**{: .quantity-emphasis } **Boutons "Rabbit"**
 
 * Où : [Sur la boutique Taobao officielle]({{TAOBAO_OFFICIAL_SHOP_LISTING}})
-* Info : Assez similaires aux boutons officiels de maimai DX, ils représentent une excellente alternative.
+* Info : Assez proches des boutons officiels de maimai DX, c'est une excellente alternative.
 
 !!! failure "N'achetez pas les contrefaçons !"
-    Il existe des boutons génériques beaucoup moins chers, en apparence très similaires, que l'on trouve sur Taobao ou AliExpress. Ne succombez pas à la tentation d'économiser quelques euros, c'est le pire achat que vous puissiez faire. Contrairement aux boutons de HanDevice ou de Rabbit, ils sont de **très** mauvaise qualité, cumulent les problèmes et ont une durabilité minime. Préférez des boutons de qualité venant d'un vendeur fiable.
+    On trouve sur Taobao ou AliExpress des boutons génériques bien moins chers, en apparence très similaires. **Ne cédez pas à la tentation d'économiser quelques euros** : c'est le pire achat possible. Contrairement aux boutons HanDevice ou Rabbit, ils sont de **très** mauvaise qualité, cumulent les problèmes et durent très peu. Préférez des boutons de qualité, achetés chez un vendeur fiable.
 
 </div>
 
@@ -87,12 +89,12 @@ Pour chacune des pièces listées ci-dessous, l'option la plus adaptée est mise
 ### **2x**{: .quantity-emphasis } Bouton OBSF-24TR
 
 * Où : [SmallCab]({{SMALLCAB_SANWA_OBSF_24TR}}) ou [Jammastar]({{JAMMASTAR_SANWA_OBSF_24TR}})
-* Info : Les boutons de tri "triangle" du Joueur 1 et du Joueur 2, situés au centre de la borne au-dessus du lecteur Aime. Typiquement **bleu pour le Joueur 1 et rouge pour le Joueur 2**.
+* Info : Les boutons de tri "triangle" des joueurs 1 et 2, au centre de la borne, au-dessus du lecteur Aime. Typiquement **bleu pour le joueur 1 et rouge pour le joueur 2**.
 
 *Alternative* : ... Littéralement n'importe quels autres boutons
 
 * Où : AliExpress, Amazon, etc.
-* Info : Ces boutons sont très peu utilisés dans le jeu, et bien qu'il s'agisse de véritables Sanwa OBSF-24TR sur la borne originale, il n'y a vraiment pas besoin d'un bouton de qualité vu le faible usage qui en est fait. N'importe quelle contrefaçon fera très bien l'affaire.
+* Info : La borne d'origine utilise de véritables Sanwa OBSF-24TR, mais ces boutons servent très peu en jeu : **inutile d'investir dans la qualité**. N'importe quelle contrefaçon fera très bien l'affaire.
 
 </div>
 
@@ -101,7 +103,7 @@ Pour chacune des pièces listées ci-dessous, l'option la plus adaptée est mise
 ### **1x**{: .quantity-emphasis } Hub USB 4 ports
 
 * Où : Amazon, AliExpress, votre boutique favorite
-* Info : Dans une véritable maimai DX, un des 4 ports USB de la carte mère du ALLS est dédié à un hub USB de 4 ports. Ce hub accueille les deux caméras des lecteurs de QR-Code et l'adaptateur RS-232/USB sur lequel sont connectés les contrôleurs de LEDs du joueur 1 et du joueur 2. N'importe quel hub USB fera l'affaire.
+* Info : Sur une véritable maimai DX, l'un des 4 ports USB de la carte mère du ALLS est réservé à un hub USB 4 ports. Ce hub accueille les deux caméras des lecteurs de QR-Code et l'adaptateur RS-232/USB des contrôleurs de LEDs des joueurs 1 et 2. **N'importe quel hub USB fera l'affaire.**
 
 </div>
 
@@ -110,22 +112,22 @@ Pour chacune des pièces listées ci-dessous, l'option la plus adaptée est mise
 ### **1x**{: .quantity-emphasis } Alimentation à découpage 5V/12V
 
 * Où : Amazon, AliExpress, distributeurs de composants électroniques
-* Info : Le ALLS ne fournit pas d'alimentation aux périphériques externes, contrairement au RingEdge 2. Cette alimentation remplace ce rôle : elle alimente notamment l'IO4, le lecteur Aime, le VFD et les proxys des contrôleurs de LEDs. Il vous faut un modèle **à double sortie 5V et 12V**, en boîtier métallique avec bornier à vis, comme les Mean Well RD-35A ou RD-50A. **Ne réutilisez pas les alimentations d'origine de la borne** à la place.
+* Info : Contrairement au RingEdge 2, le ALLS n'alimente pas les périphériques externes. Cette alimentation prend le relais : elle alimente notamment l'IO4, le lecteur Aime, le VFD et les proxys des contrôleurs de LEDs. Il vous faut un modèle **à double sortie 5V et 12V**, en boîtier métallique avec bornier à vis, comme les Mean Well RD-35A ou RD-50A. **Ne réutilisez pas les alimentations d'origine de la borne** à la place.
 
 </div>
 
-D'autres petits achats sont nécessaires pour la suite du guide, et sont repris dans [Petites fournitures](#petites-fournitures).
+D'autres petits achats sont nécessaires pour la suite du guide : ils sont regroupés dans les [Petites fournitures](#petites-fournitures).
 
 ## Matériel optionnel pour la caméra et les lecteurs de QR-code
 
-L'installation de la caméra des joueurs et des lecteurs de QR-code est optionnelle, mais si vous souhaitez la réaliser, vous aurez besoin du matériel suivant.
+La caméra des joueurs et les lecteurs de QR-code sont **optionnels**. Si vous souhaitez les installer, voici le matériel nécessaire.
 
 <div class="equipment-card" markdown>
 
 ### **1x**{: .quantity-emphasis } Caméra des joueurs
 
 * Où : Amazon, AliExpress, votre boutique favorite
-* Info : N'importe quelle webcam USB bon marché fera l'affaire, si tant est qu'elle supporte UVC (si votre caméra fonctionne dès son branchement initial sans avoir besoin de drivers spécifiques, alors elle est sans doute compatible). Sur une maimai DX originale, la caméra possède une résolution native de 1280x960 pixels, et cette résolution est peu exploitée en jeu. Inutile donc de dépenser une fortune.
+* Info : **N'importe quelle webcam USB bon marché fera l'affaire**, pourvu qu'elle soit UVC. *Si elle fonctionne dès le branchement, sans pilote particulier, elle est sans doute compatible.* La caméra d'origine filme en 1280x960, une résolution peu exploitée en jeu : inutile de dépenser une fortune.
 
 </div>
 
@@ -134,14 +136,13 @@ L'installation de la caméra des joueurs et des lecteurs de QR-code est optionne
 ### **2x**{: .quantity-emphasis } Caméra pour QR-Code
 
 * Où : Amazon, AliExpress, votre boutique favorite ([exemple de caméra compatible]({{BUY_EXAMPLE_QR_CODE_CAMERA}}))
-* Info : Le jeu est très exigeant sur la caméra USB requise pour les lecteurs de QR-Code. Celle-ci doit être UVC, supporter une résolution de 640x480 en 30 fps au format YUY2 et offrir un angle de vue de 50°. Une lumière externe est par ailleurs nécessaire pour éclairer la zone.  
-(Une LED adaptée est proposée dans les [Petites fournitures](#petites-fournitures))
+* Info : **Le jeu est très exigeant sur ces caméras.** Elles doivent être UVC, filmer en 640x480 à 30 fps au format YUY2, avec un angle de vue de 50°. Un éclairage externe est aussi nécessaire (voir [Éclairage](#eclairage)).
 
 </div>
 
 ## Petites fournitures
 
-Vous trouverez ces articles dans votre boutique préférée (Amazon, AliExpress, ...). Il s'agit de petits achats bon marché dont vous aurez besoin au fil des différentes étapes.
+Ces petits achats bon marché, nécessaires au fil des étapes, se trouvent dans votre boutique préférée (Amazon, AliExpress, ...).
 
 <div class="equipment-supplies" markdown>
 
@@ -152,50 +153,56 @@ Vous trouverez ces articles dans votre boutique préférée (Amazon, AliExpress,
 * **1x**{: .quantity-emphasis } **Câble DVI-D vers DVI-D (2 m)** 
     - Branchement du ALLS vers l'écran du joueur 2. Votre FiNALE en a peut-être déjà nativement un.
 * **1x**{: .quantity-emphasis } **Câble DB-9 Femelle-Femelle** 
-    - Le plus court possible, le câble sera coupé pour faire deux connecteurs, pour le lecteur Aime et le VFD.
+    - Le plus court possible : il sera coupé en deux pour fabriquer les connecteurs du lecteur Aime et du VFD.
 * **4x**{: .quantity-emphasis } **Câble DB-9 Mâle-Femelle (3 m)** 
-    - Utilisé comme rallonge pour raccorder le lecteur Aime au ALLS.
-    - Utilisé comme rallonge pour raccorder le VFD au ALLS.
-    - Utilisé comme rallonge pour raccorder la dalle tactile du joueur 1 au ALLS.
-    - Utilisé comme rallonge pour raccorder la dalle tactile du joueur 2 au ALLS.
+    - Rallonges vers le ALLS pour le lecteur Aime, le VFD et les dalles tactiles des joueurs 1 et 2.
 * **1x**{: .quantity-emphasis } **Câble IEC C-13 (2 m)** 
-    - Branché au ALLS et coupé à hauteur de la prise pour être raccordé en direct à l'alimentation de la borne.
+    - Branché au ALLS, puis coupé côté prise pour être raccordé directement à l'alimentation électrique de la borne.
 * **2x**{: .quantity-emphasis } **Câble micro-USB** de charge
-    - Pour alimenter les deux proxys des contrôleurs de LEDs. L'extrémité opposée au Pico est coupée pour raccorder le fil rouge sur le 5V et le fil noir sur la masse de l'alimentation installée à l'[étape 1](step-1-alls-and-psu.md).
+    - Pour alimenter les deux proxys des contrôleurs de LEDs : l'extrémité opposée au Pico est coupée, fil rouge sur le 5V et fil noir sur le GND de l'alimentation installée à l'[étape 1](step-1-alls-and-psu.md).
 
 ### Électronique
 
 * **2x**{: .quantity-emphasis } **Convertisseur TTL vers RS-232 avec DB-9 femelle** ([exemple]({{BUY_EXAMPLE_TTL_RS232_CONVERTER}})) 
-    - Pour faire le lien entre l'IO de la dalle tactile du joueur 1 et la connexion DB-9 du ALLS.
-    - Pour faire le lien entre l'IO de la dalle tactile du joueur 2 et la connexion DB-9 du ALLS.
+    - Pour relier la carte I/O de chaque dalle tactile (joueurs 1 et 2) à son port DB-9 du ALLS.
 * **2x**{: .quantity-emphasis } **Raspberry Pi Pico** ([exemple]({{BUY_EXAMPLE_RASPBERRY_PI_PICO}})) 
-    - Pour fabriquer les proxy des contrôleurs de LEDs. Préférez une version avec les broches pré-soudés sur le Pico si vous souhaitez une installation sans soudure. **Attention, les broches doivent être soudées vers les bas, pas vers le haut.**
+    - Pour fabriquer les proxys des contrôleurs de LEDs. Pour éviter toute soudure, préférez une version aux broches pré-soudées. **Attention : les broches doivent être soudées vers le bas, pas vers le haut.**
 * **2x**{: .quantity-emphasis } **Pico-2CH-RS232** ([exemple]({{BUY_EXAMPLE_PICO_2CH_RS232}})) 
-    - Pour fabriquer les proxy des contrôleurs de LEDs
+    - Pour fabriquer les proxys des contrôleurs de LEDs.
 
 
 ### Fils de câblage
 
-* **Fil de câblage souple (AWG 22-24)** 
-    - Il y aura plusieurs câbles à sertir tout au long de ce guide, prévoyez d'en avoir de réserve.
+* **Fil de câblage souple (AWG 20)** 
+    - Plusieurs câbles sont à sertir tout au long du guide : prévoyez-en une bonne réserve, idéalement de plusieurs couleurs.
 
+### Éclairage
+
+*Uniquement si vous installez les caméras optionnelles.*
+
+* **1x**{: .quantity-emphasis } **Bande de LEDs blanc chaud 12V**
+    - Éclairage de la caméra des joueurs.
+* **1x**{: .quantity-emphasis } **Bande de LEDs RGB 12V à anode commune**
+    - Éclairage des deux lecteurs de QR-code : une anode commune et une cathode par couleur. Environ 20 cm de bande suffisent.
+* **1x**{: .quantity-emphasis } **LED rouge 12V avec résistance intégrée**
+    - Indique aux joueurs que la caméra filme. **Une LED nue grillerait** sur le 12V : prenez un modèle prévu pour cette tension ou, à défaut, une résistance à part de 2,2 à 4,7 kOhm.
 
 ### Connecteurs
 
 * **1x**{: .quantity-emphasis } **Connecteur Molex Mini-Fit Jr. 2x7 broches femelle** ([exemple]({{BUY_EXAMPLE_MOLEX_MINI_FIT_JR_CONNECTOR}})) 
-    - Pour raccorder proprement le connecteur d'alimentation préalablement raccordé au RingEdge2.
+    - Pour raccorder proprement le connecteur d'alimentation qui était branché sur le RingEdge 2.
 * **30x**{: .quantity-emphasis } **Broche Molex Mini-Fit Jr. femelle à sertir** 
     - Pour aller avec le connecteur précédent.
 * **1x**{: .quantity-emphasis } **Connecteur JST-RA 2x10 broches femelle** 
     - Pour le CN9 de l'IO4.
 * **30x**{: .quantity-emphasis } **Broche JST-RA femelle à sertir** 
-    - Pour peupler le CN9 et les câbles à rajouter sur le CN3 de l'IO4.
+    - Pour le CN9 et les câbles à ajouter sur le CN3 de l'IO4.
 * **2x**{: .quantity-emphasis } **Connecteur JST-SM 8 broches femelle** 
     - Extrémités de la nappe d'éclairage de l'enseigne lumineuse, côté joueur 1 et côté joueur 2, à raccorder aux connecteurs JST-SM d'origine.
 * **2x**{: .quantity-emphasis } **Connecteur JST-SM 2 broches, paire mâle + femelle**
-    - Idéal pour faire nos propres connecteurs pour nous faciliter la vie, mais si vous n'en avez pas de stock de simples JST-XH peuvent également convenir.
+    - Idéal pour fabriquer vos propres connecteurs et vous simplifier la vie. À défaut, de simples JST-XH conviennent aussi.
 
-Pour le reste des connecteurs, plutôt que d'acheter chaque référence à l'unité, procurez-vous directement un kit d'assortiment par type de connecteur : on en trouve facilement sur Amazon ou AliExpress, regroupant plusieurs tailles de boîtiers, les deux genres (mâle/femelle) et un lot de broches à sertir. Voici ce dont vous aurez besoin dans chacun :
+Pour les autres connecteurs, plutôt que d'acheter chaque référence à l'unité, **procurez-vous un kit d'assortiment par type de connecteur**. On en trouve facilement sur Amazon ou AliExpress, avec plusieurs tailles de boîtiers, les deux genres (mâle/femelle) et un lot de broches à sertir. Voici ce qu'il vous faut dans chacun :
 
 **Kit JST-XH**
 
@@ -219,24 +226,20 @@ Pour le reste des connecteurs, plutôt que d'acheter chaque référence à l'uni
 </div>
 
 !!! abstract "En cours d'écriture"
-    Cette liste est incomplète, elle sera enrichie en même temps que les points suivants.  
-    Il reste à ajouter, une fois les détails connus :
+    Cette liste est incomplète et sera enrichie au fil de l'écriture du guide. Restent à ajouter, une fois les détails connus :
     
     - **2x**{: .quantity-emphasis } Prises jack pour le casque et les câbles qui vont avec
     - **2x**{: .quantity-emphasis } Amplis son pour les casques
-    - **2x**{: .quantity-emphasis } LED blanches pour les lecteurs de QR-code
-    - **1x**{: .quantity-emphasis } LED rouge pour indiquer que la caméra filme
-    - **1x**{: .quantity-emphasis } LED blanche chaude pour éclairer la caméra
 
 ---
 
 !!! warning "Vérifiez votre matériel avant de commencer"
-    Assurez-vous d'avoir reçu et testé tout le matériel que vous aurez commandé avant de vous lancer dans la conversion à proprement parler. Cela vous évitera bien des migraines : si un problème survient, vous pourrez d'emblée écarter l'hypothèse du matériel défectueux.
+    **Recevez et testez tout le matériel commandé avant de commencer la conversion.** Vous vous éviterez bien des migraines : en cas de problème, vous pourrez d'emblée écarter l'hypothèse d'une pièce défectueuse.
 
 ---
 
 !!! tip "Voici la checklist simplifiée"
-    Envie de cocher vos achats au fur et à mesure plutôt que de vous replonger dans le détail ? Voici la [checklist d'achat](equipment-checklist.md).
+    Envie de cocher vos achats au fur et à mesure, sans vous replonger dans le détail ? Utilisez la [checklist d'achat](equipment-checklist.md).
 
 ---
 

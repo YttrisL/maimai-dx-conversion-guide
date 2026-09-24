@@ -41,7 +41,13 @@ title: "☑️ Purchase checklist"
 
 ### Hookup wire
 
-- [ ] Flexible hookup wire (AWG 22-24) in white, red and black
+- [ ] Flexible hookup wire (AWG 20), ideally in several colors
+
+### Lighting (optional cameras)
+
+- [ ] **1x**{: .quantity-emphasis } 12V warm white LED strip
+- [ ] **1x**{: .quantity-emphasis } 12V common-anode RGB LED strip (about 20 cm)
+- [ ] **1x**{: .quantity-emphasis } 12V red LED (with built-in resistor)
 
 ### Connectors
 

@@ -8,10 +8,10 @@ title: "🛒 Shopping list"
     The [purchase checklist](equipment-checklist.md) lists every item to buy, without the explanations.
 
 ## Preamble
-For each of the parts listed below, the most suitable option is highlighted. This can be for several reasons: ease of installation, price or availability. *Where they exist, alternatives are mentioned.* This guide, however, assumes you have chosen the main option and will not dwell on those alternatives.
+For each part, **the most suitable option is highlighted**, whether for its ease of installation, price or availability. *Alternatives are mentioned where they exist*, but the guide assumes you chose the main option and does not cover them.
 
 !!! info "The Japanese second-hand market"
-    If the Japanese second-hand market and its buying options are unfamiliar to you, feel free to consult the appendix [The Japanese second-hand market](secondhand-market.md).
+    Unfamiliar with the Japanese second-hand market? See the appendix [The Japanese second-hand market](secondhand-market.md).
 
 ## Mandatory hardware
 
@@ -19,16 +19,15 @@ For each of the parts listed below, the most suitable option is highlighted. Thi
 
 ### ALLS HX2
 * Where: JDirectItems Auction
-* Info: depending on the period, it can be fairly hard to find. It is the system used by maimai DX, and few other cabinets use it.
+* Info: it is the PC used by DX, and few other cabinets use this specific model: **depending on the period, it can be hard to find**.
 
 *Alternative*: **ALLS MX2**
 
 * Where: JDirectItems Auction
-* Info: this one is easier to find. It will, however, need a downgrade to be made compatible with maimai DX. That operation is not publicly documented.
+* Info: easier to find, and its internal software is technically compatible with DX.
 
 !!! info "Storage space"
-    Depending on the game your ALLS was natively running, it may only contain a 64 GB SSD.
-    If that is the case, it will not be enough to install the game. You will then need to obtain an SSD of at least 128 GB, ideally 256 GB. Any SATA model will do.
+    Depending on the game it originally ran, your ALLS may only contain a 64 or 128 GB SSD, **not enough to install the game**. A secondary drive (named "SUB STORAGE"), usually 500 GB, is mandatory. If your ALLS does not have one, you will need to get one.
 
 </div>
 
@@ -36,12 +35,15 @@ For each of the parts listed below, the most suitable option is highlighted. Thi
 
 ### Sega IO4 I/O board
 * Where: JDirectItems Auction
-* Info: easy to find, it has been used in every Sega cabinet for several years. Do not confuse it with an IO3, they look very similar. The best way to recognize an IO4 is to check that it has its dip switches on the top of the PCB.
+* Info: easy to find, it has equipped every Sega cabinet for several years. **Be careful not to confuse it with an IO3**, which looks very similar: the safest check is the **dip switches on top of the PCB**, which only the IO4 has.
 
 !!! info "IO4 variants"
-    There are several IO4 variants. Some, JVS-compatible, have a USB-B port and a USB-A port for daisy-chaining. Others have a simple micro-USB port meant to be connected to a regular USB port. In our case, the connection to the ALLS is done over regular USB, via the micro-USB port. JVS support is therefore useless for maimai DX.
+    There are several IO4 variants:
 
-    IO4s without JVS support are usually a little cheaper on the resale market, but in theory all variants are compatible with this conversion.
+    - **JVS-compatible**, with a USB-B port and a USB-A port for daisy-chaining;
+    - **without JVS**, with a simple micro-USB port to plug into a regular USB port.
+
+    On maimai DX, the IO4 connects to the ALLS over regular USB, through the micro-USB port: **JVS support is useless**. IO4s without JVS are usually a little cheaper, but in theory every variant works.
 
 </div>
 
@@ -49,7 +51,7 @@ For each of the parts listed below, the most suitable option is highlighted. Thi
 
 ### Aime reader (Gen. 3)
 * Where: JDirectItems Auction
-* Info: you absolutely need a generation 3 reader. It often comes with the VFD built in. You can recognize them by the Aime logo, which is different from the previous generation's. They are not very rare and you often find them coming from the Star Horse 4 cabinet.
+* Info: **you absolutely need a generation 3 reader**, often sold with the VFD built in. You can recognize it by its Aime logo, which differs from the previous generation's. It is not very rare: you often find ones taken from Star Horse 4 cabinets.
 
 </div>
 
@@ -57,12 +59,12 @@ For each of the parts listed below, the most suitable option is highlighted. Thi
 
 ### **2x**{: .quantity-emphasis } HDX touchscreen
 * Where: [On the HanDevice Discord]({{DISCORD_HANDEVICE}})
-* Info: this is a touchscreen created by an individual to provide a "game-pad" for playing a maimai DX simulator from the comfort of home. Officially, they do not sell a conversion kit, but you can [contact the maker via their Discord]({{HANDEVICE_DISCORD_CONTACT_MESSAGE}}) to ask for an offer covering only the touchscreen **and** the HanDevice IO (their dedicated I/O board) that goes with it. This I/O board has the advantage of exposing a UART serial port that we can use to connect it directly to the ALLS HX2 without needing to convert the signal.
+* Info: a touchscreen designed by an individual, originally as a "game-pad" for playing a DX simulator at home. HanDevice does not officially sell a conversion kit, but you can [contact the maker on their Discord]({{HANDEVICE_DISCORD_CONTACT_MESSAGE}}) to ask for an offer covering **the touchscreen and the HanDevice IO** (its dedicated I/O board). The upside of this board: it exposes a **UART serial port**, which lets you connect it to the ALLS HX2 without converting the signal.
 
 *Alternative*: **2x**{: .quantity-emphasis } **Yuancon conversion kit - based on an ADX touchscreen**
 
 * Where: [On the Yuancon website]({{YUANCON_CONVERSION_KIT_PAGE}})
-* Info: Yuancon offers conversion kits including the touchscreen and eight buttons, letting you convert one side of the cabinet. They are equivalent to the HDX except that their I/O board does not include a serial port: it only communicates over USB-CDC with the PC, which makes connecting it to an ALLS HX2 difficult, since that signal cannot be adapted directly with a simple RS-232 converter. It is nonetheless possible via a piece of software acting as a proxy, [maitouch_rs]({{MAITOUCH_RS_REPO}}) by [4ndr3w]({{GITHUB_4NDR3W}}) on GitHub, running on a Raspberry Pi installed between the ALLS and the ADX, but that introduces a complexity we will not cover in this guide. (If you decide to go with this alternative, you do not need the extra buttons from the next item.)
+* Info: each Yuancon kit includes a touchscreen and eight buttons, enough to convert one side of the cabinet. They are equivalent to the HDX, with one catch: **their I/O board has no serial port**. It only communicates over USB-CDC, a signal that a simple RS-232 converter cannot adapt for the ALLS HX2. It is possible through a software proxy, [maitouch_rs]({{MAITOUCH_RS_REPO}}) by [4ndr3w]({{GITHUB_4NDR3W}}) on GitHub, running on a Raspberry Pi placed between the ALLS and the ADX, but that complexity is not covered in this guide. *With this alternative, you do not need the buttons from the next item.*
 
 </div>
 
@@ -70,15 +72,15 @@ For each of the parts listed below, the most suitable option is highlighted. Thi
 
 ### **16x**{: .quantity-emphasis } HDX buttons
 * Where: [On the HanDevice Discord]({{DISCORD_HANDEVICE}})
-* Info: the gameplay buttons for the ring. The FiNALE buttons are technically compatible, but the feel is completely different (and much better) on DX. It is therefore well worth upgrading them. You need eight buttons per player, so sixteen in total, but it can be useful to buy a few spares. This is a wear part.
+* Info: the gameplay buttons for the ring. The FiNALE ones are technically compatible, but the feel on DX is completely different, and much better: **the upgrade is well worth it**. You need eight per player, so sixteen in total. *This is a wear part*: a few spare buttons can come in handy.
 
 *Alternative*: **16x**{: .quantity-emphasis } **"Rabbit" buttons**
 
 * Where: [On the official Taobao shop]({{TAOBAO_OFFICIAL_SHOP_LISTING}})
-* Info: fairly similar to the official maimai DX buttons, they are an excellent alternative.
+* Info: fairly close to the official maimai DX buttons, they are an excellent alternative.
 
 !!! failure "Don't buy the counterfeits!"
-    There are generic buttons, much cheaper, that look very similar, sold on Taobao or AliExpress. Do not give in to the temptation of saving a few euros; it is the worst purchase you can make. Unlike the HanDevice or Rabbit buttons, they are of **very** poor quality, pile up problems and have minimal durability. Go for quality buttons from a reliable seller.
+    Taobao and AliExpress sell much cheaper generic buttons that look very similar. **Do not give in to the temptation of saving a few euros**: it is the worst purchase you can make. Unlike HanDevice or Rabbit buttons, they are of **very** poor quality, pile up problems and wear out fast. Go for quality buttons from a reliable seller.
 
 </div>
 
@@ -87,12 +89,12 @@ For each of the parts listed below, the most suitable option is highlighted. Thi
 ### **2x**{: .quantity-emphasis } OBSF-24TR button
 
 * Where: [SmallCab]({{SMALLCAB_SANWA_OBSF_24TR}}) or [Jammastar]({{JAMMASTAR_SANWA_OBSF_24TR}})
-* Info: the "triangle" sort buttons for Player 1 and Player 2, located in the center of the cabinet above the Aime reader. Typically **blue for Player 1 and red for Player 2**.
+* Info: the "triangle" sort buttons for players 1 and 2, in the center of the cabinet, above the Aime reader. Typically **blue for player 1 and red for player 2**.
 
 *Alternative*: ... literally any other buttons
 
 * Where: AliExpress, Amazon, etc.
-* Info: these buttons are barely used in the game, and although they are genuine Sanwa OBSF-24TR on the original cabinet, there is really no need for a quality button given how little use they get. Any counterfeit will do just fine.
+* Info: the original cabinet uses genuine Sanwa OBSF-24TR, but these buttons are barely used in game: **no need to invest in quality**. Any counterfeit will do just fine.
 
 </div>
 
@@ -101,7 +103,7 @@ For each of the parts listed below, the most suitable option is highlighted. Thi
 ### **1x**{: .quantity-emphasis } 4-port USB hub
 
 * Where: Amazon, AliExpress, your favorite shop
-* Info: in a real maimai DX, one of the 4 USB ports on the ALLS motherboard is dedicated to a 4-port USB hub. This hub hosts the two QR-code reader cameras and the RS-232/USB adapter that the Player 1 and Player 2 LED controllers are connected to. Any USB hub will do.
+* Info: on a real maimai DX, one of the 4 USB ports on the ALLS motherboard is reserved for a 4-port USB hub. This hub hosts the two QR-code reader cameras and the RS-232/USB adapter for the player 1 and 2 LED controllers. **Any USB hub will do.**
 
 </div>
 
@@ -114,18 +116,18 @@ For each of the parts listed below, the most suitable option is highlighted. Thi
 
 </div>
 
-Other small purchases are needed for the rest of the guide, and are covered under [Small supplies](#small-supplies).
+Other small purchases are needed for the rest of the guide: they are grouped under [Small supplies](#small-supplies).
 
 ## Optional hardware for the camera and QR-code readers
 
-Installing the player camera and the QR-code readers is optional, but if you want to do it, you will need the following hardware.
+The player camera and the QR-code readers are **optional**. If you want to install them, here is the hardware you need.
 
 <div class="equipment-card" markdown>
 
 ### **1x**{: .quantity-emphasis } Player camera
 
 * Where: Amazon, AliExpress, your favorite shop
-* Info: any cheap USB webcam will do, as long as it supports UVC (if your camera works as soon as you plug it in without needing specific drivers, then it is probably compatible). On an original maimai DX, the camera has a native resolution of 1280x960 pixels, and that resolution is barely used in-game. No need, then, to spend a fortune.
+* Info: **any cheap USB webcam will do**, as long as it is UVC. *If it works as soon as it is plugged in, with no specific driver, it is probably compatible.* The original camera films at 1280x960, a resolution barely used in game: no need to spend a fortune.
 
 </div>
 
@@ -134,14 +136,13 @@ Installing the player camera and the QR-code readers is optional, but if you wan
 ### **2x**{: .quantity-emphasis } QR-code camera
 
 * Where: Amazon, AliExpress, your favorite shop ([example of a compatible camera]({{BUY_EXAMPLE_QR_CODE_CAMERA}}))
-* Info: the game is very demanding about the USB camera required for the QR-code readers. It must be UVC, support a resolution of 640x480 at 30 fps in YUY2 format and offer a 50 degree field of view. An external light is also needed to illuminate the area.
-(A suitable LED is listed under [Small supplies](#small-supplies))
+* Info: **the game is very strict about these cameras.** They must be UVC, film at 640x480 at 30 fps in YUY2 format, with a 50 degree field of view. External lighting is also needed (see [Lighting](#lighting)).
 
 </div>
 
 ## Small supplies
 
-You will find these items in your favorite shop (Amazon, AliExpress, ...). These are small, cheap purchases you will need over the course of the various steps.
+These small, cheap purchases, needed over the course of the steps, can be found in your favorite shop (Amazon, AliExpress, ...).
 
 <div class="equipment-supplies" markdown>
 
@@ -152,48 +153,55 @@ You will find these items in your favorite shop (Amazon, AliExpress, ...). These
 * **1x**{: .quantity-emphasis } **DVI-D to DVI-D cable (2 m)**
     - Connection from the ALLS to the Player 2 screen. Your FiNALE may already have one natively.
 * **1x**{: .quantity-emphasis } **DB-9 Female-Female cable**
-    - As short as possible; the cable will be cut to make two connectors, for the Aime reader and the VFD.
+    - As short as possible: it will be cut in two to make the Aime reader and VFD connectors.
 * **4x**{: .quantity-emphasis } **DB-9 Male-Female cable (3 m)**
-    - Used as an extension to connect the Aime reader to the ALLS.
-    - Used as an extension to connect the VFD to the ALLS.
-    - Used as an extension to connect the Player 1 touchscreen to the ALLS.
-    - Used as an extension to connect the Player 2 touchscreen to the ALLS.
+    - Extensions to the ALLS for the Aime reader, the VFD and the player 1 and 2 touchscreens.
 * **1x**{: .quantity-emphasis } **IEC C-13 cable (2 m)**
-    - Plugged into the ALLS and cut off at the plug to be wired directly to the cabinet's power supply.
+    - Plugged into the ALLS, then cut at the plug end to be wired directly to the cabinet's mains supply.
 * **2x**{: .quantity-emphasis } charging **micro-USB cable**
-    - To power the two LED controller proxies. The end opposite the Pico is cut off to wire the red lead to 5V and the black lead to the ground of the power supply installed in [step 1](step-1-alls-and-psu.md).
+    - To power the two LED controller proxies: the end opposite the Pico is cut off, red wire to 5V and black wire to GND on the power supply installed in [step 1](step-1-alls-and-psu.md).
 
 ### Electronics
 
 * **2x**{: .quantity-emphasis } **TTL to RS-232 converter with female DB-9** ([example]({{BUY_EXAMPLE_TTL_RS232_CONVERTER}}))
-    - To bridge the Player 1 touchscreen I/O and the DB-9 connection on the ALLS.
-    - To bridge the Player 2 touchscreen I/O and the DB-9 connection on the ALLS.
+    - To connect each touchscreen's I/O board (players 1 and 2) to its DB-9 port on the ALLS.
 * **2x**{: .quantity-emphasis } **Raspberry Pi Pico** ([example]({{BUY_EXAMPLE_RASPBERRY_PI_PICO}}))
-    - To build the LED controller proxies. Prefer a version with the pins pre-soldered onto the Pico if you want a solder-free installation. **Careful: the pins must be soldered facing down, not up.**
+    - To build the LED controller proxies. To avoid any soldering, prefer a version with pre-soldered pins. **Careful: the pins must be soldered facing down, not up.**
 * **2x**{: .quantity-emphasis } **Pico-2CH-RS232** ([example]({{BUY_EXAMPLE_PICO_2CH_RS232}}))
-    - To build the LED controller proxies
+    - To build the LED controller proxies.
 
 ### Hookup wire
 
-* **Flexible hookup wire (AWG 22-24)**
-    - There will be several cables to crimp throughout this guide; plan on having spares.
+* **Flexible hookup wire (AWG 20)**
+    - Several cables need crimping throughout the guide: plan a good supply, ideally in several colors.
+
+### Lighting
+
+*Only if you install the optional cameras.*
+
+* **1x**{: .quantity-emphasis } **12V warm white LED strip**
+    - Lighting for the player camera.
+* **1x**{: .quantity-emphasis } **12V common-anode RGB LED strip**
+    - Lighting for both QR-code readers: one common anode and one cathode per color. About 20 cm of strip is enough.
+* **1x**{: .quantity-emphasis } **12V red LED with built-in resistor**
+    - Tells players the camera is filming. **A bare LED would burn out** on 12V: pick a model rated for that voltage or, failing that, a separate 2.2 to 4.7 kOhm resistor.
 
 ### Connectors
 
 * **1x**{: .quantity-emphasis } **Molex Mini-Fit Jr. 2x7-pin female connector** ([example]({{BUY_EXAMPLE_MOLEX_MINI_FIT_JR_CONNECTOR}}))
-    - To cleanly connect the power connector previously wired to the RingEdge 2.
+    - To cleanly connect the power connector that used to be plugged into the RingEdge 2.
 * **30x**{: .quantity-emphasis } **Molex Mini-Fit Jr. female crimp pin**
     - To go with the previous connector.
 * **1x**{: .quantity-emphasis } **JST-RA 2x10-pin female connector**
     - For the IO4's CN9.
 * **30x**{: .quantity-emphasis } **JST-RA female crimp pin**
-    - To populate CN9 and the cables to be added on the IO4's CN3.
+    - For CN9 and the cables to add on the IO4's CN3.
 * **2x**{: .quantity-emphasis } **JST-SM 8-pin female connector**
     - The ends of the billboard lighting harness, Player 1 side and Player 2 side, to connect to the original JST-SM connectors.
 * **2x**{: .quantity-emphasis } **JST-SM 2-pin connector, male + female pair**
-    - Ideal for making our own connectors to make life easier, but if you do not have any in stock, plain JST-XH will also do.
+    - Ideal for making your own connectors and simplifying your life. Failing that, plain JST-XH will also do.
 
-For the rest of the connectors, rather than buying each part number individually, get an assortment kit per connector type directly: they are easy to find on Amazon or AliExpress, bundling several housing sizes, both genders (male/female) and a batch of crimp pins. Here is what you will need in each:
+For the other connectors, rather than buying each part number individually, **get an assortment kit per connector type**. They are easy to find on Amazon or AliExpress, with several housing sizes, both genders (male/female) and a batch of crimp pins. Here is what you need in each:
 
 **JST-XH kit**
 
@@ -217,26 +225,21 @@ For the rest of the connectors, rather than buying each part number individually
 </div>
 
 !!! abstract "Work in progress"
-    This list is incomplete; it will be expanded alongside the steps that follow.
-    Still to be added, once the details are known:
+    This list is incomplete and will be expanded as the guide is written. Still to be added, once the details are known:
 
     - **2x**{: .quantity-emphasis } Jack sockets for the headphones and the cables that go with them
     - **2x**{: .quantity-emphasis } Sound amplifiers for the headphones
-    - **2x**{: .quantity-emphasis } White LEDs for the QR-code readers
-    - **1x**{: .quantity-emphasis } Red LED to indicate that the camera is recording
-    - **1x**{: .quantity-emphasis } Warm white LED to light the camera
 
 ---
 
 !!! warning "Check your hardware before you start"
-    Make sure you have received and tested all the hardware you ordered before diving into the conversion proper. It will save you a lot of headaches: if a problem comes up, you can immediately rule out faulty hardware.
+    **Receive and test all the hardware you ordered before starting the conversion.** It will save you a lot of headaches: if a problem comes up, you can immediately rule out a faulty part.
 
 ---
 
 !!! tip "Here is the simplified checklist"
-    Want to tick off your purchases as you go rather than diving back into the detail? Here is the [purchase checklist](equipment-checklist.md).
+    Want to tick off your purchases as you go, without diving back into the detail? Use the [purchase checklist](equipment-checklist.md).
 
 ---
 
 Now that you have the hardware, let's start with [Step 1: Replacing the Central PC (ALLS)](step-1-alls-and-psu.md).
-

@@ -6,18 +6,20 @@ title: "⚠️ Avertissements"
 
 Avant de vous lancer, voici la réalité du projet :
 
-* **C'est pratiquement irréversible :** Bien que nous évitions au maximum les modifications destructives, revenir en arrière (vers *FiNALE*) sera extrêmement fastidieux. Il faut bien comprendre que la plupart des éléments centraux de la borne FiNALE vont être remplacés par du matériel compatible avec DX. Il serait théoriquement possible de revenir vers FiNALE à condition de conserver toutes les pièces d'origine, mais l'opération serait une nouvelle forme de conversion tout aussi fastidieuse que la précédente.
-* **C'est coûteux :** Comptez aux alentours de 2000€~2500€ pour les pièces. La plupart du matériel nécessaire n'est disponible que de seconde main, sur les sites de revente Japonais, ou auprès de vendeurs particuliers qui fixent librement leurs prix. Ce montant peut donc varier plus ou moins en fonction de la période et de la disponibilité.
-* **C'est long :** Ne prévoyez pas de commencer cette conversion en matinée dans l'idée de l'avoir terminée en soirée. Cette opération est complexe, plusieurs étapes entrent en jeu et si vous disposez par avance de toutes les pièces et tout le matériel nécessaire il vous faudra réalistement plusieurs jours pour parvenir au bout. Prenez ce détail en compte si vous êtes exploitant, votre borne restera hors service jusque la fin de la procédure.
-* **Testez avant :** Assurez-vous que votre borne *FiNALE* fonctionne parfaitement avant de commencer. Plusieurs composants de la borne d'origine vont être réutilisés pour cette conversion. Si vous avez des problèmes au niveau de l'alimentation, du système son, des LEDs, ou des écrans, assurez vous de les résoudre par avance. Les boutons, la dalle tactile, les lecteurs Aime, la caméra, la carte I/O et le système RingEdge 2 eux seront remplacés. Un défaut sur un de ces composants peut donc être considéré comme mineur.
+* **C'est pratiquement irréversible.** Nous évitons autant que possible les modifications destructives, mais la plupart des éléments centraux de la borne FiNALE vont être remplacés par du matériel compatible DX. Revenir à *FiNALE* reste théoriquement possible si vous conservez toutes les pièces d'origine, mais ce serait une nouvelle conversion, tout aussi fastidieuse.
+* **C'est coûteux.** Comptez **environ 2000 à 2500 €** de pièces. La plupart du matériel ne se trouve que d'occasion, sur les sites de revente japonais ou auprès de particuliers qui fixent librement leurs prix. Ce montant varie donc selon la période et la disponibilité.
+* **C'est long.** N'espérez pas commencer le matin et terminer le soir. Même avec toutes les pièces et tout le matériel en main, comptez **plusieurs jours** de travail. *Si vous êtes exploitant*, gardez en tête que la borne restera hors service jusqu'à la fin de la conversion.
+* **Testez avant.** Vérifiez que votre borne *FiNALE* fonctionne parfaitement avant de commencer, car plusieurs de ses composants seront réutilisés. **Réglez d'abord tout problème d'alimentation, de son, de LEDs ou d'écrans.** À l'inverse, les boutons, les dalles tactiles, les lecteurs Aime, la caméra, la carte I/O et le RingEdge 2 seront remplacés : un défaut sur l'un d'eux est donc mineur.
 
-La tâche est complexe, mais ce guide présente chaque point de façon simple et détaillée en expliquant à chaque étape les concepts requis pour la mener à bien. Gardez également en tête que bien que la finalité soit d'avoir une expérience de jeu maimai DX la plus fidèle possible, cette borne ne sera jamais autre chose qu'une conversion. Bien que l'expérience de jeu n'en souffre pas, certains détails propres à une véritable DX ne pourront jamais être reproduits sur une base de borne FiNALE.
+La tâche est complexe, mais ce guide présente chaque point de façon simple et détaillée, en expliquant à chaque étape les notions nécessaires.
+
+Gardez aussi en tête que, même si l'objectif est une expérience DX la plus fidèle possible, **cette borne restera une conversion**. L'expérience de jeu n'en souffre pas, mais certains détails propres à une véritable DX ne pourront jamais être reproduits sur une base FiNALE.
 
 !!! tip "Avant de vous lancer"
-    Assurez vous de bien comprendre ces avertissements avant de vous lancer. De plus, la plupart des composants dont vous aurez besoin proviendront d'Asie et auront réalistement un délai de livraison important. Si vous voulez éviter de vous retrouver avec une borne hors service pendant plusieurs mois il est **très** fortement suggéré de vous assurer d'avoir obtenu tous les composants requis **avant** de commencer la conversion. De plus, **assurez vous d'avoir confirmé le bon fonctionnement de ces différents composants avant de commencer**. L'étape suivante vous guidera pour les achats à réaliser par avance.
+    La plupart des composants viendront d'Asie, avec des délais de livraison souvent longs. Pour éviter une borne hors service pendant plusieurs mois, **procurez-vous tous les composants avant de commencer la conversion**, et **vérifiez qu'ils fonctionnent**. La page suivante détaille les achats à prévoir.
 
-Si en ayant connaissance de ces avertissements vous restez persuadé de votre volonté de procéder, alors nous pouvons continuer vers la suite du guide.
+Si, en connaissance de ces avertissements, vous êtes toujours décidé à vous lancer, passons à la suite du guide.
 
 ---
 
-Vous n'êtes pas un expert technique ? N'hésitez pas à consulter le [lexique](glossary.md) avant de vous diriger vers la [liste de courses](equipment.md).
+Vous n'êtes pas un expert technique ? N'hésitez pas à consulter le [lexique](glossary.md) avant de passer à la [liste de courses](equipment.md).
