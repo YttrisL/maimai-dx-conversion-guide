@@ -53,7 +53,7 @@ Pour les lecteurs de QR-Codes, l'idéal est de se procurer deux petits modules d
     - **1P CODE READER LED : CN3 - Broche 55** Cathode commune des signaux R, G, et B de la bande de LEDs éclairant la caméra du lecteur du joueur 1.
     - **2P CODE READER LED : CN3 - Broche 56** Cathode commune des signaux R, G, et B de la bande de LEDs éclairant la caméra du lecteur du joueur 2.
 
-Si vous avez suivi la suggestion à [l'étape 3](step-3-io-board.md), vous avez déjà un connecteur disponible pour ces deux signaux. Comme pour le point précédent, ces signaux sont également à disposition sur le PCB de conversion.
+Si vous avez suivi la suggestion à [l'étape 3](step-3-io-board.md), vous avez déjà un connecteur disponible pour ces deux signaux. Comme pour le point précédent, ces signaux sont également à disposition sur la PCB de conversion.
 
 Pour que le jeu parvienne à identifier les caméras des QR-Codes, celles-ci doivent pointer sur un QR-Code lisant *SDEZ01* côté joueur 1, et *SDEZ02* côté joueur 2. Le modèle 3D de SpiralGlide contient une encoche à la bonne taille pour ces deux codes. Vous pouvez imprimer [ce PDF](../resources/images/step-7-cameras/codes-for-qr-code-readers.pdf) en A4 sur une imprimante correctement calibrée pour obtenir les QR-Codes à la bonne taille pour les coller à l'emplacement approprié.
 

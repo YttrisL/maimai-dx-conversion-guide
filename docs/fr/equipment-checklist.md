@@ -14,7 +14,8 @@ title: "☑️ Checklist d'achat"
 - [ ] **2x**{: .quantity-emphasis } Dalle tactile HDX
 - [ ] **16x**{: .quantity-emphasis } Boutons HDX
 - [ ] **2x**{: .quantity-emphasis } Bouton OBSF-24TR
-- [ ] **1x**{: .quantity-emphasis } HUB USB 4 ports
+- [ ] **1x**{: .quantity-emphasis } Hub USB 4 ports
+- [ ] **1x**{: .quantity-emphasis } Alimentation à découpage 5V/12V
 
 ## Matériel optionnel (caméra et QR-code)
 

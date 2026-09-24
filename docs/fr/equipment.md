@@ -98,12 +98,19 @@ Pour chacune des pièces listées ci-dessous, l'option la plus adaptée est mise
 
 <div class="equipment-card" markdown>
 
-### **1x**{: .quantity-emphasis } HUB USB 4 ports
-
---8<-- "includes/untested-fr.md"
+### **1x**{: .quantity-emphasis } Hub USB 4 ports
 
 * Où : Amazon, AliExpress, votre boutique favorite
-* Info : Dans une véritable maimai DX, un des 4 ports USB de la carte mère du ALLS est dédié à un hub USB de 4 ports. Ce hub accueille les deux caméras des lecteurs de QR-Code et l'adaptateur RS-232/USB sur lequel sont connectés les contrôleurs de LEDs du joueur 1 et du joueur 2. Même si vous ne souhaitez pas utiliser les caméras de QR code, vous devez quand même brancher le hub, afin que l'adaptateur RS-232/USB des contrôleurs de LEDs soit reconnu nativement par le système d'exploitation du ALLS. N'importe quel hub USB fera l'affaire. (Voir [Étape 1 : Le Remplacement du PC Central (ALLS)](step-1-alls-and-psu.md) pour le détail.)
+* Info : Dans une véritable maimai DX, un des 4 ports USB de la carte mère du ALLS est dédié à un hub USB de 4 ports. Ce hub accueille les deux caméras des lecteurs de QR-Code et l'adaptateur RS-232/USB sur lequel sont connectés les contrôleurs de LEDs du joueur 1 et du joueur 2. N'importe quel hub USB fera l'affaire.
+
+</div>
+
+<div class="equipment-card" markdown>
+
+### **1x**{: .quantity-emphasis } Alimentation à découpage 5V/12V
+
+* Où : Amazon, AliExpress, distributeurs de composants électroniques
+* Info : Le ALLS ne fournit pas d'alimentation aux périphériques externes, contrairement au RingEdge 2. Cette alimentation remplace ce rôle : elle alimente notamment l'IO4, le lecteur Aime, le VFD et les proxys des contrôleurs de LEDs. Il vous faut un modèle **à double sortie 5V et 12V**, en boîtier métallique avec bornier à vis, comme les Mean Well RD-35A ou RD-50A. **Ne réutilisez pas les alimentations d'origine de la borne** à la place.
 
 </div>
 

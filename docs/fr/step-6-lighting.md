@@ -139,7 +139,7 @@ Une fois le proxy installé pour les deux contrôleurs de LEDs, il ne vous reste
 
 Il y a deux façons de procéder, nous pouvons soit créer notre propre nappe de câbles compatible avec la structure de l'IO4 et venir ensuite raccorder les leds à l'IO4 via celle-ci, ou alors si vous avez opté à l'[étape 3](step-3-io-board.md) pour la [PCB de conversion]({{IO4_CONVERSION_PCB}}) il suffira de raccorder les différentes LED sur les bons ports de la PCB.
 
-??? example "La méthode facile - Le PCB de conversion"
+??? example "La méthode facile - La PCB de conversion"
     C'est la méthode la plus simple, si vous l'avez déjà installé à l'[étape 3](step-3-io-board.md) il vous suffit tout simplement de venir raccorder le connecteur présent en sortie du contrôleur de LEDs sur la PCB de conversion. N'oubliez pas de raccorder le 12V, **attention à la polarité**, et le tour est joué. 
     
     !!! tip "Utilisez l'alimentation des LEDs"
@@ -185,7 +185,7 @@ Il y a deux façons de procéder, nous pouvons soit créer notre propre nappe de
 
     Pour l'enseigne lumineuse et les woofers :
     
-    * Soit : Raccorder les connecteurs existants de la borne au [PCB de conversion]({{IO4_CONVERSION_PCB}}).
+    * Soit : Raccorder les connecteurs existants de la borne à la [PCB de conversion]({{IO4_CONVERSION_PCB}}).
     * Soit : Confectionner et installer une nouvelle nappe de câbles partant de l'IO4 et venant se brancher sur les connecteurs existants de la borne.
 
 ---

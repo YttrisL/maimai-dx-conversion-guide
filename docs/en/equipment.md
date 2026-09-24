@@ -100,10 +100,17 @@ For each of the parts listed below, the most suitable option is highlighted. Thi
 
 ### **1x**{: .quantity-emphasis } 4-port USB hub
 
---8<-- "includes/untested-en.md"
-
 * Where: Amazon, AliExpress, your favorite shop
-* Info: in a real maimai DX, one of the 4 USB ports on the ALLS motherboard is dedicated to a 4-port USB hub. This hub hosts the two QR-code reader cameras and the RS-232/USB adapter that the Player 1 and Player 2 LED controllers are connected to. Even if you do not want to use the QR-code cameras, you still have to plug in the hub, so that the LED controllers' RS-232/USB adapter is recognized natively by the ALLS operating system. Any USB hub will do. (See [Step 1: Replacing the Central PC (ALLS)](step-1-alls-and-psu.md) for the details.)
+* Info: in a real maimai DX, one of the 4 USB ports on the ALLS motherboard is dedicated to a 4-port USB hub. This hub hosts the two QR-code reader cameras and the RS-232/USB adapter that the Player 1 and Player 2 LED controllers are connected to. Any USB hub will do.
+
+</div>
+
+<div class="equipment-card" markdown>
+
+### **1x**{: .quantity-emphasis } 5V/12V switching power supply
+
+* Where: Amazon, AliExpress, electronic component distributors
+* Info: unlike the RingEdge 2, the ALLS does not power external peripherals. This power supply takes over that role: among other things, it powers the IO4, the Aime reader, the VFD and the LED controller proxies. You need a **dual-output 5V and 12V** model, in a metal enclosure with screw terminals, such as the Mean Well RD-35A or RD-50A. **Do not reuse the cabinet's original power supplies** instead.
 
 </div>
 

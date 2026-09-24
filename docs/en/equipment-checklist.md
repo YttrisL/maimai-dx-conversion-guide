@@ -15,6 +15,7 @@ title: "☑️ Purchase checklist"
 - [ ] **16x**{: .quantity-emphasis } HDX buttons
 - [ ] **2x**{: .quantity-emphasis } OBSF-24TR button
 - [ ] **1x**{: .quantity-emphasis } 4-port USB hub
+- [ ] **1x**{: .quantity-emphasis } 5V/12V switching power supply
 
 ## Optional hardware (camera and QR-code)
 
