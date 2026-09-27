@@ -4,13 +4,12 @@ title: "🛠️ 1 - ALLS and PSU"
 
 # 🛠️ Step 1: Replacing the Central PC (ALLS)
 
+The old *RingEdge 2* PC cannot run *DX*: you need an **ALLS HX2** PC. Beyond the newer, more powerful hardware, the operating system is radically different between the two machines. **The replacement is mandatory.**
+
 ## Technical background
 
 ??? note "Click here for the technical explanation"
-    The old *RingEdge 2* PC cannot run *DX*: you need an **ALLS HX2** PC.  
-    Beyond the newer, more powerful hardware, the operating system is radically different between the two machines. **The replacement is mandatory.**
-    
-    An **ALLS MX2** also works: its specifications exceed the minimum required for *DX*. In principle, **every second-generation ALLS** (those whose model name ends in 2) **is software-compatible**, but some lack the power to run the game properly. That is the case, for example, of the **ALLS X2**: compatible, but too weak for a pleasant experience. These models can be upgraded, but the job quickly gets complicated: *you are better off getting a suitable model from the start.*
+    The **ALLS HX2** is DX's native system: it is the one we substitute for FiNALE's RingEdge 2. An **ALLS MX2** also works: its specifications exceed the minimum required for *DX*. In principle, **every second-generation ALLS** (those whose model name ends in 2) **is software-compatible**, but some lack the power to run the game properly. That is the case, for example, of the **ALLS X2**: compatible, but too weak for a pleasant experience. These models can be upgraded, but the job quickly gets complicated: *you are better off getting a suitable model from the start.*
 
     An ALLS is very similar to a modern gaming PC, with two particularities:
 

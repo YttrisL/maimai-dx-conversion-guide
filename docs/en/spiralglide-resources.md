@@ -33,6 +33,6 @@ Three parts that stack together: the box that sits in the center tower, the midd
 * **[dxnale-dx-pass-reader-front-panel-v2.stl](../resources/models/spiralglide/dxnale-dx-pass-reader-front-panel-v2.stl)**: front panel.
 
 !!! lightbox
-    ![Exploded view of the QR-code reader mount: the box, the two-opening middle plate, and the "DX PASS READER" front panel](../resources/images/spiralglide-resources/dxnale-dx-pass-reader-assembly.png)
+    ![Exploded view of the QR-code reader mount: the box, the two-opening middle plate, and the "DX PASS READER" front panel](../resources/images/spiralglide-resources/dxnale-dx-pass-reader-assembly.jpg)
 
 ---

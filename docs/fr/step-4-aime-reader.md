@@ -104,7 +104,7 @@ Utilisez [le modèle 3D conçu par SpiralGlide](spiralglide-resources.md#support
 
 Une fois le combo installé en façade, il ne reste qu'à brancher les deux câbles aux ports DB9 du ALLS. Pour rappel : **Aime sur COM1**, **VFD sur COM2**.
 
-N'oubliez pas ensuite de **raccorder le 5V et le GND** des deux connecteurs à l'alimentation installée à l'[étape 1](step-1-alls-and-psu.md).
+N'oubliez pas ensuite de **raccorder le 5V et le GND** des deux connecteurs à l'alimentation installée à [l'étape 1](step-1-alls-and-psu.md).
 
 **Vérifiez que tout fonctionne** avant de passer à la suite.
 

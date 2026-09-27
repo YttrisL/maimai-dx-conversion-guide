@@ -69,7 +69,7 @@ Le firmware existe déjà : il s'agit de [mailight_pico]({{MAILIGHT_PICO_REPO}})
 **2. Assembler le Pico sur le `Pico-2CH-RS232`.** Attention au sens : les inscriptions sous le `Pico-2CH-RS232` indiquent où doit se trouver le port USB du Pico.
 
 !!! lightbox
-    ![Le module `Pico-2CH-RS232`, image tirée de la [page wiki officielle de Waveshare]({{WAVESHARE_PICO_2CH_RS232_WIKI}})](../resources/images/step-6-lighting/pico-2ch-rs232.png)
+    ![Le module `Pico-2CH-RS232`, image tirée de la [page wiki officielle de Waveshare]({{WAVESHARE_PICO_2CH_RS232_WIKI}})](../resources/images/step-6-lighting/pico-2ch-rs232.jpg)
 
 !!! warning "Attention au sens"
     Vérifiez que votre montage correspond bien à l'image. Si le port USB de votre Pico se retrouve par exemple entre les deux PCB plutôt qu'à l'extérieur, ses broches sont soudées dans le mauvais sens. **N'essayez pas de l'allumer**, vous endommageriez le `Pico-2CH-RS232`. Ressoudez les broches dans le bon sens, ou procurez-vous un Pico correctement assemblé.
@@ -88,7 +88,7 @@ Pour vous simplifier la vie, reprenez les couleurs de la borne : **fil blanc sur
 Ces images proviennent du schéma de câblage, mais les connecteurs réels de la borne n'ont pas de fil `SHIELD` : la masse commune devra donc être raccordée ailleurs sur le `Pico-2CH-RS232`.
 
 !!! lightbox
-    ![Vue du dessus du module `Pico-2CH-RS232`](../resources/images/step-6-lighting/pico-2ch-rs232-photo.png)
+    ![Vue du dessus du module `Pico-2CH-RS232`](../resources/images/step-6-lighting/pico-2ch-rs232-photo.jpg)
     ![Le connecteur d'origine du contrôleur de LEDs dans la borne enfiché dans le connecteur confectionné à la main](../resources/images/step-6-lighting/led-controller-rs232-connector.jpg)
 
 **4. Câbler les borniers.** Le connecteur **JST-XH femelle va sur le bornier Channel0** (côté adaptateur RS-232 vers USB), le connecteur **JST-XH mâle sur le bornier Channel1** (côté contrôleur de LEDs) :
@@ -143,10 +143,10 @@ Deux méthodes sont possibles :
 * **Sans elle** : fabriquez votre propre nappe de câbles, compatible avec l'IO4, pour y raccorder les LEDs.
 
 ??? example "La méthode facile - La PCB de conversion"
-    Branchez simplement le connecteur de sortie du contrôleur de LEDs sur la PCB de conversion, puis raccordez le 12V (**attention à la polarité**). C'est tout !
+    Branchez simplement le connecteur de sortie du contrôleur de LEDs sur la PCB de conversion. C'est tout : *le 12V est déjà raccordé depuis l'[étape 3](step-3-io-board.md).*
 
-    !!! tip "Utilisez l'alimentation des LEDs"
-        La borne dispose d'origine d'une alimentation 12V dédiée aux LEDs : utilisez-la pour alimenter la PCB. **Ne prenez pas le 12V de l'IO4**, et inversement, n'alimentez pas l'IO4 avec l'alimentation des LEDs. Les deux circuits doivent partager une masse commune, mais rester séparés.
+    !!! tip "Rappel : deux alimentations séparées"
+        La PCB est alimentée par **l'alimentation LEDs de la borne**, jamais par le 12V de l'IO4. Les deux circuits partagent une masse commune, mais restent séparés.
 
     Il vous faudra une rallonge pour atteindre le câble existant : **2 mètres côté joueur 2, 3 mètres côté joueur 1**. Elle se sertit facilement : un connecteur `JST-XH 8 positions femelle` d'un côté, un `JST-SM 8 positions femelle` de l'autre.
 
@@ -157,11 +157,11 @@ Deux méthodes sont possibles :
     *Si vous comptez installer les caméras à l'étape suivante*, la PCB de conversion vous simplifiera aussi la vie : elle propose déjà des connecteurs prêts à l'emploi pour leurs LEDs.
 
 ??? example "La confection manuelle d'une nappe de câbles"
-    La nappe se branche sur l'IO4 via un connecteur JST-RA 20 broches (CN9), et se termine par deux connecteurs JST-SM 8 broches, pour les côtés gauche et droit. Si vous avez suivi les suggestions de l'[étape 3](step-3-io-board.md), vous avez déjà un connecteur JST-SM 2 broches câblé sur le CN3 de l'IO4 pour les signaux `BILLBOARD LED L RED` et `BILLBOARD LED R RED`.
+    La nappe se branche sur l'IO4 via un connecteur JST-RA 20 broches (CN9), et se termine par deux connecteurs JST-SM 8 broches, pour les côtés gauche et droit. Si vous avez suivi les suggestions de l'[étape 3](step-3-io-board.md), vous avez déjà un connecteur JST-SM 2 broches femelle câblé sur le CN3 de l'IO4 pour les signaux `BILLBOARD LED L RED` et `BILLBOARD LED R RED`.
 
     !!! lightbox
-        ![Repérage visuel des broches LED sur l'IO4 : le connecteur CN9 (JST-RA 20 broches) porte BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED et BILLBOARD LED L/R BLUE, tandis que BILLBOARD LED L/R RED se trouve sur le connecteur CN3](../resources/images/step-6-lighting/io4-visual-reprensation-of-led-pins.png)
-        ![Schéma de câblage officiel de l'IO4 centré sur les broches LED : connecteur CN9 (RA20P) pour BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED et BILLBOARD LED L/R BLUE, et connecteur CN3 (RA60P) broches 51-52 pour BILLBOARD LED L/R RED](../resources/images/step-6-lighting/io4-wiring-schema-focused-on-leds.png)
+        ![Repérage visuel des broches LED sur l'IO4 : le connecteur CN9 (JST-RA 20 broches) porte BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED et BILLBOARD LED L/R BLUE, tandis que BILLBOARD LED L/R RED se trouve sur le connecteur CN3](../resources/images/step-6-lighting/io4-visual-reprensation-of-led-pins.jpg)
+        ![Schéma de câblage officiel de l'IO4 centré sur les broches LED : connecteur CN9 (RA20P) pour BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED et BILLBOARD LED L/R BLUE, et connecteur CN3 (RA60P) broches 51-52 pour BILLBOARD LED L/R RED](../resources/images/step-6-lighting/io4-wiring-schema-focused-on-leds.jpg)
 
     Réalisez la nappe d'après le schéma ci-dessous, avec une longueur suffisante pour une installation propre : **3 mètres côté joueur 1, 2 mètres côté joueur 2**. Pour le 12V, **n'utilisez pas la broche 12V du CN9** : raccordez-vous directement à l'alimentation 12V des LEDs de la borne, pour ne pas charger inutilement la carte I/O.
 
@@ -175,8 +175,8 @@ Deux méthodes sont possibles :
     !!! tip "Les LEDs des caméras"
         Si vous comptez installer les caméras optionnelles, sertissez dès maintenant quelques connecteurs supplémentaires :
 
-        - JST-SM 2 broches sur les broches 7 et 8 du CN9, pour les signaux `CAMERA LED WARM` et `CAMERA LED RED` respectivement.
-        - JST-SM 2 broches sur les broches 55 et 56 du CN3, pour les signaux `1P CODE READER LED` et `2P CODE READER LED` dans cet ordre.
+        - JST-SM 2 broches femelle sur les broches 7 et 8 du CN9, pour les signaux `CAMERA LED WARM` et `CAMERA LED RED` respectivement.
+        - JST-SM 2 broches femelle sur les broches 55 et 56 du CN3, pour les signaux `1P CODE READER LED` et `2P CODE READER LED` dans cet ordre.
 
 ## En résumé
 !!! tldr "Les grandes lignes"

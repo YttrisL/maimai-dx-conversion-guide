@@ -13,7 +13,7 @@ search:
 - [ ] "Voir étape XX : Description" : S'assurer que tous les liens sont cohérents, qu'ils aient tous la même graphie et la même description.
 - [ ] Vérifier les quantités et les objets de la liste de course
 - [ ] Proposer un support en 3D de caméra incluant les leds et utilisant un module simple à trouver
-- [ ] 
+- [ ] Pour toutes les mentions du style 1P SELECT, s'assurer qu'ils soient entre accent comme `1P SELECT`
 - [ ] 
 - [ ] 
 - [ ] 

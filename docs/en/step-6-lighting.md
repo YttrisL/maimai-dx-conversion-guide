@@ -69,7 +69,7 @@ The firmware already exists: it is [mailight_pico]({{MAILIGHT_PICO_REPO}}), a po
 **2. Mount the Pico on the `Pico-2CH-RS232`.** Watch the orientation: the markings under the `Pico-2CH-RS232` show where the Pico's USB port should be.
 
 !!! lightbox
-    ![The `Pico-2CH-RS232` module, image from the [official Waveshare wiki page]({{WAVESHARE_PICO_2CH_RS232_WIKI}})](../resources/images/step-6-lighting/pico-2ch-rs232.png)
+    ![The `Pico-2CH-RS232` module, image from the [official Waveshare wiki page]({{WAVESHARE_PICO_2CH_RS232_WIKI}})](../resources/images/step-6-lighting/pico-2ch-rs232.jpg)
 
 !!! warning "Watch the orientation"
     Make sure your assembly matches the image. If your Pico's USB port ends up, for example, between the two PCBs rather than on the outside, its pins are soldered the wrong way. **Do not try to power it on**, you would damage the `Pico-2CH-RS232`. Resolder the pins the right way, or get a correctly assembled Pico.
@@ -88,7 +88,7 @@ To make things easier, reuse the cabinet's colors: **white wire on pin 4, red wi
 These images come from the wiring diagram, but the actual connectors in the cabinet have no `SHIELD` wire: the common ground will therefore have to be connected elsewhere on the `Pico-2CH-RS232`.
 
 !!! lightbox
-    ![Top view of the `Pico-2CH-RS232` module](../resources/images/step-6-lighting/pico-2ch-rs232-photo.png)
+    ![Top view of the `Pico-2CH-RS232` module](../resources/images/step-6-lighting/pico-2ch-rs232-photo.jpg)
     ![The cabinet's original LED controller connector plugged into the hand-made connector](../resources/images/step-6-lighting/led-controller-rs232-connector.jpg)
 
 **4. Wire the screw terminals.** The **female JST-XH connector goes on the Channel0 terminal** (RS-232 to USB adapter side), the **male JST-XH connector on the Channel1 terminal** (LED controller side):
@@ -143,10 +143,10 @@ Two methods are possible:
 * **Without it**: make your own IO4-compatible wiring harness to connect the LEDs.
 
 ??? example "The easy way - The conversion PCB"
-    Simply plug the LED controller's output connector into the conversion PCB, then connect the 12V (**watch the polarity**). That's it!
+    Simply plug the LED controller's output connector into the conversion PCB. That's it: *the 12V has already been connected since [step 3](step-3-io-board.md).*
 
-    !!! tip "Use the LED power supply"
-        The cabinet comes with a 12V power supply dedicated to the LEDs: use it to power the PCB. **Do not take the IO4's 12V**, and conversely, do not power the IO4 from the LED power supply. The two circuits must share a common ground, but stay separate.
+    !!! tip "Reminder: two separate power supplies"
+        The PCB is powered by **the cabinet's LED power supply**, never by the IO4's 12V. The two circuits share a common ground, but stay separate.
 
     You will need an extension to reach the existing cable: **2 meters on the player 2 side, 3 meters on the player 1 side**. It is easy to crimp: a `8-position female JST-XH` connector on one end, and an `8-position female JST-SM` on the other.
 
@@ -157,11 +157,11 @@ Two methods are possible:
     *If you plan to install the cameras in the next step*, the conversion PCB will make your life easier there too: it already has ready-to-use connectors for their LEDs.
 
 ??? example "Making a wiring harness by hand"
-    The harness plugs into the IO4 through a 20-pin JST-RA connector (CN9), and ends in two 8-pin JST-SM connectors, for the left and right sides. If you followed the suggestions in [step 3](step-3-io-board.md), you already have a 2-pin JST-SM connector wired to the IO4's CN3 for the `BILLBOARD LED L RED` and `BILLBOARD LED R RED` signals.
+    The harness plugs into the IO4 through a 20-pin JST-RA connector (CN9), and ends in two 8-pin JST-SM connectors, for the left and right sides. If you followed the suggestions in [step 3](step-3-io-board.md), you already have a female 2-pin JST-SM connector wired to the IO4's CN3 for the `BILLBOARD LED L RED` and `BILLBOARD LED R RED` signals.
 
     !!! lightbox
-        ![Visual identification of the LED pins on the IO4: the CN9 connector (20-pin JST-RA) carries BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED and BILLBOARD LED L/R BLUE, while BILLBOARD LED L/R RED is on the CN3 connector](../resources/images/step-6-lighting/io4-visual-reprensation-of-led-pins.png)
-        ![Official IO4 wiring diagram centered on the LED pins: CN9 connector (RA20P) for BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED and BILLBOARD LED L/R BLUE, and CN3 connector (RA60P) pins 51-52 for BILLBOARD LED L/R RED](../resources/images/step-6-lighting/io4-wiring-schema-focused-on-leds.png)
+        ![Visual identification of the LED pins on the IO4: the CN9 connector (20-pin JST-RA) carries BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED and BILLBOARD LED L/R BLUE, while BILLBOARD LED L/R RED is on the CN3 connector](../resources/images/step-6-lighting/io4-visual-reprensation-of-led-pins.jpg)
+        ![Official IO4 wiring diagram centered on the LED pins: CN9 connector (RA20P) for BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED and BILLBOARD LED L/R BLUE, and CN3 connector (RA60P) pins 51-52 for BILLBOARD LED L/R RED](../resources/images/step-6-lighting/io4-wiring-schema-focused-on-leds.jpg)
 
     Build the harness following the diagram below, long enough for a clean installation: **3 meters on the player 1 side, 2 meters on the player 2 side**. For the 12V, **do not use the CN9 12V pin**: connect directly to the cabinet's LED 12V power supply, so as not to put unnecessary load on the I/O board.
 
@@ -175,8 +175,8 @@ Two methods are possible:
     !!! tip "The camera LEDs"
         If you plan to install the optional cameras, crimp a few extra connectors now:
 
-        - 2-pin JST-SM on CN9 pins 7 and 8, for the `CAMERA LED WARM` and `CAMERA LED RED` signals respectively.
-        - 2-pin JST-SM on CN3 pins 55 and 56, for the `1P CODE READER LED` and `2P CODE READER LED` signals in that order.
+        - Female 2-pin JST-SM on CN9 pins 7 and 8, for the `CAMERA LED WARM` and `CAMERA LED RED` signals respectively.
+        - Female 2-pin JST-SM on CN3 pins 55 and 56, for the `1P CODE READER LED` and `2P CODE READER LED` signals in that order.
 
 ## In summary
 !!! tldr "The big picture"

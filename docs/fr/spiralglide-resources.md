@@ -16,7 +16,7 @@ SpiralGlide a modélisé les supports permettant de monter le lecteur Aime et le
 
 ### Support du lecteur Aime
 
-Un seul bloc à imprimer, sur lequl s'installe le lecteur Aime de Star Horse 4 et qui vient prendre sa place dans la façade de la tour centrale dans les trous de vis prévus pour maintenir l'acrylique.
+Un seul bloc à imprimer, sur lequel s'installe le lecteur Aime de Star Horse 4 et qui vient prendre sa place dans la façade de la tour centrale dans les trous de vis prévus pour maintenir l'acrylique.
 
 * **[maimai-aime-reader.stl](../resources/models/spiralglide/maimai-aime-reader.stl)** : support du lecteur Aime.
 * **[maimai-aime-reader.ipt](../resources/models/spiralglide/maimai-aime-reader.ipt)** : fichier source Autodesk Inventor du support.
@@ -33,6 +33,6 @@ Trois pièces qui s'empilent : le boîtier qui se loge dans la tour centrale, la
 * **[dxnale-dx-pass-reader-front-panel-v2.stl](../resources/models/spiralglide/dxnale-dx-pass-reader-front-panel-v2.stl)** : façade.
 
 !!! lightbox
-    ![Vue éclatée du support du lecteur de QR code : le boîtier, la plaque intermédiaire à deux ouvertures, et la façade « DX PASS READER » ](../resources/images/spiralglide-resources/dxnale-dx-pass-reader-assembly.png)
+    ![Vue éclatée du support du lecteur de QR code : le boîtier, la plaque intermédiaire à deux ouvertures, et la façade « DX PASS READER » ](../resources/images/spiralglide-resources/dxnale-dx-pass-reader-assembly.jpg)
 
 ---
