@@ -25,6 +25,9 @@ You then have to connect the touchscreens to the right "addresses" (COM ports) o
 * **Player 1:** must be connected to port **COM3**.
 * **Player 2:** must be connected to port **COM4**.
 
+!!! lightbox
+    ![Rear view of an ALLS HX2: red arrows point to the touchscreen DB9 ports on the expansion card, P1 at the bottom right and P2 at the top left](../resources/images/step-2-touchscreen-display/alls-hx2-rear-connectors-com3-com4.jpg)
+
 Unlike other conversion kits, the HanDevice I/O board supplied with the HDX touchscreens exposes a UART serial port directly. You can therefore connect it straight to the ALLS, with no signal conversion or intermediate Raspberry Pi - see the [Shopping list](equipment.md) for the details of this I/O board.
 
 ---

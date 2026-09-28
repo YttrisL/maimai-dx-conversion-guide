@@ -152,6 +152,9 @@ Either way, *the LEDs are covered in detail in [step 6](step-6-lighting.md)*: th
 
 All that's left is to **plug the IO4 into the ALLS USB 1 port**, as explained in [step 1](step-1-alls-and-psu.md).
 
+!!! lightbox
+    ![Rear view of an ALLS HX2: red arrows point to the USB 1 port, at the bottom right of the USB port block, and to its marking on the case label](../resources/images/step-3-io-board/alls-hx2-rear-connectors-usb-1.jpg)
+
 ## In summary
 !!! tldr "The big picture"
     For the I/O board:

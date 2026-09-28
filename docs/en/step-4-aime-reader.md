@@ -108,6 +108,9 @@ Then don't forget to **connect the 5V and GND** of both connectors to the power 
 
 **Check that everything works** before moving on.
 
+!!! lightbox
+    ![Rear view of an ALLS HX2: red arrows point to the VFD DB9 port, on the expansion card at the top, and to the Aime reader one, at the bottom right of the motherboard](../resources/images/step-4-aime-reader/alls-hx2-rear-connectors-com1-com2.jpg)
+
 ## In summary
 !!! tldr "The big picture"
     For the Aime reader and the VFD:

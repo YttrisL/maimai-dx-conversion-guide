@@ -152,6 +152,9 @@ Dans les deux cas, *les LEDs seront traitées en détail à [l'étape 6](step-6-
 
 Il ne reste qu'à **brancher l'IO4 sur le port USB 1 du ALLS**, comme indiqué à [l'étape 1](step-1-alls-and-psu.md).
 
+!!! lightbox
+    ![Vue arrière d'un ALLS HX2 : des flèches rouges désignent le port USB 1, en bas à droite du bloc de ports USB, et son repère sur l'étiquette du boîtier](../resources/images/step-3-io-board/alls-hx2-rear-connectors-usb-1.jpg)
+
 ## En résumé
 !!! tldr "Les grandes lignes"
     Pour la carte I/O :

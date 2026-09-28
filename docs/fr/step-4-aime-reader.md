@@ -108,6 +108,9 @@ N'oubliez pas ensuite de **raccorder le 5V et le GND** des deux connecteurs à l
 
 **Vérifiez que tout fonctionne** avant de passer à la suite.
 
+!!! lightbox
+    ![Vue arrière d'un ALLS HX2 : des flèches rouges désignent le port DB9 du VFD, sur la carte d'extension en haut, et celui du lecteur Aime, en bas à droite de la carte mère](../resources/images/step-4-aime-reader/alls-hx2-rear-connectors-com1-com2.jpg)
+
 ## En résumé
 !!! tldr "Les grandes lignes"
     Pour le lecteur Aime et le VFD :

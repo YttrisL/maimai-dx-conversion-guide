@@ -20,6 +20,9 @@ Here is what the computer's audio ports correspond to: *(see [manual](../resourc
 * **C/W:** output for the Player 1 headphone jack
 * **SIDE:** output for the Player 2 headphone jack
 
+!!! lightbox
+    ![Rear view of an ALLS HX2: red arrows point to the headphone outputs, C/W for P1 on the motherboard and SIDE for P2 on the expansion card](../resources/images/step-5-audio-headphones/alls-hx2-rear-connectors-cw-side.jpg)
+
 ## How to install the headphone jacks
 
 Since the signal for the headphones (C/W and SIDE outputs) is too weak, you need to buy one or two small, cheap audio amplifiers.

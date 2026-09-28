@@ -25,6 +25,9 @@ Il faut ensuite raccorder les dalles aux bonnes "adresses" (Ports COM) sur le AL
 * **Joueur 1 :** Doit être branché au Port **COM3**.
 * **Joueur 2 :** Doit être branché au Port **COM4**.
 
+!!! lightbox
+    ![Vue arrière d'un ALLS HX2 : des flèches rouges désignent les ports DB9 des dalles tactiles sur la carte d'extension, P1 en bas à droite et P2 en haut à gauche](../resources/images/step-2-touchscreen-display/alls-hx2-rear-connectors-com3-com4.jpg)
+
 Contrairement à d'autres kits de conversion, la carte I/O HanDevice fournie avec les dalles HDX expose directement un port série UART. Vous pouvez donc la raccorder directement au ALLS, sans transformation de signal ni Raspberry Pi intermédiaire - voir la [Liste de courses](equipment.md) pour le détail de cette carte I/O.
 
 ---

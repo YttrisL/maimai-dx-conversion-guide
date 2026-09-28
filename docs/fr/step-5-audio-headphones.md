@@ -20,6 +20,9 @@ Voici à quoi correspondent les ports audio de l'ordinateur : *(Voir [manuel](..
 * **C/W :** Sortie pour la prise casque du Joueur 1
 * **SIDE :** Sortie pour la prise casque du Joueur 2
 
+!!! lightbox
+    ![Vue arrière d'un ALLS HX2 : des flèches rouges désignent les sorties casques, C/W pour P1 sur la carte mère et SIDE pour P2 sur la carte d'extension](../resources/images/step-5-audio-headphones/alls-hx2-rear-connectors-cw-side.jpg)
+
 ## Comment installer les prises casques
 
 Puisque le signal pour les casques (sorties C/W et SIDE) est trop faible, vous devez acheter un ou deux petits amplificateurs audio bon marché.

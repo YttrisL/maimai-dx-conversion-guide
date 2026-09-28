@@ -43,7 +43,7 @@ Lighting is technically *optional*: it has no impact on gameplay. But the job is
 
     ### What this means for a conversion
 
-    * **You need a 4-port USB hub** to reproduce the *DX* wiring on the ALLS.
+    * **The RS-232 to USB adapter plugs into the 4-port USB hub** installed in [step 1](step-1-alls-and-psu.md). Any port on the hub will do.
     * **The billboard must be rewired to the IO4**: on DX, the LED controllers no longer receive any information to light it.
     * Above all, **the FiNALE and DX LED controllers do not have the same part number**. Plugged into an ALLS running DX, a FiNALE controller causes **a non-blocking error at startup**: it reports `837-15070-02-91` while the game expects `837-15070-04`. Fun fact: in this state, the game still sends the button lighting, but not the background lighting.
 

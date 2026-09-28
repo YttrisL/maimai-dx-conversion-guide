@@ -48,7 +48,7 @@ Si vous avez fabriqué votre propre nappe de câbles et suivi la suggestion de l
 L'idéal est de vous procurer **deux petits modules de 30mm x 25mm** : ils s'adaptent au [modèle 3D conçu par SpiralGlide](spiralglide-resources.md#support-du-lecteur-de-qr-code-dx-pass-reader), qui se fixe grâce aux vis existantes de la vitre en acrylique.
 
 * **Installation sur la borne :** [Impression 3D](spiralglide-resources.md#support-du-lecteur-de-qr-code-dx-pass-reader).
-* **Branchement au ALLS :** En USB, via le hub USB branché sur le port **n°2**. N'importe quel port du hub convient.
+* **Branchement au ALLS :** En USB, via le hub USB branché sur le port **n°2** à l'[étape 1](step-1-alls-and-psu.md). N'importe quel port du hub convient.
 * **Branchement à l'IO4 :**
     - **1P CODE READER LED : CN3 - Broche 55** : cathode commune (R, G et B) de la bande de LEDs qui éclaire le lecteur du joueur 1.
     - **2P CODE READER LED : CN3 - Broche 56** : cathode commune (R, G et B) de la bande de LEDs qui éclaire le lecteur du joueur 2.

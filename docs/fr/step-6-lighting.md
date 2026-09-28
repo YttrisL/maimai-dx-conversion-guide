@@ -43,7 +43,7 @@ L'éclairage est techniquement *optionnel* : il n'a aucun impact sur la jouabili
 
     ### Ce que ça implique pour une conversion
 
-    * **Il faut un hub USB 4 ports** pour reproduire le branchement de *DX* sur le ALLS.
+    * **L'adaptateur RS-232 vers USB se branche sur le hub USB 4 ports** installé à l'[étape 1](step-1-alls-and-psu.md). N'importe quel port du hub convient.
     * **L'enseigne lumineuse doit être recâblée vers l'IO4** : sur DX, les contrôleurs de LEDs ne reçoivent plus d'information pour l'éclairer.
     * Surtout, **les contrôleurs de LEDs de FiNALE et de DX n'ont pas la même référence**. Branché sur un ALLS avec DX, un contrôleur FiNALE provoque **une erreur non bloquante au démarrage** : il annonce `837-15070-02-91` alors que le jeu attend `837-15070-04`. Fait amusant : dans cet état, le jeu envoie tout de même l'éclairage des boutons, mais pas celui du fond.
 

@@ -48,7 +48,7 @@ If you made your own wiring harness and followed the suggestion in [step 6](step
 Ideally, get **two small 30mm x 25mm modules**: they fit [the 3D model designed by SpiralGlide](spiralglide-resources.md#qr-code-reader-mount-dx-pass-reader), which attaches using the existing screws of the acrylic panel.
 
 * **Installation on the cabinet:** [3D printing](spiralglide-resources.md#qr-code-reader-mount-dx-pass-reader).
-* **Connection to the ALLS:** USB, through the USB hub plugged into port **#2**. Any port on the hub will do.
+* **Connection to the ALLS:** USB, through the USB hub plugged into port **#2** in [step 1](step-1-alls-and-psu.md). Any port on the hub will do.
 * **Connection to the IO4:**
     - **1P CODE READER LED: CN3 - Pin 55**: common cathode (R, G and B) of the LED strip lighting the player 1 reader.
     - **2P CODE READER LED: CN3 - Pin 56**: common cathode (R, G and B) of the LED strip lighting the player 2 reader.
