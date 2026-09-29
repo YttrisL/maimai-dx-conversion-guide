@@ -32,12 +32,15 @@ title: "☑️ Purchase checklist"
 - [ ] **4x**{: .quantity-emphasis } DB-9 Male-Female cable (3 m)
 - [ ] **1x**{: .quantity-emphasis } IEC C-13 cable (2 m)
 - [ ] **2x**{: .quantity-emphasis } micro-USB cable
+- [ ] **2x**{: .quantity-emphasis } 3.5 mm male-to-male jack cable
 
 ### Electronics
 
 - [ ] **2x**{: .quantity-emphasis } TTL to RS-232 converter with female DB-9
 - [ ] **2x**{: .quantity-emphasis } Raspberry Pi Pico
 - [ ] **2x**{: .quantity-emphasis } Pico-2CH-RS232
+- [ ] **2x**{: .quantity-emphasis } Headphone audio amplifier
+- [ ] **2x**{: .quantity-emphasis } 3.5 mm female jack socket
 
 ### Hookup wire
 

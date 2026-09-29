@@ -64,8 +64,8 @@ from mkdocs.exceptions import PluginError
 _EMOJI_ASSET = {
     "\U0001F6E0️": "hammer-and-wrench",   # Step 1
     "\U0001F4FA": "television",                # Step 2
-    "\U0001F579️": "joystick",                    # Step 3
-    "\U0001F4B3": "credit-card",                # Step 4
+    "\U0001F579️": "joystick",                    # Step 4
+    "\U0001F4B3": "credit-card",                # Step 3
     "\U0001F3A7": "headphone",                  # Step 5
     "\U0001F4A1": "light-bulb",                 # Step 6
     "\U0001F4F7": "camera",                     # Step 7

@@ -1,8 +1,8 @@
 ---
-title: "💳 4 - Aime card reader"
+title: "💳 3 - Aime card reader"
 ---
 
-# 💳 Step 4: The Aime Reader and the VFD
+# 💳 Step 3: The Aime Reader and the VFD
 
 **The FiNALE Aime readers are not compatible with DX**: you need to install a newer-generation reader. The VFD has no real use in our conversion, but the software still requires it. Good news: both are very simple to install.
 
@@ -28,8 +28,8 @@ Connecting to the ALLS is extremely simple:
 Both COM ports are physical DB9 ports on the ALLS. However, your Aime + VFD combo probably did not come with a ready-to-use DB9 cable: **you will have to crimp your own cables**, from the Aime reader and VFD connectors to the DB9.
 
 !!! lightbox
-    ![Front face of an Aime reader from a Star Horse 4 cabinet](../resources/images/step-4-aime-reader/front-aime-reader-from-star-horse-4.jpg)
-    ![Rear face of an Aime reader from a Star Horse 4 cabinet](../resources/images/step-4-aime-reader/back-aime-reader-from-star-horse-4.jpg)
+    ![Front face of an Aime reader from a Star Horse 4 cabinet](../resources/images/step-3-aime-reader/front-aime-reader-from-star-horse-4.jpg)
+    ![Rear face of an Aime reader from a Star Horse 4 cabinet](../resources/images/step-3-aime-reader/back-aime-reader-from-star-horse-4.jpg)
 
 ### Preparing the DB9 cable
 
@@ -41,7 +41,7 @@ Take your female-female DB9 cable and **cut it in two** to expose the wires. Two
 *The second option is recommended*: no bulky cable length while crimping, an easier installation, and a combo that is easier to unplug for maintenance.
 
 !!! lightbox
-    ![Female DB9 cable cut open, sheath removed to expose the internal wires](../resources/images/step-4-aime-reader/cut-cable.jpg)
+    ![Female DB9 cable cut open, sheath removed to expose the internal wires](../resources/images/step-3-aime-reader/cut-cable.jpg)
 
 ### Identifying the right wires
 
@@ -59,7 +59,7 @@ The Aime reader is the simpler of the two: **only 5 of its 8 pins are used**. Al
 1. **3 signal wires**: the ones you identified on the DB9 cable.
 2. **2 "flying" power wires**: a **red** wire on the **5V** pin and a **black** wire on the **GND** pin right next to it. They are not connected to the DB9: leave their other end free for now, it will be joined with the VFD's on a single connector (see [Grouping the power wires](#grouping-the-power-wires)).
 
-![Pin mapping between the Aime reader's JST-PH connector and the female DB9 port](../resources/images/step-4-aime-reader/aime-db9-jst-mapping-en.svg){ width="80%" }
+![Pin mapping between the Aime reader's JST-PH connector and the female DB9 port](../resources/images/step-3-aime-reader/aime-db9-jst-mapping-en.svg){ width="80%" }
 
 !!! warning "Crimp both GNDs"
     Two of the pins to crimp are GND (common ground). In theory one would be enough, but **wire both**: one goes with the 5V to power the reader, the other is connected to the DB9 as the RS-232 standard requires.
@@ -75,7 +75,7 @@ The method is almost identical to the Aime reader's, with two differences:
 
 As for the Aime reader, add **2 flying power wires**, red on **5V** and black on **GND**, leaving their other end free.
 
-![Pin mapping between the VFD's JST-XH connector and the female DB9 port](../resources/images/step-4-aime-reader/vfd-db9-jst-mapping-en.svg){ width="80%" }
+![Pin mapping between the VFD's JST-XH connector and the female DB9 port](../resources/images/step-3-aime-reader/vfd-db9-jst-mapping-en.svg){ width="80%" }
 
 ### Grouping the power wires
 
@@ -84,18 +84,18 @@ The Aime reader and the VFD now each have a pair of flying 5V/GND wires. **Join 
 Congratulations, your cables for the ALLS are ready!
 
 !!! lightbox
-    ![The two finished female DB9 cables, with their JST connectors for the Aime reader and the VFD](../resources/images/step-4-aime-reader/finished-cables.jpg)
+    ![The two finished female DB9 cables, with their JST connectors for the Aime reader and the VFD](../resources/images/step-3-aime-reader/finished-cables.jpg)
 
 ### Securing the cables
 
 Plug both cables into their connectors, then **fasten them to the back of the combo** so they are under no strain. Even well crimped, these connectors remain fragile.
 
 !!! lightbox
-    ![The cables plugged in and then fixed at the back of the Aime reader + VFD combo to avoid any strain on the connectors](../resources/images/step-4-aime-reader/cables-secured-behind-combo.jpg)
+    ![The cables plugged in and then fixed at the back of the Aime reader + VFD combo to avoid any strain on the connectors](../resources/images/step-3-aime-reader/cables-secured-behind-combo.jpg)
 
 ## Installing it on the cabinet
 
-Use [the 3D model designed by SpiralGlide](spiralglide-resources.md#aime-reader-mount), which attaches to the cabinet using the existing screws of the acrylic panel. Designed for the Star Horse 4 Aime reader, it fits **without any destructive modification**, using the holes already there for the Aime readers. It also includes a spot for the 1P SELECT and 2P SELECT buttons.
+Use [the 3D model designed by SpiralGlide](spiralglide-resources.md#aime-reader-mount), which attaches to the cabinet using the existing screws of the acrylic panel. Designed for the Star Horse 4 Aime reader, it fits **without any destructive modification**, using the holes already there for the Aime readers. It also includes a spot for the 1P SELECT and 2P SELECT buttons, which you will install in [the next step](step-4-io-board.md).
 
 !!! lightbox
     ![The Aime reader mount printed and fitted into the front of the center tower, with the Aime reader in place. Photo by SpiralGlide](../resources/images/spiralglide-resources/maimai-aime-reader-installed.jpg)
@@ -109,7 +109,7 @@ Then don't forget to **connect the 5V and GND** of both connectors to the power 
 **Check that everything works** before moving on.
 
 !!! lightbox
-    ![Rear view of an ALLS HX2: red arrows point to the VFD DB9 port, on the expansion card at the top, and to the Aime reader one, at the bottom right of the motherboard](../resources/images/step-4-aime-reader/alls-hx2-rear-connectors-com1-com2.jpg)
+    ![Rear view of an ALLS HX2: red arrows point to the VFD DB9 port, on the expansion card at the top, and to the Aime reader one, at the bottom right of the motherboard](../resources/images/step-3-aime-reader/alls-hx2-rear-connectors-com1-com2.jpg)
 
 ## In summary
 !!! tldr "The big picture"
@@ -124,4 +124,4 @@ Then don't forget to **connect the 5V and GND** of both connectors to the power 
 
 ---
 
-Let's move on to [Step 5: Headphone Jacks and Sound System](step-5-audio-headphones.md).
+Let's move on to [Step 4: The I/O Board and the Buttons](step-4-io-board.md).

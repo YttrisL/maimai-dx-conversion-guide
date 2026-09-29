@@ -160,6 +160,8 @@ Ces petits achats bon marché, nécessaires au fil des étapes, se trouvent dans
     - Branché au ALLS, puis coupé côté prise pour être raccordé directement à l'alimentation électrique de la borne.
 * **2x**{: .quantity-emphasis } **Câble micro-USB** de charge
     - Pour alimenter les deux proxys des contrôleurs de LEDs : l'extrémité opposée au Pico est coupée, fil rouge sur le 5V et fil noir sur le GND de l'alimentation installée à l'[étape 1](step-1-alls-and-psu.md).
+* **2x**{: .quantity-emphasis } **Câble jack 3.5 mm mâle-mâle**
+    - Pour relier les sorties C/W et SIDE du ALLS à leur ampli (voir l'[étape 5](step-5-audio-headphones.md)). Le plus court possible.
 
 ### Électronique
 
@@ -169,7 +171,10 @@ Ces petits achats bon marché, nécessaires au fil des étapes, se trouvent dans
     - Pour fabriquer les proxys des contrôleurs de LEDs. Pour éviter toute soudure, préférez une version aux broches pré-soudées. **Attention : les broches doivent être soudées vers le bas, pas vers le haut.**
 * **2x**{: .quantity-emphasis } **Pico-2CH-RS232** ([exemple]({{BUY_EXAMPLE_PICO_2CH_RS232}})) 
     - Pour fabriquer les proxys des contrôleurs de LEDs.
-
+* **2x**{: .quantity-emphasis } **Ampli audio pour casque**
+    - Un petit ampli bon marché par joueur, pour amplifier la sortie casque très faible du ALLS (voir l'[étape 5](step-5-audio-headphones.md)). Inutile qu'il ait une molette de volume : le volume se règle dans les menus du jeu.
+* **2x**{: .quantity-emphasis } **Prise jack 3.5 mm femelle**
+    - Les prises casque des joueurs, à installer sur la borne. Préférez un modèle à fixer sur panneau.
 
 ### Fils de câblage
 
@@ -224,12 +229,6 @@ Pour les autres connecteurs, plutôt que d'acheter chaque référence à l'unit�
 * **30x**{: .quantity-emphasis } Broche femelle à sertir
 
 </div>
-
-!!! abstract "En cours d'écriture"
-    Cette liste est incomplète et sera enrichie au fil de l'écriture du guide. Restent à ajouter, une fois les détails connus :
-    
-    - **2x**{: .quantity-emphasis } Prises jack pour le casque et les câbles qui vont avec
-    - **2x**{: .quantity-emphasis } Amplis son pour les casques
 
 ---
 

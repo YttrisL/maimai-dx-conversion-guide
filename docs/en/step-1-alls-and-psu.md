@@ -95,9 +95,9 @@ Most of the devices to connect are covered in more detail in the following steps
 - **COM1 - DB9 port**: Aime reader
 - **LAN1 - RJ45 port**: Network port, to be connected to the service router. The second network port is unused.
 - **2.5mm audio jacks**:
-    - **C/W**: Player 1 headphones
-    - **FRONT**: Player 1 speakers
-    - **REAR**: Player 2 speakers
+    - **C/W**: Player 1 [headphones](step-5-audio-headphones.md#the-headphone-jacks)
+    - **FRONT**: Player 1 [speakers](step-5-audio-headphones.md#connecting-the-speakers)
+    - **REAR**: Player 2 [speakers](step-5-audio-headphones.md#connecting-the-speakers)
 - **USB**:
     - **USB 1**: SEGA IO4
     - **USB 2**: USB hub, to which the two QR code cameras and the `4x RS-232 to USB` adapter are connected.
@@ -115,7 +115,7 @@ Most of the devices to connect are covered in more detail in the following steps
 - **COM2 - DB9 port**: VFD
 - **COM3 - DB9 port**: Player 1 touch panel
 - **COM4 - DB9 port**: Player 2 touch panel
-- **SIDE**: Player 2 headphones
+- **SIDE**: Player 2 [headphones](step-5-audio-headphones.md#the-headphone-jacks)
 
 ## Power supply
 

@@ -50,7 +50,7 @@ It is a widespread standard in the arcade world.
 * **RX**: receive;
 * **GND**: ground, the common voltage reference.
 
-The other pins (DTR, DSR, RTS, CTS, DCD, RI) carry optional control signals (flow control, carrier detection...), rarely used in arcade. *The VFD is an exception: it also uses `RTS` and `CTS` (see [step 4](step-4-aime-reader.md)).*
+The other pins (DTR, DSR, RTS, CTS, DCD, RI) carry optional control signals (flow control, carrier detection...), rarely used in arcade. *The VFD is an exception: it also uses `RTS` and `CTS` (see [step 3](step-3-aime-reader.md)).*
 
 ![Male DB9 connector, front view, with pins 2 (RX), 3 (TX) and 5 (GND) highlighted](../resources/images/serial-protocols/db9-connector-en.svg){ width="65%" }
 

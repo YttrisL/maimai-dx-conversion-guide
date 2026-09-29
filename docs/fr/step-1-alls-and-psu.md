@@ -95,9 +95,9 @@ La plupart des appareils à connecter sont présentés plus en détail dans les 
 - **COM1 - Port DB9** : Lecteur Aime
 - **LAN1 - Port RJ45** : Port réseau, à connecter au routeur de service. Le second port réseau est inutilisé.
 - **Audio Jacks 2,5mm** :
-    - **C/W** : Prise casque Joueur 1
-    - **FRONT** : Haut-parleurs Joueur 1
-    - **REAR** : Haut-parleurs Joueur 2
+    - **C/W** : [Prise casque](step-5-audio-headphones.md#les-prises-casques) Joueur 1
+    - **FRONT** : [Haut-parleurs](step-5-audio-headphones.md#branchement-des-haut-parleurs) Joueur 1
+    - **REAR** : [Haut-parleurs](step-5-audio-headphones.md#branchement-des-haut-parleurs) Joueur 2
 - **USB** :
     - **USB 1** : SEGA IO4
     - **USB 2** : Hub USB, sur lequel sont branchés les deux caméras de QR codes et l'adaptateur `4x RS-232 vers USB`.
@@ -115,7 +115,7 @@ La plupart des appareils à connecter sont présentés plus en détail dans les 
 - **COM2 - Port DB9** : VFD
 - **COM3 - Port DB9** : Dalle tactile du joueur 1
 - **COM4 - Port DB9** : Dalle tactile du joueur 2
-- **SIDE** : Prise casque Joueur 2
+- **SIDE** : [Prise casque](step-5-audio-headphones.md#les-prises-casques) Joueur 2
 
 ## Alimentation
 

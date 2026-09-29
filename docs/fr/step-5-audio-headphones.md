@@ -2,42 +2,59 @@
 title: "🎧 5 - Prises casques et son"
 ---
 
-# 🎧 Étape 5 : Prises casques et Système Son
+# 🎧 Étape 5 : Prises casques et système son
 
---8<-- "includes/wip-fr.md"
+Contrairement à FiNALE qui n'en possédait pas, DX apporte nativement aux joueurs une **prise casque avec contrôle du volume en jeu**. Son installation est très simple.
 
-La borne *DX* propose des prises casques pour les joueurs, ce qui n'existait pas sur *FiNALE*.
+## Branchement des haut-parleurs
 
-L'ordinateur *ALLS HX* possède 4 sorties audio classiques (type Jack). Trois sont situées sur la carte mère principale, et une sur une carte d'extension *([Manuel](../resources/pdfs/maimai-dx-instruction-manual-full.pdf), page 128)*.
+Le système son existant de la borne se raccorde sans aucune modification : il suffit de brancher la prise jack sur le port approprié de la carte mère, comme expliqué à [l'étape 1](step-1-alls-and-psu.md).
 
-!!! warning
-    L'ordinateur ne sort qu'un son "pré-amplifié" (très faible). Dans une vraie borne *DX*, ce son passe par un gros amplificateur dédié. Vous pouvez réutiliser l'amplificateur de la *FiNALE* pour les haut-parleurs principaux, mais il ne gérera pas les nouvelles prises casques.
+- **FRONT** : côté Joueur 1
+- **REAR** : côté Joueur 2
 
-Voici à quoi correspondent les ports audio de l'ordinateur : *(Voir [manuel](../resources/pdfs/maimai-dx-instruction-manual-full.pdf), page 193)*
+!!! lightbox
+    ![Vue arrière d'un ALLS HX2 : la carte mère et la carte d'extension avec leurs connecteurs, les flèches rouges P1 et P2 désignent les sorties haut-parleurs](../resources/images/step-5-audio-headphones/alls-hx2-rear-connectors-front-rear.jpg)
 
-* **FRONT :** Sortie pour les haut-parleurs du Joueur 1
-* **REAR :** Sortie pour les haut-parleurs du Joueur 2
-* **C/W :** Sortie pour la prise casque du Joueur 1
-* **SIDE :** Sortie pour la prise casque du Joueur 2
+## Les prises casques
+
+Le ALLS dispose de 4 prises jack audio : trois à l'emplacement classique et une quatrième sur la carte d'extension. Les sorties casques utilisent les deux ports restants :
+
+- **C/W** : prise casque du Joueur 1
+- **SIDE** : prise casque du Joueur 2
 
 !!! lightbox
     ![Vue arrière d'un ALLS HX2 : des flèches rouges désignent les sorties casques, C/W pour P1 sur la carte mère et SIDE pour P2 sur la carte d'extension](../resources/images/step-5-audio-headphones/alls-hx2-rear-connectors-cw-side.jpg)
 
-## Comment installer les prises casques
+!!! warning
+    Le ALLS ne sort qu'un son **pré-amplifié (très faible)**. Dans une vraie borne *DX*, ce son passe par un gros amplificateur dédié. Une borne FiNALE n'en possède aucun pour les casques, puisqu'elle n'avait pas de prise casque d'origine : ces sorties ne sont donc pas utilisables telles quelles.
 
-Puisque le signal pour les casques (sorties C/W et SIDE) est trop faible, vous devez acheter un ou deux petits amplificateurs audio bon marché.
+### Installation d'un ampli
+
+Le signal des sorties C/W et SIDE étant trop faible, il faut acheter **un ou deux petits amplificateurs audio bon marché**, un par joueur, ainsi que des câbles jack 3.5 mm mâle-mâle pour les relier au ALLS. Tout est référencé dans la [liste de courses](equipment.md#electronique).
 
 !!! tip "Inutile d'acheter des amplis avec des molettes de volume"
-    Le volume des casques se règle numériquement directement dans les menus du jeu *DX*.
+    Sur DX, le volume des casques se règle numériquement dans les menus du jeu. Toutefois, si votre FiNALE avait déjà été modifiée avec une prise casque, vous pouvez réutiliser l'ampli en place.
 
-Pour l'installation physique des prises (qui sont de simples connecteurs Jack 3.5mm femelles), vous avez deux options :
+### Mise en place sur la borne
 
-1. **La méthode fidèle :** Percer la coque en plastique sous les boutons (comme sur une vraie *DX*) pour y encastrer les prises.
-2. **La méthode non-destructrice :** Installer les deux prises casque au centre de la borne, entre les deux joueurs, via un boîtier réalisé manuellement.
+Les prises sont de simples connecteurs Jack 3.5 mm femelles. Deux options s'offrent à vous pour les installer :
+
+1. **La méthode fidèle :** percer la coque en plastique sous les boutons (comme sur une vraie DX) pour y encastrer les prises.
+2. **La méthode non destructrice :** installer les deux prises au centre de la borne, entre les deux joueurs, dans un boîtier réalisé manuellement.
 
 !!! tip "Durabilité des prises jack"
-    En salle d'arcade, les prises jack s'abîment très vite à force de brancher/débrancher les écouteurs. Prévoyez un système où la prise fixée sur la coque est facilement remplaçable (par exemple, reliez-la à l'amplificateur interne avec un câble détachable, plutôt que de souder le connecteur directement sur l'ampli).
+    En salle d'arcade, les prises jack s'abîment vite à force de brancher et débrancher les écouteurs. Prévoyez une prise fixée sur la coque **facilement remplaçable** : reliez-la à l'amplificateur avec un câble détachable plutôt que de souder le connecteur directement sur l'ampli.
+
+## En résumé
+!!! tldr "Les grandes lignes"
+    Pour le son et les casques :
+
+    * Brancher les haut-parleurs existants sur les sorties FRONT et REAR du ALLS.
+    * Relier les sorties C/W (Joueur 1) et SIDE (Joueur 2) à un ampli audio chacun, avec des câbles jack 3.5 mm mâle-mâle.
+    * Raccorder chaque ampli à une prise jack 3.5 mm femelle pour le casque.
+    * Installer les prises sur la coque sous les boutons, ou dans un boîtier central entre les joueurs.
 
 ---
 
-Étape suivante (optionnelle) : les [Lumières](step-6-lighting.md).
+Passons à l'[Étape 6 : Lumières](step-6-lighting.md).

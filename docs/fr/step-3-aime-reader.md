@@ -1,8 +1,8 @@
 ---
-title: "💳 4 - Lecteur Aime et VFD"
+title: "💳 3 - Lecteur Aime et VFD"
 ---
 
-# 💳 Étape 4 : Le lecteur Aime et le VFD
+# 💳 Étape 3 : Le lecteur Aime et le VFD
 
 **Les lecteurs Aime de FiNALE ne sont pas compatibles avec DX** : il faut installer un lecteur de nouvelle génération. Le VFD, lui, n'a aucune utilité réelle dans notre conversion, mais il reste nécessaire pour le logiciel. Bonne nouvelle : les deux sont très simples à installer.
 
@@ -28,8 +28,8 @@ Le branchement au ALLS est extrêmement simple :
 Ces deux ports COM sont des ports DB9 physiques du ALLS. En revanche, votre combo Aime + VFD n'est probablement pas livré avec un câble DB9 prêt à brancher : **vous allez devoir sertir vos propres câbles**, du connecteur du lecteur Aime et du VFD jusqu'au DB9.
 
 !!! lightbox
-    ![Face avant d'un lecteur Aime issu d'une borne Star Horse 4](../resources/images/step-4-aime-reader/front-aime-reader-from-star-horse-4.jpg)
-    ![Face arrière d'un lecteur Aime issu d'une borne Star Horse 4](../resources/images/step-4-aime-reader/back-aime-reader-from-star-horse-4.jpg)
+    ![Face avant d'un lecteur Aime issu d'une borne Star Horse 4](../resources/images/step-3-aime-reader/front-aime-reader-from-star-horse-4.jpg)
+    ![Face arrière d'un lecteur Aime issu d'une borne Star Horse 4](../resources/images/step-3-aime-reader/back-aime-reader-from-star-horse-4.jpg)
 
 ### Préparer le câble DB9
 
@@ -41,7 +41,7 @@ Prenez votre câble DB9 femelle-femelle et **coupez-le en deux** pour en exposer
 *La seconde option est recommandée* : pas de longueur de câble encombrante pendant le sertissage, une installation plus simple, et un combo plus facile à débrancher pour la maintenance.
 
 !!! lightbox
-    ![Câble DB9 femelle coupé, gaine retirée pour exposer les fils internes](../resources/images/step-4-aime-reader/cut-cable.jpg)
+    ![Câble DB9 femelle coupé, gaine retirée pour exposer les fils internes](../resources/images/step-3-aime-reader/cut-cable.jpg)
 
 ### Repérer les bons fils
 
@@ -59,7 +59,7 @@ Le lecteur Aime est le plus simple des deux : **seules 5 de ses 8 broches sont u
 1. **3 fils de signal** : ceux que vous avez repérés sur le câble DB9.
 2. **2 fils d'alimentation "volants"** : un fil **rouge** sur la broche **5V** et un fil **noir** sur la broche **GND** juste à côté. Ils ne sont pas reliés au DB9 : laissez leur autre extrémité libre pour l'instant, elle sera réunie avec celle du VFD sur un seul connecteur (voir [Regrouper les fils d'alimentation](#regrouper-les-fils-dalimentation)).
 
-![Correspondance des broches entre le connecteur JST-PH du lecteur Aime et le port DB9 femelle](../resources/images/step-4-aime-reader/aime-db9-jst-mapping.svg){ width="80%" }
+![Correspondance des broches entre le connecteur JST-PH du lecteur Aime et le port DB9 femelle](../resources/images/step-3-aime-reader/aime-db9-jst-mapping.svg){ width="80%" }
 
 !!! warning "Sertissez les deux GND"
     Deux des broches à sertir sont des GND (masse commune). Un seul suffirait en théorie, mais **câblez bien les deux** : l'un accompagne le 5V pour alimenter le lecteur, l'autre est relié au DB9 comme le veut la norme RS-232.
@@ -75,7 +75,7 @@ La méthode est presque identique à celle du lecteur Aime, à deux différences
 
 Comme pour le lecteur Aime, ajoutez **2 fils d'alimentation volants**, rouge sur le **5V** et noir sur le **GND**, en laissant leur autre extrémité libre.
 
-![Correspondance des broches entre le connecteur JST-XH du VFD et le port DB9 femelle](../resources/images/step-4-aime-reader/vfd-db9-jst-mapping.svg){ width="80%" }
+![Correspondance des broches entre le connecteur JST-XH du VFD et le port DB9 femelle](../resources/images/step-3-aime-reader/vfd-db9-jst-mapping.svg){ width="80%" }
 
 ### Regrouper les fils d'alimentation
 
@@ -84,18 +84,18 @@ Le lecteur Aime et le VFD ont maintenant chacun une paire de fils volants 5V/GND
 Félicitations, vos câbles pour le ALLS sont prêts !
 
 !!! lightbox
-    ![Les deux câbles DB9 femelle finalisés, avec leurs connecteurs JST pour le lecteur Aime et le VFD](../resources/images/step-4-aime-reader/finished-cables.jpg)
+    ![Les deux câbles DB9 femelle finalisés, avec leurs connecteurs JST pour le lecteur Aime et le VFD](../resources/images/step-3-aime-reader/finished-cables.jpg)
 
 ### Sécuriser les câbles
 
 Branchez les deux câbles sur les connecteurs correspondants, puis **fixez-les à l'arrière du combo** pour qu'ils ne subissent aucune tension. Même bien sertis, ces connecteurs restent fragiles.
 
 !!! lightbox
-    ![Les câbles branchés puis fixés à l'arrière du combo lecteur Aime + VFD pour éviter toute tension sur les connecteurs](../resources/images/step-4-aime-reader/cables-secured-behind-combo.jpg)
+    ![Les câbles branchés puis fixés à l'arrière du combo lecteur Aime + VFD pour éviter toute tension sur les connecteurs](../resources/images/step-3-aime-reader/cables-secured-behind-combo.jpg)
 
 ## Installation sur la borne
 
-Utilisez [le modèle 3D conçu par SpiralGlide](spiralglide-resources.md#support-du-lecteur-aime), qui se fixe sur la borne grâce aux vis existantes de la vitre en acrylique. Conçu pour le lecteur Aime de Star Horse 4, il s'intègre **sans modification destructive**, en profitant des trous déjà prévus pour les lecteurs Aime. Il comprend aussi un emplacement pour les boutons 1P SELECT et 2P SELECT.
+Utilisez [le modèle 3D conçu par SpiralGlide](spiralglide-resources.md#support-du-lecteur-aime), qui se fixe sur la borne grâce aux vis existantes de la vitre en acrylique. Conçu pour le lecteur Aime de Star Horse 4, il s'intègre **sans modification destructive**, en profitant des trous déjà prévus pour les lecteurs Aime. Il comprend aussi un emplacement pour les boutons 1P SELECT et 2P SELECT, que vous installerez à [l'étape suivante](step-4-io-board.md).
 
 !!! lightbox
     ![Le support du lecteur Aime imprimé et monté dans la façade de la tour centrale, lecteur Aime en place. Photo par SpiralGlide](../resources/images/spiralglide-resources/maimai-aime-reader-installed.jpg)
@@ -109,7 +109,7 @@ N'oubliez pas ensuite de **raccorder le 5V et le GND** des deux connecteurs à l
 **Vérifiez que tout fonctionne** avant de passer à la suite.
 
 !!! lightbox
-    ![Vue arrière d'un ALLS HX2 : des flèches rouges désignent le port DB9 du VFD, sur la carte d'extension en haut, et celui du lecteur Aime, en bas à droite de la carte mère](../resources/images/step-4-aime-reader/alls-hx2-rear-connectors-com1-com2.jpg)
+    ![Vue arrière d'un ALLS HX2 : des flèches rouges désignent le port DB9 du VFD, sur la carte d'extension en haut, et celui du lecteur Aime, en bas à droite de la carte mère](../resources/images/step-3-aime-reader/alls-hx2-rear-connectors-com1-com2.jpg)
 
 ## En résumé
 !!! tldr "Les grandes lignes"
@@ -124,4 +124,4 @@ N'oubliez pas ensuite de **raccorder le 5V et le GND** des deux connecteurs à l
 
 ---
 
-Passons à l'[Étape 5 : Prises casques et Système Son](step-5-audio-headphones.md).
+Passons à l'[Étape 4 : La Carte I/O et les Boutons](step-4-io-board.md).

@@ -160,6 +160,8 @@ These small, cheap purchases, needed over the course of the steps, can be found 
     - Plugged into the ALLS, then cut at the plug end to be wired directly to the cabinet's mains supply.
 * **2x**{: .quantity-emphasis } charging **micro-USB cable**
     - To power the two LED controller proxies: the end opposite the Pico is cut off, red wire to 5V and black wire to GND on the power supply installed in [step 1](step-1-alls-and-psu.md).
+* **2x**{: .quantity-emphasis } **3.5 mm male-to-male jack cable**
+    - To connect the ALLS's C/W and SIDE outputs to their amp (see [step 5](step-5-audio-headphones.md)). As short as possible.
 
 ### Electronics
 
@@ -169,6 +171,10 @@ These small, cheap purchases, needed over the course of the steps, can be found 
     - To build the LED controller proxies. To avoid any soldering, prefer a version with pre-soldered pins. **Careful: the pins must be soldered facing down, not up.**
 * **2x**{: .quantity-emphasis } **Pico-2CH-RS232** ([example]({{BUY_EXAMPLE_PICO_2CH_RS232}}))
     - To build the LED controller proxies.
+* **2x**{: .quantity-emphasis } **Headphone audio amplifier**
+    - One small, cheap amp per player, to boost the ALLS's very weak headphone output (see [step 5](step-5-audio-headphones.md)). It doesn't need a volume knob: volume is adjusted in the game menus.
+* **2x**{: .quantity-emphasis } **3.5 mm female jack socket**
+    - The players' headphone jacks, to install on the cabinet. Prefer a panel-mount model.
 
 ### Hookup wire
 
@@ -223,12 +229,6 @@ For the other connectors, rather than buying each part number individually, **ge
 * **30x**{: .quantity-emphasis } female crimp pin
 
 </div>
-
-!!! abstract "Work in progress"
-    This list is incomplete and will be expanded as the guide is written. Still to be added, once the details are known:
-
-    - **2x**{: .quantity-emphasis } Jack sockets for the headphones and the cables that go with them
-    - **2x**{: .quantity-emphasis } Sound amplifiers for the headphones
 
 ---
 

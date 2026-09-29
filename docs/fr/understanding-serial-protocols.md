@@ -50,7 +50,7 @@ C'est un standard très répandu dans le milieu de l'arcade.
 * **RX** : réception ;
 * **GND** : la masse, la référence commune de tension.
 
-Les autres broches (DTR, DSR, RTS, CTS, DCD, RI) transportent des signaux de contrôle optionnels (contrôle de flux, détection de porteuse...), rarement utilisés en arcade. *Le VFD fait exception : il utilise aussi `RTS` et `CTS` (voir l'[étape 4](step-4-aime-reader.md)).*
+Les autres broches (DTR, DSR, RTS, CTS, DCD, RI) transportent des signaux de contrôle optionnels (contrôle de flux, détection de porteuse...), rarement utilisés en arcade. *Le VFD fait exception : il utilise aussi `RTS` et `CTS` (voir l'[étape 3](step-3-aime-reader.md)).*
 
 ![Connecteur DB9 mâle, vue de face, avec les broches 2 (RX), 3 (TX) et 5 (GND) mises en évidence](../resources/images/serial-protocols/db9-connector.svg){ width="65%" }
 

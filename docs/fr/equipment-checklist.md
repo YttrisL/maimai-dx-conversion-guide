@@ -32,12 +32,15 @@ title: "☑️ Checklist d'achat"
 - [ ] **4x**{: .quantity-emphasis } Câble DB-9 Mâle-Femelle (3 m)
 - [ ] **1x**{: .quantity-emphasis } Câble IEC C-13 (2 m)
 - [ ] **2x**{: .quantity-emphasis } Câble micro-USB
+- [ ] **2x**{: .quantity-emphasis } Câble jack 3.5 mm mâle-mâle
 
 ### Électronique
 
 - [ ] **2x**{: .quantity-emphasis } Convertisseur TTL vers RS-232 avec DB-9 femelle
 - [ ] **2x**{: .quantity-emphasis } Raspberry Pi Pico
 - [ ] **2x**{: .quantity-emphasis } Pico-2CH-RS232
+- [ ] **2x**{: .quantity-emphasis } Ampli audio pour casque
+- [ ] **2x**{: .quantity-emphasis } Prise jack 3.5 mm femelle
 
 ### Fils de câblage
 

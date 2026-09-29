@@ -1,24 +1,24 @@
 {
   "pages": {
     "conclusion.md": "f0eefaaf4b0838f99f90fff961f144d84c82a5ae8b9fa4480e8cd11e2a570204",
-    "equipment-checklist.md": "f70d20e789b302159bfdb9bfab3fc5f450a4fbfddf34ab1fbeacdcb1af977fc0",
-    "equipment.md": "62fa93f1ec2616760ed9f9cee3746eda0eb909f1e08a66b5b5b52e028053e378",
+    "equipment-checklist.md": "ea10eef49d2a432ee2970a87a3bf8c1ac9699fe647077af6250ce769477f6a3d",
+    "equipment.md": "891cfcf1bc353a793e41ca5555bcad314b51eef54dc6b8aaf9c1a27356bd8bfc",
     "glossary.md": "89168bd30e805d650e08b66b3aac7196b588369ee1674502dedfc9b652648196",
     "index.md": "32582f703305e11b0f98d41a85eb91928f4e14c52c234b15a2e39df385814399",
     "official-manuals.md": "894543918eb392b2a0a32a69192a60b687e0e7082fa39a189d3da189745eeb5d",
     "secondhand-market.md": "16f5af0bfba375350ba3951b9763496449b671f98cf0cda8fd22913fb37f10dd",
     "spiralglide-resources.md": "e9b452ae759f6e7e39269e545c85b9984d5f7ea845d0e7f1e966af469c233058",
-    "step-1-alls-and-psu.md": "21c4ff6e7abd24a1ac65058362f06e44211d53fa5c3608a0059205a3484274ff",
-    "step-2-touchscreen-display.md": "8444cd27241056b9e511f003bd91ca3255fa1bfd39f20f0db758ed98eda34d4f",
-    "step-3-io-board.md": "6c3f821caf0b1166cf5c6231a9b86143fc067df577e7598d35ea6008f60459b3",
-    "step-4-aime-reader.md": "e8dcf8d2d9e956d146ba4c4f2010fe21948f8c38fc5db93f431f0bcf4cf1effb",
-    "step-5-audio-headphones.md": "45ae2ff651596cc0639a554672146204fc61bc43f50423c6a18cf790d2c7808e",
-    "step-6-lighting.md": "052ca65d45a07efc14a8279e7b76d25d016c34228d61888a7470f69f0b106e48",
-    "step-7-cameras.md": "ecb262000c0b130012227822995f4678f1b23fbbb5c953fbf61705997027ba1f",
-    "understanding-serial-protocols.md": "a35b267da9ccc112e6ae25827efe01fd7ec5a2fdd37b520f63e6069b6121bec8",
+    "step-1-alls-and-psu.md": "62677b7af6c03e6c7f9fe6be80d6e84bd7594ea370d5a28069a3aaa10a75ea4f",
+    "step-2-touchscreen-display.md": "5d0c8231c418b1ef80b392616ac3fb002086ceca40913d176345e370d10a2023",
+    "step-3-aime-reader.md": "d3e8b63d28fff1a362e0f0c36a8bd6605ca0075be450647809f1390f56bba981",
+    "step-4-io-board.md": "ef3697319cca92ee4bd07cadcfe07dc7da1507ae381620b3ba554543075af205",
+    "step-5-audio-headphones.md": "f811b787324a5412e61f893bd9d36a44900b1fd8a8d9cab801d1b772457a3959",
+    "step-6-lighting.md": "8362a631a493d8212fd8173c101f74d7fa1e5a8401ba39811f0e22ea340495c6",
+    "step-7-cameras.md": "ad37e0b5e5d10012e09572a422e7595ff66b1fb2a6eeba1d806dd9b7d54dec2d",
+    "understanding-serial-protocols.md": "fde2df2f589746e61e9619b0a18efc20647645aab0bc9c244e5df824c6142412",
     "useful-links.md": "dae04636e657ea677f46bb44294702368f5d18351e67822cdd7ba52a0484dbd5",
     "warnings.md": "bd4e885b8999bfbb9d07e3a642beb2ffd2e81c56086ed4ee7c1473c07d19fb97",
-    "wiring-diagrams.md": "5b51075811c13cf331a2fdbb71a1623062f6e0eac20a7d6a2d453c30cd5c37df"
+    "wiring-diagrams.md": "25e471b7eba48129bb52d34bc8a240893573ec1f455d537e591c415892f8af0e"
   },
   "assets": {
     "resources/images/serial-protocols/db9-connector.svg": "2c6595be80dcc216065e8a2a7056569e79d8028911d9db5250d8e3c435412932",
@@ -29,10 +29,10 @@
     "resources/images/serial-protocols/usb-cdc.svg": "81836ad4a5027dc9698aaf27c21e49181c851dfcef07fd2f3f1f2d52042ec76f",
     "resources/images/step-1-alls-and-psu/alls-hx2-rear-connectors.jpg": "0b751274e9fedee1503537485a5c1b22153e9eed340183ad333aab8753945ff2",
     "resources/images/step-1-alls-and-psu/molex-minifit-jr-2x7.svg": "7dcd4f019a5c0dd04611620f0f7c7124cda3e3b3c15731b364592c99f44a1816",
-    "resources/images/step-4-aime-reader/aime-db9-jst-mapping.svg": "b4855626543b62332b27c892e7f739a4718b66b7b3ec494893844eb6eba5727f",
-    "resources/images/step-4-aime-reader/vfd-db9-jst-mapping.svg": "0ac1cf341067bc80b32e2ecfc316894514886a3b65d4329515b6ca524f1e4421",
+    "resources/images/step-3-aime-reader/aime-db9-jst-mapping.svg": "b4855626543b62332b27c892e7f739a4718b66b7b3ec494893844eb6eba5727f",
+    "resources/images/step-3-aime-reader/vfd-db9-jst-mapping.svg": "0ac1cf341067bc80b32e2ecfc316894514886a3b65d4329515b6ca524f1e4421",
     "resources/images/step-6-lighting/led-controllers-chain-finale.svg": "2c3a6ccb7379fbbcea09862ed07a61084f681a37671b54249cb610a9be2c3fef",
     "resources/images/step-6-lighting/led-controllers-chain.svg": "8fde04190e7666af6f83b2325eeaafe4b839bde379ebaf5abedf60f93c01b585",
-    "resources/images/step-6-lighting/led-topper-harness.svg": "74d13cd422d8d7f1ba5d830be65e49a82a88f02c704378189a6f1441d288b228"
+    "resources/images/step-6-lighting/led-topper-harness.svg": "2c110ccd1b7b6e572914f9ba34807687b0c6d9cf02746bf275be557c2ddbb786"
   }
 }

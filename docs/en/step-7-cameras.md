@@ -82,4 +82,4 @@ The game's Test menu has a page dedicated to the cameras. The game looks for **t
 
 ---
 
-Have you finished all the steps? Head to the [conclusion](conclusion.md)!
+Let's move on to the [Conclusion](conclusion.md).

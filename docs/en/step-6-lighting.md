@@ -13,7 +13,7 @@ Lighting is technically *optional*: it has no impact on gameplay. But the job is
 
     On a real *DX* cabinet, lighting is driven by three controllers:
 
-    * The **IO4** handles the **billboard** (labeled `BILLBOARD LED` / `ROOF LED` on Sega's diagrams). See [Step 3](step-3-io-board.md).
+    * The **IO4** handles the **billboard** (labeled `BILLBOARD LED` / `ROOF LED` on Sega's diagrams). See [Step 4](step-4-io-board.md).
     * Two identical control boards (part no. `837-15070-04`):
         * P1 side: the eight buttons, the background lighting and the left side lighting.
         * P2 side: the eight buttons, the background lighting and the right side lighting.
@@ -139,11 +139,11 @@ All that's left is to plug the RS-232 to USB adapter into the ALLS through the U
 
 Two methods are possible:
 
-* **With the [conversion PCB]({{IO4_CONVERSION_PCB}})**, if you installed it in [step 3](step-3-io-board.md): just plug the LEDs into the right ports on the PCB.
+* **With the [conversion PCB]({{IO4_CONVERSION_PCB}})**, if you installed it in [step 4](step-4-io-board.md): just plug the LEDs into the right ports on the PCB.
 * **Without it**: make your own IO4-compatible wiring harness to connect the LEDs.
 
 ??? example "The easy way - The conversion PCB"
-    Simply plug the LED controller's output connector into the conversion PCB. That's it: *the 12V has already been connected since [step 3](step-3-io-board.md).*
+    Simply plug the LED controller's output connector into the conversion PCB. That's it: *the 12V has already been connected since [step 4](step-4-io-board.md).*
 
     !!! tip "Reminder: two separate power supplies"
         The PCB is powered by **the cabinet's LED power supply**, never by the IO4's 12V. The two circuits share a common ground, but stay separate.
@@ -157,7 +157,7 @@ Two methods are possible:
     *If you plan to install the cameras in the next step*, the conversion PCB will make your life easier there too: it already has ready-to-use connectors for their LEDs.
 
 ??? example "Making a wiring harness by hand"
-    The harness plugs into the IO4 through a 20-pin JST-RA connector (CN9), and ends in two 8-pin JST-SM connectors, for the left and right sides. If you followed the suggestions in [step 3](step-3-io-board.md), you already have a female 2-pin JST-SM connector wired to the IO4's CN3 for the `BILLBOARD LED L RED` and `BILLBOARD LED R RED` signals.
+    The harness plugs into the IO4 through a 20-pin JST-RA connector (CN9), and ends in two 8-pin JST-SM connectors, for the left and right sides. If you followed the suggestions in [step 4](step-4-io-board.md), you already have a female 2-pin JST-SM connector wired to the IO4's CN3 for the `BILLBOARD LED L RED` and `BILLBOARD LED R RED` signals.
 
     !!! lightbox
         ![Visual identification of the LED pins on the IO4: the CN9 connector (20-pin JST-RA) carries BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED and BILLBOARD LED L/R BLUE, while BILLBOARD LED L/R RED is on the CN3 connector](../resources/images/step-6-lighting/io4-visual-reprensation-of-led-pins.jpg)
@@ -165,7 +165,7 @@ Two methods are possible:
 
     Build the harness following the diagram below, long enough for a clean installation: **3 meters on the player 1 side, 2 meters on the player 2 side**. For the 12V, **do not use the CN9 12V pin**: connect directly to the cabinet's LED 12V power supply, so as not to put unnecessary load on the I/O board.
 
-    ![Wiring harness for the billboard lighting: from the IO4 (CN9 pins 5, 6, 9 and 10, and CN3 pins 51-52 already wired in step 3) and the internal 12V power supply, making two 8-pin JST-SM connectors - P1 side (3 meters, with a bridge from pins 1-4 to 5-8 to also power CENTER LED) and P2 side (2 meters, pins 5-8 unused) - which then plug into the original AB and BB connectors](../resources/images/step-6-lighting/led-topper-harness-en.svg)
+    ![Wiring harness for the billboard lighting: from the IO4 (CN9 pins 5, 6, 9 and 10, and CN3 pins 51-52 already wired in step 4) and the internal 12V power supply, making two 8-pin JST-SM connectors - P1 side (3 meters, with a bridge from pins 1-4 to 5-8 to also power CENTER LED) and P2 side (2 meters, pins 5-8 unused) - which then plug into the original AB and BB connectors](../resources/images/step-6-lighting/led-topper-harness-en.svg)
 
     Once the harness is done, plug it into the IO4, connect the 12V, then plug the two original 8-pin JST-SM connectors into your new cable. **Test the continuity of all your cables before installing them**, to rule out any badly crimped pin.
 
@@ -193,4 +193,4 @@ Two methods are possible:
 
 ---
 
-Final step (optional): the [Cameras](step-7-cameras.md).
+Let's move on to [Step 7: Cameras (Optional)](step-7-cameras.md).

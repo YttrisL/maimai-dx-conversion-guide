@@ -1,8 +1,8 @@
 ---
-title: "🕹️ 3 - Carte I/O et boutons"
+title: "🕹️ 4 - Carte I/O et boutons"
 ---
 
-# 🕹️ Étape 3 : La Carte I/O et les Boutons
+# 🕹️ Étape 4 : La Carte I/O et les Boutons
 
 Pour faire tourner *DX*, **l'IO3 de FiNALE doit être remplacée par une IO4**, plus récente. Côté boutons, les deux modèles diffèrent peu, mais le câblage doit tout de même être adapté.
 
@@ -19,7 +19,7 @@ Pour faire tourner *DX*, **l'IO3 de FiNALE doit être remplacée par une IO4**, 
     Autre changement : **l'IO4 communique avec le PC en USB**, et non plus en JVS comme sur RingEdge 2. *Certaines variantes d'IO4 gèrent aussi le JVS, mais peu importe ici : la connexion se fait forcément en USB.*
 
     !!! lightbox
-        ![Une carte IO4 Sega (837-15257)](../resources/images/step-3-io-board/io4-board.jpg)
+        ![Une carte IO4 Sega (837-15257)](../resources/images/step-4-io-board/io4-board.jpg)
 
     *(Note : le détail complet du câblage de l'IO4 se trouve à la page 194 du [manuel](../resources/pdfs/maimai-dx-instruction-manual-full.pdf), ou directement [ici](../resources/images/wiring-diagrams/maimai-dx-wiring-diagram-2-of-4.jpg), de **[E-2]** à **[F-6]**.)*
 
@@ -55,7 +55,7 @@ Dans les deux cas, *les LEDs seront traitées en détail à [l'étape 6](step-6-
     La PCB de conversion simplifie fortement les choses, **en particulier pour les LEDs** à [l'étape 6](step-6-lighting.md). Elle porte deux connecteurs au même format que le CN3 : **l'un se branche sur l'IO4, l'autre accueille le harnais de la borne.**
 
     !!! lightbox
-        ![La carte IO4 câblée et raccordée par nappes à la PCB de conversion](../resources/images/step-3-io-board/io4-wired-to-conversion-pcb.jpg)
+        ![La carte IO4 câblée et raccordée par nappes à la PCB de conversion](../resources/images/step-4-io-board/io4-wired-to-conversion-pcb.jpg)
 
     #### Installer la PCB
 
@@ -94,11 +94,11 @@ Dans les deux cas, *les LEDs seront traitées en détail à [l'étape 6](step-6-
         * **Harnais déjà modifié à la main**, ou vraie borne DX : jumper sur les **deux broches de droite**.
 
     !!! lightbox
-        ![Rendu de la PCB de conversion maiConvert-IO4, avec les emplacements de jumper encadrés en rouge : J34 (pontage EXV vers 5V) en haut, près des connecteurs J1 et J3, et J35 (mode de compatibilité du harnais, FiNALE à gauche, DX à droite) en bas à gauche](../resources/images/step-3-io-board/conversion-pcb-jumpers-j34-j35.jpg)
+        ![Rendu de la PCB de conversion maiConvert-IO4, avec les emplacements de jumper encadrés en rouge : J34 (pontage EXV vers 5V) en haut, près des connecteurs J1 et J3, et J35 (mode de compatibilité du harnais, FiNALE à gauche, DX à droite) en bas à gauche](../resources/images/step-4-io-board/conversion-pcb-jumpers-j34-j35.jpg)
 
     #### Brancher les boutons Select
 
-    La PCB fournit **deux connecteurs JST-XH 2 broches mâles** pour les boutons 1P SELECT et 2P SELECT : sertissez un **JST-XH 2 broches femelle** côté bouton, branchez, et le tour est joué. [Le support du lecteur Aime de SpiralGlide](spiralglide-resources.md#support-du-lecteur-aime), installé à l'[étape 4](step-4-aime-reader.md), leur réserve un emplacement.
+    La PCB fournit **deux connecteurs JST-XH 2 broches mâles** pour les boutons 1P SELECT et 2P SELECT : sertissez un **JST-XH 2 broches femelle** côté bouton, branchez, et le tour est joué. [Le support du lecteur Aime de SpiralGlide](spiralglide-resources.md#support-du-lecteur-aime), installé à l'[étape 3](step-3-aime-reader.md), leur réserve un emplacement.
 
     *Aucun autre bouton n'est à brancher sur la PCB* : **tous les autres passent par le harnais de la borne.**
 
@@ -119,7 +119,7 @@ Dans les deux cas, *les LEDs seront traitées en détail à [l'étape 6](step-6-
 
     *DX* ajoute **deux boutons pour trier les chansons**, à câbler vous-même :
 
-    1. **Installez les boutons** sur le panneau central. [Le support du lecteur Aime de SpiralGlide](spiralglide-resources.md#support-du-lecteur-aime), installé à l'[étape 4](step-4-aime-reader.md), leur réserve justement un emplacement.
+    1. **Installez les boutons** sur le panneau central. [Le support du lecteur Aime de SpiralGlide](spiralglide-resources.md#support-du-lecteur-aime), installé à l'[étape 3](step-3-aime-reader.md), leur réserve justement un emplacement.
     2. **Reliez une broche de chaque bouton à la masse (GND)** du faisceau du connecteur **CN3** (broches 9 à 16).
     3. **Reliez l'autre broche** à la broche correspondante du connecteur **CN3** :
         * "1P SELECT BUTTON" : broche **27**
@@ -153,7 +153,7 @@ Dans les deux cas, *les LEDs seront traitées en détail à [l'étape 6](step-6-
 Il ne reste qu'à **brancher l'IO4 sur le port USB 1 du ALLS**, comme indiqué à [l'étape 1](step-1-alls-and-psu.md).
 
 !!! lightbox
-    ![Vue arrière d'un ALLS HX2 : des flèches rouges désignent le port USB 1, en bas à droite du bloc de ports USB, et son repère sur l'étiquette du boîtier](../resources/images/step-3-io-board/alls-hx2-rear-connectors-usb-1.jpg)
+    ![Vue arrière d'un ALLS HX2 : des flèches rouges désignent le port USB 1, en bas à droite du bloc de ports USB, et son repère sur l'étiquette du boîtier](../resources/images/step-4-io-board/alls-hx2-rear-connectors-usb-1.jpg)
 
 ## En résumé
 !!! tldr "Les grandes lignes"
@@ -182,4 +182,4 @@ Il ne reste qu'à **brancher l'IO4 sur le port USB 1 du ALLS**, comme indiqué �
 
 ---
 
-Passons à l'[Étape 4 : Le Lecteur de Cartes Aime](step-4-aime-reader.md).
+Passons à l'[Étape 5 : Prises casques et Système Son](step-5-audio-headphones.md).

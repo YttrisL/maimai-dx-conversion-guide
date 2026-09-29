@@ -102,7 +102,7 @@
   <!-- ===================== CN3: IO4, 60-pin JST-RA connector, 2x30 layout, rotated 90 degrees clockwise ===================== -->
   <!-- Only the column of pins 49-54 is shown (the other 54 pins are omitted, see the dashed
        lines top/bottom). After rotation: odd (49/51/53) on the left, even (50/52/54) on the right.
-       Only 51 (L) and 52 (R) are wired (BILLBOARD LED RED) - connector already in place since Step 3. -->
+       Only 51 (L) and 52 (R) are wired (BILLBOARD LED RED) - connector already in place since Step 4. -->
   <text x="234.084" y="375.998" text-anchor="middle" font-size="13" font-weight="bold" fill="#222" style="white-space: pre; font-size: 13px;">IO4 - CN3 (JST-RA 60 pins, 2x30)</text>
   <text x="196.412" y="388.204" text-anchor="middle" font-size="9" fill="#999" font-style="italic" style="white-space: pre; font-size: 9px;">(only the useful portion is shown)</text>
   <!-- real edges (solid) left/right, "cut" edges (dashed) top/bottom -->

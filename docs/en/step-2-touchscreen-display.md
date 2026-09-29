@@ -32,4 +32,4 @@ Unlike other conversion kits, the HanDevice I/O board supplied with the HDX touc
 
 ---
 
-Let's move on to [Step 3: The I/O Board and the Buttons](step-3-io-board.md).
+Let's move on to [Step 3: The Aime Card Reader](step-3-aime-reader.md).

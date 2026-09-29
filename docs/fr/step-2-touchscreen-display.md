@@ -32,4 +32,4 @@ Contrairement à d'autres kits de conversion, la carte I/O HanDevice fournie ave
 
 ---
 
-Passons à l'[Étape 3 : La Carte I/O et les Boutons](step-3-io-board.md).
+Passons à l'[Étape 3 : Le Lecteur de Cartes Aime](step-3-aime-reader.md).

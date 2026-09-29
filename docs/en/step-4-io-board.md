@@ -1,8 +1,8 @@
 ---
-title: "🕹️ 3 - I/O board & buttons"
+title: "🕹️ 4 - I/O board & buttons"
 ---
 
-# 🕹️ Step 3: The I/O Board and the Buttons
+# 🕹️ Step 4: The I/O Board and the Buttons
 
 To run *DX*, **the FiNALE IO3 must be replaced with a newer IO4**. Button-wise, the two models differ very little, but the wiring still needs to be adapted.
 
@@ -19,7 +19,7 @@ To run *DX*, **the FiNALE IO3 must be replaced with a newer IO4**. Button-wise, 
     Another change: **the IO4 talks to the PC over USB**, no longer over JVS as on RingEdge 2. *Some IO4 variants also support JVS, but that doesn't matter here: the connection is always made over USB.*
 
     !!! lightbox
-        ![A Sega IO4 board (837-15257)](../resources/images/step-3-io-board/io4-board.jpg)
+        ![A Sega IO4 board (837-15257)](../resources/images/step-4-io-board/io4-board.jpg)
 
     *(Note: the full wiring detail for the IO4 is on page 194 of the [manual](../resources/pdfs/maimai-dx-instruction-manual-full.pdf), or directly [here](../resources/images/wiring-diagrams/maimai-dx-wiring-diagram-2-of-4.jpg), from **[E-2]** to **[F-6]**.)*
 
@@ -55,7 +55,7 @@ Either way, *the LEDs are covered in detail in [step 6](step-6-lighting.md)*: th
     The conversion PCB makes things much simpler, **especially for the LEDs** in [step 6](step-6-lighting.md). It has two connectors in the same format as CN3: **one plugs into the IO4, the other takes the cabinet harness.**
 
     !!! lightbox
-        ![The IO4 board wired and connected by ribbon cables to the conversion PCB](../resources/images/step-3-io-board/io4-wired-to-conversion-pcb.jpg)
+        ![The IO4 board wired and connected by ribbon cables to the conversion PCB](../resources/images/step-4-io-board/io4-wired-to-conversion-pcb.jpg)
 
     #### Installing the PCB
 
@@ -94,11 +94,11 @@ Either way, *the LEDs are covered in detail in [step 6](step-6-lighting.md)*: th
         * **Harness already modified by hand**, or a real DX cabinet: jumper on the **two right pins**.
 
     !!! lightbox
-        ![Render of the maiConvert-IO4 conversion PCB, with the jumper locations outlined in red: J34 (EXV to 5V jumper) at the top, near connectors J1 and J3, and J35 (harness compatibility mode, FiNALE on the left, DX on the right) at the bottom left](../resources/images/step-3-io-board/conversion-pcb-jumpers-j34-j35.jpg)
+        ![Render of the maiConvert-IO4 conversion PCB, with the jumper locations outlined in red: J34 (EXV to 5V jumper) at the top, near connectors J1 and J3, and J35 (harness compatibility mode, FiNALE on the left, DX on the right) at the bottom left](../resources/images/step-4-io-board/conversion-pcb-jumpers-j34-j35.jpg)
 
     #### Connecting the Select buttons
 
-    The PCB provides **two male 2-pin JST-XH connectors** for the 1P SELECT and 2P SELECT buttons: crimp a **female 2-pin JST-XH** on the button side, plug it in, and you're done. [SpiralGlide's Aime reader mount](spiralglide-resources.md#aime-reader-mount), installed in [step 4](step-4-aime-reader.md), has a spot reserved for them.
+    The PCB provides **two male 2-pin JST-XH connectors** for the 1P SELECT and 2P SELECT buttons: crimp a **female 2-pin JST-XH** on the button side, plug it in, and you're done. [SpiralGlide's Aime reader mount](spiralglide-resources.md#aime-reader-mount), installed in [step 3](step-3-aime-reader.md), has a spot reserved for them.
 
     *No other button needs to be connected to the PCB*: **all the others go through the cabinet harness.**
 
@@ -119,7 +119,7 @@ Either way, *the LEDs are covered in detail in [step 6](step-6-lighting.md)*: th
 
     *DX* adds **two buttons to sort songs**, which you wire yourself:
 
-    1. **Install the buttons** on the central panel. [SpiralGlide's Aime reader mount](spiralglide-resources.md#aime-reader-mount), installed in [step 4](step-4-aime-reader.md), has a spot reserved for them.
+    1. **Install the buttons** on the central panel. [SpiralGlide's Aime reader mount](spiralglide-resources.md#aime-reader-mount), installed in [step 3](step-3-aime-reader.md), has a spot reserved for them.
     2. **Connect one pin of each button to ground (GND)** on the **CN3** connector harness (pins 9 to 16).
     3. **Connect the other pin** to the matching pin of connector **CN3**:
         * "1P SELECT BUTTON": pin **27**
@@ -153,7 +153,7 @@ Either way, *the LEDs are covered in detail in [step 6](step-6-lighting.md)*: th
 All that's left is to **plug the IO4 into the ALLS USB 1 port**, as explained in [step 1](step-1-alls-and-psu.md).
 
 !!! lightbox
-    ![Rear view of an ALLS HX2: red arrows point to the USB 1 port, at the bottom right of the USB port block, and to its marking on the case label](../resources/images/step-3-io-board/alls-hx2-rear-connectors-usb-1.jpg)
+    ![Rear view of an ALLS HX2: red arrows point to the USB 1 port, at the bottom right of the USB port block, and to its marking on the case label](../resources/images/step-4-io-board/alls-hx2-rear-connectors-usb-1.jpg)
 
 ## In summary
 !!! tldr "The big picture"
@@ -182,4 +182,4 @@ All that's left is to **plug the IO4 into the ALLS USB 1 port**, as explained in
 
 ---
 
-Let's move on to [Step 4: The Aime Card Reader](step-4-aime-reader.md).
+Let's move on to [Step 5: Headphone Jacks and Sound System](step-5-audio-headphones.md).

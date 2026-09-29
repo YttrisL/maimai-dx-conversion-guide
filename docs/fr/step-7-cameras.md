@@ -82,4 +82,4 @@ Le menu Test du jeu propose une page dédiée aux caméras. Le jeu y cherche **t
 
 ---
 
-Vous avez terminé toutes les étapes ? Direction la [conclusion](conclusion.md) !
+Passons à la [Conclusion](conclusion.md).

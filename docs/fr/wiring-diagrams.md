@@ -36,7 +36,7 @@ Chapitre *22 総合配線図* (« schéma de câblage général »), pages 193 �
 * `837-15070-04` **IC BD LED DRV32CH RS232** ×2 **[E-2/D-2]**{: .wiring-coord } - pilote de LEDs, un par côté
 * `837-20008` **4PORT USB HUB BD MINIB TO A** **[B-4]**{: .wiring-coord } - hub USB 4 ports
 * `837-15067-02` **IC BD USB TO 4SERIAL 232 IF** **[A-5]**{: .wiring-coord } - adaptateur USB vers 4 ports série
-* `837-15257-01` **I/O CONTROL BD 4 FOR USB** **[E-4]**{: .wiring-coord } - la carte **IO4** (JVS), voir l'[étape 3](step-3-io-board.md)
+* `837-15257-01` **I/O CONTROL BD 4 FOR USB** **[E-4]**{: .wiring-coord } - la carte **IO4** (JVS), voir l'[étape 4](step-4-io-board.md)
 * `MMT-1000` / `MMT-1500` / `MMT-1900` **ASSY CABINET 1P / 2P / SIDE COVER BASE 1P** **[G-3/G-6/G-1]**{: .wiring-coord }
 
 [![Schéma de câblage maimai DX, planche 2 sur 4](../resources/images/wiring-diagrams/maimai-dx-wiring-diagram-2-of-4.jpg)](../resources/images/wiring-diagrams/maimai-dx-wiring-diagram-2-of-4.jpg)
@@ -65,7 +65,7 @@ Chapitre *22 総合配線図* (« schéma de câblage général »), pages 193 �
 * `MMT-1350` / `MMT-1370` **ASSY PLAYER CAMERA / PLAYER CAMERA UNIT** **[D-1]**{: .wiring-coord } - caméras joueurs
     * `601-13249` **CAMERA KBCR-S03MU-HPB2033-C300** **[D-1]**{: .wiring-coord }, voir l'[étape 7](step-7-cameras.md)
 * `MMT-1440` **ASSY AIME AND VFD** **[B-3]**{: .wiring-coord } - module lecteur Aime (AIME RW UNIT) et afficheur 
-    * `200-6275` **VFD GP1232A02A FUTABA** **[A-4]**{: .wiring-coord }, voir l'[étape 4](step-4-aime-reader.md)
+    * `200-6275` **VFD GP1232A02A FUTABA** **[A-4]**{: .wiring-coord }, voir l'[étape 3](step-3-aime-reader.md)
 * `MMT-1470` **ASSY CODE READER** **[B-5]**{: .wiring-coord } - lecteur de QR code
     * `601-13216-01` **USB CAMERA MS-M33NU2AMSH43-S2** **[A-5/A-6]**{: .wiring-coord }
 * `MMT-1400` **ASSY CENTER TOWER** **[B-4]**{: .wiring-coord } - tour centrale
@@ -106,7 +106,7 @@ Chapitre *25 WIRING DIAGRAM*, pages 189 à 193 du [manuel maimai PiNK](../resour
 ### Planche 2/4 - Lecteur Aime, haut-parleurs, LEDs et alimentations
 
 * `MAI-1400` **ASSY COIN CHUTE TOWER** **[B-2]**{: .wiring-coord } - tour centrale
-    * `838-14971` **NFC RW BD TN32MSEC003S** **[D-1/D-2]**{: .wiring-coord } - la carte du lecteur de carte Aime, remplacée à l'[étape 4](step-4-aime-reader.md)
+    * `838-14971` **NFC RW BD TN32MSEC003S** **[D-1/D-2]**{: .wiring-coord } - la carte du lecteur de carte Aime, remplacée à l'[étape 3](step-3-aime-reader.md)
 * `MAI-1420` **ASSY SELECTOR DOOR** **[D-2]**{: .wiring-coord }
     * `220-5798-01` **MAG CNTR 4P MZ674** **[C-2]**{: .wiring-coord } - compteur de pièces
 * `MAI-1460` **SW UNIT** (`838-14548-10` **SW & VOL BD**) **[D-3]**{: .wiring-coord } - boutons test/service et volume
@@ -126,7 +126,7 @@ Chapitre *25 WIRING DIAGRAM*, pages 189 à 193 du [manuel maimai PiNK](../resour
 ### Planche 3/4 - Carte I/O (JVS), adaptateur Serial-USB, contrôleur tactile et PC *RingEdge 2*
 
 * **ASSY LCD** **[G-1]**{: .wiring-coord } - Joueur 2, écran (`200-6226-91` **ASSY LCD DSPL 42 TYPE LED Y**)
-* `837-14505` **I/O CONTROL BD FOR JVS** **[D-1]**{: .wiring-coord } - la carte IO3, remplacée par l'IO4 à l'[étape 3](step-3-io-board.md)
+* `837-14505` **I/O CONTROL BD FOR JVS** **[D-1]**{: .wiring-coord } - la carte IO3, remplacée par l'IO4 à l'[étape 4](step-4-io-board.md)
 * `837-15067-02` **IC BD USB TO 4SERIAL 232 IF** **[F-2]**{: .wiring-coord } - l'adaptateur RS-232 vers USB mentionné à l'[étape 6](step-6-lighting.md)
 * `838-15221` **SERIAL I/F BD TOUCHPANEL GUNZE** **[D-4]**{: .wiring-coord } - carte contrôleur de la dalle tactile
 * **ASSY CASE RGE2 W M2G S64G** **[E-3/E-4]**{: .wiring-coord } - PC *RingEdge 2* 

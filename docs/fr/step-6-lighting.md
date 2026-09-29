@@ -13,7 +13,7 @@ L'éclairage est techniquement *optionnel* : il n'a aucun impact sur la jouabili
 
     Sur une véritable borne *DX*, l'éclairage est piloté par trois contrôleurs :
 
-    * L'**IO4** gère l'**enseigne lumineuse** (désignée `BILLBOARD LED` / `ROOF LED` sur les schémas Sega). Voir l'[Étape 3](step-3-io-board.md).
+    * L'**IO4** gère l'**enseigne lumineuse** (désignée `BILLBOARD LED` / `ROOF LED` sur les schémas Sega). Voir l'[Étape 4](step-4-io-board.md).
     * Deux cartes de contrôle identiques (réf. `837-15070-04`) :
         * Côté P1 : les huit boutons, l'éclairage du fond et l'éclairage du côté gauche.
         * Côté P2 : les huit boutons, l'éclairage du fond et l'éclairage du côté droit.
@@ -139,11 +139,11 @@ Il ne reste plus qu'à brancher l'adaptateur RS-232 vers USB sur le ALLS via le 
 
 Deux méthodes sont possibles :
 
-* **Avec la [PCB de conversion]({{IO4_CONVERSION_PCB}})**, si vous l'avez installée à l'[étape 3](step-3-io-board.md) : il suffit de brancher les LEDs sur les bons ports de la PCB.
+* **Avec la [PCB de conversion]({{IO4_CONVERSION_PCB}})**, si vous l'avez installée à l'[étape 4](step-4-io-board.md) : il suffit de brancher les LEDs sur les bons ports de la PCB.
 * **Sans elle** : fabriquez votre propre nappe de câbles, compatible avec l'IO4, pour y raccorder les LEDs.
 
 ??? example "La méthode facile - La PCB de conversion"
-    Branchez simplement le connecteur de sortie du contrôleur de LEDs sur la PCB de conversion. C'est tout : *le 12V est déjà raccordé depuis l'[étape 3](step-3-io-board.md).*
+    Branchez simplement le connecteur de sortie du contrôleur de LEDs sur la PCB de conversion. C'est tout : *le 12V est déjà raccordé depuis l'[étape 4](step-4-io-board.md).*
 
     !!! tip "Rappel : deux alimentations séparées"
         La PCB est alimentée par **l'alimentation LEDs de la borne**, jamais par le 12V de l'IO4. Les deux circuits partagent une masse commune, mais restent séparés.
@@ -157,7 +157,7 @@ Deux méthodes sont possibles :
     *Si vous comptez installer les caméras à l'étape suivante*, la PCB de conversion vous simplifiera aussi la vie : elle propose déjà des connecteurs prêts à l'emploi pour leurs LEDs.
 
 ??? example "La confection manuelle d'une nappe de câbles"
-    La nappe se branche sur l'IO4 via un connecteur JST-RA 20 broches (CN9), et se termine par deux connecteurs JST-SM 8 broches, pour les côtés gauche et droit. Si vous avez suivi les suggestions de l'[étape 3](step-3-io-board.md), vous avez déjà un connecteur JST-SM 2 broches femelle câblé sur le CN3 de l'IO4 pour les signaux `BILLBOARD LED L RED` et `BILLBOARD LED R RED`.
+    La nappe se branche sur l'IO4 via un connecteur JST-RA 20 broches (CN9), et se termine par deux connecteurs JST-SM 8 broches, pour les côtés gauche et droit. Si vous avez suivi les suggestions de l'[étape 4](step-4-io-board.md), vous avez déjà un connecteur JST-SM 2 broches femelle câblé sur le CN3 de l'IO4 pour les signaux `BILLBOARD LED L RED` et `BILLBOARD LED R RED`.
 
     !!! lightbox
         ![Repérage visuel des broches LED sur l'IO4 : le connecteur CN9 (JST-RA 20 broches) porte BILLBOARD LED L/R GREEN, CAMERA LED WARM/RED et BILLBOARD LED L/R BLUE, tandis que BILLBOARD LED L/R RED se trouve sur le connecteur CN3](../resources/images/step-6-lighting/io4-visual-reprensation-of-led-pins.jpg)
@@ -165,7 +165,7 @@ Deux méthodes sont possibles :
 
     Réalisez la nappe d'après le schéma ci-dessous, avec une longueur suffisante pour une installation propre : **3 mètres côté joueur 1, 2 mètres côté joueur 2**. Pour le 12V, **n'utilisez pas la broche 12V du CN9** : raccordez-vous directement à l'alimentation 12V des LEDs de la borne, pour ne pas charger inutilement la carte I/O.
 
-    ![Nappe de câbles pour l'éclairage de l'enseigne lumineuse : depuis l'IO4 (CN9 broches 5, 6, 9 et 10, et CN3 broches 51-52 déjà câblées à l'étape 3) et l'alimentation 12V interne, fabrication de deux connecteurs JST-SM 8 broches - côté P1 (3 mètres, avec pontage des broches 1-4 vers 5-8 pour alimenter aussi CENTER LED) et côté P2 (2 mètres, broches 5-8 non utilisées) - qui se branchent ensuite sur les connecteurs d'origine AB et BB](../resources/images/step-6-lighting/led-topper-harness.svg)
+    ![Nappe de câbles pour l'éclairage de l'enseigne lumineuse : depuis l'IO4 (CN9 broches 5, 6, 9 et 10, et CN3 broches 51-52 déjà câblées à l'étape 4) et l'alimentation 12V interne, fabrication de deux connecteurs JST-SM 8 broches - côté P1 (3 mètres, avec pontage des broches 1-4 vers 5-8 pour alimenter aussi CENTER LED) et côté P2 (2 mètres, broches 5-8 non utilisées) - qui se branchent ensuite sur les connecteurs d'origine AB et BB](../resources/images/step-6-lighting/led-topper-harness.svg)
 
     Une fois la nappe terminée, branchez-la à l'IO4, raccordez le 12V, puis branchez les deux connecteurs JST-SM 8 broches d'origine sur votre nouveau câble. **Testez la continuité de tous vos câbles avant l'installation**, pour écarter toute broche mal sertie.
 
@@ -193,4 +193,4 @@ Deux méthodes sont possibles :
 
 ---
 
-Dernière étape (optionnelle) : les [Caméras](step-7-cameras.md).
+Passons à l'[Étape 7 : Caméras (Optionnel)](step-7-cameras.md).
