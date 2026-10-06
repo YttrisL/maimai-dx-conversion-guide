@@ -13,7 +13,7 @@ L'ancien PC *RingEdge 2* ne peut pas faire tourner *DX* : il vous faut un PC **A
 
     Un ALLS ressemble beaucoup à un PC gaming moderne, avec deux particularités :
 
-    - **Un port USB renfoncé** sur le dessus de la carte mère, réservé au **keychip**. Cette clé USB identifie le propriétaire de la borne sur le réseau officiel Sega et déchiffre les données de jeu.
+    - **Un port USB renfoncé** sur le dessus de la carte mère, dédié au **keychip**. Cette clé USB identifie le propriétaire de la borne sur le réseau officiel Sega et déchiffre les données de jeu.
     - **Deux cartes d'extension** (sur les modèles de deuxième génération), qui ajoutent trois ports série RS-232 et une prise jack 2,5mm. Avec le port COM de la carte mère, ces ports série servent à connecter le lecteur Aime, le VFD et les dalles tactiles des deux écrans. La prise jack est dédiée à l'une des deux prises casque.
 
     !!! tip "L'alimentation électrique du ALLS"
@@ -88,7 +88,7 @@ La plupart des appareils à connecter sont présentés plus en détail dans les 
 
 ### Keychip
 
-- **Port USB** : Réservé au keychip. Ne peut **pas** servir de port USB classique.
+- **Port USB** : Dédié au keychip, mais il s'agit d'un port USB classique.
 
 ### Carte mère
 

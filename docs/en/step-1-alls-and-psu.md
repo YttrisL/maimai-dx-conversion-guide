@@ -13,7 +13,7 @@ The old *RingEdge 2* PC cannot run *DX*: you need an **ALLS HX2** PC. Beyond the
 
     An ALLS is very similar to a modern gaming PC, with two particularities:
 
-    - **A recessed USB port** on top of the motherboard, reserved for the **keychip**. This USB key identifies the cabinet's owner on the official Sega network and decrypts the game data.
+    - **A recessed USB port** on top of the motherboard, dedicated to the **keychip**. This USB key identifies the cabinet's owner on the official Sega network and decrypts the game data.
     - **Two expansion cards** (on second-generation models), which add three RS-232 serial ports and a 2.5mm audio jack. Together with the motherboard's COM port, these serial ports connect the Aime reader, the VFD and the touch panels of both screens. The jack is dedicated to one of the two headphone outputs.
 
     !!! tip "The ALLS power supply"
@@ -88,7 +88,7 @@ Most of the devices to connect are covered in more detail in the following steps
 
 ### Keychip
 
-- **USB port**: Reserved for the keychip. It can **not** be used as a regular USB port.
+- **USB port**: Dedicated to the keychip, but it is a regular USB port.
 
 ### Motherboard
 
