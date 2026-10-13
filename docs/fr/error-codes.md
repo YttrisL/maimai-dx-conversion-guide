@@ -122,8 +122,8 @@ Le manuel indique aussi l'endroit où se situe la panne ("発生場所").
 
 | Code | Message affiché | Lieu | Cause | Remède indiqué |
 |---|---|---|---|---|
-| 0951 | USB devices are insufficient | Carte USB série | Communication impossible avec la carte USB série. | Redémarrer. Si cela ne suffit pas, vérifier la connexion de la carte USB série (837-15067-02) et du hub USB (837-20008) (chapitre 22 du manuel d'instruction, schéma de câblage général). |
-| 3100 | Connection of the code reader or the player camera cannot be confirmed | Lecteur de code ou caméra joueur | Connexion du lecteur de code ou de la caméra joueur introuvable. | Dans le mode test, utiliser le test des caméras pour repérer la caméra non reconnue, vérifier sa connexion ainsi que celle du hub USB (837-20008) (3-6, p. 44). |
+| 0951 | USB devices are insufficient | `Adaptateur 4x RS-232 vers USB` | Communication impossible avec `l'adaptateur 4x RS-232 vers USB`. | Redémarrer. Si cela ne suffit pas, vérifier la connexion de `l'adaptateur 4x RS-232 vers USB` (`837-15067-02`) et du hub USB (`837-20008`) (chapitre 22 du manuel d'instruction, schéma de câblage général). |
+| 3100 | Connection of the code reader or the player camera cannot be confirmed | Lecteur de code ou caméra joueur | Connexion du lecteur de code ou de la caméra joueur introuvable. | Dans le mode test, utiliser le test des caméras pour repérer la caméra non reconnue, vérifier sa connexion ainsi que celle du hub USB (`837-20008`) (3-6, p. 44). |
 | 3101 | Code reader recognition failed | Lecteur de code | Le code d'identification de la caméra du lecteur de code est illisible. | Nettoyer le code d'identification de la caméra (14-2 du manuel d'instruction). |
 | 3102 | Player camera not recognized | Caméra joueur | La caméra joueur n'est pas reconnue. | Redémarrer. Sinon, vérifier que la caméra est bien branchée (chapitre 22). |
 | 3201 | Reference machine duplicated in the same cabinet group | *ALLS HX2* | Deux machines "de référence" dans le même groupe de bornes. | Vérifier les réglages du jeu et redémarrer le *ALLS HX2* (3-7, p. 46). |

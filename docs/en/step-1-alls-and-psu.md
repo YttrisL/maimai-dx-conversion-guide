@@ -37,7 +37,7 @@ Most of the surrounding components can be removed as well. To the right of the *
 
 - **The IO3**, at the very top, recognizable by the large ribbon cable connected to it.
     * **Remove it**, along with its USB cable: it is replaced by the IO4 on *DX*.
-- **The RS-232 to USB adapter**, bottom left, connected to the *RingEdge 2* over USB. Two two-wire connectors are normally plugged into its bottom row.
+- **The `4x RS-232 to USB adapter`**, bottom left, connected to the *RingEdge 2* over USB. Two two-wire connectors are normally plugged into its bottom row.
     * **Keep it**: this board links the LED controllers to the PC. Take the opportunity to remove it and dust it off, you will reinstall it later.
 - **The *FiNALE* touch panel controller**, bottom right, connected to the *RingEdge 2* by a three-wire cable ending in a DB9.
     * **Remove it**, along with its cable and the two white cables connected underneath: the *DX* touch panels are radically different and no longer use this component.
@@ -67,8 +67,8 @@ The *ALLS* is wider than the *RingEdge 2*, but the space you just cleared lets y
 Once the *ALLS* is in place, you can already:
 
 - **Mount the IO4**, ideally where the old IO3 was, to take advantage of the nearby original power cables. If you opted for the [conversion PCB]({{IO4_CONVERSION_PCB}}), plan room for it as well.
-- **Reinstall the RS-232 to USB adapter.**
-- **Plug the USB hub into the *ALLS*'s USB 2 port**, then the RS-232 to USB adapter into that hub.
+- **Reinstall the `4x RS-232 to USB adapter`.**
+- **Plug the USB hub into the *ALLS*'s USB 2 port**, then the `4x RS-232 to USB adapter` into that hub.
 - **Install your new 5V/12V switching power supply** (see [Power supply](#power-supply)). Ideally, place it on the player 1 side with the other switching power supplies, even if that requires longer cables.
 
 The remaining cables will be reconnected over the following steps.
@@ -92,7 +92,7 @@ Most of the devices to connect are covered in more detail in the following steps
 
 ### Motherboard
 
-- **COM1 - DB9 port**: Aime reader
+- **`COM1` - DB9 port**: Aime reader
 - **LAN1 - RJ45 port**: Network port, to be connected to the service router (the one provided by the network the cabinet will join, not to be confused with *FiNALE*'s internal router). The second network port is unused.
 - **3.5mm audio jacks**:
     - **C/W**: Player 1 [headphones](step-5-audio-headphones.md#the-headphone-jacks)
@@ -100,7 +100,7 @@ Most of the devices to connect are covered in more detail in the following steps
     - **REAR**: Player 2 [speakers](step-5-audio-headphones.md#connecting-the-speakers)
 - **USB**:
     - **USB 1**: SEGA IO4
-    - **USB 2**: USB hub, to which the two QR code cameras and the `4x RS-232 to USB` adapter are connected.
+    - **USB 2**: USB hub, to which the two QR code cameras and the `4x RS-232 to USB adapter` are connected.
     - **USB 3**: Player camera
     - **USB 4**: Installation port, for a USB stick containing the game data to install.
 
@@ -112,9 +112,9 @@ Most of the devices to connect are covered in more detail in the following steps
 
 ### Expansion cards
 
-- **COM2 - DB9 port**: VFD
-- **COM3 - DB9 port**: Player 1 touch panel
-- **COM4 - DB9 port**: Player 2 touch panel
+- **`COM2` - DB9 port**: VFD
+- **`COM3` - DB9 port**: Player 1 touch panel
+- **`COM4` - DB9 port**: Player 2 touch panel
 - **SIDE**: Player 2 [headphones](step-5-audio-headphones.md#the-headphone-jacks)
 
 ## Power supply

@@ -22,8 +22,8 @@ title: "💳 3 - Aime card reader"
 
 Connecting to the *ALLS* is extremely simple:
 
-* Aime reader: **COM1**
-* VFD: **COM2**
+* Aime reader: `COM1`
+* VFD: `COM2`
 
 Both COM ports are physical DB9 ports on the *ALLS*. However, your Aime + VFD combo probably did not come with a ready-to-use DB9 cable: **you will have to crimp your own cables**, from the Aime reader and VFD connectors to the DB9.
 
@@ -95,14 +95,14 @@ Plug both cables into their connectors, then **fasten them to the back of the co
 
 ## Installing it on the cabinet
 
-Use [the 3D model designed by SpiralGlide](spiralglide-resources.md#aime-reader-mount), which attaches to the cabinet using the existing screws of the acrylic panel. Designed for the Star Horse 4 Aime reader, it fits **without any destructive modification**, using the holes already there for the Aime readers. It also includes a spot for the 1P SELECT and 2P SELECT buttons, which you will install in [the next step](step-4-io-board.md).
+Use [the 3D model designed by SpiralGlide](spiralglide-resources.md#aime-reader-mount), which attaches to the cabinet using the existing screws of the acrylic panel. Designed for the Star Horse 4 Aime reader, it fits **without any destructive modification**, using the holes already there for the Aime readers. It also includes a spot for the `1P SELECT` and `2P SELECT` buttons, which you will install in [the next step](step-4-io-board.md).
 
 !!! lightbox
     ![The Aime reader mount printed and fitted into the front of the center tower, with the Aime reader in place. Photo by SpiralGlide](../resources/images/spiralglide-resources/maimai-aime-reader-installed.jpg)
 
 ## Final step
 
-Once the combo is installed on the front of the cabinet, all that's left is to plug the two cables into the *ALLS* DB9 ports. As a reminder: **Aime on COM1**, **VFD on COM2**.
+Once the combo is installed on the front of the cabinet, all that's left is to plug the two cables into the *ALLS* DB9 ports. As a reminder: **Aime on `COM1`**, **VFD on `COM2`**.
 
 Then don't forget to **connect the 5V and GND** of both connectors to the power supply installed in [step 1](step-1-alls-and-psu.md).
 

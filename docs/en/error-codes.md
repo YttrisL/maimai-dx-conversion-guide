@@ -122,8 +122,8 @@ The manual also gives the place where the fault is located ("発生場所").
 
 | Code | Message displayed | Location | Cause | Remedy given |
 |---|---|---|---|---|
-| 0951 | USB devices are insufficient | USB serial board | Communication with the USB serial board is impossible. | Restart. If that is not enough, check the connection of the USB serial board (837-15067-02) and of the USB hub (837-20008) (chapter 22 of the instruction manual, general wiring diagram). |
-| 3100 | Connection of the code reader or the player camera cannot be confirmed | Code reader or player camera | The connection of the code reader or the player camera cannot be found. | In test mode, use the camera test to find the camera that is not recognized, then check its connection and that of the USB hub (837-20008) (3-6, p. 44). |
+| 0951 | USB devices are insufficient | `4x RS-232 to USB adapter` | Communication with the `4x RS-232 to USB adapter` is impossible. | Restart. If that is not enough, check the connection of the `4x RS-232 to USB adapter` (`837-15067-02`) and of the USB hub (`837-20008`) (chapter 22 of the instruction manual, general wiring diagram). |
+| 3100 | Connection of the code reader or the player camera cannot be confirmed | Code reader or player camera | The connection of the code reader or the player camera cannot be found. | In test mode, use the camera test to find the camera that is not recognized, then check its connection and that of the USB hub (`837-20008`) (3-6, p. 44). |
 | 3101 | Code reader recognition failed | Code reader | The camera identification code of the code reader is unreadable. | Clean the camera identification code (14-2 of the instruction manual). |
 | 3102 | Player camera not recognized | Player camera | The player camera is not recognized. | Restart. Otherwise, check that the camera is properly connected (chapter 22). |
 | 3201 | Reference machine duplicated in the same cabinet group | *ALLS HX2* | Two "reference" machines in the same cabinet group. | Check the game settings and restart the *ALLS HX2* (3-7, p. 46). |

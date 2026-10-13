@@ -25,7 +25,7 @@ title: "📷 7 - Caméras (Optionnel)"
 
     Dans les deux cas, le jeu prévoit **un éclairage dédié pour chaque caméra**, piloté par l'IO4. Il n'est pas indispensable de le raccorder, mais sans éclairage adapté, les lecteurs de QR-Code risquent de très mal fonctionner. Pour la caméra des joueurs, l'éclairage devient nécessaire si votre borne est dans une salle sombre. Le jeu pilote aussi une LED rouge, qui prévient les joueurs que la caméra filme.
 
-    Les caméras se branchent en USB sur le *ALLS* : la caméra des joueurs directement sur la carte mère, les deux caméras des lecteurs de QR-Code sur le hub USB qui accueille déjà l'adaptateur RS-232 vers USB des contrôleurs de LEDs (voir [l'étape 6](step-6-lighting.md)).
+    Les caméras se branchent en USB sur le *ALLS* : la caméra des joueurs directement sur la carte mère, les deux caméras des lecteurs de QR-Code sur le hub USB qui accueille déjà `l'adaptateur 4x RS-232 vers USB` des contrôleurs de LEDs (voir [l'étape 6](step-6-lighting.md)).
 
 ## Caméra des joueurs (Photos in-game)
 
@@ -34,14 +34,14 @@ Chaque modèle de caméra est différent, il est donc difficile de proposer un s
 * **Installation sur la borne :** Impression 3D.
 * **Branchement au *ALLS* :** En USB, sur le port **n°3**.
 * **Branchement à l'IO4 :**
-    - **CAMERA LED WARM : CN9 - Broche 7** : cathode de l'anneau de LEDs blanches qui éclaire la zone filmée.
-    - **CAMERA LED RED : CN9 - Broche 8** : cathode de la LED rouge qui indique aux joueurs que la caméra filme.
+    - **`CAMERA LED WARM` : `CN9` - Broche 7** : cathode de l'anneau de LEDs blanches qui éclaire la zone filmée.
+    - **`CAMERA LED RED` : `CN9` - Broche 8** : cathode de la LED rouge qui indique aux joueurs que la caméra filme.
 
 Si vous avez fabriqué votre propre nappe de câbles et suivi la suggestion de [l'étape 6](step-6-lighting.md), vous avez déjà un connecteur prêt pour l'IO4. Avec la [PCB de conversion]({{IO4_CONVERSION_PCB}}), deux connecteurs dédiés sont disponibles pour ces LEDs.
 
 !!! lightbox
     ![Schéma du ALLS : port USB n°3 utilisé pour la caméra des joueurs, mis en évidence par la flèche rouge](../resources/images/step-7-cameras/alls-hx2-rear-connectors-emphasis-on-usb-no3.jpg)
-    ![PCB de conversion [maiConvert-IO4]({{IO4_CONVERSION_PCB}}) : repérage des connecteurs J29 (`CAMERA LED RED`) et J30 (`CAMERA LED WARM`)](../resources/images/step-7-cameras/camera-led-on-convertion-pcb.jpg)
+    ![PCB de conversion [maiConvert-IO4]({{IO4_CONVERSION_PCB}}) : repérage des connecteurs `J29` (`CAMERA LED RED`) et `J30` (`CAMERA LED WARM`)](../resources/images/step-7-cameras/camera-led-on-convertion-pcb.jpg)
 
 ## Caméras des lecteurs de QR-Code
 
@@ -50,8 +50,8 @@ L'idéal est de vous procurer **deux petits modules de 30mm x 25mm** : ils s'ada
 * **Installation sur la borne :** [Impression 3D](spiralglide-resources.md#support-du-lecteur-de-qr-code-dx-pass-reader).
 * **Branchement au *ALLS* :** En USB, via le hub USB branché sur le port **n°2** à [l'étape 1](step-1-alls-and-psu.md). N'importe quel port du hub convient.
 * **Branchement à l'IO4 :**
-    - **1P CODE READER LED : CN3 - Broche 55** : cathodes réunies (R, G et B) de la bande de LEDs qui éclaire le lecteur du joueur 1.
-    - **2P CODE READER LED : CN3 - Broche 56** : cathodes réunies (R, G et B) de la bande de LEDs qui éclaire le lecteur du joueur 2.
+    - **`1P CODE READER LED` : `CN3` - Broche 55** : cathodes réunies (R, G et B) de la bande de LEDs qui éclaire le lecteur du joueur 1.
+    - **`2P CODE READER LED` : `CN3` - Broche 56** : cathodes réunies (R, G et B) de la bande de LEDs qui éclaire le lecteur du joueur 2.
 
 Si vous avez suivi la suggestion de [l'étape 6](step-6-lighting.md), vous avez déjà un connecteur prêt pour ces deux signaux. Ils sont aussi disponibles sur la [PCB de conversion]({{IO4_CONVERSION_PCB}}).
 
@@ -71,7 +71,7 @@ Si vous avez choisi les caméras de la [liste de courses](equipment.md), leur le
 
 !!! lightbox
     ![Schéma du ALLS : port USB n°2 utilisé pour le hub des caméras des lecteurs de QR-Code, mis en évidence par la flèche rouge](../resources/images/step-7-cameras/alls-hx2-rear-connectors-emphasis-on-usb-no2.jpg)
-    ![PCB de conversion [maiConvert-IO4]({{IO4_CONVERSION_PCB}}) : repérage des connecteurs J25 (`1P CODE READER LED`) et J26 (`2P CODE READER LED`)](../resources/images/step-7-cameras/code-reader-led-on-convertion-pcb.jpg)
+    ![PCB de conversion [maiConvert-IO4]({{IO4_CONVERSION_PCB}}) : repérage des connecteurs `J25` (`1P CODE READER LED`) et `J26` (`2P CODE READER LED`)](../resources/images/step-7-cameras/code-reader-led-on-convertion-pcb.jpg)
     ![Écrous utilisés comme entretoises sur les vis du modèle 3D imprimé, afin d'ajuster la hauteur et l'angle des modules de caméra au-dessus des QR-Codes](../resources/images/step-7-cameras/screw-nuts-used-as-spacers-to-orient-cameras.jpg)
 
 ## Validation de l'installation

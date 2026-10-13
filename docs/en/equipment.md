@@ -119,7 +119,7 @@ For each part, **the most suitable option is highlighted**, whether for its ease
 ### **1x**{: .quantity-emphasis } 4-port USB hub
 
 * Where: Amazon, AliExpress, your favorite shop
-* Info: on a real *maimai DX*, one of the 4 USB ports on the *ALLS* motherboard is reserved for a 4-port USB hub. This hub hosts the two QR-code reader cameras and the RS-232/USB adapter for the player 1 and 2 LED controllers. **Any USB hub will do.**
+* Info: on a real *maimai DX*, one of the 4 USB ports on the *ALLS* motherboard is reserved for a 4-port USB hub. This hub hosts the two QR-code reader cameras and the `4x RS-232 to USB adapter` for the player 1 and 2 LED controllers. **Any USB hub will do.**
 
 </div>
 
@@ -175,9 +175,9 @@ These small, cheap purchases, needed over the course of the steps, can be found 
 * **1x**{: .quantity-emphasis } **IEC C-13 cable (2 m)**
     - Plugged into the *ALLS*, then cut at the plug end to be wired directly to the cabinet's mains supply.
 * **1x**{: .quantity-emphasis } **IDC ribbon cable, 2x30 pins (female-female)**
-    - To connect the IO4's CN3 to the [conversion PCB]({{IO4_CONVERSION_PCB}}) (2.54 mm pitch).
+    - To connect the IO4's `CN3` to the [conversion PCB]({{IO4_CONVERSION_PCB}}) (2.54 mm pitch).
 * **1x**{: .quantity-emphasis } **IDC ribbon cable, 2x10 pins (female-female)**
-    - To connect the IO4's CN9 to the [conversion PCB]({{IO4_CONVERSION_PCB}}) (2.54 mm pitch).
+    - To connect the IO4's `CN9` to the [conversion PCB]({{IO4_CONVERSION_PCB}}) (2.54 mm pitch).
 * **2x**{: .quantity-emphasis } charging **micro-USB cable**
     - To power the two LED controller proxies: the end opposite the Pico is cut off, red wire to 5V and black wire to GND on the power supply installed in [step 1](step-1-alls-and-psu.md).
 * **2x**{: .quantity-emphasis } **3.5 mm male-to-male jack cable**
@@ -245,7 +245,7 @@ These small, cheap purchases, needed over the course of the steps, can be found 
 * **1x**{: .quantity-emphasis } **JST-SM 2-pin connector, male + female pair**
     - To merge the Aime reader and VFD power into a single connector (see [step 3](step-3-aime-reader.md)). Failing that, plain JST-XH will also do.
 * **2x**{: .quantity-emphasis } **JST-SH 4-pin female connector**
-    - To connect the CN10 of each HDX touchscreen's I/O board (1.0 mm pitch).
+    - To connect the `CN10` of each HDX touchscreen's I/O board (1.0 mm pitch).
 * **10x**{: .quantity-emphasis } **JST-SH female crimp pin**
     - To go with the previous connector.
 

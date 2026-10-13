@@ -22,8 +22,8 @@ title: "💳 3 - Lecteur Aime et VFD"
 
 Le branchement au *ALLS* est extrêmement simple :
 
-* Lecteur Aime : **COM1**
-* VFD : **COM2**
+* Lecteur Aime : `COM1`
+* VFD : `COM2`
 
 Ces deux ports COM sont des ports DB9 physiques du *ALLS*. En revanche, votre combo Aime + VFD n'est probablement pas livré avec un câble DB9 prêt à brancher : **vous allez devoir sertir vos propres câbles**, du connecteur du lecteur Aime et du VFD jusqu'au DB9.
 
@@ -95,14 +95,14 @@ Branchez les deux câbles sur les connecteurs correspondants, puis **fixez-les �
 
 ## Installation sur la borne
 
-Utilisez [le modèle 3D conçu par SpiralGlide](spiralglide-resources.md#support-du-lecteur-aime), qui se fixe sur la borne grâce aux vis existantes de la vitre en acrylique. Conçu pour le lecteur Aime de Star Horse 4, il s'intègre **sans modification destructive**, en profitant des trous déjà prévus pour les lecteurs Aime. Il comprend aussi un emplacement pour les boutons 1P SELECT et 2P SELECT, que vous installerez à [l'étape suivante](step-4-io-board.md).
+Utilisez [le modèle 3D conçu par SpiralGlide](spiralglide-resources.md#support-du-lecteur-aime), qui se fixe sur la borne grâce aux vis existantes de la vitre en acrylique. Conçu pour le lecteur Aime de Star Horse 4, il s'intègre **sans modification destructive**, en profitant des trous déjà prévus pour les lecteurs Aime. Il comprend aussi un emplacement pour les boutons `1P SELECT` et `2P SELECT`, que vous installerez à [l'étape suivante](step-4-io-board.md).
 
 !!! lightbox
     ![Le support du lecteur Aime imprimé et monté dans la façade de la tour centrale, lecteur Aime en place. Photo par SpiralGlide](../resources/images/spiralglide-resources/maimai-aime-reader-installed.jpg)
 
 ## Dernière étape
 
-Une fois le combo installé en façade, il ne reste qu'à brancher les deux câbles aux ports DB9 du *ALLS*. Pour rappel : **Aime sur COM1**, **VFD sur COM2**.
+Une fois le combo installé en façade, il ne reste qu'à brancher les deux câbles aux ports DB9 du *ALLS*. Pour rappel : **Aime sur `COM1`**, **VFD sur `COM2`**.
 
 N'oubliez pas ensuite de **raccorder le 5V et le GND** des deux connecteurs à l'alimentation installée à [l'étape 1](step-1-alls-and-psu.md).
 

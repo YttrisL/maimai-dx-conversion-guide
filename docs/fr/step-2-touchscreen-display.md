@@ -74,7 +74,7 @@ Il reste ensuite à brancher la dalle au *ALLS*, selon le modèle que vous avez 
     Contrairement à d'autres kits de conversion, la carte I/O HanDevice fournie avec les dalles HDX expose directement un port série UART. Toutefois, **il n'est pas activé par défaut** : ce port est à l'origine dédié au lecteur Aime interne du HDX.
 
     1. **Activez la fonction** depuis le **site de configuration** de HanDevice (voir [la documentation officielle de HanDevice]({{HANDEVICE_OFFICIAL_DOCUMENTATION}})).
-    2. **Repérez le connecteur CN10** sur la carte I/O. Il comporte quatre broches et enverra désormais les signaux tactiles en UART.
+    2. **Repérez le connecteur `CN10`** sur la carte I/O. Il comporte quatre broches et enverra désormais les signaux tactiles en UART.
 
     Une fois la fonction activée, le **lecteur Aime émulé du HDX cesse de fonctionner**. Ce n'est pas un problème : nous installons un véritable lecteur Aime séparément dans ce guide (voir [l'étape 3](step-3-aime-reader.md)).
 
@@ -87,7 +87,7 @@ Il reste ensuite à brancher la dalle au *ALLS*, selon le modèle que vous avez 
 
     ##### 1. Confectionner le câble vers le convertisseur
 
-    Fabriquez un petit câble de **4 fils** qui relie le **CN10** de la carte I/O au **côté TTL** du convertisseur. Il n'a pas besoin d'être long : le convertisseur restera à côté de la carte I/O.
+    Fabriquez un petit câble de **4 fils** qui relie le `CN10` de la carte I/O au **côté TTL** du convertisseur. Il n'a pas besoin d'être long : le convertisseur restera à côté de la carte I/O.
 
     * **Côté carte I/O :** sertissez les fils avec des broches **JST-SH femelle** et insérez-les dans un connecteur **JST-SH 4 broches**, dans l'ordre du brochage :
 
@@ -98,17 +98,17 @@ Il reste ensuite à brancher la dalle au *ALLS*, selon le modèle que vous avez 
 
         ![Schéma de raccordement : le CN10 de la carte I/O HDX relié au côté TTL du convertisseur MAX3232, avec TX et RX croisés (GND vers GND, VCC vers VCC)](../resources/images/step-2-touchscreen-display/hdx-converter-wiring.svg){ width="90%" }
 
-    Le convertisseur est alimenté par le **VCC** du CN10 : il n'a pas besoin d'alimentation externe.
+    Le convertisseur est alimenté par le **VCC** du `CN10` : il n'a pas besoin d'alimentation externe.
 
     ##### 2. Branchement
 
-    Branchez le JST-SH sur le **CN10** de la carte I/O, puis reliez la fiche DB9 femelle du convertisseur au *ALLS* avec un **câble DB9 mâle-femelle** (les rallonges de 3 m de la liste de courses). Respectez le port de chaque joueur, comme expliqué au point suivant.
+    Branchez le JST-SH sur le `CN10` de la carte I/O, puis reliez la fiche DB9 femelle du convertisseur au *ALLS* avec un **câble DB9 mâle-femelle** (les rallonges de 3 m de la liste de courses). Respectez le port de chaque joueur, comme expliqué au point suivant.
 
     !!! warning "Alimentation de la carte I/O HanDevice"
         Le **port USB de la carte I/O ne sert qu'à l'alimenter** : il ne transmet aucune donnée ici, mais il doit quand même être branché à une **alimentation 5V**.
 
         * **Il est inutile de le brancher au *ALLS*.**
-        * Tous les signaux tactiles passent par le **CN10** et le convertisseur : le seul lien avec le *ALLS* est la fiche **DB9** du convertisseur.
+        * Tous les signaux tactiles passent par le `CN10` et le convertisseur : le seul lien avec le *ALLS* est la fiche **DB9** du convertisseur.
 
     !!! tip "Rien ne se passe en jeu ?"
         Si la dalle ne répond pas une fois tout branché, inversez les fils TX et RX côté convertisseur : c'est l'erreur de croisement la plus fréquente.
@@ -242,8 +242,8 @@ Il reste ensuite à brancher la dalle au *ALLS*, selon le modèle que vous avez 
 
 Chaque côté a son propre port COM, **ne les inversez pas** : sinon le jeu confondra les deux joueurs. *([Manuel](../resources/pdfs/maimai-dx-instruction-manual-full.pdf), page 128)*
 
-* **Joueur 1 :** port **COM3**.
-* **Joueur 2 :** port **COM4**.
+* **Joueur 1 :** port `COM3`.
+* **Joueur 2 :** port `COM4`.
 
 !!! lightbox
     ![Vue arrière d'un ALLS HX2 : des flèches rouges désignent les ports DB9 des dalles tactiles sur la carte d'extension, P1 en bas à droite et P2 en haut à gauche](../resources/images/step-2-touchscreen-display/alls-hx2-rear-connectors-com3-com4.jpg)

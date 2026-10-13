@@ -35,7 +35,7 @@ Chapter *22 総合配線図* ("general wiring diagram"), pages 193 to 196 of the
 * `MMT-1200` / `MMT-1700` **ASSY SW BASE 1P / 2P** **[A-1]**{: .wiring-coord } - button bases
 * `837-15070-04` **IC BD LED DRV32CH RS232** ×2 **[E-2/D-2]**{: .wiring-coord } - LED driver, one per side
 * `837-20008` **4PORT USB HUB BD MINIB TO A** **[B-4]**{: .wiring-coord } - 4-port USB hub
-* `837-15067-02` **IC BD USB TO 4SERIAL 232 IF** **[A-5]**{: .wiring-coord } - USB to 4-port serial adapter
+* `837-15067-02` **IC BD USB TO 4SERIAL 232 IF** **[A-5]**{: .wiring-coord } - `4x RS-232 to USB adapter`
 * `837-15257-01` **I/O CONTROL BD 4 FOR USB** **[E-4]**{: .wiring-coord } - the **IO4** board (JVS), see [step 4](step-4-io-board.md)
 * `MMT-1000` / `MMT-1500` / `MMT-1900` **ASSY CABINET 1P / 2P / SIDE COVER BASE 1P** **[G-3/G-6/G-1]**{: .wiring-coord }
 
@@ -123,11 +123,11 @@ Chapter *25 WIRING DIAGRAM*, pages 189 to 193 of the [maimai PiNK manual](../res
 
 ---
 
-### Plate 3/4 - I/O board (JVS), Serial-USB adapter, touch controller and *RingEdge 2* PC
+### Plate 3/4 - I/O board (JVS), `4x RS-232 to USB adapter`, touch controller and *RingEdge 2* PC
 
 * **ASSY LCD** **[G-1]**{: .wiring-coord } - Player 2, screen (`200-6226-91` **ASSY LCD DSPL 42 TYPE LED Y**)
 * `837-14505` **I/O CONTROL BD FOR JVS** **[D-1]**{: .wiring-coord } - the IO3 board, replaced by the IO4 in [step 4](step-4-io-board.md)
-* `837-15067-02` **IC BD USB TO 4SERIAL 232 IF** **[F-2]**{: .wiring-coord } - the RS-232 to USB adapter mentioned in [step 6](step-6-lighting.md)
+* `837-15067-02` **IC BD USB TO 4SERIAL 232 IF** **[F-2]**{: .wiring-coord } - the `4x RS-232 to USB adapter` mentioned in [step 6](step-6-lighting.md)
 * `838-15221` **SERIAL I/F BD TOUCHPANEL GUNZE** **[D-4]**{: .wiring-coord } - touchscreen controller board
 * **ASSY CASE RGE2 W M2G S64G** **[E-3/E-4]**{: .wiring-coord } - *RingEdge 2* PC
     * `846-5003D` **[E-3]**{: .wiring-coord } (Japan version)

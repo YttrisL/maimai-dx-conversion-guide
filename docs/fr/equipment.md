@@ -119,7 +119,7 @@ Pour chaque pièce, **l'option la plus adaptée est mise en avant**, que ce soit
 ### **1x**{: .quantity-emphasis } Hub USB 4 ports
 
 * Où : Amazon, AliExpress, votre boutique favorite
-* Info : Sur une véritable *maimai DX*, l'un des 4 ports USB de la carte mère du *ALLS* est réservé à un hub USB 4 ports. Ce hub accueille les deux caméras des lecteurs de QR-Code et l'adaptateur RS-232/USB des contrôleurs de LEDs des joueurs 1 et 2. **N'importe quel hub USB fera l'affaire.**
+* Info : Sur une véritable *maimai DX*, l'un des 4 ports USB de la carte mère du *ALLS* est réservé à un hub USB 4 ports. Ce hub accueille les deux caméras des lecteurs de QR-Code et `l'adaptateur 4x RS-232 vers USB` des contrôleurs de LEDs des joueurs 1 et 2. **N'importe quel hub USB fera l'affaire.**
 
 </div>
 
@@ -175,9 +175,9 @@ Ces petits achats bon marché, nécessaires au fil des étapes, se trouvent dans
 * **1x**{: .quantity-emphasis } **Câble IEC C-13 (2 m)** 
     - Branché au *ALLS*, puis coupé côté prise pour être raccordé directement à l'alimentation électrique de la borne.
 * **1x**{: .quantity-emphasis } **Nappe IDC 2x30 broches (femelle-femelle)**
-    - Pour relier le CN3 de l'IO4 à la [PCB de conversion]({{IO4_CONVERSION_PCB}}) (pas de 2,54 mm).
+    - Pour relier le `CN3` de l'IO4 à la [PCB de conversion]({{IO4_CONVERSION_PCB}}) (pas de 2,54 mm).
 * **1x**{: .quantity-emphasis } **Nappe IDC 2x10 broches (femelle-femelle)**
-    - Pour relier le CN9 de l'IO4 à la [PCB de conversion]({{IO4_CONVERSION_PCB}}) (pas de 2,54 mm).
+    - Pour relier le `CN9` de l'IO4 à la [PCB de conversion]({{IO4_CONVERSION_PCB}}) (pas de 2,54 mm).
 * **2x**{: .quantity-emphasis } **Câble micro-USB** de charge
     - Pour alimenter les deux proxys des contrôleurs de LEDs : l'extrémité opposée au Pico est coupée, fil rouge sur le 5V et fil noir sur le GND de l'alimentation installée à [l'étape 1](step-1-alls-and-psu.md).
 * **2x**{: .quantity-emphasis } **Câble jack 3.5 mm mâle-mâle**
@@ -245,7 +245,7 @@ Ces petits achats bon marché, nécessaires au fil des étapes, se trouvent dans
 * **1x**{: .quantity-emphasis } **Connecteur JST-SM 2 broches, paire mâle + femelle**
     - Pour regrouper l'alimentation du lecteur Aime et du VFD sur un seul connecteur (voir [l'étape 3](step-3-aime-reader.md)). À défaut, de simples JST-XH conviennent aussi.
 * **2x**{: .quantity-emphasis } **Connecteur JST-SH 4 broches femelle** 
-    - Pour raccorder le CN10 de la carte I/O de chaque dalle tactile HDX (pas de 1,0 mm).
+    - Pour raccorder le `CN10` de la carte I/O de chaque dalle tactile HDX (pas de 1,0 mm).
 * **10x**{: .quantity-emphasis } **Broche JST-SH femelle à sertir** 
     - Pour aller avec le connecteur précédent.
 

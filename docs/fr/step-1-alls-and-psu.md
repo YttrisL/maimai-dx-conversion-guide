@@ -37,7 +37,7 @@ La plupart des composants voisins peuvent aussi être retirés. À droite du *Ri
 
 - **L'IO3**, tout en haut, reconnaissable à la grosse nappe qui y est raccordée.
     * **À retirer**, avec son câble USB : elle est remplacée par l'IO4 sur *DX*.
-- **L'adaptateur RS-232 vers USB**, en bas à gauche, relié au *RingEdge 2* en USB. Deux connecteurs à deux fils sont normalement branchés sur sa rangée du bas.
+- `L'adaptateur 4x RS-232 vers USB`, en bas à gauche, relié au *RingEdge 2* en USB. Deux connecteurs à deux fils sont normalement branchés sur sa rangée du bas.
     * **À conserver** : cette carte fait le lien entre les contrôleurs de LEDs et le PC. Profitez-en pour la sortir et la dépoussiérer, vous la réinstallerez plus tard.
 - **Le contrôleur des dalles tactiles de *FiNALE***, en bas à droite, relié au *RingEdge 2* par un câble à trois fils terminé par un DB9.
     * **À retirer**, avec son câble et les deux câbles blancs raccordés en dessous : les dalles tactiles de *DX* sont radicalement différentes et n'utilisent plus ce composant.
@@ -67,8 +67,8 @@ Le *ALLS* est plus large que le *RingEdge 2*, mais l'espace que vous venez de li
 Une fois le *ALLS* en place, vous pouvez déjà :
 
 - **Fixer l'IO4**, idéalement à l'emplacement de l'ancienne IO3 pour profiter de la proximité des câbles d'alimentation d'origine. Si vous avez opté pour la [PCB de conversion]({{IO4_CONVERSION_PCB}}), prévoyez aussi sa place.
-- **Réinstaller l'adaptateur RS-232 vers USB.**
-- **Brancher le hub USB sur le port USB 2 du *ALLS***, puis y raccorder l'adaptateur RS-232 vers USB.
+- **Réinstaller `l'adaptateur 4x RS-232 vers USB`.**
+- **Brancher le hub USB sur le port USB 2 du *ALLS***, puis y raccorder `l'adaptateur 4x RS-232 vers USB`.
 - **Installer votre nouvelle alimentation à découpage 5V/12V** (voir [Alimentation](#alimentation)). Idéalement, placez-la côté joueur 1 avec les autres alimentations à découpage, même si cela demande des câbles plus longs.
 
 Les autres câbles seront rebranchés au fil des étapes suivantes.
@@ -92,7 +92,7 @@ La plupart des appareils à connecter sont présentés plus en détail dans les 
 
 ### Carte mère
 
-- **COM1 - Port DB9** : Lecteur Aime
+- **`COM1` - Port DB9** : Lecteur Aime
 - **LAN1 - Port RJ45** : Port réseau, à connecter au routeur de service (celui du réseau sur lequel la borne sera connectée, à ne pas confondre avec le routeur interne de *FiNALE*). Le second port réseau est inutilisé.
 - **Audio Jacks 3,5mm** :
     - **C/W** : [Prise casque](step-5-audio-headphones.md#les-prises-casques) Joueur 1
@@ -100,7 +100,7 @@ La plupart des appareils à connecter sont présentés plus en détail dans les 
     - **REAR** : [Haut-parleurs](step-5-audio-headphones.md#branchement-des-haut-parleurs) Joueur 2
 - **USB** :
     - **USB 1** : SEGA IO4
-    - **USB 2** : Hub USB, sur lequel sont branchés les deux caméras de QR codes et l'adaptateur `4x RS-232 vers USB`.
+    - **USB 2** : Hub USB, sur lequel sont branchés les deux caméras de QR codes et `l'adaptateur 4x RS-232 vers USB`.
     - **USB 3** : Caméra des joueurs
     - **USB 4** : Port d'installation, pour y insérer une clé USB contenant les données de jeu à installer.
 
@@ -112,9 +112,9 @@ La plupart des appareils à connecter sont présentés plus en détail dans les 
 
 ### Cartes d'extension
 
-- **COM2 - Port DB9** : VFD
-- **COM3 - Port DB9** : Dalle tactile du joueur 1
-- **COM4 - Port DB9** : Dalle tactile du joueur 2
+- **`COM2` - Port DB9** : VFD
+- **`COM3` - Port DB9** : Dalle tactile du joueur 1
+- **`COM4` - Port DB9** : Dalle tactile du joueur 2
 - **SIDE** : [Prise casque](step-5-audio-headphones.md#les-prises-casques) Joueur 2
 
 ## Alimentation

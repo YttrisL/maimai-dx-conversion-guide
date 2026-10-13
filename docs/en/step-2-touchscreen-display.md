@@ -71,7 +71,7 @@ You then have to connect the panel to the *ALLS*, depending on the model you cho
     Unlike other conversion kits, the HanDevice I/O board supplied with the HDX panels exposes a UART serial port directly. However, **it is not enabled by default**: this port is originally dedicated to the HDX's internal Aime reader.
 
     1. **Enable the feature** from HanDevice's **configuration website** (see [HanDevice's official documentation]({{HANDEVICE_OFFICIAL_DOCUMENTATION}})).
-    2. **Locate the CN10 connector** on the I/O board. It has four pins and will now send the touch signals over UART.
+    2. **Locate the `CN10` connector** on the I/O board. It has four pins and will now send the touch signals over UART.
 
     Once the feature is enabled, the **HDX's emulated Aime reader stops working**. This is not a problem: we install a real Aime reader separately in this guide (see [step 3](step-3-aime-reader.md)).
 
@@ -84,7 +84,7 @@ You then have to connect the panel to the *ALLS*, depending on the model you cho
 
     ##### 1. Make the cable to the converter
 
-    Make a small **4-wire** cable linking the I/O board's **CN10** to the converter's **TTL side**. It does not need to be long: the converter will stay next to the I/O board.
+    Make a small **4-wire** cable linking the I/O board's `CN10` to the converter's **TTL side**. It does not need to be long: the converter will stay next to the I/O board.
 
     * **I/O board side:** crimp the wires with **JST-SH female** pins and insert them in a **4-pin JST-SH** connector, in the pinout order:
 
@@ -95,17 +95,17 @@ You then have to connect the panel to the *ALLS*, depending on the model you cho
 
         ![Wiring diagram: the HDX I/O board's CN10 linked to the MAX3232 converter's TTL side, with TX and RX crossed (GND to GND, VCC to VCC)](../resources/images/step-2-touchscreen-display/hdx-converter-wiring-en.svg){ width="90%" }
 
-    The converter is powered by CN10's **VCC**: it needs no external power supply.
+    The converter is powered by `CN10`'s **VCC**: it needs no external power supply.
 
     ##### 2. Plugging in
 
-    Plug the JST-SH into the I/O board's **CN10**, then link the converter's female DB9 plug to the *ALLS* with a **male-female DB9 cable** (the 3 m extensions from the shopping list). Respect each player's port, as explained in the next point.
+    Plug the JST-SH into the I/O board's `CN10`, then link the converter's female DB9 plug to the *ALLS* with a **male-female DB9 cable** (the 3 m extensions from the shopping list). Respect each player's port, as explained in the next point.
 
     !!! warning "HanDevice I/O board power"
         The **I/O board's USB port is only there to power it**: it carries no data here, but it must still be plugged into a **5V power supply**.
 
         * **There is no need to plug it into the *ALLS*.**
-        * All the touch signals go through **CN10** and the converter: the only link with the *ALLS* is the converter's **DB9** plug.
+        * All the touch signals go through `CN10` and the converter: the only link with the *ALLS* is the converter's **DB9** plug.
 
     !!! tip "Nothing happens in game?"
         If the panel does not respond once everything is plugged in, swap the TX and RX wires on the converter side: it is the most common crossover mistake.
@@ -239,8 +239,8 @@ You then have to connect the panel to the *ALLS*, depending on the model you cho
 
 Each side has its own COM port, **do not swap them**: otherwise the game will mix up the two players. *([Manual](../resources/pdfs/maimai-dx-instruction-manual-full.pdf), page 128)*
 
-* **Player 1:** port **COM3**.
-* **Player 2:** port **COM4**.
+* **Player 1:** port `COM3`.
+* **Player 2:** port `COM4`.
 
 !!! lightbox
     ![Rear view of an ALLS HX2: red arrows point to the touchscreen DB9 ports on the expansion card, P1 at the bottom right and P2 at the top left](../resources/images/step-2-touchscreen-display/alls-hx2-rear-connectors-com3-com4.jpg)
