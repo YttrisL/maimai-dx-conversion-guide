@@ -180,6 +180,8 @@ These small, cheap purchases, needed over the course of the steps, can be found 
     - To connect the IO4's `CN9` to the [conversion PCB]({{IO4_CONVERSION_PCB}}) (2.54 mm pitch).
 * **2x**{: .quantity-emphasis } charging **micro-USB cable**
     - To power the two LED controller proxies: the end opposite the Pico is cut off, red wire to 5V and black wire to GND on the power supply installed in [step 1](step-1-alls-and-psu.md).
+* **2x**{: .quantity-emphasis } **USB-C cable** (USB-A to USB-C)
+    - To power the I/O board of each HDX touchscreen with 5V (see [step 2](step-2-touchscreen-display.md)): the USB-A end is cut off, red wire to 5V and black wire to GND on the power supply installed in [step 1](step-1-alls-and-psu.md).
 * **2x**{: .quantity-emphasis } **3.5 mm male-to-male jack cable**
     - To connect the *ALLS*'s C/W and SIDE outputs to their amp (see [step 5](step-5-audio-headphones.md)). As short as possible.
 
@@ -253,7 +255,6 @@ For the other connectors, rather than buying each part number individually, **ge
 
 **JST-XH kit**
 
-* **20x**{: .quantity-emphasis } 2-pin male connector
 * **20x**{: .quantity-emphasis } 2-pin female connector
 * **2x**{: .quantity-emphasis } 7-pin female connector
 * **1x**{: .quantity-emphasis } 7-pin male connector
@@ -265,7 +266,6 @@ For the other connectors, rather than buying each part number individually, **ge
 
 **JST-PH kit**
 
-* **2x**{: .quantity-emphasis } 4-pin female connector
 * **1x**{: .quantity-emphasis } 8-pin female connector
 * **30x**{: .quantity-emphasis } male crimp pin
 * **30x**{: .quantity-emphasis } female crimp pin

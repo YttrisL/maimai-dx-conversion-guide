@@ -29,13 +29,14 @@ title: "☑️ Purchase checklist"
 ### Cables
 
 - [ ] **1x**{: .quantity-emphasis } HDMI to DVI-D cable (3 m)
-- [ ] **1x**{: .quantity-emphasis } DVI-D to DVI-D cable (2 m)
+- [ ] **1x**{: .quantity-emphasis } DVI-D to DVI-D cable (2 m) - *if needed*
 - [ ] **1x**{: .quantity-emphasis } DB-9 Female-Female cable
 - [ ] **4x**{: .quantity-emphasis } DB-9 Male-Female cable (3 m)
 - [ ] **1x**{: .quantity-emphasis } IEC C-13 cable (2 m)
 - [ ] **1x**{: .quantity-emphasis } IDC ribbon cable, 2x30 pins (female-female)
 - [ ] **1x**{: .quantity-emphasis } IDC ribbon cable, 2x10 pins (female-female)
 - [ ] **2x**{: .quantity-emphasis } micro-USB cable
+- [ ] **2x**{: .quantity-emphasis } USB-C cable (USB-A to USB-C)
 - [ ] **2x**{: .quantity-emphasis } 3.5 mm male-to-male jack cable
 
 ### Electronics

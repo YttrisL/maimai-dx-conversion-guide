@@ -180,6 +180,8 @@ Ces petits achats bon marché, nécessaires au fil des étapes, se trouvent dans
     - Pour relier le `CN9` de l'IO4 à la [PCB de conversion]({{IO4_CONVERSION_PCB}}) (pas de 2,54 mm).
 * **2x**{: .quantity-emphasis } **Câble micro-USB** de charge
     - Pour alimenter les deux proxys des contrôleurs de LEDs : l'extrémité opposée au Pico est coupée, fil rouge sur le 5V et fil noir sur le GND de l'alimentation installée à [l'étape 1](step-1-alls-and-psu.md).
+* **2x**{: .quantity-emphasis } **Câble USB-C** (USB-A vers USB-C)
+    - Pour alimenter en 5V la carte I/O de chaque dalle HDX (voir l'[étape 2](step-2-touchscreen-display.md)) : l'extrémité USB-A est coupée, fil rouge sur le 5V et fil noir sur le GND de l'alimentation installée à l'[étape 1](step-1-alls-and-psu.md).
 * **2x**{: .quantity-emphasis } **Câble jack 3.5 mm mâle-mâle**
     - Pour relier les sorties C/W et SIDE du *ALLS* à leur ampli (voir [l'étape 5](step-5-audio-headphones.md)). Le plus court possible.
 
@@ -253,7 +255,6 @@ Pour les autres connecteurs, plutôt que d'acheter chaque référence à l'unit�
 
 **Kit JST-XH**
 
-* **20x**{: .quantity-emphasis } Connecteur 2 broches mâle
 * **20x**{: .quantity-emphasis } Connecteur 2 broches femelle
 * **2x**{: .quantity-emphasis } Connecteur 7 broches femelle
 * **1x**{: .quantity-emphasis } Connecteur 7 broches mâle
@@ -265,7 +266,6 @@ Pour les autres connecteurs, plutôt que d'acheter chaque référence à l'unit�
 
 **Kit JST-PH**
 
-* **2x**{: .quantity-emphasis } Connecteur 4 broches femelle
 * **1x**{: .quantity-emphasis } Connecteur 8 broches femelle
 * **30x**{: .quantity-emphasis } Broche mâle à sertir
 * **30x**{: .quantity-emphasis } Broche femelle à sertir

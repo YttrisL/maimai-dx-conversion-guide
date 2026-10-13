@@ -105,6 +105,7 @@ You then have to connect the panel to the *ALLS*, depending on the model you cho
         The **I/O board's USB port is only there to power it**: it carries no data here, but it must still be plugged into a **5V power supply**.
 
         * **There is no need to plug it into the *ALLS*.**
+        * Simplest option: the USB-C cable from the [shopping list](equipment.md#cables), cut on the USB-A side, red wire to 5V and black wire to GND on the power supply installed in [step 1](step-1-alls-and-psu.md).
         * All the touch signals go through `CN10` and the converter: the only link with the *ALLS* is the converter's **DB9** plug.
 
     !!! tip "Nothing happens in game?"

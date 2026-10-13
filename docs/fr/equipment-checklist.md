@@ -29,13 +29,14 @@ title: "☑️ Checklist d'achat"
 ### Câbles
 
 - [ ] **1x**{: .quantity-emphasis } Câble HDMI vers DVI-D (3 m)
-- [ ] **1x**{: .quantity-emphasis } Câble DVI-D vers DVI-D (2 m)
+- [ ] **1x**{: .quantity-emphasis } Câble DVI-D vers DVI-D (2 m) - *si nécessaire*
 - [ ] **1x**{: .quantity-emphasis } Câble DB-9 Femelle-Femelle
 - [ ] **4x**{: .quantity-emphasis } Câble DB-9 Mâle-Femelle (3 m)
 - [ ] **1x**{: .quantity-emphasis } Câble IEC C-13 (2 m)
 - [ ] **1x**{: .quantity-emphasis } Nappe IDC 2x30 broches (femelle-femelle)
 - [ ] **1x**{: .quantity-emphasis } Nappe IDC 2x10 broches (femelle-femelle)
 - [ ] **2x**{: .quantity-emphasis } Câble micro-USB
+- [ ] **2x**{: .quantity-emphasis } Câble USB-C (USB-A vers USB-C)
 - [ ] **2x**{: .quantity-emphasis } Câble jack 3.5 mm mâle-mâle
 
 ### Électronique

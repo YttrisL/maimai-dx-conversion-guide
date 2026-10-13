@@ -108,6 +108,7 @@ Il reste ensuite à brancher la dalle au *ALLS*, selon le modèle que vous avez 
         Le **port USB de la carte I/O ne sert qu'à l'alimenter** : il ne transmet aucune donnée ici, mais il doit quand même être branché à une **alimentation 5V**.
 
         * **Il est inutile de le brancher au *ALLS*.**
+        * Le plus simple : le câble USB-C de la [liste de courses](equipment.md#cables), coupé côté USB-A, fil rouge sur le 5V et fil noir sur le GND de l'alimentation installée à [l'étape 1](step-1-alls-and-psu.md).
         * Tous les signaux tactiles passent par le `CN10` et le convertisseur : le seul lien avec le *ALLS* est la fiche **DB9** du convertisseur.
 
     !!! tip "Rien ne se passe en jeu ?"
