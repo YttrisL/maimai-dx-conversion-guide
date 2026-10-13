@@ -206,6 +206,10 @@ Ces petits achats bon marché, nécessaires au fil des étapes, se trouvent dans
     - Extrémités de la nappe d'éclairage de l'enseigne lumineuse, côté joueur 1 et côté joueur 2, à raccorder aux connecteurs JST-SM d'origine.
 * **2x**{: .quantity-emphasis } **Connecteur JST-SM 2 broches, paire mâle + femelle**
     - Idéal pour fabriquer vos propres connecteurs et vous simplifier la vie. À défaut, de simples JST-XH conviennent aussi.
+* **2x**{: .quantity-emphasis } **Connecteur JST-SH 4 broches femelle** 
+    - Pour raccorder le CN10 de la carte I/O de chaque dalle tactile HDX (pas de 1,0 mm).
+* **10x**{: .quantity-emphasis } **Broche JST-SH femelle à sertir** 
+    - Pour aller avec le connecteur précédent.
 
 Pour les autres connecteurs, plutôt que d'acheter chaque référence à l'unité, **procurez-vous un kit d'assortiment par type de connecteur**. On en trouve facilement sur Amazon ou AliExpress, avec plusieurs tailles de boîtiers, les deux genres (mâle/femelle) et un lot de broches à sertir. Voici ce qu'il vous faut dans chacun :
 

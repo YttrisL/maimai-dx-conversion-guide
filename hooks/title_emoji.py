@@ -80,6 +80,7 @@ _EMOJI_ASSET = {
     "\U0001F4DA": "books",                      # official-manuals.md
     "\U0001F5A8️": "printer",                    # spiralglide-resources.md, wiring-diagrams.md
     "\U0001F517": "link",                       # useful-links.md
+    "\U0001F6A8": "police-car-light",          # error-codes.md
 }
 
 # Longest-first so a multi-codepoint emoji (base + U+FE0F variation

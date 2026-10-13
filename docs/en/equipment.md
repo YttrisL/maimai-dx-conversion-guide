@@ -206,6 +206,10 @@ These small, cheap purchases, needed over the course of the steps, can be found 
     - The ends of the billboard lighting harness, Player 1 side and Player 2 side, to connect to the original JST-SM connectors.
 * **2x**{: .quantity-emphasis } **JST-SM 2-pin connector, male + female pair**
     - Ideal for making your own connectors and simplifying your life. Failing that, plain JST-XH will also do.
+* **2x**{: .quantity-emphasis } **JST-SH 4-pin female connector**
+    - To connect the CN10 of each HDX touchscreen's I/O board (1.0 mm pitch).
+* **10x**{: .quantity-emphasis } **JST-SH female crimp pin**
+    - To go with the previous connector.
 
 For the other connectors, rather than buying each part number individually, **get an assortment kit per connector type**. They are easy to find on Amazon or AliExpress, with several housing sizes, both genders (male/female) and a batch of crimp pins. Here is what you need in each:
 

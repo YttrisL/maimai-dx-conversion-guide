@@ -1,2 +1,2 @@
 !!! warning "Warning"
-    This step is theoretical and hasn't been tested yet.
+    Awaiting delivery of the hardware for confirmation, this step is theoretical and has not been tested yet.

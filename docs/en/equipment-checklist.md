@@ -60,6 +60,8 @@ title: "☑️ Purchase checklist"
 - [ ] **30x**{: .quantity-emphasis } JST-RA female crimp pin
 - [ ] **2x**{: .quantity-emphasis } JST-SM 8-pin female connector
 - [ ] **2x**{: .quantity-emphasis } JST-SM 2-pin connector (male + female pair)
+- [ ] **2x**{: .quantity-emphasis } JST-SH 4-pin female connector
+- [ ] **10x**{: .quantity-emphasis } JST-SH female crimp pin
 - [ ] JST-XH connector kit
 - [ ] JST-PH connector kit
 

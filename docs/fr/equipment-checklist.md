@@ -60,6 +60,8 @@ title: "☑️ Checklist d'achat"
 - [ ] **30x**{: .quantity-emphasis } Broche JST-RA femelle à sertir
 - [ ] **2x**{: .quantity-emphasis } Connecteur JST-SM 8 broches femelle
 - [ ] **2x**{: .quantity-emphasis } Connecteur JST-SM 2 broches (paire mâle + femelle)
+- [ ] **2x**{: .quantity-emphasis } Connecteur JST-SH 4 broches femelle
+- [ ] **10x**{: .quantity-emphasis } Broche JST-SH femelle à sertir
 - [ ] Kit de connecteurs JST-XH
 - [ ] Kit de connecteurs JST-PH
 
