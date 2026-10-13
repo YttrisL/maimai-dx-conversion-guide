@@ -17,14 +17,14 @@ Pour chaque pièce, **l'option la plus adaptée est mise en avant**, que ce soit
 
 <div class="equipment-card" markdown>
 
-### ALLS HX2
+### *ALLS HX2*
 * Où : JDirectItems Auction 
-* Info : C'est le PC utilisé par DX, et peu d'autres bornes utilisent ce modèle spécifique : **selon les périodes, il peut être difficile à trouver**.
+* Info : C'est le PC utilisé par *DX*, et peu d'autres bornes utilisent ce modèle spécifique : **selon les périodes, il peut être difficile à trouver**.
 
-*Alternative* : **ALLS MX2**
+*Alternative* : ***ALLS MX2***
 
 * Où : JDirectItems Auction 
-* Info : Plus facile à trouver, et son logiciel interne est techniquement compatible avec DX.
+* Info : Plus facile à trouver, et son logiciel interne est techniquement compatible avec *DX*.
 
 </div>
 
@@ -32,10 +32,10 @@ Pour chaque pièce, **l'option la plus adaptée est mise en avant**, que ce soit
 
 ### Disque secondaire (SUB STORAGE)
 * Où : Amazon, AliExpress, votre boutique favorite
-* Info : Un disque dur de 500 Go, que le jeu exige en plus du SSD du ALLS.
+* Info : Un disque dur de 500 Go, que le jeu exige en plus du SSD du *ALLS*.
 
 !!! tip "Vous l'avez peut-être déjà"
-    Selon le jeu qu'il faisait tourner à l'origine, votre ALLS ne contient peut-être qu'un SSD de 64 ou 128 Go, **insuffisant pour installer le jeu**. Il faut obligatoirement un disque secondaire (nommé "SUB STORAGE"), généralement de 500 Go. **Si votre ALLS en contient déjà un, inutile d'en racheter un.**
+    Selon le jeu qu'il faisait tourner à l'origine, votre *ALLS* ne contient peut-être qu'un SSD de 64 ou 128 Go, **insuffisant pour installer le jeu**. Il faut obligatoirement un disque secondaire (nommé "SUB STORAGE"), généralement de 500 Go. **Si votre *ALLS* en contient déjà un, inutile d'en racheter un.**
 
 </div>
 
@@ -51,7 +51,7 @@ Pour chaque pièce, **l'option la plus adaptée est mise en avant**, que ce soit
     - **compatibles JVS**, avec un port USB-B et un port USB-A pour le chaînage ;
     - **sans JVS**, avec un simple port micro-USB à brancher sur un port USB classique.
 
-    Sur maimai DX, l'IO4 se branche au ALLS en USB classique, via le port micro-USB : **le support JVS est inutile**. Les IO4 sans JVS sont généralement un peu moins chères, mais en théorie toutes les variantes conviennent.
+    Sur *maimai DX*, l'IO4 se branche au *ALLS* en USB classique, via le port micro-USB : **le support JVS est inutile**. Les IO4 sans JVS sont généralement un peu moins chères, mais en théorie toutes les variantes conviennent.
 
 </div>
 
@@ -59,7 +59,7 @@ Pour chaque pièce, **l'option la plus adaptée est mise en avant**, que ce soit
 
 ### **1x**{: .quantity-emphasis } PCB de conversion maiConvert-IO4
 * Où : [À faire fabriquer vous-même]({{IO4_CONVERSION_PCB}}) : les fichiers sont gratuits et un petit guide, dans le dépôt, explique la démarche.
-* Info : La méthode recommandée pour installer l'IO4 dans la borne (voir l'[étape 4](step-4-io-board.md)) : le harnais d'origine s'y branche tel quel, sans modification. *La modification manuelle du harnais est possible, mais elle n'est pas couverte par cette liste.*
+* Info : La méthode recommandée pour installer l'IO4 dans la borne (voir [l'étape 4](step-4-io-board.md)) : le harnais d'origine s'y branche tel quel, sans modification. *La modification manuelle du harnais est possible, mais elle n'est pas couverte par cette liste.*
 
 </div>
 
@@ -75,12 +75,12 @@ Pour chaque pièce, **l'option la plus adaptée est mise en avant**, que ce soit
 
 ### **2x**{: .quantity-emphasis } Dalle tactile HDX
 * Où : [Sur le discord HanDevice]({{DISCORD_HANDEVICE}})
-* Info : Une dalle tactile conçue par un particulier, à l'origine comme « game-pad » pour jouer à un simulateur de DX chez soi. HanDevice ne vend pas officiellement de kit de conversion, mais vous pouvez [contacter le fabricant sur son discord]({{HANDEVICE_DISCORD_CONTACT_MESSAGE}}) pour demander une offre portant sur **la dalle tactile et la HanDevice IO** (sa carte I/O dédiée). Avantage de cette carte : elle expose un **port série UART**, qui permet de la relier au ALLS HX2 sans transformer le signal.
+* Info : Une dalle tactile conçue par un particulier, à l'origine comme « game-pad » pour jouer à un simulateur de *DX* chez soi. HanDevice ne vend pas officiellement de kit de conversion, mais vous pouvez [contacter le fabricant sur son discord]({{HANDEVICE_DISCORD_CONTACT_MESSAGE}}) pour demander une offre portant sur **la dalle tactile et la HanDevice IO** (sa carte I/O dédiée). Avantage de cette carte : elle expose un **port série UART**, qui permet de la relier au *ALLS HX2* sans transformer le signal.
 
 *Alternative* : **2x**{: .quantity-emphasis } **Kit de conversion Yuancon - à base d'une dalle ADX**
 
 * Où : [Sur le site de yuancon]({{YUANCON_CONVERSION_KIT_PAGE}})
-* Info : Chaque kit Yuancon comprend une dalle tactile et huit boutons, de quoi convertir un côté de la borne. Ils équivalent aux HDX, à un détail près : **leur carte I/O n'a pas de port série**. Elle communique uniquement en USB-CDC, un signal qu'un simple convertisseur RS-232 ne peut pas adapter pour le ALLS HX2. C'est possible via un proxy logiciel, [maitouch_rs]({{MAITOUCH_RS_REPO}}) par [4ndr3w]({{GITHUB_4NDR3W}}) sur GitHub, qui tourne sur un Raspberry Pi placé entre le ALLS et l'ADX, mais cette complexité n'est pas détaillée dans ce guide. *Avec cette alternative, les boutons du point suivant sont inutiles.*
+* Info : Chaque kit Yuancon comprend une dalle tactile et huit boutons, de quoi convertir un côté de la borne. Ils équivalent aux HDX, à un détail près : **leur carte I/O n'a pas de port série**. Elle communique uniquement en USB-CDC, un signal qu'un simple convertisseur RS-232 ne peut pas adapter pour le *ALLS HX2*. C'est possible via un proxy logiciel, [maitouch_rs]({{MAITOUCH_RS_REPO}}) par [4ndr3w]({{GITHUB_4NDR3W}}) sur GitHub, qui tourne sur un Raspberry Pi placé entre le *ALLS* et l'ADX, mais cette complexité n'est pas détaillée dans ce guide. *Avec cette alternative, les boutons du point suivant sont inutiles.*
 
 </div>
 
@@ -88,12 +88,12 @@ Pour chaque pièce, **l'option la plus adaptée est mise en avant**, que ce soit
 
 ### **16x**{: .quantity-emphasis } Boutons HDX
 * Où : [Sur le discord HanDevice]({{DISCORD_HANDEVICE}})
-* Info : Les boutons de jeu de l'anneau. Ceux de FiNALE sont techniquement compatibles, mais le ressenti sur DX est totalement différent, et bien meilleur : **le remplacement vaut largement la peine**. Il en faut huit par joueur, soit seize au total. *C'est une pièce d'usure* : quelques boutons de réserve peuvent être utiles.
+* Info : Les boutons de jeu de l'anneau. Ceux de *FiNALE* sont techniquement compatibles, mais le ressenti sur *DX* est totalement différent, et bien meilleur : **le remplacement vaut largement la peine**. Il en faut huit par joueur, soit seize au total. *C'est une pièce d'usure* : quelques boutons de réserve peuvent être utiles.
 
 *Alternative* : **16x**{: .quantity-emphasis } **Boutons "Rabbit"**
 
 * Où : [Sur la boutique Taobao officielle]({{TAOBAO_OFFICIAL_SHOP_LISTING}})
-* Info : Assez proches des boutons officiels de maimai DX, c'est une excellente alternative.
+* Info : Assez proches des boutons officiels de *maimai DX*, c'est une excellente alternative.
 
 !!! failure "N'achetez pas les contrefaçons !"
     On trouve sur Taobao ou AliExpress des boutons génériques bien moins chers, en apparence très similaires. **Ne cédez pas à la tentation d'économiser quelques euros** : c'est le pire achat possible. Contrairement aux boutons HanDevice ou Rabbit, ils sont de **très** mauvaise qualité, cumulent les problèmes et durent très peu. Préférez des boutons de qualité, achetés chez un vendeur fiable.
@@ -119,7 +119,7 @@ Pour chaque pièce, **l'option la plus adaptée est mise en avant**, que ce soit
 ### **1x**{: .quantity-emphasis } Hub USB 4 ports
 
 * Où : Amazon, AliExpress, votre boutique favorite
-* Info : Sur une véritable maimai DX, l'un des 4 ports USB de la carte mère du ALLS est réservé à un hub USB 4 ports. Ce hub accueille les deux caméras des lecteurs de QR-Code et l'adaptateur RS-232/USB des contrôleurs de LEDs des joueurs 1 et 2. **N'importe quel hub USB fera l'affaire.**
+* Info : Sur une véritable *maimai DX*, l'un des 4 ports USB de la carte mère du *ALLS* est réservé à un hub USB 4 ports. Ce hub accueille les deux caméras des lecteurs de QR-Code et l'adaptateur RS-232/USB des contrôleurs de LEDs des joueurs 1 et 2. **N'importe quel hub USB fera l'affaire.**
 
 </div>
 
@@ -128,7 +128,7 @@ Pour chaque pièce, **l'option la plus adaptée est mise en avant**, que ce soit
 ### **1x**{: .quantity-emphasis } Alimentation à découpage 5V/12V
 
 * Où : Amazon, AliExpress, distributeurs de composants électroniques
-* Info : Contrairement au RingEdge 2, le ALLS n'alimente pas les périphériques externes. Cette alimentation prend le relais : elle alimente notamment l'IO4, le lecteur Aime, le VFD et les proxys des contrôleurs de LEDs. Il vous faut un modèle **à double sortie 5V et 12V**, en boîtier métallique avec bornier à vis, comme les Mean Well RD-35A ou RD-50A. **Ne réutilisez pas les alimentations d'origine de la borne** à la place.
+* Info : Contrairement au *RingEdge 2*, le *ALLS* n'alimente pas les périphériques externes. Cette alimentation prend le relais : elle alimente notamment l'IO4, le lecteur Aime, le VFD et les proxys des contrôleurs de LEDs. Il vous faut un modèle **à double sortie 5V et 12V**, en boîtier métallique avec bornier à vis, comme les Mean Well RD-35A ou RD-50A. **Ne réutilisez pas les alimentations d'origine de la borne** à la place.
 
 </div>
 
@@ -165,34 +165,34 @@ Ces petits achats bon marché, nécessaires au fil des étapes, se trouvent dans
 ### Câbles
 
 * **1x**{: .quantity-emphasis } **Câble HDMI vers DVI-D (3 m)** 
-    - Branchement du ALLS vers l'écran du joueur 1.
+    - Branchement du *ALLS* vers l'écran du joueur 1.
 * **1x**{: .quantity-emphasis } **Câble DVI-D vers DVI-D (2 m)** 
-    - Branchement du ALLS vers l'écran du joueur 2. Votre FiNALE en a peut-être déjà nativement un.
+    - Branchement du *ALLS* vers l'écran du joueur 2. Votre *FiNALE* en a peut-être déjà nativement un.
 * **1x**{: .quantity-emphasis } **Câble DB-9 Femelle-Femelle** 
     - Le plus court possible : il sera coupé en deux pour fabriquer les connecteurs du lecteur Aime et du VFD.
 * **4x**{: .quantity-emphasis } **Câble DB-9 Mâle-Femelle (3 m)** 
-    - Rallonges vers le ALLS pour le lecteur Aime, le VFD et les dalles tactiles des joueurs 1 et 2.
+    - Rallonges vers le *ALLS* pour le lecteur Aime, le VFD et les dalles tactiles des joueurs 1 et 2.
 * **1x**{: .quantity-emphasis } **Câble IEC C-13 (2 m)** 
-    - Branché au ALLS, puis coupé côté prise pour être raccordé directement à l'alimentation électrique de la borne.
+    - Branché au *ALLS*, puis coupé côté prise pour être raccordé directement à l'alimentation électrique de la borne.
 * **1x**{: .quantity-emphasis } **Nappe IDC 2x30 broches (femelle-femelle)**
-    - Pour relier le CN3 de l'IO4 à la PCB de conversion (pas de 2,54 mm).
+    - Pour relier le CN3 de l'IO4 à la [PCB de conversion]({{IO4_CONVERSION_PCB}}) (pas de 2,54 mm).
 * **1x**{: .quantity-emphasis } **Nappe IDC 2x10 broches (femelle-femelle)**
-    - Pour relier le CN9 de l'IO4 à la PCB de conversion (pas de 2,54 mm).
+    - Pour relier le CN9 de l'IO4 à la [PCB de conversion]({{IO4_CONVERSION_PCB}}) (pas de 2,54 mm).
 * **2x**{: .quantity-emphasis } **Câble micro-USB** de charge
-    - Pour alimenter les deux proxys des contrôleurs de LEDs : l'extrémité opposée au Pico est coupée, fil rouge sur le 5V et fil noir sur le GND de l'alimentation installée à l'[étape 1](step-1-alls-and-psu.md).
+    - Pour alimenter les deux proxys des contrôleurs de LEDs : l'extrémité opposée au Pico est coupée, fil rouge sur le 5V et fil noir sur le GND de l'alimentation installée à [l'étape 1](step-1-alls-and-psu.md).
 * **2x**{: .quantity-emphasis } **Câble jack 3.5 mm mâle-mâle**
-    - Pour relier les sorties C/W et SIDE du ALLS à leur ampli (voir l'[étape 5](step-5-audio-headphones.md)). Le plus court possible.
+    - Pour relier les sorties C/W et SIDE du *ALLS* à leur ampli (voir [l'étape 5](step-5-audio-headphones.md)). Le plus court possible.
 
 ### Électronique
 
 * **2x**{: .quantity-emphasis } **Convertisseur TTL vers RS-232 avec DB-9 femelle** ([exemple]({{BUY_EXAMPLE_TTL_RS232_CONVERTER}})) 
-    - Pour relier la carte I/O de chaque dalle tactile (joueurs 1 et 2) à son port DB-9 du ALLS.
+    - Pour relier la carte I/O de chaque dalle tactile (joueurs 1 et 2) à son port DB-9 du *ALLS*.
 * **2x**{: .quantity-emphasis } **Raspberry Pi Pico** ([exemple]({{BUY_EXAMPLE_RASPBERRY_PI_PICO}})) 
     - Pour fabriquer les proxys des contrôleurs de LEDs. Pour éviter toute soudure, préférez une version aux broches pré-soudées. **Attention : les broches doivent être soudées vers le bas, pas vers le haut.**
 * **2x**{: .quantity-emphasis } **Pico-2CH-RS232** ([exemple]({{BUY_EXAMPLE_PICO_2CH_RS232}})) 
     - Pour fabriquer les proxys des contrôleurs de LEDs.
 * **2x**{: .quantity-emphasis } **Ampli audio pour casque**
-    - Un petit ampli bon marché par joueur, pour amplifier la sortie casque très faible du ALLS (voir l'[étape 5](step-5-audio-headphones.md)). Inutile qu'il ait une molette de volume : le volume se règle dans les menus du jeu.
+    - Un petit ampli bon marché par joueur, pour amplifier la sortie casque très faible du *ALLS* (voir [l'étape 5](step-5-audio-headphones.md)). Inutile qu'il ait une molette de volume : le volume se règle dans les menus du jeu.
 * **2x**{: .quantity-emphasis } **Prise jack 3.5 mm femelle**
     - Les prises casque des joueurs, à installer sur la borne. Préférez un modèle à fixer sur panneau.
 
@@ -201,7 +201,7 @@ Ces petits achats bon marché, nécessaires au fil des étapes, se trouvent dans
 * **Fil de câblage souple (AWG 20)** 
     - Plusieurs câbles sont à sertir tout au long du guide : prévoyez-en une bonne réserve, idéalement de plusieurs couleurs.
 * **Fil de câblage souple (1,5 mm²)**
-    - Pour le 12V de la PCB de conversion, qui voit passer un courant important (voir l'[étape 4](step-4-io-board.md)). Prévoyez une longueur suffisante pour rejoindre l'alimentation LEDs de la borne.
+    - Pour le 12V de la [PCB de conversion]({{IO4_CONVERSION_PCB}}), qui voit passer un courant important (voir [l'étape 4](step-4-io-board.md)). Prévoyez une longueur suffisante pour rejoindre l'alimentation LEDs de la borne.
 
 ### Éclairage
 
@@ -235,7 +235,7 @@ Ces petits achats bon marché, nécessaires au fil des étapes, se trouvent dans
 
 
 * **1x**{: .quantity-emphasis } **Connecteur Molex Mini-Fit Jr. 2x7 broches femelle** ([exemple]({{BUY_EXAMPLE_MOLEX_MINI_FIT_JR_CONNECTOR}})) 
-    - Pour raccorder proprement le connecteur d'alimentation qui était branché sur le RingEdge 2.
+    - Pour raccorder proprement le connecteur d'alimentation qui était branché sur le *RingEdge 2*.
 * **30x**{: .quantity-emphasis } **Broche Molex Mini-Fit Jr. femelle à sertir** 
     - Pour aller avec le connecteur précédent.
 * **2x**{: .quantity-emphasis } **Connecteur JST-SM 8 broches femelle** 
@@ -243,7 +243,7 @@ Ces petits achats bon marché, nécessaires au fil des étapes, se trouvent dans
 * **30x**{: .quantity-emphasis } **Broche JST-SM femelle à sertir** 
     - Pour aller avec le connecteur précédent.
 * **1x**{: .quantity-emphasis } **Connecteur JST-SM 2 broches, paire mâle + femelle**
-    - Pour regrouper l'alimentation du lecteur Aime et du VFD sur un seul connecteur (voir l'[étape 3](step-3-aime-reader.md)). À défaut, de simples JST-XH conviennent aussi.
+    - Pour regrouper l'alimentation du lecteur Aime et du VFD sur un seul connecteur (voir [l'étape 3](step-3-aime-reader.md)). À défaut, de simples JST-XH conviennent aussi.
 * **2x**{: .quantity-emphasis } **Connecteur JST-SH 4 broches femelle** 
     - Pour raccorder le CN10 de la carte I/O de chaque dalle tactile HDX (pas de 1,0 mm).
 * **10x**{: .quantity-emphasis } **Broche JST-SH femelle à sertir** 
@@ -284,5 +284,5 @@ Pour les autres connecteurs, plutôt que d'acheter chaque référence à l'unit�
 
 ---
 
-Maintenant que vous disposez du matériel, commençons par l'[Étape 1 : Le Remplacement du PC Central (ALLS)](step-1-alls-and-psu.md).
+Maintenant que vous disposez du matériel, commençons par [l'étape 1 : Le remplacement du PC central (*ALLS*)](step-1-alls-and-psu.md).
 

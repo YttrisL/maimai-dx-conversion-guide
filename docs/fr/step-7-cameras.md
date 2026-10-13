@@ -2,7 +2,7 @@
 title: "📷 7 - Caméras (Optionnel)"
 ---
 
-# 📷 Étape 7 : Caméras (Optionnel)
+# 📷 Étape 7 : Caméras (optionnel)
 
 À ce stade, une seule fonctionnalité sépare encore votre conversion d'une véritable *DX* : **les caméras**. Le jeu s'en sert très peu, et elles sont largement considérées comme optionnelles. Mais si vous voulez vous rapprocher au maximum d'une vraie *DX*, elles sont heureusement assez simples à installer.
 
@@ -25,19 +25,19 @@ title: "📷 7 - Caméras (Optionnel)"
 
     Dans les deux cas, le jeu prévoit **un éclairage dédié pour chaque caméra**, piloté par l'IO4. Il n'est pas indispensable de le raccorder, mais sans éclairage adapté, les lecteurs de QR-Code risquent de très mal fonctionner. Pour la caméra des joueurs, l'éclairage devient nécessaire si votre borne est dans une salle sombre. Le jeu pilote aussi une LED rouge, qui prévient les joueurs que la caméra filme.
 
-    Les caméras se branchent en USB sur le ALLS : la caméra des joueurs directement sur la carte mère, les deux caméras des lecteurs de QR-Code sur le hub USB qui accueille déjà l'adaptateur RS-232 vers USB des contrôleurs de LEDs (voir l'[étape 6](step-6-lighting.md)).
+    Les caméras se branchent en USB sur le *ALLS* : la caméra des joueurs directement sur la carte mère, les deux caméras des lecteurs de QR-Code sur le hub USB qui accueille déjà l'adaptateur RS-232 vers USB des contrôleurs de LEDs (voir [l'étape 6](step-6-lighting.md)).
 
 ## Caméra des joueurs (Photos in-game)
 
 Chaque modèle de caméra est différent, il est donc difficile de proposer un support universel. Le mieux est de **concevoir un support imprimable en 3D** à installer au sommet de la borne, en profitant des vis existantes de la vitre en acrylique.
 
 * **Installation sur la borne :** Impression 3D.
-* **Branchement au ALLS :** En USB, sur le port **n°3**.
+* **Branchement au *ALLS* :** En USB, sur le port **n°3**.
 * **Branchement à l'IO4 :**
     - **CAMERA LED WARM : CN9 - Broche 7** : cathode de l'anneau de LEDs blanches qui éclaire la zone filmée.
     - **CAMERA LED RED : CN9 - Broche 8** : cathode de la LED rouge qui indique aux joueurs que la caméra filme.
 
-Si vous avez fabriqué votre propre nappe de câbles et suivi la suggestion de l'[étape 6](step-6-lighting.md), vous avez déjà un connecteur prêt pour l'IO4. Avec la PCB de conversion, deux connecteurs dédiés sont disponibles pour ces LEDs.
+Si vous avez fabriqué votre propre nappe de câbles et suivi la suggestion de [l'étape 6](step-6-lighting.md), vous avez déjà un connecteur prêt pour l'IO4. Avec la [PCB de conversion]({{IO4_CONVERSION_PCB}}), deux connecteurs dédiés sont disponibles pour ces LEDs.
 
 !!! lightbox
     ![Schéma du ALLS : port USB n°3 utilisé pour la caméra des joueurs, mis en évidence par la flèche rouge](../resources/images/step-7-cameras/alls-hx2-rear-connectors-emphasis-on-usb-no3.jpg)
@@ -48,12 +48,12 @@ Si vous avez fabriqué votre propre nappe de câbles et suivi la suggestion de l
 L'idéal est de vous procurer **deux petits modules de 30mm x 25mm** : ils s'adaptent au [modèle 3D conçu par SpiralGlide](spiralglide-resources.md#support-du-lecteur-de-qr-code-dx-pass-reader), qui se fixe grâce aux vis existantes de la vitre en acrylique.
 
 * **Installation sur la borne :** [Impression 3D](spiralglide-resources.md#support-du-lecteur-de-qr-code-dx-pass-reader).
-* **Branchement au ALLS :** En USB, via le hub USB branché sur le port **n°2** à l'[étape 1](step-1-alls-and-psu.md). N'importe quel port du hub convient.
+* **Branchement au *ALLS* :** En USB, via le hub USB branché sur le port **n°2** à [l'étape 1](step-1-alls-and-psu.md). N'importe quel port du hub convient.
 * **Branchement à l'IO4 :**
     - **1P CODE READER LED : CN3 - Broche 55** : cathodes réunies (R, G et B) de la bande de LEDs qui éclaire le lecteur du joueur 1.
     - **2P CODE READER LED : CN3 - Broche 56** : cathodes réunies (R, G et B) de la bande de LEDs qui éclaire le lecteur du joueur 2.
 
-Si vous avez suivi la suggestion de l'[étape 6](step-6-lighting.md), vous avez déjà un connecteur prêt pour ces deux signaux. Ils sont aussi disponibles sur la PCB de conversion.
+Si vous avez suivi la suggestion de [l'étape 6](step-6-lighting.md), vous avez déjà un connecteur prêt pour ces deux signaux. Ils sont aussi disponibles sur la [PCB de conversion]({{IO4_CONVERSION_PCB}}).
 
 **Pour que le jeu identifie les caméras, chacune doit filmer un QR-Code précis** : *SDEZ01* côté joueur 1, *SDEZ02* côté joueur 2. Le modèle 3D de SpiralGlide comporte une encoche à la bonne taille pour ces codes. Imprimez [ce PDF](../resources/images/step-7-cameras/codes-for-qr-code-readers.pdf) en A4, sur une imprimante correctement calibrée, pour obtenir des QR-Codes à la bonne taille, puis collez-les à leur emplacement.
 

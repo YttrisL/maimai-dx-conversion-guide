@@ -2,37 +2,37 @@
 title: "📺 2 - Screens & touchscreens"
 ---
 
-# 📺 Step 2: The Display and the HDX Touchscreens
+# 📺 Step 2: The display and the HDX touchscreens
 
-The screens change little from FiNALE to DX: **you can keep them**. The touchscreens, on the other hand, are radically different and **must be replaced** to run DX.
+The screens change little from *FiNALE* to *DX*: **you can keep them**. The touchscreens, on the other hand, are radically different and **must be replaced** to run *DX*.
 
 ## The screens
 
 ??? note "Click here for the technical explanation"
-    There are actually few differences between the screens, and the ones from a FiNALE cabinet can be reused to run DX.
+    There are actually few differences between the screens, and the ones from a *FiNALE* cabinet can be reused to run *DX*.
 
-    The main change is the size: FiNALE screens measure **42"**, DX screens **43"**. The difference is not noticeable in-game.
+    The main change is the size: *FiNALE* screens measure **42"**, *DX* screens **43"**. The difference is not noticeable in-game.
 
     In both cases, the screens have a native resolution of **1920x1080 at 60 Hz**. What differs is the connectivity on the system side:
 
-    * **RingEdge 2 (FiNALE):** both screens are linked with a DVI to VGA cable (VGA end on the screen).
-    * **ALLS (DX):** HDMI for player 1, DVI for player 2.
+    * ***RingEdge 2* (*FiNALE*):** both screens are linked with a DVI to VGA cable (VGA end on the screen).
+    * ***ALLS* (*DX*):** HDMI for player 1, DVI for player 2.
 
-    On the screens, the **DVI** port is the one to use for DX in every case: connecting the graphics card over analog (VGA) would make no sense.
+    On the screens, the **DVI** port is the one to use for *DX* in every case: connecting the graphics card over analog (VGA) would make no sense.
 
     If the screens in your cabinet work, there is no reason to replace them.
 
-The official DX manual requires a specific connection. *(Reference: [page 128](../resources/pdfs/maimai-dx-instruction-manual-full.pdf))*
+The official *DX* manual requires a specific connection. *(Reference: [page 128](../resources/pdfs/maimai-dx-instruction-manual-full.pdf))*
 
 * **Player 1 (P1):** can be connected to the **HDMI** or **DisplayPort** port (the [official manual](../resources/pdfs/maimai-dx-instruction-manual-full.pdf) only mentions HDMI).
 * **Player 2 (P2):** must be connected to the **DVI** port.
 
-As mentioned in [step 1](step-1-alls-and-psu.md), some FiNALE cabinets were modified by their operator to use the screens' **DVI** port instead of their VGA port, which was used originally. If that is your case, you can **reuse the DVI cable** for the player 2 screen. Otherwise, you will need **an HDMI to DVI cable** (player 1) and **a DVI to DVI cable** (player 2).
+As mentioned in [step 1](step-1-alls-and-psu.md), some *FiNALE* cabinets were modified by their operator to use the screens' **DVI** port instead of their VGA port, which was used originally. If that is your case, you can **reuse the DVI cable** for the player 2 screen. Otherwise, you will need **an HDMI to DVI cable** (player 1) and **a DVI to DVI cable** (player 2).
 
 ## The touchscreens
 
 ??? note "Click here for the technical explanation"
-    With the move to DX, the touchscreen was completely redesigned. Besides the technical improvements of the new model, it goes from **17 zones** on FiNALE to **34 zones** on DX. That difference alone is enough to make the original panel incompatible.
+    With the move to *DX*, the touchscreen was completely redesigned. Besides the technical improvements of the new model, it goes from **17 zones** on *FiNALE* to **34 zones** on *DX*. That difference alone is enough to make the original panel incompatible.
 
     !!! lightbox
         ![FiNALE touch zones (PiNK manual, sensor `509-6384`): 17 zones](../resources/images/step-2-touchscreen-display/maimai-pink-touch-zones.png)
@@ -40,12 +40,12 @@ As mentioned in [step 1](step-1-alls-and-psu.md), some FiNALE cabinets were modi
 
     The connectivity changes as well:
 
-    * **FiNALE:** both panels are connected to the same controller, which is wired over DB9 to the RingEdge 2.
-    * **DX:** each panel has its own dedicated controller, wired to its own DB9 on the ALLS.
+    * ***FiNALE*:** both panels are connected to the same controller, which is wired over DB9 to the *RingEdge 2*.
+    * ***DX*:** each panel has its own dedicated controller, wired to its own DB9 on the *ALLS*.
 
-    Both models have the same dimensions, and most community-made panels also follow this standard. It is therefore possible to replace a FiNALE panel with a DX one **without adapting the chassis**.
+    Both models have the same dimensions, and most community-made panels also follow this standard. It is therefore possible to replace a *FiNALE* panel with a *DX* one **without adapting the chassis**.
 
-It is practically impossible to get an official DX touchscreen, so you have to turn to **community-made alternatives**:
+It is practically impossible to get an official *DX* touchscreen, so you have to turn to **community-made alternatives**:
 
 * **HanDevice's HDX:** *the choice recommended by this guide*. Installation is much simpler thanks to its **UART** connector.
 * **yuancon's ADX:** a possible alternative, but it only connects over **USB-CDC**. You then need an external device and a complex setup to extract that signal to a DB9 connector.
@@ -59,12 +59,12 @@ It is practically impossible to get an official DX touchscreen, so you have to t
     !!! lightbox
         ![Inside of the touchscreen's metal support. Photo taken directly from the [official HDX documentation]({{HANDEVICE_HDX_DOCUMENTATION}})](../resources/images/step-2-touchscreen-display/hdx-panel-clips-removal.jpg)
 
-You then have to connect the panel to the ALLS, depending on the model you chose.
+You then have to connect the panel to the *ALLS*, depending on the model you chose.
 
 ??? example "The easy way: HDX"
     ### The easy way: HDX
 
-    The original controller of the HDX panel has a **UART port**: it therefore connects to the ALLS very simply, with only a few light adjustments.
+    The original controller of the HDX panel has a **UART port**: it therefore connects to the *ALLS* very simply, with only a few light adjustments.
 
     #### Enabling the UART port
 
@@ -76,11 +76,11 @@ You then have to connect the panel to the ALLS, depending on the model you chose
     Once the feature is enabled, the **HDX's emulated Aime reader stops working**. This is not a problem: we install a real Aime reader separately in this guide (see [step 3](step-3-aime-reader.md)).
 
     !!! info "Logic level, not RS-232"
-        This port outputs **raw UART** (TTL logic levels), while the ALLS expects **RS-232**. A **UART to RS-232** converter module is therefore needed before the DB9 connector, which the next section covers. (See [Understanding serial protocols](understanding-serial-protocols.md))
+        This port outputs **raw UART** (TTL logic levels), while the *ALLS* expects **RS-232**. A **UART to RS-232** converter module is therefore needed before the DB9 connector, which the next section covers. (See [Understanding serial protocols](understanding-serial-protocols.md))
 
     #### Connecting the DB9 adapter
 
-    The **TTL to RS-232 converter** from the [shopping list](equipment.md#electronics) does the translation: it connects to the I/O board on one side, and to the ALLS on the other through its **female DB9** plug. This part has to be repeated **for each panel** (player 1 and player 2).
+    The **TTL to RS-232 converter** from the [shopping list](equipment.md#electronics) does the translation: it connects to the I/O board on one side, and to the *ALLS* on the other through its **female DB9** plug. This part has to be repeated **for each panel** (player 1 and player 2).
 
     ##### 1. Make the cable to the converter
 
@@ -99,13 +99,13 @@ You then have to connect the panel to the ALLS, depending on the model you chose
 
     ##### 2. Plugging in
 
-    Plug the JST-SH into the I/O board's **CN10**, then link the converter's female DB9 plug to the ALLS with a **male-female DB9 cable** (the 3 m extensions from the shopping list). Respect each player's port, as explained in the next point.
+    Plug the JST-SH into the I/O board's **CN10**, then link the converter's female DB9 plug to the *ALLS* with a **male-female DB9 cable** (the 3 m extensions from the shopping list). Respect each player's port, as explained in the next point.
 
     !!! warning "HanDevice I/O board power"
         The **I/O board's USB port is only there to power it**: it carries no data here, but it must still be plugged into a **5V power supply**.
 
-        * **There is no need to plug it into the ALLS.**
-        * All the touch signals go through **CN10** and the converter: the only link with the ALLS is the converter's **DB9** plug.
+        * **There is no need to plug it into the *ALLS*.**
+        * All the touch signals go through **CN10** and the converter: the only link with the *ALLS* is the converter's **DB9** plug.
 
     !!! tip "Nothing happens in game?"
         If the panel does not respond once everything is plugged in, swap the TX and RX wires on the converter side: it is the most common crossover mistake.
@@ -129,11 +129,11 @@ You then have to connect the panel to the ALLS, depending on the model you chose
 
     * **1x** Raspberry Pi with its power supply (a Pi 3b is enough. Both ADX can share the same Pi)
     * **2x** USB to serial adapters with an **FTDI** chip (one per side)
-    * **2x** **null modem** adapters, so that the male/female connectors match those on the ALLS (or directly an FTDI adapter with a female DB9 connector if you can find one)
+    * **2x** **null modem** adapters, so that the male/female connectors match those on the *ALLS* (or directly an FTDI adapter with a female DB9 connector if you can find one)
 
     #### Setup
 
-    The program does only one thing: link **a serial port to the ALLS** with **a USB port to an ADX**. It is therefore launched **once per player**, with two paths as arguments: `maitouch_rs <port to the ALLS> <port to the ADX>`. The port paths do not matter to it, **but Linux numbers them in an order that can change at every boot** (`/dev/ttyACM0` can become `/dev/ttyACM1`). If the P1 and P2 ports get swapped, so do the players. The first part of the procedure gives each cable a **fixed name**.
+    The program does only one thing: link **a serial port to the *ALLS*** with **a USB port to an ADX**. It is therefore launched **once per player**, with two paths as arguments: `maitouch_rs <port to the ALLS> <port to the ADX>`. The port paths do not matter to it, **but Linux numbers them in an order that can change at every boot** (`/dev/ttyACM0` can become `/dev/ttyACM1`). If the P1 and P2 ports get swapped, so do the players. The first part of the procedure gives each cable a **fixed name**.
 
     ##### 1. Preparing the Raspberry Pi
 
@@ -157,7 +157,7 @@ You then have to connect the panel to the ALLS, depending on the model you chose
 
     ##### 2. Giving each cable a fixed name
 
-    Linux can identify a cable by **the Pi USB socket it is plugged into**. As long as you do not move them to another socket, each cable will therefore keep the same name. **Stick a label** on each cable (P1 ADX, P1 to ALLS, P2 ADX, P2 to ALLS), you will need them.
+    Linux can identify a cable by **the Pi USB socket it is plugged into**. As long as you do not move them to another socket, each cable will therefore keep the same name. **Stick a label** on each cable (P1 ADX, P1 to *ALLS*, P2 ADX, P2 to *ALLS*), you will need them.
 
     1. **Unplug everything** from the Pi, except its power supply.
     2. **Plug in a single cable**: the player 1 ADX, in the USB socket of your choice. Display its identifier:
@@ -168,7 +168,7 @@ You then have to connect the panel to the ALLS, depending on the model you chose
         ```
 
         The ADX shows up as `ttyACM`, the FTDI adapters as `ttyUSB`. The second command prints a line that looks like `ID_PATH=platform-xhci-hcd.0-usb-0:1.2:1.0`. **Copy it** into a notepad, noting which cable it corresponds to. If the port is named `ttyACM1` or `ttyUSB0`, adapt the command.
-    3. **Repeat** the operation with the three other cables, **one at a time** and in different sockets: the player 1 FTDI adapter (ALLS P1), the player 2 ADX, then the player 2 FTDI adapter (ALLS P2).
+    3. **Repeat** the operation with the three other cables, **one at a time** and in different sockets: the player 1 FTDI adapter (*ALLS* P1), the player 2 ADX, then the player 2 FTDI adapter (*ALLS* P2).
     4. **Create** the rules file:
 
         ```bash
@@ -196,13 +196,13 @@ You then have to connect the panel to the ALLS, depending on the model you chose
 
     ##### 3. Testing
 
-    Connect the FTDI adapters to the ALLS (see [Connecting the device to the ALLS](#connecting-the-device-to-the-alls)), then launch player 1 by hand:
+    Connect the FTDI adapters to the *ALLS* (see [Connecting the device to the *ALLS*](#connecting-the-device-to-the-alls)), then launch player 1 by hand:
 
     ```bash
     sudo maitouch /dev/alls-p1 /dev/adx-p1
     ```
 
-    The message **Ports opened** then **Read loop started** must appear. Now start the game: **From ALLS** and **From ADX** lines scroll by, and the panel responds to touch. Stop the test with `Ctrl+C` and start over with `/dev/alls-p2 /dev/adx-p2`. If the program stops with an error, it is usually because one of the two paths does not exist: go back to step 2.
+    The message **Ports opened** then **Read loop started** must appear. Now start the game: **From *ALLS*** and **From ADX** lines scroll by, and the panel responds to touch. Stop the test with `Ctrl+C` and start over with `/dev/alls-p2 /dev/adx-p2`. If the program stops with an error, it is usually because one of the two paths does not exist: go back to step 2.
 
     ##### 4. Launching automatically at startup
 
@@ -235,7 +235,7 @@ You then have to connect the panel to the ALLS, depending on the model you chose
 
     The `p1` and `p2` after the `@` replace the `%i` in the file, hence the `alls-p1` and `adx-p1` names chosen above. Check that everything is running with `systemctl status maitouch@p1 maitouch@p2`, and reboot the Pi once to confirm the panel works without launching anything by hand. If something goes wrong, `journalctl -u maitouch@p1 -f` shows what the program is doing live.
 
-### Connecting the device to the ALLS
+### Connecting the device to the *ALLS*
 
 Each side has its own COM port, **do not swap them**: otherwise the game will mix up the two players. *([Manual](../resources/pdfs/maimai-dx-instruction-manual-full.pdf), page 128)*
 
@@ -245,8 +245,8 @@ Each side has its own COM port, **do not swap them**: otherwise the game will mi
 !!! lightbox
     ![Rear view of an ALLS HX2: red arrows point to the touchscreen DB9 ports on the expansion card, P1 at the bottom right and P2 at the top left](../resources/images/step-2-touchscreen-display/alls-hx2-rear-connectors-com3-com4.jpg)
 
-Once the panels are connected to the ALLS, **the scariest part is over**. The hardest part of the guide is behind us.
+Once the panels are connected to the *ALLS*, **the scariest part is over**. The hardest part of the guide is behind us.
 
 ---
 
-Let's move on to [Step 3: The Aime Card Reader](step-3-aime-reader.md).
+Let's move on to [step 3: The Aime reader and the VFD](step-3-aime-reader.md).

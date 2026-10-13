@@ -44,7 +44,7 @@ In this guide, **RS-232 is the protocol the game uses** to:
 
 It is a widespread standard in the arcade world.
 
-**The DB9 connector:** this small trapezoidal 9-pin connector on two rows, which RS-232 made almost universal, is often wrongly mistaken for an "inverted" VGA port. You find it on the RingEdge 2 as well as on the ALLS. Of the 9 pins, **only three really matter to us**:
+**The DB9 connector:** this small trapezoidal 9-pin connector on two rows, which RS-232 made almost universal, is often wrongly mistaken for an "inverted" VGA port. You find it on the *RingEdge 2* as well as on the *ALLS*. Of the 9 pins, **only three really matter to us**:
 
 * **TX**: transmit;
 * **RX**: receive;

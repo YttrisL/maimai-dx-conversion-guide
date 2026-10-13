@@ -8,10 +8,10 @@ title: "☑️ Checklist d'achat"
 
 ## Matériel obligatoire
 
-- [ ] ALLS HX2
+- [ ] *ALLS HX2*
 - [ ] Disque dur secondaire de 500 Go (SUB STORAGE) - *si nécessaire*
 - [ ] Carte I/O Sega IO4
-- [ ] **1x**{: .quantity-emphasis } PCB de conversion maiConvert-IO4
+- [ ] **1x**{: .quantity-emphasis } [PCB de conversion maiConvert-IO4]({{IO4_CONVERSION_PCB}})
 - [ ] Lecteur Aime (Gen. 3)
 - [ ] **2x**{: .quantity-emphasis } Dalle tactile HDX
 - [ ] **16x**{: .quantity-emphasis } Boutons HDX

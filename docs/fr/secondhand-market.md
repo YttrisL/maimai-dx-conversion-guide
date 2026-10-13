@@ -8,12 +8,12 @@ title: "Le marché de l'occasion"
 
 *Hormis les petites fournitures*, la plupart des composants de cette conversion **ne se trouvent pas dans le commerce**. C'est du matériel d'arcade très spécifique, vendu uniquement par les fabricants officiels, et passer par le service après-vente de Sega est évidemment impossible. Il ne reste donc que la vente entre particuliers.
 
-**Nous dépendons donc de ce qui est disponible sur le marché de l'occasion.** Une carte Sega IO4 ou un lecteur Aime se trouvent assez facilement, un ALLS HX2 beaucoup moins, et une dalle tactile officielle de DX est pour ainsi dire introuvable. Pour certaines pièces, des alternatives existent. Pour les autres, il faudra prendre votre mal en patience et guetter une offre sur le marché de l'occasion japonais.
+**Nous dépendons donc de ce qui est disponible sur le marché de l'occasion.** Une carte Sega IO4 ou un lecteur Aime se trouvent assez facilement, un *ALLS HX2* beaucoup moins, et une dalle tactile officielle de *DX* est pour ainsi dire introuvable. Pour certaines pièces, des alternatives existent. Pour les autres, il faudra prendre votre mal en patience et guetter une offre sur le marché de l'occasion japonais.
 
 !!! tip "D'où viennent les pièces détachées ?"
-    La plupart des pièces d'occasion japonaises proviennent de bornes démantelées pour être revendues plus facilement, le plus souvent après la fermeture d'une salle d'arcade ou parce que la borne n'attirait plus de joueurs. DX étant très populaire, ses bornes sont rarement exportées, et encore plus rarement démontées pour être vendues en pièces détachées.
+    La plupart des pièces d'occasion japonaises proviennent de bornes démantelées pour être revendues plus facilement, le plus souvent après la fermeture d'une salle d'arcade ou parce que la borne n'attirait plus de joueurs. *DX* étant très populaire, ses bornes sont rarement exportées, et encore plus rarement démontées pour être vendues en pièces détachées.
 
-    Heureusement, **la plupart des composants Sega sont interchangeables** et réutilisés d'une borne à l'autre, y compris sur des machines bien moins populaires que DX, dont on trouve beaucoup plus facilement les pièces.
+    Heureusement, **la plupart des composants Sega sont interchangeables** et réutilisés d'une borne à l'autre, y compris sur des machines bien moins populaires que *DX*, dont on trouve beaucoup plus facilement les pièces.
 
 ## Acheter via un proxy
 
@@ -29,7 +29,7 @@ Parmi ces services :
 * **[Buyee]({{BUYEE}})** : l'un des plus connus et des plus anciens, mais lisez l'avertissement ci-dessous.
 
 !!! warning "Buyee n'expédie pas certaines pièces électroniques"
-    Buyee refuse d'expédier à l'international tout article contenant une pile ou une batterie au lithium, en application des réglementations sur le transport aérien de matières dangereuses. Or, certaines pièces recherchées, comme le ALLS HX2, embarquent une petite pile bouton au lithium qui alimente leur horloge interne (RTC) hors tension. **Dans les faits, ces pièces ne peuvent donc pas être expédiées via Buyee.**
+    Buyee refuse d'expédier à l'international tout article contenant une pile ou une batterie au lithium, en application des réglementations sur le transport aérien de matières dangereuses. Or, certaines pièces recherchées, comme le *ALLS HX2*, embarquent une petite pile bouton au lithium qui alimente leur horloge interne (RTC) hors tension. **Dans les faits, ces pièces ne peuvent donc pas être expédiées via Buyee.**
 
     Pour ces articles, préférez un service comme Neokyo ou Zenmarket, qui n'appliquent pas cette restriction.
 
@@ -62,4 +62,4 @@ Trouver la bonne pièce sur JDirectItems Auction peut être frustrant sans quelq
     * les éventuels frais de douane à la réception, qui varient selon votre pays.
 
     Une carte électronique compacte reste généralement raisonnable à expédier, mais gardez ce calcul en tête avant d'enchérir trop haut sur une pièce rare.
-* **Créez une alerte.** La plupart des proxys permettent d'enregistrer une recherche et d'être notifié dès qu'un nouvel article correspondant apparaît. C'est particulièrement utile pour les pièces rares comme le ALLS HX2, qui peuvent mettre des semaines, voire des mois, à réapparaître.
+* **Créez une alerte.** La plupart des proxys permettent d'enregistrer une recherche et d'être notifié dès qu'un nouvel article correspondant apparaît. C'est particulièrement utile pour les pièces rares comme le *ALLS HX2*, qui peuvent mettre des semaines, voire des mois, à réapparaître.

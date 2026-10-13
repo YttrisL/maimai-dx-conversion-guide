@@ -2,7 +2,7 @@
 title: "📷 7 - Cameras (optional)"
 ---
 
-# 📷 Step 7: Cameras (Optional)
+# 📷 Step 7: Cameras (optional)
 
 At this point, only one feature still separates your conversion from a real *DX*: **the cameras**. The game uses them very little, and they are widely considered optional. But if you want to get as close as possible to a real *DX*, they are fortunately quite simple to install.
 
@@ -25,19 +25,19 @@ At this point, only one feature still separates your conversion from a real *DX*
 
     In both cases, the game provides **dedicated lighting for each camera**, driven by the IO4. Connecting it is not essential, but without proper lighting, the QR-code readers are likely to work very poorly. For the player camera, lighting becomes necessary if your cabinet is in a dark room. The game also drives a red LED, which warns players that the camera is filming.
 
-    The cameras connect to the ALLS over USB: the player camera directly to the motherboard, the two QR-code reader cameras to the USB hub that already hosts the LED controllers' RS-232 to USB adapter (see [step 6](step-6-lighting.md)).
+    The cameras connect to the *ALLS* over USB: the player camera directly to the motherboard, the two QR-code reader cameras to the USB hub that already hosts the LED controllers' RS-232 to USB adapter (see [step 6](step-6-lighting.md)).
 
 ## Player camera (in-game photos)
 
 Every camera model is different, so a universal mount is hard to offer. The best option is to **design a 3D-printable mount** to install at the top of the cabinet, using the existing screws of the acrylic panel.
 
 * **Installation on the cabinet:** 3D printing.
-* **Connection to the ALLS:** USB, on port **#3**.
+* **Connection to the *ALLS*:** USB, on port **#3**.
 * **Connection to the IO4:**
     - **CAMERA LED WARM: CN9 - Pin 7**: cathode of the white LED ring that lights the filmed area.
     - **CAMERA LED RED: CN9 - Pin 8**: cathode of the red LED that tells players the camera is filming.
 
-If you made your own wiring harness and followed the suggestion in [step 6](step-6-lighting.md), you already have a connector ready for the IO4. With the conversion PCB, two dedicated connectors are available for these LEDs.
+If you made your own wiring harness and followed the suggestion in [step 6](step-6-lighting.md), you already have a connector ready for the IO4. With the [conversion PCB]({{IO4_CONVERSION_PCB}}), two dedicated connectors are available for these LEDs.
 
 !!! lightbox
     ![ALLS diagram: USB port #3 used for the player camera, highlighted by the red arrow](../resources/images/step-7-cameras/alls-hx2-rear-connectors-emphasis-on-usb-no3.jpg)
@@ -48,12 +48,12 @@ If you made your own wiring harness and followed the suggestion in [step 6](step
 Ideally, get **two small 30mm x 25mm modules**: they fit [the 3D model designed by SpiralGlide](spiralglide-resources.md#qr-code-reader-mount-dx-pass-reader), which attaches using the existing screws of the acrylic panel.
 
 * **Installation on the cabinet:** [3D printing](spiralglide-resources.md#qr-code-reader-mount-dx-pass-reader).
-* **Connection to the ALLS:** USB, through the USB hub plugged into port **#2** in [step 1](step-1-alls-and-psu.md). Any port on the hub will do.
+* **Connection to the *ALLS*:** USB, through the USB hub plugged into port **#2** in [step 1](step-1-alls-and-psu.md). Any port on the hub will do.
 * **Connection to the IO4:**
     - **1P CODE READER LED: CN3 - Pin 55**: tied cathodes (R, G and B) of the LED strip lighting the player 1 reader.
     - **2P CODE READER LED: CN3 - Pin 56**: tied cathodes (R, G and B) of the LED strip lighting the player 2 reader.
 
-If you followed the suggestion in [step 6](step-6-lighting.md), you already have a connector ready for these two signals. They are also available on the conversion PCB.
+If you followed the suggestion in [step 6](step-6-lighting.md), you already have a connector ready for these two signals. They are also available on the [conversion PCB]({{IO4_CONVERSION_PCB}}).
 
 **For the game to identify the cameras, each one must film a specific QR-code**: *SDEZ01* on the player 1 side, *SDEZ02* on the player 2 side. SpiralGlide's 3D model has a slot of the right size for these codes. Print [this PDF](../resources/images/step-7-cameras/codes-for-qr-code-readers.pdf) on A4, with a properly calibrated printer, to get QR-codes of the right size, then stick them in place.
 

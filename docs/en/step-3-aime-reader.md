@@ -2,30 +2,30 @@
 title: "💳 3 - Aime card reader"
 ---
 
-# 💳 Step 3: The Aime Reader and the VFD
+# 💳 Step 3: The Aime reader and the VFD
 
-**The FiNALE Aime readers are not compatible with DX**: you need to install a newer-generation reader. The VFD has no real use in our conversion, but the software still requires it. Good news: both are very simple to install.
+**The *FiNALE* Aime readers are not compatible with *DX***: you need to install a newer-generation reader. The VFD has no real use in our conversion, but the software still requires it. Good news: both are very simple to install.
 
 ## Technical explanation
 
 ??? note "Click here for the technical explanation"
-    FiNALE uses two previous-generation Aime readers, chained to each other: the top one reads the left player's card, the bottom one the right player's.
+    *FiNALE* uses two previous-generation Aime readers, chained to each other: the top one reads the left player's card, the bottom one the right player's.
 
-    On DX, there is only **a single reader**. When a card is scanned, the profile appears on both screens: its owner confirms the login on their screen, then the second player can scan their own card. The technology used is completely different: **a FiNALE Aime reader cannot be reused.**
+    On *DX*, there is only **a single reader**. When a card is scanned, the profile appears on both screens: its owner confirms the login on their screen, then the second player can scan their own card. The technology used is completely different: **a *FiNALE* Aime reader cannot be reused.**
 
     !!! info "aic_pico"
-        It is technically possible to use an [aic_pico]({{AIC_PICO_REPO}}), an open-source project that imitates a real Aime reader transparently for the game. It is much cheaper to produce, but would need a good deal of tinkering to be connected to the corresponding DB9 port on the ALLS.
+        It is technically possible to use an [aic_pico]({{AIC_PICO_REPO}}), an open-source project that imitates a real Aime reader transparently for the game. It is much cheaper to produce, but would need a good deal of tinkering to be connected to the corresponding DB9 port on the *ALLS*.
 
     Last-generation Aime readers are not that rare anyway, and are often sold **as a combo with the VFD** that we also need. This generation is technically compatible with electronic payment, but even in Japan, that feature is almost never used: operators prefer to install their own, more flexible payment terminal.
 
 ## The connectors
 
-Connecting to the ALLS is extremely simple:
+Connecting to the *ALLS* is extremely simple:
 
 * Aime reader: **COM1**
 * VFD: **COM2**
 
-Both COM ports are physical DB9 ports on the ALLS. However, your Aime + VFD combo probably did not come with a ready-to-use DB9 cable: **you will have to crimp your own cables**, from the Aime reader and VFD connectors to the DB9.
+Both COM ports are physical DB9 ports on the *ALLS*. However, your Aime + VFD combo probably did not come with a ready-to-use DB9 cable: **you will have to crimp your own cables**, from the Aime reader and VFD connectors to the DB9.
 
 !!! lightbox
     ![Front face of an Aime reader from a Star Horse 4 cabinet](../resources/images/step-3-aime-reader/front-aime-reader-from-star-horse-4.jpg)
@@ -35,8 +35,8 @@ Both COM ports are physical DB9 ports on the ALLS. However, your Aime + VFD comb
 
 Take your female-female DB9 cable and **cut it in two** to expose the wires. Two options:
 
-* **Cut a long cable in the middle**, long enough once cut to run cleanly from the ALLS to the center of the cabinet, where the combo will be installed.
-* **Cut about twenty centimeters** from one connector, then reach the ALLS with a simple male-female DB9 cable of the right length.
+* **Cut a long cable in the middle**, long enough once cut to run cleanly from the *ALLS* to the center of the cabinet, where the combo will be installed.
+* **Cut about twenty centimeters** from one connector, then reach the *ALLS* with a simple male-female DB9 cable of the right length.
 
 *The second option is recommended*: no bulky cable length while crimping, an easier installation, and a combo that is easier to unplug for maintenance.
 
@@ -81,7 +81,7 @@ As for the Aime reader, add **2 flying power wires**, red on **5V** and black on
 
 The Aime reader and the VFD now each have a pair of flying 5V/GND wires. **Join them in a Y on a single 2-pin JST-SM connector**: both red wires (5V) together on one pin, both black wires (GND) together on the other. Placed next to your two DB9 cables, this connector makes the combo easier to install and to unplug for maintenance.
 
-Congratulations, your cables for the ALLS are ready!
+Congratulations, your cables for the *ALLS* are ready!
 
 !!! lightbox
     ![The two finished female DB9 cables, with their JST connectors for the Aime reader and the VFD](../resources/images/step-3-aime-reader/finished-cables.jpg)
@@ -102,7 +102,7 @@ Use [the 3D model designed by SpiralGlide](spiralglide-resources.md#aime-reader-
 
 ## Final step
 
-Once the combo is installed on the front of the cabinet, all that's left is to plug the two cables into the ALLS DB9 ports. As a reminder: **Aime on COM1**, **VFD on COM2**.
+Once the combo is installed on the front of the cabinet, all that's left is to plug the two cables into the *ALLS* DB9 ports. As a reminder: **Aime on COM1**, **VFD on COM2**.
 
 Then don't forget to **connect the 5V and GND** of both connectors to the power supply installed in [step 1](step-1-alls-and-psu.md).
 
@@ -119,9 +119,9 @@ Then don't forget to **connect the 5V and GND** of both connectors to the power 
     * Make a female DB9 cable for the VFD.
     * Secure the cables so they don't move.
     * Install the combo on the front of the cabinet.
-    * Plug both connectors into the ALLS.
+    * Plug both connectors into the *ALLS*.
     * Connect the power supply.
 
 ---
 
-Let's move on to [Step 4: The I/O Board and the Buttons](step-4-io-board.md).
+Let's move on to [step 4: The I/O board and the buttons](step-4-io-board.md).

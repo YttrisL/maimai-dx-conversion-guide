@@ -4,54 +4,54 @@ title: "💡 6 - Lighting (optional)"
 
 # 💡 Step 6: Lighting
 
-Lighting is technically *optional*: it has no impact on gameplay. But the job is not that complex, and lighting adds a lot to DX's charm. **It is recommended not to skip this step.**
+Lighting is technically *optional*: it has no impact on gameplay. But the job is not that complex, and lighting adds a lot to *DX*'s charm. **It is recommended not to skip this step.**
 
 ## Technical explanation
 
 ??? note "Click here for the technical explanation"
-    ### How the LEDs work on a maimai DX
+    ### How the LEDs work on a *maimai DX*
 
     On a real *DX* cabinet, lighting is driven by three controllers:
 
-    * The **IO4** handles the **billboard** (labeled `BILLBOARD LED` / `ROOF LED` on Sega's diagrams). See [Step 4](step-4-io-board.md).
+    * The **IO4** handles the **billboard** (labeled `BILLBOARD LED` / `ROOF LED` on Sega's diagrams). See [step 4](step-4-io-board.md).
     * Two identical control boards (part no. `837-15070-04`):
         * P1 side: the eight buttons, the background lighting and the left side lighting.
         * P2 side: the eight buttons, the background lighting and the right side lighting.
 
     ![Lighting control chain: the P1 and P2 LED boards (part no. `837-15070-04`) join the RS-232 to USB adapter (part no. `837-15067-02`) over RS-232, itself plugged into the USB hub shared with the P1 and P2 QR-code cameras](../resources/images/step-6-lighting/led-controllers-chain-en.svg)
 
-    Both control boards are connected over RS-232 to a single RS-232 to USB adapter, itself plugged into the same USB hub as the QR-code readers (see [Step 7](step-7-cameras.md)).
+    Both control boards are connected over RS-232 to a single RS-232 to USB adapter, itself plugged into the same USB hub as the QR-code readers (see [step 7](step-7-cameras.md)).
 
     !!! info "COM port software configuration"
-        The LED controllers show up on the following virtual COM ports of the ALLS:
+        The LED controllers show up on the following virtual COM ports of the *ALLS*:
 
         * **COM21** for the P1 LEDs.
         * **COM23** for the P2 LEDs.
 
-    ### How the LEDs work on a maimai FiNALE
+    ### How the LEDs work on a *maimai FiNALE*
 
-    Things are a bit simpler on FiNALE:
+    Things are a bit simpler on *FiNALE*:
 
-    * Unlike DX, no LED goes through the IO3.
+    * Unlike *DX*, no LED goes through the IO3.
     * Two identical control boards handle the LEDs (part no. `837-15070-02-91`):
         * P1 side: the eight buttons, the background lighting, the woofers, and the billboard on the P1 side and in the center.
         * P2 side: the eight buttons, the background lighting, the woofers, and the billboard on the P2 side.
 
     ![Lighting control chain on FiNALE: the P1 and P2 LED boards (part no. `837-15070-02-91`) join the same RS-232 to USB adapter as on DX (part no. `837-15067-02`) over RS-232, plugged directly into a USB port of the RingEdge 2, with no USB hub](../resources/images/step-6-lighting/led-controllers-chain-finale-en.svg)
 
-    As on DX, these two boards are connected over RS-232 to an RS-232 to USB adapter. Luckily, **it is exactly the same one on FiNALE and DX (part no. `837-15067-02`)**. The only difference: on FiNALE, it plugs directly into a USB port of the RingEdge 2, with no hub.
+    As on *DX*, these two boards are connected over RS-232 to an RS-232 to USB adapter. Luckily, **it is exactly the same one on *FiNALE* and *DX* (part no. `837-15067-02`)**. The only difference: on *FiNALE*, it plugs directly into a USB port of the *RingEdge 2*, with no hub.
 
     ### What this means for a conversion
 
     * **The RS-232 to USB adapter plugs into the 4-port USB hub** installed in [step 1](step-1-alls-and-psu.md). Any port on the hub will do.
-    * **The billboard must be rewired to the IO4**: on DX, the LED controllers no longer receive any information to light it.
-    * Above all, **the FiNALE and DX LED controllers do not have the same part number**. Plugged into an ALLS running DX, a FiNALE controller causes **a non-blocking error at startup**: it reports `837-15070-02-91` while the game expects `837-15070-04`. Fun fact: in this state, the game still sends the button lighting, but not the background lighting.
+    * **The billboard must be rewired to the IO4**: on *DX*, the LED controllers no longer receive any information to light it.
+    * Above all, **the *FiNALE* and *DX* LED controllers do not have the same part number**. Plugged into an *ALLS* running *DX*, a *FiNALE* controller causes **a non-blocking error at startup**: it reports `837-15070-02-91` while the game expects `837-15070-04`. Fun fact: in this state, the game still sends the button lighting, but not the background lighting.
 
     Fortunately, all three problems have a solution.
 
 ## For the gameplay buttons and the background of both players
 
-For the LED controllers, **DX expects the ID `837-15070-04`**, but the FiNALE ones return `837-15070-02-91`, which puts the game in error. That is the only problem: otherwise, the FiNALE controller is 100% compatible with the instructions sent by DX.
+For the LED controllers, ***DX* expects the ID `837-15070-04`**, but the *FiNALE* ones return `837-15070-02-91`, which puts the game in error. That is the only problem: otherwise, the *FiNALE* controller is 100% compatible with the instructions sent by *DX*.
 
 Both controllers therefore need to return the expected ID. A software patch would be simple, but we want to leave the game software untouched: **the solution will be hardware.**
 
@@ -116,26 +116,26 @@ For each LED controller:
 * Plug the proxy's **female connector** in its place, on the RS-232 to USB adapter.
 * Power the proxy.
 
-All that's left is to plug the RS-232 to USB adapter into the ALLS through the USB hub. **The game should recognize the LED controllers natively**, without any software modification.
+All that's left is to plug the RS-232 to USB adapter into the *ALLS* through the USB hub. **The game should recognize the LED controllers natively**, without any software modification.
 
 !!! warning "Plug the adapter in correctly"
-    As explained in [step 1](step-1-alls-and-psu.md), **the USB hub must be plugged into USB port #2** of the ALLS, and the RS-232 to USB adapter into that hub. maimai DX is very strict about USB ports: if plugged in wrong, the LEDs will not light up.
+    As explained in [step 1](step-1-alls-and-psu.md), **the USB hub must be plugged into USB port #2** of the *ALLS*, and the RS-232 to USB adapter into that hub. *maimai DX* is very strict about USB ports: if plugged in wrong, the LEDs will not light up.
 
 ## For the billboard and the woofers
 
 ??? note "Click here for the technical explanation"
-    On FiNALE, the woofers and the billboard share the same circuit: lighting one always lights the other. The woofers are no longer lit on DX, but that is not a problem since the billboard still is.
+    On *FiNALE*, the woofers and the billboard share the same circuit: lighting one always lights the other. The woofers are no longer lit on *DX*, but that is not a problem since the billboard still is.
 
-    However, on DX, **the IO4 handles these LEDs**: the game simply no longer sends this information to the LED controller. The reason for this change remains a mystery, but it means part of the wiring has to be redone.
+    However, on *DX*, **the IO4 handles these LEDs**: the game simply no longer sends this information to the LED controller. The reason for this change remains a mystery, but it means part of the wiring has to be redone.
 
-    Luckily, the FiNALE wiring diagram references a very handy connector, which lets us distribute the signal to the player 1 and player 2 sides without rewiring the whole cabinet:
+    Luckily, the *FiNALE* wiring diagram references a very handy connector, which lets us distribute the signal to the player 1 and player 2 sides without rewiring the whole cabinet:
 
     !!! lightbox
         ![FiNALE wiring diagram, connector AB on the P1 side: the MAI-60109 harness powers the CENTER LED, ROOF LED (L), ROOF LED (R) and WOOFER LED boards](../resources/images/step-6-lighting/lighting-topper-p1-side.png)
         ![FiNALE wiring diagram, connector BB on the P2 side: the MAI-60109 harness powers the WOOFER LED, ROOF LED (L) and ROOF LED (R) boards, with the SM5P connector unused](../resources/images/step-6-lighting/lighting-topper-p2-side.png)
         ![8-pin JST-SM connector that connects the woofers and the billboard lighting (in black)](../resources/images/step-6-lighting/billboard-woofer-jst-sm-8-connector.jpg)
 
-    The P1 diagram includes a `CENTER LED` element, absent on the P2 side: it is the lighting for the center of the billboard. On DX, this distinction does not exist: even though the signals are separate, the billboard is always the same color on both sides. The simplest solution is therefore to **connect pins `A2`, `A5` and `A8` of the P1 connector to pins `C3`, `C5` and `C8`**, so the center takes the same color as the player 1 side.
+    The P1 diagram includes a `CENTER LED` element, absent on the P2 side: it is the lighting for the center of the billboard. On *DX*, this distinction does not exist: even though the signals are separate, the billboard is always the same color on both sides. The simplest solution is therefore to **connect pins `A2`, `A5` and `A8` of the P1 connector to pins `C3`, `C5` and `C8`**, so the center takes the same color as the player 1 side.
 
 Two methods are possible:
 
@@ -143,7 +143,7 @@ Two methods are possible:
 * **Without it**: make your own IO4-compatible wiring harness to connect the LEDs.
 
 ??? example "The easy way - The conversion PCB"
-    Simply plug the LED controller's output connector into the conversion PCB. That's it: *the 12V has already been connected since [step 4](step-4-io-board.md).*
+    Simply plug the LED controller's output connector into the [conversion PCB]({{IO4_CONVERSION_PCB}}). That's it: *the 12V has already been connected since [step 4](step-4-io-board.md).*
 
     !!! tip "Reminder: two separate power supplies"
         The PCB is powered by **the cabinet's LED power supply**, never by the IO4's 12V. The two circuits share a common ground, but stay separate.
@@ -154,7 +154,7 @@ Two methods are possible:
         ![Conversion PCB [maiConvert-IO4]({{IO4_CONVERSION_PCB}}): location of connector J22 (`12V input`, watch the polarity) and connectors J23/J24 (`BILLBOARD LED L`/`R`) where the billboard LED harness connects](../resources/images/step-6-lighting/led-inputs-and-12-on-convertion-pcb.jpg)
         ![Male 8-position JST-SM wiring harnesses that handle the billboard and woofer LEDs, unplugged from the connector wired to the LED controller on a FiNALE cabinet](../resources/images/step-6-lighting/billboard-woofer-jst-sm-8-connector.jpg)
 
-    *If you plan to install the cameras in the next step*, the conversion PCB will make your life easier there too: it already has ready-to-use connectors for their LEDs.
+    *If you plan to install the cameras in the next step*, the [conversion PCB]({{IO4_CONVERSION_PCB}}) will make your life easier there too: it already has ready-to-use connectors for their LEDs.
 
 ??? example "Making a wiring harness by hand"
     The harness plugs into the IO4 through a 20-pin JST-RA connector (CN9), and ends in two 8-pin JST-SM connectors, for the left and right sides. If you followed the suggestions in [step 4](step-4-io-board.md), you already have a female 2-pin JST-SM connector wired to the IO4's CN3 for the `BILLBOARD LED L RED` and `BILLBOARD LED R RED` signals.
@@ -184,7 +184,7 @@ Two methods are possible:
 
     * Build two proxies, each based on a Raspberry Pi Pico and a `Pico-2CH-RS232`.
     * Install each proxy between its LED controller and the RS-232 to USB adapter.
-    * Plug the adapter into the USB hub, and the hub into USB port #2 of the ALLS.
+    * Plug the adapter into the USB hub, and the hub into USB port #2 of the *ALLS*.
 
     For the billboard and the woofers:
 
@@ -193,4 +193,4 @@ Two methods are possible:
 
 ---
 
-Let's move on to [Step 7: Cameras (Optional)](step-7-cameras.md).
+Let's move on to [step 7: Cameras (optional)](step-7-cameras.md).

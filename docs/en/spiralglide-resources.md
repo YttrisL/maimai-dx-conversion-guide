@@ -12,7 +12,7 @@ The original inspiration for this guide comes from the work of **SpiralGlide**, 
 
 ## The 3D-printable parts
 
-SpiralGlide modelled the mounts that let the Aime reader and the DX QR-code reader be fitted to the cabinet's center tower without any destructive modification. That is four `.stl` files, split into two assemblies.
+SpiralGlide modelled the mounts that let the Aime reader and the *DX* QR-code reader be fitted to the cabinet's center tower without any destructive modification. That is four `.stl` files, split into two assemblies.
 
 ### Aime reader mount
 

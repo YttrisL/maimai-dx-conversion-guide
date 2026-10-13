@@ -8,10 +8,10 @@ title: "☑️ Purchase checklist"
 
 ## Mandatory hardware
 
-- [ ] ALLS HX2
+- [ ] *ALLS HX2*
 - [ ] 500 GB secondary hard drive (SUB STORAGE) - *if needed*
 - [ ] Sega IO4 I/O board
-- [ ] **1x**{: .quantity-emphasis } maiConvert-IO4 conversion PCB
+- [ ] **1x**{: .quantity-emphasis } [maiConvert-IO4 conversion PCB]({{IO4_CONVERSION_PCB}})
 - [ ] Aime reader (Gen. 3)
 - [ ] **2x**{: .quantity-emphasis } HDX touchscreen
 - [ ] **16x**{: .quantity-emphasis } HDX buttons

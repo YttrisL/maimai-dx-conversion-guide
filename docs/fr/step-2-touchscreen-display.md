@@ -2,37 +2,37 @@
 title: "📺 2 - Écrans et dalles tactiles"
 ---
 
-# 📺 Étape 2 : L'Affichage et les Dalles Tactiles HDX
+# 📺 Étape 2 : L'affichage et les dalles tactiles HDX
 
-Les écrans changent peu de FiNALE à DX : **vous pouvez les garder**. Les dalles tactiles, en revanche, sont radicalement différentes et **doivent être remplacées** pour faire fonctionner DX.
+Les écrans changent peu de *FiNALE* à *DX* : **vous pouvez les garder**. Les dalles tactiles, en revanche, sont radicalement différentes et **doivent être remplacées** pour faire fonctionner *DX*.
 
 ## Les écrans
 
 ??? note "Cliquez ici pour l'explication technique"
-    Il y a finalement peu de différences au niveau des écrans, et ceux d'une borne FiNALE peuvent être réutilisés pour faire tourner DX.
+    Il y a finalement peu de différences au niveau des écrans, et ceux d'une borne *FiNALE* peuvent être réutilisés pour faire tourner *DX*.
 
-    Le principal changement est la taille : les écrans de FiNALE mesurent **42"**, ceux de DX **43"**. La nuance n'est pas perceptible en jeu.
+    Le principal changement est la taille : les écrans de *FiNALE* mesurent **42"**, ceux de *DX* **43"**. La nuance n'est pas perceptible en jeu.
 
     Dans les deux cas, les écrans affichent une résolution native de **1920x1080 à 60 Hz**. C'est la connectique côté système qui diffère :
 
-    * **RingEdge 2 (FiNALE) :** les deux écrans sont reliés par un câble DVI vers VGA (côté VGA sur l'écran).
-    * **ALLS (DX) :** HDMI pour le joueur 1, DVI pour le joueur 2.
+    * ***RingEdge 2* (*FiNALE*) :** les deux écrans sont reliés par un câble DVI vers VGA (côté VGA sur l'écran).
+    * ***ALLS* (*DX*) :** HDMI pour le joueur 1, DVI pour le joueur 2.
 
-    Sur les écrans, c'est dans tous les cas le port **DVI** qu'il faut utiliser pour DX : brancher la carte graphique en analogique (VGA) n'aurait aucun sens.
+    Sur les écrans, c'est dans tous les cas le port **DVI** qu'il faut utiliser pour *DX* : brancher la carte graphique en analogique (VGA) n'aurait aucun sens.
 
     Si les écrans de votre borne sont fonctionnels, il n'y a aucune raison de les changer.
 
-Le manuel officiel de DX impose un branchement précis. *(Référence : [page 128](../resources/pdfs/maimai-dx-instruction-manual-full.pdf))*
+Le manuel officiel de *DX* impose un branchement précis. *(Référence : [page 128](../resources/pdfs/maimai-dx-instruction-manual-full.pdf))*
 
 * **Joueur 1 (P1) :** peut être branché sur le port **HDMI** ou **DisplayPort** (le [manuel officiel](../resources/pdfs/maimai-dx-instruction-manual-full.pdf) ne mentionne que le HDMI).
 * **Joueur 2 (P2) :** doit être branché sur le port **DVI**.
 
-Comme mentionné à [l'étape 1](step-1-alls-and-psu.md), certaines bornes FiNALE ont été modifiées par leur exploitant pour utiliser le port **DVI** des écrans plutôt que leur port VGA, utilisé à l'origine. Si c'est votre cas, vous pouvez **réutiliser le câble DVI** pour l'écran du joueur 2. Sinon, il vous faudra **un câble HDMI vers DVI** (joueur 1) et **un câble DVI vers DVI** (joueur 2).
+Comme mentionné à [l'étape 1](step-1-alls-and-psu.md), certaines bornes *FiNALE* ont été modifiées par leur exploitant pour utiliser le port **DVI** des écrans plutôt que leur port VGA, utilisé à l'origine. Si c'est votre cas, vous pouvez **réutiliser le câble DVI** pour l'écran du joueur 2. Sinon, il vous faudra **un câble HDMI vers DVI** (joueur 1) et **un câble DVI vers DVI** (joueur 2).
 
 ## Les dalles tactiles
 
 ??? note "Cliquez ici pour l'explication technique"
-    Au passage à DX, la dalle tactile a été entièrement revue. Outre les améliorations techniques du nouveau modèle, elle passe de **17 zones** sur FiNALE à **34 zones** sur DX. Cette seule différence suffit à rendre la dalle d'origine incompatible.
+    Au passage à *DX*, la dalle tactile a été entièrement revue. Outre les améliorations techniques du nouveau modèle, elle passe de **17 zones** sur *FiNALE* à **34 zones** sur *DX*. Cette seule différence suffit à rendre la dalle d'origine incompatible.
 
     !!! lightbox
         ![Zones tactiles de FiNALE (manuel PiNK, capteur `509-6384`) : 17 zones](../resources/images/step-2-touchscreen-display/maimai-pink-touch-zones.png)
@@ -40,12 +40,12 @@ Comme mentionné à [l'étape 1](step-1-alls-and-psu.md), certaines bornes FiNAL
 
     La connectique évolue également :
 
-    * **FiNALE :** les deux dalles sont raccordées au même contrôleur, connecté en DB9 sur le RingEdge 2.
-    * **DX :** chaque dalle a son propre contrôleur dédié, raccordé à son propre DB9 sur le ALLS.
+    * ***FiNALE* :** les deux dalles sont raccordées au même contrôleur, connecté en DB9 sur le *RingEdge 2*.
+    * ***DX* :** chaque dalle a son propre contrôleur dédié, raccordé à son propre DB9 sur le *ALLS*.
 
-    Les deux modèles ont les mêmes dimensions, et la majorité des dalles produites par la communauté respectent également ce standard. Il est donc possible de remplacer une dalle de FiNALE par une dalle de DX **sans adapter le châssis**.
+    Les deux modèles ont les mêmes dimensions, et la majorité des dalles produites par la communauté respectent également ce standard. Il est donc possible de remplacer une dalle de *FiNALE* par une dalle de *DX* **sans adapter le châssis**.
 
-Il est pour ainsi dire impossible d'obtenir une dalle tactile DX officielle, il faut donc se tourner vers les **alternatives produites par la communauté** :
+Il est pour ainsi dire impossible d'obtenir une dalle tactile *DX* officielle, il faut donc se tourner vers les **alternatives produites par la communauté** :
 
 * **HDX de HanDevice :** *le choix recommandé par ce guide*. Son installation est bien plus simple grâce à son connecteur **UART**.
 * **ADX de yuancon :** une alternative possible, mais elle ne se branche qu'en **USB-CDC**. Il faut alors un appareil externe et une installation complexe pour extraire ce signal vers un connecteur DB9.
@@ -59,7 +59,7 @@ Il est pour ainsi dire impossible d'obtenir une dalle tactile DX officielle, il 
     !!! lightbox
         ![Intérieur du support métallique de la dalle tactile. Photo tirée directement de la [documentation officielle du HDX]({{HANDEVICE_HDX_DOCUMENTATION}})](../resources/images/step-2-touchscreen-display/hdx-panel-clips-removal.jpg)
 
-Il reste ensuite à brancher la dalle au ALLS, selon le modèle que vous avez choisi.
+Il reste ensuite à brancher la dalle au *ALLS*, selon le modèle que vous avez choisi.
 
 ??? example "La méthode facile : HDX"
 
@@ -67,7 +67,7 @@ Il reste ensuite à brancher la dalle au ALLS, selon le modèle que vous avez ch
     
     ### La méthode facile : HDX
 
-    Le contrôleur d'origine de la dalle HDX possède un **port UART** : il se connecte donc très simplement au ALLS, avec seulement quelques aménagements légers.
+    Le contrôleur d'origine de la dalle HDX possède un **port UART** : il se connecte donc très simplement au *ALLS*, avec seulement quelques aménagements légers.
 
     #### Activer le port UART
 
@@ -79,11 +79,11 @@ Il reste ensuite à brancher la dalle au ALLS, selon le modèle que vous avez ch
     Une fois la fonction activée, le **lecteur Aime émulé du HDX cesse de fonctionner**. Ce n'est pas un problème : nous installons un véritable lecteur Aime séparément dans ce guide (voir [l'étape 3](step-3-aime-reader.md)).
 
     !!! info "Niveau logique, pas RS-232"
-        Ce port sort de l'**UART brut** (niveaux logiques TTL), alors que le ALLS attend du **RS-232**. Il faut donc un module de conversion **UART vers RS-232** avant le connecteur DB9, ce que traite la section suivante. (Voir [Comprendre les protocoles série](understanding-serial-protocols.md))
+        Ce port sort de l'**UART brut** (niveaux logiques TTL), alors que le *ALLS* attend du **RS-232**. Il faut donc un module de conversion **UART vers RS-232** avant le connecteur DB9, ce que traite la section suivante. (Voir [Comprendre les protocoles série](understanding-serial-protocols.md))
 
     #### Raccorder l'adaptateur DB9
 
-    Le **convertisseur TTL vers RS-232** de la [liste de courses](equipment.md#electronique) fait la traduction : il se branche d'un côté à la carte I/O, et de l'autre, via sa fiche **DB9 femelle**, au ALLS. Cette partie est à refaire **pour chaque dalle** (joueur 1 et joueur 2).
+    Le **convertisseur TTL vers RS-232** de la [liste de courses](equipment.md#electronique) fait la traduction : il se branche d'un côté à la carte I/O, et de l'autre, via sa fiche **DB9 femelle**, au *ALLS*. Cette partie est à refaire **pour chaque dalle** (joueur 1 et joueur 2).
 
     ##### 1. Confectionner le câble vers le convertisseur
 
@@ -102,13 +102,13 @@ Il reste ensuite à brancher la dalle au ALLS, selon le modèle que vous avez ch
 
     ##### 2. Branchement
 
-    Branchez le JST-SH sur le **CN10** de la carte I/O, puis reliez la fiche DB9 femelle du convertisseur au ALLS avec un **câble DB9 mâle-femelle** (les rallonges de 3 m de la liste de courses). Respectez le port de chaque joueur, comme expliqué au point suivant.
+    Branchez le JST-SH sur le **CN10** de la carte I/O, puis reliez la fiche DB9 femelle du convertisseur au *ALLS* avec un **câble DB9 mâle-femelle** (les rallonges de 3 m de la liste de courses). Respectez le port de chaque joueur, comme expliqué au point suivant.
 
     !!! warning "Alimentation de la carte I/O HanDevice"
         Le **port USB de la carte I/O ne sert qu'à l'alimenter** : il ne transmet aucune donnée ici, mais il doit quand même être branché à une **alimentation 5V**.
 
-        * **Il est inutile de le brancher au ALLS.**
-        * Tous les signaux tactiles passent par le **CN10** et le convertisseur : le seul lien avec le ALLS est la fiche **DB9** du convertisseur.
+        * **Il est inutile de le brancher au *ALLS*.**
+        * Tous les signaux tactiles passent par le **CN10** et le convertisseur : le seul lien avec le *ALLS* est la fiche **DB9** du convertisseur.
 
     !!! tip "Rien ne se passe en jeu ?"
         Si la dalle ne répond pas une fois tout branché, inversez les fils TX et RX côté convertisseur : c'est l'erreur de croisement la plus fréquente.
@@ -132,11 +132,11 @@ Il reste ensuite à brancher la dalle au ALLS, selon le modèle que vous avez ch
 
     * **1x** Raspberry Pi avec son alimentation (Un Pi 3b suffit. Les deux ADX peuvent partager le même Pi)
     * **2x** adaptateurs USB vers série à puce **FTDI** (un par côté)
-    * **2x** adaptateurs **null modem**, pour que les fiches mâle/femelle correspondent à celles du ALLS (Ou directement un adaptateur FTDI avec une fiche DB9 femelle si vous en trouvez)
+    * **2x** adaptateurs **null modem**, pour que les fiches mâle/femelle correspondent à celles du *ALLS* (Ou directement un adaptateur FTDI avec une fiche DB9 femelle si vous en trouvez)
 
     #### Mise en place
 
-    Le programme ne fait qu'une chose : relier **un port série vers le ALLS** à **un port USB vers un ADX**. Il se lance donc **une fois par joueur**, avec deux chemins en paramètre : `maitouch_rs <port vers le ALLS> <port vers l'ADX>`. Le chemin des ports n'a aucune importance pour lui, **mais Linux les numérote dans un ordre qui peut changer à chaque démarrage** (`/dev/ttyACM0` peut devenir `/dev/ttyACM1`). Si les ports P1 et P2 s'inversent, les joueurs aussi. La première partie de la procédure sert à donner à chaque câble un **nom fixe**.
+    Le programme ne fait qu'une chose : relier **un port série vers le *ALLS*** à **un port USB vers un ADX**. Il se lance donc **une fois par joueur**, avec deux chemins en paramètre : `maitouch_rs <port vers le ALLS> <port vers l'ADX>`. Le chemin des ports n'a aucune importance pour lui, **mais Linux les numérote dans un ordre qui peut changer à chaque démarrage** (`/dev/ttyACM0` peut devenir `/dev/ttyACM1`). Si les ports P1 et P2 s'inversent, les joueurs aussi. La première partie de la procédure sert à donner à chaque câble un **nom fixe**.
 
     ##### 1. Préparer le Raspberry Pi
 
@@ -160,7 +160,7 @@ Il reste ensuite à brancher la dalle au ALLS, selon le modèle que vous avez ch
 
     ##### 2. Donner un nom fixe à chaque câble
 
-    Linux peut identifier un câble d'après **la prise USB du Pi dans laquelle il est branché**. Tant que vous ne les changez pas de prise, chaque câble gardera donc le même nom. **Collez une étiquette** sur chaque câble (P1 ADX, P1 vers ALLS, P2 ADX, P2 vers ALLS), vous en aurez besoin.
+    Linux peut identifier un câble d'après **la prise USB du Pi dans laquelle il est branché**. Tant que vous ne les changez pas de prise, chaque câble gardera donc le même nom. **Collez une étiquette** sur chaque câble (P1 ADX, P1 vers *ALLS*, P2 ADX, P2 vers *ALLS*), vous en aurez besoin.
 
     1. **Débranchez tout** du Pi, sauf son alimentation.
     2. **Branchez un seul câble** : l'ADX du joueur 1, dans la prise USB de votre choix. Affichez son identifiant :
@@ -171,7 +171,7 @@ Il reste ensuite à brancher la dalle au ALLS, selon le modèle que vous avez ch
         ```
 
         L'ADX apparaît en `ttyACM`, les adaptateurs FTDI en `ttyUSB`. La seconde commande affiche une ligne qui ressemble à `ID_PATH=platform-xhci-hcd.0-usb-0:1.2:1.0`. **Copiez-la** dans un bloc-notes en notant à quel câble elle correspond. Si le port s'appelle `ttyACM1` ou `ttyUSB0`, adaptez la commande.
-    3. **Répétez** l'opération avec les trois autres câbles, **un à la fois** et dans des prises différentes : l'adaptateur FTDI du joueur 1 (ALLS P1), l'ADX du joueur 2, puis l'adaptateur FTDI du joueur 2 (ALLS P2).
+    3. **Répétez** l'opération avec les trois autres câbles, **un à la fois** et dans des prises différentes : l'adaptateur FTDI du joueur 1 (*ALLS* P1), l'ADX du joueur 2, puis l'adaptateur FTDI du joueur 2 (*ALLS* P2).
     4. **Créez** le fichier de règles :
 
         ```bash
@@ -199,13 +199,13 @@ Il reste ensuite à brancher la dalle au ALLS, selon le modèle que vous avez ch
 
     ##### 3. Tester
 
-    Raccordez les adaptateurs FTDI au ALLS (voir [Raccorder le périphérique au ALLS](#raccorder-le-peripherique-au-alls)), puis lancez le joueur 1 à la main :
+    Raccordez les adaptateurs FTDI au *ALLS* (voir [Raccorder le périphérique au *ALLS*](#raccorder-le-peripherique-au-alls)), puis lancez le joueur 1 à la main :
 
     ```bash
     sudo maitouch /dev/alls-p1 /dev/adx-p1
     ```
 
-    Le message **Ports opened** puis **Read loop started** doit apparaître. Lancez maintenant le jeu : des lignes **From ALLS** et **From ADX** défilent, et la dalle répond au toucher. Arrêtez le test avec `Ctrl+C` et recommencez avec `/dev/alls-p2 /dev/adx-p2`. Si le programme s'arrête avec une erreur, c'est généralement qu'un des deux chemins n'existe pas : retournez à l'étape 2.
+    Le message **Ports opened** puis **Read loop started** doit apparaître. Lancez maintenant le jeu : des lignes **From *ALLS*** et **From ADX** défilent, et la dalle répond au toucher. Arrêtez le test avec `Ctrl+C` et recommencez avec `/dev/alls-p2 /dev/adx-p2`. Si le programme s'arrête avec une erreur, c'est généralement qu'un des deux chemins n'existe pas : retournez à l'étape 2.
 
     ##### 4. Lancer automatiquement au démarrage
 
@@ -238,7 +238,7 @@ Il reste ensuite à brancher la dalle au ALLS, selon le modèle que vous avez ch
 
     Le `p1` et le `p2` après le `@` remplacent le `%i` du fichier, d'où les noms `alls-p1` et `adx-p1` choisis plus haut. Vérifiez que tout tourne avec `systemctl status maitouch@p1 maitouch@p2`, et redémarrez le Pi une fois pour confirmer que la dalle fonctionne sans rien lancer à la main. En cas de souci, `journalctl -u maitouch@p1 -f` affiche ce que fait le programme en direct.
 
-### Raccorder le périphérique au ALLS
+### Raccorder le périphérique au *ALLS*
 
 Chaque côté a son propre port COM, **ne les inversez pas** : sinon le jeu confondra les deux joueurs. *([Manuel](../resources/pdfs/maimai-dx-instruction-manual-full.pdf), page 128)*
 
@@ -248,8 +248,8 @@ Chaque côté a son propre port COM, **ne les inversez pas** : sinon le jeu conf
 !!! lightbox
     ![Vue arrière d'un ALLS HX2 : des flèches rouges désignent les ports DB9 des dalles tactiles sur la carte d'extension, P1 en bas à droite et P2 en haut à gauche](../resources/images/step-2-touchscreen-display/alls-hx2-rear-connectors-com3-com4.jpg)
 
-Une fois les dalles raccordées au ALLS, **la partie la plus effrayante est terminée**. Le plus dur est derrière nous pour la suite du guide.
+Une fois les dalles raccordées au *ALLS*, **la partie la plus effrayante est terminée**. Le plus dur est derrière nous pour la suite du guide.
 
 ---
 
-Passons à l'[Étape 3 : Le Lecteur de Cartes Aime](step-3-aime-reader.md).
+Passons à [l'étape 3 : Le lecteur Aime et le VFD](step-3-aime-reader.md).

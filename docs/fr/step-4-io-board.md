@@ -2,21 +2,21 @@
 title: "🕹️ 4 - Carte I/O et boutons"
 ---
 
-# 🕹️ Étape 4 : La Carte I/O et les Boutons
+# 🕹️ Étape 4 : La carte I/O et les boutons
 
-Pour faire tourner *DX*, **l'IO3 de FiNALE doit être remplacée par une IO4**, plus récente. Côté boutons, les deux modèles diffèrent peu, mais le câblage doit tout de même être adapté.
+Pour faire tourner *DX*, **l'IO3 de *FiNALE* doit être remplacée par une IO4**, plus récente. Côté boutons, les deux modèles diffèrent peu, mais le câblage doit tout de même être adapté.
 
 ## Explications techniques
 
 ??? note "Cliquez ici pour l'explication technique"
-    Le passage à l'IO4 entraîne deux modifications majeures du câblage de la borne DX par rapport à FiNALE :
+    Le passage à l'IO4 entraîne deux modifications majeures du câblage de la borne *DX* par rapport à *FiNALE* :
 
     * **Le harnais de câbles a été modifié** : il intègre les deux boutons 1P SELECT et 2P SELECT, et le Coin Locker passe de la broche 51 à la broche 53.
     * **L'IO4 gère désormais l'éclairage** de plusieurs parties de la borne.
 
-    Le premier point est simple, le second bien plus contraignant : **6 signaux LEDs passent désormais par l'IO4**, là où les contrôleurs de LEDs géraient seuls l'éclairage sur FiNALE.
+    Le premier point est simple, le second bien plus contraignant : **6 signaux LEDs passent désormais par l'IO4**, là où les contrôleurs de LEDs géraient seuls l'éclairage sur *FiNALE*.
 
-    Autre changement : **l'IO4 se branche au PC en USB**. Les cartes I/O Sega historiques fonctionnent en JVS ; l'IO4 reste compatible (elle peut notamment être chaînée à d'autres cartes), mais elle ajoute un port USB qui, pour certains jeux dont DX, est le seul branchement pris en charge. *Certaines variantes d'IO4 n'ont d'ailleurs pas de JVS : peu importe ici, la connexion se fait forcément en USB.*
+    Autre changement : **l'IO4 se branche au PC en USB**. Les cartes I/O Sega historiques fonctionnent en JVS ; l'IO4 reste compatible (elle peut notamment être chaînée à d'autres cartes), mais elle ajoute un port USB qui, pour certains jeux dont *DX*, est le seul branchement pris en charge. *Certaines variantes d'IO4 n'ont d'ailleurs pas de JVS : peu importe ici, la connexion se fait forcément en USB.*
 
     !!! lightbox
         ![Une carte IO4 Sega (837-15257)](../resources/images/step-4-io-board/io4-board.jpg)
@@ -33,12 +33,12 @@ Pour faire tourner *DX*, **l'IO3 de FiNALE doit être remplacée par une IO4**, 
 
 ## Installation de l'IO4
 
-Commencez par **brancher sur l'IO4, fixée à l'[étape 1](step-1-alls-and-psu.md), les connecteurs d'alimentation d'origine de l'IO3** : **CN1**/**CN2** pour le 12V, **CN7**/**CN8** pour le 5V.
+Commencez par **brancher sur l'IO4, fixée à [l'étape 1](step-1-alls-and-psu.md), les connecteurs d'alimentation d'origine de l'IO3** : **CN1**/**CN2** pour le 12V, **CN7**/**CN8** pour le 5V.
 
-Pour installer l'IO4 dans une borne FiNALE, deux options :
+Pour installer l'IO4 dans une borne *FiNALE*, deux options :
 
 * **Modifier le harnais à la main.**
-* **Utiliser la PCB de conversion.**
+* **Utiliser la [PCB de conversion]({{IO4_CONVERSION_PCB}}).**
 
 **La seconde option est de loin la plus simple** :
 
@@ -50,9 +50,9 @@ Dans les deux cas, *les LEDs seront traitées en détail à [l'étape 6](step-6-
 
 ??? example "La méthode facile - La PCB de conversion"
 
-    ### La PCB de conversion
+    ### La [PCB de conversion]({{IO4_CONVERSION_PCB}})
 
-    La PCB de conversion simplifie fortement les choses, **en particulier pour les LEDs** à [l'étape 6](step-6-lighting.md). Elle porte deux connecteurs au même format que le CN3 : **l'un se branche sur l'IO4, l'autre accueille le harnais de la borne.**
+    La [PCB de conversion]({{IO4_CONVERSION_PCB}}) simplifie fortement les choses, **en particulier pour les LEDs** à [l'étape 6](step-6-lighting.md). Elle porte deux connecteurs au même format que le CN3 : **l'un se branche sur l'IO4, l'autre accueille le harnais de la borne.**
 
     !!! lightbox
         ![La carte IO4 câblée et raccordée par nappes à la PCB de conversion](../resources/images/step-4-io-board/io4-wired-to-conversion-pcb.jpg)
@@ -89,16 +89,16 @@ Dans les deux cas, *les LEDs seront traitées en détail à [l'étape 6](step-6-
     La PCB porte deux emplacements de jumper :
 
     * **J34 - Pontage EXV** : relie le signal `EXV` au 5V. *Normalement, le harnais de la borne s'en charge déjà*, vous pouvez l'installer si ce n'est pas le cas.
-    * **J35 - Type de harnais** : indique à la PCB si le harnais branché vient de FiNALE ou de DX.
-        * **Harnais de FiNALE non modifié** (le cas de ce guide) : jumper sur les **deux broches de gauche**.
-        * **Harnais déjà modifié à la main**, ou vraie borne DX : jumper sur les **deux broches de droite**.
+    * **J35 - Type de harnais** : indique à la PCB si le harnais branché vient de *FiNALE* ou de *DX*.
+        * **Harnais de *FiNALE* non modifié** (le cas de ce guide) : jumper sur les **deux broches de gauche**.
+        * **Harnais déjà modifié à la main**, ou vraie borne *DX* : jumper sur les **deux broches de droite**.
 
     !!! lightbox
         ![Rendu de la PCB de conversion maiConvert-IO4, avec les emplacements de jumper encadrés en rouge : J34 (pontage EXV vers 5V) en haut, près des connecteurs J1 et J3, et J35 (mode de compatibilité du harnais, FiNALE à gauche, DX à droite) en bas à gauche](../resources/images/step-4-io-board/conversion-pcb-jumpers-j34-j35.jpg)
 
     #### Brancher les boutons Select
 
-    La PCB fournit **deux connecteurs JST-XH 2 broches mâles** pour les boutons 1P SELECT et 2P SELECT : sertissez un **JST-XH 2 broches femelle** côté bouton, branchez, et le tour est joué. [Le support du lecteur Aime de SpiralGlide](spiralglide-resources.md#support-du-lecteur-aime), installé à l'[étape 3](step-3-aime-reader.md), leur réserve un emplacement.
+    La PCB fournit **deux connecteurs JST-XH 2 broches mâles** pour les boutons 1P SELECT et 2P SELECT : sertissez un **JST-XH 2 broches femelle** côté bouton, branchez, et le tour est joué. [Le support du lecteur Aime de SpiralGlide](spiralglide-resources.md#support-du-lecteur-aime), installé à [l'étape 3](step-3-aime-reader.md), leur réserve un emplacement.
 
     *Aucun autre bouton n'est à brancher sur la PCB* : **tous les autres passent par le harnais de la borne.**
 
@@ -119,7 +119,7 @@ Dans les deux cas, *les LEDs seront traitées en détail à [l'étape 6](step-6-
 
     *DX* ajoute **deux boutons pour trier les chansons**, à câbler vous-même :
 
-    1. **Installez les boutons** sur le panneau central. [Le support du lecteur Aime de SpiralGlide](spiralglide-resources.md#support-du-lecteur-aime), installé à l'[étape 3](step-3-aime-reader.md), leur réserve justement un emplacement.
+    1. **Installez les boutons** sur le panneau central. [Le support du lecteur Aime de SpiralGlide](spiralglide-resources.md#support-du-lecteur-aime), installé à [l'étape 3](step-3-aime-reader.md), leur réserve justement un emplacement.
     2. **Reliez une broche de chaque bouton à la masse (GND)** du faisceau du connecteur **CN3** (broches 9 à 16).
     3. **Reliez l'autre broche** à la broche correspondante du connecteur **CN3** :
         * "1P SELECT BUTTON" : broche **27**
@@ -150,7 +150,7 @@ Dans les deux cas, *les LEDs seront traitées en détail à [l'étape 6](step-6-
 
 ## Branchement USB
 
-Il ne reste qu'à **brancher l'IO4 sur le port USB 1 du ALLS**, comme indiqué à [l'étape 1](step-1-alls-and-psu.md).
+Il ne reste qu'à **brancher l'IO4 sur le port USB 1 du *ALLS***, comme indiqué à [l'étape 1](step-1-alls-and-psu.md).
 
 !!! lightbox
     ![Vue arrière d'un ALLS HX2 : des flèches rouges désignent le port USB 1, en bas à droite du bloc de ports USB, et son repère sur l'étiquette du boîtier](../resources/images/step-4-io-board/alls-hx2-rear-connectors-usb-1.jpg)
@@ -162,11 +162,11 @@ Il ne reste qu'à **brancher l'IO4 sur le port USB 1 du ALLS**, comme indiqué �
     * Brancher les connecteurs d'alimentation d'origine sur l'IO4.
     * Installer les boutons 1P SELECT et 2P SELECT sur le panneau central.
 
-    Si vous choisissez la PCB de conversion :
+    Si vous choisissez la [PCB de conversion]({{IO4_CONVERSION_PCB}}) :
 
     * Relier la PCB aux connecteurs CN3 et CN9 de l'IO4 avec des nappes IDC, puis y brancher le harnais de la borne.
     * Alimenter la PCB en 12V depuis l'alimentation LEDs de la borne, en 1,5 mm².
-    * Placer le jumper J35 sur la position FiNALE (deux broches de gauche).
+    * Placer le jumper J35 sur la position *FiNALE* (deux broches de gauche).
     * Brancher les boutons Select sur leurs connecteurs JST-XH.
 
     Si vous choisissez le câblage manuel :
@@ -178,8 +178,8 @@ Il ne reste qu'à **brancher l'IO4 sur le port USB 1 du ALLS**, comme indiqué �
 
     Finalement :
 
-    * Brancher l'IO4 sur le port USB 1 du ALLS.
+    * Brancher l'IO4 sur le port USB 1 du *ALLS*.
 
 ---
 
-Passons à l'[Étape 5 : Prises casques et Système Son](step-5-audio-headphones.md).
+Passons à [l'étape 5 : Prises casques et système son](step-5-audio-headphones.md).

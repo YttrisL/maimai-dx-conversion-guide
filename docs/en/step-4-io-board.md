@@ -2,21 +2,21 @@
 title: "🕹️ 4 - I/O board & buttons"
 ---
 
-# 🕹️ Step 4: The I/O Board and the Buttons
+# 🕹️ Step 4: The I/O board and the buttons
 
-To run *DX*, **the FiNALE IO3 must be replaced with a newer IO4**. Button-wise, the two models differ very little, but the wiring still needs to be adapted.
+To run *DX*, **the *FiNALE* IO3 must be replaced with a newer IO4**. Button-wise, the two models differ very little, but the wiring still needs to be adapted.
 
 ## Technical explanation
 
 ??? note "Click here for the technical explanation"
-    The move to the IO4 brings two major changes to the DX cabinet wiring compared to FiNALE:
+    The move to the IO4 brings two major changes to the *DX* cabinet wiring compared to *FiNALE*:
 
     * **The wiring harness was modified**: it now includes the two 1P SELECT and 2P SELECT buttons, and the Coin Locker moves from pin 51 to pin 53.
     * **The IO4 now handles the lighting** of several parts of the cabinet.
 
-    The first point is simple, the second far more restrictive: **6 LED signals now go through the IO4**, where the LED controllers used to handle the lighting on their own on FiNALE.
+    The first point is simple, the second far more restrictive: **6 LED signals now go through the IO4**, where the LED controllers used to handle the lighting on their own on *FiNALE*.
 
-    Another change: **the IO4 plugs into the PC over USB**. Historical Sega I/O boards work over JVS; the IO4 remains compatible (it can notably be daisy-chained with other boards), but it adds a USB port which, for some games including DX, is the only supported connection. *Some IO4 variants have no JVS at all: it doesn't matter here, the connection is always made over USB.*
+    Another change: **the IO4 plugs into the PC over USB**. Historical Sega I/O boards work over JVS; the IO4 remains compatible (it can notably be daisy-chained with other boards), but it adds a USB port which, for some games including *DX*, is the only supported connection. *Some IO4 variants have no JVS at all: it doesn't matter here, the connection is always made over USB.*
 
     !!! lightbox
         ![A Sega IO4 board (837-15257)](../resources/images/step-4-io-board/io4-board.jpg)
@@ -35,10 +35,10 @@ To run *DX*, **the FiNALE IO3 must be replaced with a newer IO4**. Button-wise, 
 
 Start by **plugging the original IO3 power connectors into the IO4, mounted in [step 1](step-1-alls-and-psu.md)**: **CN1**/**CN2** for 12V, **CN7**/**CN8** for 5V.
 
-To install the IO4 in a FiNALE cabinet, you have two options:
+To install the IO4 in a *FiNALE* cabinet, you have two options:
 
 * **Modify the harness by hand.**
-* **Use the conversion PCB.**
+* **Use the [conversion PCB]({{IO4_CONVERSION_PCB}}).**
 
 **The second option is by far the easiest**:
 
@@ -50,9 +50,9 @@ Either way, *the LEDs are covered in detail in [step 6](step-6-lighting.md)*: th
 
 ??? example "The easy way - The conversion PCB"
 
-    ### The conversion PCB
+    ### The [conversion PCB]({{IO4_CONVERSION_PCB}})
 
-    The conversion PCB makes things much simpler, **especially for the LEDs** in [step 6](step-6-lighting.md). It has two connectors in the same format as CN3: **one plugs into the IO4, the other takes the cabinet harness.**
+    The [conversion PCB]({{IO4_CONVERSION_PCB}}) makes things much simpler, **especially for the LEDs** in [step 6](step-6-lighting.md). It has two connectors in the same format as CN3: **one plugs into the IO4, the other takes the cabinet harness.**
 
     !!! lightbox
         ![The IO4 board wired and connected by ribbon cables to the conversion PCB](../resources/images/step-4-io-board/io4-wired-to-conversion-pcb.jpg)
@@ -89,9 +89,9 @@ Either way, *the LEDs are covered in detail in [step 6](step-6-lighting.md)*: th
     The PCB has two jumper locations:
 
     * **J34 - EXV jumper**: ties the `EXV` signal to 5V. *Normally the cabinet harness already does this*, but you can install it if that isn't the case.
-    * **J35 - Harness type**: tells the PCB whether the connected harness comes from FiNALE or DX.
-        * **Unmodified FiNALE harness** (the case in this guide): jumper on the **two left pins**.
-        * **Harness already modified by hand**, or a real DX cabinet: jumper on the **two right pins**.
+    * **J35 - Harness type**: tells the PCB whether the connected harness comes from *FiNALE* or *DX*.
+        * **Unmodified *FiNALE* harness** (the case in this guide): jumper on the **two left pins**.
+        * **Harness already modified by hand**, or a real *DX* cabinet: jumper on the **two right pins**.
 
     !!! lightbox
         ![Render of the maiConvert-IO4 conversion PCB, with the jumper locations outlined in red: J34 (EXV to 5V jumper) at the top, near connectors J1 and J3, and J35 (harness compatibility mode, FiNALE on the left, DX on the right) at the bottom left](../resources/images/step-4-io-board/conversion-pcb-jumpers-j34-j35.jpg)
@@ -150,7 +150,7 @@ Either way, *the LEDs are covered in detail in [step 6](step-6-lighting.md)*: th
 
 ## USB connection
 
-All that's left is to **plug the IO4 into the ALLS USB 1 port**, as explained in [step 1](step-1-alls-and-psu.md).
+All that's left is to **plug the IO4 into the *ALLS* USB 1 port**, as explained in [step 1](step-1-alls-and-psu.md).
 
 !!! lightbox
     ![Rear view of an ALLS HX2: red arrows point to the USB 1 port, at the bottom right of the USB port block, and to its marking on the case label](../resources/images/step-4-io-board/alls-hx2-rear-connectors-usb-1.jpg)
@@ -162,11 +162,11 @@ All that's left is to **plug the IO4 into the ALLS USB 1 port**, as explained in
     * Plug the original power connectors into the IO4.
     * Install the 1P SELECT and 2P SELECT buttons on the central panel.
 
-    If you choose the conversion PCB:
+    If you choose the [conversion PCB]({{IO4_CONVERSION_PCB}}):
 
     * Connect the PCB to the IO4's CN3 and CN9 connectors with IDC ribbon cables, then plug the cabinet harness into it.
     * Power the PCB with 12V from the cabinet's LED power supply, using 1.5 mm² wire.
-    * Set jumper J35 to the FiNALE position (two left pins).
+    * Set jumper J35 to the *FiNALE* position (two left pins).
     * Plug the Select buttons into their JST-XH connectors.
 
     If you choose manual wiring:
@@ -178,8 +178,8 @@ All that's left is to **plug the IO4 into the ALLS USB 1 port**, as explained in
 
     Finally:
 
-    * Plug the IO4 into the ALLS USB 1 port.
+    * Plug the IO4 into the *ALLS* USB 1 port.
 
 ---
 
-Let's move on to [Step 5: Headphone Jacks and Sound System](step-5-audio-headphones.md).
+Let's move on to [step 5: Headphone jacks and sound system](step-5-audio-headphones.md).

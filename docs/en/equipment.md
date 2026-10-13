@@ -17,14 +17,14 @@ For each part, **the most suitable option is highlighted**, whether for its ease
 
 <div class="equipment-card" markdown>
 
-### ALLS HX2
+### *ALLS HX2*
 * Where: JDirectItems Auction
-* Info: it is the PC used by DX, and few other cabinets use this specific model: **depending on the period, it can be hard to find**.
+* Info: it is the PC used by *DX*, and few other cabinets use this specific model: **depending on the period, it can be hard to find**.
 
-*Alternative*: **ALLS MX2**
+*Alternative*: ***ALLS MX2***
 
 * Where: JDirectItems Auction
-* Info: easier to find, and its internal software is technically compatible with DX.
+* Info: easier to find, and its internal software is technically compatible with *DX*.
 
 </div>
 
@@ -32,10 +32,10 @@ For each part, **the most suitable option is highlighted**, whether for its ease
 
 ### Secondary drive (SUB STORAGE)
 * Where: Amazon, AliExpress, your favorite shop
-* Info: a 500 GB hard drive, which the game requires in addition to the ALLS's SSD.
+* Info: a 500 GB hard drive, which the game requires in addition to the *ALLS*'s SSD.
 
 !!! tip "You may already have it"
-    Depending on the game it originally ran, your ALLS may only contain a 64 or 128 GB SSD, **not enough to install the game**. A secondary drive (named "SUB STORAGE"), usually 500 GB, is mandatory. **If your ALLS already contains one, there is no need to buy another.**
+    Depending on the game it originally ran, your *ALLS* may only contain a 64 or 128 GB SSD, **not enough to install the game**. A secondary drive (named "SUB STORAGE"), usually 500 GB, is mandatory. **If your *ALLS* already contains one, there is no need to buy another.**
 
 </div>
 
@@ -51,7 +51,7 @@ For each part, **the most suitable option is highlighted**, whether for its ease
     - **JVS-compatible**, with a USB-B port and a USB-A port for daisy-chaining;
     - **without JVS**, with a simple micro-USB port to plug into a regular USB port.
 
-    On maimai DX, the IO4 connects to the ALLS over regular USB, through the micro-USB port: **JVS support is useless**. IO4s without JVS are usually a little cheaper, but in theory every variant works.
+    On *maimai DX*, the IO4 connects to the *ALLS* over regular USB, through the micro-USB port: **JVS support is useless**. IO4s without JVS are usually a little cheaper, but in theory every variant works.
 
 </div>
 
@@ -75,12 +75,12 @@ For each part, **the most suitable option is highlighted**, whether for its ease
 
 ### **2x**{: .quantity-emphasis } HDX touchscreen
 * Where: [On the HanDevice Discord]({{DISCORD_HANDEVICE}})
-* Info: a touchscreen designed by an individual, originally as a "game-pad" for playing a DX simulator at home. HanDevice does not officially sell a conversion kit, but you can [contact the maker on their Discord]({{HANDEVICE_DISCORD_CONTACT_MESSAGE}}) to ask for an offer covering **the touchscreen and the HanDevice IO** (its dedicated I/O board). The upside of this board: it exposes a **UART serial port**, which lets you connect it to the ALLS HX2 without converting the signal.
+* Info: a touchscreen designed by an individual, originally as a "game-pad" for playing a *DX* simulator at home. HanDevice does not officially sell a conversion kit, but you can [contact the maker on their Discord]({{HANDEVICE_DISCORD_CONTACT_MESSAGE}}) to ask for an offer covering **the touchscreen and the HanDevice IO** (its dedicated I/O board). The upside of this board: it exposes a **UART serial port**, which lets you connect it to the *ALLS HX2* without converting the signal.
 
 *Alternative*: **2x**{: .quantity-emphasis } **Yuancon conversion kit - based on an ADX touchscreen**
 
 * Where: [On the Yuancon website]({{YUANCON_CONVERSION_KIT_PAGE}})
-* Info: each Yuancon kit includes a touchscreen and eight buttons, enough to convert one side of the cabinet. They are equivalent to the HDX, with one catch: **their I/O board has no serial port**. It only communicates over USB-CDC, a signal that a simple RS-232 converter cannot adapt for the ALLS HX2. It is possible through a software proxy, [maitouch_rs]({{MAITOUCH_RS_REPO}}) by [4ndr3w]({{GITHUB_4NDR3W}}) on GitHub, running on a Raspberry Pi placed between the ALLS and the ADX, but that complexity is not covered in this guide. *With this alternative, you do not need the buttons from the next item.*
+* Info: each Yuancon kit includes a touchscreen and eight buttons, enough to convert one side of the cabinet. They are equivalent to the HDX, with one catch: **their I/O board has no serial port**. It only communicates over USB-CDC, a signal that a simple RS-232 converter cannot adapt for the *ALLS HX2*. It is possible through a software proxy, [maitouch_rs]({{MAITOUCH_RS_REPO}}) by [4ndr3w]({{GITHUB_4NDR3W}}) on GitHub, running on a Raspberry Pi placed between the *ALLS* and the ADX, but that complexity is not covered in this guide. *With this alternative, you do not need the buttons from the next item.*
 
 </div>
 
@@ -88,12 +88,12 @@ For each part, **the most suitable option is highlighted**, whether for its ease
 
 ### **16x**{: .quantity-emphasis } HDX buttons
 * Where: [On the HanDevice Discord]({{DISCORD_HANDEVICE}})
-* Info: the gameplay buttons for the ring. The FiNALE ones are technically compatible, but the feel on DX is completely different, and much better: **the upgrade is well worth it**. You need eight per player, so sixteen in total. *This is a wear part*: a few spare buttons can come in handy.
+* Info: the gameplay buttons for the ring. The *FiNALE* ones are technically compatible, but the feel on *DX* is completely different, and much better: **the upgrade is well worth it**. You need eight per player, so sixteen in total. *This is a wear part*: a few spare buttons can come in handy.
 
 *Alternative*: **16x**{: .quantity-emphasis } **"Rabbit" buttons**
 
 * Where: [On the official Taobao shop]({{TAOBAO_OFFICIAL_SHOP_LISTING}})
-* Info: fairly close to the official maimai DX buttons, they are an excellent alternative.
+* Info: fairly close to the official *maimai DX* buttons, they are an excellent alternative.
 
 !!! failure "Don't buy the counterfeits!"
     Taobao and AliExpress sell much cheaper generic buttons that look very similar. **Do not give in to the temptation of saving a few euros**: it is the worst purchase you can make. Unlike HanDevice or Rabbit buttons, they are of **very** poor quality, pile up problems and wear out fast. Go for quality buttons from a reliable seller.
@@ -119,7 +119,7 @@ For each part, **the most suitable option is highlighted**, whether for its ease
 ### **1x**{: .quantity-emphasis } 4-port USB hub
 
 * Where: Amazon, AliExpress, your favorite shop
-* Info: on a real maimai DX, one of the 4 USB ports on the ALLS motherboard is reserved for a 4-port USB hub. This hub hosts the two QR-code reader cameras and the RS-232/USB adapter for the player 1 and 2 LED controllers. **Any USB hub will do.**
+* Info: on a real *maimai DX*, one of the 4 USB ports on the *ALLS* motherboard is reserved for a 4-port USB hub. This hub hosts the two QR-code reader cameras and the RS-232/USB adapter for the player 1 and 2 LED controllers. **Any USB hub will do.**
 
 </div>
 
@@ -128,7 +128,7 @@ For each part, **the most suitable option is highlighted**, whether for its ease
 ### **1x**{: .quantity-emphasis } 5V/12V switching power supply
 
 * Where: Amazon, AliExpress, electronic component distributors
-* Info: unlike the RingEdge 2, the ALLS does not power external peripherals. This power supply takes over that role: among other things, it powers the IO4, the Aime reader, the VFD and the LED controller proxies. You need a **dual-output 5V and 12V** model, in a metal enclosure with screw terminals, such as the Mean Well RD-35A or RD-50A. **Do not reuse the cabinet's original power supplies** instead.
+* Info: unlike the *RingEdge 2*, the *ALLS* does not power external peripherals. This power supply takes over that role: among other things, it powers the IO4, the Aime reader, the VFD and the LED controller proxies. You need a **dual-output 5V and 12V** model, in a metal enclosure with screw terminals, such as the Mean Well RD-35A or RD-50A. **Do not reuse the cabinet's original power supplies** instead.
 
 </div>
 
@@ -165,34 +165,34 @@ These small, cheap purchases, needed over the course of the steps, can be found 
 ### Cables
 
 * **1x**{: .quantity-emphasis } **HDMI to DVI-D cable (3 m)**
-    - Connection from the ALLS to the Player 1 screen.
+    - Connection from the *ALLS* to the Player 1 screen.
 * **1x**{: .quantity-emphasis } **DVI-D to DVI-D cable (2 m)**
-    - Connection from the ALLS to the Player 2 screen. Your FiNALE may already have one natively.
+    - Connection from the *ALLS* to the Player 2 screen. Your *FiNALE* may already have one natively.
 * **1x**{: .quantity-emphasis } **DB-9 Female-Female cable**
     - As short as possible: it will be cut in two to make the Aime reader and VFD connectors.
 * **4x**{: .quantity-emphasis } **DB-9 Male-Female cable (3 m)**
-    - Extensions to the ALLS for the Aime reader, the VFD and the player 1 and 2 touchscreens.
+    - Extensions to the *ALLS* for the Aime reader, the VFD and the player 1 and 2 touchscreens.
 * **1x**{: .quantity-emphasis } **IEC C-13 cable (2 m)**
-    - Plugged into the ALLS, then cut at the plug end to be wired directly to the cabinet's mains supply.
+    - Plugged into the *ALLS*, then cut at the plug end to be wired directly to the cabinet's mains supply.
 * **1x**{: .quantity-emphasis } **IDC ribbon cable, 2x30 pins (female-female)**
-    - To connect the IO4's CN3 to the conversion PCB (2.54 mm pitch).
+    - To connect the IO4's CN3 to the [conversion PCB]({{IO4_CONVERSION_PCB}}) (2.54 mm pitch).
 * **1x**{: .quantity-emphasis } **IDC ribbon cable, 2x10 pins (female-female)**
-    - To connect the IO4's CN9 to the conversion PCB (2.54 mm pitch).
+    - To connect the IO4's CN9 to the [conversion PCB]({{IO4_CONVERSION_PCB}}) (2.54 mm pitch).
 * **2x**{: .quantity-emphasis } charging **micro-USB cable**
     - To power the two LED controller proxies: the end opposite the Pico is cut off, red wire to 5V and black wire to GND on the power supply installed in [step 1](step-1-alls-and-psu.md).
 * **2x**{: .quantity-emphasis } **3.5 mm male-to-male jack cable**
-    - To connect the ALLS's C/W and SIDE outputs to their amp (see [step 5](step-5-audio-headphones.md)). As short as possible.
+    - To connect the *ALLS*'s C/W and SIDE outputs to their amp (see [step 5](step-5-audio-headphones.md)). As short as possible.
 
 ### Electronics
 
 * **2x**{: .quantity-emphasis } **TTL to RS-232 converter with female DB-9** ([example]({{BUY_EXAMPLE_TTL_RS232_CONVERTER}}))
-    - To connect each touchscreen's I/O board (players 1 and 2) to its DB-9 port on the ALLS.
+    - To connect each touchscreen's I/O board (players 1 and 2) to its DB-9 port on the *ALLS*.
 * **2x**{: .quantity-emphasis } **Raspberry Pi Pico** ([example]({{BUY_EXAMPLE_RASPBERRY_PI_PICO}}))
     - To build the LED controller proxies. To avoid any soldering, prefer a version with pre-soldered pins. **Careful: the pins must be soldered facing down, not up.**
 * **2x**{: .quantity-emphasis } **Pico-2CH-RS232** ([example]({{BUY_EXAMPLE_PICO_2CH_RS232}}))
     - To build the LED controller proxies.
 * **2x**{: .quantity-emphasis } **Headphone audio amplifier**
-    - One small, cheap amp per player, to boost the ALLS's very weak headphone output (see [step 5](step-5-audio-headphones.md)). It doesn't need a volume knob: volume is adjusted in the game menus.
+    - One small, cheap amp per player, to boost the *ALLS*'s very weak headphone output (see [step 5](step-5-audio-headphones.md)). It doesn't need a volume knob: volume is adjusted in the game menus.
 * **2x**{: .quantity-emphasis } **3.5 mm female jack socket**
     - The players' headphone jacks, to install on the cabinet. Prefer a panel-mount model.
 
@@ -201,7 +201,7 @@ These small, cheap purchases, needed over the course of the steps, can be found 
 * **Flexible hookup wire (AWG 20)**
     - Several cables need crimping throughout the guide: plan a good supply, ideally in several colors.
 * **Flexible hookup wire (1.5 mm²)**
-    - For the conversion PCB's 12V, which carries a high current (see [step 4](step-4-io-board.md)). Plan enough length to reach the cabinet's LED power supply.
+    - For the [conversion PCB]({{IO4_CONVERSION_PCB}})'s 12V, which carries a high current (see [step 4](step-4-io-board.md)). Plan enough length to reach the cabinet's LED power supply.
 
 ### Lighting
 
@@ -235,7 +235,7 @@ These small, cheap purchases, needed over the course of the steps, can be found 
 
 
 * **1x**{: .quantity-emphasis } **Molex Mini-Fit Jr. 2x7-pin female connector** ([example]({{BUY_EXAMPLE_MOLEX_MINI_FIT_JR_CONNECTOR}}))
-    - To cleanly connect the power connector that used to be plugged into the RingEdge 2.
+    - To cleanly connect the power connector that used to be plugged into the *RingEdge 2*.
 * **30x**{: .quantity-emphasis } **Molex Mini-Fit Jr. female crimp pin**
     - To go with the previous connector.
 * **2x**{: .quantity-emphasis } **JST-SM 8-pin female connector**
@@ -284,4 +284,4 @@ For the other connectors, rather than buying each part number individually, **ge
 
 ---
 
-Now that you have the hardware, let's start with [Step 1: Replacing the Central PC (ALLS)](step-1-alls-and-psu.md).
+Now that you have the hardware, let's start with [step 1: Replacing the central PC (*ALLS*)](step-1-alls-and-psu.md).

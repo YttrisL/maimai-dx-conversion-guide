@@ -12,7 +12,7 @@ L'inspiration de base de ce guide est basé sur le travail de **SpiralGlide**, u
 
 ## Les pièces imprimables en 3D
 
-SpiralGlide a modélisé les supports permettant de monter le lecteur Aime et le lecteur de QR code de DX de façon non-destructrice sur la tour centrale de la borne. Cela représente quatre fichiers `.stl`, répartis en deux ensembles.
+SpiralGlide a modélisé les supports permettant de monter le lecteur Aime et le lecteur de QR code de *DX* de façon non-destructrice sur la tour centrale de la borne. Cela représente quatre fichiers `.stl`, répartis en deux ensembles.
 
 ### Support du lecteur Aime
 

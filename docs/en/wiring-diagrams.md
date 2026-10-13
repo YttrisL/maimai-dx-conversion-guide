@@ -8,9 +8,9 @@ The [official manuals](official-manuals.md) contain, on their very last pages, t
 
 _(Click a plate to open it at full resolution in a new tab. Each plate is preceded by the list of boards/modules that appear on it, with their part number, so you can find a board with `Ctrl+F`. The coordinates in brackets, e.g. **[C-3]**{: .wiring-coord }, refer to the reference grid printed around the edge of each plate - columns A to G, rows 1 to 6 - and indicate where the part is on the diagram.)_
 
-## maimai DX manual
+## *maimai DX* manual
 
-Chapter *22 総合配線図* ("general wiring diagram"), pages 193 to 196 of the [maimai DX manual](../resources/pdfs/maimai-dx-instruction-manual-full.pdf).
+Chapter *22 総合配線図* ("general wiring diagram"), pages 193 to 196 of the [*maimai DX* manual](../resources/pdfs/maimai-dx-instruction-manual-full.pdf).
 
 ### Plate 1/4 - Power, *ALLS* PC, amp and player screens
 
