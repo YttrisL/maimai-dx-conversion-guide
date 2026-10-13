@@ -133,7 +133,7 @@ All that's left is to plug the RS-232 to USB adapter into the ALLS through the U
     !!! lightbox
         ![FiNALE wiring diagram, connector AB on the P1 side: the MAI-60109 harness powers the CENTER LED, ROOF LED (L), ROOF LED (R) and WOOFER LED boards](../resources/images/step-6-lighting/lighting-topper-p1-side.png)
         ![FiNALE wiring diagram, connector BB on the P2 side: the MAI-60109 harness powers the WOOFER LED, ROOF LED (L) and ROOF LED (R) boards, with the SM5P connector unused](../resources/images/step-6-lighting/lighting-topper-p2-side.png)
-        ![8-pin JST-SM connector that connects the woofers and the billboard lighting (in black)](../resources/images/step-6-lighting/led-controller-rs232-disconnect.jpg)
+        ![8-pin JST-SM connector that connects the woofers and the billboard lighting (in black)](../resources/images/step-6-lighting/billboard-woofer-jst-sm-8-connector.jpg)
 
     The P1 diagram includes a `CENTER LED` element, absent on the P2 side: it is the lighting for the center of the billboard. On DX, this distinction does not exist: even though the signals are separate, the billboard is always the same color on both sides. The simplest solution is therefore to **connect pins `A2`, `A5` and `A8` of the P1 connector to pins `C3`, `C5` and `C8`**, so the center takes the same color as the player 1 side.
 
@@ -152,7 +152,7 @@ Two methods are possible:
 
     !!! lightbox
         ![Conversion PCB [maiConvert-IO4]({{IO4_CONVERSION_PCB}}): location of connector J22 (`12V input`, watch the polarity) and connectors J23/J24 (`BILLBOARD LED L`/`R`) where the billboard LED harness connects](../resources/images/step-6-lighting/led-inputs-and-12-on-convertion-pcb.jpg)
-        ![Male 8-position JST-SM wiring harnesses that handle the billboard and woofer LEDs, unplugged from the connector wired to the LED controller on a FiNALE cabinet](../resources/images/step-6-lighting/led-controller-rs232-disconnect.jpg)
+        ![Male 8-position JST-SM wiring harnesses that handle the billboard and woofer LEDs, unplugged from the connector wired to the LED controller on a FiNALE cabinet](../resources/images/step-6-lighting/billboard-woofer-jst-sm-8-connector.jpg)
 
     *If you plan to install the cameras in the next step*, the conversion PCB will make your life easier there too: it already has ready-to-use connectors for their LEDs.
 
@@ -170,7 +170,7 @@ Two methods are possible:
     Once the harness is done, plug it into the IO4, connect the 12V, then plug the two original 8-pin JST-SM connectors into your new cable. **Test the continuity of all your cables before installing them**, to rule out any badly crimped pin.
 
     !!! lightbox
-        ![Male 8-position JST-SM wiring harnesses that handle the billboard and woofer LEDs, unplugged from the connector wired to the LED controller on a FiNALE cabinet](../resources/images/step-6-lighting/led-controller-rs232-disconnect.jpg)
+        ![Male 8-position JST-SM wiring harnesses that handle the billboard and woofer LEDs, unplugged from the connector wired to the LED controller on a FiNALE cabinet](../resources/images/step-6-lighting/billboard-woofer-jst-sm-8-connector.jpg)
 
     !!! tip "The camera LEDs"
         If you plan to install the optional cameras, crimp a few extra connectors now:

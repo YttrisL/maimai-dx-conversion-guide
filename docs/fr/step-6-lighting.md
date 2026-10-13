@@ -133,7 +133,7 @@ Il ne reste plus qu'à brancher l'adaptateur RS-232 vers USB sur le ALLS via le 
     !!! lightbox
         ![Schéma de câblage FiNALE, connecteur AB côté P1 : le harnais MAI-60109 alimente les cartes CENTER LED, ROOF LED (L), ROOF LED (R) et WOOFER LED](../resources/images/step-6-lighting/lighting-topper-p1-side.png)
         ![Schéma de câblage FiNALE, connecteur BB côté P2 : le harnais MAI-60109 alimente les cartes WOOFER LED, ROOF LED (L) et ROOF LED (R), le connecteur SM5P n'étant pas utilisé](../resources/images/step-6-lighting/lighting-topper-p2-side.png)
-        ![Connecteur JST-SM 8 broches qui connecte les woofers et l'enseigne lumineuse (en noir)](../resources/images/step-6-lighting/led-controller-rs232-disconnect.jpg)
+        ![Connecteur JST-SM 8 broches qui connecte les woofers et l'enseigne lumineuse (en noir)](../resources/images/step-6-lighting/billboard-woofer-jst-sm-8-connector.jpg)
 
     Le schéma du P1 comporte un élément `CENTER LED`, absent côté P2 : c'est l'éclairage du centre de l'enseigne. Sur DX, cette distinction n'existe pas : même si les signaux sont séparés, l'enseigne est toujours de la même couleur des deux côtés. Le plus simple est donc de **relier les broches `A2`, `A5` et `A8` du connecteur P1 aux broches `C3`, `C5` et `C8`**, pour que le centre prenne la même couleur que le côté joueur 1.
 
@@ -152,7 +152,7 @@ Deux méthodes sont possibles :
 
     !!! lightbox
         ![PCB de conversion [maiConvert-IO4]({{IO4_CONVERSION_PCB}}) : repérage du connecteur J22 (`12V input`, attention à la polarité) et des connecteurs J23/J24 (`BILLBOARD LED L`/`R`) où raccorder la nappe de LEDs de l'enseigne lumineuse](../resources/images/step-6-lighting/led-inputs-and-12-on-convertion-pcb.jpg)
-        ![Nappes de câbles en JST-SM 8 positions mâle, gérant les LEDs de l'enseigne lumineuse et des woofers, débranché du connecteur raccordé au contrôleur de LED sur une borne FiNALE](../resources/images/step-6-lighting/led-controller-rs232-disconnect.jpg)
+        ![Nappes de câbles en JST-SM 8 positions mâle, gérant les LEDs de l'enseigne lumineuse et des woofers, débranché du connecteur raccordé au contrôleur de LED sur une borne FiNALE](../resources/images/step-6-lighting/billboard-woofer-jst-sm-8-connector.jpg)
 
     *Si vous comptez installer les caméras à l'étape suivante*, la PCB de conversion vous simplifiera aussi la vie : elle propose déjà des connecteurs prêts à l'emploi pour leurs LEDs.
 
@@ -170,7 +170,7 @@ Deux méthodes sont possibles :
     Une fois la nappe terminée, branchez-la à l'IO4, raccordez le 12V, puis branchez les deux connecteurs JST-SM 8 broches d'origine sur votre nouveau câble. **Testez la continuité de tous vos câbles avant l'installation**, pour écarter toute broche mal sertie.
 
     !!! lightbox
-        ![Nappes de câbles en JST-SM 8 positions mâle, gérant les LEDs de l'enseigne lumineuse et des woofers, débranché du connecteur raccordé au contrôleur de LED sur une borne FiNALE](../resources/images/step-6-lighting/led-controller-rs232-disconnect.jpg)
+        ![Nappes de câbles en JST-SM 8 positions mâle, gérant les LEDs de l'enseigne lumineuse et des woofers, débranché du connecteur raccordé au contrôleur de LED sur une borne FiNALE](../resources/images/step-6-lighting/billboard-woofer-jst-sm-8-connector.jpg)
 
     !!! tip "Les LEDs des caméras"
         Si vous comptez installer les caméras optionnelles, sertissez dès maintenant quelques connecteurs supplémentaires :

@@ -50,8 +50,8 @@ L'idéal est de vous procurer **deux petits modules de 30mm x 25mm** : ils s'ada
 * **Installation sur la borne :** [Impression 3D](spiralglide-resources.md#support-du-lecteur-de-qr-code-dx-pass-reader).
 * **Branchement au ALLS :** En USB, via le hub USB branché sur le port **n°2** à l'[étape 1](step-1-alls-and-psu.md). N'importe quel port du hub convient.
 * **Branchement à l'IO4 :**
-    - **1P CODE READER LED : CN3 - Broche 55** : cathode commune (R, G et B) de la bande de LEDs qui éclaire le lecteur du joueur 1.
-    - **2P CODE READER LED : CN3 - Broche 56** : cathode commune (R, G et B) de la bande de LEDs qui éclaire le lecteur du joueur 2.
+    - **1P CODE READER LED : CN3 - Broche 55** : cathodes réunies (R, G et B) de la bande de LEDs qui éclaire le lecteur du joueur 1.
+    - **2P CODE READER LED : CN3 - Broche 56** : cathodes réunies (R, G et B) de la bande de LEDs qui éclaire le lecteur du joueur 2.
 
 Si vous avez suivi la suggestion de l'[étape 6](step-6-lighting.md), vous avez déjà un connecteur prêt pour ces deux signaux. Ils sont aussi disponibles sur la PCB de conversion.
 
@@ -60,7 +60,7 @@ Si vous avez suivi la suggestion de l'[étape 6](step-6-lighting.md), vous avez 
 Si vous avez choisi les caméras de la [liste de courses](equipment.md), leur lentille est réglable : vous pouvez ajuster la mise au point.
 
 !!! tip "Les LEDs des lecteurs de QR-Code"
-    *DX* utilise d'origine une bande de LEDs RGB, mais ses trois couleurs partagent une seule cathode pilotée par l'IO4 : elles s'allument donc toujours ensemble, à (presque) la même intensité. **Une bande de LEDs blanc chaud donnera le même résultat.**
+    *DX* utilise d'origine une bande de LEDs RGB, mais ses trois couleurs partagent le même +12V, et leurs trois cathodes sont reliées ensemble sur un seul signal piloté par l'IO4 : elles s'allument donc toujours ensemble, à (presque) la même intensité. **Une bande de LEDs blanc chaud donnera le même résultat.**
 
     **Ne braquez pas les LEDs directement vers la lentille de la caméra.** Éclairez plutôt la paroi en plastique, pour que la lumière se diffuse sur la carte. Un éclairage de face crée un reflet qui éblouit la caméra et empêche la lecture du QR-Code.
 

@@ -26,8 +26,16 @@ Pour chaque pièce, **l'option la plus adaptée est mise en avant**, que ce soit
 * Où : JDirectItems Auction 
 * Info : Plus facile à trouver, et son logiciel interne est techniquement compatible avec DX.
 
-!!! info "Espace de stockage"
-    Selon le jeu qu'il faisait tourner à l'origine, votre ALLS ne contient peut-être qu'un SSD de 64 ou 128 Go, **insuffisant pour installer le jeu**. Il faut obligatoirement un disque secondaire (nommé "SUB STORAGE"), généralement de 500 Go. Si votre ALLS n'en a pas, vous devrez vous en procurer un.
+</div>
+
+<div class="equipment-card" markdown>
+
+### Disque secondaire (SUB STORAGE)
+* Où : Amazon, AliExpress, votre boutique favorite
+* Info : Un disque dur de 500 Go, que le jeu exige en plus du SSD du ALLS.
+
+!!! tip "Vous l'avez peut-être déjà"
+    Selon le jeu qu'il faisait tourner à l'origine, votre ALLS ne contient peut-être qu'un SSD de 64 ou 128 Go, **insuffisant pour installer le jeu**. Il faut obligatoirement un disque secondaire (nommé "SUB STORAGE"), généralement de 500 Go. **Si votre ALLS en contient déjà un, inutile d'en racheter un.**
 
 </div>
 
@@ -44,6 +52,14 @@ Pour chaque pièce, **l'option la plus adaptée est mise en avant**, que ce soit
     - **sans JVS**, avec un simple port micro-USB à brancher sur un port USB classique.
 
     Sur maimai DX, l'IO4 se branche au ALLS en USB classique, via le port micro-USB : **le support JVS est inutile**. Les IO4 sans JVS sont généralement un peu moins chères, mais en théorie toutes les variantes conviennent.
+
+</div>
+
+<div class="equipment-card" markdown>
+
+### **1x**{: .quantity-emphasis } PCB de conversion maiConvert-IO4
+* Où : [À faire fabriquer vous-même]({{IO4_CONVERSION_PCB}}) : les fichiers sont gratuits et un petit guide, dans le dépôt, explique la démarche.
+* Info : La méthode recommandée pour installer l'IO4 dans la borne (voir l'[étape 4](step-4-io-board.md)) : le harnais d'origine s'y branche tel quel, sans modification. *La modification manuelle du harnais est possible, mais elle n'est pas couverte par cette liste.*
 
 </div>
 
@@ -158,6 +174,10 @@ Ces petits achats bon marché, nécessaires au fil des étapes, se trouvent dans
     - Rallonges vers le ALLS pour le lecteur Aime, le VFD et les dalles tactiles des joueurs 1 et 2.
 * **1x**{: .quantity-emphasis } **Câble IEC C-13 (2 m)** 
     - Branché au ALLS, puis coupé côté prise pour être raccordé directement à l'alimentation électrique de la borne.
+* **1x**{: .quantity-emphasis } **Nappe IDC 2x30 broches (femelle-femelle)**
+    - Pour relier le CN3 de l'IO4 à la PCB de conversion (pas de 2,54 mm).
+* **1x**{: .quantity-emphasis } **Nappe IDC 2x10 broches (femelle-femelle)**
+    - Pour relier le CN9 de l'IO4 à la PCB de conversion (pas de 2,54 mm).
 * **2x**{: .quantity-emphasis } **Câble micro-USB** de charge
     - Pour alimenter les deux proxys des contrôleurs de LEDs : l'extrémité opposée au Pico est coupée, fil rouge sur le 5V et fil noir sur le GND de l'alimentation installée à l'[étape 1](step-1-alls-and-psu.md).
 * **2x**{: .quantity-emphasis } **Câble jack 3.5 mm mâle-mâle**
@@ -180,32 +200,50 @@ Ces petits achats bon marché, nécessaires au fil des étapes, se trouvent dans
 
 * **Fil de câblage souple (AWG 20)** 
     - Plusieurs câbles sont à sertir tout au long du guide : prévoyez-en une bonne réserve, idéalement de plusieurs couleurs.
+* **Fil de câblage souple (1,5 mm²)**
+    - Pour le 12V de la PCB de conversion, qui voit passer un courant important (voir l'[étape 4](step-4-io-board.md)). Prévoyez une longueur suffisante pour rejoindre l'alimentation LEDs de la borne.
 
 ### Éclairage
 
 *Uniquement si vous installez les caméras optionnelles.*
 
 * **1x**{: .quantity-emphasis } **Bande de LEDs blanc chaud 12V**
-    - Éclairage de la caméra des joueurs.
+    - Éclairage de la caméra des joueurs : la bande est disposée en anneau autour de la caméra pour éclairer la zone filmée.
 * **1x**{: .quantity-emphasis } **Bande de LEDs RGB 12V à anode commune**
-    - Éclairage des deux lecteurs de QR-code : une anode commune et une cathode par couleur. Environ 20 cm de bande suffisent.
+    - Éclairage des deux lecteurs de QR-code : le +12V est commun aux trois couleurs, seule la cathode est séparée pour le rouge, le vert et le bleu. Environ 20 cm de bande suffisent.
 * **1x**{: .quantity-emphasis } **LED rouge 12V avec résistance intégrée**
     - Indique aux joueurs que la caméra filme. **Une LED nue grillerait** sur le 12V : prenez un modèle prévu pour cette tension ou, à défaut, une résistance à part de 2,2 à 4,7 kOhm.
 
+### Outils
+
+* **Pince à sertir**
+    - Pour les broches JST et Dupont. Celles du Molex Mini-Fit Jr. demandent souvent une pince dédiée : vérifiez qu'elle est compatible avec vos broches.
+* **Multimètre**
+    - Avec un mode continuité (le "bip"), indispensable pour repérer les fils et tester vos câbles.
+* **Pince à dénuder et pince coupante**
+* **Fer à souder et étain**
+    - Pour les quelques soudures du guide (convertisseurs, Pico sans broches pré-soudées...).
+* **Imprimante 3D** (ou un service d'impression)
+    - Pour les supports de SpiralGlide : lecteur Aime, et lecteurs de QR-code si vous installez les caméras.
+* **Tournevis** assortis
+    - Pour démonter la façade, les dalles et le PC de la borne.
+
 ### Connecteurs
+
+!!! tip "Prenez plus de broches que nécessaire"
+    Un sertissage se rate facilement. **Prévoyez toujours une bonne marge de broches à sertir**, quel que soit le type de connecteur.
+
 
 * **1x**{: .quantity-emphasis } **Connecteur Molex Mini-Fit Jr. 2x7 broches femelle** ([exemple]({{BUY_EXAMPLE_MOLEX_MINI_FIT_JR_CONNECTOR}})) 
     - Pour raccorder proprement le connecteur d'alimentation qui était branché sur le RingEdge 2.
 * **30x**{: .quantity-emphasis } **Broche Molex Mini-Fit Jr. femelle à sertir** 
     - Pour aller avec le connecteur précédent.
-* **1x**{: .quantity-emphasis } **Connecteur JST-RA 2x10 broches femelle** 
-    - Pour le CN9 de l'IO4.
-* **30x**{: .quantity-emphasis } **Broche JST-RA femelle à sertir** 
-    - Pour le CN9 et les câbles à ajouter sur le CN3 de l'IO4.
 * **2x**{: .quantity-emphasis } **Connecteur JST-SM 8 broches femelle** 
     - Extrémités de la nappe d'éclairage de l'enseigne lumineuse, côté joueur 1 et côté joueur 2, à raccorder aux connecteurs JST-SM d'origine.
-* **2x**{: .quantity-emphasis } **Connecteur JST-SM 2 broches, paire mâle + femelle**
-    - Idéal pour fabriquer vos propres connecteurs et vous simplifier la vie. À défaut, de simples JST-XH conviennent aussi.
+* **30x**{: .quantity-emphasis } **Broche JST-SM femelle à sertir** 
+    - Pour aller avec le connecteur précédent.
+* **1x**{: .quantity-emphasis } **Connecteur JST-SM 2 broches, paire mâle + femelle**
+    - Pour regrouper l'alimentation du lecteur Aime et du VFD sur un seul connecteur (voir l'[étape 3](step-3-aime-reader.md)). À défaut, de simples JST-XH conviennent aussi.
 * **2x**{: .quantity-emphasis } **Connecteur JST-SH 4 broches femelle** 
     - Pour raccorder le CN10 de la carte I/O de chaque dalle tactile HDX (pas de 1,0 mm).
 * **10x**{: .quantity-emphasis } **Broche JST-SH femelle à sertir** 

@@ -14,7 +14,7 @@ L'ancien PC *RingEdge 2* ne peut pas faire tourner *DX* : il vous faut un PC **A
     Un ALLS ressemble beaucoup à un PC gaming moderne, avec deux particularités :
 
     - **Un port USB renfoncé** sur le dessus de la carte mère, dédié au **keychip**. Cette clé USB identifie le propriétaire de la borne sur le réseau officiel Sega et déchiffre les données de jeu.
-    - **Deux cartes d'extension** (sur les modèles de deuxième génération), qui ajoutent trois ports série RS-232 et une prise jack 2,5mm. Avec le port COM de la carte mère, ces ports série servent à connecter le lecteur Aime, le VFD et les dalles tactiles des deux écrans. La prise jack est dédiée à l'une des deux prises casque.
+    - **Deux cartes d'extension** (sur les modèles de deuxième génération), qui ajoutent trois ports série RS-232 et une prise jack 3,5mm. Avec le port COM de la carte mère, ces ports série servent à connecter le lecteur Aime, le VFD et les dalles tactiles des deux écrans. La prise jack est dédiée à l'une des deux prises casque.
 
     !!! tip "L'alimentation électrique du ALLS"
         L'alimentation du ALLS commute automatiquement sa tension : son connecteur C13 accepte indifféremment du 100V, 110V, 220V ou 240V. **Aucun transformateur externe n'est nécessaire.**
@@ -44,11 +44,11 @@ La plupart des composants voisins peuvent aussi être retirés. À droite du Rin
 
 Une fois ces trois PCB retirées, faites le ménage : **vous aurez besoin de tout l'espace disponible.** Si le RingEdge 2 était monté sur planche, vous devriez maintenant disposer d'une surface parfaitement plane. *S'il reposait sur deux lattes de bois, retirez-les également.* Dans la mesure du possible, fixez les câbles le long des parois latérales plutôt qu'au sol, afin de libérer un maximum de place.
 
-**Le routeur et la caméra de FiNALE** peuvent aussi être retirés : le routeur servait notamment à relier la caméra au RingEdge 2, et cette caméra ne sert plus sur *DX*. Pensez également à retirer le câble audio jack 2,5mm qui reliait la caméra au RingEdge 2.
+**Le routeur et la caméra de FiNALE** peuvent aussi être retirés : le routeur servait notamment à relier la caméra au RingEdge 2, et cette caméra ne sert plus sur *DX*. Pensez également à retirer le câble audio jack 3,5mm qui reliait la caméra au RingEdge 2.
 
 #### Les câbles vidéo
 
-À l'origine, les bornes maimai pré-*DX* relient leurs écrans au RingEdge 2 par **deux câbles DVI vers VGA** (côté VGA sur l'écran). Un choix qui reste un mystère, puisque les deux écrans disposent d'une entrée DVI : beaucoup d'exploitants les ont donc remplacés par de simples câbles DVI vers DVI. Selon l'historique de votre borne, vous trouverez l'un ou l'autre :
+À l'origine, les bornes maimai pré-*DX* relient leurs écrans au RingEdge 2 par **deux câbles DVI vers VGA** : côté DVI sur la carte graphique, côté VGA sur l'écran. Un choix qui reste un mystère, puisque les écrans disposent aussi d'un port DVI : beaucoup d'exploitants les ont donc remplacés par de simples câbles DVI vers DVI. Selon l'historique de votre borne, vous trouverez l'un ou l'autre :
 
 - **Joueur 1** : retirez le câble, quel qu'il soit.
 - **Joueur 2** : **conservez-le s'il s'agit d'un DVI vers DVI**, retirez-le s'il s'agit du DVI vers VGA d'origine.
@@ -56,7 +56,7 @@ Une fois ces trois PCB retirées, faites le ménage : **vous aurez besoin de tou
 !!! success "Ce qui doit rester"
     De la connectique d'origine du RingEdge 2, il ne devrait plus vous rester que :
 
-    - les deux câbles audio jack 2,5mm des haut-parleurs joueur 1 et joueur 2
+    - les deux câbles audio jack 3,5mm des haut-parleurs joueur 1 et joueur 2
     - le câble Molex Mini-Fit Jr (alimentation)
     - éventuellement, le câble DVI vers DVI de l'écran joueur 2
 
@@ -93,8 +93,8 @@ La plupart des appareils à connecter sont présentés plus en détail dans les 
 ### Carte mère
 
 - **COM1 - Port DB9** : Lecteur Aime
-- **LAN1 - Port RJ45** : Port réseau, à connecter au routeur de service. Le second port réseau est inutilisé.
-- **Audio Jacks 2,5mm** :
+- **LAN1 - Port RJ45** : Port réseau, à connecter au routeur de service (celui du réseau sur lequel la borne sera connectée, à ne pas confondre avec le routeur interne de FiNALE). Le second port réseau est inutilisé.
+- **Audio Jacks 3,5mm** :
     - **C/W** : [Prise casque](step-5-audio-headphones.md#les-prises-casques) Joueur 1
     - **FRONT** : [Haut-parleurs](step-5-audio-headphones.md#branchement-des-haut-parleurs) Joueur 1
     - **REAR** : [Haut-parleurs](step-5-audio-headphones.md#branchement-des-haut-parleurs) Joueur 2
@@ -108,7 +108,7 @@ La plupart des appareils à connecter sont présentés plus en détail dans les 
 
 - **HDMI** : Raccordé à l'écran du joueur 1 via un câble HDMI - DVI-D.
 - **DVI** : Raccordé à l'écran du joueur 2 via un câble DVI-D.
-- **DisplayPort** : Inutilisé, duplique le signal vidéo du joueur 1.
+- **DisplayPort** : Duplique le signal vidéo du joueur 1 : peut remplacer le HDMI, mais le manuel officiel ne mentionne que le HDMI.
 
 ### Cartes d'extension
 

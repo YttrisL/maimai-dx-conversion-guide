@@ -31,10 +31,13 @@ The ALLS has 4 audio jacks: three in the usual location and a fourth on the expa
 
 ### Installing an amplifier
 
-Since the signal on the C/W and SIDE outputs is too weak, you need to buy **one or two small, cheap audio amplifiers**, one per player, plus 3.5 mm male-to-male jack cables to connect them to the ALLS. Everything is listed in the [shopping list](equipment.md#electronics).
+Since the signal on the C/W and SIDE outputs is too weak, you need to buy **two small, cheap audio amplifiers**, one per player, plus 3.5 mm male-to-male jack cables to connect them to the ALLS. Everything is listed in the [shopping list](equipment.md#electronics).
 
 !!! tip "No need for amps with volume knobs"
     On DX, headphone volume is adjusted digitally in the game menus. However, if your FiNALE had already been modified with a headphone jack, you can reuse the amp already in place.
+
+!!! info "Powering the amps"
+    The choice of amp is yours, and its power supply depends on it. These small amps almost always run on **5V**: you can plug them into the Mean Well power supply installed in [step 1](step-1-alls-and-psu.md).
 
 ### Installing on the cabinet
 

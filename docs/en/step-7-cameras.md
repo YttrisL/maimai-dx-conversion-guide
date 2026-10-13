@@ -50,8 +50,8 @@ Ideally, get **two small 30mm x 25mm modules**: they fit [the 3D model designed 
 * **Installation on the cabinet:** [3D printing](spiralglide-resources.md#qr-code-reader-mount-dx-pass-reader).
 * **Connection to the ALLS:** USB, through the USB hub plugged into port **#2** in [step 1](step-1-alls-and-psu.md). Any port on the hub will do.
 * **Connection to the IO4:**
-    - **1P CODE READER LED: CN3 - Pin 55**: common cathode (R, G and B) of the LED strip lighting the player 1 reader.
-    - **2P CODE READER LED: CN3 - Pin 56**: common cathode (R, G and B) of the LED strip lighting the player 2 reader.
+    - **1P CODE READER LED: CN3 - Pin 55**: tied cathodes (R, G and B) of the LED strip lighting the player 1 reader.
+    - **2P CODE READER LED: CN3 - Pin 56**: tied cathodes (R, G and B) of the LED strip lighting the player 2 reader.
 
 If you followed the suggestion in [step 6](step-6-lighting.md), you already have a connector ready for these two signals. They are also available on the conversion PCB.
 
@@ -60,7 +60,7 @@ If you followed the suggestion in [step 6](step-6-lighting.md), you already have
 If you chose the cameras from the [shopping list](equipment.md), their lens is adjustable: you can tweak the focus.
 
 !!! tip "The QR-code reader LEDs"
-    *DX* originally uses an RGB LED strip, but its three colors share a single cathode driven by the IO4: they always light up together, at (almost) the same intensity. **A warm white LED strip will give the same result.**
+    *DX* originally uses an RGB LED strip, but its three colors share the same +12V, and their three cathodes are tied together on a single signal driven by the IO4: they always light up together, at (almost) the same intensity. **A warm white LED strip will give the same result.**
 
     **Do not point the LEDs directly at the camera lens.** Light the plastic wall instead, so the light diffuses onto the card. Front lighting creates a glare that blinds the camera and prevents the QR-code from being read.
 

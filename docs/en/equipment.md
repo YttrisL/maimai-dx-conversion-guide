@@ -26,8 +26,16 @@ For each part, **the most suitable option is highlighted**, whether for its ease
 * Where: JDirectItems Auction
 * Info: easier to find, and its internal software is technically compatible with DX.
 
-!!! info "Storage space"
-    Depending on the game it originally ran, your ALLS may only contain a 64 or 128 GB SSD, **not enough to install the game**. A secondary drive (named "SUB STORAGE"), usually 500 GB, is mandatory. If your ALLS does not have one, you will need to get one.
+</div>
+
+<div class="equipment-card" markdown>
+
+### Secondary drive (SUB STORAGE)
+* Where: Amazon, AliExpress, your favorite shop
+* Info: a 500 GB hard drive, which the game requires in addition to the ALLS's SSD.
+
+!!! tip "You may already have it"
+    Depending on the game it originally ran, your ALLS may only contain a 64 or 128 GB SSD, **not enough to install the game**. A secondary drive (named "SUB STORAGE"), usually 500 GB, is mandatory. **If your ALLS already contains one, there is no need to buy another.**
 
 </div>
 
@@ -44,6 +52,14 @@ For each part, **the most suitable option is highlighted**, whether for its ease
     - **without JVS**, with a simple micro-USB port to plug into a regular USB port.
 
     On maimai DX, the IO4 connects to the ALLS over regular USB, through the micro-USB port: **JVS support is useless**. IO4s without JVS are usually a little cheaper, but in theory every variant works.
+
+</div>
+
+<div class="equipment-card" markdown>
+
+### **1x**{: .quantity-emphasis } maiConvert-IO4 conversion PCB
+* Where: [Have it made yourself]({{IO4_CONVERSION_PCB}}): the files are free and a short guide, in the repository, explains how.
+* Info: the recommended way to install the IO4 in the cabinet (see [step 4](step-4-io-board.md)): the original harness plugs into it as is, with no modification. *Modifying the harness by hand is possible, but it is not covered by this list.*
 
 </div>
 
@@ -158,6 +174,10 @@ These small, cheap purchases, needed over the course of the steps, can be found 
     - Extensions to the ALLS for the Aime reader, the VFD and the player 1 and 2 touchscreens.
 * **1x**{: .quantity-emphasis } **IEC C-13 cable (2 m)**
     - Plugged into the ALLS, then cut at the plug end to be wired directly to the cabinet's mains supply.
+* **1x**{: .quantity-emphasis } **IDC ribbon cable, 2x30 pins (female-female)**
+    - To connect the IO4's CN3 to the conversion PCB (2.54 mm pitch).
+* **1x**{: .quantity-emphasis } **IDC ribbon cable, 2x10 pins (female-female)**
+    - To connect the IO4's CN9 to the conversion PCB (2.54 mm pitch).
 * **2x**{: .quantity-emphasis } charging **micro-USB cable**
     - To power the two LED controller proxies: the end opposite the Pico is cut off, red wire to 5V and black wire to GND on the power supply installed in [step 1](step-1-alls-and-psu.md).
 * **2x**{: .quantity-emphasis } **3.5 mm male-to-male jack cable**
@@ -180,32 +200,50 @@ These small, cheap purchases, needed over the course of the steps, can be found 
 
 * **Flexible hookup wire (AWG 20)**
     - Several cables need crimping throughout the guide: plan a good supply, ideally in several colors.
+* **Flexible hookup wire (1.5 mm²)**
+    - For the conversion PCB's 12V, which carries a high current (see [step 4](step-4-io-board.md)). Plan enough length to reach the cabinet's LED power supply.
 
 ### Lighting
 
 *Only if you install the optional cameras.*
 
 * **1x**{: .quantity-emphasis } **12V warm white LED strip**
-    - Lighting for the player camera.
+    - Lighting for the player camera: the strip is arranged in a ring around the camera to light the filmed area.
 * **1x**{: .quantity-emphasis } **12V common-anode RGB LED strip**
-    - Lighting for both QR-code readers: one common anode and one cathode per color. About 20 cm of strip is enough.
+    - Lighting for both QR-code readers: the +12V is shared by the three colors, only the cathode is separate for red, green and blue. About 20 cm of strip is enough.
 * **1x**{: .quantity-emphasis } **12V red LED with built-in resistor**
     - Tells players the camera is filming. **A bare LED would burn out** on 12V: pick a model rated for that voltage or, failing that, a separate 2.2 to 4.7 kOhm resistor.
 
+### Tools
+
+* **Crimping tool**
+    - For JST and Dupont pins. The one for Molex Mini-Fit Jr. often needs a dedicated tool: check that it is compatible with your pins.
+* **Multimeter**
+    - With a continuity mode (the "beep"), essential to identify wires and test your cables.
+* **Wire stripper and cutter**
+* **Soldering iron and solder**
+    - For the few solder joints in the guide (converters, Pico without pre-soldered pins...).
+* **3D printer** (or a printing service)
+    - For SpiralGlide's mounts: Aime reader, and QR-code readers if you install the cameras.
+* **Screwdrivers**
+    - To take apart the front panel, the touchscreens and the cabinet's PC.
+
 ### Connectors
+
+!!! tip "Take more pins than needed"
+    A crimp is easy to get wrong. **Always keep a good margin of crimp pins**, whatever the connector type.
+
 
 * **1x**{: .quantity-emphasis } **Molex Mini-Fit Jr. 2x7-pin female connector** ([example]({{BUY_EXAMPLE_MOLEX_MINI_FIT_JR_CONNECTOR}}))
     - To cleanly connect the power connector that used to be plugged into the RingEdge 2.
 * **30x**{: .quantity-emphasis } **Molex Mini-Fit Jr. female crimp pin**
     - To go with the previous connector.
-* **1x**{: .quantity-emphasis } **JST-RA 2x10-pin female connector**
-    - For the IO4's CN9.
-* **30x**{: .quantity-emphasis } **JST-RA female crimp pin**
-    - For CN9 and the cables to add on the IO4's CN3.
 * **2x**{: .quantity-emphasis } **JST-SM 8-pin female connector**
     - The ends of the billboard lighting harness, Player 1 side and Player 2 side, to connect to the original JST-SM connectors.
-* **2x**{: .quantity-emphasis } **JST-SM 2-pin connector, male + female pair**
-    - Ideal for making your own connectors and simplifying your life. Failing that, plain JST-XH will also do.
+* **30x**{: .quantity-emphasis } **JST-SM female crimp pin**
+    - To go with the previous connector.
+* **1x**{: .quantity-emphasis } **JST-SM 2-pin connector, male + female pair**
+    - To merge the Aime reader and VFD power into a single connector (see [step 3](step-3-aime-reader.md)). Failing that, plain JST-XH will also do.
 * **2x**{: .quantity-emphasis } **JST-SH 4-pin female connector**
     - To connect the CN10 of each HDX touchscreen's I/O board (1.0 mm pitch).
 * **10x**{: .quantity-emphasis } **JST-SH female crimp pin**

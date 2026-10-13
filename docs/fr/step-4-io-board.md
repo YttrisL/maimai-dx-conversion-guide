@@ -16,7 +16,7 @@ Pour faire tourner *DX*, **l'IO3 de FiNALE doit être remplacée par une IO4**, 
 
     Le premier point est simple, le second bien plus contraignant : **6 signaux LEDs passent désormais par l'IO4**, là où les contrôleurs de LEDs géraient seuls l'éclairage sur FiNALE.
 
-    Autre changement : **l'IO4 communique avec le PC en USB**, et non plus en JVS comme sur RingEdge 2. *Certaines variantes d'IO4 gèrent aussi le JVS, mais peu importe ici : la connexion se fait forcément en USB.*
+    Autre changement : **l'IO4 se branche au PC en USB**. Les cartes I/O Sega historiques fonctionnent en JVS ; l'IO4 reste compatible (elle peut notamment être chaînée à d'autres cartes), mais elle ajoute un port USB qui, pour certains jeux dont DX, est le seul branchement pris en charge. *Certaines variantes d'IO4 n'ont d'ailleurs pas de JVS : peu importe ici, la connexion se fait forcément en USB.*
 
     !!! lightbox
         ![Une carte IO4 Sega (837-15257)](../resources/images/step-4-io-board/io4-board.jpg)

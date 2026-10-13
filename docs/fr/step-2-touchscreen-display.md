@@ -15,19 +15,19 @@ Les écrans changent peu de FiNALE à DX : **vous pouvez les garder**. Les dalle
 
     Dans les deux cas, les écrans affichent une résolution native de **1920x1080 à 60 Hz**. C'est la connectique côté système qui diffère :
 
-    * **RingEdge 2 (FiNALE) :** les deux écrans se connectent en VGA.
+    * **RingEdge 2 (FiNALE) :** les deux écrans sont reliés par un câble DVI vers VGA (côté VGA sur l'écran).
     * **ALLS (DX) :** HDMI pour le joueur 1, DVI pour le joueur 2.
 
-    Sur les écrans eux-mêmes, la connexion reste dans tous les cas en **DVI**.
+    Sur les écrans, c'est dans tous les cas le port **DVI** qu'il faut utiliser pour DX : brancher la carte graphique en analogique (VGA) n'aurait aucun sens.
 
     Si les écrans de votre borne sont fonctionnels, il n'y a aucune raison de les changer.
 
 Le manuel officiel de DX impose un branchement précis. *(Référence : [page 128](../resources/pdfs/maimai-dx-instruction-manual-full.pdf))*
 
-* **Joueur 1 (P1) :** peut être branché sur le port **HDMI** ou **DisplayPort** (le [manuel officiel](../resources/pdfs/maimai-dx-instruction-manual-full.pdf) recommande HDMI).
+* **Joueur 1 (P1) :** peut être branché sur le port **HDMI** ou **DisplayPort** (le [manuel officiel](../resources/pdfs/maimai-dx-instruction-manual-full.pdf) ne mentionne que le HDMI).
 * **Joueur 2 (P2) :** doit être branché sur le port **DVI**.
 
-Comme mentionné à [l'étape 1](step-1-alls-and-psu.md), certaines bornes FiNALE ont été modifiées par leur exploitant pour connecter les deux écrans en **DVI** plutôt qu'en VGA, comme c'était le cas à l'origine. Si c'est votre cas, vous pouvez **réutiliser le câble DVI** pour l'écran du joueur 2. Sinon, il vous faudra **un câble HDMI vers DVI** (joueur 1) et **un câble DVI vers DVI** (joueur 2).
+Comme mentionné à [l'étape 1](step-1-alls-and-psu.md), certaines bornes FiNALE ont été modifiées par leur exploitant pour utiliser le port **DVI** des écrans plutôt que leur port VGA, utilisé à l'origine. Si c'est votre cas, vous pouvez **réutiliser le câble DVI** pour l'écran du joueur 2. Sinon, il vous faudra **un câble HDMI vers DVI** (joueur 1) et **un câble DVI vers DVI** (joueur 2).
 
 ## Les dalles tactiles
 

@@ -9,7 +9,9 @@ title: "☑️ Purchase checklist"
 ## Mandatory hardware
 
 - [ ] ALLS HX2
+- [ ] 500 GB secondary hard drive (SUB STORAGE) - *if needed*
 - [ ] Sega IO4 I/O board
+- [ ] **1x**{: .quantity-emphasis } maiConvert-IO4 conversion PCB
 - [ ] Aime reader (Gen. 3)
 - [ ] **2x**{: .quantity-emphasis } HDX touchscreen
 - [ ] **16x**{: .quantity-emphasis } HDX buttons
@@ -31,6 +33,8 @@ title: "☑️ Purchase checklist"
 - [ ] **1x**{: .quantity-emphasis } DB-9 Female-Female cable
 - [ ] **4x**{: .quantity-emphasis } DB-9 Male-Female cable (3 m)
 - [ ] **1x**{: .quantity-emphasis } IEC C-13 cable (2 m)
+- [ ] **1x**{: .quantity-emphasis } IDC ribbon cable, 2x30 pins (female-female)
+- [ ] **1x**{: .quantity-emphasis } IDC ribbon cable, 2x10 pins (female-female)
 - [ ] **2x**{: .quantity-emphasis } micro-USB cable
 - [ ] **2x**{: .quantity-emphasis } 3.5 mm male-to-male jack cable
 
@@ -45,6 +49,7 @@ title: "☑️ Purchase checklist"
 ### Hookup wire
 
 - [ ] Flexible hookup wire (AWG 20), ideally in several colors
+- [ ] Flexible hookup wire (1.5 mm²)
 
 ### Lighting (optional cameras)
 
@@ -52,14 +57,22 @@ title: "☑️ Purchase checklist"
 - [ ] **1x**{: .quantity-emphasis } 12V common-anode RGB LED strip (about 20 cm)
 - [ ] **1x**{: .quantity-emphasis } 12V red LED (with built-in resistor)
 
+### Tools
+
+- [ ] Crimping tool
+- [ ] Multimeter
+- [ ] Wire stripper and cutter
+- [ ] Soldering iron and solder
+- [ ] 3D printer (or printing service)
+- [ ] Assorted screwdrivers
+
 ### Connectors
 
 - [ ] **1x**{: .quantity-emphasis } Molex Mini-Fit Jr. 2x7-pin female connector
 - [ ] **30x**{: .quantity-emphasis } Molex Mini-Fit Jr. female crimp pin
-- [ ] **1x**{: .quantity-emphasis } JST-RA 2x10-pin female connector
-- [ ] **30x**{: .quantity-emphasis } JST-RA female crimp pin
 - [ ] **2x**{: .quantity-emphasis } JST-SM 8-pin female connector
-- [ ] **2x**{: .quantity-emphasis } JST-SM 2-pin connector (male + female pair)
+- [ ] **30x**{: .quantity-emphasis } JST-SM female crimp pin
+- [ ] **1x**{: .quantity-emphasis } JST-SM 2-pin connector (male + female pair)
 - [ ] **2x**{: .quantity-emphasis } JST-SH 4-pin female connector
 - [ ] **10x**{: .quantity-emphasis } JST-SH female crimp pin
 - [ ] JST-XH connector kit

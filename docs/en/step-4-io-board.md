@@ -16,7 +16,7 @@ To run *DX*, **the FiNALE IO3 must be replaced with a newer IO4**. Button-wise, 
 
     The first point is simple, the second far more restrictive: **6 LED signals now go through the IO4**, where the LED controllers used to handle the lighting on their own on FiNALE.
 
-    Another change: **the IO4 talks to the PC over USB**, no longer over JVS as on RingEdge 2. *Some IO4 variants also support JVS, but that doesn't matter here: the connection is always made over USB.*
+    Another change: **the IO4 plugs into the PC over USB**. Historical Sega I/O boards work over JVS; the IO4 remains compatible (it can notably be daisy-chained with other boards), but it adds a USB port which, for some games including DX, is the only supported connection. *Some IO4 variants have no JVS at all: it doesn't matter here, the connection is always made over USB.*
 
     !!! lightbox
         ![A Sega IO4 board (837-15257)](../resources/images/step-4-io-board/io4-board.jpg)

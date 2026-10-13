@@ -31,10 +31,13 @@ Le ALLS dispose de 4 prises jack audio : trois à l'emplacement classique et une
 
 ### Installation d'un ampli
 
-Le signal des sorties C/W et SIDE étant trop faible, il faut acheter **un ou deux petits amplificateurs audio bon marché**, un par joueur, ainsi que des câbles jack 3.5 mm mâle-mâle pour les relier au ALLS. Tout est référencé dans la [liste de courses](equipment.md#electronique).
+Le signal des sorties C/W et SIDE étant trop faible, il faut acheter **deux petits amplificateurs audio bon marché**, un par joueur, ainsi que des câbles jack 3.5 mm mâle-mâle pour les relier au ALLS. Tout est référencé dans la [liste de courses](equipment.md#electronique).
 
 !!! tip "Inutile d'acheter des amplis avec des molettes de volume"
     Sur DX, le volume des casques se règle numériquement dans les menus du jeu. Toutefois, si votre FiNALE avait déjà été modifiée avec une prise casque, vous pouvez réutiliser l'ampli en place.
+
+!!! info "Alimenter les amplis"
+    Le choix de l'ampli vous appartient, et son alimentation en dépend. Ces petits amplis fonctionnent presque toujours en **5V** : vous pouvez les brancher sur l'alimentation Mean Well installée à l'[étape 1](step-1-alls-and-psu.md).
 
 ### Mise en place sur la borne
 

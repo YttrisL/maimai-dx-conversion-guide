@@ -63,11 +63,11 @@ if `python --version` says "command not found", try `python3 --version`.)
 
 ## 2. Get the code
 
-Clone the repo (swap in the actual repo URL) and move into the folder:
+Clone the repo and move into the folder:
 
 ```bash
-git clone <your-gitea-repo-url>
-cd maimai-dx-guide
+git clone https://github.com/YttrisL/maimai-dx-conversion-guide.git
+cd maimai-dx-conversion-guide
 ```
 
 If you already downloaded this as a zip instead of cloning, just open a

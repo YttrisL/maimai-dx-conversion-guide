@@ -9,7 +9,9 @@ title: "☑️ Checklist d'achat"
 ## Matériel obligatoire
 
 - [ ] ALLS HX2
+- [ ] Disque dur secondaire de 500 Go (SUB STORAGE) - *si nécessaire*
 - [ ] Carte I/O Sega IO4
+- [ ] **1x**{: .quantity-emphasis } PCB de conversion maiConvert-IO4
 - [ ] Lecteur Aime (Gen. 3)
 - [ ] **2x**{: .quantity-emphasis } Dalle tactile HDX
 - [ ] **16x**{: .quantity-emphasis } Boutons HDX
@@ -31,6 +33,8 @@ title: "☑️ Checklist d'achat"
 - [ ] **1x**{: .quantity-emphasis } Câble DB-9 Femelle-Femelle
 - [ ] **4x**{: .quantity-emphasis } Câble DB-9 Mâle-Femelle (3 m)
 - [ ] **1x**{: .quantity-emphasis } Câble IEC C-13 (2 m)
+- [ ] **1x**{: .quantity-emphasis } Nappe IDC 2x30 broches (femelle-femelle)
+- [ ] **1x**{: .quantity-emphasis } Nappe IDC 2x10 broches (femelle-femelle)
 - [ ] **2x**{: .quantity-emphasis } Câble micro-USB
 - [ ] **2x**{: .quantity-emphasis } Câble jack 3.5 mm mâle-mâle
 
@@ -45,6 +49,7 @@ title: "☑️ Checklist d'achat"
 ### Fils de câblage
 
 - [ ] Fil de câblage souple (AWG 20), idéalement de plusieurs couleurs
+- [ ] Fil de câblage souple (1,5 mm²)
 
 ### Éclairage (caméras optionnelles)
 
@@ -52,14 +57,22 @@ title: "☑️ Checklist d'achat"
 - [ ] **1x**{: .quantity-emphasis } Bande de LEDs RGB 12V à anode commune (environ 20 cm)
 - [ ] **1x**{: .quantity-emphasis } LED rouge 12V (avec résistance intégrée)
 
+### Outils
+
+- [ ] Pince à sertir
+- [ ] Multimètre
+- [ ] Pince à dénuder et pince coupante
+- [ ] Fer à souder et étain
+- [ ] Imprimante 3D (ou service d'impression)
+- [ ] Tournevis assortis
+
 ### Connecteurs
 
 - [ ] **1x**{: .quantity-emphasis } Connecteur Molex Mini-Fit Jr. 2x7 broches femelle
 - [ ] **30x**{: .quantity-emphasis } Broche Molex Mini-Fit Jr. femelle à sertir
-- [ ] **1x**{: .quantity-emphasis } Connecteur JST-RA 2x10 broches femelle
-- [ ] **30x**{: .quantity-emphasis } Broche JST-RA femelle à sertir
 - [ ] **2x**{: .quantity-emphasis } Connecteur JST-SM 8 broches femelle
-- [ ] **2x**{: .quantity-emphasis } Connecteur JST-SM 2 broches (paire mâle + femelle)
+- [ ] **30x**{: .quantity-emphasis } Broche JST-SM femelle à sertir
+- [ ] **1x**{: .quantity-emphasis } Connecteur JST-SM 2 broches (paire mâle + femelle)
 - [ ] **2x**{: .quantity-emphasis } Connecteur JST-SH 4 broches femelle
 - [ ] **10x**{: .quantity-emphasis } Broche JST-SH femelle à sertir
 - [ ] Kit de connecteurs JST-XH

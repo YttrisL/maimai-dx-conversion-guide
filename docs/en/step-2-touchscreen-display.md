@@ -15,19 +15,19 @@ The screens change little from FiNALE to DX: **you can keep them**. The touchscr
 
     In both cases, the screens have a native resolution of **1920x1080 at 60 Hz**. What differs is the connectivity on the system side:
 
-    * **RingEdge 2 (FiNALE):** both screens connect over DVI.
+    * **RingEdge 2 (FiNALE):** both screens are linked with a DVI to VGA cable (VGA end on the screen).
     * **ALLS (DX):** HDMI for player 1, DVI for player 2.
 
-    On the screens themselves, the connection is **DVI** in every case.
+    On the screens, the **DVI** port is the one to use for DX in every case: connecting the graphics card over analog (VGA) would make no sense.
 
     If the screens in your cabinet work, there is no reason to replace them.
 
 The official DX manual requires a specific connection. *(Reference: [page 128](../resources/pdfs/maimai-dx-instruction-manual-full.pdf))*
 
-* **Player 1 (P1):** can be connected to the **HDMI** or **DisplayPort** port (the [official manual](../resources/pdfs/maimai-dx-instruction-manual-full.pdf) recommends HDMI).
+* **Player 1 (P1):** can be connected to the **HDMI** or **DisplayPort** port (the [official manual](../resources/pdfs/maimai-dx-instruction-manual-full.pdf) only mentions HDMI).
 * **Player 2 (P2):** must be connected to the **DVI** port.
 
-As mentioned in [step 1](step-1-alls-and-psu.md), some FiNALE cabinets were modified by their operator to connect both screens over **DVI** instead of VGA, which is how they originally shipped. If that is your case, you can **reuse the DVI cable** for the player 2 screen. Otherwise, you will need **an HDMI to DVI cable** (player 1) and **a DVI to DVI cable** (player 2).
+As mentioned in [step 1](step-1-alls-and-psu.md), some FiNALE cabinets were modified by their operator to use the screens' **DVI** port instead of their VGA port, which was used originally. If that is your case, you can **reuse the DVI cable** for the player 2 screen. Otherwise, you will need **an HDMI to DVI cable** (player 1) and **a DVI to DVI cable** (player 2).
 
 ## The touchscreens
 
