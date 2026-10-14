@@ -22,7 +22,7 @@ This framing is called a **UART** frame (*Universal Asynchronous Receiver-Transm
 
 **RS-232 and RS-485**, covered right after, are simply **two ways of electrically translating this same framing**, to send it over a longer or more reliable cable. Like the same letter handed to two different postal services: what is written on it does not change.
 
-**The role of the "clock":** to read a sequence of bits correctly, you need to know exactly when to look at the line, like a metronome keeping time for musicians. In electronics, this timing signal is called a **clock**. Nothing to do with a wall clock: it is a signal that repeats "now, now..." at a fixed interval, telling each device to read the next bit.
+**The role of the "clock":** to read a sequence of bits correctly, you need to know exactly when to look at the line, like a metronome keeping time for musicians. In electronics, this timing signal is called a **clock**. It has nothing to do with a wall clock: it is a signal that repeats "now, now..." at a fixed interval, telling each device to read the next bit.
 
 That is exactly what the "A" in UART means, for *Asynchronous*: **there is no wire dedicated to the clock**. Each device has to find the right rhythm on its own, using its own internal clock, set in advance to the agreed rate.
 
@@ -44,7 +44,7 @@ In this guide, **RS-232 is the protocol the game uses** to:
 
 It is a widespread standard in the arcade world.
 
-**The DB9 connector:** this small trapezoidal 9-pin connector on two rows, which RS-232 made almost universal, is often wrongly mistaken for an "inverted" VGA port. You find it on the *RingEdge 2* as well as on the *ALLS*. Of the 9 pins, **only three really matter to us**:
+**The DB9 connector:** this small trapezoidal 9-pin connector on two rows, which RS-232 made almost universal, is often mistaken for an "inverted" VGA port. You find it on the *RingEdge 2* as well as on the *ALLS*. Of the 9 pins, **only three really matter to us**:
 
 * **TX**: transmit;
 * **RX**: receive;
@@ -91,7 +91,7 @@ The game and the I/O board therefore exchange plain UART bytes, like any serial 
 2. It then asks, still to everyone: "who does not have an address yet? Answer me". An extra wire, daisy-chained from one device to the next, lets only one device answer at a time. The host thus assigns **an address to each device, one by one**: this is JVS auto-addressing.
 3. Once the addresses are handed out, the host **polls each board in turn** ("anything new?").
 
-It is a **master/slaves** dialogue: only the host takes the initiative. In an arcade system, it is typically the I/O board that speaks JVS. Despite its USB cable, it actually always communicates over an RS-485 serial link under the hood.
+It is a **master/slaves** exchange: only the host takes the initiative. In an arcade system, it is typically the I/O board that speaks JVS. Despite its USB cable, it actually always communicates over an RS-485 serial link under the hood.
 
 ## 5. USB-CDC: the disguise
 

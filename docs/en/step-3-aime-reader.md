@@ -14,9 +14,9 @@ title: "💳 3 - Aime card reader"
     On *DX*, there is only **a single reader**. When a card is scanned, the profile appears on both screens: its owner confirms the login on their screen, then the second player can scan their own card. The technology used is completely different: **a *FiNALE* Aime reader cannot be reused.**
 
     !!! info "aic_pico"
-        It is technically possible to use an [aic_pico]({{AIC_PICO_REPO}}), an open-source project that imitates a real Aime reader transparently for the game. It is much cheaper to produce, but would need a good deal of tinkering to be connected to the corresponding DB9 port on the *ALLS*.
+        It is technically possible to use an [aic_pico]({{AIC_PICO_REPO}}), an open-source project that emulates a real Aime reader transparently for the game. It is much cheaper to produce, but would need a good deal of tinkering to be connected to the corresponding DB9 port on the *ALLS*.
 
-    Last-generation Aime readers are not that rare anyway, and are often sold **as a combo with the VFD** that we also need. This generation is technically compatible with electronic payment, but even in Japan, that feature is almost never used: operators prefer to install their own, more flexible payment terminal.
+    Latest-generation Aime readers are not that rare anyway, and are often sold **as a combo with the VFD** that we also need. This generation is technically compatible with electronic payment, but even in Japan, that feature is almost never used: operators prefer to install their own, more flexible payment terminal.
 
 ## The connectors
 
@@ -57,7 +57,7 @@ Wire colors vary from one DB9 cable to another: do not rely on the colors in the
 The Aime reader is the simpler of the two: **only 5 of its 8 pins are used**. All 5 wires are crimped with **female JST-PH** pins and inserted into an **8-pin JST-PH** connector:
 
 1. **3 signal wires**: the ones you identified on the DB9 cable.
-2. **2 "flying" power wires**: a **red** wire on the **5V** pin and a **black** wire on the **GND** pin right next to it. They are not connected to the DB9: leave their other end free for now, it will be joined with the VFD's on a single connector (see [Grouping the power wires](#grouping-the-power-wires)).
+2. **2 "floating" power wires**: a **red** wire on the **5V** pin and a **black** wire on the **GND** pin right next to it. They are not connected to the DB9: leave their other end free for now, it will be joined with the VFD's on a single connector (see [Grouping the power wires](#grouping-the-power-wires)).
 
 ![Pin mapping between the Aime reader's JST-PH connector and the female DB9 port](../resources/images/step-3-aime-reader/aime-db9-jst-mapping-en.svg){ width="80%" }
 
@@ -73,13 +73,13 @@ The method is almost identical to the Aime reader's, with two differences:
 * The VFD connector is a JST-**X**H (not JST-PH): crimp the wires with **female JST-XH** pins.
 * **5 signal wires** instead of 3: you also need to connect the `CTS` and `RTS` signal wires to the serial port.
 
-As for the Aime reader, add **2 flying power wires**, red on **5V** and black on **GND**, leaving their other end free.
+As with the Aime reader, add **2 floating power wires**, red on **5V** and black on **GND**, leaving their other end free.
 
 ![Pin mapping between the VFD's JST-XH connector and the female DB9 port](../resources/images/step-3-aime-reader/vfd-db9-jst-mapping-en.svg){ width="80%" }
 
 ### Grouping the power wires
 
-The Aime reader and the VFD now each have a pair of flying 5V/GND wires. **Join them in a Y on a single 2-pin JST-SM connector**: both red wires (5V) together on one pin, both black wires (GND) together on the other. Placed next to your two DB9 cables, this connector makes the combo easier to install and to unplug for maintenance.
+The Aime reader and the VFD now each have a pair of floating 5V/GND wires. **Join them in a Y on a single 2-pin JST-SM connector**: both red wires (5V) together on one pin, both black wires (GND) together on the other. Placed next to your two DB9 cables, this connector makes the combo easier to install and to unplug for maintenance.
 
 Congratulations, your cables for the *ALLS* are ready!
 
@@ -88,7 +88,7 @@ Congratulations, your cables for the *ALLS* are ready!
 
 ### Securing the cables
 
-Plug both cables into their connectors, then **fasten them to the back of the combo** so they are under no strain. Even well crimped, these connectors remain fragile.
+Plug both cables into their connectors, then **fasten them to the back of the combo** so they are under no strain. Even when well crimped, these connectors remain fragile.
 
 !!! lightbox
     ![The cables plugged in and then fixed at the back of the Aime reader + VFD combo to avoid any strain on the connectors](../resources/images/step-3-aime-reader/cables-secured-behind-combo.jpg)

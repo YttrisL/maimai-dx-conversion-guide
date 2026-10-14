@@ -55,7 +55,7 @@ L'idéal est de vous procurer **deux petits modules de 30mm x 25mm** : ils s'ada
 
 Si vous avez suivi la suggestion de [l'étape 6](step-6-lighting.md), vous avez déjà un connecteur prêt pour ces deux signaux. Ils sont aussi disponibles sur la [PCB de conversion]({{IO4_CONVERSION_PCB}}).
 
-**Pour que le jeu identifie les caméras, chacune doit filmer un QR-Code précis** : *SDEZ01* côté joueur 1, *SDEZ02* côté joueur 2. Le modèle 3D de SpiralGlide comporte une encoche à la bonne taille pour ces codes. Imprimez [ce PDF](../resources/images/step-7-cameras/codes-for-qr-code-readers.pdf) en A4, sur une imprimante correctement calibrée, pour obtenir des QR-Codes à la bonne taille, puis collez-les à leur emplacement.
+**Pour que le jeu identifie les caméras, chacune doit filmer un QR-Code précis** : *SDEZ01* côté joueur 1, *SDEZ02* côté joueur 2. Le modèle 3D de SpiralGlide comporte une encoche à la bonne taille pour ces codes. Imprimez [ce PDF](../resources/images/step-7-cameras/codes-for-qr-code-readers.pdf) en A4 à l'échelle 100 %, sur une imprimante correctement calibrée, pour obtenir des QR-Codes à la bonne taille, puis collez-les à leur emplacement.
 
 Si vous avez choisi les caméras de la [liste de courses](equipment.md), leur lentille est réglable : vous pouvez ajuster la mise au point.
 

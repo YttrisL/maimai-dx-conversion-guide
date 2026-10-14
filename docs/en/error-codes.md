@@ -14,11 +14,11 @@ Sources used:
 
 !!! info "Before reading the tables"
     * The Japanese texts are translated here. The **original English titles** are kept in the *ALLS HX2* tables so you can look a code up in the manual.
-    * To restart after an error, the *DX* manual asks you to switch off the cabinet's **sub power switch**, wait a short moment, then switch it back on. Do not repeatedly toggle the power in quick succession.
+    * To restart after an error, the *DX* manual asks you to switch off the cabinet's **sub power switch**, wait a moment, then switch it back on. Do not repeatedly toggle the power in quick succession.
 
 ## 1. *ALLS HX2* system errors
 
-### Keychip (licence key)
+### Keychip (license key)
 
 | Code | Title | Cause | Remedy given |
 |---|---|---|---|
@@ -74,7 +74,7 @@ Sources used:
 
 | Code | Title | Cause | Remedy given |
 |---|---|---|---|
-| 0091 | Too High CPU Temperature | The CPU temperature is high. | Clean the *ALLS HX2* and its installation area, and check that the air flow outlets are not blocked (chapter 5 of the manual). The manual also recommends cleaning once a year. |
+| 0091 | Too High CPU Temperature | The CPU temperature is high. | Clean the *ALLS HX2* and its installation area, and check that the airflow outlets are not blocked (chapter 5 of the manual). The manual also recommends cleaning once a year. |
 | 0901 | Wrong Platform | The game program is not supported by the *ALLS HX2*. | Check the game manual and the game / *ALLS HX2* combination. |
 | 0902 | Wrong System Program | Started up with an unsupported system program; the *ALLS HX2* system program must be updated. | Check how the game was installed. |
 | 0904 | Wrong Platform | The installed system program is not working correctly (text as printed, it does not match the title). | Reinstall from the installation media. |

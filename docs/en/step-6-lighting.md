@@ -1,5 +1,5 @@
 ---
-title: "💡 6 - Lighting (optional)"
+title: "💡 6 - Lighting"
 ---
 
 # 💡 Step 6: Lighting
@@ -62,9 +62,9 @@ The firmware already exists: it is [mailight_pico]({{MAILIGHT_PICO_REPO}}), a po
 ### Building a proxy
 
 !!! info "In duplicate"
-    You need **two proxies**, one per LED controller. So do every operation twice.
+    You need **two proxies**, one per LED controller. So perform every operation twice.
 
-**1. Install the firmware.** Flash mailight_pico onto the Raspberry Pi Pico. If you have never done it, it is extremely simple: [all the instructions are on the project page]({{MAILIGHT_PICO_FIRMWARE_INSTRUCTIONS}}).
+**1. Install the firmware.** Flash mailight_pico onto the Raspberry Pi Pico. If you have never done it before, it is extremely simple: [all the instructions are on the project page]({{MAILIGHT_PICO_FIRMWARE_INSTRUCTIONS}}).
 
 **2. Mount the Pico on the `Pico-2CH-RS232`.** Watch the orientation: the markings under the `Pico-2CH-RS232` show where the Pico's USB port should be.
 
@@ -119,7 +119,7 @@ For each LED controller:
 All that's left is to plug the `4x RS-232 to USB adapter` into the *ALLS* through the USB hub. **The game should recognize the LED controllers natively**, without any software modification.
 
 !!! warning "Plug the adapter in correctly"
-    As explained in [step 1](step-1-alls-and-psu.md), **the USB hub must be plugged into USB port #2** of the *ALLS*, and the `4x RS-232 to USB adapter` into that hub. *maimai DX* is very strict about USB ports: if plugged in wrong, the LEDs will not light up.
+    As explained in [step 1](step-1-alls-and-psu.md), **the USB hub must be plugged into USB port #2** of the *ALLS*, and the `4x RS-232 to USB adapter` into that hub. *maimai DX* is very strict about USB ports: if plugged in incorrectly, the LEDs will not light up.
 
 ## For the billboard and the woofers
 
@@ -148,7 +148,7 @@ Two methods are possible:
     !!! tip "Reminder: two separate power supplies"
         The PCB is powered by **the cabinet's LED power supply**, never by the IO4's 12V. The two circuits share a common ground, but stay separate.
 
-    You will need an extension to reach the existing cable: **2 meters on the player 2 side, 3 meters on the player 1 side**. It is easy to crimp: a `8-position female JST-XH` connector on one end, and an `8-position female JST-SM` on the other.
+    You will need an extension to reach the existing cable: **2 meters on the player 2 side, 3 meters on the player 1 side**. It is easy to crimp: an 8-position female JST-XH connector on one end, and an 8-position female JST-SM on the other.
 
     !!! lightbox
         ![Conversion PCB [maiConvert-IO4]({{IO4_CONVERSION_PCB}}): location of connector `J22` (`12V input`, watch the polarity) and connectors `J23`/`J24` (`BILLBOARD LED L`/`R`) where the billboard LED harness connects](../resources/images/step-6-lighting/led-inputs-and-12-on-convertion-pcb.jpg)

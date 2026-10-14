@@ -11,7 +11,7 @@ title: "☑️ Purchase checklist"
 - [ ] *ALLS HX2*
 - [ ] 500 GB secondary hard drive (SUB STORAGE) - *if needed*
 - [ ] Sega IO4 I/O board
-- [ ] **1x**{: .quantity-emphasis } [maiConvert-IO4 conversion PCB]({{IO4_CONVERSION_PCB}})
+- [ ] [maiConvert-IO4 conversion PCB]({{IO4_CONVERSION_PCB}})
 - [ ] Aime reader (Gen. 3)
 - [ ] **2x**{: .quantity-emphasis } HDX touchscreen
 - [ ] **16x**{: .quantity-emphasis } HDX buttons
@@ -30,8 +30,8 @@ title: "☑️ Purchase checklist"
 
 - [ ] **1x**{: .quantity-emphasis } HDMI to DVI-D cable (3 m)
 - [ ] **1x**{: .quantity-emphasis } DVI-D to DVI-D cable (2 m) - *if needed*
-- [ ] **1x**{: .quantity-emphasis } DB-9 Female-Female cable
-- [ ] **4x**{: .quantity-emphasis } DB-9 Male-Female cable (3 m)
+- [ ] **1x**{: .quantity-emphasis } DB9 female-to-female cable
+- [ ] **4x**{: .quantity-emphasis } DB9 male-to-female cable (3 m)
 - [ ] **1x**{: .quantity-emphasis } IEC C-13 cable (2 m)
 - [ ] **1x**{: .quantity-emphasis } IDC ribbon cable, 2x30 pins (female-female)
 - [ ] **1x**{: .quantity-emphasis } IDC ribbon cable, 2x10 pins (female-female)
@@ -41,7 +41,7 @@ title: "☑️ Purchase checklist"
 
 ### Electronics
 
-- [ ] **2x**{: .quantity-emphasis } TTL to RS-232 converter with female DB-9
+- [ ] **2x**{: .quantity-emphasis } TTL to RS-232 converter with female DB9
 - [ ] **2x**{: .quantity-emphasis } Raspberry Pi Pico
 - [ ] **2x**{: .quantity-emphasis } Pico-2CH-RS232
 - [ ] **2x**{: .quantity-emphasis } Headphone audio amplifier
@@ -49,7 +49,7 @@ title: "☑️ Purchase checklist"
 
 ### Hookup wire
 
-- [ ] Flexible hookup wire (AWG 20), ideally in several colors
+- [ ] Flexible hookup wire (20 AWG), ideally in several colors
 - [ ] Flexible hookup wire (1.5 mm²)
 
 ### Lighting (optional cameras)
@@ -78,6 +78,3 @@ title: "☑️ Purchase checklist"
 - [ ] **10x**{: .quantity-emphasis } JST-SH female crimp pin
 - [ ] JST-XH connector kit
 - [ ] JST-PH connector kit
-
-!!! abstract "Work in progress"
-    More small supplies will be added to this checklist as they are detailed on the [full shopping list](equipment.md#small-supplies).

@@ -1,21 +1,21 @@
 {
   "pages": {
     "conclusion.md": "1833945e961523899c7f4ba0d578acc94b71386c83025d5ce3df56593f6c8ae9",
-    "equipment-checklist.md": "25d06a16d4456551b8e6eeae6cac911afc9307f3bb6ae8e5306f03b3cc6793ba",
-    "equipment.md": "88d2f839454fc0261a9c2aa3a598254cf7174db1b4060526993b77bab0545328",
+    "equipment-checklist.md": "308d4c9d086950e3c6541eb04c12e4dc48860665c30feae63426cd91dbc35ad0",
+    "equipment.md": "58b3d218d94469c200296bf6073c3d96d2b46836f6d2415c804b84f0f0e40ba6",
     "error-codes.md": "55ebd67258be6e1d76a3a0b4d2b904f6d8f1a9090cb3afe3ae4c0047d916a971",
     "glossary.md": "de553c564916a7c4ff75b35336d782ea2edaccd2c6f7ec589318683cdeb37a23",
-    "index.md": "e21ff4b2b39e5f59b8d5ae22a655eece6d6e3f3073c17af5e249f7d8ec9a53d9",
-    "official-manuals.md": "a6e2d5db3ae46d42b7df320a09894830ddae070ae6fc9dbd4010f1237b536650",
-    "secondhand-market.md": "c84eeb79f88dbf3c55dbd38e0aca2b6216c9052a697d4afd140cb1e0626ece47",
+    "index.md": "e8811b0008c7c28ecbb720148d85296860727e906ff5e2bcd925abad242568bb",
+    "official-manuals.md": "324f3f50a702e63b61ca02d0d6bc93773cd68a429f0788d6b5cdcd3bf3165e82",
+    "secondhand-market.md": "97248029f794f94e1259dd59a047530b2456818887892d98942e293b36770db2",
     "spiralglide-resources.md": "5b9fe342e7979c71097014f21a807e97168c161319cb0b7978922205bca547e4",
-    "step-1-alls-and-psu.md": "8cdf602ed002f18edb125cd9539c0de004e9ccb095ea3d9166f72583741105a7",
-    "step-2-touchscreen-display.md": "1d773295e5991968baa698a854ef8452644c688306d405c363070d57859b9982",
+    "step-1-alls-and-psu.md": "bf9fd6fc04d0976c80aaceb8aa1e501bd044b0c102989cd90a075494ee6c4bed",
+    "step-2-touchscreen-display.md": "6b2aa3e22bb1af0f302e0fda796c3913bfb26d3e6b3eb4f0f44bbdb8c5c7206b",
     "step-3-aime-reader.md": "a2a2a6740f4c33e07256603982e0a408c3ef3e4404ef58e11627bc050ff6d801",
     "step-4-io-board.md": "7d7fa716f8a5ad3796917c32796ab606eae9a3fc4420d2d26160752b0a7358a4",
-    "step-5-audio-headphones.md": "1d14a1fb05ea670294ef7eee91f1c76f3b6a58703f1f91bac6c8b2048e77687b",
+    "step-5-audio-headphones.md": "1aa3e0a33434840a54f6cd856a766f5be3375140afc3f37a4f9bed73239a17cb",
     "step-6-lighting.md": "adf339e0ec162b29bbe8ff27a3ebd112771d765a7b61b047966bf69cca93dc9a",
-    "step-7-cameras.md": "918a8057f9467e1c0509a8fae1540a64a40c9dede92309f9bb496ea7511c7eb7",
+    "step-7-cameras.md": "bb29f2757ba48165c05beebfd7b9042a486fe009456376c2b981877b26ad6714",
     "understanding-serial-protocols.md": "ae475300ffa8c27bb0a8f93b6a244dc950465009417437dc56c7ae3bc252c051",
     "useful-links.md": "51315837c9a664bf0c7a691aefe61b19864b395f358b45c79ab4cdb0974dedd4",
     "warnings.md": "415f08df2a458630d5e210c75b7e5f1209b08e2b912b382cfac640f193168eda",
@@ -35,6 +35,7 @@
     "resources/images/step-3-aime-reader/vfd-db9-jst-mapping.svg": "0ac1cf341067bc80b32e2ecfc316894514886a3b65d4329515b6ca524f1e4421",
     "resources/images/step-6-lighting/led-controllers-chain-finale.svg": "2c3a6ccb7379fbbcea09862ed07a61084f681a37671b54249cb610a9be2c3fef",
     "resources/images/step-6-lighting/led-controllers-chain.svg": "8fde04190e7666af6f83b2325eeaafe4b839bde379ebaf5abedf60f93c01b585",
-    "resources/images/step-6-lighting/led-topper-harness.svg": "2c110ccd1b7b6e572914f9ba34807687b0c6d9cf02746bf275be557c2ddbb786"
+    "resources/images/step-6-lighting/led-topper-harness.svg": "2c110ccd1b7b6e572914f9ba34807687b0c6d9cf02746bf275be557c2ddbb786",
+    "resources/pdfs/maimai-dx-instruction-manual-full.pdf": "45a9ac1908dc45888f7fe924118e5f913b32fcb8f4fa07b955fb6c6cf4f5eda9"
   }
 }

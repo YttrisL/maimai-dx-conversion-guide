@@ -11,7 +11,7 @@ title: "☑️ Checklist d'achat"
 - [ ] *ALLS HX2*
 - [ ] Disque dur secondaire de 500 Go (SUB STORAGE) - *si nécessaire*
 - [ ] Carte I/O Sega IO4
-- [ ] **1x**{: .quantity-emphasis } [PCB de conversion maiConvert-IO4]({{IO4_CONVERSION_PCB}})
+- [ ] [PCB de conversion maiConvert-IO4]({{IO4_CONVERSION_PCB}})
 - [ ] Lecteur Aime (Gen. 3)
 - [ ] **2x**{: .quantity-emphasis } Dalle tactile HDX
 - [ ] **16x**{: .quantity-emphasis } Boutons HDX
@@ -30,9 +30,9 @@ title: "☑️ Checklist d'achat"
 
 - [ ] **1x**{: .quantity-emphasis } Câble HDMI vers DVI-D (3 m)
 - [ ] **1x**{: .quantity-emphasis } Câble DVI-D vers DVI-D (2 m) - *si nécessaire*
-- [ ] **1x**{: .quantity-emphasis } Câble DB-9 Femelle-Femelle
-- [ ] **4x**{: .quantity-emphasis } Câble DB-9 Mâle-Femelle (3 m)
-- [ ] **1x**{: .quantity-emphasis } Câble IEC C-13 (2 m)
+- [ ] **1x**{: .quantity-emphasis } Câble DB9 femelle-femelle
+- [ ] **4x**{: .quantity-emphasis } Câble DB9 mâle-femelle (3 m)
+- [ ] **1x**{: .quantity-emphasis } Câble IEC C-13 (3 m)
 - [ ] **1x**{: .quantity-emphasis } Nappe IDC 2x30 broches (femelle-femelle)
 - [ ] **1x**{: .quantity-emphasis } Nappe IDC 2x10 broches (femelle-femelle)
 - [ ] **2x**{: .quantity-emphasis } Câble micro-USB
@@ -41,7 +41,7 @@ title: "☑️ Checklist d'achat"
 
 ### Électronique
 
-- [ ] **2x**{: .quantity-emphasis } Convertisseur TTL vers RS-232 avec DB-9 femelle
+- [ ] **2x**{: .quantity-emphasis } Convertisseur TTL vers RS-232 avec DB9 femelle
 - [ ] **2x**{: .quantity-emphasis } Raspberry Pi Pico
 - [ ] **2x**{: .quantity-emphasis } Pico-2CH-RS232
 - [ ] **2x**{: .quantity-emphasis } Ampli audio pour casque
@@ -49,7 +49,7 @@ title: "☑️ Checklist d'achat"
 
 ### Fils de câblage
 
-- [ ] Fil de câblage souple (AWG 20), idéalement de plusieurs couleurs
+- [ ] Fil de câblage souple (20 AWG), idéalement de plusieurs couleurs
 - [ ] Fil de câblage souple (1,5 mm²)
 
 ### Éclairage (caméras optionnelles)
@@ -78,6 +78,3 @@ title: "☑️ Checklist d'achat"
 - [ ] **10x**{: .quantity-emphasis } Broche JST-SH femelle à sertir
 - [ ] Kit de connecteurs JST-XH
 - [ ] Kit de connecteurs JST-PH
-
-!!! abstract "En cours d'écriture"
-    D'autres petites fournitures viendront s'ajouter à cette checklist au fur et à mesure qu'elles seront détaillées sur la [liste de courses complète](equipment.md#petites-fournitures).

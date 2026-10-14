@@ -4,7 +4,7 @@ title: "🎧 5 - Prises casques et son"
 
 # 🎧 Étape 5 : Prises casques et système son
 
-Contrairement à *FiNALE* qui n'en possédait pas, *DX* apporte nativement aux joueurs une **prise casque avec contrôle du volume en jeu**. Son installation est très simple.
+Contrairement à *FiNALE* qui n'en possédait pas, *DX* apporte nativement aux deux joueurs une **prise casque avec contrôle du volume en jeu**. Leur installation est très simple.
 
 ## Branchement des haut-parleurs
 

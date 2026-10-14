@@ -31,7 +31,7 @@ For each part, **the most suitable option is highlighted**, whether for its ease
 <div class="equipment-card" markdown>
 
 ### Secondary drive (SUB STORAGE)
-* Where: Amazon, AliExpress, your favorite shop
+* Where: Amazon, AliExpress, your favorite store
 * Info: a 500 GB hard drive, which the game requires in addition to the *ALLS*'s SSD.
 
 !!! tip "You may already have it"
@@ -51,15 +51,15 @@ For each part, **the most suitable option is highlighted**, whether for its ease
     - **JVS-compatible**, with a USB-B port and a USB-A port for daisy-chaining;
     - **without JVS**, with a simple micro-USB port to plug into a regular USB port.
 
-    On *maimai DX*, the IO4 connects to the *ALLS* over regular USB, through the micro-USB port: **JVS support is useless**. IO4s without JVS are usually a little cheaper, but in theory every variant works.
+    On *maimai DX*, the IO4 connects to the *ALLS* over regular USB, through the micro-USB port: **JVS support is useless**. IO4s without JVS are usually a little cheaper, but in theory any variant works.
 
 </div>
 
 <div class="equipment-card" markdown>
 
-### **1x**{: .quantity-emphasis } maiConvert-IO4 conversion PCB
+### maiConvert-IO4 conversion PCB
 * Where: [Have it made yourself]({{IO4_CONVERSION_PCB}}): the files are free and a short guide, in the repository, explains how.
-* Info: the recommended way to install the IO4 in the cabinet (see [step 4](step-4-io-board.md)): the original harness plugs into it as is, with no modification. *Modifying the harness by hand is possible, but it is not covered by this list.*
+* Info: the recommended way to install the IO4 in the cabinet (see [step 4](step-4-io-board.md)): the original harness plugs into it as is, with no modification. *Modifying the harness by hand is possible, but it is much more tedious.*
 
 </div>
 
@@ -80,7 +80,7 @@ For each part, **the most suitable option is highlighted**, whether for its ease
 *Alternative*: **2x**{: .quantity-emphasis } **Yuancon conversion kit - based on an ADX touchscreen**
 
 * Where: [On the Yuancon website]({{YUANCON_CONVERSION_KIT_PAGE}})
-* Info: each Yuancon kit includes a touchscreen and eight buttons, enough to convert one side of the cabinet. They are equivalent to the HDX, with one catch: **their I/O board has no serial port**. It only communicates over USB-CDC, a signal that a simple RS-232 converter cannot adapt for the *ALLS HX2*. It is possible through a software proxy, [maitouch_rs]({{MAITOUCH_RS_REPO}}) by [4ndr3w]({{GITHUB_4NDR3W}}) on GitHub, running on a Raspberry Pi placed between the *ALLS* and the ADX, but that complexity is not covered in this guide. *With this alternative, you do not need the buttons from the next item.*
+* Info: each Yuancon kit includes a touchscreen and eight buttons, enough to convert one side of the cabinet. They are equivalent to the HDX, with one catch: **their I/O board has no serial port**. It only communicates over USB-CDC, a signal that a simple RS-232 converter cannot adapt for the *ALLS HX2*. It is possible through a software proxy, [maitouch_rs]({{MAITOUCH_RS_REPO}}) by [4ndr3w]({{GITHUB_4NDR3W}}) on GitHub, running on a Raspberry Pi placed between the *ALLS* and the ADX, but that introduces a lot of complexity. *With this alternative, you do not need the buttons from the next item.*
 
 </div>
 
@@ -92,11 +92,11 @@ For each part, **the most suitable option is highlighted**, whether for its ease
 
 *Alternative*: **16x**{: .quantity-emphasis } **"Rabbit" buttons**
 
-* Where: [On the official Taobao shop]({{TAOBAO_OFFICIAL_SHOP_LISTING}})
+* Where: [On the official Taobao store]({{TAOBAO_OFFICIAL_SHOP_LISTING}})
 * Info: fairly close to the official *maimai DX* buttons, they are an excellent alternative.
 
 !!! failure "Don't buy the counterfeits!"
-    Taobao and AliExpress sell much cheaper generic buttons that look very similar. **Do not give in to the temptation of saving a few euros**: it is the worst purchase you can make. Unlike HanDevice or Rabbit buttons, they are of **very** poor quality, pile up problems and wear out fast. Go for quality buttons from a reliable seller.
+    Taobao and AliExpress sell much cheaper generic buttons that look very similar. **Do not give in to the temptation of saving a few bucks**: it is the worst purchase you can make. Unlike HanDevice or Rabbit buttons, they are of **very** poor quality, pile up problems and wear out fast. Go for quality buttons from a reliable seller.
 
 </div>
 
@@ -105,7 +105,7 @@ For each part, **the most suitable option is highlighted**, whether for its ease
 ### **2x**{: .quantity-emphasis } OBSF-24TR button
 
 * Where: [SmallCab]({{SMALLCAB_SANWA_OBSF_24TR}}) or [Jammastar]({{JAMMASTAR_SANWA_OBSF_24TR}})
-* Info: the "triangle" sort buttons for players 1 and 2, in the center of the cabinet, above the Aime reader. Typically **blue for player 1 and red for player 2**.
+* Info: the triangular selection buttons for players 1 and 2, in the center of the cabinet, above the Aime reader. Typically **blue for player 1 and red for player 2**.
 
 *Alternative*: ... literally any other buttons
 
@@ -118,7 +118,7 @@ For each part, **the most suitable option is highlighted**, whether for its ease
 
 ### **1x**{: .quantity-emphasis } 4-port USB hub
 
-* Where: Amazon, AliExpress, your favorite shop
+* Where: Amazon, AliExpress, your favorite store
 * Info: on a real *maimai DX*, one of the 4 USB ports on the *ALLS* motherboard is reserved for a 4-port USB hub. This hub hosts the two QR-code reader cameras and the `4x RS-232 to USB adapter` for the player 1 and 2 LED controllers. **Any USB hub will do.**
 
 </div>
@@ -128,7 +128,7 @@ For each part, **the most suitable option is highlighted**, whether for its ease
 ### **1x**{: .quantity-emphasis } 5V/12V switching power supply
 
 * Where: Amazon, AliExpress, electronic component distributors
-* Info: unlike the *RingEdge 2*, the *ALLS* does not power external peripherals. This power supply takes over that role: among other things, it powers the IO4, the Aime reader, the VFD and the LED controller proxies. You need a **dual-output 5V and 12V** model, in a metal enclosure with screw terminals, such as the Mean Well RD-35A or RD-50A. **Do not reuse the cabinet's original power supplies** instead.
+* Info: unlike the *RingEdge 2*, the *ALLS* does not power external peripherals. This power supply takes over that role: among other things, it powers the IO4, the Aime reader, the VFD, the HDX I/O boards and our proxies. You need a **dual-output 5V and 12V** model, in a metal enclosure with screw terminals, such as the Mean Well RD-35A or RD-50A. **Do not reuse the cabinet's original power supplies** for this.
 
 </div>
 
@@ -142,8 +142,8 @@ The player camera and the QR-code readers are **optional**. If you want to insta
 
 ### **1x**{: .quantity-emphasis } Player camera
 
-* Where: Amazon, AliExpress, your favorite shop
-* Info: **any cheap USB webcam will do**, as long as it is UVC. *If it works as soon as it is plugged in, with no specific driver, it is probably compatible.* The original camera films at 1280x960, a resolution barely used in game: no need to spend a fortune.
+* Where: Amazon, AliExpress, your favorite store
+* Info: **any cheap USB webcam will do**, as long as it is UVC. *If it works as soon as it is plugged in, with no specific driver, it is probably compatible.* The original camera records at 1280x960, a resolution barely used in game: no need to spend a fortune.
 
 </div>
 
@@ -151,14 +151,14 @@ The player camera and the QR-code readers are **optional**. If you want to insta
 
 ### **2x**{: .quantity-emphasis } QR-code camera
 
-* Where: Amazon, AliExpress, your favorite shop ([example of a compatible camera]({{BUY_EXAMPLE_QR_CODE_CAMERA}}))
-* Info: **the game is very strict about these cameras.** They must be UVC, film at 640x480 at 30 fps in YUY2 format, with a 50 degree field of view. External lighting is also needed (see [Lighting](#lighting)).
+* Where: Amazon, AliExpress, your favorite store ([example of a compatible camera]({{BUY_EXAMPLE_QR_CODE_CAMERA}}))
+* Info: **the game is very strict about these cameras.** They must be UVC, film at 640x480 at 30 fps in YUY2 format, with a 50-degree field of view. External lighting is also needed (see [Lighting](#lighting)).
 
 </div>
 
 ## Small supplies
 
-These small, cheap purchases, needed over the course of the steps, can be found in your favorite shop (Amazon, AliExpress, ...).
+These small, cheap purchases, needed over the course of the steps, can be found in your favorite store (Amazon, AliExpress, etc.).
 
 <div class="equipment-supplies" markdown>
 
@@ -168,12 +168,12 @@ These small, cheap purchases, needed over the course of the steps, can be found 
     - Connection from the *ALLS* to the Player 1 screen.
 * **1x**{: .quantity-emphasis } **DVI-D to DVI-D cable (2 m)**
     - Connection from the *ALLS* to the Player 2 screen. Your *FiNALE* may already have one natively.
-* **1x**{: .quantity-emphasis } **DB-9 Female-Female cable**
+* **1x**{: .quantity-emphasis } **DB9 female-to-female cable**
     - As short as possible: it will be cut in two to make the Aime reader and VFD connectors.
-* **4x**{: .quantity-emphasis } **DB-9 Male-Female cable (3 m)**
+* **4x**{: .quantity-emphasis } **DB9 male-to-female cable (3 m)**
     - Extensions to the *ALLS* for the Aime reader, the VFD and the player 1 and 2 touchscreens.
-* **1x**{: .quantity-emphasis } **IEC C-13 cable (2 m)**
-    - Plugged into the *ALLS*, then cut at the plug end to be wired directly to the cabinet's mains supply.
+* **1x**{: .quantity-emphasis } **IEC C-13 cable (3 m)**
+    - Plugged into the *ALLS*, then cut at the plug end to be wired directly to the cabinet's AC power.
 * **1x**{: .quantity-emphasis } **IDC ribbon cable, 2x30 pins (female-female)**
     - To connect the IO4's `CN3` to the [conversion PCB]({{IO4_CONVERSION_PCB}}) (2.54 mm pitch).
 * **1x**{: .quantity-emphasis } **IDC ribbon cable, 2x10 pins (female-female)**
@@ -187,20 +187,20 @@ These small, cheap purchases, needed over the course of the steps, can be found 
 
 ### Electronics
 
-* **2x**{: .quantity-emphasis } **TTL to RS-232 converter with female DB-9** ([example]({{BUY_EXAMPLE_TTL_RS232_CONVERTER}}))
-    - To connect each touchscreen's I/O board (players 1 and 2) to its DB-9 port on the *ALLS*.
+* **2x**{: .quantity-emphasis } **TTL to RS-232 converter with female DB9** ([example]({{BUY_EXAMPLE_TTL_RS232_CONVERTER}}))
+    - To connect each touchscreen's I/O board (players 1 and 2) to its DB9 port on the *ALLS*.
 * **2x**{: .quantity-emphasis } **Raspberry Pi Pico** ([example]({{BUY_EXAMPLE_RASPBERRY_PI_PICO}}))
     - To build the LED controller proxies. To avoid any soldering, prefer a version with pre-soldered pins. **Careful: the pins must be soldered facing down, not up.**
 * **2x**{: .quantity-emphasis } **Pico-2CH-RS232** ([example]({{BUY_EXAMPLE_PICO_2CH_RS232}}))
     - To build the LED controller proxies.
 * **2x**{: .quantity-emphasis } **Headphone audio amplifier**
-    - One small, cheap amp per player, to boost the *ALLS*'s very weak headphone output (see [step 5](step-5-audio-headphones.md)). It doesn't need a volume knob: volume is adjusted in the game menus.
+    - One small, cheap amp per player, to boost the *ALLS*'s very weak headphone output (see [step 5](step-5-audio-headphones.md)). It doesn't need a volume knob: volume is adjusted in-game.
 * **2x**{: .quantity-emphasis } **3.5 mm female jack socket**
     - The players' headphone jacks, to install on the cabinet. Prefer a panel-mount model.
 
 ### Hookup wire
 
-* **Flexible hookup wire (AWG 20)**
+* **Flexible hookup wire (20 AWG)**
     - Several cables need crimping throughout the guide: plan a good supply, ideally in several colors.
 * **Flexible hookup wire (1.5 mm²)**
     - For the [conversion PCB]({{IO4_CONVERSION_PCB}})'s 12V, which carries a high current (see [step 4](step-4-io-board.md)). Plan enough length to reach the cabinet's LED power supply.
@@ -214,7 +214,7 @@ These small, cheap purchases, needed over the course of the steps, can be found 
 * **1x**{: .quantity-emphasis } **12V common-anode RGB LED strip**
     - Lighting for both QR-code readers: the +12V is shared by the three colors, only the cathode is separate for red, green and blue. About 20 cm of strip is enough.
 * **1x**{: .quantity-emphasis } **12V red LED with built-in resistor**
-    - Tells players the camera is filming. **A bare LED would burn out** on 12V: pick a model rated for that voltage or, failing that, a separate 2.2 to 4.7 kOhm resistor.
+    - Tells players the camera is filming. **A bare LED would burn out** on 12V: pick a model rated for that voltage or, failing that, a separate 2.2 to 4.7 kΩ resistor.
 
 ### Tools
 
@@ -224,7 +224,7 @@ These small, cheap purchases, needed over the course of the steps, can be found 
     - With a continuity mode (the "beep"), essential to identify wires and test your cables.
 * **Wire stripper and cutter**
 * **Soldering iron and solder**
-    - For the few solder joints in the guide (converters, Pico without pre-soldered pins...).
+    - For the few solder joints in the guide (converters, Pico without pre-soldered pins, etc.).
 * **3D printer** (or a printing service)
     - For SpiralGlide's mounts: Aime reader, and QR-code readers if you install the cameras.
 * **Screwdrivers**

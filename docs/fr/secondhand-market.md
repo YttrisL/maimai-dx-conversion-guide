@@ -50,7 +50,7 @@ Le fonctionnement est similaire d'un service à l'autre :
 
 Trouver la bonne pièce sur JDirectItems Auction peut être frustrant sans quelques bases :
 
-* **Cherchez avec les références officielles.** Une recherche en anglais ou en français ne donne presque jamais de résultats pertinents. Utilisez plutôt les noms et références des schémas et manuels officiels (par exemple `ALLS HX2`, `IO4`, `Aime`), qui restent les mêmes en japonais puisqu'il s'agit de références commerciales. Un traducteur (DeepL, Google Traduction) vous aidera à comprendre le titre et la description d'une annonce.
+* **Cherchez avec les références officielles.** Une recherche en anglais ne donne presque jamais de résultats pertinents. Utilisez plutôt les noms et références des schémas et manuels officiels (par exemple `ALLS HX2`, `IO4`, `Aime`), qui restent les mêmes en japonais puisqu'il s'agit de références commerciales. Un traducteur (DeepL, Google Traduction) vous aidera à comprendre le titre et la description d'une annonce.
 * **Ne fuyez pas la mention « ジャンク » (*junk*).** Du matériel fonctionnel est souvent vendu ainsi, simplement parce qu'il n'a pas été testé récemment. Ce n'est pas forcément cassé : c'est juste vendu « en l'état », sans garantie.
 * **Vérifiez le vendeur.** Le pourcentage d'évaluations positives (en haut à droite de l'annonce) est un bon indicateur de fiabilité. Un vendeur professionnel habitué à démonter des bornes d'arcade est généralement un gage de sérieux.
 * **Examinez les photos.** Les vendeurs japonais sont généralement très rigoureux sur les photos, même sans description en anglais. Zoomez sur les connecteurs, l'état des broches et les étiquettes ou marquages qui confirment la référence exacte de la pièce.
@@ -62,4 +62,5 @@ Trouver la bonne pièce sur JDirectItems Auction peut être frustrant sans quelq
     * les éventuels frais de douane à la réception, qui varient selon votre pays.
 
     Une carte électronique compacte reste généralement raisonnable à expédier, mais gardez ce calcul en tête avant d'enchérir trop haut sur une pièce rare.
+
 * **Créez une alerte.** La plupart des proxys permettent d'enregistrer une recherche et d'être notifié dès qu'un nouvel article correspondant apparaît. C'est particulièrement utile pour les pièces rares comme le *ALLS HX2*, qui peuvent mettre des semaines, voire des mois, à réapparaître.

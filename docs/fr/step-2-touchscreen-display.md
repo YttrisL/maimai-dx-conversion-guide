@@ -27,7 +27,7 @@ Le manuel officiel de *DX* impose un branchement précis. *(Référence : [page 
 * **Joueur 1 (P1) :** peut être branché sur le port **HDMI** ou **DisplayPort** (le [manuel officiel](../resources/pdfs/maimai-dx-instruction-manual-full.pdf) ne mentionne que le HDMI).
 * **Joueur 2 (P2) :** doit être branché sur le port **DVI**.
 
-Comme mentionné à [l'étape 1](step-1-alls-and-psu.md), certaines bornes *FiNALE* ont été modifiées par leur exploitant pour utiliser le port **DVI** des écrans plutôt que leur port VGA, utilisé à l'origine. Si c'est votre cas, vous pouvez **réutiliser le câble DVI** pour l'écran du joueur 2. Sinon, il vous faudra **un câble HDMI vers DVI** (joueur 1) et **un câble DVI vers DVI** (joueur 2).
+Comme mentionné à [l'étape 1](step-1-alls-and-psu.md), certaines bornes *FiNALE* ont été modifiées par leur exploitant pour utiliser le port **DVI** des écrans plutôt que leur port VGA, utilisé à l'origine. Si c'est votre cas, vous pouvez **réutiliser le câble DVI** pour l'écran du joueur 2. Sinon, il vous faudra **un câble HDMI vers DVI-D** (joueur 1) et **un câble DVI-D vers DVI-D** (joueur 2).
 
 ## Les dalles tactiles
 
@@ -48,7 +48,7 @@ Comme mentionné à [l'étape 1](step-1-alls-and-psu.md), certaines bornes *FiNA
 Il est pour ainsi dire impossible d'obtenir une dalle tactile *DX* officielle, il faut donc se tourner vers les **alternatives produites par la communauté** :
 
 * **HDX de HanDevice :** *le choix recommandé par ce guide*. Son installation est bien plus simple grâce à son connecteur **UART**.
-* **ADX de yuancon :** une alternative possible, mais elle ne se branche qu'en **USB-CDC**. Il faut alors un appareil externe et une installation complexe pour extraire ce signal vers un connecteur DB9.
+* **ADX de Yuancon :** une alternative possible, mais elle ne se branche qu'en **USB-CDC**. Il faut alors un appareil externe et une installation complexe pour extraire ce signal vers un connecteur DB9.
 
 ### Remplacer la dalle
 
@@ -206,7 +206,7 @@ Il reste ensuite à brancher la dalle au *ALLS*, selon le modèle que vous avez 
     sudo maitouch /dev/alls-p1 /dev/adx-p1
     ```
 
-    Le message **Ports opened** puis **Read loop started** doit apparaître. Lancez maintenant le jeu : des lignes **From *ALLS*** et **From ADX** défilent, et la dalle répond au toucher. Arrêtez le test avec `Ctrl+C` et recommencez avec `/dev/alls-p2 /dev/adx-p2`. Si le programme s'arrête avec une erreur, c'est généralement qu'un des deux chemins n'existe pas : retournez à l'étape 2.
+    Les messages **Ports opened** puis **Read loop started** doivent apparaître. Lancez maintenant le jeu : des lignes **From *ALLS*** et **From ADX** défilent, et la dalle répond au toucher. Arrêtez le test avec `Ctrl+C` et recommencez avec `/dev/alls-p2 /dev/adx-p2`. Si le programme s'arrête avec une erreur, c'est généralement qu'un des deux chemins n'existe pas : retournez à la partie 2 ci-dessus.
 
     ##### 4. Lancer automatiquement au démarrage
 

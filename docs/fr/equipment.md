@@ -57,9 +57,9 @@ Pour chaque pièce, **l'option la plus adaptée est mise en avant**, que ce soit
 
 <div class="equipment-card" markdown>
 
-### **1x**{: .quantity-emphasis } PCB de conversion maiConvert-IO4
+### PCB de conversion maiConvert-IO4
 * Où : [À faire fabriquer vous-même]({{IO4_CONVERSION_PCB}}) : les fichiers sont gratuits et un petit guide, dans le dépôt, explique la démarche.
-* Info : La méthode recommandée pour installer l'IO4 dans la borne (voir [l'étape 4](step-4-io-board.md)) : le harnais d'origine s'y branche tel quel, sans modification. *La modification manuelle du harnais est possible, mais elle n'est pas couverte par cette liste.*
+* Info : La méthode recommandée pour installer l'IO4 dans la borne (voir [l'étape 4](step-4-io-board.md)) : le harnais d'origine s'y branche tel quel, sans modification. *La modification manuelle du harnais est possible, mais elle est bien plus fastidieuse.*
 
 </div>
 
@@ -80,7 +80,7 @@ Pour chaque pièce, **l'option la plus adaptée est mise en avant**, que ce soit
 *Alternative* : **2x**{: .quantity-emphasis } **Kit de conversion Yuancon - à base d'une dalle ADX**
 
 * Où : [Sur le site de yuancon]({{YUANCON_CONVERSION_KIT_PAGE}})
-* Info : Chaque kit Yuancon comprend une dalle tactile et huit boutons, de quoi convertir un côté de la borne. Ils équivalent aux HDX, à un détail près : **leur carte I/O n'a pas de port série**. Elle communique uniquement en USB-CDC, un signal qu'un simple convertisseur RS-232 ne peut pas adapter pour le *ALLS HX2*. C'est possible via un proxy logiciel, [maitouch_rs]({{MAITOUCH_RS_REPO}}) par [4ndr3w]({{GITHUB_4NDR3W}}) sur GitHub, qui tourne sur un Raspberry Pi placé entre le *ALLS* et l'ADX, mais cette complexité n'est pas détaillée dans ce guide. *Avec cette alternative, les boutons du point suivant sont inutiles.*
+* Info : Chaque kit Yuancon comprend une dalle tactile et huit boutons, de quoi convertir un côté de la borne. Ils équivalent aux HDX, à un détail près : **leur carte I/O n'a pas de port série**. Elle communique uniquement en USB-CDC, un signal qu'un simple convertisseur RS-232 ne peut pas adapter pour le *ALLS HX2*. C'est possible via un proxy logiciel, [maitouch_rs]({{MAITOUCH_RS_REPO}}) par [4ndr3w]({{GITHUB_4NDR3W}}) sur GitHub, qui tourne sur un Raspberry Pi placé entre le *ALLS* et l'ADX, mais cela ajoute beaucoup de complexité. *Avec cette alternative, les boutons du point suivant sont inutiles.*
 
 </div>
 
@@ -105,7 +105,7 @@ Pour chaque pièce, **l'option la plus adaptée est mise en avant**, que ce soit
 ### **2x**{: .quantity-emphasis } Bouton OBSF-24TR
 
 * Où : [SmallCab]({{SMALLCAB_SANWA_OBSF_24TR}}) ou [Jammastar]({{JAMMASTAR_SANWA_OBSF_24TR}})
-* Info : Les boutons de tri "triangle" des joueurs 1 et 2, au centre de la borne, au-dessus du lecteur Aime. Typiquement **bleu pour le joueur 1 et rouge pour le joueur 2**.
+* Info : Les boutons de sélection triangulaires des joueurs 1 et 2, au centre de la borne, au-dessus du lecteur Aime. Typiquement **bleu pour le joueur 1 et rouge pour le joueur 2**.
 
 *Alternative* : ... Littéralement n'importe quels autres boutons
 
@@ -128,7 +128,7 @@ Pour chaque pièce, **l'option la plus adaptée est mise en avant**, que ce soit
 ### **1x**{: .quantity-emphasis } Alimentation à découpage 5V/12V
 
 * Où : Amazon, AliExpress, distributeurs de composants électroniques
-* Info : Contrairement au *RingEdge 2*, le *ALLS* n'alimente pas les périphériques externes. Cette alimentation prend le relais : elle alimente notamment l'IO4, le lecteur Aime, le VFD et les proxys des contrôleurs de LEDs. Il vous faut un modèle **à double sortie 5V et 12V**, en boîtier métallique avec bornier à vis, comme les Mean Well RD-35A ou RD-50A. **Ne réutilisez pas les alimentations d'origine de la borne** à la place.
+* Info : Contrairement au *RingEdge 2*, le *ALLS* n'alimente pas les périphériques externes. Cette alimentation prend le relais : elle alimente notamment l'IO4, le lecteur Aime, le VFD, les cartes I/O des HDX et nos proxys. Il vous faut un modèle **à double sortie 5V et 12V**, en boîtier métallique avec bornier à vis, comme les Mean Well RD-35A ou RD-50A. **Ne réutilisez pas les alimentations d'origine de la borne** pour cela.
 
 </div>
 
@@ -168,11 +168,11 @@ Ces petits achats bon marché, nécessaires au fil des étapes, se trouvent dans
     - Branchement du *ALLS* vers l'écran du joueur 1.
 * **1x**{: .quantity-emphasis } **Câble DVI-D vers DVI-D (2 m)** 
     - Branchement du *ALLS* vers l'écran du joueur 2. Votre *FiNALE* en a peut-être déjà nativement un.
-* **1x**{: .quantity-emphasis } **Câble DB-9 Femelle-Femelle** 
+* **1x**{: .quantity-emphasis } **Câble DB9 femelle-femelle** 
     - Le plus court possible : il sera coupé en deux pour fabriquer les connecteurs du lecteur Aime et du VFD.
-* **4x**{: .quantity-emphasis } **Câble DB-9 Mâle-Femelle (3 m)** 
+* **4x**{: .quantity-emphasis } **Câble DB9 mâle-femelle (3 m)** 
     - Rallonges vers le *ALLS* pour le lecteur Aime, le VFD et les dalles tactiles des joueurs 1 et 2.
-* **1x**{: .quantity-emphasis } **Câble IEC C-13 (2 m)** 
+* **1x**{: .quantity-emphasis } **Câble IEC C-13 (3 m)** 
     - Branché au *ALLS*, puis coupé côté prise pour être raccordé directement à l'alimentation électrique de la borne.
 * **1x**{: .quantity-emphasis } **Nappe IDC 2x30 broches (femelle-femelle)**
     - Pour relier le `CN3` de l'IO4 à la [PCB de conversion]({{IO4_CONVERSION_PCB}}) (pas de 2,54 mm).
@@ -187,20 +187,20 @@ Ces petits achats bon marché, nécessaires au fil des étapes, se trouvent dans
 
 ### Électronique
 
-* **2x**{: .quantity-emphasis } **Convertisseur TTL vers RS-232 avec DB-9 femelle** ([exemple]({{BUY_EXAMPLE_TTL_RS232_CONVERTER}})) 
-    - Pour relier la carte I/O de chaque dalle tactile (joueurs 1 et 2) à son port DB-9 du *ALLS*.
+* **2x**{: .quantity-emphasis } **Convertisseur TTL vers RS-232 avec DB9 femelle** ([exemple]({{BUY_EXAMPLE_TTL_RS232_CONVERTER}})) 
+    - Pour relier la carte I/O de chaque dalle tactile (joueurs 1 et 2) à son port DB9 du *ALLS*.
 * **2x**{: .quantity-emphasis } **Raspberry Pi Pico** ([exemple]({{BUY_EXAMPLE_RASPBERRY_PI_PICO}})) 
     - Pour fabriquer les proxys des contrôleurs de LEDs. Pour éviter toute soudure, préférez une version aux broches pré-soudées. **Attention : les broches doivent être soudées vers le bas, pas vers le haut.**
 * **2x**{: .quantity-emphasis } **Pico-2CH-RS232** ([exemple]({{BUY_EXAMPLE_PICO_2CH_RS232}})) 
     - Pour fabriquer les proxys des contrôleurs de LEDs.
 * **2x**{: .quantity-emphasis } **Ampli audio pour casque**
-    - Un petit ampli bon marché par joueur, pour amplifier la sortie casque très faible du *ALLS* (voir [l'étape 5](step-5-audio-headphones.md)). Inutile qu'il ait une molette de volume : le volume se règle dans les menus du jeu.
+    - Un petit ampli bon marché par joueur, pour amplifier la sortie casque très faible du *ALLS* (voir [l'étape 5](step-5-audio-headphones.md)). Inutile qu'il ait une molette de volume : le volume se règle dans le jeu.
 * **2x**{: .quantity-emphasis } **Prise jack 3.5 mm femelle**
     - Les prises casque des joueurs, à installer sur la borne. Préférez un modèle à fixer sur panneau.
 
 ### Fils de câblage
 
-* **Fil de câblage souple (AWG 20)** 
+* **Fil de câblage souple (20 AWG)** 
     - Plusieurs câbles sont à sertir tout au long du guide : prévoyez-en une bonne réserve, idéalement de plusieurs couleurs.
 * **Fil de câblage souple (1,5 mm²)**
     - Pour le 12V de la [PCB de conversion]({{IO4_CONVERSION_PCB}}), qui voit passer un courant important (voir [l'étape 4](step-4-io-board.md)). Prévoyez une longueur suffisante pour rejoindre l'alimentation LEDs de la borne.
@@ -214,7 +214,7 @@ Ces petits achats bon marché, nécessaires au fil des étapes, se trouvent dans
 * **1x**{: .quantity-emphasis } **Bande de LEDs RGB 12V à anode commune**
     - Éclairage des deux lecteurs de QR-code : le +12V est commun aux trois couleurs, seule la cathode est séparée pour le rouge, le vert et le bleu. Environ 20 cm de bande suffisent.
 * **1x**{: .quantity-emphasis } **LED rouge 12V avec résistance intégrée**
-    - Indique aux joueurs que la caméra filme. **Une LED nue grillerait** sur le 12V : prenez un modèle prévu pour cette tension ou, à défaut, une résistance à part de 2,2 à 4,7 kOhm.
+    - Indique aux joueurs que la caméra filme. **Une LED nue grillerait** sur le 12V : prenez un modèle prévu pour cette tension ou, à défaut, une résistance à part de 2,2 à 4,7 kΩ.
 
 ### Outils
 

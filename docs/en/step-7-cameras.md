@@ -15,7 +15,7 @@ At this point, only one feature still separates your conversion from a real *DX*
     - **The QR-code reader cameras**: two USB UVC cameras, at 640x480 with a 50° FOV.
 
     !!! info "DX Pass"
-        DX Passes are physical cards that players get printed on the "Sega CardMaker" cabinet. That cabinet is rare outside Japan, and even rarer in working printing order. Moreover, DX Passes are nowadays automatically linked to the player's account: the physical card is no longer needed. **The QR-code readers are therefore largely optional**, even useless.
+        DX Passes are physical cards that players get printed on the "Sega CardMaker" cabinet. That cabinet is rare outside Japan, and even rarer in working order. Moreover, DX Passes are now linked to the player's account automatically: the physical card is no longer needed. **The QR-code readers are therefore largely optional**, even useless.
 
         Some in-game events only trigger by scanning specific cards, but most private servers unlock them by default.
 
@@ -45,7 +45,7 @@ If you made your own wiring harness and followed the suggestion in [step 6](step
 
 ## QR-code reader cameras
 
-Ideally, get **two small 30mm x 25mm modules**: they fit [the 3D model designed by SpiralGlide](spiralglide-resources.md#qr-code-reader-mount-dx-pass-reader), which attaches using the existing screws of the acrylic panel.
+Ideally, get **two small 30 mm x 25 mm modules**: they fit [the 3D model designed by SpiralGlide](spiralglide-resources.md#qr-code-reader-mount-dx-pass-reader), which attaches using the existing screws of the acrylic panel.
 
 * **Installation on the cabinet:** [3D printing](spiralglide-resources.md#qr-code-reader-mount-dx-pass-reader).
 * **Connection to the *ALLS*:** USB, through the USB hub plugged into port **#2** in [step 1](step-1-alls-and-psu.md). Any port on the hub will do.
@@ -55,7 +55,7 @@ Ideally, get **two small 30mm x 25mm modules**: they fit [the 3D model designed 
 
 If you followed the suggestion in [step 6](step-6-lighting.md), you already have a connector ready for these two signals. They are also available on the [conversion PCB]({{IO4_CONVERSION_PCB}}).
 
-**For the game to identify the cameras, each one must film a specific QR-code**: *SDEZ01* on the player 1 side, *SDEZ02* on the player 2 side. SpiralGlide's 3D model has a slot of the right size for these codes. Print [this PDF](../resources/images/step-7-cameras/codes-for-qr-code-readers.pdf) on A4, with a properly calibrated printer, to get QR-codes of the right size, then stick them in place.
+**For the game to identify the cameras, each one must film a specific QR-code**: *SDEZ01* on the player 1 side, *SDEZ02* on the player 2 side. SpiralGlide's 3D model has a slot of the right size for these codes. Print [this PDF](../resources/images/step-7-cameras/codes-for-qr-code-readers.pdf) on A4 paper at 100% scale, with a properly calibrated printer, to get QR-codes of the right size, then stick them in place.
 
 If you chose the cameras from the [shopping list](equipment.md), their lens is adjustable: you can tweak the focus.
 

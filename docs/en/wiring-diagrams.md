@@ -4,17 +4,17 @@ title: "Wiring diagrams"
 
 # 🖨️ Wiring diagrams
 
-The [official manuals](official-manuals.md) contain, on their very last pages, the complete wiring diagram of the cabinet (A3-format plates, one per manual of several dozen MB). To avoid having to download an entire manual and zoom into a PDF reader just to find a wire, here are those plates extracted in high resolution.
+The [official manuals](official-manuals.md) contain, on their very last pages, the complete wiring diagram of the cabinet (A3-size sheets). Each manual weighs several dozen MB. To save you from downloading an entire manual and zooming around in a PDF reader just to find a wire, here are those diagrams extracted in high resolution.
 
-_(Click a plate to open it at full resolution in a new tab. Each plate is preceded by the list of boards/modules that appear on it, with their part number, so you can find a board with `Ctrl+F`. The coordinates in brackets, e.g. **[C-3]**{: .wiring-coord }, refer to the reference grid printed around the edge of each plate - columns A to G, rows 1 to 6 - and indicate where the part is on the diagram.)_
+_(Click a diagram to open it at full resolution in a new tab. Each diagram is preceded by the list of boards/modules that appear on it, with their part number, so you can find a board with `Ctrl+F`. The coordinates in brackets, e.g. **[C-3]**{: .wiring-coord }, refer to the reference grid printed around the edge of each diagram - columns A to G, rows 1 to 6 - and indicate where the part is on the diagram.)_
 
 ## *maimai DX* manual
 
 Chapter *22 総合配線図* ("general wiring diagram"), pages 193 to 196 of the [*maimai DX* manual](../resources/pdfs/maimai-dx-instruction-manual-full.pdf).
 
-### Plate 1/4 - Power, *ALLS* PC, amp and player screens
+### Diagram 1/4 - Power, *ALLS* PC, amp and player screens
 
-* `MMT-1050` **ASSY AC UNIT** **[A-1]**{: .wiring-coord } - mains input block (noise filter, fuse, IEC socket)
+* `MMT-1050` **ASSY AC UNIT** **[A-1]**{: .wiring-coord } - AC input block (noise filter, fuse, IEC socket)
 * `MMT-4200` **ASSY XFMR** **[C-1]**{: .wiring-coord } - power transformer
 * `MMT-4300` / `601-13203-63` **ASSY ROUTER (ROUTER RTX830 BD MMT)** **[F-1]**{: .wiring-coord } - network router board
 * `MMT-4100` **ASSY ELEC BD** **[A-2]**{: .wiring-coord } - main electronics board, which brings together:
@@ -26,11 +26,11 @@ Chapter *22 総合配線図* ("general wiring diagram"), pages 193 to 196 of the
 * `MMT-1000` / `MMT-1500` **ASSY CABINET 1P / 2P** **[D-2/G-2]**{: .wiring-coord } - player screens (`200-6280` **LCD DSPL 43 LED**)
 * `MMT-1200` / `MMT-1700` **ASSY SW BASE 1P / 2P** **[C-5/D-4]**{: .wiring-coord } - button bases
 
-[![maimai DX wiring diagram, plate 1 of 4](../resources/images/wiring-diagrams/maimai-dx-wiring-diagram-1-of-4.jpg)](../resources/images/wiring-diagrams/maimai-dx-wiring-diagram-1-of-4.jpg)
+[![maimai DX wiring diagram, sheet 1 of 4](../resources/images/wiring-diagrams/maimai-dx-wiring-diagram-1-of-4.jpg)](../resources/images/wiring-diagrams/maimai-dx-wiring-diagram-1-of-4.jpg)
 
 ---
 
-### Plate 2/4 - Buttons, button LEDs, USB hub and I/O board
+### Diagram 2/4 - Buttons, button LEDs, USB hub and I/O board
 
 * `MMT-1200` / `MMT-1700` **ASSY SW BASE 1P / 2P** **[A-1]**{: .wiring-coord } - button bases
 * `837-15070-04` **IC BD LED DRV32CH RS232** ×2 **[E-2/D-2]**{: .wiring-coord } - LED driver, one per side
@@ -39,11 +39,11 @@ Chapter *22 総合配線図* ("general wiring diagram"), pages 193 to 196 of the
 * `837-15257-01` **I/O CONTROL BD 4 FOR USB** **[E-4]**{: .wiring-coord } - the **IO4** board (JVS), see [step 4](step-4-io-board.md)
 * `MMT-1000` / `MMT-1500` / `MMT-1900` **ASSY CABINET 1P / 2P / SIDE COVER BASE 1P** **[G-3/G-6/G-1]**{: .wiring-coord }
 
-[![maimai DX wiring diagram, plate 2 of 4](../resources/images/wiring-diagrams/maimai-dx-wiring-diagram-2-of-4.jpg)](../resources/images/wiring-diagrams/maimai-dx-wiring-diagram-2-of-4.jpg)
+[![maimai DX wiring diagram, sheet 2 of 4](../resources/images/wiring-diagrams/maimai-dx-wiring-diagram-2-of-4.jpg)](../resources/images/wiring-diagrams/maimai-dx-wiring-diagram-2-of-4.jpg)
 
 ---
 
-### Plate 3/4 - Buttons, touch ring sensor, billboard
+### Diagram 3/4 - Buttons, touch ring sensor, billboard
 
 * `MMT-2000` **ASSY BUTTON SWITCH** ×8 **[B-1→B-4]**{: .wiring-coord } - buttons, each with:
     * `838-15235-01` **LED BD RGB 3X1BLOCK 5050** **[B-1→B-4]**{: .wiring-coord } - button RGB LED
@@ -56,11 +56,11 @@ Chapter *22 総合配線図* ("general wiring diagram"), pages 193 to 196 of the
 * `390-7244` **LED TAPE WHITE M3528W-A** **[E-2]**{: .wiring-coord } - white LED strips of the ring
 * `130-5280-01` **WOOFER 4OHM 80W** **[E-6]**{: .wiring-coord }
 
-[![maimai DX wiring diagram, plate 3 of 4](../resources/images/wiring-diagrams/maimai-dx-wiring-diagram-3-of-4.jpg)](../resources/images/wiring-diagrams/maimai-dx-wiring-diagram-3-of-4.jpg)
+[![maimai DX wiring diagram, sheet 3 of 4](../resources/images/wiring-diagrams/maimai-dx-wiring-diagram-3-of-4.jpg)](../resources/images/wiring-diagrams/maimai-dx-wiring-diagram-3-of-4.jpg)
 
 ---
 
-### Plate 4/4 - Cameras, Aime reader, coin mech and entry panel
+### Diagram 4/4 - Cameras, Aime reader, coin mech and entry panel
 
 * `MMT-1350` / `MMT-1370` **ASSY PLAYER CAMERA / PLAYER CAMERA UNIT** **[D-1]**{: .wiring-coord } - player cameras
     * `601-13249` **CAMERA KBCR-S03MU-HPB2033-C300** **[D-1]**{: .wiring-coord }, see [step 7](step-7-cameras.md)
@@ -78,7 +78,7 @@ Chapter *22 総合配線図* ("general wiring diagram"), pages 193 to 196 of the
     * `838-14548-10` **SW & VOL BD** **[G-5]**{: .wiring-coord }
 * `MMT-1900` / `MMT-1950` **ASSY SIDE COVER BASE 1P / 2P** **[A-1/G-2]**{: .wiring-coord }
 
-[![maimai DX wiring diagram, plate 4 of 4](../resources/images/wiring-diagrams/maimai-dx-wiring-diagram-4-of-4.jpg)](../resources/images/wiring-diagrams/maimai-dx-wiring-diagram-4-of-4.jpg)
+[![maimai DX wiring diagram, sheet 4 of 4](../resources/images/wiring-diagrams/maimai-dx-wiring-diagram-4-of-4.jpg)](../resources/images/wiring-diagrams/maimai-dx-wiring-diagram-4-of-4.jpg)
 
 ---
 
@@ -86,10 +86,10 @@ Chapter *22 総合配線図* ("general wiring diagram"), pages 193 to 196 of the
 
 Chapter *25 WIRING DIAGRAM*, pages 189 to 193 of the [maimai PiNK manual](../resources/pdfs/maimai-pink-manual-full.pdf).
 
-### Plate 1/4 - Power, screen and coin selector
+### Diagram 1/4 - Power, screen and coin selector
 
-* `MAI-1050` **AC UNIT** **[B-1]**{: .wiring-coord } - mains input block
-* **ASSY LCD** **[F-1]**{: .wiring-coord } - Player 1, screen (`200-6226-91` **ASSY LCD DSPL 42 TYPE LED Y**)
+* `MAI-1050` **AC UNIT** **[B-1]**{: .wiring-coord } - AC input block
+* **ASSY LCD** **[F-1]**{: .wiring-coord } - Player 1 screen (`200-6226-91` **ASSY LCD DSPL 42 TYPE LED Y**)
 * coin acceptor mechanism
     * `MAI-1420` **ASSY SELECTOR DOOR** **[A-4]**{: .wiring-coord } - Japan version
         * `220-5846-01` **PFB-730 QL203 12VBK 100** **[B-3]**{: .wiring-coord }
@@ -97,13 +97,13 @@ Chapter *25 WIRING DIAGRAM*, pages 189 to 193 of the [maimai PiNK manual](../res
         * `220-5842` **ELEC CC REJR SG-828** **[C-3]**{: .wiring-coord }
 * **XFMR WIRING** **[B-5→G-6]**{: .wiring-coord } - multi-voltage transformers
     * `560-5515-V-91` **[B-6]**{: .wiring-coord } - 100V zone variant
-    * `560-5599` **[C-5]**{: .wiring-coord } - 110V to 240V zone variant (repeated at several voltages on the plate)
+    * `560-5599` **[C-5]**{: .wiring-coord } - 110V to 240V zone variant (repeated at several voltages on the diagram)
 
-[![maimai PiNK wiring diagram, plate 1 of 4](../resources/images/wiring-diagrams/maimai-pink-wiring-diagram-1-of-4.jpg)](../resources/images/wiring-diagrams/maimai-pink-wiring-diagram-1-of-4.jpg)
+[![maimai PiNK wiring diagram, sheet 1 of 4](../resources/images/wiring-diagrams/maimai-pink-wiring-diagram-1-of-4.jpg)](../resources/images/wiring-diagrams/maimai-pink-wiring-diagram-1-of-4.jpg)
 
 ---
 
-### Plate 2/4 - Aime reader, speakers, LEDs and power supplies
+### Diagram 2/4 - Aime reader, speakers, LEDs and power supplies
 
 * `MAI-1400` **ASSY COIN CHUTE TOWER** **[B-2]**{: .wiring-coord } - center tower
     * `838-14971` **NFC RW BD TN32MSEC003S** **[D-1/D-2]**{: .wiring-coord } - the Aime card reader board, replaced in [step 3](step-3-aime-reader.md)
@@ -119,13 +119,13 @@ Chapter *25 WIRING DIAGRAM*, pages 189 to 193 of the [maimai PiNK manual](../res
 * `MAI-1080` **CENTER LED / ROOF LED (L) / ROOF LED (R)** ×3 **[F-3/F-4]**{: .wiring-coord }
     * `MAI-1070` **WOOFER LED** **[E-5]**{: .wiring-coord } - decorative LEDs (`838-15235-01` **LED BD RGB**)
 
-[![maimai PiNK wiring diagram, plate 2 of 4](../resources/images/wiring-diagrams/maimai-pink-wiring-diagram-2-of-4.jpg)](../resources/images/wiring-diagrams/maimai-pink-wiring-diagram-2-of-4.jpg)
+[![maimai PiNK wiring diagram, sheet 2 of 4](../resources/images/wiring-diagrams/maimai-pink-wiring-diagram-2-of-4.jpg)](../resources/images/wiring-diagrams/maimai-pink-wiring-diagram-2-of-4.jpg)
 
 ---
 
-### Plate 3/4 - I/O board (JVS), `4x RS-232 to USB adapter`, touch controller and *RingEdge 2* PC
+### Diagram 3/4 - I/O board (JVS), `4x RS-232 to USB adapter`, touch controller and *RingEdge 2* PC
 
-* **ASSY LCD** **[G-1]**{: .wiring-coord } - Player 2, screen (`200-6226-91` **ASSY LCD DSPL 42 TYPE LED Y**)
+* **ASSY LCD** **[G-1]**{: .wiring-coord } - Player 2 screen (`200-6226-91` **ASSY LCD DSPL 42 TYPE LED Y**)
 * `837-14505` **I/O CONTROL BD FOR JVS** **[D-1]**{: .wiring-coord } - the IO3 board, replaced by the IO4 in [step 4](step-4-io-board.md)
 * `837-15067-02` **IC BD USB TO 4SERIAL 232 IF** **[F-2]**{: .wiring-coord } - the `4x RS-232 to USB adapter` mentioned in [step 6](step-6-lighting.md)
 * `838-15221` **SERIAL I/F BD TOUCHPANEL GUNZE** **[D-4]**{: .wiring-coord } - touchscreen controller board
@@ -134,11 +134,11 @@ Chapter *25 WIRING DIAGRAM*, pages 189 to 193 of the [maimai PiNK manual](../res
     * `846-5003D-02` **[E-4]**{: .wiring-coord } (export version)
 * `MAI-4100` **ASSY ROUTER** (`601-12336-34` **ROUTER RT107E BD MAI**) **[F-6]**{: .wiring-coord }
 
-[![maimai PiNK wiring diagram, plate 3 of 4](../resources/images/wiring-diagrams/maimai-pink-wiring-diagram-3-of-4.jpg)](../resources/images/wiring-diagrams/maimai-pink-wiring-diagram-3-of-4.jpg)
+[![maimai PiNK wiring diagram, sheet 3 of 4](../resources/images/wiring-diagrams/maimai-pink-wiring-diagram-3-of-4.jpg)](../resources/images/wiring-diagrams/maimai-pink-wiring-diagram-3-of-4.jpg)
 
 ---
 
-### Plate 4/4 - Buttons, LED controller and touch ring
+### Diagram 4/4 - Buttons, LED controller and touch ring
 
 * `MAI-1200` / `MAI-1201` **ASSY SW BASE** **[D-1/D-5]**{: .wiring-coord } - base and layout of the 8 buttons
     * `838-15235-01` **LED BD RGB** **[D-1→D-3]**{: .wiring-coord }
@@ -146,7 +146,7 @@ Chapter *25 WIRING DIAGRAM*, pages 189 to 193 of the [maimai PiNK manual](../res
 * `837-15070-02-91` **IC BD LED DRV32CH RS232** **[C-4]**{: .wiring-coord } - the LED controller mentioned in [step 6](step-6-lighting.md)
 * `509-6384` **TOUCH SENSOR PANEL UNIT** **[E-5]**{: .wiring-coord } - touch ring sensor board
 
-[![maimai PiNK wiring diagram, plate 4 of 4](../resources/images/wiring-diagrams/maimai-pink-wiring-diagram-4-of-4.jpg)](../resources/images/wiring-diagrams/maimai-pink-wiring-diagram-4-of-4.jpg)
+[![maimai PiNK wiring diagram, sheet 4 of 4](../resources/images/wiring-diagrams/maimai-pink-wiring-diagram-4-of-4.jpg)](../resources/images/wiring-diagrams/maimai-pink-wiring-diagram-4-of-4.jpg)
 
 ---
 

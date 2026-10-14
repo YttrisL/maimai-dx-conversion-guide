@@ -4,7 +4,7 @@ title: "🛠️ 1 - ALLS et PSU"
 
 # 🛠️ Étape 1 : Le remplacement du PC central (*ALLS*)
 
-L'ancien PC *RingEdge 2* ne peut pas faire tourner *DX* : il vous faut un PC ***ALLS HX2***. En plus d'un matériel plus récent et plus performant, le système d'exploitation change radicalement entre les deux machines. **Le remplacement est obligatoire.**
+L'ancien *RingEdge 2* ne peut pas faire tourner *DX* : il vous faut un ***ALLS HX2***. En plus d'un matériel plus récent et plus performant, le système d'exploitation change radicalement entre les deux machines. **Le remplacement est obligatoire.**
 
 ## Explications techniques
 
@@ -92,12 +92,12 @@ La plupart des appareils à connecter sont présentés plus en détail dans les 
 
 ### Carte mère
 
-- **`COM1` - Port DB9** : Lecteur Aime
+- **COM1 - Port DB9** : Lecteur Aime
 - **LAN1 - Port RJ45** : Port réseau, à connecter au routeur de service (celui du réseau sur lequel la borne sera connectée, à ne pas confondre avec le routeur interne de *FiNALE*). Le second port réseau est inutilisé.
 - **Audio Jacks 3,5mm** :
-    - **C/W** : [Prise casque](step-5-audio-headphones.md#les-prises-casques) Joueur 1
-    - **FRONT** : [Haut-parleurs](step-5-audio-headphones.md#branchement-des-haut-parleurs) Joueur 1
-    - **REAR** : [Haut-parleurs](step-5-audio-headphones.md#branchement-des-haut-parleurs) Joueur 2
+    - **C/W** : Prise casque Joueur 1
+    - **FRONT** : Haut-parleurs Joueur 1
+    - **REAR** : Haut-parleurs Joueur 2
 - **USB** :
     - **USB 1** : SEGA IO4
     - **USB 2** : Hub USB, sur lequel sont branchés les deux caméras de QR codes et `l'adaptateur 4x RS-232 vers USB`.
@@ -112,9 +112,9 @@ La plupart des appareils à connecter sont présentés plus en détail dans les 
 
 ### Cartes d'extension
 
-- **`COM2` - Port DB9** : VFD
-- **`COM3` - Port DB9** : Dalle tactile du joueur 1
-- **`COM4` - Port DB9** : Dalle tactile du joueur 2
+- **COM2 - Port DB9** : VFD
+- **COM3 - Port DB9** : Dalle tactile du joueur 1
+- **COM4 - Port DB9** : Dalle tactile du joueur 2
 - **SIDE** : [Prise casque](step-5-audio-headphones.md#les-prises-casques) Joueur 2
 
 ## Alimentation

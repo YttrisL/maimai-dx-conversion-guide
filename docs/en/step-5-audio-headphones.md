@@ -4,7 +4,7 @@ title: "🎧 5 - Headphones & audio"
 
 # 🎧 Step 5: Headphone jacks and sound system
 
-Unlike *FiNALE*, which had none, *DX* natively gives players a **headphone jack with in-game volume control**. Installing it is very simple.
+Unlike *FiNALE*, which had none, *DX* natively gives both players a **headphone jack with in-game volume control**. Installing them is very simple.
 
 ## Connecting the speakers
 
@@ -41,7 +41,7 @@ Since the signal on the C/W and SIDE outputs is too weak, you need to buy **two 
 
 ### Installing on the cabinet
 
-The jacks are simple 3.5 mm female Jack connectors. You have two options to install them:
+The jacks are simple 3.5 mm female jack connectors. You have two options to install them:
 
 1. **The faithful method:** drill the plastic shell under the buttons (as on a real *DX*) to embed the jacks.
 2. **The non-destructive method:** install the two jacks in the center of the cabinet, between the two players, in a hand-made enclosure.

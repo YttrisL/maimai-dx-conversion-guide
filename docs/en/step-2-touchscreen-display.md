@@ -27,7 +27,7 @@ The official *DX* manual requires a specific connection. *(Reference: [page 128]
 * **Player 1 (P1):** can be connected to the **HDMI** or **DisplayPort** port (the [official manual](../resources/pdfs/maimai-dx-instruction-manual-full.pdf) only mentions HDMI).
 * **Player 2 (P2):** must be connected to the **DVI** port.
 
-As mentioned in [step 1](step-1-alls-and-psu.md), some *FiNALE* cabinets were modified by their operator to use the screens' **DVI** port instead of their VGA port, which was used originally. If that is your case, you can **reuse the DVI cable** for the player 2 screen. Otherwise, you will need **an HDMI to DVI cable** (player 1) and **a DVI to DVI cable** (player 2).
+As mentioned in [step 1](step-1-alls-and-psu.md), some *FiNALE* cabinets were modified by their operator to use the screens' **DVI** port instead of the VGA port used originally. If that is your case, you can **reuse the DVI cable** for the player 2 screen. Otherwise, you will need **an HDMI to DVI-D cable** (player 1) and **a DVI-D to DVI-D cable** (player 2).
 
 ## The touchscreens
 
@@ -48,11 +48,11 @@ As mentioned in [step 1](step-1-alls-and-psu.md), some *FiNALE* cabinets were mo
 It is practically impossible to get an official *DX* touchscreen, so you have to turn to **community-made alternatives**:
 
 * **HanDevice's HDX:** *the choice recommended by this guide*. Installation is much simpler thanks to its **UART** connector.
-* **yuancon's ADX:** a possible alternative, but it only connects over **USB-CDC**. You then need an external device and a complex setup to extract that signal to a DB9 connector.
+* **Yuancon's ADX:** a possible alternative, but it only connects over **USB-CDC**. You then need an external device and a complex setup to extract that signal to a DB9 connector.
 
 ### Replacing the panel
 
-1. **Remove the front of the cabinet.** To reach the panel, take off the plastic fascia *and* the metal frame fixed around the screen.
+1. **Remove the front of the cabinet.** To reach the panel, take off the plastic front *and* the metal frame fixed around the screen.
 2. **Remove the old panel.** It is held from the inside by **8 screws**. Also remove any associated wiring if it is still in place: it will not be reused. (Keep the button wiring, however.)
 3. **Install the new panel** and secure it with the 8 screws.
 
@@ -62,6 +62,9 @@ It is practically impossible to get an official *DX* touchscreen, so you have to
 You then have to connect the panel to the *ALLS*, depending on the model you chose.
 
 ??? example "The easy way: HDX"
+
+    --8<-- "includes/untested-en.md"
+
     ### The easy way: HDX
 
     The original controller of the HDX panel has a **UART port**: it therefore connects to the *ALLS* very simply, with only a few light adjustments.
@@ -115,7 +118,7 @@ You then have to connect the panel to the *ALLS*, depending on the model you cho
 ??? example "Alternative: ADX"
     ### Alternative: ADX
 
-    This solution is **not the one this guide recommends**. It is meant for those who already have ADX panels at hand or cannot buy HDX ones. It requires more hardware, as well as being comfortable with Linux.
+    This solution is **not the one this guide recommends**. It is meant for those who already have ADX panels at hand or cannot buy HDX ones. It requires more hardware, as well as some experience with Linux.
 
     #### Why a Raspberry Pi is needed
 
@@ -128,7 +131,7 @@ You then have to connect the panel to the *ALLS*, depending on the model you cho
 
     #### Additional hardware
 
-    * **1x** Raspberry Pi with its power supply (a Pi 3b is enough. Both ADX can share the same Pi)
+    * **1x** Raspberry Pi with its power supply (a Pi 3b is enough; both ADXs can share the same Pi)
     * **2x** USB to serial adapters with an **FTDI** chip (one per side)
     * **2x** **null modem** adapters, so that the male/female connectors match those on the *ALLS* (or directly an FTDI adapter with a female DB9 connector if you can find one)
 
@@ -138,7 +141,7 @@ You then have to connect the panel to the *ALLS*, depending on the model you cho
 
     ##### 1. Preparing the Raspberry Pi
 
-    1. **Install** *Raspberry Pi OS Lite* on the SD card with [Raspberry Pi Imager]({{RASPBERRY_PI_IMAGER}}). In the advanced settings, **enable SSH** and choose a username and password. Connect the Pi to your network, you can then control it from your PC with `ssh your-user@raspberrypi.local`.
+    1. **Install** *Raspberry Pi OS Lite* on the SD card with [Raspberry Pi Imager]({{RASPBERRY_PI_IMAGER}}). In the advanced settings, **enable SSH** and choose a username and password. Connect the Pi to your network; you can then control it from your PC with `ssh your-user@raspberrypi.local`.
     2. **Install** the tools required for compilation:
 
         ```bash
@@ -146,7 +149,7 @@ You then have to connect the panel to the *ALLS*, depending on the model you cho
         curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
         ```
 
-        The second program asks a question, simply answer `1` (default installation). Then close your SSH session and reopen it so that the `cargo` command is recognized.
+        The second command asks a question; simply answer `1` (default installation). Then close your SSH session and reopen it so that the `cargo` command is recognized.
     3. **Compile** the program (allow several minutes, this is normal):
 
         ```bash
@@ -158,7 +161,7 @@ You then have to connect the panel to the *ALLS*, depending on the model you cho
 
     ##### 2. Giving each cable a fixed name
 
-    Linux can identify a cable by **the Pi USB socket it is plugged into**. As long as you do not move them to another socket, each cable will therefore keep the same name. **Stick a label** on each cable (P1 ADX, P1 to *ALLS*, P2 ADX, P2 to *ALLS*), you will need them.
+    Linux can identify a cable by **the Pi USB socket it is plugged into**. As long as you do not move them to another socket, each cable will therefore keep the same name. **Stick a label** on each cable (P1 ADX, P1 to *ALLS*, P2 ADX, P2 to *ALLS*); you will need them.
 
     1. **Unplug everything** from the Pi, except its power supply.
     2. **Plug in a single cable**: the player 1 ADX, in the USB socket of your choice. Display its identifier:
@@ -203,7 +206,7 @@ You then have to connect the panel to the *ALLS*, depending on the model you cho
     sudo maitouch /dev/alls-p1 /dev/adx-p1
     ```
 
-    The message **Ports opened** then **Read loop started** must appear. Now start the game: **From *ALLS*** and **From ADX** lines scroll by, and the panel responds to touch. Stop the test with `Ctrl+C` and start over with `/dev/alls-p2 /dev/adx-p2`. If the program stops with an error, it is usually because one of the two paths does not exist: go back to step 2.
+    The messages **Ports opened** and then **Read loop started** should appear. Now start the game: **From *ALLS*** and **From ADX** lines scroll by, and the panel responds to touch. Stop the test with `Ctrl+C` and start over with `/dev/alls-p2 /dev/adx-p2`. If the program stops with an error, it is usually because one of the two paths does not exist: go back to part 2 above.
 
     ##### 4. Launching automatically at startup
 

@@ -21,8 +21,6 @@ Une rumeur tenace veut que la conversion soit un travail titanesque, presque irr
 
     **Aucune modification logicielle du jeu n'est tolérée.** Le jeu doit "penser" qu'il tourne sur une borne d'origine : toute notre adaptation matérielle doit donc lui être invisible.
 
-    Avantage : la borne obtenue est en théorie compatible avec la philosophie de la plupart des grands serveurs privés pour *DX*.
-
 ---
 
 ## Par où commencer ?
