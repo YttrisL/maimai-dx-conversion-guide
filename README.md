@@ -1,5 +1,7 @@
 # *maimai FiNALE* to *DX* Upgrade Guide
 
+**Read the guide rendered at [https://www.dxnale.guide/](https://www.dxnale.guide/)**
+
 This repo hosts a step-by-step hardware guide for converting a **maimai
 *FiNALE*** arcade cabinet into a working ***maimai DX*** cabinet - a project the
 community calls "DxNALE". It covers everything from sourcing the right
